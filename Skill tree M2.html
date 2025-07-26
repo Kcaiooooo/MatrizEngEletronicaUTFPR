@@ -1,0 +1,1706 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz Curricular - Engenharia Eletrônica UTFPR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: #1f2937;
+    }
+    .font-header {
+        font-family: 'Roboto Slab', serif;
+    }
+    
+    .tree-wrapper {
+        position: relative; 
+        width: 100%;       
+        height: 95vh;
+        overflow: auto;
+        border-radius: 0.75rem; 
+        cursor: grab;
+        /* --- NOVAS REGRAS PARA ESCONDER A BARRA DE ROLAGEM --- */        
+        /* Para o Firefox */
+        scrollbar-width: none;
+    }
+
+    /* É necessário criar uma regra separada para os navegadores baseados em WebKit */
+    .tree-wrapper::-webkit-scrollbar {
+        /* Para Chrome, Safari, Edge, etc. */
+        display: none;
+    }
+
+    /* ESTILO AJUSTADO DOS CONTÊINERES (COM A ALTERAÇÃO) */
+    #main-container, #humanities-container, #optional-container {
+        position: relative;
+        width: 100%; /* << MUDANÇA AQUI */
+        /* * AQUI ESTÁ A MUDANÇA PRINCIPAL:
+        * Como reduzimos a largura, aumentamos a altura para
+        * redistribuir o espaço verticalmente.
+        */
+        height: 410%; /* << MUDANÇA AQUI */
+        background-color: #111827; 
+        background-image: 
+            linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+        background-size: 25px 25px;
+        border-radius: 0.75rem;
+        overflow: visible; 
+    }
+    .node {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 130px; 
+        height: 90px;
+        border-radius: 0.75rem; 
+        border: 3px solid;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        padding: 5px;
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 11px;
+    }
+    /* --- Main Subjects States --- */
+    .subject-locked { background-color: #374151; border-color: #4b5563; color: #9ca3af; }
+    .subject-locked:hover { transform: translate(-50%, -50%) scale(1.05); }
+    .subject-available { background-color: #2563eb; border-color: #60a5fa; color: white; box-shadow: 0 0 15px rgba(59, 130, 246, 0.5); }
+    .subject-available:hover { transform: translate(-50%, -50%) scale(1.05); }
+    .subject-completed { background-color: #16a34a; border-color: #4ade80; color: white; font-weight: bold; box-shadow: 0 0 20px rgba(74, 222, 128, 0.7); }
+    .subject-satisfied { 
+        background-color: #4a4a28; /* Fundo dourado escuro */
+        border-color: #fbbf24;    /* Borda âmbar/dourada */
+        color: #fde68a;           /* Texto dourado claro */
+        cursor: not-allowed;      /* Indica que não é mais clicável */
+    }
+    .subject-satisfied:hover { transform: translate(-50%, -50%) scale(1.05); }
+
+    /* --- Humanities Subjects States --- */
+    .humanities-locked { background-color: #374151; border-color: #4b5563; color: #9ca3af; }
+    .humanities-locked:hover { transform: translate(-50%, -50%) scale(1.05); }
+    .humanities-available { background-color: #a855f7; border-color: #c084fc; color: white; box-shadow: 0 0 15px rgba(168, 85, 247, 0.5); }
+    .humanities-available:hover { transform: translate(-50%, -50%) scale(1.05); }
+    .humanities-completed { background-color: #16a34a; border-color: #4ade80; color: white; font-weight: bold; box-shadow: 0 0 20px rgba(74, 222, 128, 0.7); }
+
+    /* --- Optional/Track Subjects States --- */
+    .optional-locked { background-color: #374151; border-color: #4b5563; color: #9ca3af; }
+    .optional-locked:hover { transform: translate(-50%, -50%) scale(1.05); }
+    .optional-available { background-color: #dc2626; border-color: #f87171; color: white; box-shadow: 0 0 15px rgba(220, 38, 38, 0.5); }
+    .optional-available:hover { transform: translate(-50%, -50%) scale(1.05); }
+    .optional-completed { background-color: #16a34a; border-color: #4ade80; color: white; font-weight: bold; box-shadow: 0 0 20px rgba(74, 222, 128, 0.7); }
+
+    /* O restante do seu CSS continua aqui sem alterações... */
+    .node .tooltip {
+        visibility: hidden; opacity: 0; /* GARANTA QUE ESTAS LINHAS ESTEJAM AQUI */
+        width: 220px; background-color: #1f2937; color: #fff; text-align: center;
+        border-radius: 6px; padding: 8px; position: absolute; z-index: 20; bottom: 115%; left: 50%;
+        margin-left: -110px; transition: opacity 0.3s; border: 1px solid #4b5563;
+    }
+
+    .node .tooltip::after {
+        content: ""; position: absolute; top: 100%; left: 50%; margin-left: -5px; border-width: 5px;
+        border-style: solid; border-color: #1f2937 transparent transparent transparent;
+    }
+
+    .node .tooltip.visible, .node .tooltip-satisfied.visible {
+        visibility: visible;
+        opacity: 1;
+    }         
+    
+    .line-locked { stroke: #4b5563; stroke-width: 2; stroke-dasharray: 4, 4; fill: none; }
+    
+    .line-completed { 
+        stroke: #16a34a; 
+        stroke-width: 3; 
+        fill: none; 
+        filter: drop-shadow(0 0 3px #4ade80);
+        transition: stroke-dashoffset 1.5s ease-out;
+    }
+
+    .remove-btn {
+        background: none; border: none; color: #f87171; font-size: 1.5rem;
+        font-weight: bold; cursor: pointer; line-height: 1; padding: 0 0.5rem;
+        transition: color 0.2s;
+    }
+    .remove-btn:hover { color: #ef4444; }
+
+    .modal-overlay {
+        position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex; align-items: center; justify-content: center;
+        z-index: 50; transition: opacity 0.3s ease;
+    }
+    .modal-box {
+        background-color: #1f2937; border-radius: 0.75rem; padding: 2rem;
+        border: 1px solid #4b5563; box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        transform: scale(0.95); transition: transform 0.3s ease;
+    }
+    .modal-overlay:not(.hidden) .modal-box {
+        transform: scale(1);
+    }
+    
+    .tab-btn {
+        padding: 0.75rem 1.5rem;
+        font-weight: 600;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        color: #9ca3af;
+        border-bottom: 3px solid transparent;
+        transition: all 0.3s ease;
+    }
+    .tab-btn:hover {
+        color: #d1d5db;
+    }
+    .tab-btn.active {
+        color: #60a5fa;
+        border-bottom-color: #60a5fa;
+    }
+    .period-header {
+        position: absolute;
+        left: 10px;
+        transform: translateY(-50%);
+        color: #6b7280;
+        font-weight: bold;
+        font-size: 1.25rem;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        background-color: rgba(31, 41, 55, 0.5);
+        padding: 10px 5px;
+        border-radius: 8px;
+    }
+    .track-header {
+        position: absolute;
+        left: 5px;
+        transform: translateY(-50%);
+        color: #9ca3af;
+        font-weight: bold;
+        font-size: 1rem;
+        background-color: rgba(31, 41, 55, 0.6);
+        padding: 8px 4px;
+        border-radius: 8px;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
+    .node .tooltip-satisfied {
+        visibility: hidden; opacity: 0; /* GARANTA QUE ESTAS LINHAS ESTEJAM AQUI */
+        width: 220px; background-color: #1f2937; color: #fff; text-align: center;
+        border-radius: 6px; padding: 8px; position: absolute; z-index: 20; bottom: 115%; left: 50%;
+        margin-left: -110px; transition: opacity 0.3s; border: 2px solid #fbbf24; /* Borda Dourada */
+    }
+
+    .node .tooltip-satisfied::after {
+        content: ""; position: absolute; top: 100%; left: 50%; margin-left: -5px; border-width: 5px;
+        border-style: solid; border-color: #fbbf24 transparent transparent transparent;
+    }
+
+    /* Adicione este novo estilo para o tooltip posicionado abaixo */
+    .node .tooltip.below {
+        bottom: auto; /* Remove a regra que o força para cima */
+        top: 115%;    /* Posiciona 15% abaixo do nó */
+    }
+
+    /* Adicione este estilo para corrigir a seta quando o tooltip estiver abaixo */
+    .node .tooltip.below::after {
+        top: auto;              /* Remove a regra da seta antiga */
+        bottom: 100%;           /* Coloca a seta no topo do tooltip */
+        margin-left: -5px;
+        /* Inverte a direção da borda para apontar para cima */
+        border-color: transparent transparent #1f2937 transparent;
+    }
+
+    /* Se você também quer que a borda dourada funcione para tooltips satisfeitos abaixo */
+    .node .tooltip-satisfied.below::after {
+        border-color: transparent transparent #fbbf24 transparent;
+    }
+
+    /* ================================================= */
+    /* === ESTILOS PARA DISPOSITIVOS MÓVEIS (INÍCIO) === */
+    /* ================================================= */
+
+    /* Esta regra só aplica os estilos abaixo em telas com largura máxima de 768px */
+    @media (max-width: 768px) {
+
+        /* 1. Ajuste no Contêiner Principal da Árvore */
+        /* Para forçar um layout mais vertical, aumentamos a largura (width) e
+        diminuímos a altura (height) do contêiner interno. Isso "estica" o conteúdo
+        na vertical, tornando a rolagem para baixo mais natural no celular. */
+        #main-container, #humanities-container, #optional-container {
+            width: 280%;  /* Mais largo para espalhar os nós verticalmente */
+            height: 140%; /* Menos alto para compensar a largura */
+        }
+
+        /* 2. Diminuir o Tamanho dos Nós (Matérias) */
+        /* Os nós originais (130x90px) são muito grandes para uma tela de celular.
+        Vamos diminuí-los para que caibam melhor na tela. */
+        .node {
+            width: 110px;
+            height: 75px;
+            font-size: 10px; /* Reduzimos um pouco a fonte para caber no novo tamanho */
+        }
+
+        /* 3. Ajustar o tamanho da fonte do cabeçalho */
+        /* A classe 'text-3xl' será usada para o título principal em telas pequenas,
+        e as outras classes do Tailwind (sm:, md:) cuidarão dos tamanhos maiores. */
+        .font-header-responsive {
+            font-size: 1.875rem; /* Equivalente a text-3xl do Tailwind */
+            line-height: 2.25rem;
+        }
+
+        /* 4. Ajustes finos nas barras de progresso e formulários */
+        /* Em telas muito pequenas, podemos empilhar os formulários para não ficarem espremidos. */
+        #ac-form, #cce-form {
+            grid-column: span 2 / span 2; /* Faz cada formulário ocupar a largura total */
+        }
+    }
+
+    /* ================================================= */
+    /* === ESTILOS PARA DISPOSITIVOS MÓVEIS (FIM) ==== */
+    /* ================================================= */
+</style>
+</head>
+
+<footer class="bg-gray-900 text-center py-6 mt-8 rounded-lg shadow-inner">
+    <div class="max-w-7xl mx-auto px-4">
+        <p class="text-gray-400 mb-3">
+            Desenvolvido com ❤️ por <strong class="font-semibold text-white">Kcaio</strong>
+        </p>
+        
+        <div class="flex justify-center items-center space-x-6 mb-4">
+            <a href="https://www.linkedin.com/in/caio-costa-386011258/" target="_blank" title="LinkedIn" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">
+                <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+            </a>
+            
+            <a href="mailto:caiocosta281214@gmail.com" title="Gmail" class="text-gray-400 hover:text-red-500 transition-colors duration-300">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.75L12 16.625l-6.545-4.875v9.25H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.908 1.528-1.145C21.69 3.28 24 4.434 24 5.457z"/>
+                </svg>
+            </a>
+        </div>
+        
+        <div class="mt-4">
+            <p class="text-gray-400 text-sm">Essa ferramenta foi útil? Considere fazer um Pix!</p>
+            
+            <img src="imagens/PIX.png" alt="QR Code para doação PIX"
+                 class="w-40 h-40 mx-auto my-4 rounded-lg border-2 border-gray-700 shadow-md">
+            
+            <p class="text-amber-400 font-mono bg-gray-800 inline-block px-3 py-1 rounded">
+                Chave: <strong>caiocosta281214@gmail.com</strong>
+            </p>
+        </div>
+        </div>
+</footer>
+
+<body class="bg-gray-800 text-white p-4 sm:p-6 md:p-8">
+
+    <div class="max-w-7xl mx-auto">
+        <header class="text-center mb-6">
+            <h1 class="text-4xl md:text-5xl font-bold font-header text-blue-400">Matriz Curricular só que é uma arvore de habilidades de RPG</h1>
+            <p class="text-gray-300 mt-2">Engenharia Eletrônica - UTFPR (Baseado na Matriz 3)</p>
+        </header>
+
+        <div class="bg-gray-700 p-6 rounded-lg shadow-lg mb-6 space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <div class="flex justify-between mb-1"><span class="text-base font-medium text-gray-200">Progresso do Curso (Obrigatórias)</span><span id="total-progress-text" class="text-sm font-medium text-gray-200">0%</span></div>
+                    <div class="w-full bg-gray-600 rounded-full h-4"><div id="total-progress-bar" class="bg-green-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div></div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-1"><span class="text-base font-medium text-gray-200">Progresso de Período</span><span id="period-progress-text" class="text-sm font-medium text-gray-200">Período 1</span></div>
+                    <div class="w-full bg-gray-600 rounded-full h-4"><div id="period-progress-bar" class="bg-blue-500 h-4 rounded-full transition-all duration-500" style="width: 10%"></div></div>
+                    <p id="pending-hours-text" class="text-xs text-right text-yellow-400 mt-1"></p>
+                </div>
+            </div>
+            <hr class="border-gray-600 my-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                 <div>
+                    <div class="flex justify-between mb-1"><span class="text-base font-medium text-red-300">Optativas e Trilhas</span><span id="optional-progress-text" class="text-sm font-medium text-red-300">0/300h (0.0%)</span></div>
+                    <div class="w-full bg-gray-900 rounded-full h-4"><div id="optional-progress-bar" class="bg-red-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div></div>0
+                </div>
+                <div>
+                    <div class="flex justify-between mb-1"><span class="text-base font-medium text-purple-300">Ciclo de Humanidades</span><span id="humanities-progress-text" class="text-sm font-medium text-purple-300">0/210h (0.0%)</span></div>
+                    <div class="w-full bg-gray-900 rounded-full h-4"><div id="humanities-progress-bar" class="bg-purple-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div></div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-1"><span class="text-base font-medium text-pink-300">Horas Complementares (AC)</span><span id="comp-progress-text" class="text-sm font-medium text-pink-300">0/15h (0.0%)</span></div>
+                    <div class="w-full bg-gray-900 rounded-full h-4 mb-2"><div id="comp-progress-bar" class="bg-pink-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div></div>
+                </div>
+                 <div>
+                    <div class="flex justify-between mb-1"><span class="text-base font-medium text-amber-300">Horas de Extensão (CCE)</span><span id="ext-progress-text" class="text-sm font-medium text-amber-300">0/465h (0.0%)</span></div>
+                    <div class="w-full bg-gray-900 rounded-full h-4 mb-2"><div id="ext-progress-bar" class="bg-amber-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div></div>
+                </div>
+                 <div class="md:col-span-2 grid grid-cols-2 gap-4">
+                     <form id="ac-form" class="flex flex-col gap-2">
+                         <div class="flex gap-2">
+                             <input type="text" id="ac-desc" placeholder="Descrição Ativ. Comp." class="bg-gray-800 text-white rounded px-2 py-1 text-sm w-full">
+                             <input type="number" id="ac-hours" placeholder="Horas" class="bg-gray-800 text-white rounded px-2 py-1 text-sm w-24">
+                             <button type="submit" class="bg-pink-600 hover:bg-pink-700 rounded px-3 py-1 text-sm">Add</button>
+                         </div>
+                         <ul id="ac-list" class="text-sm mt-2 space-y-1 h-20 overflow-y-auto"></ul>
+                     </form>
+                     <form id="cce-form" class="flex flex-col gap-2">
+                         <div class="flex gap-2">
+                             <input type="text" id="cce-desc" placeholder="Descrição Ativ. Extensão" class="bg-gray-800 text-white rounded px-2 py-1 text-sm w-full">
+                             <input type="number" id="cce-hours" placeholder="Horas" class="bg-gray-800 text-white rounded px-2 py-1 text-sm w-24">
+                             <button type="submit" class="bg-amber-600 hover:bg-amber-700 rounded px-3 py-1 text-sm">Add</button>
+                         </div>
+                         <ul id="cce-list" class="text-sm mt-2 space-y-1 h-20 overflow-y-auto"></ul>
+                     </form>
+                 </div>
+            </div>
+        </div>
+        
+        <div class="bg-gray-700 p-4 rounded-lg shadow-lg mb-6 flex justify-center items-center gap-4">
+            <button id="reset-button" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300">Resetar Progresso</button>
+        </div>
+
+        <div class="flex justify-center mb-4 border-b border-gray-600">
+            <button id="tab-main" class="tab-btn active">Obrigatorias</button>
+            <button id="tab-humanities" class="tab-btn">Humanidades</button>
+            <button id="tab-optional" class="tab-btn">Trilhas e Optativas</button>
+        </div>
+
+        <div class="tree-wrapper">
+            <div id="main-container" class="shadow-2xl">
+                <svg id="main-lines" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none;">
+                    <defs>
+                        <marker id="arrow-completed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#16a34a" filter="drop-shadow(0 0 2px #4ade80)"></path>
+                        </marker>
+                        <marker id="arrow-locked" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#4b5563"></path>
+                        </marker>
+                    </defs>
+                </svg>
+            </div>
+
+            <div id="humanities-container" class="shadow-2xl hidden">
+                 <svg id="humanities-lines" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none;">
+                    <defs>
+                        <marker id="h-arrow-completed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#16a34a" filter="drop-shadow(0 0 2px #4ade80)"></path>
+                        </marker>
+                        <marker id="h-arrow-locked" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#4b5563"></path>
+                        </marker>
+                    </defs>
+                </svg>
+            </div>
+
+            <div id="optional-container" class="shadow-2xl hidden">
+                 <svg id="optional-lines" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none;">
+                    <defs>
+                        <marker id="o-arrow-completed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#16a34a" filter="drop-shadow(0 0 2px #4ade80)"></path>
+                        </marker>
+                        <marker id="o-arrow-locked" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#4b5563"></path>
+                        </marker>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div id="prerequisite-modal" class="modal-overlay hidden">
+        <div class="modal-box text-center">
+            <h3 class="text-xl font-bold mb-2 text-yellow-400">Atenção!</h3>
+            <p id="modal-text" class="text-gray-300 mb-6">Esta matéria possui pré-requisitos não concluídos. Deseja quebrar as regras e liberá-la mesmo assim?</p>
+            <div class="flex justify-center gap-4">
+                <button id="cancel-override-btn" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-6 rounded-lg transition-colors">Não</button>
+                <button id="confirm-override-btn" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-lg transition-colors">Sim, quebrar!</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="celebration-modal" class="modal-overlay hidden">
+        <div class="modal-box text-center p-8 border-2 border-amber-400 shadow-2xl shadow-amber-500/20">
+            <h2 class="text-4xl font-bold font-header text-amber-300 mb-4">Parabéns, Engenheiro(a)!</h2>
+            <p class="text-gray-300 mb-8 text-lg">Você conseguiu completar todas as materias da sua grade curricular. Sua jornada na UTFPR termina aqui (ou será que não....?). Celebre esta grande vitória!</p>
+            <button id="close-celebration-btn" class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-8 rounded-lg transition-colors">Fechar</button>
+        </div>
+    </div>
+
+    <audio id="celebration-audio" src="audio/vitoria.mp3" preload="auto" loop></audio>
+
+    <script type="module">
+        // --- CONFIGURATION CONSTANTS ---
+        const TOTAL_COMPLEMENTARY_HOURS = 15;
+        const TOTAL_EXTENSION_HOURS = 465;
+        const TOTAL_HUMANITIES_HOURS = 210;
+        const TOTAL_OPTIONAL_HOURS = 300;
+        const NODE_WIDTH = 130;
+        const NODE_HEIGHT = 90;
+
+// --- DEFINIÇÃO DOS GRUPOS ---
+        const OPTIONAL_GROUPS_CONFIG = {
+            // --- Grupos de Matérias Obrigatórias ---
+            '[1005]': { requiredHours: 90, name: 'Computação' }, 
+            '[1006]': { requiredHours: 165, name: 'Circuitos Elétricos' },
+            '[1007]': { requiredHours: 105, name: 'Eletromagnetismo' },
+            '[1009]': { requiredHours: 120, name: 'Instrumentação' },
+            '[1010]': { requiredHours: 255, name: 'Física' }, 
+            '[1011]': { requiredHours: 105, name: 'Mecânica Dos Sólidos' },
+            '[1012]': { requiredHours: 405, name: 'Matemática' }, 
+            '[1014]': { requiredHours: 30, name: 'Ciências Do Ambiente' },
+            '[1015]': { requiredHours: 120, name: 'Administração E Economia' },
+            '[1017]': { requiredHours: 240, name: 'Controle E Automação' }, 
+            '[1018]': { requiredHours: 315, name: 'Eletrônica Digital' }, 
+            '[1020]': { requiredHours: 135, name: 'Prática De Engenharia' },
+            '[1021]': { requiredHours: 75, name: 'Opção De Idioma: Circuitos Digitais' },
+            '[1022]': { requiredHours: 60, name: 'Opção De Idioma: Microcontroladores' },
+            '[1023]': { requiredHours: 60, name: 'Opção De Idioma: Arq E Org De Computador' },
+            '[1024]': { requiredHours: 60, name: 'Opção De Idioma: Sistemas Operacionais' }, 
+            '[1025]': { requiredHours: 60, name: 'Opção De Idioma: Sistemas Embarcados' }, 
+            '[1026]': { requiredHours: 60, name: 'Opção De Idioma: Pds' }, 
+            '[1027]': { requiredHours: 60, name: 'Opção De Idioma: Modelagem E Simulação' },
+            '[1028]': { requiredHours: 60, name: 'Opção De Idioma: Controle 1' }, 
+            '[1029]': { requiredHours: 60, name: 'Opção De Idioma: Controle 2' }, 
+            '[1030]': { requiredHours: 60, name: 'Opção De Idioma: Automação' }, 
+            '[1031]': { requiredHours: 75, name: 'Opção De Idioma: Eletrônica De Potência' },
+            '[1032]': { requiredHours: 60, name: 'Opção De Idioma: Princ De Comunicações' }, 
+            '[1033]': { requiredHours: 75, name: 'Opção De Idioma: Comunicações Digitals' }, 
+            '[1040]': { requiredHours: 240, name: 'Disciplinas Clássicas Eletron Analógica' },
+            '[1041]': { requiredHours: 90, name: 'Disciplinas De Matemática Aplicada' },
+
+            // --- Grupos de Matérias de Humanidades ---
+            '[1013]': { requiredHours: 210, name: 'Ciclo De Humanidades' },
+            '[1042]': { requiredHours: 210, name: 'Ciências Sociais E Aplicadas' },
+            '[1043]': { requiredHours: 210, name: 'Ciências Humanas' }, 
+            '[1044]': { requiredHours: 210, name: 'Linguística, Letras E Artes' },
+            '[1045]': { requiredHours: 210, name: 'Saúde' }, 
+            '[1046]': { requiredHours: 210, name: 'Disciplinas Convalidadas De Humanas' }, 
+
+            // --- Grupos de Trilhas e Optativas ---
+            '[1034]': { requiredHours: 360, name: 'Trilhas De Aprofundamento' }, 
+            '[1035]': { requiredHours: 360, name: 'Telecomunicações' }, 
+            '[1036]': { requiredHours: 270, name: 'Engenharia Biomédica' },
+            '[1037]': { requiredHours: 315, name: 'Pesquisa Científica' }, 
+            '[1038]': { requiredHours: 240, name: 'Proc De Sinais, Imagens E Padrões' }, 
+            '[1039]': { requiredHours: 360, name: 'Trilha Eletiva' }, 
+            '[1047]': { requiredHours: 330, name: 'Optativas' }, 
+            '[1111]': { requiredHours: 285, name: 'Computação' } 
+        };     
+// ----------------------------------------------------------------
+
+        // --- ESTRUTURA DE DADOS (Árvore Principal - Obrigatórias) ---
+        const allNodesData = [
+            // --- INÍCIO DO CÓDIGO PARA allNodesData ---
+            // Período 1
+            { id: 'ELB11', name: 'ALGORITMOS DE PROGRAMAÇÃO', dependencies: [], period: 1, chs: 3, cht: 45, x: 5.5, y: 2, type: 'subject' },
+            { id: 'ELB13', name: 'DESENHO TÉCNICO', dependencies: [], period: 1, chs: 2, cht: 30, x: 20, y: 2, type: 'subject' },
+            { id: 'ELE11', name: 'ELETRICIDADE E ELETRÔNICA NA PRÁTICA', dependencies: [], period: 1, chs: 4, cht: 60, x: 35, y: 2, type: 'subject' },
+            { id: 'ELE12', name: 'INTRODUÇÃO À ENGENHARIA ELETRÔNICA', dependencies: [], period: 1, chs: 3, cht: 45, x: 50, y: 2, type: 'subject' },
+            { id: 'ELE13', name: 'REDES', dependencies: [], period: 1, chs: 3, cht: 45, x: 65, y: 2, type: 'subject' },
+            { id: 'ELM01', name: 'PRÉ-CÁLCULO', dependencies: [], period: 1, chs: 4, cht: 60, x: 80, y: 2, type: 'subject' },
+            { id: 'QB70I', name: 'QUÍMICA', dependencies: [], period: 1, chs: 6, cht: 90, x: 94.5, y: 2, type: 'subject' },
+
+            // Período 2
+            { id: 'ELB21', name: 'PROGRAMAÇÃO DE COMPUTADOR', dependencies: ['ELB11'], period: 2, chs: 4, cht: 60, x: 5.5, y: 13, type: 'subject', groupId: '[1005]' },
+            { id: 'ELP33', name: 'ESTRUTURA DE DADOS E ALGORITMOS', dependencies: ['ELB21'], period: 2, chs: 2, cht: 30, x: 18.21, y: 13, type: 'subject', groupId: '[1005]' },
+            { id: 'MA71Y', name: 'GEOMETRIA ANALÍTICA E ALGEBRA LINEAR', dependencies: ['ELM01'], period: 2, chs: 6, cht: 90, x: 30.93, y: 13, type: 'subject', groupId: '[1012]' },
+            { id: 'MA71Z', name: 'CALCULO DIFERENCIAL E INTEGRAL 1', dependencies: ['ELM01'], period: 2, chs: 6, cht: 90, x: 43.64, y: 13, type: 'subject', groupId: '[1012]' },
+            { id: 'ELP21', name: 'CIRCUITOS ELÉTRICOS 1', dependencies: ['ELE11', 'ELE12', 'MA71Z'], period: 2, chs: 5, cht: 75, x: 56.36, y: 13, type: 'subject', groupId: '[1006]' },
+            { id: 'MA72H', name: 'CÁLCULO DIFERENCIAL E INTEGRAL 2', dependencies: ['MA71Z'], period: 2, chs: 4, cht: 60, x: 69.07, y: 13, type: 'subject', groupId: '[1012]' },
+            { id: 'MA73H', name: 'CÁLCULO DIFERENCIAL E INTEGRAL 3', dependencies: ['MA72H'], period: 2, chs: 4, cht: 60, x: 81.79, y: 13, type: 'subject', groupId: '[1012]'},
+            { id: 'QB70J', name: 'CIÊNCIAS DO AMBIENTE', dependencies: [], period: 2, chs: 2, cht: 30, x: 94.5, y: 13, type: 'subject', groupId: '[1014]' },
+            { id: 'EL823', name: 'DESENHO TÉCNICO APLICADO', dependencies: ['ELB13'], period: 2, chs: 2, cht: 30, x: 12, y: 18, type: 'subject' },
+            { id: 'ELB31', name: 'PROBABILIDADE E ESTATÍSTICA APLICADAS', dependencies: ['MA71Z'], period: 2, chs: 3, cht: 45, x: 24, y: 18, type: 'subject', groupId: '[1012]' },
+            { id: 'MA70Z', name: 'EQUAÇÕES DIFERENCIAIS ORDINARIAS', dependencies: ['MA72H'], period: 2, chs: 4, cht: 60, x: 36, y: 18, type: 'subject', groupId: '[1012]' },
+            { id: 'QB70K', name: 'ECOLOGIA', dependencies: [], period: 2, chs: 2, cht: 30, x: 48, y: 18, type: 'subject', groupId: '[1014]' },
+            { id: 'QB70L', name: 'EDUCAÇÃO AMBIENTAL', dependencies: [], period: 2, chs: 2, cht: 30, x: 60, y: 18, type: 'subject', groupId: '[1014]' },
+            { id: 'QB70M', name: 'ENERGIA E MEIO AMBIENTE', dependencies: [], period: 2, chs: 2, cht: 30, x: 72, y: 18, type: 'subject', groupId: '[1014]' },
+            { id: 'QB70N', name: 'DESENVOLVIMENTO SUSTENTAVEL', dependencies: [], period: 2, chs: 2, cht: 30, x: 84, y: 18, type: 'subject', groupId: '[1014]' },
+
+
+            // Período 3
+            { id: 'FI71Z', name: 'FÍSICA TEÓRICA 1', dependencies: ['MA71Z'], period: 3, chs: 4, cht: 60, x: 5.5, y: 23, type: 'subject', groupId: '[1010]' },
+            { id: 'FI71Y', name: 'FISICA EXPERIMENTAL 1', dependencies: ['FI71Z'], period: 3, chs: 2, cht: 30, x: 20, y: 23, type: 'subject', groupId: '[1010]' },
+            { id: 'ELB52', name: 'ELETROMAGNETISMO 1', dependencies: ['MA71Z'], period: 3, chs: 4, cht: 60, x: 35, y: 23, type: 'subject', groupId: '[1010]' },
+            { id: 'ELP34', name: 'MEDIDAS ELÉTRICAS', dependencies: ['ELE11'], period: 3, chs: 4, cht: 60, x: 50, y: 23, type: 'subject', groupId: '[1009]' },
+            { id: 'FI72Z', name: 'FÍSICA TEÓRICA 2', dependencies: ['FI71Z'], period: 3, chs: 4, cht: 60, x: 65, y: 23, type: 'subject', groupId: '[1010]' },
+            { id: 'ELE41', name: 'OFICINA DE INTEGRAÇÃO: ELETRICIDADE, ELETRONICA E COMPUTAÇÃO NA PRATICA', dependencies: ['ELB21', 'ELE11'], period: 3, chs: 3, cht: 45, x: 80, y: 23, type: 'subject', groupId: '[1020]' },
+            { id: 'ELP63', name: 'INSTRUMENTAÇÃO INDUSTRIAL', dependencies: [], period: 3, chs: 4, cht: 60, x: 94.5, y: 23, type: 'subject', groupId: '[1009]' },
+            { id: 'ELB53', name: 'FENÔMENOS DE TRANSPORTE', dependencies: ['FI72Z'], period: 3, chs: 3, cht: 45, x: 42, y: 28, type: 'subject', groupId: '[1010]' },
+            { id: 'ELE64', name: 'OFICINA DE INTEGRAÇÃO 2', dependencies: ['ELE41'], period: 3, chs: 3, cht: 45, x: 57, y: 28, type: 'subject', groupId: '[1020]' },
+
+
+            // Período 4
+            { id: 'ELP41', name: 'ELETRÔNICA ANALOGICA 1', dependencies: ['ELP21'], period: 4, chs: 4, cht: 60, x: 5.5, y: 34, type: 'subject', groupId: '[1040]' },
+            { id: 'ELP51', name: 'ELETRONICA ANALÓGICA 2', dependencies: ['ELP41'], period: 4, chs: 4, cht: 60, x: 27.75, y: 34, type: 'subject', groupId: '[1040]' },
+            { id: 'ELP61', name: 'ELETRONICA ANALOGICA 3', dependencies: ['ELP51'], period: 4, chs: 4, cht: 60, x: 50, y: 34, type: 'subject', groupId: '[1040]' },
+            { id: 'ELP71', name: 'ELETRÔNICA ANALOGICA 4', dependencies: ['ELP61'], period: 4, chs: 4, cht: 60, x: 72.25, y: 34, type: 'subject', groupId: '[1040]' },
+            { id: 'ELP32', name: 'CIRCUITOS ELETRICOS 2', dependencies: ['ELP21'], period: 2, chs: 6, cht: 90, x: 94.5, y: 34, type: 'subject', groupId: '[1006]'},
+
+            // Período 5
+            { id: 'ELB51', name: 'MECÂNICA GERAL', dependencies: ['FI71Z'], period: 5, chs: 4, cht: 60, x: 5.5, y: 45, type: 'subject', groupId: '[1011]' },
+            { id: 'ELB61', name: 'PRINCÍPIOS DE RESISTÊNCIA DOS MATERIAIS', dependencies: ['ELB51'], period: 5, chs: 3, cht: 45, x: 23.3, y: 45, type: 'subject', groupId: '[1011]' },
+            { id: 'ELB66', name: 'SINAIS E SISTEMAS', dependencies: ['MA73H'], period: 5, chs: 6, cht: 90, x: 41.1, y: 45, type: 'subject', groupId: '[1041]' },
+            { id: 'ELF41', name: 'CIRCUITOS DIGITAIS', dependencies: ['ELP41'], period: 5, chs: 5, cht: 75, x: 58.9, y: 45, type: 'subject', alternative: { id: 'ELW41', name: 'DIGITAL CIRCUITS' }, groupId: '[1021]' },
+            { id: 'ELF51', name: 'PROCESSAMENTO DIGITAL DE SINAIS', dependencies: ['ELB66'], period: 5, chs: 4, cht: 60, x: 76.7, y: 45, type: 'subject', alternative: { id: 'ELW51', name: 'DIGITAL SIGNAL PROCESSING' }, groupId: '[1026]' },
+            { id: 'ELP64', name: 'ELETROMAGNETISMO 2: LINHAS E ANTENAS', dependencies: ['ELB52'], period: 5, chs: 4, cht: 60, x: 94.5, y: 45, type: 'subject', groupId: '[1007]' },
+            { id: 'ELP62', name: 'MÁQUINAS ELÉTRICAS', dependencies: ['ELB52'], period: 5, chs: 3, cht: 45, x: 50, y: 50, type: 'subject', groupId: '[1007]' },
+
+            
+            // Período 6
+            { id: 'ELF52', name: 'SISTEMAS MICROCONTROLADOS', dependencies: ['ELB21', 'ELF41'], period: 6, chs: 4, cht: 60, x: 50, y: 55, type: 'subject', alternative: { id: 'ELW52', name: 'MICROCONTROLLER PROGRAMMING' }, groupId: '[1022]' },
+
+            // Período 7
+            { id: 'ELF61', name: 'ARQUITETURA E ORGANIZAÇÃO DE COMPUTADORES', dependencies: ['ELF52'], period: 7, chs: 4, cht: 60, x: 5.5, y: 66, type: 'subject', alternative: { id: 'ELW61', name: 'COMPUTER ORGANIZATION AND ARCHITECTURE' }, groupId: '[1023]' },
+            { id: 'ELF62', name: 'CONTROLE 1', dependencies: ['ELB66'], period: 7, chs: 4, cht: 60, x: 20, y: 66, type: 'subject', alternative: { id: 'ELW62', name: 'CONTROL SYSTEMS 1' }, groupId: '[1028]' },
+            { id: 'ELF66', name: 'SISTEMAS OPERACIONAIS', dependencies: ['ELF52'], period: 7, chs: 4, cht: 60, x: 35, y: 66, type: 'subject', alternative: { id: 'ELW66', name: 'OPERATING SYSTEMS' }, groupId: '[1024]' },
+            { id: 'ELF75', name: 'MODELAGEM E SIMULAÇÃO', dependencies: ['ELF62'], period: 7, chs: 4, cht: 60, x: 50, y: 66, type: 'subject', alternative: { id: 'ELW75', name: 'MODELING AND SIMULATION' }, groupId: '[1027]' },
+            { id: 'ELP66', name: 'PLANEJAMENTO E PROJETO DE CARREIRA DO ENGENHEIRO ELETRÔNICO', dependencies: ['Periodo:6'], period: 7, chs: 2, cht: 30, x: 65, y: 66, type: 'subject' },
+            { id: 'ELS01', name: 'ESTAGIO CURRICULAR OBRIGATÓRIO', dependencies: [], period: 7, chs: 0, cht: 400, x: 80, y: 66, type: 'subject' },
+            { id: 'ELE91', name: 'TRABALHO DE CONCLUSÃO DE CURSO 1', dependencies: ['Periodo:7'], period: 3, chs: 3, cht: 45, x: 94.5, y: 66, type: 'subject', groupId: '[1020]'},
+            { id: 'ELTE13', name: 'VEÍCULOS ELÉTRICOS', dependencies: ['ELP61'], period: 7, chs: 4, cht: 60, x: 50, y: 71, type: 'subject', groupId: '[1027]' },
+
+            
+            // Período 8
+            { id: 'ELF72', name: 'CONTROLE 2', dependencies: ['ELF62'], period: 8, chs: 4, cht: 60, x: 5.5, y: 77, type: 'subject', alternative: { id: 'ELW72', name: 'CONTROL SYSTEMS 2' }, groupId: '[1029]' },
+            { id: 'ELF74', name: 'SISTEMAS EMBARCADOS', dependencies: ['ELF61', 'ELF66'], period: 8, chs: 4, cht: 60, x: 35.17, y: 77, type: 'subject', alternative: { id: 'ELW74', name: 'EMBEDDED SYSTEMS' }, groupId: '[1025]' },
+            { id: 'ELF84', name: 'ELETRÔNICA DE POTÊNCIA', dependencies: ['ELP61'], period: 8, chs: 5, cht: 75, x: 64.83, y: 77, type: 'subject', alternative: { id: 'ELW84', name: 'POWER ELECTRONICS' }, groupId: '[1031]' },
+            { id: 'ELP73', name: 'PRINCIPIOS DE COMUNICAÇÕES', dependencies: ['ELB66', 'ELP71'], period: 8, chs: 4, cht: 60, x: 94.5, y: 77, type: 'subject', alternative: { id: 'ELW71', name: 'COMMUNICATION SYSTEMS' }, groupId: '[1032]' },
+
+            // Período 9
+            { id: 'ELB91', name: 'ECONOMIA APLICADA A ENGENHARIA', dependencies: [], period: 9, chs: 4, cht: 60, x: 5.5, y: 87, type: 'subject', groupId: '[1015]' },
+            { id: 'ELB92', name: 'INTRODUÇÃO A ADMINISTRAÇÃO E GERENCIAMENTO DE PROJETOS', dependencies: [], period: 9, chs: 4, cht: 60, x: 23.3, y: 87, type: 'subject', groupId: '[1015]' },
+            { id: 'ELB93', name: 'ENGENHARIA DE PRODUTO', dependencies: [], period: 9, chs: 4, cht: 60, x: 41.1, y: 87, type: 'subject', groupId: '[1015]' },
+            { id: 'ELF73', name: 'COMUNICAÇÕES DIGITAIS', dependencies: ['ELP73'], period: 9, chs: 5, cht: 75, x: 58.9, y: 87, type: 'subject', alternative: { id: 'ELW73', name: 'DIGITAL COMMUNICATIONS' }, groupId: '[1033]' },
+            { id: 'ELF81', name: 'CONTROLE A EVENTOS DISCRETOS', dependencies: [], period: 9, chs: 4, cht: 60, x: 76.7, y: 87, type: 'subject', alternative: { id: 'ELW81', name: 'CONTROL OF DISCRETE EVENT SYSTEMS' }, groupId: '[1030]' },
+            { id: 'ELO91', name: 'ETICA, PROFISSÃO E CIDADANIA', dependencies: [], period: 9, chs: 2, cht: 30, x: 94.5, y: 87, type: 'subject' },
+            { id: 'GEE7A1', name: 'FUNDAMENTOS DE ADMINISTRAÇÃO', dependencies: [], period: 9, chs: 3, cht: 45, x: 6, y: 92, type: 'subject', groupId: '[1015]' },
+            { id: 'GEE7E3', name: 'FUNDAMENTOS DE ECONOMIA', dependencies: [], period: 9, chs: 2, cht: 30, x: 18, y: 92, type: 'subject', groupId: '[1015]' },
+            { id: 'GEE7E5', name: 'FUND. DE ENG. ECONÔMICA E ANÁLISE DE VIABILIDADE', dependencies: [], period: 9, chs: 4, cht: 60, x: 31, y: 92, type: 'subject', groupId: '[1015]' },
+            { id: 'GEE7F1', name: 'FUNDAMENTOS DE FINANÇAS', dependencies: [], period: 9, chs: 4, cht: 60, x: 44, y: 92, type: 'subject', groupId: '[1015]' },
+            { id: 'GEE7G1', name: 'FUNDAMENTOS DE GESTÃO DE PESSOAS', dependencies: [], period: 9, chs: 2, cht: 45, x: 57, y: 92, type: 'subject', groupId: '[1015]' },
+            { id: 'GEE7G3', name: 'FUNDAMENTOS DE GESTÃO DA PRODUÇÃO', dependencies: [], period: 9, chs: 3, cht: 45, x: 70, y: 92, type: 'subject', groupId: '[1015]' },
+            { id: 'GEE7G5', name: 'FUNDAMENTOS DE GESTÃO DE PROJETO', dependencies: [], period: 9, chs: 3, cht: 45, x: 83, y: 92, type: 'subject', groupId: '[1015]' },
+            { id: 'GEE7M1', name: 'FUNDAMENTOS DE MARKETING', dependencies: [], period: 9, chs: 3, cht: 45, x: 94, y: 92, type: 'subject', groupId: '[1015]' },
+            
+            // Período 10
+            { id: 'ELE92', name: 'TRABALHO DE CONCLUSÃO DE CURSO 2', dependencies: ['ELE91'], period: 10, chs: 0, cht: 15, x: 41.1, y: 98, type: 'subject' },
+            { id: 'ELO92', name: 'EMPREENDEDORISMO', dependencies: [], period: 10, chs: 2, cht: 30, x: 58.9, y: 98, type: 'subject' }
+            // --- FIM DO CÓDIGO PARA allNodesData ---
+        ];
+
+        // --- ESTRUTURA DE DADOS (Árvore de Humanidades) ---
+        const allHumanitiesData = [
+            // --- INÍCIO DO CÓDIGO PARA allHumanitiesData ---
+            // Grupo [1044] - Linguística, Letras e Artes
+            { id: 'CAART02', name: 'PRÁTICA MUSICAL E INTERAÇÕES HUMANAS: APRENDIZADO COLETIVO DE VIOLINO 1', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 5.5, y: 2 },
+            { id: 'CAART03', name: 'PRÁTICA MUSICAL E INTERAÇÕES HUMANAS: APRENDIZADO COLETIVO DE VIOLINO 2', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 35.17, y: 2 },
+            { id: 'CAART04', name: 'PRÁTICA ARTÍSTICA MUSICAL: GRUPOS INSTRUMENTAIS 1', dependencies: [], period: 2, cht: 90, type: 'humanities', x: 64.83, y: 2 },
+            { id: 'CAART05', name: 'PRÁTICA ARTÍSTICA MUSICAL: GRUPOS INSTRUMENTAIS 2', dependencies: [], period: 2, cht: 90, type: 'humanities', x: 94.5, y: 2 },
+            { id: 'CAART06', name: 'PRÁTICA ARTÍSTICA MUSICAL: GRUPOS INSTRUMENTAIS 3', dependencies: [], period: 2, cht: 90, type: 'humanities', x: 5.5, y: 10.73 },
+            { id: 'CAART07', name: 'PRÁTICA ARTÍSTICA MUSICAL: GRUPOS INSTRUMENTAIS 4', dependencies: [], period: 2, cht: 90, type: 'humanities', x: 35.17, y: 10.73 },
+            { id: 'CL70B', name: 'FRANCES PARA FINS ACADÊMICOS', dependencies: [], period: 2, cht: 120, type: 'humanities', x: 64.83, y: 10.73 },
+            { id: 'CL70C', name: 'FRANCES PARA FINS ACADÊMICOS 2', dependencies: ['CL70B'], period: 2, cht: 60, type: 'humanities', x: 94.5, y: 10.73 },
+            { id: 'ED70V', name: 'LIBRAS A', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 5.5, y: 19.45 },
+            { id: 'ELH02', name: 'PRATICA DE GRUPO E INTERAÇÕES HUMANAS COM A MÚSICA', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 35.17, y: 19.45 },
+            { id: 'ELH11', name: 'ESPANHOL PARA ENGENHARIAS I', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 64.83, y: 19.45 },
+            { id: 'ELH12', name: 'ESPANHOL PARA ENGENHARIAS II', dependencies: ['ELH11'], period: 2, cht: 45, type: 'humanities', x: 94.5, y: 19.45 },
+            { id: 'ED70U', name: 'LIBRAS B', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 20, y: 19.45 },
+            { id: 'ELH13', name: 'PRÁTICA DE ESCRITA PARA ENGENHARIAS', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 5.5, y: 28.18 },
+            { id: 'EL84H', name: 'TECNICAS DE PESQUISA ACADÊMICA', dependencies: [], period: 2, cht: 35, type: 'humanities', x: 35.17, y: 28.18 },
+            { id: 'LEM701', name: 'FRANCÊS PARA FINS ACADÉMICOS DD 1', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 64.83, y: 28.18 },
+            { id: 'LEM702', name: 'FRANCES PARA FINS ACADÊMICOS DD 2', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 94.5, y: 28.18 },
+            { id: 'LEM703', name: 'FRANCES PARA FINS ACADÊMICOS DD 3', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 5.5, y: 36.91 },
+
+            // Grupo [1042] - Ciências Sociais e Aplicadas
+            { id: 'ELH03', name: 'DESIGN THINKING PARA DESENVOLVIMENTO DE NOVOS PRODUTOS', dependencies: ['Periodo:5'], period: 2, cht: 90, type: 'humanities', x: 35.17, y: 36.91 },
+            { id: 'ELH04', name: 'INOVAÇÃO TECNOLÓGICA E FINANCIAMENTO', dependencies: ['Periodo:5'], period: 2, cht: 60, type: 'humanities', x: 64.83, y: 36.91 },
+            { id: 'ELH05', name: 'NOÇÕES JURÍDICAS PARA EMPREENDEDORES', dependencies: ['Periodo:5'], period: 2, cht: 60, type: 'humanities', x: 94.5, y: 36.91 },
+            { id: 'ELH06', name: 'METODOLOGIAS ATIVAS PARA A EDUCAÇÃO EM ENGENHARIA', dependencies: ['Periodo:5'], period: 2, cht: 30, type: 'humanities', x: 5.5, y: 45.64 },
+            { id: 'GE70Z', name: 'INTRODUÇÃO A ADMINISTRAÇÃO', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 35.17, y: 45.64 },
+            { id: 'GE71Z', name: 'VIABILIDADE ECONOMICA DE PROJETOS', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 64.83, y: 45.64 },
+
+            // Grupo [1043] - Ciências Humanas
+            { id: 'ES7AB', name: 'TÓPICOS EM CIÊNCIAS HUMANAS 2', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 94.5, y: 45.64 },
+            { id: 'ES7AH', name: 'TÓPICOS EM CIÊNCIAS HUMANAS 8', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 5.5, y: 54.36 },
+            { id: 'ESZAI', name: 'TÓPICOS EM CIÊNCIAS HUMANAS 9', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 35.17, y: 54.36 },
+            { id: 'ES7AJ', name: 'TÓPICOS EM CIÊNCIAS HUMANAS 10', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 64.83, y: 54.36 },
+            { id: 'ES7AK', name: 'TÓPICOS EM CIÊNCIAS HUMANAS 11', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 94.5, y: 54.36 },
+            { id: 'ES72A', name: 'RELAÇÕES HUMANAS E LIDERANÇA', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 5.5, y: 63.09 },
+            { id: 'ES72B', name: 'TECNOLOGIA E SOCIEDADE', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 35.17, y: 63.09 },
+            { id: 'ES72C', name: 'PSICOLOGIA APLICADA AO TRABALHO', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 64.83, y: 63.09 },
+            { id: 'ES72D', name: 'SOCIEDADE POLÍTICA NO BRASIL', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 94.5, y: 63.09 },
+            { id: 'ES72E', name: 'A PRESENCA AFRICANA NO BRASIL', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 5.5, y: 71.82 },
+            { id: 'ES72F', name: 'FILOSOFIA DA CIENCIA E DA TECNOLOGIA', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 35.17, y: 71.82 },
+            { id: 'ES72G', name: 'HISTORIA DA TÉCNICA E DA TECNOLOGIA', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 64.83, y: 71.82 },
+            { id: 'FCH7FC', name: 'TEORIA DAS CIÊNCIAS HUMANAS', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 94.5, y: 71.82 },
+            { id: 'FCH7GA', name: 'METROPOLIZAÇÃO CONTEMPORANEA', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 5.5, y: 80.55 },
+            { id: 'FCH7HB', name: 'HISTORIA GERAL DA ECONOMIA', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 35.17, y: 80.55 },
+            { id: 'FCH7HC', name: 'CAPITALISMO CONTEMPORANEO E ECONOMIA POLITICA', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 64.83, y: 80.55 },
+            { id: 'FCH7SC', name: 'TECNOLOGIA, TRABALHO E SAÚDE', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 94.5, y: 80.55 },
+            { id: 'FCH7XF', name: 'DIMENSÃO AMBIENTAL NA GESTÃO URBANA', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 5.5, y: 89.27 },
+            { id: 'FCH7XG', name: 'TECNOPOLÍTICAS DA SOCIEDADE CONTEMPORANEA', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 35.17, y: 89.27 },
+            
+            // Grupo [1045] - Saúde
+            { id: 'ELH01', name: 'FUNDAMENTOS DE PRIMEIROS SOCORROS', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 64.83, y: 89.27 },
+
+            // Grupo [1046] - Disciplinas Convalidadas de Humanas
+            { id: 'ELH07', name: 'HUMANIDADES 1', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 94.5, y: 89.27 },
+            { id: 'ELH08', name: 'HUMANIDADES 2', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 5.5, y: 98 },
+            { id: 'ELH09', name: 'HUMANIDADES 3', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 35.17, y: 98 },
+            { id: 'ELH10', name: 'HUMANIDADES 4', dependencies: [], period: 2, cht: 75, type: 'humanities', x: 64.83, y: 98 },
+            // --- FIM DO CÓDIGO PARA allHumanitiesData ---
+        ];
+
+        // --- ESTRUTURA DE DADOS (Trilhas e Optativas) ---
+        const allOptionalNodesData = [
+            // --- INÍCIO DO CÓDIGO REAJUSTADO (Y <= 98) ---
+            
+            // Trilha: Telecomunicações (y: 8)/
+            { id: 'ELTB1', name: 'SISTEMAS DE COMUNICAÇÃO', dependencies: ['ELP66'], period: 8, cht: 60, x: 8, y: 8, type: 'optional', groupId: '[1035]' },
+            { id: 'ELTB2', name: 'REDES AVANÇADAS', dependencies: ['ELP66'], period: 8, cht: 60, x: 23.3, y: 8, type: 'optional', groupId: '[1035]' },
+            { id: 'ELTB3', name: 'COMUNICAÇÕES SEM FIO', dependencies: ['ELB31', 'ELB66', 'ELF73', 'ELP66'], period: 8, cht: 60, x: 41.1, y: 8, type: 'optional', groupId: '[1035]' },
+            { id: 'ELTB4', name: 'COMUNICAÇÕES OPTICAS', dependencies: ['ELP64', 'ELP66'], period: 8, cht: 60, x: 58.9, y: 8, type: 'optional', groupId: '[1035]' },
+            { id: 'ELTB5', name: 'ELETROMAGNETISMO APLICADO', dependencies: ['ELB66', 'ELP64', 'ELP71'], period: 8, cht: 60, x: 76.7, y: 8, type: 'optional', groupId: '[1035]' },
+            { id: 'ELTB6', name: 'TOPICOS AVANÇADOS EM COMUNICAÇÕES', dependencies: ['ELP66'], period: 8, cht: 60, x: 94.5, y: 8, type: 'optional', groupId: '[1035]' },
+
+            // Trilha: Engenharia Biomédica (y: 20)
+            { id: 'ELTA1', name: 'PRINCIPIOS DE ENGENHARIA BIOMÉDICA', dependencies: ['ELP66'], period: 8, cht: 30, x: 8, y: 20, type: 'optional', groupId: '[1036]' },
+            { id: 'ELTA2', name: 'BIOENGENHARIA', dependencies: ['ELP66'], period: 8, cht: 60, x: 27.75, y: 20, type: 'optional', groupId: '[1036]' },
+            { id: 'ELTA3', name: 'ENGENHARIA MÉDICA', dependencies: ['ELP66'], period: 8, cht: 60, x: 50, y: 20, type: 'optional', groupId: '[1036]' },
+            { id: 'ELTA4', name: 'ENGENHARIA CLINICA', dependencies: ['ELP66'], period: 8, cht: 60, x: 72.25, y: 20, type: 'optional', groupId: '[1036]' },
+            { id: 'ELTA5', name: 'FISIOLOGIA QUANTITATIVA PARA ENGENHARIA', dependencies: ['ELP66'], period: 8, cht: 60, x: 94.5, y: 20, type: 'optional', groupId: '[1036]' },
+            
+            // Trilha: Pesquisa Científica (y: 32)
+            { id: 'ELTC1', name: 'METODOLOGIA DA PESQUISA CIENTIFICA E TECNOLÓGICA', dependencies: ['ELP66'], period: 8, cht: 60, x: 8, y: 32, type: 'optional', groupId: '[1037]' },
+            { id: 'ELTC2', name: 'AMOSTRAGEM E PLANEJAMENTO DE EXPERIMENTOS', dependencies: ['ELP66'], period: 8, cht: 60, x: 27.75, y: 32, type: 'optional', groupId: '[1037]' },
+            { id: 'ELTC3', name: 'ANÁLISE DE SOBREVIVÊNCIA E CONFIABILIDADE', dependencies: ['ELP66'], period: 8, cht: 45, x: 50, y: 32, type: 'optional', groupId: '[1037]' },
+            { id: 'ELTC4', name: 'ANÁLISE ESTATISTICA DE DADOS', dependencies: ['ELP66'], period: 8, cht: 60, x: 72.25, y: 32, type: 'optional', groupId: '[1037]' },
+            { id: 'ELTC5', name: 'INFERÊNCIA ESTATÍSTICA', dependencies: ['ELP66'], period: 8, cht: 60, x: 94.5, y: 32, type: 'optional', groupId: '[1037]' },
+
+            // Trilha: Processamento de Sinais, Imagens e Padrões (y: 44)
+            { id: 'ELTD1', name: 'INTRODUÇÃO A MODELAGEM E APRENDIZADO', dependencies: ['ELB31', 'ELP66', 'MA71Y'], period: 8, cht: 60, x: 8, y: 44, type: 'optional', groupId: '[1038]' },
+            { id: 'ELTD2', name: 'PROCESSAMENTO DE IMAGENS', dependencies: ['ELP66'], period: 8, cht: 45, x: 27.75, y: 44, type: 'optional', groupId: '[1038]' },
+            { id: 'ELTD3', name: 'PROCESSAMENTO DIGITAL DE SINAIS APLICADO', dependencies: ['ELP66', 'ELTD1', 'ELTD2'], period: 8, cht: 45, x: 50, y: 44, type: 'optional', groupId: '[1038]' },
+            { id: 'ELTD4', name: 'RECONHECIMENTO DE PADRÕES E APRENDIZADO DE MÁQUINA', dependencies: ['ELP66', 'ELTD1'], period: 8, cht: 45, x: 72.25, y: 44, type: 'optional', groupId: '[1038]' },
+            { id: 'ELTD5', name: 'VISÃO COMPUTACIONAL', dependencies: ['ELP66'], period: 8, cht: 45, x: 94.5, y: 44, type: 'optional', groupId: '[1038]' },
+
+            // Trilha Eletiva e Optativas (agrupadas a partir de y: 58)
+            // Linha 1 de optativas
+            { id: 'ELTE01', name: 'ELETIVA', dependencies: [], period: 8, cht: 360, x: 8, y: 58, type: 'optional', groupId: '[1039]' },
+            { id: 'CSB30', name: 'INTRODUÇÃO A BANCO DE DADOS', dependencies: [], period: 8, cht: 60, x: 18.2, y: 58, type: 'optional', groupId: '[1047]' },
+            { id: 'CSE20', name: 'TÉCNICAS DE PROGRAMAÇÃO', dependencies: [], period: 8, cht: 60, x: 31, y: 58, type: 'optional', groupId: '[1047]' },
+            { id: 'CSM43', name: 'PROGRAMAÇÃO PARA DISPOSITIVOS MÓVEIS E SEM FIO', dependencies: [], period: 8, cht: 60, x: 43.8, y: 58, type: 'optional', groupId: '[1047]' },
+            { id: 'ELSC01', name: 'SMART CHALLENGES', dependencies: [], period: 8, cht: 120, x: 56.6, y: 58, type: 'optional', groupId: '[1047]' },
+            { id: 'ELSP01', name: 'SMART PROJECTS', dependencies: ['Periodo:5'], period: 8, cht: 120, x: 69.4, y: 58, type: 'optional', groupId: '[1047]' },
+            { id: 'ELTE1', name: 'ENGENHARIA DE SISTEMAS', dependencies: ['ELP66'], period: 8, cht: 45, x: 82.2, y: 58, type: 'optional', groupId: '[1047]' },
+            { id: 'ELTE10', name: 'IDENTIFICAÇÃO DE SISTEMAS', dependencies: [], period: 8, cht: 60, x: 94.5, y: 58, type: 'optional', groupId: '[1047]' },
+            
+            // Linha 2 de optativas
+            { id: 'ELTE2', name: 'PROGRAMAÇÃO MATEMÁTICA', dependencies: ['ELP66'], period: 8, cht: 60, x: 8, y: 68, type: 'optional', groupId: '[1047]' },
+            { id: 'ELTE3', name: 'LÓGICA RECONFIGURAVEL', dependencies: ['ELP66'], period: 8, cht: 60, x: 18.2, y: 68, type: 'optional', groupId: '[1047]' },
+            { id: 'ELTE4', name: 'INTRODUÇÃO A ROBOTICA', dependencies: ['ELP66'], period: 8, cht: 60, x: 31, y: 68, type: 'optional', groupId: '[1047]' },
+            { id: 'ELTE5', name: 'PROJETO DE PLACAS DE CIRCUITOS IMPRESSOS', dependencies: ['ELP66'], period: 8, cht: 60, x: 43.8, y: 68, type: 'optional', groupId: '[1047]' },
+            { id: 'ELTE6', name: 'ENERGIA FOTOVOLTAICA', dependencies: ['ELB52', 'FI72Z'], period: 8, cht: 60, x: 56.6, y: 68, type: 'optional', groupId: '[1047]' },
+            { id: 'ELTE7', name: 'FISICA DOS SEMICONDUTORES', dependencies: [], period: 8, cht: 60, x: 69.4, y: 68, type: 'optional', groupId: '[1047]' },
+            { id: 'ELTE8', name: 'SISTEMAS NÃO LINEARES', dependencies: [], period: 8, cht: 60, x: 82.2, y: 68, type: 'optional', groupId: '[1047]' },
+            { id: 'ELTE9', name: 'CONTROLE AUTOMÁTICO', dependencies: [], period: 8, cht: 60, x: 94.5, y: 68, type: 'optional', groupId: '[1047]' },
+            
+            // Linha 3 de optativas
+            { id: 'ELX91', name: 'OFICINA DE INTEGRAÇÃO: PRATICA DE ENGENHARIA', dependencies: ['ELP66'], period: 8, cht: 45, x: 8, y: 78, type: 'optional', groupId: '[1047]' },
+            { id: 'ELX92', name: 'PROSPECÇÃO E ESTUDO DE VIABILIDADE DE PROJETOS', dependencies: ['Periodo:6'], period: 8, cht: 30, x: 18.2, y: 78, type: 'optional', groupId: '[1047]' },
+            { id: 'EL77D', name: 'REDES INDUSTRIAIS', dependencies: [], period: 8, cht: 45, x: 31, y: 78, type: 'optional', groupId: '[1047]' },
+            { id: 'EL77E', name: 'SISTEMAS DE SUPERVISÃO', dependencies: [], period: 8, cht: 45, x: 43.8, y: 78, type: 'optional', groupId: '[1047]' },
+            { id: 'EL77G', name: 'ACIONAMENTOS INDUSTRIAIS', dependencies: [], period: 8, cht: 45, x: 56.6, y: 78, type: 'optional', groupId: '[1047]' },
+            { id: 'EL78D', name: 'CONTROLE DE PROCESSOS', dependencies: [], period: 8, cht: 45, x: 69.4, y: 78, type: 'optional', groupId: '[1047]' },
+            { id: 'ICSD20', name: 'INTRODUÇÃO À LÓGICA PARA COMPUTAÇÃO', dependencies: [], period: 8, cht: 45, x: 82.2, y: 78, type: 'optional', groupId: '[1111]' },
+            { id: 'ICSD21', name: 'MATEMÁTICA DISCRETA', dependencies: [], period: 8, cht: 45, x: 94.5, y: 78, type: 'optional', groupId: '[1111]' },
+
+            // Linha 4 de optativas
+            { id: 'ICSE30', name: 'ENGENHARIA DE SOFTWARE', dependencies: [], period: 8, cht: 60, x: 8, y: 88, type: 'optional', groupId: '[1111]' },
+            { id: 'ICSF30', name: 'ESTRUTURAS DE DADOS 2', dependencies: [], period: 8, cht: 45, x: 27.75, y: 88, type: 'optional', groupId: '[1111]' },
+            { id: 'ICSG20', name: 'ANÁLISE E PROJETO DE SISTEMAS', dependencies: [], period: 8, cht: 45, x: 50, y: 88, type: 'optional', groupId: '[1111]' },
+            { id: 'ICSI30', name: 'SISTEMAS INTELIGENTES', dependencies: [], period: 8, cht: 45, x: 72.25, y: 88, type: 'optional', groupId: '[1111]' },
+            { id: 'ICSM47', name: 'DESENVOLVIMENTO DE APLICAÇÕES WEB-FRONT-END', dependencies: [], period: 8, cht: 60, x: 94.5, y: 88, type: 'optional', groupId: '[1111]' },
+
+            // Linha 5 de optativas
+            { id: 'ICSM48', name: 'DESENVOLVIMENTO DE APLICAÇÕES WEB-BACK-END', dependencies: [], period: 8, cht: 60, x: 8, y: 98, type: 'optional', groupId: '[1111]' },
+            { id: 'ELTE12', name: 'PRINCIPIOS DE COMPILADORES', dependencies: [], period: 8, cht: 60, x: 27.75, y: 98, type: 'optional', groupId: '[1111]'}
+            
+            // --- FIM DO CÓDIGO REAJUSTADO ---
+        ];
+        
+        // --- DOM ELEMENTS ---
+        const mainContainer = document.getElementById('main-container');
+        const humanitiesContainer = document.getElementById('humanities-container');
+        const optionalContainer = document.getElementById('optional-container');
+
+        const resetButton = document.getElementById('reset-button');
+        
+        const totalProgressBar = document.getElementById('total-progress-bar');
+        const totalProgressText = document.getElementById('total-progress-text');
+        const periodProgressBar = document.getElementById('period-progress-bar');
+        const periodProgressText = document.getElementById('period-progress-text');
+        const pendingHoursText = document.getElementById('pending-hours-text');
+        const compProgressBar = document.getElementById('comp-progress-bar');
+        const compProgressText = document.getElementById('comp-progress-text');
+        const extProgressBar = document.getElementById('ext-progress-bar');
+        const extProgressText = document.getElementById('ext-progress-text');
+        const humanitiesProgressBar = document.getElementById('humanities-progress-bar');
+        const humanitiesProgressText = document.getElementById('humanities-progress-text');
+        const optionalProgressBar = document.getElementById('optional-progress-bar');
+        const optionalProgressText = document.getElementById('optional-progress-text');
+        
+        const acForm = document.getElementById('ac-form');
+        const cceForm = document.getElementById('cce-form');
+        const acList = document.getElementById('ac-list');
+        const cceList = document.getElementById('cce-list');
+        
+        const prerequisiteModal = document.getElementById('prerequisite-modal');
+        const confirmOverrideBtn = document.getElementById('confirm-override-btn');
+        const cancelOverrideBtn = document.getElementById('cancel-override-btn');
+        const modalText = document.getElementById('modal-text');
+        
+        const tabMain = document.getElementById('tab-main');
+        const tabHumanities = document.getElementById('tab-humanities');
+        const tabOptional = document.getElementById('tab-optional');
+
+        const celebrationModal = document.getElementById('celebration-modal');
+        const closeCelebrationBtn = document.getElementById('close-celebration-btn');
+        const celebrationAudio = document.getElementById('celebration-audio');
+
+        // =======================================================================
+        // LÓGICA PARA NAVEGAÇÃO POR ARRASTE (PAN)
+        // =======================================================================
+        const panningContainer = document.querySelector('.tree-wrapper');
+        let isPanning = false;
+        let startPos = { x: 0, y: 0 };
+        let scrollPos = { left: 0, top: 0 };
+
+        const startPan = (e) => {
+            isPanning = true;
+            panningContainer.style.cursor = 'grabbing'; // Muda o cursor para "mão fechada"
+            panningContainer.style.userSelect = 'none'; // Evita a seleção de texto ao arrastar
+
+            // Usa 'touches' se for um evento de toque, senão usa as coordenadas do rato
+            const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+            const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+
+            startPos.x = clientX;
+            startPos.y = clientY;
+            scrollPos.left = panningContainer.scrollLeft;
+            scrollPos.top = panningContainer.scrollTop;
+        };
+
+        const duringPan = (e) => {
+            if (!isPanning) return;
+
+            const { scrollTop, scrollHeight, clientHeight } = panningContainer;
+            const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+            const deltaY = clientY - startPos.y;
+
+            // --- INÍCIO DA NOVA LÓGICA CORRIGIDA ---
+
+            // Verificamos se estamos nos limites superior ou inferior da rolagem da árvore.
+            const isAtTop = scrollTop <= 0;
+            const isAtBottom = scrollTop + clientHeight >= scrollHeight; // Verificação do limite inferior
+            
+            // Verificamos a intenção de rolagem do usuário.
+            const isTryingToScrollUp = deltaY > 0;   // Dedo movendo para baixo
+            const isTryingToScrollDown = deltaY < 0; // Dedo movendo para cima
+
+            // Condição para transferir a rolagem para a página:
+            // 1. O usuário tenta rolar para CIMA, mas a árvore JÁ ESTÁ NO TOPO.
+            // 2. O usuário tenta rolar para BAIXO, mas a árvore JÁ ESTÁ NO FUNDO.
+            if ((isTryingToScrollUp && isAtTop) || (isTryingToScrollDown && isAtBottom)) {
+                // Ao atingir um limite, nós encerramos o nosso gesto de "arrastar"
+                // para liberar o navegador para fazer a rolagem nativa da página.
+                
+                // Replicamos a lógica da função endPan() aqui.
+                isPanning = false;
+                panningContainer.style.cursor = 'grab';
+                panningContainer.style.userSelect = 'auto';
+                
+                // Retornamos sem chamar e.preventDefault().
+                // Como 'isPanning' agora é falso, os próximos eventos de movimento
+                // não reativarão o arraste até que um novo 'touchstart' ou 'mousedown' ocorra.
+                return;
+            }
+
+            // --- FIM DA NOVA LÓGICA ---
+
+            // Se não estamos num limite, continuamos com a lógica normal de arrastar.
+            e.preventDefault();
+            
+            const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+            const dx = clientX - startPos.x;
+            const dy = clientY - startPos.y;
+
+            panningContainer.scrollTop = scrollPos.top - dy;
+            panningContainer.scrollLeft = scrollPos.left - dx;
+        };
+
+        const endPan = () => {
+            isPanning = false;
+            panningContainer.style.cursor = 'grab'; // Volta o cursor para "mão aberta"
+            panningContainer.style.userSelect = 'auto';
+        };
+
+        // Adiciona os eventos para o RATO
+        panningContainer.addEventListener('mousedown', startPan);
+        panningContainer.addEventListener('mousemove', duringPan);
+        panningContainer.addEventListener('mouseup', endPan);
+        panningContainer.addEventListener('mouseleave', endPan);
+
+        // Adiciona os eventos para o TOQUE (dispositivos móveis)
+        panningContainer.addEventListener('touchstart', startPan);
+        panningContainer.addEventListener('touchmove', duringPan);
+        panningContainer.addEventListener('touchend', endPan);
+        // =======================================================================
+        //  FIM DA LOGICA 
+        // =======================================================================
+
+
+        // --- STATE ---
+        let nodes = [];
+        let humanitiesNodes = [];
+        let optionalNodes = [];
+        let activeTree = 'main';
+        let completedAcActivities = [];
+        let completedCceActivities = [];
+        let nodeToOverride = null;
+        let celebrationShown = false;
+
+        // --- A* PATHFINDING IMPLEMENTATION (No changes needed) ---
+        function aStar(graph, start, end) {
+            const openHeap = [start];
+            const closedNodes = {};
+            while (openHeap.length > 0) {
+                openHeap.sort((a, b) => a.f - b.f);
+                const currentNode = openHeap.shift();
+                if (currentNode.x === end.x && currentNode.y === end.y) {
+                    let curr = currentNode; const ret = [];
+                    while (curr.parent) { ret.push(curr); curr = curr.parent; }
+                    return ret.reverse();
+                }
+                closedNodes[`${currentNode.x}-${currentNode.y}`] = true;
+                const neighbors = graph.neighbors(currentNode);
+                for (let i = 0; i < neighbors.length; i++) {
+                    const neighbor = neighbors[i];
+                    const key = `${neighbor.x}-${neighbor.y}`;
+                    if (closedNodes[key] || neighbor.isWall()) { continue; }
+                    const gScore = currentNode.g + 1;
+                    let gScoreIsBest = false;
+                    if (!openHeap.includes(neighbor)) {
+                        gScoreIsBest = true;
+                        neighbor.h = Math.abs(neighbor.x - end.x) + Math.abs(neighbor.y - end.y);
+                        openHeap.push(neighbor);
+                    } else if (gScore < neighbor.g) { gScoreIsBest = true; }
+                    if (gScoreIsBest) {
+                        neighbor.parent = currentNode;
+                        neighbor.g = gScore;
+                        neighbor.f = neighbor.g + neighbor.h;
+                    }
+                }
+            }
+            return [];
+        }
+        class GridNode {
+            constructor(x, y, weight) { this.x = x; this.y = y; this.weight = weight; this.f = 0; this.g = 0; this.h = 0; this.parent = null; }
+            isWall() { return this.weight === 1; }
+        }
+        class Graph {
+            constructor(gridIn) {
+                this.nodes = []; this.grid = [];
+                for (let y = 0; y < gridIn.length; y++) {
+                    this.grid[y] = [];
+                    for (let x = 0; x < gridIn[y].length; x++) {
+                        const node = new GridNode(x, y, gridIn[y][x]);
+                        this.grid[y][x] = node;
+                        this.nodes.push(node);
+                    }
+                }
+            }
+            neighbors(node) {
+                const ret = []; const x = node.x; const y = node.y;
+                if (this.grid[y - 1] && this.grid[y - 1][x]) ret.push(this.grid[y - 1][x]);
+                if (this.grid[y + 1] && this.grid[y + 1][x]) ret.push(this.grid[y + 1][x]);
+                if (this.grid[y] && this.grid[y][x - 1]) ret.push(this.grid[y][x - 1]);
+                if (this.grid[y] && this.grid[y][x + 1]) ret.push(this.grid[y][x + 1]);
+                return ret;
+            }
+        }
+
+        function positionTooltip(nodeEl, tooltipEl) {
+            const container = document.querySelector('.tree-wrapper');
+            const containerRect = container.getBoundingClientRect();
+            
+            // --- INÍCIO DA MODIFICAÇÃO ---
+
+            // Primeiro, remove a classe 'below' para recalcular do zero
+            tooltipEl.classList.remove('below');
+
+            // Resetar estilos horizontais antes de qualquer cálculo
+            tooltipEl.style.left = '50%';
+            tooltipEl.style.marginLeft = '-110px';
+            tooltipEl.style.right = 'auto';
+
+            let tooltipRect = tooltipEl.getBoundingClientRect();
+
+            // 1. Verificação VERTICAL: Se o topo do tooltip está fora da tela...
+            if (tooltipRect.top < containerRect.top) {
+                // ...adicione a classe 'below' para movê-lo para baixo.
+                tooltipEl.classList.add('below');
+                // Recalcula o retângulo após a mudança de classe
+                tooltipRect = tooltipEl.getBoundingClientRect();
+            }
+
+            // 2. Verificação HORIZONTAL (lógica que você já tinha)
+            if (tooltipRect.left < containerRect.left) {
+                // Tooltip está fora pela esquerda
+                tooltipEl.style.left = '0';
+                tooltipEl.style.marginLeft = '0';
+            } else if (tooltipRect.right > containerRect.right) {
+                // Tooltip está fora pela direita
+                tooltipEl.style.left = 'auto';
+                tooltipEl.style.right = '0';
+                tooltipEl.style.marginLeft = '0';
+            }
+            // --- FIM DA MODIFICAÇÃO ---
+        }
+
+        // --- FUNCTIONS ---
+
+        // =======================================================================
+        //  NOVO CÓDIGO: FUNÇÕES PARA SALVAR E CARREGAR O PROGRESSO
+        // =======================================================================
+
+        /**
+         * ## Função `saveState`
+         * Reúne todos os dados dinâmicos do progresso do usuário em um único objeto,
+         * o converte para uma string JSON e o armazena na localStorage do navegador.
+         * Isso garante que o progresso seja salvo entre as sessões.
+         */
+        function saveState() {
+            // Objeto que guardará todo o nosso progresso
+            const stateToSave = {
+                // Mapeia cada array de nós para um formato mais simples, salvando apenas o ID e o estado.
+                // Isso economiza espaço e torna o salvamento mais eficiente.
+                nodesState: nodes.map(n => ({ id: n.id, state: n.state })),
+                humanitiesNodesState: humanitiesNodes.map(n => ({ id: n.id, state: n.state })),
+                optionalNodesState: optionalNodes.map(n => ({ id: n.id, state: n.state })),
+                // Salva as listas de atividades complementares e de extensão
+                completedAcActivities: completedAcActivities,
+                completedCceActivities: completedCceActivities
+            };
+
+            // Converte o objeto para uma string JSON e armazena na localStorage com uma chave única.
+            localStorage.setItem('skillTreeProgress', JSON.stringify(stateToSave));
+            console.log("Estado salvo com sucesso!"); // Um log para ajudar a depurar
+        }
+
+        /**
+         * ## Função `loadState`
+         * Verifica se há dados salvos na localStorage. Se houver, carrega esses dados,
+         * os converte de volta para um objeto JavaScript e atualiza o estado da aplicação
+         * para refletir o progresso salvo anteriormente.
+         * @returns {boolean} - Retorna `true` se o estado foi carregado com sucesso, `false` caso contrário.
+         */
+        function loadState() {
+            // Tenta obter os dados salvos da localStorage
+            const savedStateJSON = localStorage.getItem('skillTreeProgress');
+
+            // Se não houver nada salvo, interrompe a função.
+            if (!savedStateJSON) {
+                console.log("Nenhum estado salvo encontrado.");
+                return false;
+            }
+
+            // Converte a string JSON de volta para um objeto
+            const savedState = JSON.parse(savedStateJSON);
+
+            // Função auxiliar para atualizar o estado de um array de nós (matérias)
+            const updateNodeStates = (targetNodes, savedStates) => {
+                if (!savedStates) return;
+                savedStates.forEach(savedNode => {
+                    const targetNode = targetNodes.find(n => n.id === savedNode.id);
+                    if (targetNode) {
+                        targetNode.state = savedNode.state;
+                    }
+                });
+            };
+
+            // Atualiza o estado de todas as árvores de matérias
+            updateNodeStates(nodes, savedState.nodesState);
+            updateNodeStates(humanitiesNodes, savedState.humanitiesNodesState);
+            updateNodeStates(optionalNodes, savedState.optionalNodesState);
+            
+            // Restaura as listas de atividades (se existirem no save)
+            completedAcActivities = savedState.completedAcActivities || [];
+            completedCceActivities = savedState.completedCceActivities || [];
+
+            console.log("Estado carregado com sucesso!");
+            return true;
+        }
+
+        /**
+         * ## Função `initializeTree` (MODIFICADA)
+         * Esta função agora tenta carregar o progresso salvo. Se não encontrar,
+         * ela configura o estado inicial padrão do zero.
+         */
+        function initializeTree() {
+            // Inicializa as estruturas de dados base (isso não muda)
+            nodes = JSON.parse(JSON.stringify(allNodesData));
+            humanitiesNodes = JSON.parse(JSON.stringify(allHumanitiesData));
+            optionalNodes = JSON.parse(JSON.stringify(allOptionalNodesData));
+            completedAcActivities = [];
+            completedCceActivities = [];
+            
+            // TENTA CARREGAR O ESTADO SALVO
+            const stateLoaded = loadState();
+
+            // Se nenhum estado foi carregado (primeira visita ou após reset),
+            // configura o estado inicial padrão.
+            if (!stateLoaded) {
+                 nodes.forEach(node => {
+                    node.state = node.dependencies.length === 0 ? 'subject-available' : 'subject-locked';
+                });
+                humanitiesNodes.forEach(node => {
+                    node.state = 'humanities-locked';
+                });
+                 optionalNodes.forEach(node => {
+                    node.state = 'optional-locked';
+                });
+            }
+
+            // O resto da função continua igual
+            updateAllSubjectStates();
+            renderActiveTree();
+            updateAllProgressBars();
+            renderAllActivityLists();
+        }
+        
+        function renderActiveTree() {
+            if (activeTree === 'main') {
+                renderTree(mainContainer, nodes, 'main-lines', 'arrow-completed', 'arrow-locked');
+            } else if (activeTree === 'humanities') {
+                renderTree(humanitiesContainer, humanitiesNodes, 'humanities-lines', 'h-arrow-completed', 'h-arrow-locked');
+            } else {
+                 renderTree(optionalContainer, optionalNodes, 'optional-lines', 'o-arrow-completed', 'o-arrow-locked');
+                 renderOptionalTrackHeaders();
+            }
+        }
+        
+        function renderTree(container, data, svgId, markerCompletedId, markerLockedId) {
+            const svgEl = container.querySelector(`#${svgId}`);
+            const svgDefs = svgEl.querySelector('defs').outerHTML;
+            container.innerHTML = `<svg id="${svgId}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none;">${svgDefs}</svg>`;
+            
+            renderNodes(container, data);
+            setTimeout(() => renderLines(container, data, svgId, markerCompletedId, markerLockedId), 0);
+        }
+
+        function renderOptionalTrackHeaders() {
+            // Removendo headers antigos para evitar duplicatas ao redimensionar
+            optionalContainer.querySelectorAll('.track-header').forEach(h => h.remove());
+
+            // Headers com posicionamento vertical (y) reajustado e comprimido
+            const trackPositions = {
+                'Trilha: Telecomunicações': 8,
+                'Trilha: Engenharia Biomédica': 20,
+                'Trilha: Pesquisa Científica': 32,
+                'Trilha: Proc. de Sinais, Imagens e Padrões': 44,
+                'Trilha Eletiva e Optativas': 58,
+            };
+             Object.entries(trackPositions).forEach(([name, yPos]) => {
+                const header = document.createElement('div');
+                header.className = 'track-header';
+                header.textContent = name;
+                header.style.top = `${yPos}%`;
+                optionalContainer.appendChild(header);
+            });
+        }
+        
+        function renderLines(container, data, svgId, markerCompletedId, markerLockedId) {
+            const svgEl = container.querySelector(`#${svgId}`);
+            if (!svgEl) return;
+            
+            const defs = svgEl.querySelector('defs').outerHTML;
+            svgEl.innerHTML = defs;
+
+            const containerWidth = container.clientWidth;
+            const containerHeight = container.clientHeight;
+            const resolution = 25;
+            const gridWidth = Math.floor(containerWidth / resolution);
+            const gridHeight = Math.floor(containerHeight / resolution);
+
+            const grid = Array.from({ length: gridHeight }, () => Array(gridWidth).fill(0));
+
+            data.forEach(node => {
+                if (typeof node.x === 'undefined' || typeof node.y === 'undefined') return;
+                const nodeLeft = (node.x / 100) * containerWidth - (NODE_WIDTH / 2);
+                const nodeTop = (node.y / 100) * containerHeight - (NODE_HEIGHT / 2);
+                const startX = Math.max(0, Math.floor(nodeLeft / resolution));
+                const endX = Math.min(gridWidth - 1, Math.floor((nodeLeft + NODE_WIDTH) / resolution));
+                const startY = Math.max(0, Math.floor(nodeTop / resolution));
+                const endY = Math.min(gridHeight - 1, Math.floor((nodeTop + NODE_HEIGHT) / resolution));
+                for (let y = startY; y <= endY; y++) {
+                    for (let x = startX; x <= endX; x++) {
+                        if (grid[y] && grid[y][x] !== undefined) grid[y][x] = 1;
+                    }
+                }
+            });
+            
+            const graph = new Graph(grid);
+            
+            data.filter(n => n.dependencies && n.dependencies.length > 0).forEach(node => {
+                node.dependencies.forEach(depId => {
+                    const parentNode = data.find(p => p.id === depId);
+                    
+                    if (parentNode && typeof node.x !== 'undefined' && typeof parentNode.x !== 'undefined') {
+                        const startX = Math.floor(((parentNode.x / 100) * containerWidth) / resolution);
+                        const startY = Math.floor((((parentNode.y / 100) * containerHeight) + NODE_HEIGHT / 2) / resolution);
+                        const endX = Math.floor(((node.x / 100) * containerWidth) / resolution);
+                        const endY = Math.floor((((node.y / 100) * containerHeight) - NODE_HEIGHT / 2) / resolution);
+                        
+                        if (grid[startY] && grid[startY][startX] !== undefined) graph.grid[startY][startX].weight = 0;
+                        if (grid[endY] && grid[endY][endX] !== undefined) graph.grid[endY][endX].weight = 0;
+
+                        const start = graph.grid[startY] ? graph.grid[startY][startX] : null;
+                        const end = graph.grid[endY] ? graph.grid[endY][endX] : null;
+
+                        if(start && end) {
+                            const resultPath = aStar(graph, start, end);
+                            if (resultPath.length > 0) {
+                                let pathString = `M ${startX * resolution + resolution / 2} ${startY * resolution + resolution / 2}`;
+                                resultPath.forEach(point => {
+                                    pathString += ` L ${point.x * resolution + resolution / 2} ${point.y * resolution + resolution / 2}`;
+                                });
+                                
+                                const isCompleted = parentNode.state.endsWith('-completed');
+                                
+                                const casingEl = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                                casingEl.setAttribute('d', pathString);
+                                casingEl.setAttribute('fill', 'none');
+                                casingEl.setAttribute('stroke', '#111827');
+                                casingEl.setAttribute('stroke-width', isCompleted ? '7' : '6');
+                                casingEl.setAttribute('stroke-linecap', 'round');
+                                casingEl.setAttribute('stroke-linejoin', 'round');
+                                svgEl.appendChild(casingEl);
+
+                                const lineEl = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                                lineEl.setAttribute('d', pathString);
+                                lineEl.setAttribute('marker-end', isCompleted ? `url(#${markerCompletedId})` : `url(#${markerLockedId})`);
+                                lineEl.setAttribute('class', isCompleted ? 'line-completed' : 'line-locked');
+                                svgEl.appendChild(lineEl);
+
+                                if (isCompleted) {
+                                    const length = lineEl.getTotalLength();
+                                    if (length > 0) {
+                                        lineEl.style.strokeDasharray = length;
+                                        lineEl.style.strokeDashoffset = length;
+                                        lineEl.getBoundingClientRect();
+                                        lineEl.style.strokeDashoffset = '0';
+                                    }
+                                }
+                            }
+                        }
+                        
+                        if (grid[startY] && grid[startY][startX] !== undefined) graph.grid[startY][startX].weight = 1;
+                        if (grid[endY] && grid[endY][endX] !== undefined) graph.grid[endY][endX].weight = 1;
+                    }
+                });
+            });
+        }
+
+        function getGroupProgress(groupId) {
+            if (!groupId || !OPTIONAL_GROUPS_CONFIG[groupId]) {
+                return null;
+            }
+            const groupConfig = OPTIONAL_GROUPS_CONFIG[groupId];
+            const subjectsInGroup = nodes.filter(n => n.groupId === groupId);
+            const completedHours = subjectsInGroup
+                .filter(n => n.state === 'subject-completed')
+                .reduce((sum, n) => sum + n.cht, 0);
+            
+            const requiredHours = groupConfig.requiredHours;
+            const percent = requiredHours > 0 ? Math.min((completedHours / requiredHours) * 100, 100) : 0;
+
+            return {
+                completed: completedHours,
+                required: requiredHours,
+                percent: percent
+            };
+        }
+
+        function renderNodes(container, data) {
+            data.forEach(node => {
+                const nodeEl = document.createElement('div');
+                nodeEl.className = `node ${node.state}`; 
+                nodeEl.style.left = `${node.x}%`;
+                nodeEl.style.top = `${node.y}%`;
+                nodeEl.dataset.id = node.id;
+
+                const nodeName = document.createElement('span');
+                nodeName.textContent = node.name;
+                nodeName.className = 'text-center font-semibold';
+                
+                let groupProgressHTML = '';
+                if (node.groupId) {
+                    const progressData = getGroupProgress(node.groupId);
+                    if (progressData) {
+                        const groupName = OPTIONAL_GROUPS_CONFIG[node.groupId]?.name || 'Grupo';
+                        groupProgressHTML = `
+                            <div class="mt-3 border-t border-gray-600 pt-2">
+                                <p class="text-xs text-amber-300 font-semibold">${groupName}</p>
+                                <div class="w-full bg-gray-700 rounded-full h-2.5 mt-1 border border-gray-600">
+                                    <div class="bg-amber-500 h-2 rounded-full" style="width: ${progressData.percent}%"></div>
+                                </div>
+                                <p class="text-xs text-right text-gray-400">${progressData.completed}/${progressData.required}h (${progressData.percent.toFixed(0)}%)</p>
+                            </div>
+                        `;
+                    }
+                }
+
+                const tooltip = document.createElement('div');
+                
+                // =========================================================
+                // ==========> AQUI ESTÁ A LINHA QUE FOI CORRIGIDA <==========
+                // =========================================================
+                tooltip.className = node.state === 'subject-satisfied' ? 'tooltip tooltip-satisfied' : 'tooltip';
+                
+                let tooltipHTML = `<strong>${node.id}</strong><p class="text-xs text-gray-300 mt-1">${node.name}</p>`;
+                if (node.state === 'subject-satisfied') {
+                    tooltipHTML += `<p class="text-xs text-amber-300 font-bold mt-2">Carga horária deste grupo já foi cumprida!</p>`;
+                }
+                if (node.alternative) {
+                    tooltipHTML += `<p class="text-xs text-cyan-400 mt-1">Alternativa: ${node.alternative.name} (${node.alternative.id})</p>`;
+                }
+                let colorClass = 'text-yellow-400';
+                if (node.type === 'humanities') colorClass = 'text-purple-400';
+                else if (node.type === 'optional') colorClass = 'text-red-400';
+                if (node.chs) {
+                    tooltipHTML += `<p class="text-xs ${colorClass} mt-2">Período: ${node.period} | CHT: ${node.cht} | CHS: ${node.chs}</p>`;
+                } else {
+                    tooltipHTML += `<p class="text-xs ${colorClass} mt-2">Período: ${node.period} | CHT: ${node.cht}</p>`;
+                }
+                tooltipHTML += groupProgressHTML;
+                tooltip.innerHTML = tooltipHTML;
+
+                nodeEl.appendChild(nodeName);
+                nodeEl.appendChild(tooltip);
+
+                // --- NOVOS EVENT LISTENERS ---
+                nodeEl.addEventListener('mouseover', () => {
+                    positionTooltip(nodeEl, tooltip);
+                    tooltip.classList.add('visible');
+                });
+
+                nodeEl.addEventListener('mouseout', () => {
+                    tooltip.classList.remove('visible');
+                });
+                
+                nodeEl.addEventListener('click', () => handleNodeClick(node.id));
+                container.appendChild(nodeEl);
+            });
+        }
+        
+        function handleNodeClick(nodeId) {
+            let data, prefixes;
+            if (activeTree === 'main') {
+                data = nodes;
+                prefixes = { available: 'subject-available', completed: 'subject-completed', locked: 'subject-locked' };
+            } else if (activeTree === 'humanities') {
+                data = humanitiesNodes;
+                prefixes = { available: 'humanities-available', completed: 'humanities-completed', locked: 'humanities-locked' };
+            } else {
+                data = optionalNodes;
+                prefixes = { available: 'optional-available', completed: 'optional-completed', locked: 'optional-locked' };
+            }
+            
+            const node = data.find(n => n.id === nodeId);
+            if (!node) return;
+            
+            if (node.state === prefixes.locked) {
+                nodeToOverride = nodeId;
+                const allNodeData = [...nodes, ...humanitiesNodes, ...optionalNodes];
+                const prereqs = node.dependencies
+                    .map(depId => {
+                        if (depId.startsWith('Periodo:')) return `atingir o ${depId.split(':')[1]}º período`;
+                        return allNodeData.find(n => n.id === depId)?.name || depId
+                    })
+                    .join(', ');
+
+                let message = `Esta matéria (${node.name}) está bloqueada.`;
+                if (node.dependencies.length > 0) {
+                     message += ` Requer: <strong class="text-white">${prereqs}</strong>.`;
+                }
+                message += ` Deseja liberá-la mesmo assim?`
+                modalText.innerHTML = message;
+                prerequisiteModal.classList.remove('hidden');
+                return;
+            }
+            
+            const originalState = node.state;
+            node.state = (node.state === prefixes.completed) ? prefixes.available : prefixes.completed;
+            
+            updateAllSubjectStates();
+            
+            if (originalState !== node.state) {
+                renderActiveTree();
+                updateAllProgressBars();
+                saveState(); // Salva o estado após a alteração
+            }
+        }
+        
+        function updateAllSubjectStates() {
+            // Primeiro, verifica os grupos para reverter o estado 'satisfeito' se a condição não for mais atendida
+            for (const groupId in OPTIONAL_GROUPS_CONFIG) {
+                const group = OPTIONAL_GROUPS_CONFIG[groupId];
+                const subjectsInGroup = nodes.filter(n => n.groupId === groupId);
+                const completedHours = subjectsInGroup
+                    .filter(n => n.state === 'subject-completed')
+                    .reduce((sum, n) => sum + n.cht, 0);
+
+                if (completedHours < group.requiredHours) {
+                    subjectsInGroup.forEach(subject => {
+                        if (subject.state === 'subject-satisfied') {
+                            subject.state = 'subject-locked'; // Reverte para ser recalculado
+                        }
+                    });
+                }
+            }
+
+            const { currentPeriod } = calculateCurrentPeriod();
+            let changedInLoop;
+            do {
+                changedInLoop = false;
+
+                nodes.forEach(subject => {
+                    if (subject.override || subject.state === 'subject-completed' || subject.state === 'subject-satisfied') return;
+
+                    const allDependenciesMet = subject.dependencies.every(depId => {
+                        if (depId.startsWith('Periodo:') || depId.startsWith('Período:')) { // Verificação para período
+                            const requiredPeriod = parseInt(depId.split(':')[1], 10);
+                            return currentPeriod >= requiredPeriod;
+                        }
+                        const parentNode = nodes.find(p => p.id === depId);
+                        return parentNode?.state === 'subject-completed';
+                    });
+                    
+                    const isPeriodAvailable = subject.period <= currentPeriod + 2;
+                    const newState = (allDependenciesMet && isPeriodAvailable) ? 'subject-available' : 'subject-locked';
+
+                    if (subject.state !== newState) {
+                        subject.state = newState;
+                        changedInLoop = true;
+                    }
+                });
+                
+                 humanitiesNodes.forEach(subject => {
+                    if (subject.override || subject.state === 'humanities-completed') return;
+                    
+                    // <<< CORREÇÃO AQUI: Lógica de dependência completa foi adicionada
+                    const allDependenciesMet = subject.dependencies.every(depId => {
+                        if (depId.startsWith('Periodo:') || depId.startsWith('Período:')) {
+                            const requiredPeriod = parseInt(depId.split(':')[1], 10);
+                            return currentPeriod >= requiredPeriod;
+                        }
+                        // Verifica dependências dentro da própria árvore de humanidades
+                        const parentNode = humanitiesNodes.find(p => p.id === depId);
+                        return parentNode?.state === 'humanities-completed';
+                    });
+
+                    const isPeriodAvailable = subject.period <= currentPeriod + 2;
+                    const newState = (allDependenciesMet && isPeriodAvailable) ? 'humanities-available' : 'humanities-locked';
+                    
+                    if (subject.state !== newState) {
+                        subject.state = newState;
+                        changedInLoop = true;
+                    }
+                });
+
+                 optionalNodes.forEach(subject => {
+                    if (subject.override || subject.state === 'optional-completed') return;
+                    
+                    const allDependenciesMet = subject.dependencies.every(depId => {
+                        // <<< CORREÇÃO AQUI: Agora aceita "Periodo" com e sem acento
+                        if (depId.startsWith('Periodo:') || depId.startsWith('Período:')) {
+                            const requiredPeriod = parseInt(depId.split(':')[1], 10);
+                            return currentPeriod >= requiredPeriod;
+                        }
+                        const parentInMain = nodes.find(p => p.id === depId);
+                        if (parentInMain) return parentInMain.state === 'subject-completed';
+                        const parentInOptional = optionalNodes.find(p => p.id === depId);
+                        if (parentInOptional) return parentInOptional.state === 'optional-completed';
+                        return false;
+                    });
+                    
+                    const isPeriodAvailable = subject.period <= currentPeriod + 2;
+                    const newState = (allDependenciesMet && isPeriodAvailable) ? 'optional-available' : 'optional-locked';
+                    
+                    if (subject.state !== newState) {
+                        subject.state = newState;
+                        changedInLoop = true;
+                    }
+                });
+
+            } while (changedInLoop);
+            
+            // Aplica o estado 'satisfeito' (lógica inalterada)
+            for (const groupId in OPTIONAL_GROUPS_CONFIG) {
+                const group = OPTIONAL_GROUPS_CONFIG[groupId];
+                const subjectsInGroup = nodes.filter(n => n.groupId === groupId);
+                const completedHours = subjectsInGroup
+                    .filter(n => n.state === 'subject-completed')
+                    .reduce((sum, n) => sum + n.cht, 0);
+
+                 if (completedHours >= group.requiredHours) {
+                    subjectsInGroup.forEach(subject => {
+                        if (subject.state !== 'subject-completed') {
+                            subject.state = 'subject-satisfied';
+                        }
+                    });
+                }
+            }
+        }
+
+        function calculateCurrentPeriod() {
+            for (let period = 1; period <= 10; period++) {
+                const pendingHours = nodes
+                    .filter(s => s.period <= period && s.state !== 'subject-completed')
+                    .reduce((sum, s) => sum + s.chs, 0);
+                if (pendingHours >= 16) {
+                    return { currentPeriod: period, pendingHours: pendingHours };
+                }
+            }
+            const finalPendingHours = nodes.filter(s => s.state !== 'subject-completed').reduce((sum, s) => sum + s.chs, 0);
+            return { currentPeriod: 10, pendingHours: finalPendingHours };
+        }
+        
+        function renderActivityList(listEl, activities, type) {
+            listEl.innerHTML = activities.map((act, index) => `
+                <li class="flex justify-between items-center text-gray-300">
+                    <span class="truncate pr-2">${act.desc} (${act.hours}h)</span>
+                    <button data-type="${type}" data-index="${index}" class="remove-btn flex-shrink-0">&times;</button>
+                </li>
+            `).join('');
+        }
+        
+        function renderAllActivityLists() {
+            renderActivityList(acList, completedAcActivities, 'ac');
+            renderActivityList(cceList, completedCceActivities, 'cce');
+        }
+
+        function updateAllProgressBars() {
+            // Main progress
+            const completedSubjects = nodes.filter(s => s.state === 'subject-completed' || s.state === 'subject-satisfied').length; // <-- LINHA MODIFICADA
+            const totalProgress = nodes.length > 0 ? (completedSubjects / nodes.length) * 100 : 0;
+            totalProgressBar.style.width = `${totalProgress}%`;
+            totalProgressText.textContent = `${totalProgress.toFixed(1)}% (${completedSubjects}/${nodes.length})`;
+
+            // Period progress
+            const { currentPeriod, pendingHours } = calculateCurrentPeriod();
+            const periodProgress = (currentPeriod / 10) * 100;
+            periodProgressBar.style.width = `${periodProgress}%`;
+            periodProgressText.textContent = `Período ${currentPeriod}`;
+            pendingHoursText.textContent = `CHS Pendente: ${pendingHours.toFixed(2)}. Limite: 16.`;
+            
+            // Optional/Tracks progress
+            const totalCompletedOptional = optionalNodes
+                .filter(n => n.state === 'optional-completed')
+                .reduce((sum, n) => sum + n.cht, 0);
+            const optionalProgress = (totalCompletedOptional / TOTAL_OPTIONAL_HOURS) * 100;
+            optionalProgressBar.style.width = `${Math.min(optionalProgress, 100)}%`;
+            optionalProgressText.textContent = `${totalCompletedOptional}/${TOTAL_OPTIONAL_HOURS}h (${optionalProgress.toFixed(1)}%)`;
+
+            // Humanities progress
+            const totalCompletedHumanities = humanitiesNodes
+                .filter(n => n.state === 'humanities-completed')
+                .reduce((sum, n) => sum + n.cht, 0);
+            const humanitiesProgress = (totalCompletedHumanities / TOTAL_HUMANITIES_HOURS) * 100;
+            humanitiesProgressBar.style.width = `${Math.min(humanitiesProgress, 100)}%`;
+            humanitiesProgressText.textContent = `${totalCompletedHumanities}/${TOTAL_HUMANITIES_HOURS}h (${humanitiesProgress.toFixed(1)}%)`;
+
+            // Complementary progress
+            const completedCompHours = completedAcActivities.reduce((sum, n) => sum + n.hours, 0);
+            const compProgress = (completedCompHours / TOTAL_COMPLEMENTARY_HOURS) * 100;
+            compProgressBar.style.width = `${Math.min(compProgress, 100)}%`;
+            compProgressText.textContent = `${completedCompHours}/${TOTAL_COMPLEMENTARY_HOURS}h (${compProgress.toFixed(1)}%)`;
+
+            // Extension progress
+            const completedExtHours = completedCceActivities.reduce((sum, n) => sum + n.hours, 0);
+            const extProgress = (completedExtHours / TOTAL_EXTENSION_HOURS) * 100;
+            extProgressBar.style.width = `${Math.min(extProgress, 100)}%`;
+            extProgressText.textContent = `${completedExtHours}/${TOTAL_EXTENSION_HOURS}h (${extProgress.toFixed(1)}%)`;
+            checkAndCelebrate();            
+        }
+
+        // --- EVENT LISTENERS ---
+        
+        /**
+         * ## Event Listener do Reset (MODIFICADO)
+         * Agora, além de chamar a inicialização, também limpa os dados salvos
+         * na localStorage para garantir um reset completo.
+         */
+        resetButton.addEventListener('click', () => {
+            // Remove os dados salvos para garantir um reset completo
+            localStorage.removeItem('skillTreeProgress');
+            celebrationShown = false; // ADICIONE ESTA LINHA para permitir que a celebração ocorra novamente
+            // A função initializeTree irá então rodar e, como não encontrará dados, começará do zero.
+            initializeTree();
+        });
+        
+        // ==============================================================
+        // ==== INÍCIO DO NOVO CÓDIGO PARA A TELA DE COMEMORAÇÃO ====
+        // ==============================================================
+
+        /**
+         * Verifica se todos os requisitos do curso foram atendidos.
+         * Se sim, e se a celebração ainda não foi mostrada, exibe o modal e toca a música.
+         */
+        function checkAndCelebrate() {
+            // Condição para não re-exibir a tela se ela já foi mostrada nesta sessão
+            if (celebrationShown) {
+                return;
+            }
+
+            // Pega os valores atuais do progresso
+            const completedSubjects = nodes.filter(s => s.state === 'subject-completed' || s.state === 'subject-satisfied').length;
+            const totalCompletedOptional = optionalNodes.filter(n => n.state === 'optional-completed').reduce((sum, n) => sum + n.cht, 0);
+            const totalCompletedHumanities = humanitiesNodes.filter(n => n.state === 'humanities-completed').reduce((sum, n) => sum + n.cht, 0);
+            const completedCompHours = completedAcActivities.reduce((sum, n) => sum + n.hours, 0);
+            const completedExtHours = completedCceActivities.reduce((sum, n) => sum + n.hours, 0);
+
+            // Verifica se todos os critérios foram atendidos
+            const isCourseComplete =
+                completedSubjects >= nodes.length &&
+                totalCompletedOptional >= TOTAL_OPTIONAL_HOURS &&
+                totalCompletedHumanities >= TOTAL_HUMANITIES_HOURS &&
+                completedCompHours >= TOTAL_COMPLEMENTARY_HOURS &&
+                completedExtHours >= TOTAL_EXTENSION_HOURS;
+
+            if (isCourseComplete) {
+                celebrationModal.classList.remove('hidden'); // Mostra o modal
+                celebrationAudio.play(); // Toca a música
+                celebrationShown = true; // Marca que a celebração foi exibida
+                saveState(); // Salva o estado para que a flag 'celebrationShown' seja persistida
+            }
+        }
+
+        // Adiciona o evento para o botão de fechar o modal de celebração
+        closeCelebrationBtn.addEventListener('click', () => {
+            celebrationModal.classList.add('hidden');
+            celebrationAudio.pause(); // Pausa a música
+            celebrationAudio.currentTime = 0; // Reinicia o áudio para a próxima vez
+        });
+        
+        // ============================================================
+        // ==== FIM DO NOVO CÓDIGO PARA A TELA DE COMEMORAÇÃO ====
+        // ============================================================
+
+
+        function handleActivityFormSubmit(e, targetArray) {
+             e.preventDefault();
+            const form = e.target;
+            const descInput = form.querySelector('input[type="text"]');
+            const hoursInput = form.querySelector('input[type="number"]');
+            const desc = descInput.value.trim();
+            const hours = parseInt(hoursInput.value, 10);
+            
+            if (desc && hours > 0) {
+                targetArray.push({ desc, hours });
+                renderAllActivityLists();
+                updateAllProgressBars();
+                descInput.value = '';
+                hoursInput.value = '';
+                saveState(); // Salva o estado após adicionar atividade
+            }
+        }
+
+        acForm.addEventListener('submit', (e) => handleActivityFormSubmit(e, completedAcActivities));
+        cceForm.addEventListener('submit', (e) => handleActivityFormSubmit(e, completedCceActivities));
+
+        document.querySelector('.max-w-7xl').addEventListener('click', (e) => {
+            if (e.target.classList.contains('remove-btn')) {
+                const type = e.target.dataset.type;
+                const index = parseInt(e.target.dataset.index, 10);
+                const arrays = { ac: completedAcActivities, cce: completedCceActivities };
+                if (arrays[type]) {
+                    arrays[type].splice(index, 1);
+                    renderAllActivityLists();
+                    updateAllProgressBars();
+                    saveState(); // Salva o estado após remover atividade
+                }
+            }
+        });
+        
+        function switchTab(newTab) {
+            activeTree = newTab;
+            
+            mainContainer.classList.toggle('hidden', newTab !== 'main');
+            humanitiesContainer.classList.toggle('hidden', newTab !== 'humanities');
+            optionalContainer.classList.toggle('hidden', newTab !== 'optional');
+
+            tabMain.classList.toggle('active', newTab === 'main');
+            tabHumanities.classList.toggle('active', newTab === 'humanities');
+            tabOptional.classList.toggle('active', newTab === 'optional');
+            
+            renderActiveTree();
+        }
+
+        tabMain.addEventListener('click', () => switchTab('main'));
+        tabHumanities.addEventListener('click', () => switchTab('humanities'));
+        tabOptional.addEventListener('click', () => switchTab('optional'));
+
+        cancelOverrideBtn.addEventListener('click', () => {
+            prerequisiteModal.classList.add('hidden');
+            nodeToOverride = null;
+        });
+
+        confirmOverrideBtn.addEventListener('click', () => {
+            if (nodeToOverride) {
+                let data, availableState;
+
+                // Determina qual árvore está ativa
+                if (activeTree === 'main') {
+                    data = nodes; availableState = 'subject-available';
+                } else if (activeTree === 'humanities') {
+                    data = humanitiesNodes; availableState = 'humanities-available';
+                } else {
+                    data = optionalNodes; availableState = 'optional-available';
+                }
+                
+                const node = data.find(n => n.id === nodeToOverride);
+                if (node) {
+                    // Define o estado como disponível
+                    node.state = availableState;
+                    
+                    // === A MUDANÇA PRINCIPAL ESTÁ AQUI ===
+                    // Adicionamos uma "bandeira" para lembrar que esta regra foi quebrada.
+                    node.override = true; 
+                    
+                    // Agora, as funções de atualização podem ser chamadas com segurança
+                    updateAllSubjectStates(); 
+                    renderActiveTree();
+                    updateAllProgressBars();
+                    saveState(); // Salva o estado após a alteração
+                }
+            }
+            prerequisiteModal.classList.add('hidden');
+            nodeToOverride = null;
+        });
+        
+        window.addEventListener('resize', renderActiveTree);
+
+        // --- INITIALIZATION ---
+        initializeTree();
+    </script>
+</body>
+</html>
