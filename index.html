@@ -104,10 +104,10 @@
             border-style: solid; border-color: #1f2937 transparent transparent transparent;
         }
 
-        .tooltip.visible, .tooltip-satisfied.visible {
+        .node .tooltip.visible, .node .tooltip-satisfied.visible {
             visibility: visible;
             opacity: 1;
-        }        
+        }         
         
         .line-locked { stroke: #4b5563; stroke-width: 2; stroke-dasharray: 4, 4; fill: none; }
         
@@ -1094,6 +1094,10 @@
                 }
 
                 const tooltip = document.createElement('div');
+                
+                // =========================================================
+                // ==========> AQUI ESTÁ A LINHA QUE FOI CORRIGIDA <==========
+                // =========================================================
                 tooltip.className = node.state === 'subject-satisfied' ? 'tooltip tooltip-satisfied' : 'tooltip';
                 
                 let tooltipHTML = `<strong>${node.id}</strong><p class="text-xs text-gray-300 mt-1">${node.name}</p>`;
