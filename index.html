@@ -726,17 +726,52 @@
         };
 
         const duringPan = (e) => {
-            if (!isPanning) return;
-            e.preventDefault(); // Impede o comportamento padrão do navegador (como rolar a página inteira)
+            if (!isPanning) return; // Se não estiver a arrastar, não faz nada
 
+            // --- INÍCIO DA NOVA LÓGICA ---
+
+            // Obtém as propriedades de rolagem do nosso contentor
+            const {
+                scrollTop,
+                scrollHeight,
+                clientHeight,
+                scrollLeft,
+                scrollWidth,
+                clientWidth
+            } = panningContainer;
+
+            // Pega as coordenadas atuais do movimento
             const clientX = e.touches ? e.touches[0].clientX : e.clientX;
             const clientY = e.touches ? e.touches[0].clientY : e.clientY;
 
-            // Calcula a distância que o dedo/rato se moveu
+            // Calcula a variação do movimento desde o início
             const dx = clientX - startPos.x;
             const dy = clientY - startPos.y;
+            
+            // Variável para decidir se a rolagem deve ser impedida
+            let shouldPreventDefault = true;
 
-            // Move a barra de rolagem do contentor na direção oposta ao movimento
+            // CONDIÇÃO 1: TENTANDO ROLAR PARA CIMA
+            // Se o movimento do dedo for para baixo (dy < 0) e a rolagem já estiver no topo
+            if (dy < 0 && scrollTop <= 0) {
+                shouldPreventDefault = false; // Não impede, deixa a página principal rolar
+            }
+            
+            // CONDIÇÃO 2: TENTANDO ROLAR PARA BAIXO
+            // Se o movimento do dedo for para cima (dy > 0) e a rolagem já estiver no fundo
+            // (Usamos -1 como uma pequena tolerância para evitar problemas de arredondamento)
+            if (dy > 0 && scrollTop + clientHeight >= scrollHeight - 1) {
+                shouldPreventDefault = false; // Não impede, deixa a página principal rolar
+            }
+            
+            // Só impede a rolagem se a condição de 'borda' não for atendida
+            if (shouldPreventDefault) {
+                e.preventDefault();
+            }
+            
+            // --- FIM DA NOVA LÓGICA ---
+
+            // A lógica para mover o conteúdo continua a mesma
             panningContainer.scrollTop = scrollPos.top - dy;
             panningContainer.scrollLeft = scrollPos.left - dx;
         };
