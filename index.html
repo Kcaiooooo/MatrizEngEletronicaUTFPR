@@ -17,14 +17,22 @@
         font-family: 'Roboto Slab', serif;
     }
     
-    /* NOVO ESTILO PARA O WRAPPER (COM A ALTERAÇÃO) */
     .tree-wrapper {
         position: relative; 
         width: 100%;       
-        height: 95vh;      /* Altura do "molde" */
-        overflow: auto;    /* <<-- MUDANÇA AQUI: Permite rolagem em AMBAS as direções */
+        height: 95vh;
+        overflow: auto;
         border-radius: 0.75rem; 
-        cursor: grab;      /* Adiciona um cursor para indicar que a área é "agarrável" */
+        cursor: grab;
+        /* --- NOVAS REGRAS PARA ESCONDER A BARRA DE ROLAGEM --- */        
+        /* Para o Firefox */
+        scrollbar-width: none;
+    }
+
+    /* É necessário criar uma regra separada para os navegadores baseados em WebKit */
+    .tree-wrapper::-webkit-scrollbar {
+        /* Para Chrome, Safari, Edge, etc. */
+        display: none;
     }
 
     /* ESTILO AJUSTADO DOS CONTÊINERES (COM A ALTERAÇÃO) */
