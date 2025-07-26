@@ -22,9 +22,9 @@
         position: relative; 
         width: 100%;       
         height: 95vh;      /* Altura do "molde" */
-        overflow-y: auto;  /* Permite APENAS a rolagem vertical */
-        overflow-x: hidden;/* Esconde a rolagem horizontal */
+        overflow: auto;    /* <<-- MUDANÇA AQUI: Permite rolagem em AMBAS as direções */
         border-radius: 0.75rem; 
+        cursor: grab;      /* Adiciona um cursor para indicar que a área é "agarrável" */
     }
 
     /* ESTILO AJUSTADO DOS CONTÊINERES (COM A ALTERAÇÃO) */
@@ -693,6 +693,66 @@
         const celebrationModal = document.getElementById('celebration-modal');
         const closeCelebrationBtn = document.getElementById('close-celebration-btn');
         const celebrationAudio = document.getElementById('celebration-audio');
+
+        // =======================================================================
+        // LÓGICA PARA NAVEGAÇÃO POR ARRASTE (PAN)
+        // =======================================================================
+        const panningContainer = document.querySelector('.tree-wrapper');
+        let isPanning = false;
+        let startPos = { x: 0, y: 0 };
+        let scrollPos = { left: 0, top: 0 };
+
+        const startPan = (e) => {
+            isPanning = true;
+            panningContainer.style.cursor = 'grabbing'; // Muda o cursor para "mão fechada"
+            panningContainer.style.userSelect = 'none'; // Evita a seleção de texto ao arrastar
+
+            // Usa 'touches' se for um evento de toque, senão usa as coordenadas do rato
+            const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+            const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+
+            startPos.x = clientX;
+            startPos.y = clientY;
+            scrollPos.left = panningContainer.scrollLeft;
+            scrollPos.top = panningContainer.scrollTop;
+        };
+
+        const duringPan = (e) => {
+            if (!isPanning) return;
+            e.preventDefault(); // Impede o comportamento padrão do navegador (como rolar a página inteira)
+
+            const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+            const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+
+            // Calcula a distância que o dedo/rato se moveu
+            const dx = clientX - startPos.x;
+            const dy = clientY - startPos.y;
+
+            // Move a barra de rolagem do contentor na direção oposta ao movimento
+            panningContainer.scrollTop = scrollPos.top - dy;
+            panningContainer.scrollLeft = scrollPos.left - dx;
+        };
+
+        const endPan = () => {
+            isPanning = false;
+            panningContainer.style.cursor = 'grab'; // Volta o cursor para "mão aberta"
+            panningContainer.style.userSelect = 'auto';
+        };
+
+        // Adiciona os eventos para o RATO
+        panningContainer.addEventListener('mousedown', startPan);
+        panningContainer.addEventListener('mousemove', duringPan);
+        panningContainer.addEventListener('mouseup', endPan);
+        panningContainer.addEventListener('mouseleave', endPan);
+
+        // Adiciona os eventos para o TOQUE (dispositivos móveis)
+        panningContainer.addEventListener('touchstart', startPan);
+        panningContainer.addEventListener('touchmove', duringPan);
+        panningContainer.addEventListener('touchend', endPan);
+        // =======================================================================
+        //  FIM DA LOGICA 
+        // =======================================================================
+
 
         // --- STATE ---
         let nodes = [];
