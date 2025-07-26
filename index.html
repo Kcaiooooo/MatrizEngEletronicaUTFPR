@@ -8,259 +8,257 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
-    <style>
-        /* Copie e cole este bloco inteiro para dentro da sua tag <style> */
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #1f2937;
-        }
-        .font-header {
-            font-family: 'Roboto Slab', serif;
-        }
-        
-        /* NOVO ESTILO PARA O WRAPPER */
-        .tree-wrapper {
-            position: relative; 
-            width: 100%;       
-            height: 95vh;      /* Altura do "molde" */
-            overflow: auto;    /* Adiciona rolagem interna */
-            border-radius: 0.75rem; 
-        }
+<style>
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: #1f2937;
+    }
+    .font-header {
+        font-family: 'Roboto Slab', serif;
+    }
+    
+    /* NOVO ESTILO PARA O WRAPPER (COM A ALTERAÇÃO) */
+    .tree-wrapper {
+        position: relative; 
+        width: 100%;       
+        height: 95vh;      /* Altura do "molde" */
+        overflow-y: auto;  /* Permite APENAS a rolagem vertical */
+        overflow-x: hidden;/* Esconde a rolagem horizontal */
+        border-radius: 0.75rem; 
+    }
 
-        /* ESTILO AJUSTADO DOS CONTÊINERES */
+    /* ESTILO AJUSTADO DOS CONTÊINERES (COM A ALTERAÇÃO) */
+    #main-container, #humanities-container, #optional-container {
+        position: relative;
+        width: 100%; /* << MUDANÇA AQUI */
+        /* * AQUI ESTÁ A MUDANÇA PRINCIPAL:
+        * Como reduzimos a largura, aumentamos a altura para
+        * redistribuir o espaço verticalmente.
+        */
+        height: 410%; /* << MUDANÇA AQUI */
+        background-color: #111827; 
+        background-image: 
+            linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+        background-size: 25px 25px;
+        border-radius: 0.75rem;
+        overflow: visible; 
+    }
+    .node {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 130px; 
+        height: 90px;
+        border-radius: 0.75rem; 
+        border: 3px solid;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        padding: 5px;
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 11px;
+    }
+    /* --- Main Subjects States --- */
+    .subject-locked { background-color: #374151; border-color: #4b5563; color: #9ca3af; }
+    .subject-locked:hover { transform: translate(-50%, -50%) scale(1.05); }
+    .subject-available { background-color: #2563eb; border-color: #60a5fa; color: white; box-shadow: 0 0 15px rgba(59, 130, 246, 0.5); }
+    .subject-available:hover { transform: translate(-50%, -50%) scale(1.05); }
+    .subject-completed { background-color: #16a34a; border-color: #4ade80; color: white; font-weight: bold; box-shadow: 0 0 20px rgba(74, 222, 128, 0.7); }
+    .subject-satisfied { 
+        background-color: #4a4a28; /* Fundo dourado escuro */
+        border-color: #fbbf24;    /* Borda âmbar/dourada */
+        color: #fde68a;           /* Texto dourado claro */
+        cursor: not-allowed;      /* Indica que não é mais clicável */
+    }
+    .subject-satisfied:hover { transform: translate(-50%, -50%) scale(1.05); }
+
+    /* --- Humanities Subjects States --- */
+    .humanities-locked { background-color: #374151; border-color: #4b5563; color: #9ca3af; }
+    .humanities-locked:hover { transform: translate(-50%, -50%) scale(1.05); }
+    .humanities-available { background-color: #a855f7; border-color: #c084fc; color: white; box-shadow: 0 0 15px rgba(168, 85, 247, 0.5); }
+    .humanities-available:hover { transform: translate(-50%, -50%) scale(1.05); }
+    .humanities-completed { background-color: #16a34a; border-color: #4ade80; color: white; font-weight: bold; box-shadow: 0 0 20px rgba(74, 222, 128, 0.7); }
+
+    /* --- Optional/Track Subjects States --- */
+    .optional-locked { background-color: #374151; border-color: #4b5563; color: #9ca3af; }
+    .optional-locked:hover { transform: translate(-50%, -50%) scale(1.05); }
+    .optional-available { background-color: #dc2626; border-color: #f87171; color: white; box-shadow: 0 0 15px rgba(220, 38, 38, 0.5); }
+    .optional-available:hover { transform: translate(-50%, -50%) scale(1.05); }
+    .optional-completed { background-color: #16a34a; border-color: #4ade80; color: white; font-weight: bold; box-shadow: 0 0 20px rgba(74, 222, 128, 0.7); }
+
+    /* O restante do seu CSS continua aqui sem alterações... */
+    .node .tooltip {
+        visibility: hidden; opacity: 0; /* GARANTA QUE ESTAS LINHAS ESTEJAM AQUI */
+        width: 220px; background-color: #1f2937; color: #fff; text-align: center;
+        border-radius: 6px; padding: 8px; position: absolute; z-index: 20; bottom: 115%; left: 50%;
+        margin-left: -110px; transition: opacity 0.3s; border: 1px solid #4b5563;
+    }
+
+    .node .tooltip::after {
+        content: ""; position: absolute; top: 100%; left: 50%; margin-left: -5px; border-width: 5px;
+        border-style: solid; border-color: #1f2937 transparent transparent transparent;
+    }
+
+    .node .tooltip.visible, .node .tooltip-satisfied.visible {
+        visibility: visible;
+        opacity: 1;
+    }         
+    
+    .line-locked { stroke: #4b5563; stroke-width: 2; stroke-dasharray: 4, 4; fill: none; }
+    
+    .line-completed { 
+        stroke: #16a34a; 
+        stroke-width: 3; 
+        fill: none; 
+        filter: drop-shadow(0 0 3px #4ade80);
+        transition: stroke-dashoffset 1.5s ease-out;
+    }
+
+    .remove-btn {
+        background: none; border: none; color: #f87171; font-size: 1.5rem;
+        font-weight: bold; cursor: pointer; line-height: 1; padding: 0 0.5rem;
+        transition: color 0.2s;
+    }
+    .remove-btn:hover { color: #ef4444; }
+
+    .modal-overlay {
+        position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex; align-items: center; justify-content: center;
+        z-index: 50; transition: opacity 0.3s ease;
+    }
+    .modal-box {
+        background-color: #1f2937; border-radius: 0.75rem; padding: 2rem;
+        border: 1px solid #4b5563; box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        transform: scale(0.95); transition: transform 0.3s ease;
+    }
+    .modal-overlay:not(.hidden) .modal-box {
+        transform: scale(1);
+    }
+    
+    .tab-btn {
+        padding: 0.75rem 1.5rem;
+        font-weight: 600;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        color: #9ca3af;
+        border-bottom: 3px solid transparent;
+        transition: all 0.3s ease;
+    }
+    .tab-btn:hover {
+        color: #d1d5db;
+    }
+    .tab-btn.active {
+        color: #60a5fa;
+        border-bottom-color: #60a5fa;
+    }
+    .period-header {
+        position: absolute;
+        left: 10px;
+        transform: translateY(-50%);
+        color: #6b7280;
+        font-weight: bold;
+        font-size: 1.25rem;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        background-color: rgba(31, 41, 55, 0.5);
+        padding: 10px 5px;
+        border-radius: 8px;
+    }
+    .track-header {
+        position: absolute;
+        left: 5px;
+        transform: translateY(-50%);
+        color: #9ca3af;
+        font-weight: bold;
+        font-size: 1rem;
+        background-color: rgba(31, 41, 55, 0.6);
+        padding: 8px 4px;
+        border-radius: 8px;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
+    .node .tooltip-satisfied {
+        visibility: hidden; opacity: 0; /* GARANTA QUE ESTAS LINHAS ESTEJAM AQUI */
+        width: 220px; background-color: #1f2937; color: #fff; text-align: center;
+        border-radius: 6px; padding: 8px; position: absolute; z-index: 20; bottom: 115%; left: 50%;
+        margin-left: -110px; transition: opacity 0.3s; border: 2px solid #fbbf24; /* Borda Dourada */
+    }
+
+    .node .tooltip-satisfied::after {
+        content: ""; position: absolute; top: 100%; left: 50%; margin-left: -5px; border-width: 5px;
+        border-style: solid; border-color: #fbbf24 transparent transparent transparent;
+    }
+
+    /* Adicione este novo estilo para o tooltip posicionado abaixo */
+    .node .tooltip.below {
+        bottom: auto; /* Remove a regra que o força para cima */
+        top: 115%;    /* Posiciona 15% abaixo do nó */
+    }
+
+    /* Adicione este estilo para corrigir a seta quando o tooltip estiver abaixo */
+    .node .tooltip.below::after {
+        top: auto;              /* Remove a regra da seta antiga */
+        bottom: 100%;           /* Coloca a seta no topo do tooltip */
+        margin-left: -5px;
+        /* Inverte a direção da borda para apontar para cima */
+        border-color: transparent transparent #1f2937 transparent;
+    }
+
+    /* Se você também quer que a borda dourada funcione para tooltips satisfeitos abaixo */
+    .node .tooltip-satisfied.below::after {
+        border-color: transparent transparent #fbbf24 transparent;
+    }
+
+    /* ================================================= */
+    /* === ESTILOS PARA DISPOSITIVOS MÓVEIS (INÍCIO) === */
+    /* ================================================= */
+
+    /* Esta regra só aplica os estilos abaixo em telas com largura máxima de 768px */
+    @media (max-width: 768px) {
+
+        /* 1. Ajuste no Contêiner Principal da Árvore */
+        /* Para forçar um layout mais vertical, aumentamos a largura (width) e
+        diminuímos a altura (height) do contêiner interno. Isso "estica" o conteúdo
+        na vertical, tornando a rolagem para baixo mais natural no celular. */
         #main-container, #humanities-container, #optional-container {
-            position: relative;
-            width: 120%;
-            /* * AQUI ESTÁ A MUDANÇA PRINCIPAL:
-            * Definimos uma altura em porcentagem maior que 100%.
-            * Como suas últimas matérias estão em y: 137%, 
-            * usamos 150% para garantir que haja espaço de sobra.
-            */
-            height: 340%; 
-            background-color: #111827; 
-            background-image: 
-                linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
-            background-size: 25px 25px;
-            border-radius: 0.75rem;
-            overflow: visible; 
+            width: 280%;  /* Mais largo para espalhar os nós verticalmente */
+            height: 140%; /* Menos alto para compensar a largura */
         }
+
+        /* 2. Diminuir o Tamanho dos Nós (Matérias) */
+        /* Os nós originais (130x90px) são muito grandes para uma tela de celular.
+        Vamos diminuí-los para que caibam melhor na tela. */
         .node {
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 130px; 
-            height: 90px;
-            border-radius: 0.75rem; 
-            border: 3px solid;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            transform: translate(-50%, -50%);
-            z-index: 10;
-            padding: 5px;
-            text-align: center;
-            box-sizing: border-box;
-            font-size: 11px;
-        }
-        /* --- Main Subjects States --- */
-        .subject-locked { background-color: #374151; border-color: #4b5563; color: #9ca3af; }
-        .subject-locked:hover { transform: translate(-50%, -50%) scale(1.05); }
-        .subject-available { background-color: #2563eb; border-color: #60a5fa; color: white; box-shadow: 0 0 15px rgba(59, 130, 246, 0.5); }
-        .subject-available:hover { transform: translate(-50%, -50%) scale(1.05); }
-        .subject-completed { background-color: #16a34a; border-color: #4ade80; color: white; font-weight: bold; box-shadow: 0 0 20px rgba(74, 222, 128, 0.7); }
-        .subject-satisfied { 
-            background-color: #4a4a28; /* Fundo dourado escuro */
-            border-color: #fbbf24;    /* Borda âmbar/dourada */
-            color: #fde68a;           /* Texto dourado claro */
-            cursor: not-allowed;      /* Indica que não é mais clicável */
-        }
-        .subject-satisfied:hover { transform: translate(-50%, -50%) scale(1.05); }
-
-        /* --- Humanities Subjects States --- */
-        .humanities-locked { background-color: #374151; border-color: #4b5563; color: #9ca3af; }
-        .humanities-locked:hover { transform: translate(-50%, -50%) scale(1.05); }
-        .humanities-available { background-color: #a855f7; border-color: #c084fc; color: white; box-shadow: 0 0 15px rgba(168, 85, 247, 0.5); }
-        .humanities-available:hover { transform: translate(-50%, -50%) scale(1.05); }
-        .humanities-completed { background-color: #16a34a; border-color: #4ade80; color: white; font-weight: bold; box-shadow: 0 0 20px rgba(74, 222, 128, 0.7); }
-
-        /* --- Optional/Track Subjects States --- */
-        .optional-locked { background-color: #374151; border-color: #4b5563; color: #9ca3af; }
-        .optional-locked:hover { transform: translate(-50%, -50%) scale(1.05); }
-        .optional-available { background-color: #dc2626; border-color: #f87171; color: white; box-shadow: 0 0 15px rgba(220, 38, 38, 0.5); }
-        .optional-available:hover { transform: translate(-50%, -50%) scale(1.05); }
-        .optional-completed { background-color: #16a34a; border-color: #4ade80; color: white; font-weight: bold; box-shadow: 0 0 20px rgba(74, 222, 128, 0.7); }
-
-
-        .node .tooltip {
-            visibility: hidden; opacity: 0; /* GARANTA QUE ESTAS LINHAS ESTEJAM AQUI */
-            width: 220px; background-color: #1f2937; color: #fff; text-align: center;
-            border-radius: 6px; padding: 8px; position: absolute; z-index: 20; bottom: 115%; left: 50%;
-            margin-left: -110px; transition: opacity 0.3s; border: 1px solid #4b5563;
+            width: 110px;
+            height: 75px;
+            font-size: 10px; /* Reduzimos um pouco a fonte para caber no novo tamanho */
         }
 
-        .node .tooltip::after {
-            content: ""; position: absolute; top: 100%; left: 50%; margin-left: -5px; border-width: 5px;
-            border-style: solid; border-color: #1f2937 transparent transparent transparent;
+        /* 3. Ajustar o tamanho da fonte do cabeçalho */
+        /* A classe 'text-3xl' será usada para o título principal em telas pequenas,
+        e as outras classes do Tailwind (sm:, md:) cuidarão dos tamanhos maiores. */
+        .font-header-responsive {
+            font-size: 1.875rem; /* Equivalente a text-3xl do Tailwind */
+            line-height: 2.25rem;
         }
 
-        .node .tooltip.visible, .node .tooltip-satisfied.visible {
-            visibility: visible;
-            opacity: 1;
-        }         
-        
-        .line-locked { stroke: #4b5563; stroke-width: 2; stroke-dasharray: 4, 4; fill: none; }
-        
-        .line-completed { 
-            stroke: #16a34a; 
-            stroke-width: 3; 
-            fill: none; 
-            filter: drop-shadow(0 0 3px #4ade80);
-            transition: stroke-dashoffset 1.5s ease-out;
+        /* 4. Ajustes finos nas barras de progresso e formulários */
+        /* Em telas muito pequenas, podemos empilhar os formulários para não ficarem espremidos. */
+        #ac-form, #cce-form {
+            grid-column: span 2 / span 2; /* Faz cada formulário ocupar a largura total */
         }
+    }
 
-        .remove-btn {
-            background: none; border: none; color: #f87171; font-size: 1.5rem;
-            font-weight: bold; cursor: pointer; line-height: 1; padding: 0 0.5rem;
-            transition: color 0.2s;
-        }
-        .remove-btn:hover { color: #ef4444; }
-
-        .modal-overlay {
-            position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-            background-color: rgba(0, 0, 0, 0.7);
-            display: flex; align-items: center; justify-content: center;
-            z-index: 50; transition: opacity 0.3s ease;
-        }
-        .modal-box {
-            background-color: #1f2937; border-radius: 0.75rem; padding: 2rem;
-            border: 1px solid #4b5563; box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-            transform: scale(0.95); transition: transform 0.3s ease;
-        }
-        .modal-overlay:not(.hidden) .modal-box {
-            transform: scale(1);
-        }
-        
-        .tab-btn {
-            padding: 0.75rem 1.5rem;
-            font-weight: 600;
-            cursor: pointer;
-            border: none;
-            background-color: transparent;
-            color: #9ca3af;
-            border-bottom: 3px solid transparent;
-            transition: all 0.3s ease;
-        }
-        .tab-btn:hover {
-            color: #d1d5db;
-        }
-        .tab-btn.active {
-            color: #60a5fa;
-            border-bottom-color: #60a5fa;
-        }
-        .period-header {
-            position: absolute;
-            left: 10px;
-            transform: translateY(-50%);
-            color: #6b7280;
-            font-weight: bold;
-            font-size: 1.25rem;
-            writing-mode: vertical-rl;
-            text-orientation: mixed;
-            background-color: rgba(31, 41, 55, 0.5);
-            padding: 10px 5px;
-            border-radius: 8px;
-        }
-        .track-header {
-            position: absolute;
-            left: 5px;
-            transform: translateY(-50%);
-            color: #9ca3af;
-            font-weight: bold;
-            font-size: 1rem;
-            background-color: rgba(31, 41, 55, 0.6);
-            padding: 8px 4px;
-            border-radius: 8px;
-            writing-mode: vertical-rl;
-            text-orientation: mixed;
-        }
-        .node .tooltip-satisfied {
-            visibility: hidden; opacity: 0; /* GARANTA QUE ESTAS LINHAS ESTEJAM AQUI */
-            width: 220px; background-color: #1f2937; color: #fff; text-align: center;
-            border-radius: 6px; padding: 8px; position: absolute; z-index: 20; bottom: 115%; left: 50%;
-            margin-left: -110px; transition: opacity 0.3s; border: 2px solid #fbbf24; /* Borda Dourada */
-        }
-
-        .node .tooltip-satisfied::after {
-            content: ""; position: absolute; top: 100%; left: 50%; margin-left: -5px; border-width: 5px;
-            border-style: solid; border-color: #fbbf24 transparent transparent transparent;
-        }
-
-        /* Adicione este novo estilo para o tooltip posicionado abaixo */
-        .node .tooltip.below {
-            bottom: auto; /* Remove a regra que o força para cima */
-            top: 115%;    /* Posiciona 15% abaixo do nó */
-        }
-
-        /* Adicione este estilo para corrigir a seta quando o tooltip estiver abaixo */
-        .node .tooltip.below::after {
-            top: auto;              /* Remove a regra da seta antiga */
-            bottom: 100%;           /* Coloca a seta no topo do tooltip */
-            margin-left: -5px;
-            /* Inverte a direção da borda para apontar para cima */
-            border-color: transparent transparent #1f2937 transparent;
-        }
-
-        /* Se você também quer que a borda dourada funcione para tooltips satisfeitos abaixo */
-        .node .tooltip-satisfied.below::after {
-            border-color: transparent transparent #fbbf24 transparent;
-        }
-
-        /* ================================================= */
-        /* === ESTILOS PARA DISPOSITIVOS MÓVEIS (INÍCIO) === */
-        /* ================================================= */
-
-        /* Esta regra só aplica os estilos abaixo em telas com largura máxima de 768px */
-        @media (max-width: 768px) {
-
-            /* 1. Ajuste no Contêiner Principal da Árvore */
-            /* Para forçar um layout mais vertical, aumentamos a largura (width) e
-            diminuímos a altura (height) do contêiner interno. Isso "estica" o conteúdo
-            na vertical, tornando a rolagem para baixo mais natural no celular. */
-            #main-container, #humanities-container, #optional-container {
-                width: 280%;  /* Mais largo para espalhar os nós verticalmente */
-                height: 140%; /* Menos alto para compensar a largura */
-            }
-
-            /* 2. Diminuir o Tamanho dos Nós (Matérias) */
-            /* Os nós originais (130x90px) são muito grandes para uma tela de celular.
-            Vamos diminuí-los para que caibam melhor na tela. */
-            .node {
-                width: 110px;
-                height: 75px;
-                font-size: 10px; /* Reduzimos um pouco a fonte para caber no novo tamanho */
-            }
-
-            /* 3. Ajustar o tamanho da fonte do cabeçalho */
-            /* A classe 'text-3xl' será usada para o título principal em telas pequenas,
-            e as outras classes do Tailwind (sm:, md:) cuidarão dos tamanhos maiores. */
-            .font-header-responsive {
-                font-size: 1.875rem; /* Equivalente a text-3xl do Tailwind */
-                line-height: 2.25rem;
-            }
-
-            /* 4. Ajustes finos nas barras de progresso e formulários */
-            /* Em telas muito pequenas, podemos empilhar os formulários para não ficarem espremidos. */
-            #ac-form, #cce-form {
-                grid-column: span 2 / span 2; /* Faz cada formulário ocupar a largura total */
-            }
-        }
-
-        /* ================================================= */
-        /* === ESTILOS PARA DISPOSITIVOS MÓVEIS (FIM) ==== */
-        /* ================================================= */
-
-    </style>
+    /* ================================================= */
+    /* === ESTILOS PARA DISPOSITIVOS MÓVEIS (FIM) ==== */
+    /* ================================================= */
+</style>
 </head>
 <body class="bg-gray-800 text-white p-4 sm:p-6 md:p-8">
 
@@ -442,34 +440,34 @@
         const allNodesData = [
             // --- INÍCIO DO CÓDIGO PARA allNodesData ---
             // Período 1 (7 matérias) - Posições X recalculadas
-            { id: 'ELB11', name: 'Algoritmos', dependencies: [], period: 1, chs: 3, cht: 45, x: 5, y: 2, type: 'subject' },
+            { id: 'ELB11', name: 'Algoritmos', dependencies: [], period: 1, chs: 3, cht: 45, x: 5.5, y: 2, type: 'subject' },
             { id: 'ELE11', name: 'Eletricidade Prática', dependencies: [], period: 1, chs: 4, cht: 60, x: 20, y: 2, type: 'subject' },
             { id: 'ELE15', name: 'Acolhimento', dependencies: [], period: 1, chs: 2, cht: 30, x: 35, y: 2, type: 'subject' },
             { id: 'MAT7GA', name: 'Geometria Analítica', dependencies: [], period: 1, chs: 4, cht: 60, x: 50, y: 2, type: 'subject' },
             { id: 'MAT7PC', name: 'Pré-Cálculo', dependencies: [], period: 1, chs: 4, cht: 60, x: 65, y: 2, type: 'subject' },
             { id: 'QB17QT', name: 'Química Teórica', dependencies: [], period: 1, chs: 4, cht: 60, x: 80, y: 2, type: 'subject' },
-            { id: 'QB17QE', name: 'Química Exp.', dependencies: [], period: 1, chs: 2, cht: 30, x: 95, y: 2, type: 'subject' },
+            { id: 'QB17QE', name: 'Química Exp.', dependencies: [], period: 1, chs: 2, cht: 30, x: 94.5, y: 2, type: 'subject' },
 
             // Período 2 (7 matérias) - Posições X recalculadas
-            { id: 'ELB13', name: 'Desenho Técnico', dependencies: [], period: 2, cht: 30, chs: 2, x: 5, y: 13, type: 'subject', groupId: '[1176]' },
+            { id: 'ELB13', name: 'Desenho Técnico', dependencies: [], period: 2, cht: 30, chs: 2, x: 5.5, y: 13, type: 'subject', groupId: '[1176]' },
             { id: 'ELB23', name: 'Desenho Técnico Aplicado', dependencies: [], period: 2, cht: 30, chs: 2, x: 20, y: 13, type: 'subject', groupId: '[1176]' },
             { id: 'ELB21', name: 'Prog. de Computador', dependencies: ['ELB11'], period: 2, chs: 4, cht: 60, x: 35, y: 13, type: 'subject', alternative: { id: 'ELB21R', name: 'Estudos de Prog. de Comp.' }, groupId: '[1175]' },
             { id: 'MAT7AL', name: 'Álgebra Linear', dependencies: ['MAT7GA'], period: 2, chs: 4, cht: 60, x: 50, y: 13, type: 'subject' },
             { id: 'MAT7C1', name: 'Cálculo 1', dependencies: ['MAT7PC'], period: 2, chs: 6, cht: 90, x: 65, y: 13, type: 'subject' },
             { id: 'ELE21', name: 'Intro. Comunicação e Redes', dependencies: [], period: 2, cht: 45, chs: 3, x: 80, y: 13, type: 'subject' },
-            { id: 'QB17CA', name: 'Ciências do Ambiente', dependencies: [], period: 2, cht: 30, chs: 2, x: 95, y: 13, type: 'subject', groupId: '[1194]' },
+            { id: 'QB17CA', name: 'Ciências do Ambiente', dependencies: [], period: 2, cht: 30, chs: 2, x: 94.5, y: 13, type: 'subject', groupId: '[1194]' },
 
             // Período 3 (7 matérias) - Posições X recalculadas
-            { id: 'ELE41', name: 'Oficina de Integração 1', dependencies: ['ELB21', 'ELE11'], period: 3, chs: 3, cht: 45, x: 5, y: 23, type: 'subject', groupId: '[1196]' },
+            { id: 'ELE41', name: 'Oficina de Integração 1', dependencies: ['ELB21', 'ELE11'], period: 3, chs: 3, cht: 45, x: 5.5, y: 23, type: 'subject', groupId: '[1196]' },
             { id: 'ELP35', name: 'Estrutura de Dados', dependencies: ['ELB21'], period: 3, chs: 3, cht: 45, x: 20, y: 23, type: 'subject', alternative: { id: 'ELP35R', name: 'Estudos de Estrutura de Dados' }, groupId: '[1195]' },
             { id: 'ELP31T', name: 'Teoria de Circuitos Elétricos CC', dependencies: ['MAT7C1'], period: 3, cht: 60, chs: 4, x: 35, y: 23, type: 'subject', groupId: '[1187]' },
             { id: 'ELP31TP', name: 'Circuitos Elétricos 1 (Int.)', dependencies: ['MAT7C1'], period: 3, chs: 6, cht: 90, x: 50, y: 23, type: 'subject', groupId: '[1187]' },
             { id: 'FIS7F1', name: 'Física 1', dependencies: ['MAT7C1'], period: 3, chs: 4, cht: 60, x: 65, y: 23, type: 'subject' },
             { id: 'MAT7C2', name: 'Cálculo 2', dependencies: ['MAT7C1'], period: 3, chs: 6, cht: 90, x: 80, y: 23, type: 'subject' },
-            { id: 'MAT7ED', name: 'Eq. Dif. Ordinárias', dependencies: ['MAT7C1'], period: 3, cht: 60, chs: 4, x: 95, y: 23, type: 'subject' },
+            { id: 'MAT7ED', name: 'Eq. Dif. Ordinárias', dependencies: ['MAT7C1'], period: 3, cht: 60, chs: 4, x: 94.5, y: 23, type: 'subject' },
 
             // Período 4 (9 matérias) - Posições X recalculadas
-            { id: 'ICSE20', name: 'Técnicas de Prog.', dependencies: ['ELP35'], period: 4, chs: 4, cht: 60, x: 5, y: 34, type: 'subject', alternative: { id: 'ICSE20R', name: 'Estudos de Téc. de Prog.' }, groupId: '[1197]' },
+            { id: 'ICSE20', name: 'Técnicas de Prog.', dependencies: ['ELP35'], period: 4, chs: 4, cht: 60, x: 5.5, y: 34, type: 'subject', alternative: { id: 'ICSE20R', name: 'Estudos de Téc. de Prog.' }, groupId: '[1197]' },
             { id: 'ELP41', name: 'Eletrônica Analógica 1', dependencies: ['ELP31T'], period: 4, chs: 4, cht: 60, x: 16.25, y: 34, type: 'subject' },
             { id: 'ELP42P', name: 'Prática de Circuitos Elétricos', dependencies: ['ELP31T'], period: 4, cht: 45, chs: 3, x: 27.5, y: 34, type: 'subject', groupId: '[1187]' },
             { id: 'ELP42T', name: 'Teoria de Circuitos Elétricos CA', dependencies: ['ELP31T'], period: 4, cht: 75, chs: 5, x: 38.75, y: 34, type: 'subject', groupId: '[1187]' },
@@ -477,51 +475,51 @@
             { id: 'FIS7F2', name: 'Física 2', dependencies: ['FIS7F1'], period: 4, chs: 4, cht: 60, x: 61.25, y: 34, type: 'subject' },
             { id: 'ELB31', name: 'Prob. e Estatística', dependencies: ['MAT7C1'], period: 4, chs: 3, cht: 45, x: 72.5, y: 34, type: 'subject' },
             { id: 'ELB51', name: 'Mecânica Geral', dependencies: ['FIS7F1'], period: 4, cht: 60, chs: 4, x: 83.75, y: 34, type: 'subject', groupId: '[1198]' },
-            { id: 'ELB61', name: 'Princípios de Resist. dos Materiais', dependencies: ['ELB51'], period: 4, cht: 45, chs: 3, x: 95, y: 34, type: 'subject', groupId: '[1198]' },
+            { id: 'ELB61', name: 'Princípios de Resist. dos Materiais', dependencies: ['ELB51'], period: 4, cht: 45, chs: 3, x: 94.5, y: 34, type: 'subject', groupId: '[1198]' },
 
             // Período 5 (8 matérias) - Posições X recalculadas
-            { id: 'ELP51', name: 'Eletrônica Analógica 2', dependencies: ['ELP41'], period: 5, chs: 4, cht: 60, x: 5, y: 45, type: 'subject' },
+            { id: 'ELP51', name: 'Eletrônica Analógica 2', dependencies: ['ELP41'], period: 5, chs: 4, cht: 60, x: 5.5, y: 45, type: 'subject' },
             { id: 'ELF41', name: 'Circuitos Digitais', dependencies: ['ELP41'], period: 5, chs: 5, cht: 75, x: 17.86, y: 45, type: 'subject', alternative: { id: 'ELW41', name: 'Digital Circuits' }, groupId: '[1199]' },
             { id: 'FIS7E1', name: 'Física Exp. 1', dependencies: ['FIS7F1'], period: 5, chs: 2, cht: 30, x: 30.72, y: 45, type: 'subject' },
             { id: 'ELB66', name: 'Sinais e Sistemas', dependencies: ['MAT7C2'], period: 5, chs: 6, cht: 90, x: 43.58, y: 45, type: 'subject' },
             { id: 'ELB52', name: 'Eletromagnetismo 1', dependencies: ['MAT7C2'], period: 5, chs: 4, cht: 60, x: 56.44, y: 45, type: 'subject' },
             { id: 'ELP64', name: 'Eletromag. 2: Linhas e Antenas', dependencies: ['ELB52'], period: 5, chs: 4, cht: 60, x: 69.3, y: 45, type: 'subject' },
             { id: 'ELP65', name: 'Máquinas Elétricas', dependencies: ['ELB52'], period: 5, cht: 60, chs: 4, x: 82.16, y: 45, type: 'subject' },
-            { id: 'ELT74A', name: 'Fund. Fenômenos de Transporte', dependencies: ['FIS7F2'], period: 5, cht: 30, chs: 2, x: 95, y: 45, type: 'subject' },
+            { id: 'ELT74A', name: 'Fund. Fenômenos de Transporte', dependencies: ['FIS7F2'], period: 5, cht: 30, chs: 2, x: 94.5, y: 45, type: 'subject' },
 
             // Período 6 (5 matérias) - Posições X recalculadas
-            { id: 'ELP61', name: 'Eletrônica Analógica 3', dependencies: ['ELP51'], period: 6, chs: 4, cht: 60, x: 5, y: 55, type: 'subject' },
+            { id: 'ELP61', name: 'Eletrônica Analógica 3', dependencies: ['ELP51'], period: 6, chs: 4, cht: 60, x: 5.5, y: 55, type: 'subject' },
             { id: 'ELF52', name: 'Microcontrolados', dependencies: ['ELF41'], period: 6, chs: 4, cht: 60, x: 27.5, y: 55, type: 'subject', alternative: { id: 'ELW52', name: 'Microcontroller Programming' }, groupId: '[1200]' },
             { id: 'ELP34', name: 'Medidas Elétricas', dependencies: ['ELP42P', 'ELP42T', 'MAT7ED'], period: 6, chs: 4, cht: 60, x: 50, y: 55, type: 'subject', groupId: '[1191]' },
             { id: 'ELF51', name: 'PDS', dependencies: ['ELB66'], period: 6, chs: 4, cht: 60, x: 72.5, y: 55, type: 'subject', alternative: { id: 'ELW51', name: 'Digital Signal Processing' }, groupId: '[1201]' },
-            { id: 'ELP63', name: 'Instrumentação Industrial', dependencies: ['ELP34'], period: 6, cht: 60, chs: 4, x: 95, y: 55, type: 'subject', groupId: '[1192]' },
+            { id: 'ELP63', name: 'Instrumentação Industrial', dependencies: ['ELP34'], period: 6, cht: 60, chs: 4, x: 94.5, y: 55, type: 'subject', groupId: '[1192]' },
 
             // Período 7 (8 matérias) - Posições X recalculadas
-            { id: 'ELE64', name: 'Oficina de Integração (Genérica)', dependencies: ['Periodo:6'], period: 7, cht: 45, chs: 3, x: 5, y: 66, type: 'subject', groupId: '[1202]' },
+            { id: 'ELE64', name: 'Oficina de Integração (Genérica)', dependencies: ['Periodo:6'], period: 7, cht: 45, chs: 3, x: 5.5, y: 66, type: 'subject', groupId: '[1202]' },
             { id: 'ELXB1', name: 'Oficina de Int. (Biomédica)', dependencies: ['Periodo:6'], period: 7, cht: 45, chs: 3, x: 17.86, y: 66, type: 'subject', groupId: '[1202]' },
             { id: 'ELXT1', name: 'Oficina de Int. (Telecom)', dependencies: ['Periodo:6'], period: 7, cht: 45, chs: 3, x: 30.72, y: 66, type: 'subject', groupId: '[1202]' },
             { id: 'ELP71', name: 'Eletrônica Analógica 4', dependencies: ['ELP61'], period: 7, chs: 4, cht: 60, x: 43.58, y: 66, type: 'subject' },
             { id: 'ELF61', name: 'Arq. de Computadores', dependencies: ['ELF52'], period: 7, chs: 4, cht: 60, x: 56.44, y: 66, type: 'subject', alternative: { id: 'ELW61', name: 'Computer Org. & Arch.' }, groupId: '[1204]' },
             { id: 'ELF66', name: 'Sistemas Operacionais', dependencies: ['ELF52'], period: 7, chs: 4, cht: 60, x: 69.3, y: 66, type: 'subject', alternative: { id: 'ELW66', name: 'Operating Systems' }, groupId: '[1205]' },
             { id: 'ELF62', name: 'Controle 1', dependencies: ['ELB66'], period: 7, chs: 4, cht: 60, x: 82.16, y: 66, type: 'subject', alternative: { id: 'ELW62', name: 'Control Systems 1' }, groupId: '[1203]' },
-            { id: 'ELS02', name: 'Estágio Obrigatório', dependencies: [], period: 7, cht: 360, chs: 0, x: 95, y: 66, type: 'subject' },
+            { id: 'ELS02', name: 'Estágio Obrigatório', dependencies: [], period: 7, cht: 360, chs: 0, x: 94.5, y: 66, type: 'subject' },
 
             // Período 8 (6 matérias) - Posições X recalculadas
-            { id: 'ELP66', name: 'Planej. de Carreira', dependencies: [], period: 8, chs: 2, cht: 30, x: 5, y: 77, type: 'subject' },
+            { id: 'ELP66', name: 'Planej. de Carreira', dependencies: [], period: 8, chs: 2, cht: 30, x: 5.5, y: 77, type: 'subject' },
             { id: 'ELF84', name: 'Eletrônica de Potência', dependencies: ['ELP61'], period: 8, chs: 5, cht: 75, x: 23, y: 77, type: 'subject', alternative: { id: 'ELW84', name: 'Power Electronics' }, groupId: '[1210]' },
             { id: 'ELF74', name: 'Sistemas Embarcados', dependencies: ['ELF61', 'ELF66'], period: 8, chs: 4, cht: 60, x: 41, y: 77, type: 'subject', alternative: { id: 'ELW74', name: 'Embedded Systems' }, groupId: '[1208]' },
             { id: 'ELP73', name: 'Princ. de Comunicações', dependencies: ['ELB66', 'ELP71'], period: 8, chs: 4, cht: 60, x: 59, y: 77, type: 'subject', alternative: { id: 'ELW71', name: 'Communication Systems' }, groupId: '[1209]' },
             { id: 'ELF72', name: 'Controle 2', dependencies: ['ELF62'], period: 8, chs: 4, cht: 60, x: 77, y: 77, type: 'subject', alternative: { id: 'ELW72', name: 'Control Systems 2' }, groupId: '[1206]' },
-            { id: 'ELTE3', name: 'Lógica Reconfigurável', dependencies: ['ELB66'], period: 8, cht: 60, chs: 4, x: 95, y: 77, type: 'subject', groupId: '[1207]' },
+            { id: 'ELTE3', name: 'Lógica Reconfigurável', dependencies: ['ELB66'], period: 8, cht: 60, chs: 4, x: 94.5, y: 77, type: 'subject', groupId: '[1207]' },
 
             // Período 9 (4 matérias) - Posições X recalculadas
-            { id: 'ELE91', name: 'TCC 1', dependencies: [], period: 9, chs: 3, cht: 45, x: 5, y: 87, type: 'subject' },
+            { id: 'ELE91', name: 'TCC 1', dependencies: [], period: 9, chs: 3, cht: 45, x: 5.5, y: 87, type: 'subject' },
             { id: 'ELO91', name: 'Ética e Cidadania', dependencies: [], period: 9, chs: 2, cht: 30, x: 35, y: 87, type: 'subject' },
             { id: 'ELF73', name: 'Com. Digitais', dependencies: ['ELP73'], period: 9, chs: 5, cht: 75, x: 65, y: 87, type: 'subject', alternative: { id: 'ELW73', name: 'Digital Communications' }, groupId: '[1212]' },
-            { id: 'ELF81', name: 'Controle a Ev. Discretos', dependencies: ['ELF62'], period: 9, chs: 4, cht: 60, x: 95, y: 87, type: 'subject', alternative: { id: 'ELW81', name: 'Control of Discrete Event Sys.' }, groupId: '[1211]' },
+            { id: 'ELF81', name: 'Controle a Ev. Discretos', dependencies: ['ELF62'], period: 9, chs: 4, cht: 60, x: 94.5, y: 87, type: 'subject', alternative: { id: 'ELW81', name: 'Control of Discrete Event Sys.' }, groupId: '[1211]' },
 
             // Período 10 (10 matérias) - Posições X recalculadas
-            { id: 'ELE92', name: 'TCC 2', dependencies: ['ELE91'], period: 10, chs: 0, cht: 15, x: 5, y: 98, type: 'subject' },
+            { id: 'ELE92', name: 'TCC 2', dependencies: ['ELE91'], period: 10, chs: 0, cht: 15, x: 5.5, y: 98, type: 'subject' },
             { id: 'ELO92', name: 'Empreendedorismo', dependencies: [], period: 10, cht: 30, chs: 2, x: 15, y: 98, type: 'subject', groupId: '[1177]' },
             { id: 'GEE7A1', name: 'Fund. de Administração', dependencies: [], period: 10, cht: 45, chs: 3, x: 25, y: 98, type: 'subject', groupId: '[1177]' },
             { id: 'GEE7E3', name: 'Fund. de Economia', dependencies: [], period: 10, cht: 30, chs: 2, x: 35, y: 98, type: 'subject', groupId: '[1177]' },
@@ -530,7 +528,7 @@
             { id: 'GEE7G1', name: 'Fund. de Gestão de Pessoas', dependencies: [], period: 10, cht: 45, chs: 3, x: 65, y: 98, type: 'subject', groupId: '[1177]' },
             { id: 'GEE7G3', name: 'Fund. de Gestão da Produção', dependencies: [], period: 10, cht: 45, chs: 3, x: 75, y: 98, type: 'subject', groupId: '[1177]' },
             { id: 'GEE7G5', name: 'Fund. de Gestão de Projeto', dependencies: [], period: 10, cht: 45, chs: 3, x: 85, y: 98, type: 'subject', groupId: '[1177]' },
-            { id: 'GEE7M1', name: 'Fund. de Marketing', dependencies: [], period: 10, cht: 45, chs: 3, x: 95, y: 98, type: 'subject', groupId: '[1177]' }
+            { id: 'GEE7M1', name: 'Fund. de Marketing', dependencies: [], period: 10, cht: 45, chs: 3, x: 94.5, y: 98, type: 'subject', groupId: '[1177]' }
             // --- FIM DO CÓDIGO PARA allNodesData ---
         ];
         
@@ -538,26 +536,26 @@
         const allHumanitiesData = [
             // --- INÍCIO DO CÓDIGO PARA allHumanitiesData ---
             // Período 2 - [1215] Linguística, Letras e Artes
-            { id: 'CAART02', name: 'Prática Musical 1', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 10, y: 5 },
-            { id: 'CAART03', name: 'Prática Musical 2', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 10, y: 12 },
-            { id: 'CAART04', name: 'Grupos Instrumentais 1', dependencies: [], period: 2, cht: 90, type: 'humanities', x: 10, y: 19 },
-            { id: 'CAART05', name: 'Grupos Instrumentais 2', dependencies: [], period: 2, cht: 90, type: 'humanities', x: 10, y: 26 },
-            { id: 'CAART06', name: 'Grupos Instrumentais 3', dependencies: [], period: 2, cht: 90, type: 'humanities', x: 10, y: 33 },
-            { id: 'CAART07', name: 'Grupos Instrumentais 4', dependencies: [], period: 2, cht: 90, type: 'humanities', x: 10, y: 40 },
-            { id: 'EDU70J', name: 'Libras', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 20, y: 5 },
-            { id: 'EDU7AG', name: 'Espanhol para Eng. 1', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 20, y: 12 },
-            { id: 'EDU7AH', name: 'Espanhol para Eng. 2', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 20, y: 19 },
-            { id: 'EDU7AI', name: 'Prática de Escrita para Eng.', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 20, y: 26 },
-            { id: 'LEM7A1', name: 'Alemão 1', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 30, y: 5 },
-            { id: 'LEM7A2', name: 'Alemão 2', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 30, y: 12 },
-            { id: 'LEM7A3', name: 'Alemão 3', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 30, y: 19 },
-            { id: 'LEM7A4', name: 'Alemão 4', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 30, y: 26 },
-            { id: 'LEM7A5', name: 'Alemão 5', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 30, y: 33 },
-            { id: 'LEM7F1', name: 'Francês 1', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 40, y: 5 },
-            { id: 'LEM7F2', name: 'Francês 2', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 40, y: 12 },
-            { id: 'LEM7F3', name: 'Francês 3', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 40, y: 19 },
-            { id: 'LEM7F4', name: 'Francês 4', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 40, y: 26 },
-            { id: 'LEM7F5', name: 'Francês 5', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 40, y: 33 },
+            { id: 'CAART02', name: 'Prática Musical 1', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 5.5, y: 5 },
+            { id: 'CAART03', name: 'Prática Musical 2', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 5.5, y: 12 },
+            { id: 'CAART04', name: 'Grupos Instrumentais 1', dependencies: [], period: 2, cht: 90, type: 'humanities', x: 5.5, y: 19 },
+            { id: 'CAART05', name: 'Grupos Instrumentais 2', dependencies: [], period: 2, cht: 90, type: 'humanities', x: 5.5, y: 26 },
+            { id: 'CAART06', name: 'Grupos Instrumentais 3', dependencies: [], period: 2, cht: 90, type: 'humanities', x: 5.5, y: 33 },
+            { id: 'CAART07', name: 'Grupos Instrumentais 4', dependencies: [], period: 2, cht: 90, type: 'humanities', x: 5.5, y: 40 },
+            { id: 'EDU70J', name: 'Libras', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 16.25, y: 5 },
+            { id: 'EDU7AG', name: 'Espanhol para Eng. 1', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 16.25, y: 12 },
+            { id: 'EDU7AH', name: 'Espanhol para Eng. 2', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 16.25, y: 19 },
+            { id: 'EDU7AI', name: 'Prática de Escrita para Eng.', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 16.25, y: 26 },
+            { id: 'LEM7A1', name: 'Alemão 1', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 27.5, y: 5 },
+            { id: 'LEM7A2', name: 'Alemão 2', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 27.5, y: 12 },
+            { id: 'LEM7A3', name: 'Alemão 3', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 27.5, y: 19 },
+            { id: 'LEM7A4', name: 'Alemão 4', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 27.5, y: 26 },
+            { id: 'LEM7A5', name: 'Alemão 5', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 27.5, y: 33 },
+            { id: 'LEM7F1', name: 'Francês 1', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 38.75, y: 5 },
+            { id: 'LEM7F2', name: 'Francês 2', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 38.75, y: 12 },
+            { id: 'LEM7F3', name: 'Francês 3', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 38.75, y: 19 },
+            { id: 'LEM7F4', name: 'Francês 4', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 38.75, y: 26 },
+            { id: 'LEM7F5', name: 'Francês 5', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 38.75, y: 33 },
 
             // Período 2 - [1214] Ciências Humanas
             { id: 'FCH7FA', name: 'Filosofia da Ciência e Tec.', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 50, y: 5 },
@@ -566,28 +564,28 @@
             { id: 'FCH7HA', name: 'História da Técnica e Tec.', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 50, y: 26 },
             { id: 'FCH7HB', name: 'História Geral da Economia', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 50, y: 33 },
             { id: 'FCH7HC', name: 'Capitalismo Contemp.', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 50, y: 40 },
-            { id: 'FCH7PA', name: 'Psicologia do Trabalho', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 60, y: 5 },
-            { id: 'FCH7PB', name: 'Relações Interpessoais', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 60, y: 12 },
-            { id: 'FCH7SA', name: 'Sociologia', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 60, y: 19 },
-            { id: 'FCH7SB', name: 'Tecnologia e Sociedade', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 60, y: 26 },
-            { id: 'FCH7SC', name: 'Tec., Trabalho e Saúde', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 60, y: 33 },
-            { id: 'FCH7SD', name: 'Sociedade e Política no BR', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 60, y: 40 },
-            { id: 'FCH7XC', name: 'Presença Africana no Brasil', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 70, y: 5 },
-            { id: 'FCH7XF', name: 'Dimensão Amb. na Gestão Urbana', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 70, y: 12 },
-            { id: 'FCH7XG', name: 'Tecnopolíticas da Soc. Contemp.', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 70, y: 19 },
+            { id: 'FCH7PA', name: 'Psicologia do Trabalho', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 61.25, y: 5 },
+            { id: 'FCH7PB', name: 'Relações Interpessoais', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 61.25, y: 12 },
+            { id: 'FCH7SA', name: 'Sociologia', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 61.25, y: 19 },
+            { id: 'FCH7SB', name: 'Tecnologia e Sociedade', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 61.25, y: 26 },
+            { id: 'FCH7SC', name: 'Tec., Trabalho e Saúde', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 61.25, y: 33 },
+            { id: 'FCH7SD', name: 'Sociedade e Política no BR', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 61.25, y: 40 },
+            { id: 'FCH7XC', name: 'Presença Africana no Brasil', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 72.5, y: 5 },
+            { id: 'FCH7XF', name: 'Dimensão Amb. na Gestão Urbana', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 72.5, y: 12 },
+            { id: 'FCH7XG', name: 'Tecnopolíticas da Soc. Contemp.', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 72.5, y: 19 },
 
             // Período 2 - [1213] Ciências Sociais e Aplicadas & [1216] Saúde & [1217] Eletivas
-            { id: 'ELH04', name: 'Inovação Tec. e Financiamento', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 80, y: 5 },
-            { id: 'ELH05', name: 'Noções Jurídicas p/ Empreend.', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 80, y: 12 },
-            { id: 'ELH06', name: 'Metodologias Ativas p/ Eng.', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 80, y: 19 },
-            { id: 'LCOM7AB', name: 'Comunicação Soc. e Eventos', dependencies: [], period: 2, cht: 105, type: 'humanities', x: 80, y: 26 },
-            { id: 'ELH01', name: 'Fund. de Primeiros Socorros', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 90, y: 5 },
-            { id: 'ELH02', name: 'Prática de Grupo com Música', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 90, y: 12 },
-            { id: 'ELH07', name: 'Humanidades 1', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 90, y: 19 },
-            { id: 'ELH08', name: 'Humanidades 2', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 90, y: 26 },
-            { id: 'ELH09', name: 'Humanidades 3', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 90, y: 33 },
-            { id: 'ELH10', name: 'Humanidades 4', dependencies: [], period: 2, cht: 75, type: 'humanities', x: 90, y: 40 },
-            { id: 'ELH14', name: 'Humanidades 5', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 90, y: 47 }
+            { id: 'ELH04', name: 'Inovação Tec. e Financiamento', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 83.75, y: 5 },
+            { id: 'ELH05', name: 'Noções Jurídicas p/ Empreend.', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 83.75, y: 12 },
+            { id: 'ELH06', name: 'Metodologias Ativas p/ Eng.', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 83.75, y: 19 },
+            { id: 'LCOM7AB', name: 'Comunicação Soc. e Eventos', dependencies: [], period: 2, cht: 105, type: 'humanities', x: 83.75, y: 26 },
+            { id: 'ELH01', name: 'Fund. de Primeiros Socorros', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 94.5, y: 5 },
+            { id: 'ELH02', name: 'Prática de Grupo com Música', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 94.5, y: 12 },
+            { id: 'ELH07', name: 'Humanidades 1', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 94.5, y: 19 },
+            { id: 'ELH08', name: 'Humanidades 2', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 94.5, y: 26 },
+            { id: 'ELH09', name: 'Humanidades 3', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 94.5, y: 33 },
+            { id: 'ELH10', name: 'Humanidades 4', dependencies: [], period: 2, cht: 75, type: 'humanities', x: 94.5, y: 40 },
+            { id: 'ELH14', name: 'Humanidades 5', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 94.5, y: 47 }
             // --- FIM DO CÓDIGO PARA allHumanitiesData ---
         ];
 
@@ -602,7 +600,7 @@
             { id: 'ELTB3', name: 'Comunicações Sem Fio', dependencies: ['ELB31', 'ELB66', 'ELF73', 'ELP66'], period: 9, cht: 60, x: 58, y: 10, type: 'optional' },
             { id: 'ELTB4', name: 'Comunicações Ópticas', dependencies: ['ELP64', 'ELP66'], period: 9, cht: 60, x: 70, y: 10, type: 'optional' },
             { id: 'ELTB5', name: 'Eletromagnetismo Aplicado', dependencies: ['ELB66', 'ELP64', 'ELP71'], period: 9, cht: 60, x: 82, y: 10, type: 'optional' },
-            { id: 'ELTB6', name: 'Tópicos Avançados em Com.', dependencies: ['ELP66'], period: 9, cht: 60, x: 94, y: 10, type: 'optional' },
+            { id: 'ELTB6', name: 'Tópicos Avançados em Com.', dependencies: ['ELP66'], period: 9, cht: 60, x: 94.5, y: 10, type: 'optional' },
             { id: 'ELTB7', name: 'Aplicações de Machine Learning em Com.', dependencies: ['ELF73', 'ELP66', 'ELTB3'], period: 9, cht: 60, x: 58, y: 17, type: 'optional' }, // Posição ajustada abaixo da dependência
 
             // Trilha: Engenharia Biomédica [1182] - y: 28
@@ -641,7 +639,7 @@
             { id: 'ELTE5', name: 'Projeto de PCBs e Simulação', dependencies: ['ELP66'], period: 9, cht: 60, x: 58, y: 75, type: 'optional' },
             { id: 'ELTE7', name: 'Física dos Semicondutores', dependencies: ['ELP66'], period: 9, cht: 60, x: 70, y: 75, type: 'optional' },
             { id: 'ELTE8', name: 'Sistemas Não Lineares', dependencies: ['ELP66'], period: 9, cht: 60, x: 82, y: 75, type: 'optional' },
-            { id: 'ELTE10', name: 'Identificação de Sistemas', dependencies: ['ELP66'], period: 9, cht: 60, x: 94, y: 75, type: 'optional' },
+            { id: 'ELTE10', name: 'Identificação de Sistemas', dependencies: ['ELP66'], period: 9, cht: 60, x: 94.5, y: 75, type: 'optional' },
             { id: 'ELTC1', name: 'Metodologia da Pesquisa', dependencies: ['ELP66'], period: 9, cht: 60, x: 10, y: 82, type: 'optional' },
             { id: 'ELTC2', name: 'Amostragem e Planej. de Exp.', dependencies: ['ELP66'], period: 9, cht: 60, x: 22, y: 82, type: 'optional' },
             { id: 'ELTC3', name: 'Análise de Confiabilidade', dependencies: ['ELP66'], period: 9, cht: 45, x: 34, y: 82, type: 'optional' },
@@ -649,7 +647,7 @@
             { id: 'ELTC5', name: 'Inferência Estatística', dependencies: ['ELP66'], period: 9, cht: 60, x: 58, y: 82, type: 'optional' },
             { id: 'ELTE1', name: 'Engenharia de Sistemas', dependencies: ['ELP66'], period: 9, cht: 45, x: 70, y: 82, type: 'optional' },
             { id: 'ELTE2', name: 'Programação Matemática', dependencies: ['ELP66'], period: 9, cht: 60, x: 82, y: 82, type: 'optional' },
-            { id: 'ELTE11', name: 'TV Digital', dependencies: ['ELP66'], period: 9, cht: 60, x: 94, y: 82, type: 'optional' },
+            { id: 'ELTE11', name: 'TV Digital', dependencies: ['ELP66'], period: 9, cht: 60, x: 94.5, y: 82, type: 'optional' },
             { id: 'ELX91', name: 'Oficina de Integração', dependencies: ['ELP66'], period: 9, cht: 45, x: 10, y: 89, type: 'optional' },
             { id: 'ELX92', name: 'Prática de Engenharia', dependencies: ['Periodo:6'], period: 9, cht: 30, x: 22, y: 89, type: 'optional' },
             { id: 'ELTE6', name: 'Energia Fotovoltaica', dependencies: [], period: 9, cht: 60, x: 34, y: 89, type: 'optional' },
