@@ -20,30 +20,16 @@
     .tree-wrapper {
         position: relative; 
         width: 100%;       
-        height: 95vh;
-        overflow: auto;
+        /* height e overflow removidos */
         border-radius: 0.75rem; 
         cursor: grab;
-        /* --- NOVAS REGRAS PARA ESCONDER A BARRA DE ROLAGEM --- */        
-        /* Para o Firefox */
-        scrollbar-width: none;
-    }
-
-    /* É necessário criar uma regra separada para os navegadores baseados em WebKit */
-    .tree-wrapper::-webkit-scrollbar {
-        /* Para Chrome, Safari, Edge, etc. */
-        display: none;
     }
 
     /* ESTILO AJUSTADO DOS CONTÊINERES (COM A ALTERAÇÃO) */
     #main-container, #humanities-container, #optional-container {
         position: relative;
-        width: 100%; /* << MUDANÇA AQUI */
-        /* * AQUI ESTÁ A MUDANÇA PRINCIPAL:
-        * Como reduzimos a largura, aumentamos a altura para
-        * redistribuir o espaço verticalmente.
-        */
-        height: 410%; /* << MUDANÇA AQUI */
+        width: 100%;
+        min-height: 390vh; /* << MUDANÇA AQUI: de height % para min-height vh */
         background-color: #111827; 
         background-image: 
             linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
@@ -52,6 +38,7 @@
         border-radius: 0.75rem;
         overflow: visible; 
     }
+
     .node {
         position: absolute;
         display: flex;
@@ -240,7 +227,7 @@
         na vertical, tornando a rolagem para baixo mais natural no celular. */
         #main-container, #humanities-container, #optional-container {
             width: 280%;  /* Mais largo para espalhar os nós verticalmente */
-            height: 140%; /* Menos alto para compensar a largura */
+            height: 135vh; /* Menos alto para compensar a largura */
         }
 
         /* 2. Diminuir o Tamanho dos Nós (Matérias) */
@@ -750,65 +737,32 @@
 
         const startPan = (e) => {
             isPanning = true;
-            panningContainer.style.cursor = 'grabbing'; // Muda o cursor para "mão fechada"
-            panningContainer.style.userSelect = 'none'; // Evita a seleção de texto ao arrastar
+            panningContainer.style.cursor = 'grabbing';
+            panningContainer.style.userSelect = 'none';
 
-            // Usa 'touches' se for um evento de toque, senão usa as coordenadas do rato
             const clientX = e.touches ? e.touches[0].clientX : e.clientX;
             const clientY = e.touches ? e.touches[0].clientY : e.clientY;
 
             startPos.x = clientX;
             startPos.y = clientY;
-            scrollPos.left = panningContainer.scrollLeft;
-            scrollPos.top = panningContainer.scrollTop;
+            // --- LINHAS ALTERADAS ---
+            scrollPos.left = window.scrollX || document.documentElement.scrollLeft;
+            scrollPos.top = window.scrollY || document.documentElement.scrollTop;
         };
 
         const duringPan = (e) => {
             if (!isPanning) return;
-
-            const { scrollTop, scrollHeight, clientHeight } = panningContainer;
-            const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-            const deltaY = clientY - startPos.y;
-
-            // --- INÍCIO DA NOVA LÓGICA CORRIGIDA ---
-
-            // Verificamos se estamos nos limites superior ou inferior da rolagem da árvore.
-            const isAtTop = scrollTop <= 0;
-            const isAtBottom = scrollTop + clientHeight >= scrollHeight; // Verificação do limite inferior
             
-            // Verificamos a intenção de rolagem do usuário.
-            const isTryingToScrollUp = deltaY > 0;   // Dedo movendo para baixo
-            const isTryingToScrollDown = deltaY < 0; // Dedo movendo para cima
-
-            // Condição para transferir a rolagem para a página:
-            // 1. O usuário tenta rolar para CIMA, mas a árvore JÁ ESTÁ NO TOPO.
-            // 2. O usuário tenta rolar para BAIXO, mas a árvore JÁ ESTÁ NO FUNDO.
-            if ((isTryingToScrollUp && isAtTop) || (isTryingToScrollDown && isAtBottom)) {
-                // Ao atingir um limite, nós encerramos o nosso gesto de "arrastar"
-                // para liberar o navegador para fazer a rolagem nativa da página.
-                
-                // Replicamos a lógica da função endPan() aqui.
-                isPanning = false;
-                panningContainer.style.cursor = 'grab';
-                panningContainer.style.userSelect = 'auto';
-                
-                // Retornamos sem chamar e.preventDefault().
-                // Como 'isPanning' agora é falso, os próximos eventos de movimento
-                // não reativarão o arraste até que um novo 'touchstart' ou 'mousedown' ocorra.
-                return;
-            }
-
-            // --- FIM DA NOVA LÓGICA ---
-
-            // Se não estamos num limite, continuamos com a lógica normal de arrastar.
+            // Previne a rolagem nativa da página para que nosso arraste funcione
             e.preventDefault();
             
             const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+            const clientY = e.touches ? e.touches[0].clientY : e.clientY;
             const dx = clientX - startPos.x;
             const dy = clientY - startPos.y;
 
-            panningContainer.scrollTop = scrollPos.top - dy;
-            panningContainer.scrollLeft = scrollPos.left - dx;
+            // Atualiza a rolagem da janela principal, não mais do container
+            window.scrollTo(scrollPos.left - dx, scrollPos.top - dy);
         };
 
         const endPan = () => {
