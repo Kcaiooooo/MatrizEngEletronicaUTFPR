@@ -311,10 +311,10 @@
     <div class="max-w-7xl mx-auto">
         <header class="text-center mb-6">
             <h1 class="text-4xl md:text-5xl font-bold font-header text-blue-400">Matriz Curricular só que é uma arvore de habilidades de RPG</h1>
-            <p class="text-gray-300 mt-2">Engenharia Eletrônica - UTFPR (Baseado na Matriz 3)</p>
+            <p class="text-gray-300 mt-2">Engenharia Eletrônica - UTFPR (Baseado na Matriz 2)</p>
         </header>
 
-        <div class="bg-gray-700 p-6 rounded-lg shadow-lg mb-6 space-y-4">
+        <div id="progress-panel" class="bg-gray-700 p-6 rounded-lg shadow-lg mb-6 space-y-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                     <div class="flex justify-between mb-1"><span class="text-base font-medium text-gray-200">Progresso do Curso (Obrigatórias)</span><span id="total-progress-text" class="text-sm font-medium text-gray-200">0%</span></div>
@@ -336,32 +336,6 @@
                     <div class="flex justify-between mb-1"><span class="text-base font-medium text-purple-300">Ciclo de Humanidades</span><span id="humanities-progress-text" class="text-sm font-medium text-purple-300">0/210h (0.0%)</span></div>
                     <div class="w-full bg-gray-900 rounded-full h-4"><div id="humanities-progress-bar" class="bg-purple-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div></div>
                 </div>
-                <div>
-                    <div class="flex justify-between mb-1"><span class="text-base font-medium text-pink-300">Horas Complementares (AC)</span><span id="comp-progress-text" class="text-sm font-medium text-pink-300">0/15h (0.0%)</span></div>
-                    <div class="w-full bg-gray-900 rounded-full h-4 mb-2"><div id="comp-progress-bar" class="bg-pink-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div></div>
-                </div>
-                 <div>
-                    <div class="flex justify-between mb-1"><span class="text-base font-medium text-amber-300">Horas de Extensão (CCE)</span><span id="ext-progress-text" class="text-sm font-medium text-amber-300">0/465h (0.0%)</span></div>
-                    <div class="w-full bg-gray-900 rounded-full h-4 mb-2"><div id="ext-progress-bar" class="bg-amber-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div></div>
-                </div>
-                 <div class="md:col-span-2 grid grid-cols-2 gap-4">
-                     <form id="ac-form" class="flex flex-col gap-2">
-                         <div class="flex gap-2">
-                             <input type="text" id="ac-desc" placeholder="Descrição Ativ. Comp." class="bg-gray-800 text-white rounded px-2 py-1 text-sm w-full">
-                             <input type="number" id="ac-hours" placeholder="Horas" class="bg-gray-800 text-white rounded px-2 py-1 text-sm w-24">
-                             <button type="submit" class="bg-pink-600 hover:bg-pink-700 rounded px-3 py-1 text-sm">Add</button>
-                         </div>
-                         <ul id="ac-list" class="text-sm mt-2 space-y-1 h-20 overflow-y-auto"></ul>
-                     </form>
-                     <form id="cce-form" class="flex flex-col gap-2">
-                         <div class="flex gap-2">
-                             <input type="text" id="cce-desc" placeholder="Descrição Ativ. Extensão" class="bg-gray-800 text-white rounded px-2 py-1 text-sm w-full">
-                             <input type="number" id="cce-hours" placeholder="Horas" class="bg-gray-800 text-white rounded px-2 py-1 text-sm w-24">
-                             <button type="submit" class="bg-amber-600 hover:bg-amber-700 rounded px-3 py-1 text-sm">Add</button>
-                         </div>
-                         <ul id="cce-list" class="text-sm mt-2 space-y-1 h-20 overflow-y-auto"></ul>
-                     </form>
-                 </div>
             </div>
         </div>
         
@@ -440,8 +414,6 @@
 
     <script type="module">
         // --- CONFIGURATION CONSTANTS ---
-        const TOTAL_COMPLEMENTARY_HOURS = 15;
-        const TOTAL_EXTENSION_HOURS = 465;
         const TOTAL_HUMANITIES_HOURS = 210;
         const TOTAL_OPTIONAL_HOURS = 300;
         const NODE_WIDTH = 130;
@@ -752,20 +724,11 @@
         const periodProgressBar = document.getElementById('period-progress-bar');
         const periodProgressText = document.getElementById('period-progress-text');
         const pendingHoursText = document.getElementById('pending-hours-text');
-        const compProgressBar = document.getElementById('comp-progress-bar');
-        const compProgressText = document.getElementById('comp-progress-text');
-        const extProgressBar = document.getElementById('ext-progress-bar');
-        const extProgressText = document.getElementById('ext-progress-text');
         const humanitiesProgressBar = document.getElementById('humanities-progress-bar');
         const humanitiesProgressText = document.getElementById('humanities-progress-text');
         const optionalProgressBar = document.getElementById('optional-progress-bar');
         const optionalProgressText = document.getElementById('optional-progress-text');
-        
-        const acForm = document.getElementById('ac-form');
-        const cceForm = document.getElementById('cce-form');
-        const acList = document.getElementById('ac-list');
-        const cceList = document.getElementById('cce-list');
-        
+                
         const prerequisiteModal = document.getElementById('prerequisite-modal');
         const confirmOverrideBtn = document.getElementById('confirm-override-btn');
         const cancelOverrideBtn = document.getElementById('cancel-override-btn');
@@ -876,8 +839,6 @@
         let humanitiesNodes = [];
         let optionalNodes = [];
         let activeTree = 'main';
-        let completedAcActivities = [];
-        let completedCceActivities = [];
         let nodeToOverride = null;
         let celebrationShown = false;
 
@@ -999,9 +960,6 @@
                 nodesState: nodes.map(n => ({ id: n.id, state: n.state })),
                 humanitiesNodesState: humanitiesNodes.map(n => ({ id: n.id, state: n.state })),
                 optionalNodesState: optionalNodes.map(n => ({ id: n.id, state: n.state })),
-                // Salva as listas de atividades complementares e de extensão
-                completedAcActivities: completedAcActivities,
-                completedCceActivities: completedCceActivities
             };
 
             // Converte o objeto para uma string JSON e armazena na localStorage com uma chave única.
@@ -1045,10 +1003,6 @@
             updateNodeStates(humanitiesNodes, savedState.humanitiesNodesState);
             updateNodeStates(optionalNodes, savedState.optionalNodesState);
             
-            // Restaura as listas de atividades (se existirem no save)
-            completedAcActivities = savedState.completedAcActivities || [];
-            completedCceActivities = savedState.completedCceActivities || [];
-
             console.log("Estado carregado com sucesso!");
             return true;
         }
@@ -1063,8 +1017,6 @@
             nodes = JSON.parse(JSON.stringify(allNodesData));
             humanitiesNodes = JSON.parse(JSON.stringify(allHumanitiesData));
             optionalNodes = JSON.parse(JSON.stringify(allOptionalNodesData));
-            completedAcActivities = [];
-            completedCceActivities = [];
             
             // TENTA CARREGAR O ESTADO SALVO
             const stateLoaded = loadState();
@@ -1087,7 +1039,6 @@
             updateAllSubjectStates();
             renderActiveTree();
             updateAllProgressBars();
-            renderAllActivityLists();
         }
         
         function renderActiveTree() {
@@ -1476,32 +1427,40 @@
         }
 
         function calculateCurrentPeriod() {
-            for (let period = 1; period <= 10; period++) {
-                const pendingHours = nodes
-                    .filter(s => s.period <= period && s.state !== 'subject-completed')
-                    .reduce((sum, s) => sum + s.chs, 0);
-                if (pendingHours >= 16) {
-                    return { currentPeriod: period, pendingHours: pendingHours };
+            let saldoAcumuladoCHS = 0; // Corresponde ao (H) da fórmula: Saldo acumulado total
+
+            // Itera do primeiro ao décimo período para calcular o progresso
+            for (let p = 1; p <= 10; p++) {
+                
+                // (A) Carga horária semanal das disciplinas OBRIGATÓRIAS do período 'p'
+                const chsObrigatoriaTotalPeriodo = nodes
+                    .filter(s => s.period === p)
+                    .reduce((sum, s) => sum + (s.chs || 0), 0);
+
+                // (B) Carga horária semanal das disciplinas OBRIGATÓRIAS CURSADAS no período 'p'
+                const chsObrigatoriaCursadaPeriodo = nodes
+                    .filter(s => s.period === p && (s.state === 'subject-completed' || s.state === 'subject-satisfied'))
+                    .reduce((sum, s) => sum + (s.chs || 0), 0);
+                    
+                // (C) Calcula o saldo do período atual e o adiciona ao acumulado
+                const saldoDoPeriodo = chsObrigatoriaCursadaPeriodo - chsObrigatoriaTotalPeriodo;
+                saldoAcumuladoCHS += saldoDoPeriodo;
+
+                // A "trava" da UTFPR: se o saldo devedor (o valor negativo do saldo acumulado)
+                // for maior ou igual a 16 CHS, o aluno não progride.
+                const saldoDevedor = -saldoAcumuladoCHS;
+                
+                if (saldoDevedor >= 16) {
+                    // O aluno está "preso" neste período. Retornamos o período e o saldo devedor.
+                    return { currentPeriod: p, pendingHours: saldoDevedor }; 
                 }
             }
-            const finalPendingHours = nodes.filter(s => s.state !== 'subject-completed').reduce((sum, s) => sum + s.chs, 0);
-            return { currentPeriod: 10, pendingHours: finalPendingHours };
-        }
-        
-        function renderActivityList(listEl, activities, type) {
-            listEl.innerHTML = activities.map((act, index) => `
-                <li class="flex justify-between items-center text-gray-300">
-                    <span class="truncate pr-2">${act.desc} (${act.hours}h)</span>
-                    <button data-type="${type}" data-index="${index}" class="remove-btn flex-shrink-0">&times;</button>
-                </li>
-            `).join('');
-        }
-        
-        function renderAllActivityLists() {
-            renderActivityList(acList, completedAcActivities, 'ac');
-            renderActivityList(cceList, completedCceActivities, 'cce');
-        }
 
+            // Se o loop terminar sem travar, o aluno está no 10º período ou já se formou.
+            const saldoDevedorFinal = -saldoAcumuladoCHS;
+            return { currentPeriod: 10, pendingHours: saldoDevedorFinal > 0 ? saldoDevedorFinal : 0 };
+        }
+        
         function updateAllProgressBars() {
             // Main progress
             const completedSubjects = nodes.filter(s => s.state === 'subject-completed' || s.state === 'subject-satisfied').length; // <-- LINHA MODIFICADA
@@ -1531,19 +1490,8 @@
             const humanitiesProgress = (totalCompletedHumanities / TOTAL_HUMANITIES_HOURS) * 100;
             humanitiesProgressBar.style.width = `${Math.min(humanitiesProgress, 100)}%`;
             humanitiesProgressText.textContent = `${totalCompletedHumanities}/${TOTAL_HUMANITIES_HOURS}h (${humanitiesProgress.toFixed(1)}%)`;
-
-            // Complementary progress
-            const completedCompHours = completedAcActivities.reduce((sum, n) => sum + n.hours, 0);
-            const compProgress = (completedCompHours / TOTAL_COMPLEMENTARY_HOURS) * 100;
-            compProgressBar.style.width = `${Math.min(compProgress, 100)}%`;
-            compProgressText.textContent = `${completedCompHours}/${TOTAL_COMPLEMENTARY_HOURS}h (${compProgress.toFixed(1)}%)`;
-
-            // Extension progress
-            const completedExtHours = completedCceActivities.reduce((sum, n) => sum + n.hours, 0);
-            const extProgress = (completedExtHours / TOTAL_EXTENSION_HOURS) * 100;
-            extProgressBar.style.width = `${Math.min(extProgress, 100)}%`;
-            extProgressText.textContent = `${completedExtHours}/${TOTAL_EXTENSION_HOURS}h (${extProgress.toFixed(1)}%)`;
             checkAndCelebrate();            
+
         }
 
         // --- EVENT LISTENERS ---
@@ -1569,33 +1517,46 @@
          * Verifica se todos os requisitos do curso foram atendidos.
          * Se sim, e se a celebração ainda não foi mostrada, exibe o modal e toca a música.
          */
+
+         /**
+         * FUNÇÃO DE DEPURAÇÃO: Verifica a conclusão do curso e imprime os valores no console.
+         */
         function checkAndCelebrate() {
-            // Condição para não re-exibir a tela se ela já foi mostrada nesta sessão
+            console.log("--- Iniciando verificação de celebração ---");
+
             if (celebrationShown) {
+                console.log("Verificação parada: a celebração já foi mostrada.");
                 return;
             }
 
-            // Pega os valores atuais do progresso
+            // Recalcula os totais para garantir que temos os dados mais recentes
             const completedSubjects = nodes.filter(s => s.state === 'subject-completed' || s.state === 'subject-satisfied').length;
             const totalCompletedOptional = optionalNodes.filter(n => n.state === 'optional-completed').reduce((sum, n) => sum + n.cht, 0);
             const totalCompletedHumanities = humanitiesNodes.filter(n => n.state === 'humanities-completed').reduce((sum, n) => sum + n.cht, 0);
-            const completedCompHours = completedAcActivities.reduce((sum, n) => sum + n.hours, 0);
-            const completedExtHours = completedCceActivities.reduce((sum, n) => sum + n.hours, 0);
 
-            // Verifica se todos os critérios foram atendidos
-            const isCourseComplete =
-                completedSubjects >= nodes.length &&
-                totalCompletedOptional >= TOTAL_OPTIONAL_HOURS &&
-                totalCompletedHumanities >= TOTAL_HUMANITIES_HOURS &&
-                completedCompHours >= TOTAL_COMPLEMENTARY_HOURS &&
-                completedExtHours >= TOTAL_EXTENSION_HOURS;
+            // Condições individuais
+            const C1 = completedSubjects >= nodes.length;
+            const C2 = totalCompletedOptional >= TOTAL_OPTIONAL_HOURS;
+            const C3 = totalCompletedHumanities >= TOTAL_HUMANITIES_HOURS;
+
+            // Imprime os valores no console para depuração
+            console.log(`Progresso Obrigatórias: ${completedSubjects}/${nodes.length}. Condição atendida? ${C1}`);
+            console.log(`Progresso Optativas: ${totalCompletedOptional}/${TOTAL_OPTIONAL_HOURS}. Condição atendida? ${C2}`);
+            console.log(`Progresso Humanidades: ${totalCompletedHumanities}/${TOTAL_HUMANITIES_HOURS}. Condição atendida? ${C3}`);
+
+            const isCourseComplete = C1 && C2 && C3;
+            console.log(`O curso está completo? ${isCourseComplete}`);
 
             if (isCourseComplete) {
-                celebrationModal.classList.remove('hidden'); // Mostra o modal
-                celebrationAudio.play(); // Toca a música
-                celebrationShown = true; // Marca que a celebração foi exibida
-                saveState(); // Salva o estado para que a flag 'celebrationShown' seja persistida
+                console.log("TODAS AS CONDIÇÕES ATENDIDAS! Exibindo celebração.");
+                celebrationModal.classList.remove('hidden');
+                celebrationAudio.play();
+                celebrationShown = true;
+                saveState();
+            } else {
+                console.log("Uma ou mais condições não foram atendidas.");
             }
+             console.log("--- Fim da verificação ---");
         }
 
         // Adiciona o evento para o botão de fechar o modal de celebração
@@ -1608,42 +1569,6 @@
         // ============================================================
         // ==== FIM DO NOVO CÓDIGO PARA A TELA DE COMEMORAÇÃO ====
         // ============================================================
-
-
-        function handleActivityFormSubmit(e, targetArray) {
-             e.preventDefault();
-            const form = e.target;
-            const descInput = form.querySelector('input[type="text"]');
-            const hoursInput = form.querySelector('input[type="number"]');
-            const desc = descInput.value.trim();
-            const hours = parseInt(hoursInput.value, 10);
-            
-            if (desc && hours > 0) {
-                targetArray.push({ desc, hours });
-                renderAllActivityLists();
-                updateAllProgressBars();
-                descInput.value = '';
-                hoursInput.value = '';
-                saveState(); // Salva o estado após adicionar atividade
-            }
-        }
-
-        acForm.addEventListener('submit', (e) => handleActivityFormSubmit(e, completedAcActivities));
-        cceForm.addEventListener('submit', (e) => handleActivityFormSubmit(e, completedCceActivities));
-
-        document.querySelector('.max-w-7xl').addEventListener('click', (e) => {
-            if (e.target.classList.contains('remove-btn')) {
-                const type = e.target.dataset.type;
-                const index = parseInt(e.target.dataset.index, 10);
-                const arrays = { ac: completedAcActivities, cce: completedCceActivities };
-                if (arrays[type]) {
-                    arrays[type].splice(index, 1);
-                    renderAllActivityLists();
-                    updateAllProgressBars();
-                    saveState(); // Salva o estado após remover atividade
-                }
-            }
-        });
         
         function switchTab(newTab) {
             activeTree = newTab;
