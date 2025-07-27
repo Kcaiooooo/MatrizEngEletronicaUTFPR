@@ -314,7 +314,7 @@
             <p class="text-gray-300 mt-2">Engenharia Eletrônica - UTFPR (Baseado na Matriz 3)</p>
         </header>
 
-        <div class="bg-gray-700 p-6 rounded-lg shadow-lg mb-6 space-y-4">
+        <div id="progress-panel" class="bg-gray-700 p-6 rounded-lg shadow-lg mb-6 space-y-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                     <div class="flex justify-between mb-1"><span class="text-base font-medium text-gray-200">Progresso do Curso (Obrigatórias)</span><span id="total-progress-text" class="text-sm font-medium text-gray-200">0%</span></div>
@@ -1421,16 +1421,38 @@
         }
 
         function calculateCurrentPeriod() {
-            for (let period = 1; period <= 10; period++) {
-                const pendingHours = nodes
-                    .filter(s => s.period <= period && s.state !== 'subject-completed')
-                    .reduce((sum, s) => sum + s.chs, 0);
-                if (pendingHours >= 16) {
-                    return { currentPeriod: period, pendingHours: pendingHours };
+            let saldoAcumuladoCHS = 0; // Corresponde ao (H) da fórmula: Saldo acumulado total
+
+            // Itera do primeiro ao décimo período para calcular o progresso
+            for (let p = 1; p <= 10; p++) {
+                
+                // (A) Carga horária semanal das disciplinas OBRIGATÓRIAS do período 'p'
+                const chsObrigatoriaTotalPeriodo = nodes
+                    .filter(s => s.period === p)
+                    .reduce((sum, s) => sum + (s.chs || 0), 0);
+
+                // (B) Carga horária semanal das disciplinas OBRIGATÓRIAS CURSADAS no período 'p'
+                const chsObrigatoriaCursadaPeriodo = nodes
+                    .filter(s => s.period === p && (s.state === 'subject-completed' || s.state === 'subject-satisfied'))
+                    .reduce((sum, s) => sum + (s.chs || 0), 0);
+                    
+                // (C) Calcula o saldo do período atual e o adiciona ao acumulado
+                const saldoDoPeriodo = chsObrigatoriaCursadaPeriodo - chsObrigatoriaTotalPeriodo;
+                saldoAcumuladoCHS += saldoDoPeriodo;
+
+                // A "trava" da UTFPR: se o saldo devedor (o valor negativo do saldo acumulado)
+                // for maior ou igual a 16 CHS, o aluno não progride.
+                const saldoDevedor = -saldoAcumuladoCHS;
+                
+                if (saldoDevedor >= 16) {
+                    // O aluno está "preso" neste período. Retornamos o período e o saldo devedor.
+                    return { currentPeriod: p, pendingHours: saldoDevedor }; 
                 }
             }
-            const finalPendingHours = nodes.filter(s => s.state !== 'subject-completed').reduce((sum, s) => sum + s.chs, 0);
-            return { currentPeriod: 10, pendingHours: finalPendingHours };
+
+            // Se o loop terminar sem travar, o aluno está no 10º período ou já se formou.
+            const saldoDevedorFinal = -saldoAcumuladoCHS;
+            return { currentPeriod: 10, pendingHours: saldoDevedorFinal > 0 ? saldoDevedorFinal : 0 };
         }
         
         function renderActivityList(listEl, activities, type) {
@@ -1576,7 +1598,7 @@
         acForm.addEventListener('submit', (e) => handleActivityFormSubmit(e, completedAcActivities));
         cceForm.addEventListener('submit', (e) => handleActivityFormSubmit(e, completedCceActivities));
 
-        document.querySelector('.max-w-7xl').addEventListener('click', (e) => {
+        document.getElementById('progress-panel').addEventListener('click', (e) => {
             if (e.target.classList.contains('remove-btn')) {
                 const type = e.target.dataset.type;
                 const index = parseInt(e.target.dataset.index, 10);
