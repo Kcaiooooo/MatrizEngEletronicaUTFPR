@@ -308,16 +308,18 @@
                     <div class="w-full bg-gray-600 rounded-full h-4"><div id="total-progress-bar" class="bg-green-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div></div>
                 </div>
                 <div>
-                    <div class="flex justify-between mb-1"><span class="text-base font-medium text-gray-200">Progresso de Período</span><span id="period-progress-text" class="text-sm font-medium text-gray-200">Período 1</span></div>
-                    <div class="w-full bg-gray-600 rounded-full h-4"><div id="period-progress-bar" class="bg-blue-500 h-4 rounded-full transition-all duration-500" style="width: 10%"></div></div>
-                    <p id="pending-hours-text" class="text-xs text-right text-yellow-400 mt-1"></p>
+                    <div class="flex justify-between mb-1">
+                        <label for="period-slider" class="text-base font-medium text-gray-200">Período Atual</label>
+                        <span id="period-display" class="text-sm font-medium text-gray-200">Período 1</span>
+                    </div>
+                    <input id="period-slider" type="range" min="1" max="10" value="1" class="w-full h-2 bg-gray-600 rounded-lg appearance-none cursor-pointer">
                 </div>
             </div>
             <hr class="border-gray-600 my-4">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                  <div>
                     <div class="flex justify-between mb-1"><span class="text-base font-medium text-red-300">Optativas e Trilhas</span><span id="optional-progress-text" class="text-sm font-medium text-red-300">0/300h (0.0%)</span></div>
-                    <div class="w-full bg-gray-900 rounded-full h-4"><div id="optional-progress-bar" class="bg-red-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div></div>0
+                    <div class="w-full bg-gray-900 rounded-full h-4"><div id="optional-progress-bar" class="bg-red-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div></div>
                 </div>
                 <div>
                     <div class="flex justify-between mb-1"><span class="text-base font-medium text-purple-300">Ciclo de Humanidades</span><span id="humanities-progress-text" class="text-sm font-medium text-purple-300">0/210h (0.0%)</span></div>
@@ -787,6 +789,7 @@
         let humanitiesNodes = [];
         let optionalNodes = [];
         let activeTree = 'main';
+        let currentPeriod = 1;
         let completedAcActivities = [];
         let completedCceActivities = [];
         let nodeToOverride = null;
@@ -910,6 +913,7 @@
                 nodesState: nodes.map(n => ({ id: n.id, state: n.state })),
                 humanitiesNodesState: humanitiesNodes.map(n => ({ id: n.id, state: n.state })),
                 optionalNodesState: optionalNodes.map(n => ({ id: n.id, state: n.state })),
+                currentPeriod: currentPeriod, // <-- ADICIONE ESTA LINHA
                 // Salva as listas de atividades complementares e de extensão
                 completedAcActivities: completedAcActivities,
                 completedCceActivities: completedCceActivities
@@ -959,7 +963,7 @@
             // Restaura as listas de atividades (se existirem no save)
             completedAcActivities = savedState.completedAcActivities || [];
             completedCceActivities = savedState.completedCceActivities || [];
-
+            currentPeriod = savedState.currentPeriod || 1; 
             console.log("Estado carregado com sucesso!");
             return true;
         }
@@ -999,6 +1003,15 @@
             renderActiveTree();
             updateAllProgressBars();
             renderAllActivityLists();
+            const periodSlider = document.getElementById('period-slider');
+            periodSlider.value = currentPeriod; // Garante que o slider inicie no valor correto
+            periodSlider.addEventListener('input', (e) => {
+                currentPeriod = parseInt(e.target.value, 10);
+                updateAllSubjectStates();
+                renderActiveTree();
+                updateAllProgressBars();
+                saveState();
+            });    
         }
         
         function renderActiveTree() {
@@ -1288,7 +1301,6 @@
                 }
             }
 
-            const { currentPeriod } = calculateCurrentPeriod();
             let changedInLoop;
             do {
                 changedInLoop = false;
@@ -1369,41 +1381,6 @@
                 }
             }
         }
-
-        function calculateCurrentPeriod() {
-            let saldoAcumuladoCHS = 0; // Corresponde ao (H) da fórmula: Saldo acumulado total
-
-            // Itera do primeiro ao décimo período para calcular o progresso
-            for (let p = 1; p <= 10; p++) {
-                
-                // (A) Carga horária semanal das disciplinas OBRIGATÓRIAS do período 'p'
-                const chsObrigatoriaTotalPeriodo = nodes
-                    .filter(s => s.period === p)
-                    .reduce((sum, s) => sum + (s.chs || 0), 0);
-
-                // (B) Carga horária semanal das disciplinas OBRIGATÓRIAS CURSADAS no período 'p'
-                const chsObrigatoriaCursadaPeriodo = nodes
-                    .filter(s => s.period === p && (s.state === 'subject-completed' || s.state === 'subject-satisfied'))
-                    .reduce((sum, s) => sum + (s.chs || 0), 0);
-                    
-                // (C) Calcula o saldo do período atual e o adiciona ao acumulado
-                const saldoDoPeriodo = chsObrigatoriaCursadaPeriodo - chsObrigatoriaTotalPeriodo;
-                saldoAcumuladoCHS += saldoDoPeriodo;
-
-                // A "trava" da UTFPR: se o saldo devedor (o valor negativo do saldo acumulado)
-                // for maior ou igual a 16 CHS, o aluno não progride.
-                const saldoDevedor = -saldoAcumuladoCHS;
-                
-                if (saldoDevedor >= 16) {
-                    // O aluno está "preso" neste período. Retornamos o período e o saldo devedor.
-                    return { currentPeriod: p, pendingHours: saldoDevedor }; 
-                }
-            }
-
-            // Se o loop terminar sem travar, o aluno está no 10º período ou já se formou.
-            const saldoDevedorFinal = -saldoAcumuladoCHS;
-            return { currentPeriod: 10, pendingHours: saldoDevedorFinal > 0 ? saldoDevedorFinal : 0 };
-        }
         
         function renderActivityList(listEl, activities, type) {
             listEl.innerHTML = activities.map((act, index) => `
@@ -1421,17 +1398,19 @@
 
         function updateAllProgressBars() {
             // Main progress
-            const completedSubjects = nodes.filter(s => s.state === 'subject-completed' || s.state === 'subject-satisfied').length; // <-- LINHA MODIFICADA
+            const completedSubjects = nodes.filter(s => s.state === 'subject-completed' || s.state === 'subject-satisfied').length;
             const totalProgress = nodes.length > 0 ? (completedSubjects / nodes.length) * 100 : 0;
             totalProgressBar.style.width = `${totalProgress}%`;
             totalProgressText.textContent = `${totalProgress.toFixed(1)}% (${completedSubjects}/${nodes.length})`;
 
-            // Period progress
-            const { currentPeriod, pendingHours } = calculateCurrentPeriod();
-            const periodProgress = (currentPeriod / 10) * 100;
-            periodProgressBar.style.width = `${periodProgress}%`;
-            periodProgressText.textContent = `Período ${currentPeriod}`;
-            pendingHoursText.textContent = `CHS Pendente: ${pendingHours.toFixed(2)}. Limite: 16.`;
+            // Period progress (agora lendo do slider)
+            const periodDisplay = document.getElementById('period-display');
+            periodDisplay.textContent = `Período ${currentPeriod}`;
+            // Opcional: Se quiser manter uma barra de progresso visual para o período
+            const periodProgressBar = document.getElementById('period-progress-bar'); // Se você manteve a barra de progresso no HTML
+            if (periodProgressBar) {
+                periodProgressBar.style.width = `${(currentPeriod / 10) * 100}%`;
+            }
             
             // Optional/Tracks progress
             const totalCompletedOptional = optionalNodes
@@ -1448,18 +1427,6 @@
             const humanitiesProgress = (totalCompletedHumanities / TOTAL_HUMANITIES_HOURS) * 100;
             humanitiesProgressBar.style.width = `${Math.min(humanitiesProgress, 100)}%`;
             humanitiesProgressText.textContent = `${totalCompletedHumanities}/${TOTAL_HUMANITIES_HOURS}h (${humanitiesProgress.toFixed(1)}%)`;
-
-            // Complementary progress
-            const completedCompHours = completedAcActivities.reduce((sum, n) => sum + n.hours, 0);
-            const compProgress = (completedCompHours / TOTAL_COMPLEMENTARY_HOURS) * 100;
-            compProgressBar.style.width = `${Math.min(compProgress, 100)}%`;
-            compProgressText.textContent = `${completedCompHours}/${TOTAL_COMPLEMENTARY_HOURS}h (${compProgress.toFixed(1)}%)`;
-
-            // Extension progress
-            const completedExtHours = completedCceActivities.reduce((sum, n) => sum + n.hours, 0);
-            const extProgress = (completedExtHours / TOTAL_EXTENSION_HOURS) * 100;
-            extProgressBar.style.width = `${Math.min(extProgress, 100)}%`;
-            extProgressText.textContent = `${completedExtHours}/${TOTAL_EXTENSION_HOURS}h (${extProgress.toFixed(1)}%)`;
             checkAndCelebrate();            
         }
 
