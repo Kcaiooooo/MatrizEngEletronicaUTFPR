@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.mjs" type="module"></script>
 <style>
     body {
         font-family: 'Inter', sans-serif;
@@ -327,8 +328,18 @@
             </div>
         </div>
         
-        <div class="bg-gray-700 p-4 rounded-lg shadow-lg mb-6 flex justify-center items-center gap-4">
-            <button id="reset-button" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300">Resetar Progresso</button>
+        <div class="bg-gray-700 p-6 rounded-lg shadow-lg mb-6 space-y-4">
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <label for="pdf-upload" class="bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 cursor-pointer">
+                    Importar Histórico (PDF)
+                </label>
+                <input type="file" id="pdf-upload" accept=".pdf" class="hidden">
+
+                <button id="reset-button" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300">
+                    Resetar Progresso
+                </button>
+            </div>
+            <p id="upload-status" class="text-center text-gray-400 h-4"></p>
         </div>
 
         <div class="flex justify-center mb-4 border-b border-gray-600">
@@ -1553,6 +1564,150 @@
         });
         
         window.addEventListener('resize', renderActiveTree);
+
+        const pdfUpload = document.getElementById('pdf-upload');
+        const uploadStatus = document.getElementById('upload-status');
+
+        // Configura o worker para a biblioteca pdf.js
+        pdfjsLib.GlobalWorkerOptions.workerSrc = `https://mozilla.github.io/pdf.js/build/pdf.worker.mjs`;
+
+        pdfUpload.addEventListener('change', handleFileSelect, false);
+
+        async function handleFileSelect(event) {
+            const file = event.target.files[0];
+            if (!file || file.type !== 'application/pdf') {
+                uploadStatus.textContent = 'Por favor, selecione um arquivo PDF.';
+                uploadStatus.className = 'text-center text-red-400 h-4';
+                return;
+            }
+
+            uploadStatus.textContent = 'Processando histórico...';
+            uploadStatus.className = 'text-center text-yellow-400 h-4';
+
+            try {
+                const fileReader = new FileReader();
+                fileReader.onload = async function() {
+                    const typedarray = new Uint8Array(this.result);
+                    const pdf = await pdfjsLib.getDocument(typedarray).promise;
+                    let fullText = '';
+
+                    for (let i = 1; i <= pdf.numPages; i++) {
+                        const page = await pdf.getPage(i);
+                        const textContent = await page.getTextContent();
+                        fullText += textContent.items.map(item => item.str).join('\n');
+                    }
+                    
+                    const stopPhrase = "Resumo Optativas (Carga horária total)";
+                    const stopIndex = fullText.indexOf(stopPhrase);
+                    
+                    let effectiveText = fullText;
+                    if (stopIndex !== -1) {
+                        console.log(`Regra de parada encontrada. O texto será lido apenas até a frase: "${stopPhrase}".`);
+                        effectiveText = fullText.substring(0, stopIndex);
+                    } else {
+                        console.log("Regra de parada não encontrada. Lendo o documento inteiro.");
+                    }
+
+                    console.log("--- Texto Final a ser Analisado ---", effectiveText);
+                    
+                    parseHistoryAndUpdate(effectiveText);
+                };
+                fileReader.readAsArrayBuffer(file);
+            } catch (error) {
+                console.error('Erro ao processar o PDF:', error);
+                uploadStatus.textContent = 'Erro ao ler o arquivo PDF.';
+                uploadStatus.className = 'text-center text-red-400 h-4';
+            }
+        }
+
+        function parseHistoryAndUpdate(text) {
+            console.log("--- Iniciando Análise do Histórico (Abordagem Final Mapeada) ---");
+            
+            const subjectFinalStatus = {};
+
+            const subjectMap = [];
+            const allSubjects = [...allNodesData, ...allHumanitiesData, ...allOptionalNodesData];
+            
+            allSubjects.forEach(subject => {
+                const regex = new RegExp(subject.id, 'g');
+                let match;
+                while ((match = regex.exec(text)) !== null) {
+                    subjectMap.push({ code: subject.id, index: match.index });
+                }
+            });
+
+            subjectMap.sort((a, b) => a.index - b.index);
+
+            for (let i = 0; i < subjectMap.length; i++) {
+                const currentSubject = subjectMap[i];
+                const nextSubject = subjectMap[i + 1];
+                const blockEnd = nextSubject ? nextSubject.index : text.length;
+                
+                const analysisBlock = text.substring(currentSubject.index, blockEnd);
+                
+                let status = 'Desconhecido';
+                if (analysisBlock.includes('Aprovado')) {
+                    status = 'Aprovado';
+                } else if (analysisBlock.includes('Reprovado')) {
+                    status = 'Reprovado';
+                } else if (analysisBlock.includes('Cancelado')) {
+                    status = 'Cancelado';
+                }
+                
+                console.log(`Analisando Bloco para -> Matéria: ${currentSubject.code}, Status Encontrado: ${status}`);
+                
+                if (subjectFinalStatus[currentSubject.code] !== 'Aprovado') {
+                    subjectFinalStatus[currentSubject.code] = status;
+                }
+            }
+
+            const approvedCodes = new Set();
+            for (const code in subjectFinalStatus) {
+                if (subjectFinalStatus[code] === 'Aprovado') {
+                    approvedCodes.add(code);
+                }
+            }
+
+            console.log('--- Resumo Final ---');
+            console.log('Disciplinas Aprovadas (Final):', Array.from(approvedCodes));
+
+            const periodRegex = /Período:\s+(\d+)/;
+            const periodMatch = text.match(periodRegex);
+            let studentPeriod = null;
+            if (periodMatch && periodMatch[1]) {
+                studentPeriod = parseInt(periodMatch[1], 10);
+                console.log('Período do Aluno Encontrado:', studentPeriod);
+            } else {
+                console.log('Período do aluno não encontrado no PDF.');
+            }
+
+            [...nodes, ...humanitiesNodes, ...optionalNodes].forEach(node => {
+                node.override = false;
+                if (approvedCodes.has(node.id)) {
+                    if(node.type === 'subject') node.state = 'subject-completed';
+                    else if(node.type === 'humanities') node.state = 'humanities-completed';
+                    else node.state = 'optional-completed';
+                } else {
+                    if(node.type === 'subject') node.state = node.dependencies.length === 0 ? 'subject-available' : 'subject-locked';
+                    else if(node.type === 'humanities') node.state = 'humanities-locked';
+                    else node.state = 'optional-locked';
+                }
+            });
+            
+            if (studentPeriod) {
+                currentPeriod = studentPeriod;
+                document.getElementById('period-slider').value = currentPeriod;
+            }
+
+            updateAllSubjectStates();
+            renderActiveTree();
+            updateAllProgressBars();
+            saveState();
+
+            uploadStatus.textContent = 'Histórico importado com sucesso!';
+            uploadStatus.className = 'text-center text-green-400 h-4';
+            setTimeout(() => { uploadStatus.textContent = ''; }, 5000);
+        }
 
         // --- INITIALIZATION ---
         initializeTree();
