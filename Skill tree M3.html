@@ -1658,66 +1658,19 @@
         }
 
         function parseHistoryAndUpdate(text) {
-            console.log("--- Iniciando Análise do Histórico (Abordagem Final Mapeada) ---");
-            
-            const subjectFinalStatus = {};
+            console.log("--- Iniciando Análise do Histórico (Versão Final Aprimorada) ---");
 
-            // 1. Criamos um mapa de todas as matérias encontradas no texto e suas posições.
-            const subjectMap = [];
-            const allSubjects = [...allNodesData, ...allHumanitiesData, ...allOptionalNodesData];
-            
-            allSubjects.forEach(subject => {
-                // Usamos uma regex para encontrar todas as ocorrências de um código de matéria
-                const regex = new RegExp(subject.id, 'g');
-                let match;
-                while ((match = regex.exec(text)) !== null) {
-                    subjectMap.push({ code: subject.id, index: match.index });
-                }
-            });
-
-            // Ordenamos as matérias pela ordem em que aparecem no texto.
-            subjectMap.sort((a, b) => a.index - b.index);
-
-            // 2. Analisamos o bloco de texto entre uma matéria e a próxima.
-            for (let i = 0; i < subjectMap.length; i++) {
-                const currentSubject = subjectMap[i];
-                // O bloco de análise vai do início da matéria atual até o início da próxima.
-                const nextSubject = subjectMap[i + 1];
-                const blockEnd = nextSubject ? nextSubject.index : text.length;
-                
-                const analysisBlock = text.substring(currentSubject.index, blockEnd);
-                
-                let status = 'Desconhecido';
-                if (analysisBlock.includes('Aprovado')) {
-                    status = 'Aprovado';
-                } else if (analysisBlock.includes('Reprovado')) {
-                    status = 'Reprovado';
-                } else if (analysisBlock.includes('Cancelado')) {
-                    status = 'Cancelado';
-                }
-                
-                console.log(`Analisando Bloco para -> Matéria: ${currentSubject.code}, Status Encontrado: ${status}`);
-                
-                // Aplica a regra de ouro: 'Aprovado' é o estado final.
-                if (subjectFinalStatus[currentSubject.code] !== 'Aprovado') {
-                    subjectFinalStatus[currentSubject.code] = status;
-                }
-            }
-
-            // 3. Cria o conjunto final de matérias aprovadas.
             const approvedCodes = new Set();
-            for (const code in subjectFinalStatus) {
-                if (subjectFinalStatus[code] === 'Aprovado') {
-                    approvedCodes.add(code);
-                }
-            }
+            const allSubjects = [...allNodesData, ...allHumanitiesData, ...allOptionalNodesData];
+            // Uma regex que corresponde a qualquer um dos códigos de disciplina conhecidos.
+            const allSubjectCodesRegexString = `(${allSubjects.map(s => s.id).join('|')})`;
+            const allSubjectCodesRegex = new RegExp(allSubjectCodesRegexString, 'g');
+            const firstSubjectCodeRegex = new RegExp(allSubjectCodesRegexString);
 
-            console.log('--- Resumo Final ---');
-            console.log('Disciplinas Aprovadas (Final):', Array.from(approvedCodes));
-
-            // O resto da função continua igual...
-            const periodRegex = /Período:\s+(\d+)/;
-            const periodMatch = text.match(periodRegex);
+            // 1. Análise de Período (Aprimorada)
+            // Limpa o texto de todos os espaços/quebras de linha para encontrar "Período:8" de forma consistente.
+            const cleanTextForPeriod = text.replace(/\s/g, '');
+            const periodMatch = cleanTextForPeriod.match(/Período:(\d+)/);
             let studentPeriod = null;
             if (periodMatch && periodMatch[1]) {
                 studentPeriod = parseInt(periodMatch[1], 10);
@@ -1726,24 +1679,101 @@
                 console.log('Período do aluno não encontrado no PDF.');
             }
 
-            [...nodes, ...humanitiesNodes, ...optionalNodes].forEach(node => {
-                node.override = false;
-                if (approvedCodes.has(node.id)) {
-                    if(node.type === 'subject') node.state = 'subject-completed';
-                    else if(node.type === 'humanities') node.state = 'humanities-completed';
-                    else node.state = 'optional-completed';
-                } else {
-                    if(node.type === 'subject') node.state = node.dependencies.length === 0 ? 'subject-available' : 'subject-locked';
-                    else if(node.type === 'humanities') node.state = 'humanities-locked';
-                    else node.state = 'optional-locked';
+            // 2. Análise por Seções (Lógica de detecção mantida)
+            const cleanTextForHeaders = text.replace(/(\r\n|\n|\r|\s)/g, '').toLowerCase();
+            const findCleanIndex = (str) => cleanTextForHeaders.indexOf(str);
+            const sectionsData = [
+                { name: 'Obrigatorias', index: findCleanIndex('disciplinasobrigatóriascursadas'), mode: 'NORMAL' },
+                { name: 'EquivalentesObrigatorias', index: findCleanIndex('detalhesdasequivalentescursadasdedisciplinasobrigatórias'), mode: 'INVERTED' },
+                { name: 'Optativas', index: findCleanIndex('disciplinasoptativascursadas'), mode: 'NORMAL' },
+                { name: 'EquivalentesOptativas', index: findCleanIndex('detalhesdasequivalentescursadasdedisciplinasoptativas'), mode: 'INVERTED' },
+                { name: 'Resumo', index: findCleanIndex('resumooptativas'), mode: 'STOP' }
+            ];
+
+            const originalTextIndices = {};
+            for (let i = 0, cleanIndex = 0; i < text.length; i++) {
+                if (!/\s/.test(text[i])) {
+                    originalTextIndices[cleanIndex++] = i;
                 }
-            });
-            
-            if (studentPeriod) {
-                currentPeriod = studentPeriod;
-                document.getElementById('period-slider').value = currentPeriod;
+            }
+            const sections = sectionsData.filter(s => s.index !== -1).sort((a, b) => a.index - b.index);
+
+            // 3. Processamento de cada seção com lógica aprimorada
+            for (let i = 0; i < sections.length; i++) {
+                const currentSection = sections[i];
+                if (currentSection.mode === 'STOP') break;
+
+                const nextSection = sections[i + 1];
+                const startOriginalIndex = originalTextIndices[currentSection.index] || 0;
+                const endOriginalIndex = nextSection ? (originalTextIndices[nextSection.index] || text.length) : text.length;
+                const sectionText = text.substring(startOriginalIndex, endOriginalIndex);
+
+                console.log(`--- Processando Seção: ${currentSection.name} (Modo: ${currentSection.mode}) ---`);
+
+                if (currentSection.mode === 'NORMAL') {
+                    const codesInSection = [...sectionText.matchAll(allSubjectCodesRegex)];
+                    codesInSection.forEach((match, idx) => {
+                        const code = match[0];
+                        const startIndex = match.index;
+                        const endIndex = (idx + 1 < codesInSection.length) ? codesInSection[idx + 1].index : sectionText.length;
+                        const analysisBlock = sectionText.substring(startIndex, endIndex);
+
+                        if (analysisBlock.includes('Aprovado') || analysisBlock.includes('Crédito Consignado')) {
+                            console.log(`[Normal] ${code} -> Aprovado`);
+                            approvedCodes.add(code);
+                        }
+                    });
+                } else if (currentSection.mode === 'INVERTED') {
+                    // Lógica Invertida Aprimorada: Divide o texto pelo '=>'
+                    const blocks = sectionText.split('=>');
+                    if (blocks.length > 1) {
+                        for (let j = 1; j < blocks.length; j++) {
+                            const precedingBlock = blocks[j - 1];
+                            const followingBlock = blocks[j];
+                            
+                            // Verifica se o bloco ANTERIOR ao '=>' contém "Aprovado"
+                            if (precedingBlock.includes('Aprovado')) {
+                                // Se sim, procura o primeiro código de disciplina válido no bloco SEGUINTE
+                                const codeMatch = followingBlock.match(firstSubjectCodeRegex);
+                                if (codeMatch) {
+                                    const approvedCode = codeMatch[0];
+                                    console.log(`[Invertido] Encontrada equivalência Aprovada. Matéria: ${approvedCode}`);
+                                    approvedCodes.add(approvedCode);
+                                }
+                            }
+                        }
+                    }
+                }
             }
 
+            console.log('--- Resumo Final ---');
+            console.log('Disciplinas Aprovadas (Final):', Array.from(approvedCodes));
+
+            // Atualiza o estado dos nós
+            [...nodes, ...humanitiesNodes, ...optionalNodes].forEach(node => {
+                node.override = false;
+                let isApproved = approvedCodes.has(node.id);
+
+                if (!isApproved && node.alternative) {
+                    const alternativeCodes = node.alternative.id.split(/[\/,]/).map(c => c.trim());
+                    if (alternativeCodes.some(altCode => approvedCodes.has(altCode))) {
+                        isApproved = true;
+                    }
+                }
+
+                if (isApproved) {
+                    node.state = node.type === 'subject' ? 'subject-completed' : (node.type === 'humanities' ? 'humanities-completed' : 'optional-completed');
+                } else {
+                    node.state = node.type === 'subject' ? (node.dependencies.length === 0 ? 'subject-available' : 'subject-locked') : (node.type === 'humanities' ? 'humanities-locked' : 'optional-locked');
+                }
+            });
+
+            if (studentPeriod) {
+                currentPeriod = studentPeriod;
+                document.getElementById('period-slider').value = studentPeriod;
+            }
+
+            // Atualiza a interface
             updateAllSubjectStates();
             renderActiveTree();
             updateAllProgressBars();
