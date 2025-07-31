@@ -1621,17 +1621,15 @@
         }
 
         function parseHistoryAndUpdate(text) {
-            console.log("--- Iniciando Análise do Histórico (Versão Final Aprimorada) ---");
+            console.log("--- Iniciando Análise do Histórico (Versão Definitiva) ---");
 
             const approvedCodes = new Set();
             const allSubjects = [...allNodesData, ...allHumanitiesData, ...allOptionalNodesData];
-            // Uma regex que corresponde a qualquer um dos códigos de disciplina conhecidos.
             const allSubjectCodesRegexString = `(${allSubjects.map(s => s.id).join('|')})`;
             const allSubjectCodesRegex = new RegExp(allSubjectCodesRegexString, 'g');
             const firstSubjectCodeRegex = new RegExp(allSubjectCodesRegexString);
 
-            // 1. Análise de Período (Aprimorada)
-            // Limpa o texto de todos os espaços/quebras de linha para encontrar "Período:8" de forma consistente.
+            // 1. Análise de Período
             const cleanTextForPeriod = text.replace(/\s/g, '');
             const periodMatch = cleanTextForPeriod.match(/Período:(\d+)/);
             let studentPeriod = null;
@@ -1642,7 +1640,7 @@
                 console.log('Período do aluno não encontrado no PDF.');
             }
 
-            // 2. Análise por Seções (Lógica de detecção mantida)
+            // 2. Análise por Seções
             const cleanTextForHeaders = text.replace(/(\r\n|\n|\r|\s)/g, '').toLowerCase();
             const findCleanIndex = (str) => cleanTextForHeaders.indexOf(str);
             const sectionsData = [
@@ -1681,26 +1679,30 @@
                         const endIndex = (idx + 1 < codesInSection.length) ? codesInSection[idx + 1].index : sectionText.length;
                         const analysisBlock = sectionText.substring(startIndex, endIndex);
 
-                        if (analysisBlock.includes('Aprovado') || analysisBlock.includes('Crédito Consignado')) {
-                            console.log(`[Normal] ${code} -> Aprovado`);
+                        // ======================================================================
+                        // <<< CORREÇÃO FINAL APLICADA AQUI >>>
+                        // Remove todos os espaços e quebras de linha antes de testar a regex.
+                        const cleanAnalysisBlock = analysisBlock.replace(/\s/g, '');
+                        if (/Aprovado|CréditoConsignado/i.test(cleanAnalysisBlock)) {
+                        // ======================================================================
+                            console.log(`[Resultado] ${code} -> APROVADO`);
                             approvedCodes.add(code);
+                        } else {
+                            console.log(`[Resultado] ${code} -> Reprovado/Outro`);
                         }
                     });
                 } else if (currentSection.mode === 'INVERTED') {
-                    // Lógica Invertida Aprimorada: Divide o texto pelo '=>'
                     const blocks = sectionText.split('=>');
                     if (blocks.length > 1) {
                         for (let j = 1; j < blocks.length; j++) {
                             const precedingBlock = blocks[j - 1];
                             const followingBlock = blocks[j];
-                            
-                            // Verifica se o bloco ANTERIOR ao '=>' contém "Aprovado"
-                            if (precedingBlock.includes('Aprovado')) {
-                                // Se sim, procura o primeiro código de disciplina válido no bloco SEGUINTE
+                             const cleanPrecedingBlock = precedingBlock.replace(/\s/g, '');
+                            if (/Aprovado|CréditoConsignado/i.test(cleanPrecedingBlock)) {
                                 const codeMatch = followingBlock.match(firstSubjectCodeRegex);
                                 if (codeMatch) {
                                     const approvedCode = codeMatch[0];
-                                    console.log(`[Invertido] Encontrada equivalência Aprovada. Matéria: ${approvedCode}`);
+                                    console.log(`[Invertido] Equivalência Aprovada encontrada para: ${approvedCode}`);
                                     approvedCodes.add(approvedCode);
                                 }
                             }
@@ -1712,18 +1714,16 @@
             console.log('--- Resumo Final ---');
             console.log('Disciplinas Aprovadas (Final):', Array.from(approvedCodes));
 
-            // Atualiza o estado dos nós
+            // 4. Atualização da Interface (sem alterações)
             [...nodes, ...humanitiesNodes, ...optionalNodes].forEach(node => {
                 node.override = false;
                 let isApproved = approvedCodes.has(node.id);
-
                 if (!isApproved && node.alternative) {
                     const alternativeCodes = node.alternative.id.split(/[\/,]/).map(c => c.trim());
                     if (alternativeCodes.some(altCode => approvedCodes.has(altCode))) {
                         isApproved = true;
                     }
                 }
-
                 if (isApproved) {
                     node.state = node.type === 'subject' ? 'subject-completed' : (node.type === 'humanities' ? 'humanities-completed' : 'optional-completed');
                 } else {
@@ -1736,7 +1736,6 @@
                 document.getElementById('period-slider').value = studentPeriod;
             }
 
-            // Atualiza a interface
             updateAllSubjectStates();
             renderActiveTree();
             updateAllProgressBars();
