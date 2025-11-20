@@ -418,6 +418,22 @@
         const NODE_WIDTH = 130;
         const NODE_HEIGHT = 90;
 
+        // --- DEFINIÇÃO DAS TRILHAS DE ESPECIALIZAÇÃO (M2) ---
+        const SPECIALIZATION_TRACKS_M2 = {
+            'Telecomunicações': [
+                'ELTB1', 'ELTB2', 'ELTB3', 'ELTB4', 'ELTB5', 'ELTB6'
+            ],
+            'Engenharia Biomédica': [
+                'ELTA1', 'ELTA2', 'ELTA3', 'ELTA4', 'ELTA5'
+            ],
+            'Pesquisa Científica': [
+                'ELTC1', 'ELTC2', 'ELTC3', 'ELTC4', 'ELTC5'
+            ],
+            'Processamento de Sinais': [
+                'ELTD1', 'ELTD2', 'ELTD3', 'ELTD4', 'ELTD5'
+            ]
+        };
+
 // --- DEFINIÇÃO DOS GRUPOS ---
         const OPTIONAL_GROUPS_CONFIG = {
             // --- Grupos de Matérias Obrigatórias ---
@@ -1459,41 +1475,54 @@
          * FUNÇÃO DE DEPURAÇÃO: Verifica a conclusão do curso e imprime os valores no console.
          */
         function checkAndCelebrate() {
-            console.log("--- Iniciando verificação de celebração ---");
+            // Se já celebrou, não faz nada
+            if (celebrationShown) return;
 
-            if (celebrationShown) {
-                console.log("Verificação parada: a celebração já foi mostrada.");
-                return;
-            }
-
-            // Recalcula os totais para garantir que temos os dados mais recentes
+            // --- 1. VERIFICAÇÕES BÁSICAS ---
             const completedSubjects = nodes.filter(s => s.state === 'subject-completed' || s.state === 'subject-satisfied').length;
             const totalCompletedOptional = optionalNodes.filter(n => n.state === 'optional-completed').reduce((sum, n) => sum + n.cht, 0);
             const totalCompletedHumanities = humanitiesNodes.filter(n => n.state === 'humanities-completed').reduce((sum, n) => sum + n.cht, 0);
 
-            // Condições individuais
-            const C1 = completedSubjects >= nodes.length;
-            const C2 = totalCompletedOptional >= TOTAL_OPTIONAL_HOURS;
-            const C3 = totalCompletedHumanities >= TOTAL_HUMANITIES_HOURS;
+            // Condições numéricas da M2
+            const basicRequirementsMet = 
+                completedSubjects >= nodes.length &&
+                totalCompletedOptional >= TOTAL_OPTIONAL_HOURS &&
+                totalCompletedHumanities >= TOTAL_HUMANITIES_HOURS;
 
-            // Imprime os valores no console para depuração
-            console.log(`Progresso Obrigatórias: ${completedSubjects}/${nodes.length}. Condição atendida? ${C1}`);
-            console.log(`Progresso Optativas: ${totalCompletedOptional}/${TOTAL_OPTIONAL_HOURS}. Condição atendida? ${C2}`);
-            console.log(`Progresso Humanidades: ${totalCompletedHumanities}/${TOTAL_HUMANITIES_HOURS}. Condição atendida? ${C3}`);
+            // --- 2. VERIFICAÇÃO DE TRILHA COMPLETA (M2) ---
+            let hasCompletedTrack = false;
+            let completedTrackName = '';
 
-            const isCourseComplete = C1 && C2 && C3;
-            console.log(`O curso está completo? ${isCourseComplete}`);
+            // Cria conjunto de IDs completados para verificação rápida
+            const completedOptionalIds = new Set(
+                optionalNodes
+                    .filter(n => n.state === 'optional-completed')
+                    .map(n => n.id)
+            );
 
-            if (isCourseComplete) {
-                console.log("TODAS AS CONDIÇÕES ATENDIDAS! Exibindo celebração.");
+            // Varre APENAS as trilhas oficiais da M2 (Telecom, Bio, Pesquisa, Sinais)
+            for (const [trackName, subjectIds] of Object.entries(SPECIALIZATION_TRACKS_M2)) {
+                const isTrackComplete = subjectIds.every(id => completedOptionalIds.has(id));
+                
+                if (isTrackComplete) {
+                    hasCompletedTrack = true;
+                    completedTrackName = trackName;
+                    break;
+                }
+            }
+
+            // Debug no console
+            console.log(`Status Curso (M2):
+            - Requisitos Básicos: ${basicRequirementsMet ? 'OK' : 'Pendente'}
+            - Trilha Completa: ${hasCompletedTrack ? 'OK (' + completedTrackName + ')' : 'Pendente'}`);
+
+            // --- 3. DECISÃO FINAL ---
+            if (basicRequirementsMet && hasCompletedTrack) {
                 celebrationModal.classList.remove('hidden');
                 celebrationAudio.play();
                 celebrationShown = true;
                 saveState();
-            } else {
-                console.log("Uma ou mais condições não foram atendidas.");
             }
-             console.log("--- Fim da verificação ---");
         }
 
         // Adiciona o evento para o botão de fechar o modal de celebração
