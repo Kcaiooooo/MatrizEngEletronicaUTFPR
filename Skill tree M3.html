@@ -447,7 +447,23 @@
         const NODE_WIDTH = 130;
         const NODE_HEIGHT = 90;
 
-// --- DEFINIÇÃO DOS GRUPOS ---
+        // --- DEFINIÇÃO DAS TRILHAS DE ESPECIALIZAÇÃO (M3) ---
+        const SPECIALIZATION_TRACKS = {
+            'Telecomunicações': [
+                'ELTB1', 'ELTB8', 'ELTB2', 'ELTB9', 'ELTB3', 'ELTB4', 'ELTB5', 'ELTB6', 'ELTB7'
+            ],
+            'Engenharia Biomédica': [
+                'ELTA1', 'ELTA2', 'ELTA3', 'ELTA4', 'ELTA5', 'ELTA8', 'ELTA9'
+            ],
+            'Sistemas Computacionais': [
+                'ICSD21', 'ICSD20', 'ICSF30', 'ICSE30', 'ICSG20', 'ICSI30', 'ICSB30', 'ICSM47', 'ICSM48', 'ICSM46', 'ELTE12'
+            ],
+            'Processamento de Sinais': [
+                'ELTD6', 'ELTD10', 'ELTD7', 'ELTD11'
+            ]
+        };
+
+        // --- DEFINIÇÃO DOS GRUPOS ---
         const OPTIONAL_GROUPS_CONFIG = {
             // Grupos já existentes
             '[1176]': { requiredHours: 60, name: 'Opções De Expressão Gráfica' },
@@ -1408,22 +1424,21 @@
         }
 
         function updateAllProgressBars() {
-            // Main progress
+            // 1. Progresso Principal (Obrigatórias)
             const completedSubjects = nodes.filter(s => s.state === 'subject-completed' || s.state === 'subject-satisfied').length;
             const totalProgress = nodes.length > 0 ? (completedSubjects / nodes.length) * 100 : 0;
             totalProgressBar.style.width = `${totalProgress}%`;
             totalProgressText.textContent = `${totalProgress.toFixed(1)}% (${completedSubjects}/${nodes.length})`;
 
-            // Period progress (agora lendo do slider)
+            // 2. Progresso do Período (Slider)
             const periodDisplay = document.getElementById('period-display');
             periodDisplay.textContent = `Período ${currentPeriod}`;
-            // Opcional: Se quiser manter uma barra de progresso visual para o período
-            const periodProgressBar = document.getElementById('period-progress-bar'); // Se você manteve a barra de progresso no HTML
+            const periodProgressBar = document.getElementById('period-progress-bar');
             if (periodProgressBar) {
                 periodProgressBar.style.width = `${(currentPeriod / 10) * 100}%`;
             }
             
-            // Optional/Tracks progress
+            // 3. Progresso Optativas/Trilhas
             const totalCompletedOptional = optionalNodes
                 .filter(n => n.state === 'optional-completed')
                 .reduce((sum, n) => sum + n.cht, 0);
@@ -1431,13 +1446,29 @@
             optionalProgressBar.style.width = `${Math.min(optionalProgress, 100)}%`;
             optionalProgressText.textContent = `${totalCompletedOptional}/${TOTAL_OPTIONAL_HOURS}h (${optionalProgress.toFixed(1)}%)`;
 
-            // Humanities progress
+            // 4. Progresso Humanidades
             const totalCompletedHumanities = humanitiesNodes
                 .filter(n => n.state === 'humanities-completed')
                 .reduce((sum, n) => sum + n.cht, 0);
             const humanitiesProgress = (totalCompletedHumanities / TOTAL_HUMANITIES_HOURS) * 100;
             humanitiesProgressBar.style.width = `${Math.min(humanitiesProgress, 100)}%`;
             humanitiesProgressText.textContent = `${totalCompletedHumanities}/${TOTAL_HUMANITIES_HOURS}h (${humanitiesProgress.toFixed(1)}%)`;
+
+            // --- CORREÇÃO: ADICIONADO CÁLCULO PARA AC (Complementares) ---
+            const completedCompHours = completedAcActivities.reduce((sum, activity) => sum + activity.hours, 0);
+            const compProgress = (completedCompHours / TOTAL_COMPLEMENTARY_HOURS) * 100;
+            // Atualiza a barra e o texto
+            compProgressBar.style.width = `${Math.min(compProgress, 100)}%`;
+            compProgressText.textContent = `${completedCompHours}/${TOTAL_COMPLEMENTARY_HOURS}h (${compProgress.toFixed(1)}%)`;
+
+            // --- CORREÇÃO: ADICIONADO CÁLCULO PARA CCE (Extensão) ---
+            const completedExtHours = completedCceActivities.reduce((sum, activity) => sum + activity.hours, 0);
+            const extProgress = (completedExtHours / TOTAL_EXTENSION_HOURS) * 100;
+            // Atualiza a barra e o texto
+            extProgressBar.style.width = `${Math.min(extProgress, 100)}%`;
+            extProgressText.textContent = `${completedExtHours}/${TOTAL_EXTENSION_HOURS}h (${extProgress.toFixed(1)}%)`;
+
+            // Verifica celebração
             checkAndCelebrate();            
         }
 
@@ -1465,31 +1496,60 @@
          * Se sim, e se a celebração ainda não foi mostrada, exibe o modal e toca a música.
          */
         function checkAndCelebrate() {
-            // Condição para não re-exibir a tela se ela já foi mostrada nesta sessão
-            if (celebrationShown) {
-                return;
-            }
+            // Se já celebrou, não faz nada
+            if (celebrationShown) return;
 
-            // Pega os valores atuais do progresso
+            // --- 1. VERIFICAÇÕES BÁSICAS (Carga Horária e Obrigatórias) ---
             const completedSubjects = nodes.filter(s => s.state === 'subject-completed' || s.state === 'subject-satisfied').length;
+            
+            // Cálculo das horas totais concluídas
             const totalCompletedOptional = optionalNodes.filter(n => n.state === 'optional-completed').reduce((sum, n) => sum + n.cht, 0);
             const totalCompletedHumanities = humanitiesNodes.filter(n => n.state === 'humanities-completed').reduce((sum, n) => sum + n.cht, 0);
             const completedCompHours = completedAcActivities.reduce((sum, n) => sum + n.hours, 0);
             const completedExtHours = completedCceActivities.reduce((sum, n) => sum + n.hours, 0);
 
-            // Verifica se todos os critérios foram atendidos
-            const isCourseComplete =
+            // Verifica se atingiu as metas numéricas
+            const basicRequirementsMet =
                 completedSubjects >= nodes.length &&
                 totalCompletedOptional >= TOTAL_OPTIONAL_HOURS &&
                 totalCompletedHumanities >= TOTAL_HUMANITIES_HOURS &&
                 completedCompHours >= TOTAL_COMPLEMENTARY_HOURS &&
                 completedExtHours >= TOTAL_EXTENSION_HOURS;
 
-            if (isCourseComplete) {
-                celebrationModal.classList.remove('hidden'); // Mostra o modal
-                celebrationAudio.play(); // Toca a música
-                celebrationShown = true; // Marca que a celebração foi exibida
-                saveState(); // Salva o estado para que a flag 'celebrationShown' seja persistida
+            // --- 2. VERIFICAÇÃO DE TRILHA COMPLETA (Novo Requisito) ---
+            let hasCompletedTrack = false;
+            let completedTrackName = '';
+
+            // Cria um conjunto (Set) com os IDs das optativas que o aluno já fez para busca rápida
+            const completedOptionalIds = new Set(
+                optionalNodes
+                    .filter(n => n.state === 'optional-completed')
+                    .map(n => n.id)
+            );
+
+            // Varre cada trilha definida na constante
+            for (const [trackName, subjectIds] of Object.entries(SPECIALIZATION_TRACKS)) {
+                // Verifica se TODAS as matérias daquela trilha estão no conjunto de completas
+                const isTrackComplete = subjectIds.every(id => completedOptionalIds.has(id));
+                
+                if (isTrackComplete) {
+                    hasCompletedTrack = true;
+                    completedTrackName = trackName;
+                    break; // Se achou uma trilha completa, pode parar de procurar
+                }
+            }
+
+            // Debug para você ver no console o que está faltando
+            console.log(`Status Curso:
+            - Requisitos Básicos: ${basicRequirementsMet ? 'OK' : 'Pendente'}
+            - Trilha Completa: ${hasCompletedTrack ? 'OK (' + completedTrackName + ')' : 'Pendente (Nenhuma trilha fechada)'}`);
+
+            // --- 3. DECISÃO FINAL ---
+            if (basicRequirementsMet && hasCompletedTrack) {
+                celebrationModal.classList.remove('hidden');
+                celebrationAudio.play();
+                celebrationShown = true;
+                saveState();
             }
         }
 
