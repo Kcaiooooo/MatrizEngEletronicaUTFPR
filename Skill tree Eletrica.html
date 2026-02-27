@@ -772,7 +772,7 @@
                     const neighbor = neighbors[i];
                     const key = `${neighbor.x}-${neighbor.y}`;
                     if (closedNodes[key] || neighbor.isWall()) { continue; }
-                    const gScore = currentNode.g + 1;
+                    const gScore = currentNode.g + 1 + (neighbor.penalty || 0);
                     let gScoreIsBest = false;
                     if (!openHeap.includes(neighbor)) {
                         gScoreIsBest = true;
@@ -789,7 +789,7 @@
             return [];
         }
         class GridNode {
-            constructor(x, y, weight) { this.x = x; this.y = y; this.weight = weight; this.f = 0; this.g = 0; this.h = 0; this.parent = null; }
+            constructor(x, y, weight) { this.x = x; this.y = y; this.weight = weight; this.f = 0; this.g = 0; this.h = 0; this.parent = null; this.penalty = 0; }
             isWall() { return this.weight === 1; }
         }
         class Graph {
@@ -1010,6 +1010,20 @@
             });
         }
         
+        function getColorForNodeId(id) {
+            let hash = 0;
+            if (id) {
+                for (let i = 0; i < id.length; i++) {
+                    hash = id.charCodeAt(i) + ((hash << 5) - hash);
+                }
+            }
+            const hue = Math.abs(hash * 137.5) % 360;
+            const completedColor = `hsl(${hue}, 85%, 55%)`; 
+            const glowColor = `hsl(${hue}, 90%, 70%)`;     
+            const lockedColor = `hsl(${hue}, 35%, 50%)`;   
+            return { completedColor, glowColor, lockedColor, hue };
+        }
+
         function renderLines(container, data, svgId, markerCompletedId, markerLockedId) {
             const svgEl = container.querySelector(`#${svgId}`);
             if (!svgEl) return;
@@ -1061,13 +1075,50 @@
                         if(start && end) {
                             const resultPath = aStar(graph, start, end);
                             if (resultPath.length > 0) {
+                                // Add penalty to the used path to discourage future paths from overlapping completely
+                                resultPath.forEach(point => {
+                                    if(point.x !== startX || point.y !== startY) {
+                                        point.penalty = (point.penalty ||  0) + 15;
+                                    }
+                                });
+
                                 let pathString = `M ${startX * resolution + resolution / 2} ${startY * resolution + resolution / 2}`;
                                 resultPath.forEach(point => {
                                     pathString += ` L ${point.x * resolution + resolution / 2} ${point.y * resolution + resolution / 2}`;
                                 });
                                 
-                                const isCompleted = parentNode.state.endsWith('-completed');
+                                const isCompleted = parentNode.state.endsWith('-completed') || parentNode.state.endsWith('-satisfied');
+                                const colors = getColorForNodeId(depId || "default");
                                 
+                                // Create unique markers for this color if they don't exist
+                                const uniqueMarkerCompletedId = `${markerCompletedId}-${depId}`;
+                                const uniqueMarkerLockedId = `${markerLockedId}-${depId}`;
+                                
+                                const defsEl = svgEl.querySelector('defs');
+                                if (defsEl && !document.getElementById(uniqueMarkerCompletedId)) {
+                                    const markerComp = document.createElementNS('http://www.w3.org/2000/svg', 'marker');
+                                    markerComp.setAttribute('id', uniqueMarkerCompletedId);
+                                    markerComp.setAttribute('viewBox', '0 0 10 10');
+                                    markerComp.setAttribute('refX', '8');
+                                    markerComp.setAttribute('refY', '5');
+                                    markerComp.setAttribute('markerWidth', '6');
+                                    markerComp.setAttribute('markerHeight', '6');
+                                    markerComp.setAttribute('orient', 'auto-start-reverse');
+                                    markerComp.innerHTML = `<path d="M 0 0 L 10 5 L 0 10 z" fill="${colors.completedColor}" filter="drop-shadow(0 0 2px ${colors.glowColor})"></path>`;
+                                    defsEl.appendChild(markerComp);
+                                    
+                                    const markerLock = document.createElementNS('http://www.w3.org/2000/svg', 'marker');
+                                    markerLock.setAttribute('id', uniqueMarkerLockedId);
+                                    markerLock.setAttribute('viewBox', '0 0 10 10');
+                                    markerLock.setAttribute('refX', '8');
+                                    markerLock.setAttribute('refY', '5');
+                                    markerLock.setAttribute('markerWidth', '5');
+                                    markerLock.setAttribute('markerHeight', '5');
+                                    markerLock.setAttribute('orient', 'auto-start-reverse');
+                                    markerLock.innerHTML = `<path d="M 0 0 L 10 5 L 0 10 z" fill="${colors.lockedColor}"></path>`;
+                                    defsEl.appendChild(markerLock);
+                                }
+
                                 const casingEl = document.createElementNS('http://www.w3.org/2000/svg', 'path');
                                 casingEl.setAttribute('d', pathString);
                                 casingEl.setAttribute('fill', 'none');
@@ -1079,10 +1130,21 @@
 
                                 const lineEl = document.createElementNS('http://www.w3.org/2000/svg', 'path');
                                 lineEl.setAttribute('d', pathString);
-                                lineEl.setAttribute('marker-end', isCompleted ? `url(#${markerCompletedId})` : `url(#${markerLockedId})`);
+                                lineEl.setAttribute('marker-end', isCompleted ? `url(#${uniqueMarkerCompletedId})` : `url(#${uniqueMarkerLockedId})`);
                                 lineEl.setAttribute('class', isCompleted ? 'line-completed' : 'line-locked');
+                                
+                                // Apply dynamic distinct color inline to override generic class colors
+                                if (isCompleted) {
+                                    lineEl.style.stroke = colors.completedColor;
+                                    lineEl.style.filter = `drop-shadow(0 0 3px ${colors.glowColor})`;
+                                } else {
+                                    lineEl.style.stroke = colors.lockedColor;
+                                    lineEl.style.strokeWidth = "2";
+                                    lineEl.style.strokeDasharray = "4, 4";
+                                }
+                                
                                 svgEl.appendChild(lineEl);
-
+                                
                                 if (isCompleted) {
                                     const length = lineEl.getTotalLength();
                                     if (length > 0) {
@@ -1129,6 +1191,48 @@
                 nodeEl.style.left = `${node.x}%`;
                 nodeEl.style.top = `${node.y}%`;
                 nodeEl.dataset.id = node.id;
+
+                // --- Dynamic Color Inheritance ---
+                if (node.dependencies && node.dependencies.length > 0) {
+                    const depColors = node.dependencies.map(depId => getColorForNodeId(depId));
+                    const isLocked = node.state.endsWith('-locked');
+                    const isAvailable = node.state.endsWith('-available');
+                    
+                    if (isLocked || isAvailable) {
+                        let bgStyle = '';
+                        let borderStyle = '';
+                        let shadowStyle = '';
+                        
+                        if (depColors.length === 1) {
+                            const hue = depColors[0].hue;
+                            if (isLocked) {
+                                bgStyle = `hsl(${hue}, 20%, 25%)`;
+                                borderStyle = `hsl(${hue}, 35%, 35%)`;
+                            } else { // available
+                                bgStyle = `hsl(${hue}, 70%, 45%)`;
+                                borderStyle = `hsl(${hue}, 85%, 60%)`;
+                                shadowStyle = `0 0 15px hsl(${hue}, 80%, 50%)`;
+                            }
+                        } else {
+                            // Multiple dependencies -> Gradient
+                            if (isLocked) {
+                                const stops = depColors.map(c => `hsl(${c.hue}, 20%, 25%)`).join(', ');
+                                bgStyle = `linear-gradient(135deg, ${stops})`;
+                                borderStyle = `hsl(${depColors[0].hue}, 35%, 35%)`;
+                            } else { // available
+                                const stops = depColors.map(c => `hsl(${c.hue}, 70%, 45%)`).join(', ');
+                                bgStyle = `linear-gradient(135deg, ${stops})`;
+                                borderStyle = `hsl(${depColors[0].hue}, 85%, 60%)`;
+                                shadowStyle = `0 0 15px hsl(${depColors[0].hue}, 80%, 50%)`;
+                            }
+                        }
+                        
+                        nodeEl.style.background = bgStyle;
+                        nodeEl.style.borderColor = borderStyle;
+                        if (shadowStyle) nodeEl.style.boxShadow = shadowStyle;
+                    }
+                }
+                // ---------------------------------
 
                 const nodeName = document.createElement('span');
                 nodeName.textContent = node.name;
