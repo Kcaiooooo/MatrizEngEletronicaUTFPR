@@ -68,6 +68,8 @@
     .subject-available { background-color: #2563eb; border-color: #60a5fa; color: white; box-shadow: 0 0 15px rgba(59, 130, 246, 0.5); }
     .subject-available:hover { transform: translate(-50%, -50%) scale(1.05); }
     .subject-completed { background-color: #16a34a; border-color: #4ade80; color: white; font-weight: bold; box-shadow: 0 0 20px rgba(74, 222, 128, 0.7); }
+    .subject-inprogress { background-color: #ea580c; border-color: #f97316; color: white; box-shadow: 0 0 15px rgba(234, 88, 12, 0.5); }
+    .subject-inprogress:hover { transform: translate(-50%, -50%) scale(1.05); }
     .subject-satisfied { 
         background-color: #4a4a28; /* Fundo dourado escuro */
         border-color: #fbbf24;    /* Borda âmbar/dourada */
@@ -82,6 +84,8 @@
     .humanities-available { background-color: #a855f7; border-color: #c084fc; color: white; box-shadow: 0 0 15px rgba(168, 85, 247, 0.5); }
     .humanities-available:hover { transform: translate(-50%, -50%) scale(1.05); }
     .humanities-completed { background-color: #16a34a; border-color: #4ade80; color: white; font-weight: bold; box-shadow: 0 0 20px rgba(74, 222, 128, 0.7); }
+    .humanities-inprogress { background-color: #ea580c; border-color: #f97316; color: white; box-shadow: 0 0 15px rgba(234, 88, 12, 0.5); }
+    .humanities-inprogress:hover { transform: translate(-50%, -50%) scale(1.05); }
 
     /* --- Optional/Track Subjects States --- */
     .optional-locked { background-color: #374151; border-color: #4b5563; color: #9ca3af; }
@@ -89,6 +93,8 @@
     .optional-available { background-color: #dc2626; border-color: #f87171; color: white; box-shadow: 0 0 15px rgba(220, 38, 38, 0.5); }
     .optional-available:hover { transform: translate(-50%, -50%) scale(1.05); }
     .optional-completed { background-color: #16a34a; border-color: #4ade80; color: white; font-weight: bold; box-shadow: 0 0 20px rgba(74, 222, 128, 0.7); }
+    .optional-inprogress { background-color: #ea580c; border-color: #f97316; color: white; box-shadow: 0 0 15px rgba(234, 88, 12, 0.5); }
+    .optional-inprogress:hover { transform: translate(-50%, -50%) scale(1.05); }
 
     /* O restante do seu CSS continua aqui sem alterações... */
     .node .tooltip {
@@ -1184,6 +1190,10 @@
                 });
                 
                 nodeEl.addEventListener('click', () => handleNodeClick(node.id));
+                nodeEl.addEventListener('contextmenu', (e) => {
+                    e.preventDefault();
+                    handleNodeRightClick(node.id);
+                });
                 container.appendChild(nodeEl);
             });
         }
@@ -1192,13 +1202,13 @@
             let data, prefixes;
             if (activeTree === 'main') {
                 data = nodes;
-                prefixes = { available: 'subject-available', completed: 'subject-completed', locked: 'subject-locked' };
+                prefixes = { available: 'subject-available', completed: 'subject-completed', locked: 'subject-locked', inprogress: 'subject-inprogress' };
             } else if (activeTree === 'humanities') {
                 data = humanitiesNodes;
-                prefixes = { available: 'humanities-available', completed: 'humanities-completed', locked: 'humanities-locked' };
+                prefixes = { available: 'humanities-available', completed: 'humanities-completed', locked: 'humanities-locked', inprogress: 'humanities-inprogress' };
             } else {
                 data = optionalNodes;
-                prefixes = { available: 'optional-available', completed: 'optional-completed', locked: 'optional-locked' };
+                prefixes = { available: 'optional-available', completed: 'optional-completed', locked: 'optional-locked', inprogress: 'optional-inprogress' };
             }
             
             const node = data.find(n => n.id === nodeId);
@@ -1235,6 +1245,36 @@
                 saveState(); // Salva o estado após a alteração
             }
         }
+
+        function handleNodeRightClick(nodeId) {
+            let data, prefixes;
+            if (activeTree === 'main') {
+                data = nodes;
+                prefixes = { inprogress: 'subject-inprogress' };
+            } else if (activeTree === 'humanities') {
+                data = humanitiesNodes;
+                prefixes = { inprogress: 'humanities-inprogress' };
+            } else {
+                data = optionalNodes;
+                prefixes = { inprogress: 'optional-inprogress' };
+            }
+
+            const node = data.find(n => n.id === nodeId);
+            if (!node) return;
+
+            // Toggle inprogress state
+            if (node.state === prefixes.inprogress) {
+                // To revert, set to locked and let updateAllSubjectStates recalculate based on dependencies
+                node.state = activeTree === 'main' ? 'subject-locked' : activeTree === 'humanities' ? 'humanities-locked' : 'optional-locked';
+            } else {
+                node.state = prefixes.inprogress;
+            }
+
+            updateAllSubjectStates();
+            renderActiveTree();
+            updateAllProgressBars();
+            saveState();
+        }
         
         function updateAllSubjectStates() {
             // Primeiro, verifica os grupos para reverter o estado 'satisfeito' se a condição não for mais atendida
@@ -1260,8 +1300,8 @@
 
                 nodes.forEach(subject => {
                     // === NOVA VERIFICAÇÃO ===
-                    // Se a matéria foi liberada manualmente, ou já foi completada/satisfeita, não fazemos nada.
-                    if (subject.override || subject.state === 'subject-completed' || subject.state === 'subject-satisfied') return;
+                    // Se a matéria foi liberada manualmente, ou já foi completada/satisfeita/em andamento, não fazemos nada.
+                    if (subject.override || subject.state === 'subject-completed' || subject.state === 'subject-satisfied' || subject.state === 'subject-inprogress') return;
 
                     const allDependenciesMet = subject.dependencies.every(depId => {
                         if (depId.startsWith('Periodo:')) {
@@ -1283,7 +1323,7 @@
                 
                  humanitiesNodes.forEach(subject => {
                     // === NOVA VERIFICAÇÃO ===
-                    if (subject.override || subject.state === 'humanities-completed') return;
+                    if (subject.override || subject.state === 'humanities-completed' || subject.state === 'humanities-inprogress') return;
                     const allDependenciesMet = subject.dependencies.every(depId => humanitiesNodes.find(p => p.id === depId)?.state === 'humanities-completed');
                     const isPeriodAvailable = subject.period <= currentPeriod + 2;
                     const newState = (allDependenciesMet && isPeriodAvailable) ? 'humanities-available' : 'humanities-locked';
@@ -1295,7 +1335,7 @@
 
                  optionalNodes.forEach(subject => {
                     // === NOVA VERIFICAÇÃO ===
-                    if (subject.override || subject.state === 'optional-completed') return;
+                    if (subject.override || subject.state === 'optional-completed' || subject.state === 'optional-inprogress') return;
                     const allDependenciesMet = subject.dependencies.every(depId => {
                         if (depId.startsWith('Periodo:')) {
                             const requiredPeriod = parseInt(depId.split(':')[1], 10);
