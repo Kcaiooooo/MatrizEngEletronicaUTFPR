@@ -123,7 +123,25 @@
         to { stroke-dashoffset: 0; }
     }
     
-    .line-completed { 
+    
+        @keyframes travelPulse {
+            0% {
+                stroke-dashoffset: var(--line-length);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                stroke-dashoffset: 0;
+                opacity: 0;
+            }
+        }
+
+        .line-completed { 
         stroke: #16a34a; 
         stroke-width: 3; 
         fill: none; 
@@ -1218,8 +1236,41 @@
                                     lineEl.style.strokeWidth = "2";
                                     lineEl.style.strokeDasharray = "4, 4";
                                 }
-                                
+
                                 svgEl.appendChild(lineEl);
+
+                                // --- NEW: PERIODIC ENERGY PULSE ---
+                                if (isCompleted) {
+                                    const pulseId = `pulse-${lineId}`;
+                                    if (!document.getElementById(pulseId)) {
+                                        const pulseEl = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                                        pulseEl.setAttribute('id', pulseId);
+                                        pulseEl.setAttribute('d', pathString);
+                                        pulseEl.setAttribute('fill', 'none');
+                                        pulseEl.setAttribute('stroke', '#ffffff');
+                                        pulseEl.setAttribute('stroke-width', '4');
+                                        pulseEl.setAttribute('stroke-linecap', 'round');
+                                        pulseEl.setAttribute('stroke-linejoin', 'round');
+                                        pulseEl.style.filter = `drop-shadow(0 0 4px ${colors.completedColor}) drop-shadow(0 0 8px ${colors.glowColor})`;
+
+                                        svgEl.appendChild(pulseEl);
+
+                                        // Small delay to allow element to render and calculate length
+                                        setTimeout(() => {
+                                            const length = pulseEl.getTotalLength();
+                                            if (length > 0) {
+                                                const dashLength = Math.max(10, length * 0.15); // The pulse is 15% of the line length
+                                                pulseEl.style.strokeDasharray = `${dashLength}, 10000`;
+                                                pulseEl.style.setProperty('--line-length', length);
+                                                
+                                                // Random delay between 0 and 6 seconds
+                                                const delay = (Math.random() * 6).toFixed(1);
+                                                pulseEl.style.animation = `travelPulse 2.5s ease-in-out infinite ${delay}s`;
+                                            }
+                                        }, 50);
+                                    }
+                                }
+                                // ---------------------------------
                                 
                                 if (isCompleted) {
                                     const length = lineEl.getTotalLength();

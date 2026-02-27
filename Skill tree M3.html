@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,271 +8,486 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Slab:wght@700&display=swap"
+        rel="stylesheet">
     <script src="https://mozilla.github.io/pdf.js/build/pdf.mjs" type="module"></script>
-<style>
-    body {
-        font-family: 'Inter', sans-serif;
-        background-color: #1f2937;
-    }
-    .font-header {
-        font-family: 'Roboto Slab', serif;
-    }
-    
-    .tree-wrapper {
-        position: relative; 
-        width: 100%;       
-        /* height e overflow removidos */
-        border-radius: 0.75rem; 
-        cursor: grab;
-    }
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1f2937;
+        }
 
-    /* ESTILO AJUSTADO DOS CONTÊINERES (COM A ALTERAÇÃO) */
-    #main-container, #humanities-container, #optional-container {
-        position: relative;
-        width: 100%;
-        min-height: 390vh; /* << MUDANÇA AQUI: de height % para min-height vh */
-        background-color: #111827; 
-        background-image: 
-            linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
-        background-size: 25px 25px;
-        border-radius: 0.75rem;
-        overflow: visible; 
-    }
+        .font-header {
+            font-family: 'Roboto Slab', serif;
+        }
 
-    .node {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 130px; 
-        height: 90px;
-        border-radius: 0.75rem; 
-        border: 3px solid;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        transform: translate(-50%, -50%);
-        z-index: 10;
-        padding: 5px;
-        text-align: center;
-        box-sizing: border-box;
-        font-size: 11px;
-    }
-    .node:hover {
-        z-index: 99; /* Eleva o nó sobre os outros ao passar o mouse */
-    }
-    
-    /* --- Main Subjects States --- */
-    .subject-locked { background-color: #374151; border-color: #4b5563; color: #9ca3af; }
-    .subject-locked:hover { transform: translate(-50%, -50%) scale(1.05); }
-    .subject-available { background-color: #2563eb; border-color: #60a5fa; color: white; box-shadow: 0 0 15px rgba(59, 130, 246, 0.5); }
-    .subject-available:hover { transform: translate(-50%, -50%) scale(1.05); }
-    .subject-completed { background-color: #16a34a; border-color: #4ade80; color: white; font-weight: bold; box-shadow: 0 0 20px rgba(74, 222, 128, 0.7); }
-    .subject-satisfied { 
-        background-color: #4a4a28; /* Fundo dourado escuro */
-        border-color: #fbbf24;    /* Borda âmbar/dourada */
-        color: #fde68a;           /* Texto dourado claro */
-        cursor: not-allowed;      /* Indica que não é mais clicável */
-    }
-    .subject-satisfied:hover { transform: translate(-50%, -50%) scale(1.05); }
+        .tree-wrapper {
+            position: relative;
+            width: 100%;
+            /* height e overflow removidos */
+            border-radius: 0.75rem;
+            cursor: grab;
+        }
 
-    .subject-inprogress { background-color: #f97316; border-color: #fdba74; color: white; box-shadow: 0 0 15px rgba(249, 115, 22, 0.6); }
-    .subject-inprogress:hover { transform: translate(-50%, -50%) scale(1.05); }
+        /* ESTILO AJUSTADO DOS CONTÊINERES (COM A ALTERAÇÃO) */
+        #main-container,
+        #humanities-container,
+        #optional-container {
+            position: relative;
+            width: 100%;
+            min-height: 390vh;
+            /* << MUDANÇA AQUI: de height % para min-height vh */
+            background-color: #111827;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+            background-size: 25px 25px;
+            border-radius: 0.75rem;
+            overflow: visible;
+        }
 
-    /* --- Humanities Subjects States --- */
-    .humanities-locked { background-color: #374151; border-color: #4b5563; color: #9ca3af; }
-    .humanities-locked:hover { transform: translate(-50%, -50%) scale(1.05); }
-    .humanities-available { background-color: #a855f7; border-color: #c084fc; color: white; box-shadow: 0 0 15px rgba(168, 85, 247, 0.5); }
-    .humanities-available:hover { transform: translate(-50%, -50%) scale(1.05); }
-    .humanities-completed { background-color: #16a34a; border-color: #4ade80; color: white; font-weight: bold; box-shadow: 0 0 20px rgba(74, 222, 128, 0.7); }
-    .humanities-inprogress { background-color: #f97316; border-color: #fdba74; color: white; box-shadow: 0 0 15px rgba(249, 115, 22, 0.6); }
-    .humanities-inprogress:hover { transform: translate(-50%, -50%) scale(1.05); }
+        .node {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 130px;
+            height: 90px;
+            border-radius: 0.75rem;
+            border: 3px solid;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            padding: 5px;
+            text-align: center;
+            box-sizing: border-box;
+            font-size: 11px;
+        }
 
-    /* --- Optional/Track Subjects States --- */
-    .optional-locked { background-color: #374151; border-color: #4b5563; color: #9ca3af; }
-    .optional-locked:hover { transform: translate(-50%, -50%) scale(1.05); }
-    .optional-available { background-color: #dc2626; border-color: #f87171; color: white; box-shadow: 0 0 15px rgba(220, 38, 38, 0.5); }
-    .optional-available:hover { transform: translate(-50%, -50%) scale(1.05); }
-    .optional-completed { background-color: #16a34a; border-color: #4ade80; color: white; font-weight: bold; box-shadow: 0 0 20px rgba(74, 222, 128, 0.7); }
+        .node:hover {
+            z-index: 99;
+            /* Eleva o nó sobre os outros ao passar o mouse */
+        }
 
-    .optional-inprogress { background-color: #f97316; border-color: #fdba74; color: white; box-shadow: 0 0 15px rgba(249, 115, 22, 0.6); }
-    .optional-inprogress:hover { transform: translate(-50%, -50%) scale(1.05); }
+        /* --- Main Subjects States --- */
+        .subject-locked {
+            background-color: #374151;
+            border-color: #4b5563;
+            color: #9ca3af;
+        }
 
-    /* O restante do seu CSS continua aqui sem alterações... */
-    .node .tooltip {
-        visibility: hidden; opacity: 0; /* GARANTA QUE ESTAS LINHAS ESTEJAM AQUI */
-        width: 220px; background-color: #1f2937; color: #fff; text-align: center;
-        border-radius: 6px; padding: 8px; position: absolute; z-index: 20; bottom: 115%; left: 50%;
-        margin-left: -110px; transition: opacity 0.3s; border: 1px solid #4b5563;
-    }
+        .subject-locked:hover {
+            transform: translate(-50%, -50%) scale(1.05);
+        }
 
-    .node .tooltip::after {
-        content: ""; position: absolute; top: 100%; left: 50%; margin-left: -5px; border-width: 5px;
-        border-style: solid; border-color: #1f2937 transparent transparent transparent;
-    }
+        .subject-available {
+            background-color: #2563eb;
+            border-color: #60a5fa;
+            color: white;
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+        }
 
-    .node .tooltip.visible, .node .tooltip-satisfied.visible {
-        visibility: visible;
-        opacity: 1;
-    }         
-    
-    .line-locked { stroke: #4b5563; stroke-width: 2; stroke-dasharray: 4, 4; fill: none; }
-    
-    @keyframes flowLine {
-        from { stroke-dashoffset: var(--line-length); }
-        to { stroke-dashoffset: 0; }
-    }
-    
-    .line-completed { 
-        stroke: #16a34a; 
-        stroke-width: 3; 
-        fill: none; 
-        filter: drop-shadow(0 0 3px #4ade80);
-        transition: stroke-dashoffset 1.5s ease-out;
-    }
+        .subject-available:hover {
+            transform: translate(-50%, -50%) scale(1.05);
+        }
 
-    .remove-btn {
-        background: none; border: none; color: #f87171; font-size: 1.5rem;
-        font-weight: bold; cursor: pointer; line-height: 1; padding: 0 0.5rem;
-        transition: color 0.2s;
-    }
-    .remove-btn:hover { color: #ef4444; }
+        .subject-completed {
+            background-color: #16a34a;
+            border-color: #4ade80;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 0 20px rgba(74, 222, 128, 0.7);
+        }
 
-    .modal-overlay {
-        position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-        background-color: rgba(0, 0, 0, 0.7);
-        display: flex; align-items: center; justify-content: center;
-        z-index: 50; transition: opacity 0.3s ease;
-    }
-    .modal-box {
-        background-color: #1f2937; border-radius: 0.75rem; padding: 2rem;
-        border: 1px solid #4b5563; box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-        transform: scale(0.95); transition: transform 0.3s ease;
-    }
-    .modal-overlay:not(.hidden) .modal-box {
-        transform: scale(1);
-    }
-    
-    .tab-btn {
-        padding: 0.75rem 1.5rem;
-        font-weight: 600;
-        cursor: pointer;
-        border: none;
-        background-color: transparent;
-        color: #9ca3af;
-        border-bottom: 3px solid transparent;
-        transition: all 0.3s ease;
-    }
-    .tab-btn:hover {
-        color: #d1d5db;
-    }
-    .tab-btn.active {
-        color: #60a5fa;
-        border-bottom-color: #60a5fa;
-    }
-    .period-header {
-        position: absolute;
-        left: 10px;
-        transform: translateY(-50%);
-        color: #6b7280;
-        font-weight: bold;
-        font-size: 1.25rem;
-        writing-mode: vertical-rl;
-        text-orientation: mixed;
-        background-color: rgba(31, 41, 55, 0.5);
-        padding: 10px 5px;
-        border-radius: 8px;
-    }
-    .track-header {
-        position: absolute;
-        left: 5px;
-        transform: translateY(-50%);
-        color: #9ca3af;
-        font-weight: bold;
-        font-size: 1rem;
-        background-color: rgba(31, 41, 55, 0.6);
-        padding: 8px 4px;
-        border-radius: 8px;
-        writing-mode: vertical-rl;
-        text-orientation: mixed;
-    }
-    .node .tooltip-satisfied {
-        visibility: hidden; opacity: 0; /* GARANTA QUE ESTAS LINHAS ESTEJAM AQUI */
-        width: 220px; background-color: #1f2937; color: #fff; text-align: center;
-        border-radius: 6px; padding: 8px; position: absolute; z-index: 20; bottom: 115%; left: 50%;
-        margin-left: -110px; transition: opacity 0.3s; border: 2px solid #fbbf24; /* Borda Dourada */
-    }
+        .subject-satisfied {
+            background-color: #4a4a28;
+            /* Fundo dourado escuro */
+            border-color: #fbbf24;
+            /* Borda âmbar/dourada */
+            color: #fde68a;
+            /* Texto dourado claro */
+            cursor: not-allowed;
+            /* Indica que não é mais clicável */
+        }
 
-    .node .tooltip-satisfied::after {
-        content: ""; position: absolute; top: 100%; left: 50%; margin-left: -5px; border-width: 5px;
-        border-style: solid; border-color: #fbbf24 transparent transparent transparent;
-    }
+        .subject-satisfied:hover {
+            transform: translate(-50%, -50%) scale(1.05);
+        }
 
-    /* Adicione este novo estilo para o tooltip posicionado abaixo */
-    .node .tooltip.below {
-        bottom: auto; /* Remove a regra que o força para cima */
-        top: 115%;    /* Posiciona 15% abaixo do nó */
-    }
+        .subject-inprogress {
+            background-color: #f97316;
+            border-color: #fdba74;
+            color: white;
+            box-shadow: 0 0 15px rgba(249, 115, 22, 0.6);
+        }
 
-    /* Adicione este estilo para corrigir a seta quando o tooltip estiver abaixo */
-    .node .tooltip.below::after {
-        top: auto;              /* Remove a regra da seta antiga */
-        bottom: 100%;           /* Coloca a seta no topo do tooltip */
-        margin-left: -5px;
-        /* Inverte a direção da borda para apontar para cima */
-        border-color: transparent transparent #1f2937 transparent;
-    }
+        .subject-inprogress:hover {
+            transform: translate(-50%, -50%) scale(1.05);
+        }
 
-    /* Se você também quer que a borda dourada funcione para tooltips satisfeitos abaixo */
-    .node .tooltip-satisfied.below::after {
-        border-color: transparent transparent #fbbf24 transparent;
-    }
+        /* --- Humanities Subjects States --- */
+        .humanities-locked {
+            background-color: #374151;
+            border-color: #4b5563;
+            color: #9ca3af;
+        }
 
-    /* ================================================= */
-    /* === ESTILOS PARA DISPOSITIVOS MÓVEIS (INÍCIO) === */
-    /* ================================================= */
+        .humanities-locked:hover {
+            transform: translate(-50%, -50%) scale(1.05);
+        }
 
-    /* Esta regra só aplica os estilos abaixo em telas com largura máxima de 768px */
-    @media (max-width: 768px) {
+        .humanities-available {
+            background-color: #a855f7;
+            border-color: #c084fc;
+            color: white;
+            box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+        }
 
-        /* 1. Ajuste no Contêiner Principal da Árvore */
-        /* Para forçar um layout mais vertical, aumentamos a largura (width) e
+        .humanities-available:hover {
+            transform: translate(-50%, -50%) scale(1.05);
+        }
+
+        .humanities-completed {
+            background-color: #16a34a;
+            border-color: #4ade80;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 0 20px rgba(74, 222, 128, 0.7);
+        }
+
+        .humanities-inprogress {
+            background-color: #f97316;
+            border-color: #fdba74;
+            color: white;
+            box-shadow: 0 0 15px rgba(249, 115, 22, 0.6);
+        }
+
+        .humanities-inprogress:hover {
+            transform: translate(-50%, -50%) scale(1.05);
+        }
+
+        /* --- Optional/Track Subjects States --- */
+        .optional-locked {
+            background-color: #374151;
+            border-color: #4b5563;
+            color: #9ca3af;
+        }
+
+        .optional-locked:hover {
+            transform: translate(-50%, -50%) scale(1.05);
+        }
+
+        .optional-available {
+            background-color: #dc2626;
+            border-color: #f87171;
+            color: white;
+            box-shadow: 0 0 15px rgba(220, 38, 38, 0.5);
+        }
+
+        .optional-available:hover {
+            transform: translate(-50%, -50%) scale(1.05);
+        }
+
+        .optional-completed {
+            background-color: #16a34a;
+            border-color: #4ade80;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 0 20px rgba(74, 222, 128, 0.7);
+        }
+
+        .optional-inprogress {
+            background-color: #f97316;
+            border-color: #fdba74;
+            color: white;
+            box-shadow: 0 0 15px rgba(249, 115, 22, 0.6);
+        }
+
+        .optional-inprogress:hover {
+            transform: translate(-50%, -50%) scale(1.05);
+        }
+
+        /* O restante do seu CSS continua aqui sem alterações... */
+        .node .tooltip {
+            visibility: hidden;
+            opacity: 0;
+            /* GARANTA QUE ESTAS LINHAS ESTEJAM AQUI */
+            width: 220px;
+            background-color: #1f2937;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px;
+            position: absolute;
+            z-index: 20;
+            bottom: 115%;
+            left: 50%;
+            margin-left: -110px;
+            transition: opacity 0.3s;
+            border: 1px solid #4b5563;
+        }
+
+        .node .tooltip::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #1f2937 transparent transparent transparent;
+        }
+
+        .node .tooltip.visible,
+        .node .tooltip-satisfied.visible {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .line-locked {
+            stroke: #4b5563;
+            stroke-width: 2;
+            stroke-dasharray: 4, 4;
+            fill: none;
+        }
+
+        @keyframes flowLine {
+            from {
+                stroke-dashoffset: var(--line-length);
+            }
+
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        
+        @keyframes travelPulse {
+            0% {
+                stroke-dashoffset: var(--line-length);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                stroke-dashoffset: 0;
+                opacity: 0;
+            }
+        }
+
+        .line-completed {
+            stroke: #16a34a;
+            stroke-width: 3;
+            fill: none;
+            filter: drop-shadow(0 0 3px #4ade80);
+            transition: stroke-dashoffset 1.5s ease-out;
+        }
+
+        .remove-btn {
+            background: none;
+            border: none;
+            color: #f87171;
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 1;
+            padding: 0 0.5rem;
+            transition: color 0.2s;
+        }
+
+        .remove-btn:hover {
+            color: #ef4444;
+        }
+
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 50;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-box {
+            background-color: #1f2937;
+            border-radius: 0.75rem;
+            padding: 2rem;
+            border: 1px solid #4b5563;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            transform: scale(0.95);
+            transition: transform 0.3s ease;
+        }
+
+        .modal-overlay:not(.hidden) .modal-box {
+            transform: scale(1);
+        }
+
+        .tab-btn {
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+            color: #9ca3af;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn:hover {
+            color: #d1d5db;
+        }
+
+        .tab-btn.active {
+            color: #60a5fa;
+            border-bottom-color: #60a5fa;
+        }
+
+        .period-header {
+            position: absolute;
+            left: 10px;
+            transform: translateY(-50%);
+            color: #6b7280;
+            font-weight: bold;
+            font-size: 1.25rem;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            background-color: rgba(31, 41, 55, 0.5);
+            padding: 10px 5px;
+            border-radius: 8px;
+        }
+
+        .track-header {
+            position: absolute;
+            left: 5px;
+            transform: translateY(-50%);
+            color: #9ca3af;
+            font-weight: bold;
+            font-size: 1rem;
+            background-color: rgba(31, 41, 55, 0.6);
+            padding: 8px 4px;
+            border-radius: 8px;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+
+        .node .tooltip-satisfied {
+            visibility: hidden;
+            opacity: 0;
+            /* GARANTA QUE ESTAS LINHAS ESTEJAM AQUI */
+            width: 220px;
+            background-color: #1f2937;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px;
+            position: absolute;
+            z-index: 20;
+            bottom: 115%;
+            left: 50%;
+            margin-left: -110px;
+            transition: opacity 0.3s;
+            border: 2px solid #fbbf24;
+            /* Borda Dourada */
+        }
+
+        .node .tooltip-satisfied::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #fbbf24 transparent transparent transparent;
+        }
+
+        /* Adicione este novo estilo para o tooltip posicionado abaixo */
+        .node .tooltip.below {
+            bottom: auto;
+            /* Remove a regra que o força para cima */
+            top: 115%;
+            /* Posiciona 15% abaixo do nó */
+        }
+
+        /* Adicione este estilo para corrigir a seta quando o tooltip estiver abaixo */
+        .node .tooltip.below::after {
+            top: auto;
+            /* Remove a regra da seta antiga */
+            bottom: 100%;
+            /* Coloca a seta no topo do tooltip */
+            margin-left: -5px;
+            /* Inverte a direção da borda para apontar para cima */
+            border-color: transparent transparent #1f2937 transparent;
+        }
+
+        /* Se você também quer que a borda dourada funcione para tooltips satisfeitos abaixo */
+        .node .tooltip-satisfied.below::after {
+            border-color: transparent transparent #fbbf24 transparent;
+        }
+
+        /* ================================================= */
+        /* === ESTILOS PARA DISPOSITIVOS MÓVEIS (INÍCIO) === */
+        /* ================================================= */
+
+        /* Esta regra só aplica os estilos abaixo em telas com largura máxima de 768px */
+        @media (max-width: 768px) {
+
+            /* 1. Ajuste no Contêiner Principal da Árvore */
+            /* Para forçar um layout mais vertical, aumentamos a largura (width) e
         diminuímos a altura (height) do contêiner interno. Isso "estica" o conteúdo
         na vertical, tornando a rolagem para baixo mais natural no celular. */
-        #main-container, #humanities-container, #optional-container {
-            width: 280%;  /* Mais largo para espalhar os nós verticalmente */
-            height: 135vh; /* Menos alto para compensar a largura */
-        }
+            #main-container,
+            #humanities-container,
+            #optional-container {
+                width: 280%;
+                /* Mais largo para espalhar os nós verticalmente */
+                height: 135vh;
+                /* Menos alto para compensar a largura */
+            }
 
-        /* 2. Diminuir o Tamanho dos Nós (Matérias) */
-        /* Os nós originais (130x90px) são muito grandes para uma tela de celular.
+            /* 2. Diminuir o Tamanho dos Nós (Matérias) */
+            /* Os nós originais (130x90px) são muito grandes para uma tela de celular.
         Vamos diminuí-los para que caibam melhor na tela. */
-        .node {
-            width: 110px;
-            height: 75px;
-            font-size: 10px; /* Reduzimos um pouco a fonte para caber no novo tamanho */
-        }
+            .node {
+                width: 110px;
+                height: 75px;
+                font-size: 10px;
+                /* Reduzimos um pouco a fonte para caber no novo tamanho */
+            }
 
-        /* 3. Ajustar o tamanho da fonte do cabeçalho */
-        /* A classe 'text-3xl' será usada para o título principal em telas pequenas,
+            /* 3. Ajustar o tamanho da fonte do cabeçalho */
+            /* A classe 'text-3xl' será usada para o título principal em telas pequenas,
         e as outras classes do Tailwind (sm:, md:) cuidarão dos tamanhos maiores. */
-        .font-header-responsive {
-            font-size: 1.875rem; /* Equivalente a text-3xl do Tailwind */
-            line-height: 2.25rem;
+            .font-header-responsive {
+                font-size: 1.875rem;
+                /* Equivalente a text-3xl do Tailwind */
+                line-height: 2.25rem;
+            }
+
+            /* 4. Ajustes finos nas barras de progresso e formulários */
+            /* Em telas muito pequenas, podemos empilhar os formulários para não ficarem espremidos. */
+            #ac-form,
+            #cce-form {
+                grid-column: span 2 / span 2;
+                /* Faz cada formulário ocupar a largura total */
+            }
         }
 
-        /* 4. Ajustes finos nas barras de progresso e formulários */
-        /* Em telas muito pequenas, podemos empilhar os formulários para não ficarem espremidos. */
-        #ac-form, #cce-form {
-            grid-column: span 2 / span 2; /* Faz cada formulário ocupar a largura total */
-        }
-    }
-
-    /* ================================================= */
-    /* === ESTILOS PARA DISPOSITIVOS MÓVEIS (FIM) ==== */
-    /* ================================================= */
-</style>
+        /* ================================================= */
+        /* === ESTILOS PARA DISPOSITIVOS MÓVEIS (FIM) ==== */
+        /* ================================================= */
+    </style>
 </head>
 
 <footer class="bg-gray-900 text-center py-6 mt-8 rounded-lg shadow-inner">
@@ -279,103 +495,142 @@
         <p class="text-gray-400 mb-3">
             Desenvolvido com ❤️ por <strong class="font-semibold text-white">Kcaio</strong>
         </p>
-        
+
         <div class="flex justify-center items-center space-x-6 mb-4">
-            <a href="https://www.linkedin.com/in/caio-costa-386011258/" target="_blank" title="LinkedIn" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">
+            <a href="https://www.linkedin.com/in/caio-costa-386011258/" target="_blank" title="LinkedIn"
+                class="text-gray-400 hover:text-blue-400 transition-colors duration-300">
                 <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                 </svg>
             </a>
-            
-            <a href="mailto:caiocosta281214@gmail.com" title="Gmail" class="text-gray-400 hover:text-red-500 transition-colors duration-300">
+
+            <a href="mailto:caiocosta281214@gmail.com" title="Gmail"
+                class="text-gray-400 hover:text-red-500 transition-colors duration-300">
                 <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.75L12 16.625l-6.545-4.875v9.25H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.908 1.528-1.145C21.69 3.28 24 4.434 24 5.457z"/>
+                    <path
+                        d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.75L12 16.625l-6.545-4.875v9.25H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.908 1.528-1.145C21.69 3.28 24 4.434 24 5.457z" />
                 </svg>
             </a>
         </div>
-        
+
         <div class="mt-4">
             <p class="text-gray-400 text-sm">Essa ferramenta foi útil? Considere fazer um Pix!</p>
-            
+
             <img src="imagens/PIX.png" alt="QR Code para doação PIX"
-                 class="w-40 h-40 mx-auto my-4 rounded-lg border-2 border-gray-700 shadow-md">
-            
+                class="w-40 h-40 mx-auto my-4 rounded-lg border-2 border-gray-700 shadow-md">
+
             <p class="text-amber-400 font-mono bg-gray-800 inline-block px-3 py-1 rounded">
                 Chave: <strong>caiocosta281214@gmail.com</strong>
             </p>
         </div>
-        </div>
+    </div>
 </footer>
 
 <body class="bg-gray-800 text-white p-4 sm:p-6 md:p-8">
 
     <div class="max-w-7xl mx-auto">
         <header class="text-center mb-6">
-            <h1 class="text-4xl md:text-5xl font-bold font-header text-blue-400">Matriz Curricular só que é uma arvore de habilidades de RPG</h1>
+            <h1 class="text-4xl md:text-5xl font-bold font-header text-blue-400">Matriz Curricular só que é uma arvore
+                de habilidades de RPG</h1>
             <p class="text-gray-300 mt-2">Engenharia Eletrônica - UTFPR (Baseado na Matriz 3)</p>
         </header>
 
         <div id="progress-panel" class="bg-gray-700 p-6 rounded-lg shadow-lg mb-6 space-y-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                    <div class="flex justify-between mb-1"><span class="text-base font-medium text-gray-200">Progresso do Curso (Obrigatórias)</span><span id="total-progress-text" class="text-sm font-medium text-gray-200">0%</span></div>
-                    <div class="w-full bg-gray-600 rounded-full h-4"><div id="total-progress-bar" class="bg-green-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div></div>
+                    <div class="flex justify-between mb-1"><span class="text-base font-medium text-gray-200">Progresso
+                            do Curso (Obrigatórias)</span><span id="total-progress-text"
+                            class="text-sm font-medium text-gray-200">0%</span></div>
+                    <div class="w-full bg-gray-600 rounded-full h-4">
+                        <div id="total-progress-bar" class="bg-green-500 h-4 rounded-full transition-all duration-500"
+                            style="width: 0%"></div>
+                    </div>
                 </div>
                 <div>
                     <div class="flex justify-between mb-1">
                         <label for="period-slider" class="text-base font-medium text-gray-200">Período Atual</label>
                         <span id="period-display" class="text-sm font-medium text-gray-200">Período 1</span>
                     </div>
-                    <input id="period-slider" type="range" min="1" max="10" value="1" class="w-full h-2 bg-gray-600 rounded-lg appearance-none cursor-pointer">
+                    <input id="period-slider" type="range" min="1" max="10" value="1"
+                        class="w-full h-2 bg-gray-600 rounded-lg appearance-none cursor-pointer">
                 </div>
             </div>
             <hr class="border-gray-600 my-4">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                 <div>
-                    <div class="flex justify-between mb-1"><span class="text-base font-medium text-red-300">Optativas e Trilhas</span><span id="optional-progress-text" class="text-sm font-medium text-red-300">0/300h (0.0%)</span></div>
-                    <div class="w-full bg-gray-900 rounded-full h-4"><div id="optional-progress-bar" class="bg-red-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div></div>
+                <div>
+                    <div class="flex justify-between mb-1"><span class="text-base font-medium text-red-300">Optativas e
+                            Trilhas</span><span id="optional-progress-text"
+                            class="text-sm font-medium text-red-300">0/300h (0.0%)</span></div>
+                    <div class="w-full bg-gray-900 rounded-full h-4">
+                        <div id="optional-progress-bar" class="bg-red-500 h-4 rounded-full transition-all duration-500"
+                            style="width: 0%"></div>
+                    </div>
                 </div>
                 <div>
-                    <div class="flex justify-between mb-1"><span class="text-base font-medium text-purple-300">Ciclo de Humanidades</span><span id="humanities-progress-text" class="text-sm font-medium text-purple-300">0/210h (0.0%)</span></div>
-                    <div class="w-full bg-gray-900 rounded-full h-4"><div id="humanities-progress-bar" class="bg-purple-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div></div>
+                    <div class="flex justify-between mb-1"><span class="text-base font-medium text-purple-300">Ciclo de
+                            Humanidades</span><span id="humanities-progress-text"
+                            class="text-sm font-medium text-purple-300">0/210h (0.0%)</span></div>
+                    <div class="w-full bg-gray-900 rounded-full h-4">
+                        <div id="humanities-progress-bar"
+                            class="bg-purple-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div>
+                    </div>
                 </div>
                 <div>
-                    <div class="flex justify-between mb-1"><span class="text-base font-medium text-pink-300">Horas Complementares (AC)</span><span id="comp-progress-text" class="text-sm font-medium text-pink-300">0/15h (0.0%)</span></div>
-                    <div class="w-full bg-gray-900 rounded-full h-4 mb-2"><div id="comp-progress-bar" class="bg-pink-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div></div>
+                    <div class="flex justify-between mb-1"><span class="text-base font-medium text-pink-300">Horas
+                            Complementares (AC)</span><span id="comp-progress-text"
+                            class="text-sm font-medium text-pink-300">0/15h (0.0%)</span></div>
+                    <div class="w-full bg-gray-900 rounded-full h-4 mb-2">
+                        <div id="comp-progress-bar" class="bg-pink-500 h-4 rounded-full transition-all duration-500"
+                            style="width: 0%"></div>
+                    </div>
                 </div>
-                 <div>
-                    <div class="flex justify-between mb-1"><span class="text-base font-medium text-amber-300">Horas de Extensão (CCE)</span><span id="ext-progress-text" class="text-sm font-medium text-amber-300">0/465h (0.0%)</span></div>
-                    <div class="w-full bg-gray-900 rounded-full h-4 mb-2"><div id="ext-progress-bar" class="bg-amber-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div></div>
+                <div>
+                    <div class="flex justify-between mb-1"><span class="text-base font-medium text-amber-300">Horas de
+                            Extensão (CCE)</span><span id="ext-progress-text"
+                            class="text-sm font-medium text-amber-300">0/465h (0.0%)</span></div>
+                    <div class="w-full bg-gray-900 rounded-full h-4 mb-2">
+                        <div id="ext-progress-bar" class="bg-amber-500 h-4 rounded-full transition-all duration-500"
+                            style="width: 0%"></div>
+                    </div>
                 </div>
-                 <div class="md:col-span-2 grid grid-cols-2 gap-4">
-                     <form id="ac-form" class="flex flex-col gap-2">
-                         <div class="flex gap-2">
-                             <input type="text" id="ac-desc" placeholder="Descrição Ativ. Comp." class="bg-gray-800 text-white rounded px-2 py-1 text-sm w-full">
-                             <input type="number" id="ac-hours" placeholder="Horas" class="bg-gray-800 text-white rounded px-2 py-1 text-sm w-24">
-                             <button type="submit" class="bg-pink-600 hover:bg-pink-700 rounded px-3 py-1 text-sm">Add</button>
-                         </div>
-                         <ul id="ac-list" class="text-sm mt-2 space-y-1 h-20 overflow-y-auto"></ul>
-                     </form>
-                     <form id="cce-form" class="flex flex-col gap-2">
-                         <div class="flex gap-2">
-                             <input type="text" id="cce-desc" placeholder="Descrição Ativ. Extensão" class="bg-gray-800 text-white rounded px-2 py-1 text-sm w-full">
-                             <input type="number" id="cce-hours" placeholder="Horas" class="bg-gray-800 text-white rounded px-2 py-1 text-sm w-24">
-                             <button type="submit" class="bg-amber-600 hover:bg-amber-700 rounded px-3 py-1 text-sm">Add</button>
-                         </div>
-                         <ul id="cce-list" class="text-sm mt-2 space-y-1 h-20 overflow-y-auto"></ul>
-                     </form>
-                 </div>
+                <div class="md:col-span-2 grid grid-cols-2 gap-4">
+                    <form id="ac-form" class="flex flex-col gap-2">
+                        <div class="flex gap-2">
+                            <input type="text" id="ac-desc" placeholder="Descrição Ativ. Comp."
+                                class="bg-gray-800 text-white rounded px-2 py-1 text-sm w-full">
+                            <input type="number" id="ac-hours" placeholder="Horas"
+                                class="bg-gray-800 text-white rounded px-2 py-1 text-sm w-24">
+                            <button type="submit"
+                                class="bg-pink-600 hover:bg-pink-700 rounded px-3 py-1 text-sm">Add</button>
+                        </div>
+                        <ul id="ac-list" class="text-sm mt-2 space-y-1 h-20 overflow-y-auto"></ul>
+                    </form>
+                    <form id="cce-form" class="flex flex-col gap-2">
+                        <div class="flex gap-2">
+                            <input type="text" id="cce-desc" placeholder="Descrição Ativ. Extensão"
+                                class="bg-gray-800 text-white rounded px-2 py-1 text-sm w-full">
+                            <input type="number" id="cce-hours" placeholder="Horas"
+                                class="bg-gray-800 text-white rounded px-2 py-1 text-sm w-24">
+                            <button type="submit"
+                                class="bg-amber-600 hover:bg-amber-700 rounded px-3 py-1 text-sm">Add</button>
+                        </div>
+                        <ul id="cce-list" class="text-sm mt-2 space-y-1 h-20 overflow-y-auto"></ul>
+                    </form>
+                </div>
             </div>
         </div>
-        
+
         <div class="bg-gray-700 p-6 rounded-lg shadow-lg mb-6 space-y-4">
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <label for="pdf-upload" class="bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 cursor-pointer">
+                <label for="pdf-upload"
+                    class="bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 cursor-pointer">
                     Importar Histórico (PDF)
                 </label>
                 <input type="file" id="pdf-upload" accept=".pdf" class="hidden">
 
-                <button id="reset-button" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300">
+                <button id="reset-button"
+                    class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300">
                     Resetar Progresso
                 </button>
             </div>
@@ -390,12 +645,15 @@
 
         <div class="tree-wrapper">
             <div id="main-container" class="shadow-2xl">
-                <svg id="main-lines" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none;">
+                <svg id="main-lines"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none;">
                     <defs>
-                        <marker id="arrow-completed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                        <marker id="arrow-completed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6"
+                            markerHeight="6" orient="auto-start-reverse">
                             <path d="M 0 0 L 10 5 L 0 10 z" fill="#16a34a" filter="drop-shadow(0 0 2px #4ade80)"></path>
                         </marker>
-                        <marker id="arrow-locked" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                        <marker id="arrow-locked" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5"
+                            orient="auto-start-reverse">
                             <path d="M 0 0 L 10 5 L 0 10 z" fill="#4b5563"></path>
                         </marker>
                     </defs>
@@ -403,12 +661,15 @@
             </div>
 
             <div id="humanities-container" class="shadow-2xl hidden">
-                 <svg id="humanities-lines" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none;">
+                <svg id="humanities-lines"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none;">
                     <defs>
-                        <marker id="h-arrow-completed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                        <marker id="h-arrow-completed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6"
+                            markerHeight="6" orient="auto-start-reverse">
                             <path d="M 0 0 L 10 5 L 0 10 z" fill="#16a34a" filter="drop-shadow(0 0 2px #4ade80)"></path>
                         </marker>
-                        <marker id="h-arrow-locked" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                        <marker id="h-arrow-locked" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5"
+                            markerHeight="5" orient="auto-start-reverse">
                             <path d="M 0 0 L 10 5 L 0 10 z" fill="#4b5563"></path>
                         </marker>
                     </defs>
@@ -416,12 +677,15 @@
             </div>
 
             <div id="optional-container" class="shadow-2xl hidden">
-                 <svg id="optional-lines" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none;">
+                <svg id="optional-lines"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none;">
                     <defs>
-                        <marker id="o-arrow-completed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                        <marker id="o-arrow-completed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6"
+                            markerHeight="6" orient="auto-start-reverse">
                             <path d="M 0 0 L 10 5 L 0 10 z" fill="#16a34a" filter="drop-shadow(0 0 2px #4ade80)"></path>
                         </marker>
-                        <marker id="o-arrow-locked" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                        <marker id="o-arrow-locked" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5"
+                            markerHeight="5" orient="auto-start-reverse">
                             <path d="M 0 0 L 10 5 L 0 10 z" fill="#4b5563"></path>
                         </marker>
                     </defs>
@@ -433,10 +697,14 @@
     <div id="prerequisite-modal" class="modal-overlay hidden">
         <div class="modal-box text-center">
             <h3 class="text-xl font-bold mb-2 text-yellow-400">Atenção!</h3>
-            <p id="modal-text" class="text-gray-300 mb-6">Esta matéria possui pré-requisitos não concluídos. Deseja quebrar as regras e liberá-la mesmo assim?</p>
+            <p id="modal-text" class="text-gray-300 mb-6">Esta matéria possui pré-requisitos não concluídos. Deseja
+                quebrar as regras e liberá-la mesmo assim?</p>
             <div class="flex justify-center gap-4">
-                <button id="cancel-override-btn" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-6 rounded-lg transition-colors">Não</button>
-                <button id="confirm-override-btn" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-lg transition-colors">Sim, quebrar!</button>
+                <button id="cancel-override-btn"
+                    class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-6 rounded-lg transition-colors">Não</button>
+                <button id="confirm-override-btn"
+                    class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-lg transition-colors">Sim,
+                    quebrar!</button>
             </div>
         </div>
     </div>
@@ -444,8 +712,10 @@
     <div id="celebration-modal" class="modal-overlay hidden">
         <div class="modal-box text-center p-8 border-2 border-amber-400 shadow-2xl shadow-amber-500/20">
             <h2 class="text-4xl font-bold font-header text-amber-300 mb-4">Parabéns, Engenheiro(a)!</h2>
-            <p class="text-gray-300 mb-8 text-lg">Você conseguiu completar todas as materias da sua grade curricular. Sua jornada na UTFPR termina aqui (ou será que não....?). Celebre esta grande vitória!</p>
-            <button id="close-celebration-btn" class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-8 rounded-lg transition-colors">Fechar</button>
+            <p class="text-gray-300 mb-8 text-lg">Você conseguiu completar todas as materias da sua grade curricular.
+                Sua jornada na UTFPR termina aqui (ou será que não....?). Celebre esta grande vitória!</p>
+            <button id="close-celebration-btn"
+                class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-8 rounded-lg transition-colors">Fechar</button>
         </div>
     </div>
 
@@ -483,7 +753,7 @@
             '[1177]': { requiredHours: 90, name: 'Opções De Adm, Empreend E Economia' },
             '[1187]': { requiredHours: 180, name: 'Opções De Circuitos Elétricos' },
             '[1202]': { requiredHours: 45, name: 'Opções De Ativ De Síntese E Ic 2' },
-            
+
             // Novos grupos adicionados
             '[1175]': { requiredHours: 60, name: 'Opções De Programação De Computador' },
             '[1190]': { requiredHours: 120, name: 'Opções De Instrumentos E Medidas' },
@@ -508,8 +778,8 @@
             '[1210]': { requiredHours: 75, name: 'Opções De Idioma: Eletrônica De Potência' },
             '[1211]': { requiredHours: 60, name: 'Opções De Idioma: Automação' },
             '[1212]': { requiredHours: 75, name: 'Opções De Idioma: Comunicações Digitais' }
-        };        
-// ----------------------------------------------------------------
+        };
+        // ----------------------------------------------------------------
 
         // --- DATA STRUCTURE (Main Tree) ---
         const allNodesData = [
@@ -594,7 +864,7 @@
 
             // Período 10
             { id: 'ELE92', name: 'TCC 2', dependencies: ['ELE91'], period: 10, chs: 0, cht: 15, x: 5.5, y: 98, type: 'subject' },
-            { id: 'ELO92', name: 'Empreendedorismo', dependencies: [], period: 10, cht: 30, chs: 2, x: 15, y: 98, type: 'subject', groupId: '[1177]', alternative: { id: 'ELBAA / GE70T / GEE7E1 / ME781', name: 'ELBAA, GE70T, GEE7E1, ME781' } },
+            { id: 'ELO92', name: 'Empreendedorismo', dependencies: [], period: 10, cht: 30, chs: 2, x: 15, y: 98, type: 'subject', alternative: { id: 'ELBAA / GE70T / GEE7E1 / ME781', name: 'ELBAA, GE70T, GEE7E1, ME781' } },
             { id: 'GEE7A1', name: 'Fund. de Administração', dependencies: [], period: 10, cht: 45, chs: 3, x: 25, y: 98, type: 'subject', groupId: '[1177]' },
             { id: 'GEE7E3', name: 'Fund. de Economia', dependencies: [], period: 10, cht: 30, chs: 2, x: 35, y: 98, type: 'subject', groupId: '[1177]' },
             { id: 'GEE7E5', name: 'Fund. de Eng. Econômica', dependencies: [], period: 10, cht: 60, chs: 4, x: 45, y: 98, type: 'subject', groupId: '[1177]' },
@@ -604,7 +874,7 @@
             { id: 'GEE7G5', name: 'Fund. de Gestão de Projeto', dependencies: [], period: 10, cht: 45, chs: 3, x: 85, y: 98, type: 'subject', groupId: '[1177]' },
             { id: 'GEE7M1', name: 'Fund. de Marketing', dependencies: [], period: 10, cht: 45, chs: 3, x: 94.5, y: 98, type: 'subject', groupId: '[1177]' }
         ];
-        
+
         // --- DATA STRUCTURE (Humanities Tree) ---
         const allHumanitiesData = [
             // --- INÍCIO DO CÓDIGO PARA allHumanitiesData ---
@@ -727,14 +997,14 @@
             { id: 'ELTE6', name: 'Energia Fotovoltaica', dependencies: [], period: 9, cht: 60, x: 34, y: 89, type: 'optional' },
             { id: 'ELTE13', name: 'Veículos Elétricos', dependencies: [], period: 9, cht: 60, x: 46, y: 89, type: 'optional' }
         ];
-        
+
         // --- DOM ELEMENTS ---
         const mainContainer = document.getElementById('main-container');
         const humanitiesContainer = document.getElementById('humanities-container');
         const optionalContainer = document.getElementById('optional-container');
 
         const resetButton = document.getElementById('reset-button');
-        
+
         const totalProgressBar = document.getElementById('total-progress-bar');
         const totalProgressText = document.getElementById('total-progress-text');
         const periodProgressBar = document.getElementById('period-progress-bar');
@@ -748,17 +1018,17 @@
         const humanitiesProgressText = document.getElementById('humanities-progress-text');
         const optionalProgressBar = document.getElementById('optional-progress-bar');
         const optionalProgressText = document.getElementById('optional-progress-text');
-        
+
         const acForm = document.getElementById('ac-form');
         const cceForm = document.getElementById('cce-form');
         const acList = document.getElementById('ac-list');
         const cceList = document.getElementById('cce-list');
-        
+
         const prerequisiteModal = document.getElementById('prerequisite-modal');
         const confirmOverrideBtn = document.getElementById('confirm-override-btn');
         const cancelOverrideBtn = document.getElementById('cancel-override-btn');
         const modalText = document.getElementById('modal-text');
-        
+
         const tabMain = document.getElementById('tab-main');
         const tabHumanities = document.getElementById('tab-humanities');
         const tabOptional = document.getElementById('tab-optional');
@@ -792,10 +1062,10 @@
 
         const duringPan = (e) => {
             if (!isPanning) return;
-            
+
             // Previne a rolagem nativa da página para que nosso arraste funcione
             e.preventDefault();
-            
+
             const clientX = e.touches ? e.touches[0].clientX : e.clientX;
             const clientY = e.touches ? e.touches[0].clientY : e.clientY;
             const dx = clientX - startPos.x;
@@ -900,7 +1170,7 @@
         function positionTooltip(nodeEl, tooltipEl) {
             const container = document.querySelector('.tree-wrapper');
             const containerRect = container.getBoundingClientRect();
-            
+
             // --- INÍCIO DA MODIFICAÇÃO ---
 
             // Primeiro, remove a classe 'below' para recalcular do zero
@@ -1001,11 +1271,11 @@
             updateNodeStates(nodes, savedState.nodesState);
             updateNodeStates(humanitiesNodes, savedState.humanitiesNodesState);
             updateNodeStates(optionalNodes, savedState.optionalNodesState);
-            
+
             // Restaura as listas de atividades (se existirem no save)
             completedAcActivities = savedState.completedAcActivities || [];
             completedCceActivities = savedState.completedCceActivities || [];
-            currentPeriod = savedState.currentPeriod || 1; 
+            currentPeriod = savedState.currentPeriod || 1;
             console.log("Estado carregado com sucesso!");
             return true;
         }
@@ -1022,20 +1292,20 @@
             optionalNodes = JSON.parse(JSON.stringify(allOptionalNodesData));
             completedAcActivities = [];
             completedCceActivities = [];
-            
+
             // TENTA CARREGAR O ESTADO SALVO
             const stateLoaded = loadState();
 
             // Se nenhum estado foi carregado (primeira visita ou após reset),
             // configura o estado inicial padrão.
             if (!stateLoaded) {
-                 nodes.forEach(node => {
+                nodes.forEach(node => {
                     node.state = node.dependencies.length === 0 ? 'subject-available' : 'subject-locked';
                 });
                 humanitiesNodes.forEach(node => {
                     node.state = 'humanities-locked';
                 });
-                 optionalNodes.forEach(node => {
+                optionalNodes.forEach(node => {
                     node.state = 'optional-locked';
                 });
             }
@@ -1053,25 +1323,25 @@
                 renderActiveTree();
                 updateAllProgressBars();
                 saveState();
-            });    
+            });
         }
-        
+
         function renderActiveTree() {
             if (activeTree === 'main') {
                 renderTree(mainContainer, nodes, 'main-lines', 'arrow-completed', 'arrow-locked');
             } else if (activeTree === 'humanities') {
                 renderTree(humanitiesContainer, humanitiesNodes, 'humanities-lines', 'h-arrow-completed', 'h-arrow-locked');
             } else {
-                 renderTree(optionalContainer, optionalNodes, 'optional-lines', 'o-arrow-completed', 'o-arrow-locked');
-                 renderOptionalTrackHeaders();
+                renderTree(optionalContainer, optionalNodes, 'optional-lines', 'o-arrow-completed', 'o-arrow-locked');
+                renderOptionalTrackHeaders();
             }
         }
-        
+
         function renderTree(container, data, svgId, markerCompletedId, markerLockedId) {
             const svgEl = container.querySelector(`#${svgId}`);
             const svgDefs = svgEl.querySelector('defs').outerHTML;
             container.innerHTML = `<svg id="${svgId}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none;">${svgDefs}</svg>`;
-            
+
             renderNodes(container, data);
             setTimeout(() => renderLines(container, data, svgId, markerCompletedId, markerLockedId), 0);
         }
@@ -1084,7 +1354,7 @@
                 'Trilha de Proc. de Sinais': 62,
                 'Optativas Gerais': 82,
             };
-             Object.entries(trackPositions).forEach(([name, yPos]) => {
+            Object.entries(trackPositions).forEach(([name, yPos]) => {
                 const header = document.createElement('div');
                 header.className = 'track-header';
                 header.textContent = name;
@@ -1092,7 +1362,7 @@
                 optionalContainer.appendChild(header);
             });
         }
-        
+
         function getColorForNodeId(id) {
             let hash = 0;
             if (id) {
@@ -1101,9 +1371,9 @@
                 }
             }
             const hue = Math.abs(hash * 137.5) % 360;
-            const completedColor = `hsl(${hue}, 85%, 55%)`; 
-            const glowColor = `hsl(${hue}, 90%, 70%)`;     
-            const lockedColor = `hsl(${hue}, 35%, 50%)`;   
+            const completedColor = `hsl(${hue}, 85%, 55%)`;
+            const glowColor = `hsl(${hue}, 90%, 70%)`;
+            const lockedColor = `hsl(${hue}, 35%, 50%)`;
             return { completedColor, glowColor, lockedColor, hue };
         }
 
@@ -1111,7 +1381,7 @@
         function renderLines(container, data, svgId, markerCompletedId, markerLockedId) {
             const svgEl = container.querySelector(`#${svgId}`);
             if (!svgEl) return;
-            
+
             const defs = svgEl.querySelector('defs').outerHTML;
             svgEl.innerHTML = defs;
 
@@ -1137,32 +1407,32 @@
                     }
                 }
             });
-            
+
             const graph = new Graph(grid);
-            
+
             data.filter(n => n.dependencies && n.dependencies.length > 0).forEach(node => {
                 node.dependencies.forEach(depId => {
                     const parentNode = data.find(p => p.id === depId);
-                    
+
                     if (parentNode && typeof node.x !== 'undefined' && typeof parentNode.x !== 'undefined') {
                         const startX = Math.floor(((parentNode.x / 100) * containerWidth) / resolution);
                         const startY = Math.floor((((parentNode.y / 100) * containerHeight) + NODE_HEIGHT / 2) / resolution);
                         const endX = Math.floor(((node.x / 100) * containerWidth) / resolution);
                         const endY = Math.floor((((node.y / 100) * containerHeight) - NODE_HEIGHT / 2) / resolution);
-                        
+
                         if (grid[startY] && grid[startY][startX] !== undefined) graph.grid[startY][startX].weight = 0;
                         if (grid[endY] && grid[endY][endX] !== undefined) graph.grid[endY][endX].weight = 0;
 
                         const start = graph.grid[startY] ? graph.grid[startY][startX] : null;
                         const end = graph.grid[endY] ? graph.grid[endY][endX] : null;
 
-                        if(start && end) {
+                        if (start && end) {
                             const resultPath = aStar(graph, start, end);
                             if (resultPath.length > 0) {
                                 // Add penalty to the used path to discourage future paths from overlapping completely
                                 resultPath.forEach(point => {
-                                    if(point.x !== startX || point.y !== startY) {
-                                        point.penalty = (point.penalty ||  0) + 15;
+                                    if (point.x !== startX || point.y !== startY) {
+                                        point.penalty = (point.penalty || 0) + 15;
                                     }
                                 });
 
@@ -1170,15 +1440,15 @@
                                 resultPath.forEach(point => {
                                     pathString += ` L ${point.x * resolution + resolution / 2} ${point.y * resolution + resolution / 2}`;
                                 });
-                                
+
                                 const isCompleted = parentNode.state.endsWith('-completed') || parentNode.state.endsWith('-satisfied');
                                 const lineId = `line-${depId}-to-${node.id}`;
                                 const colors = getColorForNodeId(depId || "default");
-                                
+
                                 // Create unique markers for this color if they don't exist
                                 const uniqueMarkerCompletedId = `${markerCompletedId}-${depId}`;
                                 const uniqueMarkerLockedId = `${markerLockedId}-${depId}`;
-                                
+
                                 const defsEl = svgEl.querySelector('defs');
                                 if (defsEl && !document.getElementById(uniqueMarkerCompletedId)) {
                                     const markerComp = document.createElementNS('http://www.w3.org/2000/svg', 'marker');
@@ -1191,7 +1461,7 @@
                                     markerComp.setAttribute('orient', 'auto-start-reverse');
                                     markerComp.innerHTML = `<path d="M 0 0 L 10 5 L 0 10 z" fill="${colors.completedColor}" filter="drop-shadow(0 0 2px ${colors.glowColor})"></path>`;
                                     defsEl.appendChild(markerComp);
-                                    
+
                                     const markerLock = document.createElementNS('http://www.w3.org/2000/svg', 'marker');
                                     markerLock.setAttribute('id', uniqueMarkerLockedId);
                                     markerLock.setAttribute('viewBox', '0 0 10 10');
@@ -1217,7 +1487,7 @@
                                 lineEl.setAttribute('d', pathString);
                                 lineEl.setAttribute('marker-end', isCompleted ? `url(#${uniqueMarkerCompletedId})` : `url(#${uniqueMarkerLockedId})`);
                                 lineEl.setAttribute('class', isCompleted ? 'line-completed' : 'line-locked');
-                                
+
                                 // Apply dynamic distinct color inline to override generic class colors
                                 if (isCompleted) {
                                     lineEl.style.stroke = colors.completedColor;
@@ -1227,9 +1497,42 @@
                                     lineEl.style.strokeWidth = "2";
                                     lineEl.style.strokeDasharray = "4, 4";
                                 }
-                                
+
                                 svgEl.appendChild(lineEl);
-                                
+
+                                // --- NEW: PERIODIC ENERGY PULSE ---
+                                if (isCompleted) {
+                                    const pulseId = `pulse-${lineId}`;
+                                    if (!document.getElementById(pulseId)) {
+                                        const pulseEl = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                                        pulseEl.setAttribute('id', pulseId);
+                                        pulseEl.setAttribute('d', pathString);
+                                        pulseEl.setAttribute('fill', 'none');
+                                        pulseEl.setAttribute('stroke', '#ffffff');
+                                        pulseEl.setAttribute('stroke-width', '4');
+                                        pulseEl.setAttribute('stroke-linecap', 'round');
+                                        pulseEl.setAttribute('stroke-linejoin', 'round');
+                                        pulseEl.style.filter = `drop-shadow(0 0 4px ${colors.completedColor}) drop-shadow(0 0 8px ${colors.glowColor})`;
+
+                                        svgEl.appendChild(pulseEl);
+
+                                        // Small delay to allow element to render and calculate length
+                                        setTimeout(() => {
+                                            const length = pulseEl.getTotalLength();
+                                            if (length > 0) {
+                                                const dashLength = Math.max(10, length * 0.15); // The pulse is 15% of the line length
+                                                pulseEl.style.strokeDasharray = `${dashLength}, 10000`;
+                                                pulseEl.style.setProperty('--line-length', length);
+                                                
+                                                // Random delay between 0 and 6 seconds
+                                                const delay = (Math.random() * 6).toFixed(1);
+                                                pulseEl.style.animation = `travelPulse 2.5s ease-in-out infinite ${delay}s`;
+                                            }
+                                        }, 50);
+                                    }
+                                }
+                                // ---------------------------------
+
                                 if (isCompleted) {
                                     const length = lineEl.getTotalLength();
                                     if (length > 0) {
@@ -1250,7 +1553,7 @@
                                 }
                             }
                         }
-                        
+
                         if (grid[startY] && grid[startY][startX] !== undefined) graph.grid[startY][startX].weight = 1;
                         if (grid[endY] && grid[endY][endX] !== undefined) graph.grid[endY][endX].weight = 1;
                     }
@@ -1267,7 +1570,7 @@
             const completedHours = subjectsInGroup
                 .filter(n => n.state === 'subject-completed')
                 .reduce((sum, n) => sum + n.cht, 0);
-            
+
             const requiredHours = groupConfig.requiredHours;
             const percent = requiredHours > 0 ? Math.min((completedHours / requiredHours) * 100, 100) : 0;
 
@@ -1281,7 +1584,7 @@
         function renderNodes(container, data) {
             data.forEach(node => {
                 const nodeEl = document.createElement('div');
-                nodeEl.className = `node ${node.state}`; 
+                nodeEl.className = `node ${node.state}`;
                 nodeEl.style.left = `${node.x}%`;
                 nodeEl.style.top = `${node.y}%`;
                 nodeEl.dataset.id = node.id;
@@ -1291,12 +1594,12 @@
                     const depColors = node.dependencies.map(depId => getColorForNodeId(depId));
                     const isLocked = node.state.endsWith('-locked');
                     const isAvailable = node.state.endsWith('-available');
-                    
+
                     if (isLocked || isAvailable) {
                         let bgStyle = '';
                         let borderStyle = '';
                         let shadowStyle = '';
-                        
+
                         if (depColors.length === 1) {
                             const hue = depColors[0].hue;
                             if (isLocked) {
@@ -1320,7 +1623,7 @@
                                 shadowStyle = `0 0 15px hsl(${depColors[0].hue}, 80%, 50%)`;
                             }
                         }
-                        
+
                         nodeEl.style.background = bgStyle;
                         nodeEl.style.borderColor = borderStyle;
                         if (shadowStyle) nodeEl.style.boxShadow = shadowStyle;
@@ -1331,7 +1634,7 @@
                 const nodeName = document.createElement('span');
                 nodeName.textContent = node.name;
                 nodeName.className = 'text-center font-semibold';
-                
+
                 let groupProgressHTML = '';
                 if (node.groupId) {
                     const progressData = getGroupProgress(node.groupId);
@@ -1350,12 +1653,12 @@
                 }
 
                 const tooltip = document.createElement('div');
-                
+
                 // =========================================================
                 // ==========> AQUI ESTÁ A LINHA QUE FOI CORRIGIDA <==========
                 // =========================================================
                 tooltip.className = node.state === 'subject-satisfied' ? 'tooltip tooltip-satisfied' : 'tooltip';
-                
+
                 let tooltipHTML = `<strong>${node.id}</strong><p class="text-xs text-gray-300 mt-1">${node.name}</p>`;
                 if (node.state === 'subject-satisfied') {
                     tooltipHTML += `<p class="text-xs text-amber-300 font-bold mt-2">Carga horária deste grupo já foi cumprida!</p>`;
@@ -1386,7 +1689,7 @@
                 nodeEl.addEventListener('mouseout', () => {
                     tooltip.classList.remove('visible');
                 });
-                
+
                 nodeEl.addEventListener('click', () => handleNodeClick(node.id));
                 nodeEl.addEventListener('contextmenu', (e) => {
                     e.preventDefault();
@@ -1395,7 +1698,7 @@
                 container.appendChild(nodeEl);
             });
         }
-        
+
         function handleNodeRightClick(nodeId) {
             let data, prefixes;
             if (activeTree === 'main') {
@@ -1408,7 +1711,7 @@
                 data = optionalNodes;
                 prefixes = { available: 'optional-available', completed: 'optional-completed', locked: 'optional-locked', inprogress: 'optional-inprogress' };
             }
-            
+
             const node = data.find(n => n.id === nodeId);
             if (!node) return;
 
@@ -1425,7 +1728,7 @@
             if (originalState !== node.state) {
                 renderActiveTree();
                 updateAllProgressBars();
-                saveState(); 
+                saveState();
             }
         }
 
@@ -1441,10 +1744,10 @@
                 data = optionalNodes;
                 prefixes = { available: 'optional-available', completed: 'optional-completed', locked: 'optional-locked', inprogress: 'optional-inprogress' };
             }
-            
+
             const node = data.find(n => n.id === nodeId);
             if (!node) return;
-            
+
             if (node.state === prefixes.locked) {
                 nodeToOverride = nodeId;
                 const allNodeData = [...nodes, ...humanitiesNodes, ...optionalNodes];
@@ -1457,26 +1760,26 @@
 
                 let message = `Esta matéria (${node.name}) está bloqueada.`;
                 if (node.dependencies.length > 0) {
-                     message += ` Requer: <strong class="text-white">${prereqs}</strong>.`;
+                    message += ` Requer: <strong class="text-white">${prereqs}</strong>.`;
                 }
                 message += ` Deseja liberá-la mesmo assim?`
                 modalText.innerHTML = message;
                 prerequisiteModal.classList.remove('hidden');
                 return;
             }
-            
+
             const originalState = node.state;
             node.state = (node.state === prefixes.completed) ? prefixes.available : prefixes.completed;
-            
+
             updateAllSubjectStates();
-            
+
             if (originalState !== node.state) {
                 renderActiveTree();
                 updateAllProgressBars();
                 saveState(); // Salva o estado após a alteração
             }
         }
-        
+
         function updateAllSubjectStates() {
             // Primeiro, verifica os grupos para reverter o estado 'satisfeito' se a condição não for mais atendida
             for (const groupId in OPTIONAL_GROUPS_CONFIG) {
@@ -1512,7 +1815,7 @@
                         const parentNode = nodes.find(p => p.id === depId);
                         return parentNode?.state === 'subject-completed';
                     });
-                    
+
                     const isPeriodAvailable = subject.period <= currentPeriod + 2;
                     const newState = (allDependenciesMet && isPeriodAvailable) ? 'subject-available' : 'subject-locked';
 
@@ -1521,8 +1824,8 @@
                         changedInLoop = true;
                     }
                 });
-                
-                 humanitiesNodes.forEach(subject => {
+
+                humanitiesNodes.forEach(subject => {
                     // === NOVA VERIFICAÇÃO ===
                     if (subject.override || subject.state === 'humanities-completed' || subject.state === 'humanities-inprogress') return;
                     const allDependenciesMet = subject.dependencies.every(depId => humanitiesNodes.find(p => p.id === depId)?.state === 'humanities-completed');
@@ -1534,7 +1837,7 @@
                     }
                 });
 
-                 optionalNodes.forEach(subject => {
+                optionalNodes.forEach(subject => {
                     // === NOVA VERIFICAÇÃO ===
                     if (subject.override || subject.state === 'optional-completed' || subject.state === 'optional-inprogress') return;
                     const allDependenciesMet = subject.dependencies.every(depId => {
@@ -1557,7 +1860,7 @@
                 });
 
             } while (changedInLoop);
-            
+
             // Aplica o estado 'satisfeito' (lógica inalterada)
             for (const groupId in OPTIONAL_GROUPS_CONFIG) {
                 const group = OPTIONAL_GROUPS_CONFIG[groupId];
@@ -1566,7 +1869,7 @@
                     .filter(n => n.state === 'subject-completed')
                     .reduce((sum, n) => sum + n.cht, 0);
 
-                 if (completedHours >= group.requiredHours) {
+                if (completedHours >= group.requiredHours) {
                     subjectsInGroup.forEach(subject => {
                         if (subject.state !== 'subject-completed') {
                             subject.state = 'subject-satisfied';
@@ -1575,7 +1878,7 @@
                 }
             }
         }
-        
+
         function renderActivityList(listEl, activities, type) {
             listEl.innerHTML = activities.map((act, index) => `
                 <li class="flex justify-between items-center text-gray-300">
@@ -1584,7 +1887,7 @@
                 </li>
             `).join('');
         }
-        
+
         function renderAllActivityLists() {
             renderActivityList(acList, completedAcActivities, 'ac');
             renderActivityList(cceList, completedCceActivities, 'cce');
@@ -1604,7 +1907,7 @@
             if (periodProgressBar) {
                 periodProgressBar.style.width = `${(currentPeriod / 10) * 100}%`;
             }
-            
+
             // 3. Progresso Optativas/Trilhas
             const totalCompletedOptional = optionalNodes
                 .filter(n => n.state === 'optional-completed')
@@ -1636,11 +1939,11 @@
             extProgressText.textContent = `${completedExtHours}/${TOTAL_EXTENSION_HOURS}h (${extProgress.toFixed(1)}%)`;
 
             // Verifica celebração
-            checkAndCelebrate();            
+            checkAndCelebrate();
         }
 
         // --- EVENT LISTENERS ---
-        
+
         /**
          * ## Event Listener do Reset (MODIFICADO)
          * Agora, além de chamar a inicialização, também limpa os dados salvos
@@ -1653,7 +1956,7 @@
             // A função initializeTree irá então rodar e, como não encontrará dados, começará do zero.
             initializeTree();
         });
-        
+
         // ==============================================================
         // ==== INÍCIO DO NOVO CÓDIGO PARA A TELA DE COMEMORAÇÃO ====
         // ==============================================================
@@ -1668,7 +1971,7 @@
 
             // --- 1. VERIFICAÇÕES BÁSICAS (Carga Horária e Obrigatórias) ---
             const completedSubjects = nodes.filter(s => s.state === 'subject-completed' || s.state === 'subject-satisfied').length;
-            
+
             // Cálculo das horas totais concluídas
             const totalCompletedOptional = optionalNodes.filter(n => n.state === 'optional-completed').reduce((sum, n) => sum + n.cht, 0);
             const totalCompletedHumanities = humanitiesNodes.filter(n => n.state === 'humanities-completed').reduce((sum, n) => sum + n.cht, 0);
@@ -1698,7 +2001,7 @@
             for (const [trackName, subjectIds] of Object.entries(SPECIALIZATION_TRACKS)) {
                 // Verifica se TODAS as matérias daquela trilha estão no conjunto de completas
                 const isTrackComplete = subjectIds.every(id => completedOptionalIds.has(id));
-                
+
                 if (isTrackComplete) {
                     hasCompletedTrack = true;
                     completedTrackName = trackName;
@@ -1726,20 +2029,20 @@
             celebrationAudio.pause(); // Pausa a música
             celebrationAudio.currentTime = 0; // Reinicia o áudio para a próxima vez
         });
-        
+
         // ============================================================
         // ==== FIM DO NOVO CÓDIGO PARA A TELA DE COMEMORAÇÃO ====
         // ============================================================
 
 
         function handleActivityFormSubmit(e, targetArray) {
-             e.preventDefault();
+            e.preventDefault();
             const form = e.target;
             const descInput = form.querySelector('input[type="text"]');
             const hoursInput = form.querySelector('input[type="number"]');
             const desc = descInput.value.trim();
             const hours = parseInt(hoursInput.value, 10);
-            
+
             if (desc && hours > 0) {
                 targetArray.push({ desc, hours });
                 renderAllActivityLists();
@@ -1766,10 +2069,10 @@
                 }
             }
         });
-        
+
         function switchTab(newTab) {
             activeTree = newTab;
-            
+
             mainContainer.classList.toggle('hidden', newTab !== 'main');
             humanitiesContainer.classList.toggle('hidden', newTab !== 'humanities');
             optionalContainer.classList.toggle('hidden', newTab !== 'optional');
@@ -1777,7 +2080,7 @@
             tabMain.classList.toggle('active', newTab === 'main');
             tabHumanities.classList.toggle('active', newTab === 'humanities');
             tabOptional.classList.toggle('active', newTab === 'optional');
-            
+
             renderActiveTree();
         }
 
@@ -1802,18 +2105,18 @@
                 } else {
                     data = optionalNodes; availableState = 'optional-available';
                 }
-                
+
                 const node = data.find(n => n.id === nodeToOverride);
                 if (node) {
                     // Define o estado como disponível
                     node.state = availableState;
-                    
+
                     // === A MUDANÇA PRINCIPAL ESTÁ AQUI ===
                     // Adicionamos uma "bandeira" para lembrar que esta regra foi quebrada.
-                    node.override = true; 
-                    
+                    node.override = true;
+
                     // Agora, as funções de atualização podem ser chamadas com segurança
-                    updateAllSubjectStates(); 
+                    updateAllSubjectStates();
                     renderActiveTree();
                     updateAllProgressBars();
                     saveState(); // Salva o estado após a alteração
@@ -1822,7 +2125,7 @@
             prerequisiteModal.classList.add('hidden');
             nodeToOverride = null;
         });
-        
+
         window.addEventListener('resize', renderActiveTree);
 
         const pdfUpload = document.getElementById('pdf-upload');
@@ -1846,7 +2149,7 @@
 
             try {
                 const fileReader = new FileReader();
-                fileReader.onload = async function() {
+                fileReader.onload = async function () {
                     const typedarray = new Uint8Array(this.result);
                     const pdf = await pdfjsLib.getDocument(typedarray).promise;
                     let fullText = '';
@@ -1862,7 +2165,7 @@
                     // =========================================================
                     const stopPhrase = "Resumo Optativas (Carga horária total)";
                     const stopIndex = fullText.indexOf(stopPhrase);
-                    
+
                     let effectiveText = fullText;
                     if (stopIndex !== -1) {
                         console.log(`Regra de parada encontrada. O texto será lido apenas até a frase: "${stopPhrase}".`);
@@ -1873,7 +2176,7 @@
                     // =========================================================
 
                     console.log("--- Texto Final a ser Analisado ---", effectiveText);
-                    
+
                     parseHistoryAndUpdate(effectiveText);
                 };
                 fileReader.readAsArrayBuffer(file);
@@ -1948,7 +2251,7 @@
                         // Remove todos os espaços e quebras de linha antes de testar a regex.
                         const cleanAnalysisBlock = analysisBlock.replace(/\s/g, '');
                         if (/Aprovado|CréditoConsignado/i.test(cleanAnalysisBlock)) {
-                        // ======================================================================
+                            // ======================================================================
                             console.log(`[Resultado] ${code} -> APROVADO`);
                             approvedCodes.add(code);
                         } else {
@@ -1961,7 +2264,7 @@
                         for (let j = 1; j < blocks.length; j++) {
                             const precedingBlock = blocks[j - 1];
                             const followingBlock = blocks[j];
-                             const cleanPrecedingBlock = precedingBlock.replace(/\s/g, '');
+                            const cleanPrecedingBlock = precedingBlock.replace(/\s/g, '');
                             if (/Aprovado|CréditoConsignado/i.test(cleanPrecedingBlock)) {
                                 const codeMatch = followingBlock.match(firstSubjectCodeRegex);
                                 if (codeMatch) {
@@ -2014,8 +2317,5 @@
         initializeTree();
     </script>
 </body>
+
 </html>
-
-
-
-
