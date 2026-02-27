@@ -118,6 +118,11 @@
     
     .line-locked { stroke: #4b5563; stroke-width: 2; stroke-dasharray: 4, 4; fill: none; }
     
+    @keyframes flowLine {
+        from { stroke-dashoffset: var(--line-length); }
+        to { stroke-dashoffset: 0; }
+    }
+    
     .line-completed { 
         stroke: #16a34a; 
         stroke-width: 3; 
@@ -1102,6 +1107,7 @@
             return { completedColor, glowColor, lockedColor, hue };
         }
 
+        if (!window.animatedLines) window.animatedLines = new Set();
         function renderLines(container, data, svgId, markerCompletedId, markerLockedId) {
             const svgEl = container.querySelector(`#${svgId}`);
             if (!svgEl) return;
@@ -1166,6 +1172,7 @@
                                 });
                                 
                                 const isCompleted = parentNode.state.endsWith('-completed') || parentNode.state.endsWith('-satisfied');
+                                const lineId = `line-${depId}-to-${node.id}`;
                                 const colors = getColorForNodeId(depId || "default");
                                 
                                 // Create unique markers for this color if they don't exist
@@ -1227,10 +1234,19 @@
                                     const length = lineEl.getTotalLength();
                                     if (length > 0) {
                                         lineEl.style.strokeDasharray = length;
-                                        lineEl.style.strokeDashoffset = length;
-                                        lineEl.getBoundingClientRect();
-                                        lineEl.style.strokeDashoffset = '0';
+                                        if (!window.animatedLines.has(lineId)) {
+                                            // Define the starting length as a CSS variable for the keyframe
+                                            lineEl.style.setProperty('--line-length', length);
+                                            // Trigger hardware-accelerated CSS animation
+                                            lineEl.style.animation = 'flowLine 2.5s ease-in-out forwards';
+                                            window.animatedLines.add(lineId);
+                                        } else {
+                                            // Already animated in a previous render step
+                                            lineEl.style.strokeDashoffset = '0';
+                                        }
                                     }
+                                } else {
+                                    window.animatedLines.delete(lineId);
                                 }
                             }
                         }
