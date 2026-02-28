@@ -112,7 +112,9 @@
             transform: translate(-50%, -50%) scale(1.05);
         }
 
-        .subject-satisfied {
+        .subject-satisfied,
+        .humanities-satisfied,
+        .optional-satisfied {
             background-color: #4a4a28;
             /* Fundo dourado escuro */
             border-color: #fbbf24;
@@ -123,7 +125,9 @@
             /* Indica que não é mais clicável */
         }
 
-        .subject-satisfied:hover {
+        .subject-satisfied:hover,
+        .humanities-satisfied:hover,
+        .optional-satisfied:hover {
             transform: translate(-50%, -50%) scale(1.05);
         }
 
@@ -609,7 +613,7 @@
                     <div class="flex justify-between mb-1"><span
                             class="text-base font-medium text-emerald-300">Empregabilidade e
                             Empreendedorismo</span><span id="group1142-progress-text"
-                            class="text-sm font-medium text-emerald-300">0/90h (0.0%)</span></div>
+                            class="text-sm font-medium text-emerald-300">0/210h (0.0%)</span></div>
                     <div class="w-full bg-gray-900 rounded-full h-4 mb-2">
                         <div id="group1142-progress-bar"
                             class="bg-emerald-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div>
@@ -1524,9 +1528,10 @@
                 return null;
             }
             const groupConfig = OPTIONAL_GROUPS_CONFIG[groupId];
-            const subjectsInGroup = nodes.filter(n => n.groupId === groupId);
+            const allNodes = [...nodes, ...humanitiesNodes, ...optionalNodes];
+            const subjectsInGroup = allNodes.filter(n => n.groupId === groupId);
             const completedHours = subjectsInGroup
-                .filter(n => n.state === 'subject-completed')
+                .filter(n => n.state.endsWith('-completed'))
                 .reduce((sum, n) => sum + n.cht, 0);
 
             const requiredHours = groupConfig.requiredHours;
@@ -1615,10 +1620,10 @@
                 // =========================================================
                 // ==========> AQUI ESTÁ A LINHA QUE FOI CORRIGIDA <==========
                 // =========================================================
-                tooltip.className = node.state === 'subject-satisfied' ? 'tooltip tooltip-satisfied' : 'tooltip';
+                tooltip.className = node.state.endsWith('-satisfied') ? 'tooltip tooltip-satisfied' : 'tooltip';
 
                 let tooltipHTML = `<strong>${node.id}</strong><p class="text-xs text-gray-300 mt-1">${node.name}</p>`;
-                if (node.state === 'subject-satisfied') {
+                if (node.state.endsWith('-satisfied')) {
                     tooltipHTML += `<p class="text-xs text-amber-300 font-bold mt-2">Carga horária deste grupo já foi cumprida!</p>`;
                 }
                 if (node.alternative) {
@@ -1739,15 +1744,19 @@
             // Primeiro, verifica os grupos para reverter o estado 'satisfeito' se a condição não for mais atendida
             for (const groupId in OPTIONAL_GROUPS_CONFIG) {
                 const group = OPTIONAL_GROUPS_CONFIG[groupId];
-                const subjectsInGroup = nodes.filter(n => n.groupId === groupId);
+                const allNodes = [...nodes, ...humanitiesNodes, ...optionalNodes];
+                const subjectsInGroup = allNodes.filter(n => n.groupId === groupId);
                 const completedHours = subjectsInGroup
-                    .filter(n => n.state === 'subject-completed')
+                    .filter(n => n.state.endsWith('-completed'))
                     .reduce((sum, n) => sum + n.cht, 0);
 
                 if (completedHours < group.requiredHours) {
                     subjectsInGroup.forEach(subject => {
-                        if (subject.state === 'subject-satisfied') {
-                            subject.state = 'subject-locked'; // Reverte para ser recalculado
+                        if (subject.state.endsWith('-satisfied')) {
+                            let prefix = 'subject';
+                            if (humanitiesNodes.includes(subject)) prefix = 'humanities';
+                            else if (optionalNodes.includes(subject)) prefix = 'optional';
+                            subject.state = `${prefix}-locked`; // Reverte para ser recalculado
                         }
                     });
                 }
@@ -1760,7 +1769,7 @@
                 nodes.forEach(subject => {
                     // === NOVA VERIFICAÇÃO ===
                     // Se a matéria foi liberada manualmente, ou já foi completada/satisfeita/em andamento, não fazemos nada.
-                    if (subject.override || subject.state === 'subject-completed' || subject.state === 'subject-satisfied' || subject.state === 'subject-inprogress') return;
+                    if (subject.override || subject.state.endsWith('-completed') || subject.state.endsWith('-satisfied') || subject.state.endsWith('-inprogress')) return;
 
                     const allDependenciesMet = subject.dependencies.every(depId => {
                         if (depId.startsWith('Periodo:')) {
@@ -1782,7 +1791,7 @@
 
                 humanitiesNodes.forEach(subject => {
                     // === NOVA VERIFICAÇÃO ===
-                    if (subject.override || subject.state === 'humanities-completed' || subject.state === 'humanities-inprogress') return;
+                    if (subject.override || subject.state.endsWith('-completed') || subject.state.endsWith('-inprogress') || subject.state.endsWith('-satisfied')) return;
                     const allDependenciesMet = subject.dependencies.every(depId => humanitiesNodes.find(p => p.id === depId)?.state === 'humanities-completed');
                     const isPeriodAvailable = subject.period <= currentPeriod + 2;
                     const newState = (allDependenciesMet && isPeriodAvailable) ? 'humanities-available' : 'humanities-locked';
@@ -1794,7 +1803,7 @@
 
                 optionalNodes.forEach(subject => {
                     // === NOVA VERIFICAÇÃO ===
-                    if (subject.override || subject.state === 'optional-completed' || subject.state === 'optional-inprogress') return;
+                    if (subject.override || subject.state.endsWith('-completed') || subject.state.endsWith('-inprogress') || subject.state.endsWith('-satisfied')) return;
                     const allDependenciesMet = subject.dependencies.every(depId => {
                         if (depId.startsWith('Periodo:')) {
                             const requiredPeriod = parseInt(depId.split(':')[1], 10);
@@ -1819,15 +1828,20 @@
             // Aplica o estado 'satisfeito' (lógica inalterada)
             for (const groupId in OPTIONAL_GROUPS_CONFIG) {
                 const group = OPTIONAL_GROUPS_CONFIG[groupId];
-                const subjectsInGroup = nodes.filter(n => n.groupId === groupId);
+                const allNodes = [...nodes, ...humanitiesNodes, ...optionalNodes];
+                const subjectsInGroup = allNodes.filter(n => n.groupId === groupId);
                 const completedHours = subjectsInGroup
-                    .filter(n => n.state === 'subject-completed')
+                    .filter(n => n.state.endsWith('-completed'))
                     .reduce((sum, n) => sum + n.cht, 0);
 
                 if (completedHours >= group.requiredHours) {
                     subjectsInGroup.forEach(subject => {
-                        if (subject.state !== 'subject-completed') {
-                            subject.state = 'subject-satisfied';
+                        if (!subject.state.endsWith('-completed')) {
+                            let prefix = 'subject';
+                            if (humanitiesNodes.includes(subject)) prefix = 'humanities';
+                            else if (optionalNodes.includes(subject)) prefix = 'optional';
+
+                            subject.state = `${prefix}-satisfied`;
                         }
                     });
                 }
@@ -1874,7 +1888,7 @@
 
             // 4. Progresso Humanidades
             const totalCompletedHumanities = humanitiesNodes
-                .filter(n => n.state === 'humanities-completed')
+                .filter(n => n.state === 'humanities-completed' && n.groupId !== '[1142]')
                 .reduce((sum, n) => sum + n.cht, 0);
             const humanitiesProgress = (totalCompletedHumanities / TOTAL_HUMANITIES_HOURS) * 100;
             humanitiesProgressBar.style.width = `${Math.min(humanitiesProgress, 100)}%`;
@@ -1896,7 +1910,7 @@
 
             // 5. Progresso Grupo 1142 (Empregabilidade e Empreendedorismo)
             if (group1142ProgressBar && group1142ProgressText) {
-                const group1142Nodes = nodes.filter(n => n.groupId === '[1142]' && n.state === 'subject-completed');
+                const group1142Nodes = humanitiesNodes.filter(n => n.groupId === '[1142]' && n.state === 'humanities-completed');
                 const group1142Hours = group1142Nodes.reduce((sum, n) => sum + n.cht, 0);
                 const group1142Req = OPTIONAL_GROUPS_CONFIG['[1142]'] ? OPTIONAL_GROUPS_CONFIG['[1142]'].requiredHours : 210;
                 const group1142ProgressVar = group1142Req > 0 ? (group1142Hours / group1142Req) * 100 : 0;
