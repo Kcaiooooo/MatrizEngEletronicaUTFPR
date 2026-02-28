@@ -126,7 +126,10 @@
     
         @keyframes travelPulse {
             0% {
-                stroke-dashoffset: var(--line-length);
+                stroke-dashoffset: var(--pulse-start);
+                opacity: 0;
+            }
+            5% {
                 opacity: 0;
             }
             10% {
@@ -135,8 +138,11 @@
             90% {
                 opacity: 1;
             }
+            95% {
+                opacity: 0;
+            }
             100% {
-                stroke-dashoffset: 0;
+                stroke-dashoffset: var(--pulse-end);
                 opacity: 0;
             }
         }
@@ -1259,9 +1265,20 @@
                                         setTimeout(() => {
                                             const length = pulseEl.getTotalLength();
                                             if (length > 0) {
-                                                const dashLength = Math.max(10, length * 0.15); // The pulse is 15% of the line length
-                                                pulseEl.style.strokeDasharray = `${dashLength}, 10000`;
-                                                pulseEl.style.setProperty('--line-length', length);
+                                                const dashLength = Math.max(15, length * 0.15); // The pulse is 15% of the line length
+                                                
+                                                // Pattern: dash, massive gap to hide the rest
+                                                pulseEl.style.strokeDasharray = `${dashLength}, ${length * 3}`;
+                                                
+                                                // Start position: pushed entirely before the start of the path
+                                                pulseEl.style.setProperty('--pulse-start', length + dashLength);
+                                                
+                                                // End position: pushed entirely past the end of the path
+                                                // Note: negative offset pushes the dash forward along the path
+                                                pulseEl.style.setProperty('--pulse-end', -length);
+                                                
+                                                // Set initial opacity to 0 so it doesn't show before the animation starts!
+                                                pulseEl.style.opacity = '0';
                                                 
                                                 // Random delay between 0 and 6 seconds
                                                 const delay = (Math.random() * 6).toFixed(1);
