@@ -263,24 +263,29 @@
             }
         }
 
-        
+
         @keyframes travelPulse {
             0% {
                 stroke-dashoffset: var(--pulse-start);
                 opacity: 0;
             }
+
             5% {
                 opacity: 0;
             }
+
             10% {
                 opacity: 1;
             }
+
             90% {
                 opacity: 1;
             }
+
             95% {
                 opacity: 0;
             }
+
             100% {
                 stroke-dashoffset: var(--pulse-end);
                 opacity: 0;
@@ -598,6 +603,15 @@
                     <div class="w-full bg-gray-900 rounded-full h-4 mb-2">
                         <div id="ext-progress-bar" class="bg-amber-500 h-4 rounded-full transition-all duration-500"
                             style="width: 0%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-1"><span class="text-base font-medium text-emerald-300">Adm,
+                            Empreend. e Economia</span><span id="group1177-progress-text"
+                            class="text-sm font-medium text-emerald-300">0/90h (0.0%)</span></div>
+                    <div class="w-full bg-gray-900 rounded-full h-4 mb-2">
+                        <div id="group1177-progress-bar"
+                            class="bg-emerald-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div>
                     </div>
                 </div>
                 <div class="md:col-span-2 grid grid-cols-2 gap-4">
@@ -1020,6 +1034,8 @@
         const compProgressText = document.getElementById('comp-progress-text');
         const extProgressBar = document.getElementById('ext-progress-bar');
         const extProgressText = document.getElementById('ext-progress-text');
+        const group1177ProgressBar = document.getElementById('group1177-progress-bar');
+        const group1177ProgressText = document.getElementById('group1177-progress-text');
         const humanitiesProgressBar = document.getElementById('humanities-progress-bar');
         const humanitiesProgressText = document.getElementById('humanities-progress-text');
         const optionalProgressBar = document.getElementById('optional-progress-bar');
@@ -1527,20 +1543,20 @@
                                             const length = pulseEl.getTotalLength();
                                             if (length > 0) {
                                                 const dashLength = Math.max(15, length * 0.15); // The pulse is 15% of the line length
-                                                
+
                                                 // Pattern: dash, massive gap to hide the rest
                                                 pulseEl.style.strokeDasharray = `${dashLength}, ${length * 3}`;
-                                                
+
                                                 // Start position: pushed entirely before the start of the path
                                                 pulseEl.style.setProperty('--pulse-start', length + dashLength);
-                                                
+
                                                 // End position: pushed entirely past the end of the path
                                                 // Note: negative offset pushes the dash forward along the path
                                                 pulseEl.style.setProperty('--pulse-end', -length);
-                                                
+
                                                 // Set initial opacity to 0 so it doesn't show before the animation starts!
                                                 pulseEl.style.opacity = '0';
-                                                
+
                                                 // Random delay between 0 and 6 seconds
                                                 const delay = (Math.random() * 6).toFixed(1);
                                                 pulseEl.style.animation = `travelPulse 2.5s ease-in-out infinite ${delay}s`;
@@ -1912,10 +1928,11 @@
 
         function updateAllProgressBars() {
             // 1. Progresso Principal (Obrigatórias)
-            const completedSubjects = nodes.filter(s => s.state === 'subject-completed' || s.state === 'subject-satisfied').length;
-            const totalProgress = nodes.length > 0 ? (completedSubjects / nodes.length) * 100 : 0;
+            const coreNodes = nodes.filter(n => n.groupId !== '[1177]');
+            const completedSubjects = coreNodes.filter(s => s.state === 'subject-completed' || s.state === 'subject-satisfied').length;
+            const totalProgress = coreNodes.length > 0 ? (completedSubjects / coreNodes.length) * 100 : 0;
             totalProgressBar.style.width = `${totalProgress}%`;
-            totalProgressText.textContent = `${totalProgress.toFixed(1)}% (${completedSubjects}/${nodes.length})`;
+            totalProgressText.textContent = `${totalProgress.toFixed(1)}% (${completedSubjects}/${coreNodes.length})`;
 
             // 2. Progresso do Período (Slider)
             const periodDisplay = document.getElementById('period-display');
@@ -1954,6 +1971,16 @@
             // Atualiza a barra e o texto
             extProgressBar.style.width = `${Math.min(extProgress, 100)}%`;
             extProgressText.textContent = `${completedExtHours}/${TOTAL_EXTENSION_HOURS}h (${extProgress.toFixed(1)}%)`;
+
+            // 5. Progresso Grupo 1177 (Adm, Empreend e Economia)
+            if (group1177ProgressBar && group1177ProgressText) {
+                const group1177Nodes = nodes.filter(n => n.groupId === '[1177]' && n.state === 'subject-completed');
+                const group1177Hours = group1177Nodes.reduce((sum, n) => sum + n.cht, 0);
+                const group1177Req = OPTIONAL_GROUPS_CONFIG['[1177]'] ? OPTIONAL_GROUPS_CONFIG['[1177]'].requiredHours : 90;
+                const group1177ProgressVar = group1177Req > 0 ? (group1177Hours / group1177Req) * 100 : 0;
+                group1177ProgressBar.style.width = `${Math.min(group1177ProgressVar, 100)}%`;
+                group1177ProgressText.textContent = `${group1177Hours}/${group1177Req}h (${group1177ProgressVar.toFixed(1)}%)`;
+            }
 
             // Verifica celebração
             checkAndCelebrate();
