@@ -209,6 +209,13 @@
             transform: translate(-50%, -50%) scale(1.05);
         }
 
+        /* Settings Toggle */
+        body.disable-glow .tree-wrapper svg path[id^="pulse-"] {
+            display: none !important;
+            animation: none !important;
+            opacity: 0 !important;
+        }
+
         /* O restante do seu CSS continua aqui sem alterações... */
         .node .tooltip {
             visibility: hidden;
@@ -251,6 +258,7 @@
             stroke-width: 2;
             stroke-dasharray: 4, 4;
             fill: none;
+            opacity: 0.6;
         }
 
         @keyframes flowLine {
@@ -275,11 +283,11 @@
             }
 
             10% {
-                opacity: 1;
+                opacity: 0.6;
             }
 
             90% {
-                opacity: 1;
+                opacity: 0.6;
             }
 
             95% {
@@ -298,6 +306,7 @@
             fill: none;
             filter: drop-shadow(0 0 3px #4ade80);
             transition: stroke-dashoffset 1.5s ease-out;
+            opacity: 0.6;
         }
 
         .remove-btn {
@@ -663,6 +672,17 @@
                     class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300">
                     Resetar Progresso
                 </button>
+                <button id="settings-btn"
+                    class="bg-gray-600 hover:bg-gray-500 text-white p-2 rounded-lg transition-colors duration-300 flex items-center justify-center"
+                    title="Configurações">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                </button>
             </div>
             <p id="upload-status" class="text-center text-gray-400 h-4"></p>
         </div>
@@ -735,6 +755,25 @@
                 <button id="confirm-override-btn"
                     class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-lg transition-colors">Sim,
                     quebrar!</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="settings-modal" class="modal-overlay hidden">
+        <div class="modal-box text-center max-w-sm">
+            <h3 class="text-xl font-bold mb-4 text-white">Configurações</h3>
+            <div class="flex items-center justify-between mb-6 bg-gray-800 p-4 rounded-lg text-left">
+                <span class="text-gray-300 font-medium mr-4">Brilho nas Linhas</span>
+                <label class="relative inline-flex items-center cursor-pointer shrink-0">
+                    <input type="checkbox" id="glow-toggle" class="sr-only peer" checked>
+                    <div
+                        class="w-11 h-6 bg-gray-600 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600">
+                    </div>
+                </label>
+            </div>
+            <div class="flex justify-center">
+                <button id="close-settings-btn"
+                    class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition-colors">Fechar</button>
             </div>
         </div>
     </div>
@@ -1069,6 +1108,11 @@
         const closeCelebrationBtn = document.getElementById('close-celebration-btn');
         const celebrationAudio = document.getElementById('celebration-audio');
 
+        const settingsModal = document.getElementById('settings-modal');
+        const settingsBtn = document.getElementById('settings-btn');
+        const closeSettingsBtn = document.getElementById('close-settings-btn');
+        const glowToggle = document.getElementById('glow-toggle');
+
         // =======================================================================
         // LÓGICA PARA NAVEGAÇÃO POR ARRASTE (PAN)
         // =======================================================================
@@ -1402,7 +1446,14 @@
                     hash = id.charCodeAt(i) + ((hash << 5) - hash);
                 }
             }
-            const hue = Math.abs(hash * 137.5) % 360;
+            let hue = Math.abs(hash * 137.5) % 360;
+
+            // Prevent dynamic hues from falling into the green spectrum (80-160)
+            // to avoid confusing available subjects with completed ones.
+            if (hue > 80 && hue < 160) {
+                hue = (hue + 100) % 360;
+            }
+
             const completedColor = `hsl(${hue}, 85%, 55%)`;
             const glowColor = `hsl(${hue}, 90%, 70%)`;
             const lockedColor = `hsl(${hue}, 35%, 50%)`;
@@ -1491,7 +1542,7 @@
                                     markerComp.setAttribute('markerWidth', '6');
                                     markerComp.setAttribute('markerHeight', '6');
                                     markerComp.setAttribute('orient', 'auto-start-reverse');
-                                    markerComp.innerHTML = `<path d="M 0 0 L 10 5 L 0 10 z" fill="${colors.completedColor}" filter="drop-shadow(0 0 2px ${colors.glowColor})"></path>`;
+                                    markerComp.innerHTML = `<path d="M 0 0 L 10 5 L 0 10 z" fill="${colors.completedColor}" opacity="0.6" filter="drop-shadow(0 0 2px ${colors.glowColor})"></path>`;
                                     defsEl.appendChild(markerComp);
 
                                     const markerLock = document.createElementNS('http://www.w3.org/2000/svg', 'marker');
@@ -1502,7 +1553,7 @@
                                     markerLock.setAttribute('markerWidth', '5');
                                     markerLock.setAttribute('markerHeight', '5');
                                     markerLock.setAttribute('orient', 'auto-start-reverse');
-                                    markerLock.innerHTML = `<path d="M 0 0 L 10 5 L 0 10 z" fill="${colors.lockedColor}"></path>`;
+                                    markerLock.innerHTML = `<path d="M 0 0 L 10 5 L 0 10 z" fill="${colors.lockedColor}" opacity="0.6"></path>`;
                                     defsEl.appendChild(markerLock);
                                 }
 
@@ -1533,7 +1584,9 @@
                                 svgEl.appendChild(lineEl);
 
                                 // --- NEW: PERIODIC ENERGY PULSE ---
-                                if (isCompleted) {
+                                // Only pulse if the parent dependency is completed BUT the target node is NOT YET completed
+                                const isTargetCompleted = node.state.endsWith('-completed') || node.state.endsWith('-satisfied');
+                                if (isCompleted && !isTargetCompleted) {
                                     const pulseId = `pulse-${lineId}`;
                                     if (!document.getElementById(pulseId)) {
                                         const pulseEl = document.createElementNS('http://www.w3.org/2000/svg', 'path');
@@ -1544,6 +1597,7 @@
                                         pulseEl.setAttribute('stroke-width', '4');
                                         pulseEl.setAttribute('stroke-linecap', 'round');
                                         pulseEl.setAttribute('stroke-linejoin', 'round');
+                                        pulseEl.setAttribute('opacity', '0.6');
                                         pulseEl.style.filter = `drop-shadow(0 0 4px ${colors.completedColor}) drop-shadow(0 0 8px ${colors.glowColor})`;
 
                                         svgEl.appendChild(pulseEl);
@@ -1567,8 +1621,8 @@
                                                 // Set initial opacity to 0 so it doesn't show before the animation starts!
                                                 pulseEl.style.opacity = '0';
 
-                                                // Random delay between 0 and 6 seconds
-                                                const delay = (Math.random() * 6).toFixed(1);
+                                                // Random delay between 0 and 6 seconds + 2.5s base wait time for the line to draw
+                                                const delay = (2.5 + Math.random() * 6).toFixed(1);
                                                 pulseEl.style.animation = `travelPulse 2.5s ease-in-out infinite ${delay}s`;
                                             }
                                         }, 50);
@@ -1997,6 +2051,24 @@
         }
 
         // --- EVENT LISTENERS ---
+
+        // --- Settings Logic ---
+        let isGlowEnabled = localStorage.getItem('skillTreeGlowEnabled');
+        if (isGlowEnabled === null) isGlowEnabled = 'true';
+        glowToggle.checked = (isGlowEnabled === 'true');
+        if (!glowToggle.checked) document.body.classList.add('disable-glow');
+
+        settingsBtn.addEventListener('click', () => settingsModal.classList.remove('hidden'));
+        closeSettingsBtn.addEventListener('click', () => settingsModal.classList.add('hidden'));
+        glowToggle.addEventListener('change', (e) => {
+            if (e.target.checked) {
+                document.body.classList.remove('disable-glow');
+                localStorage.setItem('skillTreeGlowEnabled', 'true');
+            } else {
+                document.body.classList.add('disable-glow');
+                localStorage.setItem('skillTreeGlowEnabled', 'false');
+            }
+        });
 
         /**
          * ## Event Listener do Reset (MODIFICADO)
