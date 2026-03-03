@@ -1548,11 +1548,42 @@
 
                                 let pathString = `M ${exactStartX} ${exactStartY}`;
 
-                                // Simplification check: if start and end columns are exactly the same, 
-                                // draw a pristine straight line down regardless of minor A* grid jitter
-                                if (startX === endX && offsetPx === 0) {
+                                // Helper function to check if a straight line on the grid is clear
+                                const isLineClear = (x1, y1, x2, y2) => {
+                                    const minX = Math.min(x1, x2), maxX = Math.max(x1, x2);
+                                    const minY = Math.min(y1, y2), maxY = Math.max(y1, y2);
+                                    for (let y = minY; y <= maxY; y++) {
+                                        for (let x = minX; x <= maxX; x++) {
+                                            if (grid[y] && grid[y][x] === 1) {
+                                                // It's only strictly blocked if it's NOT the start or end node bounds
+                                                if (!((x >= startX - 1 && x <= startX + 1 && y >= startY - 1 && y <= startY + 1) ||
+                                                    (x >= endX - 1 && x <= endX + 1 && y >= endY - 1 && y <= endY + 1))) {
+                                                    return false;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    return true;
+                                };
+
+                                // Define ideal mid-Y for orthogonal routing (halfway between parent bottom and child top)
+                                const midGridY = Math.floor((startY + endY) / 2);
+                                const exactMidY = (exactStartY + adjustedEndY) / 2;
+
+                                // Simplification check 1: Perfect Vertical Line
+                                if (startX === endX && offsetPx === 0 && isLineClear(startX, startY, endX, endY)) {
                                     pathString += ` L ${exactStartX} ${adjustedEndY}`;
-                                } else if (resultPath.length > 2) {
+                                }
+                                // Simplification check 2: Pristine Orthogonal Z-Shape (Down -> Across -> Down)
+                                else if (isLineClear(startX, startY, startX, midGridY) &&
+                                    isLineClear(startX, midGridY, endX, midGridY) &&
+                                    isLineClear(endX, midGridY, endX, endY)) {
+                                    pathString += ` L ${exactStartX} ${exactMidY}`;
+                                    pathString += ` L ${exactEndX} ${exactMidY}`;
+                                    pathString += ` L ${exactEndX} ${adjustedEndY}`;
+                                }
+                                // Fallback: A* Algorithm Maze Routing
+                                else if (resultPath.length > 2) {
                                     const firstGrid = resultPath[1];
                                     const firstGridX = firstGrid.x * resolution + resolution / 2;
                                     const firstGridY = firstGrid.y * resolution + resolution / 2;
