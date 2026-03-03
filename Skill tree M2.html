@@ -1461,12 +1461,16 @@
 
                 data.forEach(node => {
                     if (typeof node.x === 'undefined' || typeof node.y === 'undefined') return;
-                    const nodeLeft = (node.x / 100) * containerWidth - (NODE_WIDTH / 2);
-                    const nodeTop = (node.y / 100) * containerHeight - (NODE_HEIGHT / 2);
+                    const nodeDocEl = document.getElementById(`node-${node.id}`);
+                    const actualWidth = nodeDocEl ? nodeDocEl.offsetWidth : NODE_WIDTH;
+                    const actualHeight = nodeDocEl ? nodeDocEl.offsetHeight : NODE_HEIGHT;
+
+                    const nodeLeft = (node.x / 100) * containerWidth - (actualWidth / 2);
+                    const nodeTop = (node.y / 100) * containerHeight - (actualHeight / 2);
                     const startX = Math.max(0, Math.floor(nodeLeft / resolution));
-                    const endX = Math.min(gridWidth - 1, Math.floor((nodeLeft + NODE_WIDTH) / resolution));
+                    const endX = Math.min(gridWidth - 1, Math.floor((nodeLeft + actualWidth) / resolution));
                     const startY = Math.max(0, Math.floor(nodeTop / resolution));
-                    const endY = Math.min(gridHeight - 1, Math.floor((nodeTop + NODE_HEIGHT) / resolution));
+                    const endY = Math.min(gridHeight - 1, Math.floor((nodeTop + actualHeight) / resolution));
                     for (let y = startY; y <= endY; y++) {
                         for (let x = startX; x <= endX; x++) {
                             if (grid[y] && grid[y][x] !== undefined) grid[y][x] = 1;
@@ -1482,9 +1486,14 @@
                         const parentNode = data.find(p => p.id === depId);
 
                         if (parentNode && typeof node.x !== 'undefined' && typeof parentNode.x !== 'undefined') {
-                            // Start arrows from the exact center bottom of the parent node
-                            const startX = Math.floor(((parentNode.x / 100) * containerWidth) / resolution);
-                            const startY = Math.floor((((parentNode.y / 100) * containerHeight) + NODE_HEIGHT / 2) / resolution);
+                            const targetDocEl = document.getElementById(`node-${node.id}`);
+                            const targetHeight = targetDocEl ? targetDocEl.offsetHeight : NODE_HEIGHT;
+
+                            const parentDocEl = document.getElementById(`node-${parentNode.id}`);
+                            const parentHeight = parentDocEl ? parentDocEl.offsetHeight : NODE_HEIGHT;
+
+                            const exactStartX = ((parentNode.x / 100) * containerWidth);
+                            const exactStartY = ((parentNode.y / 100) * containerHeight) + (parentHeight / 2);
 
                             // Offset arriving arrows evenly if a node has multiple prerequisites
                             let offsetPx = 0;
@@ -1494,8 +1503,13 @@
                                 offsetPx = (index * spacingPx) - (totalWidthPx / 2);
                             }
 
-                            const endX = Math.floor((((node.x / 100) * containerWidth) + offsetPx) / resolution);
-                            const endY = Math.floor((((node.y / 100) * containerHeight) - NODE_HEIGHT / 2) / resolution);
+                            const exactEndX = ((node.x / 100) * containerWidth) + offsetPx;
+                            const exactEndY = ((node.y / 100) * containerHeight) - (targetHeight / 2);
+
+                            const startX = Math.floor(exactStartX / resolution);
+                            const startY = Math.floor(exactStartY / resolution);
+                            const endX = Math.floor(exactEndX / resolution);
+                            const endY = Math.floor(exactEndY / resolution);
 
                             if (grid[startY] && grid[startY][startX] !== undefined) graph.grid[startY][startX].weight = 0;
                             if (grid[endY] && grid[endY][endX] !== undefined) graph.grid[endY][endX].weight = 0;
@@ -1513,10 +1527,34 @@
                                         }
                                     });
 
-                                    let pathString = `M ${startX * resolution + resolution / 2} ${startY * resolution + resolution / 2}`;
-                                    resultPath.forEach(point => {
-                                        pathString += ` L ${point.x * resolution + resolution / 2} ${point.y * resolution + resolution / 2}`;
-                                    });
+                                    const adjustedEndY = exactEndY - 5; // Ajuste para a seta tocar perfeitamente a borda
+
+                                    let pathString = `M ${exactStartX} ${exactStartY}`;
+
+                                    if (resultPath.length > 2) {
+                                        const firstGrid = resultPath[1];
+                                        const firstGridX = firstGrid.x * resolution + resolution / 2;
+                                        const firstGridY = firstGrid.y * resolution + resolution / 2;
+
+                                        pathString += ` L ${exactStartX} ${firstGridY}`;
+                                        pathString += ` L ${firstGridX} ${firstGridY}`;
+
+                                        for (let i = 2; i < resultPath.length - 1; i++) {
+                                            const point = resultPath[i];
+                                            pathString += ` L ${point.x * resolution + resolution / 2} ${point.y * resolution + resolution / 2}`;
+                                        }
+
+                                        const lastGrid = resultPath[resultPath.length - 2];
+                                        const lastGridY = lastGrid.y * resolution + resolution / 2;
+
+                                        pathString += ` L ${exactEndX} ${lastGridY}`;
+                                    } else {
+                                        const midY = (exactStartY + adjustedEndY) / 2;
+                                        pathString += ` L ${exactStartX} ${midY}`;
+                                        pathString += ` L ${exactEndX} ${midY}`;
+                                    }
+
+                                    pathString += ` L ${exactEndX} ${adjustedEndY}`;
 
                                     const isCompleted = parentNode.state.endsWith('-completed') || parentNode.state.endsWith('-satisfied');
                                     const lineId = `line-${depId}-to-${node.id}`;
