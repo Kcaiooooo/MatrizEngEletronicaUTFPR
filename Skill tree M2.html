@@ -1531,7 +1531,11 @@
 
                                     let pathString = `M ${exactStartX} ${exactStartY}`;
 
-                                    if (resultPath.length > 2) {
+                                    // Simplification check: if start and end columns are exactly the same, 
+                                    // draw a pristine straight line down regardless of minor A* grid jitter
+                                    if (startX === endX && offsetPx === 0) {
+                                        pathString += ` L ${exactStartX} ${adjustedEndY}`;
+                                    } else if (resultPath.length > 2) {
                                         const firstGrid = resultPath[1];
                                         const firstGridX = firstGrid.x * resolution + resolution / 2;
                                         const firstGridY = firstGrid.y * resolution + resolution / 2;
