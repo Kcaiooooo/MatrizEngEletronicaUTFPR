@@ -1423,13 +1423,24 @@
             const graph = new Graph(grid);
 
             data.filter(n => n.dependencies && n.dependencies.length > 0).forEach(node => {
-                node.dependencies.forEach(depId => {
+                const totalDeps = node.dependencies.length;
+                node.dependencies.forEach((depId, index) => {
                     const parentNode = data.find(p => p.id === depId);
 
                     if (parentNode && typeof node.x !== 'undefined' && typeof parentNode.x !== 'undefined') {
+                        // Start arrows from the exact center bottom of the parent node
                         const startX = Math.floor(((parentNode.x / 100) * containerWidth) / resolution);
                         const startY = Math.floor((((parentNode.y / 100) * containerHeight) + NODE_HEIGHT / 2) / resolution);
-                        const endX = Math.floor(((node.x / 100) * containerWidth) / resolution);
+
+                        // Offset arriving arrows evenly if a node has multiple prerequisites
+                        let offsetPx = 0;
+                        if (totalDeps > 1) {
+                            const spacingPx = resolution; // Snap to distinct grid cells (25px)
+                            const totalWidthPx = (totalDeps - 1) * spacingPx;
+                            offsetPx = (index * spacingPx) - (totalWidthPx / 2);
+                        }
+
+                        const endX = Math.floor((((node.x / 100) * containerWidth) + offsetPx) / resolution);
                         const endY = Math.floor((((node.y / 100) * containerHeight) - NODE_HEIGHT / 2) / resolution);
 
                         if (grid[startY] && grid[startY][startX] !== undefined) graph.grid[startY][startX].weight = 0;
