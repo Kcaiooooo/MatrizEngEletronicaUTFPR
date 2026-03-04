@@ -1326,7 +1326,7 @@
             };
 
             // Converte o objeto para uma string JSON e armazena na localStorage com uma chave única.
-            localStorage.setItem('skillTreeProgress', JSON.stringify(stateToSave));
+            localStorage.setItem('skillTreeProgress_M3', JSON.stringify(stateToSave));
             console.log("Estado salvo com sucesso!"); // Um log para ajudar a depurar
         }
 
@@ -1339,7 +1339,7 @@
          */
         function loadState() {
             // Tenta obter os dados salvos da localStorage
-            const savedStateJSON = localStorage.getItem('skillTreeProgress');
+            const savedStateJSON = localStorage.getItem('skillTreeProgress_M3');
 
             // Se não houver nada salvo, interrompe a função.
             if (!savedStateJSON) {
@@ -2156,7 +2156,7 @@
         // --- EVENT LISTENERS ---
 
         // --- Settings Logic ---
-        let isGlowEnabled = localStorage.getItem('skillTreeGlowEnabled');
+        let isGlowEnabled = localStorage.getItem('skillTreeGlowEnabled_M3');
         if (isGlowEnabled === null) isGlowEnabled = 'true';
         glowToggle.checked = (isGlowEnabled === 'true');
         if (!glowToggle.checked) document.body.classList.add('disable-glow');
@@ -2166,10 +2166,10 @@
         glowToggle.addEventListener('change', (e) => {
             if (e.target.checked) {
                 document.body.classList.remove('disable-glow');
-                localStorage.setItem('skillTreeGlowEnabled', 'true');
+                localStorage.setItem('skillTreeGlowEnabled_M3', 'true');
             } else {
                 document.body.classList.add('disable-glow');
-                localStorage.setItem('skillTreeGlowEnabled', 'false');
+                localStorage.setItem('skillTreeGlowEnabled_M3', 'false');
             }
         });
 
@@ -2180,7 +2180,7 @@
          */
         resetButton.addEventListener('click', () => {
             // Remove os dados salvos para garantir um reset completo
-            localStorage.removeItem('skillTreeProgress');
+            localStorage.removeItem('skillTreeProgress_M3');
             celebrationShown = false; // ADICIONE ESTA LINHA para permitir que a celebração ocorra novamente
             // A função initializeTree irá então rodar e, como não encontrará dados, começará do zero.
             initializeTree();
