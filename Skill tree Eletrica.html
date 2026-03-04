@@ -807,7 +807,7 @@
         // --- DEFINIÇÃO DAS TRILHAS DE ESPECIALIZAÇÃO (ELÉTRICA) ---
         const SPECIALIZATION_TRACKS = {
             'Automação e Sistemas': [ // Grupo 1150
-                'ELT75H', 'ELT76G', 'ELT76H', 'ELT771', 'ELT7AA', 'ELT7AB', 'ELT7AC', 'ELT7AD', 'ELT7AE', 'ELT7AH', 'ELTZAI', 'ELT7AJ', 'ELT7AK'
+                'ELT75H', 'ELT76G', 'ELT76H', 'ELT77I', 'ELT7AA', 'ELT7AB', 'ELT7AC', 'ELT7AD', 'ELT7AE', 'ELT7AH', 'ELT7AI', 'ELT7AJ', 'ELT7AK'
             ],
             'Modelagem e Controle': [ // Grupo 1151
                 'ELT75A', 'ELT76A', 'ELT77A', 'ELT7EA', 'ELT7EB', 'ELT7EC', 'ELT7ED', 'ELT7EE', 'ELT7EF', 'ELT7EG', 'ELT7EH', 'ELTZEI', 'ELT7EJ', 'ELT7EK', 'ELT7EL', 'ELT7EM', 'ELTZEN', 'ELT7EO', 'ELT7EP'
@@ -843,7 +843,7 @@
         // --- DATA STRUCTURE (Main Tree) ---
         const allNodesData = [
             // --- Período 1 ---
-            { id: 'ELT71A', name: 'INTRODUÇÃO A ENGENHARIA ELÉTRICA', dependencies: [], period: 1, chs: 5, cht: 75, x: 5.5, y: 2, type: 'subject' },
+            { id: 'ELT71A', name: 'INTRODUÇÃO À ENGENHARIA ELÉTRICA', dependencies: [], period: 1, chs: 5, cht: 75, x: 5.5, y: 2, type: 'subject' },
             { id: 'ELT71B', name: 'DESENHO ELÉTRICO', dependencies: [], period: 1, chs: 3, cht: 45, x: 23, y: 2, type: 'subject' },
             { id: 'ELT71C', name: 'LABORATÓRIOS DE INSTALAÇÕES ELÉTRICAS', dependencies: [], period: 1, chs: 3, cht: 45, x: 41, y: 2, type: 'subject' },
             { id: 'INF71A', name: 'COMPUTAÇÃO 1', dependencies: [], period: 1, chs: 4, cht: 60, x: 59, y: 2, type: 'subject' },
@@ -853,10 +853,10 @@
             // --- Período 2 ---
             { id: 'ELT72A', name: 'FUNDAMENTOS DE GESTÃO DE PROJETOS', dependencies: [], period: 2, chs: 3, cht: 45, x: 5.5, y: 13, type: 'subject' },
             { id: 'ELT72B', name: 'SISTEMAS DIGITAIS', dependencies: ['INF71A'], period: 2, chs: 4, cht: 60, x: 20, y: 13, type: 'subject' },
-            { id: 'ELT72C', name: 'FENOMENOS ELETROMAGNÉTICOS', dependencies: ['MAT7GA', 'MAT7PC'], period: 2, chs: 6, cht: 90, x: 35, y: 13, type: 'subject' },
+            { id: 'ELT72C', name: 'FENÔMENOS ELETROMAGNÉTICOS', dependencies: ['MAT7GA', 'MAT7PC'], period: 2, chs: 6, cht: 90, x: 35, y: 13, type: 'subject' },
             { id: 'FIS7F1', name: 'FÍSICA TEÓRICA 1', dependencies: ['MAT7PC'], period: 2, chs: 4, cht: 60, x: 50, y: 13, type: 'subject' },
             { id: 'INF72A', name: 'COMPUTAÇÃO 2', dependencies: ['INF71A'], period: 2, chs: 4, cht: 60, x: 65, y: 13, type: 'subject' },
-            { id: 'MATZAL', name: 'ALGEBRA LINEAR', dependencies: ['MAT7GA'], period: 2, chs: 4, cht: 60, x: 80, y: 13, type: 'subject' },
+            { id: 'MAT7AL', name: 'ÁLGEBRA LINEAR', dependencies: ['MAT7GA'], period: 2, chs: 4, cht: 60, x: 80, y: 13, type: 'subject' },
             { id: 'MAT7C1', name: 'CÁLCULO 1', dependencies: ['MAT7PC'], period: 2, chs: 6, cht: 90, x: 94.5, y: 13, type: 'subject' },
 
             // --- Período 3 ---
@@ -867,14 +867,14 @@
             { id: 'FIS7F2', name: 'FÍSICA TEÓRICA 2', dependencies: ['FIS7F1'], period: 3, chs: 4, cht: 60, x: 57, y: 23, type: 'subject' },
             { id: 'GEE7E3', name: 'FUNDAMENTOS DE ECONOMIA', dependencies: [], period: 3, chs: 2, cht: 30, x: 70, y: 23, type: 'subject' },
             { id: 'MAT7C2', name: 'CÁLCULO 2', dependencies: ['MAT7C1'], period: 3, chs: 6, cht: 90, x: 83, y: 23, type: 'subject' },
-            { id: 'MATZED', name: 'EQUAÇÕES DIFERENCIAIS ORDINÁRIAS', dependencies: ['MAT7C1'], period: 3, chs: 4, cht: 60, x: 94.5, y: 23, type: 'subject' },
+            { id: 'MAT7ED', name: 'EQUAÇÕES DIFERENCIAIS ORDINÁRIAS', dependencies: ['MAT7C1'], period: 3, chs: 4, cht: 60, x: 94.5, y: 23, type: 'subject' },
 
             // --- Período 4 ---
             { id: 'ELT74A', name: 'FENÔMENOS DE TRANSPORTE', dependencies: ['FIS7F2'], period: 4, chs: 2, cht: 30, x: 5.5, y: 34, type: 'subject' },
-            { id: 'ELT74B', name: 'ANÁLISE DE CIRCUITOS B', dependencies: ['ELT73B', 'MATZED'], period: 4, chs: 6, cht: 90, x: 23, y: 34, type: 'subject' },
+            { id: 'ELT74B', name: 'ANÁLISE DE CIRCUITOS B', dependencies: ['ELT73B', 'MAT7ED'], period: 4, chs: 6, cht: 90, x: 23, y: 34, type: 'subject' },
             { id: 'ELT74C', name: 'SINAIS E SISTEMAS', dependencies: ['ELT73B'], period: 4, chs: 4, cht: 60, x: 41, y: 34, type: 'subject' },
             { id: 'ELT74D', name: 'MATERIAIS E EQUIP. ELÉTRICOS 1', dependencies: ['ELT71B', 'ELT71C'], period: 4, chs: 2, cht: 30, x: 59, y: 34, type: 'subject' },
-            { id: 'ELT74E', name: 'AMPLIFICADORES E SEMICONDUTORES', dependencies: ['ELT73B'], period: 4, chs: 6, cht: 90, x: 77, y: 34, type: 'subject' },
+            { id: 'ELT74E', name: 'AMPLIFICADORES OPERACIONAIS E SEMICONDUTORES', dependencies: ['ELT73B'], period: 4, chs: 6, cht: 90, x: 77, y: 34, type: 'subject' },
             { id: 'ELT74F', name: 'OFICINA DE INTEGRAÇÃO 1', dependencies: ['Periodo:3'], period: 4, chs: 2, cht: 120, x: 94.5, y: 34, type: 'subject' },
 
             // --- Período 5 ---
@@ -883,21 +883,21 @@
             { id: 'ELT75D', name: 'PROBABILIDADE E ESTATÍSTICA', dependencies: ['MAT7PC'], period: 5, chs: 2, cht: 45, x: 41, y: 45, type: 'subject' },
             { id: 'ELT75E', name: 'ELETRÔNICA DE POTÊNCIA', dependencies: ['ELT74B'], period: 5, chs: 4, cht: 90, x: 59, y: 45, type: 'subject' },
             { id: 'ELT75F', name: 'MEDIDAS ELÉTRICAS', dependencies: ['ELT74B'], period: 5, chs: 2, cht: 60, x: 77, y: 45, type: 'subject' },
-            { id: 'ELT75G', name: 'ELETROMAGNETISMO', dependencies: ['ELT72C', 'MATZAL'], period: 5, chs: 3, cht: 60, x: 94.5, y: 45, type: 'subject' },
+            { id: 'ELT75G', name: 'ELETROMAGNETISMO', dependencies: ['ELT72C', 'MAT7AL'], period: 5, chs: 3, cht: 60, x: 94.5, y: 45, type: 'subject' },
 
             // --- Período 6 ---
             { id: 'ELT76B', name: 'INSTALAÇÕES ELÉTRICAS PREDIAIS 1', dependencies: ['ELT74D'], period: 6, chs: 3, cht: 75, x: 10, y: 55, type: 'subject' },
-            { id: 'ELT76C', name: 'CONVERSÃO ELETROMECÂNICA 1', dependencies: ['ELT74B'], period: 6, chs: 4, cht: 90, x: 30, y: 55, type: 'subject' },
+            { id: 'ELT76C', name: 'CONVERSÃO ELETROMECÂNICA DE ENERGIA 1', dependencies: ['ELT74B'], period: 6, chs: 4, cht: 90, x: 30, y: 55, type: 'subject' },
             { id: 'ELT76D', name: 'CONTROLE DE SISTEMAS DINÂMICOS', dependencies: ['ELT72B', 'ELT74C'], period: 6, chs: 3, cht: 60, x: 50, y: 55, type: 'subject' },
             { id: 'ELT76E', name: 'SISTEMAS ELÉTRICOS DE POTÊNCIA 1', dependencies: ['ELT74B'], period: 6, chs: 4, cht: 90, x: 70, y: 55, type: 'subject' },
             { id: 'ELT76F', name: 'OFICINA DE INTEGRAÇÃO II', dependencies: ['Periodo:6'], period: 6, chs: 2, cht: 105, x: 90, y: 55, type: 'subject' },
 
             // --- Período 7 ---
-            { id: 'ELT77B', name: 'INSTALAÇÕES ELÉTRICAS INDUSTRIAIS', dependencies: ['ELT76B'], period: 7, chs: 3, cht: 75, x: 5.5, y: 66, type: 'subject' },
-            { id: 'ELT77C', name: 'CONVERSÃO ELETROMECÂNICA 2', dependencies: ['ELT76C'], period: 7, chs: 4, cht: 60, x: 23, y: 66, type: 'subject' },
-            { id: 'ELT77D', name: 'CONTROLADORES LÓGICOS PROG.', dependencies: ['ELT75C'], period: 7, chs: 4, cht: 60, x: 41, y: 66, type: 'subject' },
+            { id: 'ELT77B', name: 'INSTALAÇÕES ELÉTRICAS INDUSTRIAIS 1', dependencies: ['ELT76B'], period: 7, chs: 3, cht: 75, x: 5.5, y: 66, type: 'subject' },
+            { id: 'ELT77C', name: 'CONVERSÃO ELETROMECÂNICA DE ENERGIA 2', dependencies: ['ELT76C'], period: 7, chs: 4, cht: 60, x: 23, y: 66, type: 'subject' },
+            { id: 'ELT77D', name: 'CONTROLADORES LÓGICOS PROGRAMÁVEIS', dependencies: ['ELT75C'], period: 7, chs: 4, cht: 60, x: 41, y: 66, type: 'subject' },
             { id: 'ELT77E', name: 'SISTEMAS ELÉTRICOS DE POTÊNCIA 2', dependencies: ['ELT76E'], period: 7, chs: 4, cht: 60, x: 59, y: 66, type: 'subject' },
-            { id: 'ELT77F', name: 'SEGURANÇA E LEGISLAÇÃO', dependencies: ['Periodo:7'], period: 7, chs: 1, cht: 60, x: 77, y: 66, type: 'subject' },
+            { id: 'ELT77F', name: 'SEGURANÇA E LEGISLAÇÃO PROFISSIONAL', dependencies: ['Periodo:7'], period: 7, chs: 1, cht: 60, x: 77, y: 66, type: 'subject' },
             { id: 'ELT77G', name: 'NOÇÕES DE TELECOMUNICAÇÕES', dependencies: ['ELT74C'], period: 7, chs: 3, cht: 60, x: 94.5, y: 66, type: 'subject' },
 
             // --- Período 8 ---
@@ -916,7 +916,7 @@
             // (A maioria está listada no Período 5 do PDF, mas com pré-requisito Período 3)
             { id: 'EDU70J', name: 'LIBRAS', dependencies: [], period: 5, cht: 45, type: 'humanities', x: 10, y: 10, groupId: '[1141]' },
             { id: 'FCH7AA', name: 'DANÇA E TECNOLOGIA', dependencies: [], period: 5, cht: 60, type: 'humanities', x: 30, y: 10, groupId: '[1141]' },
-            { id: 'FCH7AB', name: 'QUESTÕES DO CORPO', dependencies: [], period: 5, cht: 60, type: 'humanities', x: 50, y: 10, groupId: '[1141]' },
+            { id: 'FCH7AB', name: 'QUESTÕES CONTEMPORÂNEAS DO CORPO', dependencies: [], period: 5, cht: 60, type: 'humanities', x: 50, y: 10, groupId: '[1141]' },
             { id: 'FCH7FA', name: 'FILOSOFIA DA CIÊNCIA', dependencies: [], period: 5, cht: 45, type: 'humanities', x: 70, y: 10, groupId: '[1141]' },
             { id: 'FCH7FB', name: 'FUNDAMENTOS DA ÉTICA', dependencies: [], period: 5, cht: 45, type: 'humanities', x: 90, y: 10, groupId: '[1141]' },
 
@@ -947,7 +947,7 @@
             { id: 'GEE7G2', name: 'GESTÃO DE PESSOAS', dependencies: ['Periodo:5'], period: 8, cht: 45, type: 'humanities', x: 90, y: 70, groupId: '[1142]' },
             { id: 'GEE7G4', name: 'GESTÃO DA PRODUÇÃO', dependencies: ['Periodo:5'], period: 8, cht: 45, type: 'humanities', x: 30, y: 85, groupId: '[1142]' },
             { id: 'GEE7M2', name: 'MARKETING', dependencies: ['Periodo:5'], period: 8, cht: 45, type: 'humanities', x: 50, y: 85, groupId: '[1142]' },
-            { id: 'QBIZCA', name: 'CIÊNCIAS DO AMBIENTE', dependencies: ['Periodo:5'], period: 8, cht: 30, type: 'humanities', x: 70, y: 85, groupId: '[1142]' },
+            { id: 'QBI7CA', name: 'CIÊNCIAS DO AMBIENTE', dependencies: ['Periodo:5'], period: 8, cht: 30, type: 'humanities', x: 70, y: 85, groupId: '[1142]' },
         ];
         // --- DATA STRUCTURE (Optional & Tracks Tree) ---
         const allOptionalNodesData = [
@@ -955,7 +955,7 @@
             { id: 'ELT75H', name: 'INSTRUMENTAÇÃO INDUSTRIAL', dependencies: ['ELT74E'], period: 8, cht: 60, x: 10, y: 10, type: 'optional', groupId: '[1150]' },
             { id: 'ELT76G', name: 'SISTEMAS PNEUMÁTICOS', dependencies: ['ELT75C'], period: 8, cht: 45, x: 25, y: 10, type: 'optional', groupId: '[1150]' },
             { id: 'ELT76H', name: 'INSTRUMENTAÇÃO VIRTUAL', dependencies: ['INF72A'], period: 8, cht: 60, x: 40, y: 10, type: 'optional', groupId: '[1150]' },
-            { id: 'ELT771', name: 'IOT INDUSTRIAL', dependencies: ['ELT76H', 'INF72A'], period: 8, cht: 60, x: 55, y: 10, type: 'optional', groupId: '[1150]' },
+            { id: 'ELT77I', name: 'IOT INDUSTRIAL', dependencies: ['ELT76H', 'INF72A'], period: 8, cht: 60, x: 55, y: 10, type: 'optional', groupId: '[1150]' },
             { id: 'ELT7AA', name: 'INTRO À IA', dependencies: ['Periodo:7'], period: 8, cht: 45, x: 70, y: 10, type: 'optional', groupId: '[1150]' },
             { id: 'ELT7AC', name: 'QUADROS ELÉTRICOS', dependencies: ['Periodo:7'], period: 8, cht: 60, x: 85, y: 10, type: 'optional', groupId: '[1150]' },
 
