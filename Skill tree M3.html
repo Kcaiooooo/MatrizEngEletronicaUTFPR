@@ -812,6 +812,9 @@
             ],
             'Processamento de Sinais': [
                 'ELTD6', 'ELTD10', 'ELTD7', 'ELTD11'
+            ],
+            'Internet das Coisas': [
+                'ELTF01', 'ELTF02', 'ELTF04', 'ELTF05', 'ELTF06', 'ELTF07', 'ELTF08', 'ELTF09', 'ELTF10', 'ELTF11', 'ELTF12'
             ]
         };
 
@@ -858,8 +861,8 @@
             { id: 'ELE15', name: 'Acolhimento', dependencies: [], period: 1, chs: 2, cht: 30, x: 35, y: 2, type: 'subject' },
             { id: 'MAT7GA', name: 'Geometria Analítica', dependencies: [], period: 1, chs: 4, cht: 60, x: 50, y: 2, type: 'subject' },
             { id: 'MAT7PC', name: 'Pré-Cálculo', dependencies: [], period: 1, chs: 4, cht: 60, x: 65, y: 2, type: 'subject' },
-            { id: 'QB17QT', name: 'Química Teórica', dependencies: [], period: 1, chs: 4, cht: 60, x: 80, y: 2, type: 'subject' },
-            { id: 'QB17QE', name: 'Química Exp.', dependencies: [], period: 1, chs: 2, cht: 30, x: 94.5, y: 2, type: 'subject' },
+            { id: 'QBI7QT', name: 'Química Teórica', dependencies: [], period: 1, chs: 4, cht: 60, x: 80, y: 2, type: 'subject' },
+            { id: 'QBI7QE', name: 'Química Exp.', dependencies: [], period: 1, chs: 2, cht: 30, x: 94.5, y: 2, type: 'subject' },
 
             // Período 2
             { id: 'ELB13', name: 'Desenho Técnico', dependencies: [], period: 2, cht: 30, chs: 2, x: 5.5, y: 13, type: 'subject', groupId: '[1176]', alternative: { id: 'EEF11 / ELEF10', name: 'EEF11, ELEF10' } },
@@ -868,11 +871,12 @@
             { id: 'MAT7AL', name: 'Álgebra Linear', dependencies: ['MAT7GA'], period: 2, chs: 4, cht: 60, x: 50, y: 13, type: 'subject' },
             { id: 'MAT7C1', name: 'Cálculo 1', dependencies: ['MAT7PC'], period: 2, chs: 6, cht: 90, x: 65, y: 13, type: 'subject' },
             { id: 'ELE21', name: 'Intro. Comunicação e Redes', dependencies: [], period: 2, cht: 45, chs: 3, x: 80, y: 13, type: 'subject' },
-            { id: 'QB17CA', name: 'Ciências do Ambiente', dependencies: [], period: 2, cht: 30, chs: 2, x: 94.5, y: 13, type: 'subject', groupId: '[1194]' },
+            { id: 'QBI7CA', name: 'Ciências do Ambiente', dependencies: [], period: 2, cht: 30, chs: 2, x: 94.5, y: 13, type: 'subject', groupId: '[1194]' },
 
             // Período 3
             { id: 'ELE41', name: 'Oficina de Integração 1', dependencies: ['ELB21', 'ELE11'], period: 3, chs: 3, cht: 45, x: 5.5, y: 23, type: 'subject', groupId: '[1196]', alternative: { id: 'EEXZ1 / ELEX20', name: 'EEXZ1, ELEX20' } },
-            { id: 'ELP35', name: 'Estrutura de Dados', dependencies: ['ELB21'], period: 3, chs: 3, cht: 45, x: 20, y: 23, type: 'subject', alternative: { id: 'ELP35R', name: 'Estudos de Estrutura de Dados' }, groupId: '[1195]' },
+            { id: 'ELP35', name: 'Estrutura de Dados', dependencies: ['ELB21'], period: 3, chs: 3, cht: 45, x: 20, y: 23, type: 'subject', alternative: { id: 'ELP35R', name: 'ELP35R' }, groupId: '[1195]' },
+            { id: 'ELB21R', name: 'Est. de Prog. de Computador', dependencies: ['ELB11'], period: 3, chs: 4, cht: 60, x: 35, y: 13, type: 'subject' },
             { id: 'ELP31T', name: 'Teoria de Circuitos Elétricos CC', dependencies: ['MAT7C1'], period: 3, cht: 60, chs: 4, x: 35, y: 23, type: 'subject', groupId: '[1187]' },
             { id: 'ELP31TP', name: 'Circuitos Elétricos 1 (Int.)', dependencies: ['MAT7C1'], period: 3, chs: 6, cht: 90, x: 50, y: 23, type: 'subject', groupId: '[1187]' },
             { id: 'FIS7F1', name: 'Física 1', dependencies: ['MAT7C1'], period: 3, chs: 4, cht: 60, x: 65, y: 23, type: 'subject' },
@@ -880,7 +884,7 @@
             { id: 'MAT7ED', name: 'Eq. Dif. Ordinárias', dependencies: ['MAT7C1'], period: 3, cht: 60, chs: 4, x: 94.5, y: 23, type: 'subject' },
 
             // Período 4
-            { id: 'ICSE20', name: 'Técnicas de Prog.', dependencies: ['ELP35'], period: 4, chs: 4, cht: 60, x: 5.5, y: 34, type: 'subject', alternative: { id: 'ICSE20R', name: 'Estudos de Téc. de Prog.' }, groupId: '[1197]' },
+            { id: 'ICSE20', name: 'Técnicas de Prog.', dependencies: ['ELP35'], period: 4, chs: 4, cht: 60, x: 5.5, y: 34, type: 'subject', alternative: { id: 'ICSE20R', name: 'ICSE20R' }, groupId: '[1197]' },
             { id: 'ELP41', name: 'Eletrônica Analógica 1', dependencies: ['ELP31T'], period: 4, chs: 4, cht: 60, x: 16.25, y: 34, type: 'subject', alternative: { id: 'ET74C', name: 'ET74C' } },
             { id: 'ELP42P', name: 'Prática de Circuitos Elétricos', dependencies: ['ELP31T'], period: 4, cht: 45, chs: 3, x: 27.5, y: 34, type: 'subject', groupId: '[1187]' },
             { id: 'ELP42T', name: 'Teoria de Circuitos Elétricos CA', dependencies: ['ELP31T'], period: 4, cht: 75, chs: 5, x: 38.75, y: 34, type: 'subject', groupId: '[1187]' },
@@ -905,7 +909,7 @@
             { id: 'ELF52', name: 'Microcontrolados', dependencies: ['ELF41'], period: 6, chs: 4, cht: 60, x: 27.5, y: 55, type: 'subject', alternative: { id: 'CSW40 / ELEW31', name: 'CSW40, ELEW31' }, groupId: '[1200]' },
             { id: 'ELP34', name: 'Medidas Elétricas', dependencies: ['ELP42P', 'ELP42T', 'MAT7ED'], period: 6, chs: 4, cht: 60, x: 50, y: 55, type: 'subject', groupId: '[1191]', alternative: { id: 'ELT75F / ET75F', name: 'ELT75F, ET75F' } },
             { id: 'ELF51', name: 'PDS', dependencies: ['ELB66'], period: 6, chs: 4, cht: 60, x: 72.5, y: 55, type: 'subject', alternative: { id: 'EEQ32 / ELEQ31', name: 'EEQ32, ELEQ31' }, groupId: '[1201]' },
-            { id: 'ELP63', name: 'Instrumentação Industrial', dependencies: ['ELP34'], period: 6, cht: 60, chs: 4, x: 94.5, y: 55, type: 'subject', groupId: '[1192]', alternative: { id: 'EL75G / ELN75C', name: 'EL75G, ELN75C' } },
+            { id: 'ELP63', name: 'Instrumentação Industrial', dependencies: ['ELP34'], period: 6, cht: 60, chs: 4, x: 94.5, y: 55, type: 'subject', groupId: '[1192]', alternative: { id: 'EL75G / ELN75C / ELP67', name: 'EL75G, ELN75C, ELP67' } },
 
             // Período 7
             { id: 'ELE64', name: 'Oficina de Integração (Genérica)', dependencies: ['Periodo:6'], period: 7, cht: 45, chs: 3, x: 5.5, y: 66, type: 'subject', groupId: '[1202]', alternative: { id: 'EEX22 / ELEX21', name: 'EEX22, ELEX21' } },
@@ -990,7 +994,7 @@
             { id: 'ELH04', name: 'Inovação Tec. e Financiamento', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 83.75, y: 5 },
             { id: 'ELH05', name: 'Noções Jurídicas p/ Empreend.', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 83.75, y: 12 },
             { id: 'ELH06', name: 'Metodologias Ativas p/ Eng.', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 83.75, y: 19 },
-            { id: 'LCOM7AB', name: 'Comunicação Soc. e Eventos', dependencies: [], period: 2, cht: 105, type: 'humanities', x: 83.75, y: 26 },
+            { id: 'LICOM7AB', name: 'Comunicação Soc. e Eventos', dependencies: [], period: 2, cht: 105, type: 'humanities', x: 83.75, y: 26 },
             { id: 'ELH01', name: 'Fund. de Primeiros Socorros', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 94.5, y: 5 },
             { id: 'ELH02', name: 'Prática de Grupo com Música', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 94.5, y: 12 },
             { id: 'ELH07', name: 'Humanidades 1', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 94.5, y: 19 },
@@ -998,6 +1002,7 @@
             { id: 'ELH09', name: 'Humanidades 3', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 94.5, y: 33 },
             { id: 'ELH10', name: 'Humanidades 4', dependencies: [], period: 2, cht: 75, type: 'humanities', x: 94.5, y: 40 },
             { id: 'ELH14', name: 'Humanidades 5', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 94.5, y: 47 },
+            { id: 'ELS03', name: 'Ativ. Complementares', dependencies: [], period: 2, cht: 15, type: 'humanities', x: 94.5, y: 54 },
             { id: 'ELH15', name: 'Inteligência Artificial e Informática na Educação', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 27.5, y: 40 },
             { id: 'ELH16', name: 'Prática de Habilidades Sociais por Meio de Jogos de Tabuleiros', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 38.75, y: 40 }
             // --- FIM DO CÓDIGO PARA allHumanitiesData ---
@@ -1043,6 +1048,19 @@
             { id: 'ELTD10', name: 'PDS Avançado', dependencies: ['ELF51', 'ELP66'], period: 9, cht: 60, x: 22, y: 62, type: 'optional' },
             { id: 'ELTD7', name: 'Introdução ao Aprendizado de Máquina', dependencies: ['ELP66'], period: 9, cht: 60, x: 34, y: 62, type: 'optional' },
             { id: 'ELTD11', name: 'Oficina de Sinais, Imagens e Padrões', dependencies: ['ELF51', 'ELP66'], period: 9, cht: 60, x: 46, y: 62, type: 'optional' },
+
+            // Trilha: Internet das Coisas (Sistemas Ciberfísicos) [???]
+            { id: 'ELTF01', name: 'Introdução e Aplicações IoT', dependencies: ['ELP66'], period: 9, cht: 30, x: 10, y: 69, type: 'optional' },
+            { id: 'ELTF02', name: 'Sistemas Cliente-Servidor IoT', dependencies: ['ELP66'], period: 9, cht: 60, x: 22, y: 69, type: 'optional' },
+            { id: 'ELTF04', name: 'Linguagem de Programação IoT', dependencies: ['ELP66'], period: 9, cht: 60, x: 34, y: 69, type: 'optional' },
+            { id: 'ELTF05', name: 'Objetos Inteligentes e Conectados', dependencies: ['ELP66'], period: 9, cht: 60, x: 46, y: 69, type: 'optional' },
+            { id: 'ELTF06', name: 'Uso de Computação em Nuvem IoT', dependencies: ['ELP66'], period: 9, cht: 60, x: 58, y: 69, type: 'optional' },
+            { id: 'ELTF07', name: 'Linux: Servidores em IoT', dependencies: ['ELP66'], period: 9, cht: 60, x: 70, y: 69, type: 'optional' },
+            { id: 'ELTF08', name: 'Sistemas Embarcados em IoT', dependencies: ['ELP66'], period: 9, cht: 60, x: 82, y: 69, type: 'optional' },
+            { id: 'ELTF09', name: 'Laboratório de Atuadores', dependencies: ['ELP66'], period: 9, cht: 30, x: 94.5, y: 69, type: 'optional' },
+            { id: 'ELTF10', name: 'Laboratório de Gateways', dependencies: ['ELP66'], period: 9, cht: 30, x: 10, y: 76, type: 'optional' },
+            { id: 'ELTF11', name: 'Aplicações IOT em Indústria', dependencies: ['ELP66'], period: 9, cht: 60, x: 22, y: 76, type: 'optional' },
+            { id: 'ELTF12', name: 'Aplicações e Solução de Problemas em IoT', dependencies: ['ELP66'], period: 9, cht: 60, x: 34, y: 76, type: 'optional' },
 
             // Optativas Gerais [1186]
             { id: 'ELN7AC', name: 'Redes Industriais', dependencies: ['ELF72', 'ELP66'], period: 9, cht: 45, x: 10, y: 75, type: 'optional', alternative: { id: 'ELT85C', name: 'ELT85C' } },
@@ -1428,6 +1446,7 @@
                 'Trilha de Eng. Biomédica': 28,
                 'Trilha de Sist. Computacionais': 45,
                 'Trilha de Proc. de Sinais': 62,
+                'Trilha de Internet das Coisas': 73,
                 'Optativas Gerais': 82,
             };
             Object.entries(trackPositions).forEach(([name, yPos]) => {
