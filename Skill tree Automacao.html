@@ -393,16 +393,18 @@
 
         .track-header {
             position: absolute;
-            left: 5px;
+            left: 8px;
             transform: translateY(-50%);
             color: #9ca3af;
             font-weight: bold;
-            font-size: 1rem;
+            font-size: 0.95rem;
             background-color: rgba(31, 41, 55, 0.6);
-            padding: 8px 4px;
+            padding: 10px 5px;
             border-radius: 8px;
             writing-mode: vertical-rl;
             text-orientation: mixed;
+            text-align: center;
+            z-index: 12;
         }
 
         .node .tooltip-satisfied {
@@ -803,6 +805,10 @@
         const TOTAL_OPTIONAL_HOURS = 540;
         const NODE_WIDTH = 130;
         const NODE_HEIGHT = 90;
+        const OPTIONAL_LAYOUT_MIN_X = 14;
+        const OPTIONAL_LAYOUT_MAX_X = 92;
+        const OPTIONAL_LAYOUT_MIN_Y = 10;
+        const OPTIONAL_LAYOUT_MAX_Y = 92;
 
         // --- DEFINIÇÃO DAS TRILHAS DE ESPECIALIZAÇÃO (CONTROLE E AUTOMAÇÃO) ---
         const SPECIALIZATION_TRACKS = {
@@ -1356,7 +1362,7 @@
             // Inicializa as estruturas de dados base (isso não muda)
             nodes = JSON.parse(JSON.stringify(allNodesData));
             humanitiesNodes = JSON.parse(JSON.stringify(allHumanitiesData));
-            optionalNodes = JSON.parse(JSON.stringify(allOptionalNodesData));
+            optionalNodes = normalizeOptionalLayout(allOptionalNodesData);
             completedAcActivities = [];
             completedCceActivities = [];
 
@@ -1404,6 +1410,40 @@
             }
         }
 
+        function normalizeOptionalLayout(data) {
+            const clonedData = JSON.parse(JSON.stringify(data));
+            const xValues = clonedData
+                .map(node => node.x)
+                .filter(x => typeof x === 'number' && Number.isFinite(x));
+            const yValues = clonedData
+                .map(node => node.y)
+                .filter(y => typeof y === 'number' && Number.isFinite(y));
+
+            if (xValues.length === 0 || yValues.length === 0) return clonedData;
+
+            const sourceMinX = Math.min(...xValues);
+            const sourceMaxX = Math.max(...xValues);
+            const sourceXSpan = Math.max(1, sourceMaxX - sourceMinX);
+            const targetXSpan = OPTIONAL_LAYOUT_MAX_X - OPTIONAL_LAYOUT_MIN_X;
+
+            const sourceMinY = Math.min(...yValues);
+            const sourceMaxY = Math.max(...yValues);
+            const sourceSpan = Math.max(1, sourceMaxY - sourceMinY);
+            const targetSpan = OPTIONAL_LAYOUT_MAX_Y - OPTIONAL_LAYOUT_MIN_Y;
+
+            clonedData.forEach(node => {
+                if (typeof node.x === 'number' && Number.isFinite(node.x)) {
+                    const normalizedX = OPTIONAL_LAYOUT_MIN_X + (((node.x - sourceMinX) / sourceXSpan) * targetXSpan);
+                    node.x = Number(normalizedX.toFixed(2));
+                }
+                if (typeof node.y !== 'number' || !Number.isFinite(node.y)) return;
+                const normalizedY = OPTIONAL_LAYOUT_MIN_Y + (((node.y - sourceMinY) / sourceSpan) * targetSpan);
+                node.y = Number(normalizedY.toFixed(2));
+            });
+
+            return clonedData;
+        }
+
         function renderTree(container, data, svgId, markerCompletedId, markerLockedId) {
             const svgEl = container.querySelector(`#${svgId}`);
             const svgDefs = svgEl.querySelector('defs').outerHTML;
@@ -1414,18 +1454,28 @@
         }
 
         function renderOptionalTrackHeaders() {
-            const trackPositions = {
-                'Trilha [1139]: Automação e Sistemas': 10,
-                'Trilha [1138]: Modelagem e Controle': 25,
-                'Trilha [1148]: Manutenção Industrial': 40,
-                'Trilha [1149]: Proj. Eletrônicos E Máquinas': 55,
-                'Trilha [1147]: Energia e Sustentabilidade': 70,
-                'Trilha [1146]: Instal. e Eficiência Energ.': 85,
+            const trackLabels = {
+                '[1139]': 'Trilha [1139]: Automação e Sistemas',
+                '[1138]': 'Trilha [1138]: Modelagem e Controle',
+                '[1148]': 'Trilha [1148]: Manutenção Industrial',
+                '[1149]': 'Trilha [1149]: Proj. Eletrônicos E Máquinas',
+                '[1147]': 'Trilha [1147]: Energia e Sustentabilidade',
+                '[1146]': 'Trilha [1146]: Instal. e Eficiência Energ.'
             };
-            Object.entries(trackPositions).forEach(([name, yPos]) => {
+            const trackOrder = ['[1139]', '[1138]', '[1148]', '[1149]', '[1147]', '[1146]'];
+
+            trackOrder.forEach(groupId => {
+                const label = trackLabels[groupId];
+                const trackNodes = optionalNodes.filter(node => node.groupId === groupId && typeof node.y === 'number');
+                if (!label || trackNodes.length === 0) return;
+
+                const minY = Math.min(...trackNodes.map(node => node.y));
+                const maxY = Math.max(...trackNodes.map(node => node.y));
+                const yPos = Math.max(6, Math.min(94, (minY + maxY) / 2));
+
                 const header = document.createElement('div');
                 header.className = 'track-header';
-                header.textContent = name;
+                header.textContent = label;
                 header.style.top = `${yPos}%`;
                 optionalContainer.appendChild(header);
             });
