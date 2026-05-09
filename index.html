@@ -22,6 +22,9 @@
         border: 1px solid #374151;
         border-radius: 0.75rem;
         padding: 2rem;
+        min-height: 430px;
+        display: flex;
+        flex-direction: column;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .selection-card:hover {
@@ -47,38 +50,46 @@
 </head>
 <body class="flex items-center justify-center min-h-screen p-4">
 
-    <div class="max-w-4xl mx-auto text-center">
+    <div class="w-full max-w-6xl mx-auto text-center py-8 md:py-10">
         <header class="mb-10">
             <h1 class="text-4xl md:text-5xl font-bold font-header text-blue-400">Matriz Curricular</h1>
-            <p class="text-gray-300 mt-3 text-lg">Engenharias Eletrônica e Elétrica - UTFPR</p>
+            <p class="text-gray-300 mt-3 text-lg">Engenharias Eletrônica, Elétrica e de Controle e Automação - UTFPR</p>
         </header>
 
         <main>
             <p class="mb-8 text-xl">Para começar, por favor, selecione a matriz curricular que você deseja visualizar:</p>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 xl:gap-8">
                 
                 <div class="selection-card">
                     <h2 class="text-2xl font-bold font-header text-white mb-3">Matriz Antiga (906)</h2>
-                    <p class="mb-6 text-gray-400">Para alunos que ingressaram antes de 2023. Esta é a versão baseada na Matriz Curricular 2.</p>
-                    <a href="Skill tree M2.html" class="selection-button">
+                    <p class="mb-6 text-gray-400 flex-1">Para alunos que ingressaram antes de 2023. Esta é a versão baseada na Matriz Curricular 2.</p>
+                    <a href="Skill tree M2.html" class="selection-button mt-auto">
                         Acessar Matriz 2
                     </a>
                 </div>
 
                 <div class="selection-card">
                     <h2 class="text-2xl font-bold font-header text-white mb-3">Nova Matriz (968)</h2>
-                    <p class="mb-6 text-gray-400">Para alunos ingressantes a partir de 2023. Esta é a versão mais recente da matriz curricular.</p>
-                    <a href="Skill tree M3.html" class="selection-button">
+                    <p class="mb-6 text-gray-400 flex-1">Para alunos ingressantes a partir de 2023. Esta é a versão mais recente da matriz curricular.</p>
+                    <a href="Skill tree M3.html" class="selection-button mt-auto">
                         Acessar Matriz 3
                     </a>
                 </div>
 
                 <div class="selection-card border-amber-500/30">
                     <h2 class="text-2xl font-bold font-header text-amber-400 mb-3">Engenharia Elétrica (979)</h2>
-                    <p class="mb-6 text-gray-400">Matriz curricular do curso de Engenharia Elétrica (Matriz 979).</p>
-                    <a href="Skill tree Eletrica.html" class="selection-button bg-amber-600 hover:bg-amber-700">
+                    <p class="mb-6 text-gray-400 flex-1">Matriz curricular do curso de Engenharia Elétrica (Matriz 979).</p>
+                    <a href="Skill tree Eletrica.html" class="selection-button bg-amber-600 hover:bg-amber-700 mt-auto">
                         Acessar Elétrica
+                    </a>
+                </div>
+
+                <div class="selection-card border-emerald-500/30">
+                    <h2 class="text-2xl font-bold font-header text-emerald-400 mb-3">Controle e Automação (978)</h2>
+                    <p class="mb-6 text-gray-400 flex-1">Matriz curricular do curso de Engenharia de Controle e Automação (Matriz 978).</p>
+                    <a href="Skill tree Automacao.html" class="selection-button bg-emerald-600 hover:bg-emerald-700 mt-auto">
+                        Acessar Controle e Automação
                     </a>
                 </div>
 
