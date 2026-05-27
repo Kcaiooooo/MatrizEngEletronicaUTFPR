@@ -2295,6 +2295,9 @@
                             fullText += textContent.items.map(item => item.str).join('\n');
                         }
 
+                        // =========================================================
+                        // AQUI ESTÁ A NOVA REGRA
+                        // =========================================================
                         const stopPhrase = "Resumo Optativas (Carga horária total)";
                         const stopIndex = fullText.indexOf(stopPhrase);
 
@@ -2305,6 +2308,7 @@
                         } else {
                             console.log("Regra de parada não encontrada. Lendo o documento inteiro.");
                         }
+                        // =========================================================
 
                         console.log("--- Texto Final a ser Analisado ---", effectiveText);
 
