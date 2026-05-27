@@ -869,7 +869,7 @@
             { id: 'MAT7AL', name: 'Álgebra Linear', dependencies: ['MAT7GA'], period: 2, chs: 4, cht: 60, x: 50, y: 13, type: 'subject' },
             { id: 'MAT7C1', name: 'Cálculo 1', dependencies: ['MAT7PC'], period: 2, chs: 6, cht: 90, x: 65, y: 13, type: 'subject' },
             { id: 'ELE21', name: 'Intro. Comunicação e Redes', dependencies: [], period: 2, cht: 45, chs: 3, x: 80, y: 13, type: 'subject' },
-            { id: 'QBI7CA', name: 'Ciências do Ambiente', dependencies: [], period: 2, cht: 30, chs: 2, x: 94.5, y: 13, type: 'subject', groupId: '[1194]' },
+            { id: 'QBI7CA', name: 'Ciências do Ambiente', dependencies: [], period: 2, cht: 30, chs: 2, x: 94.5, y: 13, type: 'subject', groupId: '[1194]', alternative: { id: 'QB70J / QB70E / QB17CA', name: 'QB70J, QB70E, QB17CA' } },
 
             // Período 3
             { id: 'ELE41', name: 'Oficina de Integração 1', dependencies: ['ELB21', 'ELE11'], period: 3, chs: 3, cht: 45, x: 5.5, y: 23, type: 'subject', groupId: '[1196]', alternative: { id: 'EEXZ1 / ELEX20', name: 'EEXZ1, ELEX20' } },
@@ -992,7 +992,7 @@
             { id: 'ELH04', name: 'Inovação Tec. e Financiamento', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 83.75, y: 5 },
             { id: 'ELH05', name: 'Noções Jurídicas p/ Empreend.', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 83.75, y: 12 },
             { id: 'ELH06', name: 'Metodologias Ativas p/ Eng.', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 83.75, y: 19 },
-            { id: 'LICOM7AB', name: 'Comunicação Soc. e Eventos', dependencies: [], period: 2, cht: 105, type: 'humanities', x: 83.75, y: 26 },
+            { id: 'LICOM7AB', name: 'Comunicação Soc. e Eventos', dependencies: [], period: 2, cht: 105, type: 'humanities', x: 83.75, y: 26, alternative: { id: 'LICOM72A', name: 'LICOM72A' } },
             { id: 'ELH01', name: 'Fund. de Primeiros Socorros', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 94.5, y: 5 },
             { id: 'ELH02', name: 'Prática de Grupo com Música', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 94.5, y: 12 },
             { id: 'ELH07', name: 'Humanidades 1', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 94.5, y: 19 },
@@ -2390,7 +2390,7 @@
                     // =========================================================
                     // AQUI ESTÁ A NOVA REGRA
                     // =========================================================
-                    const stopPhrase = "Resumo Optativas (Carga horária total)";
+                    const stopPhrase = "Disciplinas Obrigatórias Faltantes";
                     const stopIndex = fullText.indexOf(stopPhrase);
 
                     let effectiveText = fullText;
@@ -2442,7 +2442,8 @@
                 { name: 'EquivalentesObrigatorias', index: findCleanIndex('detalhesdasequivalentescursadasdedisciplinasobrigatórias'), mode: 'INVERTED' },
                 { name: 'Optativas', index: findCleanIndex('disciplinasoptativascursadas'), mode: 'NORMAL' },
                 { name: 'EquivalentesOptativas', index: findCleanIndex('detalhesdasequivalentescursadasdedisciplinasoptativas'), mode: 'INVERTED' },
-                { name: 'Resumo', index: findCleanIndex('resumooptativas'), mode: 'STOP' }
+                { name: 'Enriquecimento', index: findCleanIndex('disciplinasdeenriquecimentocurricular'), mode: 'NORMAL' },
+                { name: 'Resumo', index: findCleanIndex('resumooptativas'), mode: 'NORMAL' }
             ];
 
             const originalTextIndices = {};
@@ -2466,7 +2467,8 @@
                 console.log(`--- Processando Seção: ${currentSection.name} (Modo: ${currentSection.mode}) ---`);
 
                 if (currentSection.mode === 'NORMAL') {
-                    const codesInSection = [...sectionText.matchAll(allSubjectCodesRegex)];
+                    const anySubjectCodeRegex = /\b[A-Z]{2,6}\d+[A-Z0-9]*\b/g;
+                    const codesInSection = [...sectionText.matchAll(anySubjectCodeRegex)];
                     codesInSection.forEach((match, idx) => {
                         const code = match[0];
                         const startIndex = match.index;

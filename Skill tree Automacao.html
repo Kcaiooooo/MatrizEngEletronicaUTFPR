@@ -963,7 +963,7 @@
             { id: 'GEE7G2', name: 'FUNDAMENTOS DE GESTÃO DE PESSOAS', dependencies: ['Periodo:5'], period: 8, cht: 45, type: 'humanities', x: 60, y: 92, groupId: '[1137]' },
             { id: 'GEE7G4', name: 'FUNDAMENTOS DE GESTÃO DA PRODUÇÃO', dependencies: ['Periodo:5'], period: 8, cht: 45, type: 'humanities', x: 80, y: 92, groupId: '[1137]' },
             { id: 'GEE7M2', name: 'FUNDAMENTOS DE MARKETING', dependencies: ['Periodo:5'], period: 8, cht: 45, type: 'humanities', x: 35, y: 95, groupId: '[1137]' },
-            { id: 'QBI7CA', name: 'CIÊNCIAS DO AMBIENTE', dependencies: ['Periodo:5'], period: 8, cht: 30, type: 'humanities', x: 55, y: 95, groupId: '[1137]' },
+            { id: 'QBI7CA', name: 'CIÊNCIAS DO AMBIENTE', dependencies: ['Periodo:5'], period: 8, cht: 30, type: 'humanities', x: 55, y: 95, groupId: '[1137]', alternative: { id: 'QB70J / QB70E / QB17CA', name: 'QB70J, QB70E, QB17CA' } },
         ];
         // --- DATA STRUCTURE (Optional & Tracks Tree) ---
         const allOptionalNodesData = [
@@ -2428,7 +2428,7 @@
                     // =========================================================
                     // AQUI ESTÁ A NOVA REGRA
                     // =========================================================
-                    const stopPhrase = "Resumo Optativas (Carga horária total)";
+                    const stopPhrase = "Disciplinas Obrigatórias Faltantes";
                     const stopIndex = fullText.indexOf(stopPhrase);
 
                     let effectiveText = fullText;
@@ -2480,7 +2480,8 @@
                 { name: 'EquivalentesObrigatorias', index: findCleanIndex('detalhesdasequivalentescursadasdedisciplinasobrigatórias'), mode: 'INVERTED' },
                 { name: 'Optativas', index: findCleanIndex('disciplinasoptativascursadas'), mode: 'NORMAL' },
                 { name: 'EquivalentesOptativas', index: findCleanIndex('detalhesdasequivalentescursadasdedisciplinasoptativas'), mode: 'INVERTED' },
-                { name: 'Resumo', index: findCleanIndex('resumooptativas'), mode: 'STOP' }
+                { name: 'Enriquecimento', index: findCleanIndex('disciplinasdeenriquecimentocurricular'), mode: 'NORMAL' },
+                { name: 'Resumo', index: findCleanIndex('resumooptativas'), mode: 'NORMAL' }
             ];
 
             const originalTextIndices = {};
@@ -2504,7 +2505,8 @@
                 console.log(`--- Processando Seção: ${currentSection.name} (Modo: ${currentSection.mode}) ---`);
 
                 if (currentSection.mode === 'NORMAL') {
-                    const codesInSection = [...sectionText.matchAll(allSubjectCodesRegex)];
+                    const anySubjectCodeRegex = /\b[A-Z]{2,6}\d+[A-Z0-9]*\b/g;
+                    const codesInSection = [...sectionText.matchAll(anySubjectCodeRegex)];
                     codesInSection.forEach((match, idx) => {
                         const code = match[0];
                         const startIndex = match.index;
