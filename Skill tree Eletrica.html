@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Slab:wght@700&display=swap"
         rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -794,7 +795,7 @@
     <audio id="celebration-audio" src="audio/vitoria.mp3" preload="auto" loop></audio>
 
     <script type="module">
-        import * as pdfjsLib from 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.3.136/pdf.mjs';
+        
         // --- CONFIGURATION CONSTANTS ---
         const TOTAL_COMPLEMENTARY_HOURS = 15;
         const TOTAL_EXTENSION_HOURS = 465;
@@ -2279,7 +2280,7 @@
         const uploadStatus = document.getElementById('upload-status');
 
         // Configura o worker para a biblioteca pdf.js
-        pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.3.136/pdf.worker.mjs`;
+        pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js`;
 
         pdfUpload.addEventListener('change', handleFileSelect, false);
 
