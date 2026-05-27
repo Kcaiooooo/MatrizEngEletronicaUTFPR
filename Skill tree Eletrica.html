@@ -2297,34 +2297,36 @@
             try {
                 const fileReader = new FileReader();
                 fileReader.onload = async function () {
-                    const typedarray = new Uint8Array(this.result);
-                    const pdf = await pdfjsLib.getDocument(typedarray).promise;
-                    let fullText = '';
+                    try {
+                        const typedarray = new Uint8Array(this.result);
+                        const pdf = await pdfjsLib.getDocument(typedarray).promise;
+                        let fullText = '';
 
-                    for (let i = 1; i <= pdf.numPages; i++) {
-                        const page = await pdf.getPage(i);
-                        const textContent = await page.getTextContent();
-                        fullText += textContent.items.map(item => item.str).join('\n');
+                        for (let i = 1; i <= pdf.numPages; i++) {
+                            const page = await pdf.getPage(i);
+                            const textContent = await page.getTextContent();
+                            fullText += textContent.items.map(item => item.str).join('\n');
+                        }
+
+                        const stopPhrase = "Disciplinas Obrigatórias Faltantes";
+                        const stopIndex = fullText.indexOf(stopPhrase);
+
+                        let effectiveText = fullText;
+                        if (stopIndex !== -1) {
+                            console.log(`Regra de parada encontrada. O texto será lido apenas até a frase: "${stopPhrase}".`);
+                            effectiveText = fullText.substring(0, stopIndex);
+                        } else {
+                            console.log("Regra de parada não encontrada. Lendo o documento inteiro.");
+                        }
+
+                        console.log("--- Texto Final a ser Analisado ---", effectiveText);
+
+                        parseHistoryAndUpdate(effectiveText);
+                    } catch (e) {
+                        uploadStatus.textContent = 'Erro ao processar: ' + e.message;
+                        uploadStatus.className = 'text-center text-red-400 h-4';
+                        console.error('Erro interno na leitura do PDF:', e);
                     }
-
-                    // =========================================================
-                    // AQUI ESTÁ A NOVA REGRA
-                    // =========================================================
-                    const stopPhrase = "Disciplinas Obrigatórias Faltantes";
-                    const stopIndex = fullText.indexOf(stopPhrase);
-
-                    let effectiveText = fullText;
-                    if (stopIndex !== -1) {
-                        console.log(`Regra de parada encontrada. O texto será lido apenas até a frase: "${stopPhrase}".`);
-                        effectiveText = fullText.substring(0, stopIndex);
-                    } else {
-                        console.log("Regra de parada não encontrada. Lendo o documento inteiro.");
-                    }
-                    // =========================================================
-
-                    console.log("--- Texto Final a ser Analisado ---", effectiveText);
-
-                    parseHistoryAndUpdate(effectiveText);
                 };
                 fileReader.readAsArrayBuffer(file);
             } catch (error) {

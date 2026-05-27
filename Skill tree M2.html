@@ -2285,6 +2285,7 @@
                 try {
                     const fileReader = new FileReader();
                     fileReader.onload = async function () {
+                        try {
                         const typedarray = new Uint8Array(this.result);
                         const pdf = await pdfjsLib.getDocument(typedarray).promise;
                         let fullText = '';
@@ -2313,6 +2314,11 @@
                         console.log("--- Texto Final a ser Analisado ---", effectiveText);
 
                         parseHistoryAndUpdate(effectiveText);
+                    } catch (e) {
+                        uploadStatus.textContent = "Erro ao processar: " + e.message;
+                        uploadStatus.className = "text-center text-red-400 h-4";
+                        console.error("Erro interno na leitura do PDF:", e);
+                    }
                     };
                     fileReader.readAsArrayBuffer(file);
                 } catch (error) {

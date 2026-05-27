@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="module">
+import * as pdfjsLib from 'https://mozilla.github.io/pdf.js/build/pdf.mjs';
+try {
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://mozilla.github.io/pdf.js/build/pdf.worker.mjs';
+    console.log("Success assigning workerSrc");
+} catch(e) {
+    console.error("Error:", e);
+}
+</script>
+</body>
+</html>
