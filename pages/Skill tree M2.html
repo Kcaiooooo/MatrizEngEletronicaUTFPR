@@ -2357,7 +2357,7 @@
                     { name: 'EquivalentesObrigatorias', index: findCleanIndex('detalhesdasequivalentescursadasdedisciplinasobrigatórias'), mode: 'INVERTED' },
                     { name: 'Optativas', index: findCleanIndex('disciplinasoptativascursadas'), mode: 'NORMAL' },
                     { name: 'EquivalentesOptativas', index: findCleanIndex('detalhesdasequivalentescursadasdedisciplinasoptativas'), mode: 'INVERTED' },
-                    { name: 'Enriquecimento', index: findCleanIndex('disciplinasdeenriquecimentocurricular'), mode: 'NORMAL' },
+                    { name: 'Enriquecimento', index: findCleanIndex('disciplinasdeenriquecimentocurricular'), mode: 'IGNORE' },
                     { name: 'Resumo', index: findCleanIndex('resumooptativas'), mode: 'NORMAL' }
                 ];
 
@@ -2373,6 +2373,7 @@
                 for (let i = 0; i < sections.length; i++) {
                     const currentSection = sections[i];
                     if (currentSection.mode === 'STOP') break;
+                if (currentSection.mode === 'IGNORE') continue;
 
                     const nextSection = sections[i + 1];
                     const startOriginalIndex = originalTextIndices[currentSection.index] || 0;

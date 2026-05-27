@@ -993,7 +993,7 @@
             { id: 'ELH04', name: 'Inovação Tec. e Financiamento', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 83.75, y: 5 },
             { id: 'ELH05', name: 'Noções Jurídicas p/ Empreend.', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 83.75, y: 12 },
             { id: 'ELH06', name: 'Metodologias Ativas p/ Eng.', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 83.75, y: 19 },
-            { id: 'LICOM7AB', name: 'Comunicação Soc. e Eventos', dependencies: [], period: 2, cht: 105, type: 'humanities', x: 83.75, y: 26, alternative: { id: 'LICOM72A', name: 'LICOM72A' } },
+            { id: 'LICOM7AB', name: 'Comunicação Soc. e Eventos', dependencies: [], period: 2, cht: 105, type: 'humanities', x: 83.75, y: 26 },
             { id: 'ELH01', name: 'Fund. de Primeiros Socorros', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 94.5, y: 5 },
             { id: 'ELH02', name: 'Prática de Grupo com Música', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 94.5, y: 12 },
             { id: 'ELH07', name: 'Humanidades 1', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 94.5, y: 19 },
@@ -2449,7 +2449,7 @@
                 { name: 'EquivalentesObrigatorias', index: findCleanIndex('detalhesdasequivalentescursadasdedisciplinasobrigatórias'), mode: 'INVERTED' },
                 { name: 'Optativas', index: findCleanIndex('disciplinasoptativascursadas'), mode: 'NORMAL' },
                 { name: 'EquivalentesOptativas', index: findCleanIndex('detalhesdasequivalentescursadasdedisciplinasoptativas'), mode: 'INVERTED' },
-                { name: 'Enriquecimento', index: findCleanIndex('disciplinasdeenriquecimentocurricular'), mode: 'NORMAL' },
+                { name: 'Enriquecimento', index: findCleanIndex('disciplinasdeenriquecimentocurricular'), mode: 'IGNORE' },
                 { name: 'Resumo', index: findCleanIndex('resumooptativas'), mode: 'NORMAL' }
             ];
 
@@ -2465,6 +2465,7 @@
             for (let i = 0; i < sections.length; i++) {
                 const currentSection = sections[i];
                 if (currentSection.mode === 'STOP') break;
+                if (currentSection.mode === 'IGNORE') continue;
 
                 const nextSection = sections[i + 1];
                 const startOriginalIndex = originalTextIndices[currentSection.index] || 0;
