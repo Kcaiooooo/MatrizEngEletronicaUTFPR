@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criador de Matrizes - Skill Tree</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="../index.css" rel="stylesheet">
+    <style>
+        .dark-glass {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-200 min-h-screen font-sans overflow-x-hidden p-6">
+
+    <div class="max-w-5xl mx-auto space-y-8">
+        
+        <header class="flex items-center justify-between">
+            <a href="../index.html" class="flex items-center gap-2 text-slate-400 hover:text-cyan-400 transition-colors">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Voltar à Página Inicial
+            </a>
+            <h1 class="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Criar Nova Matriz</h1>
+        </header>
+
+        <form id="matrix-form" class="space-y-6">
+            <!-- Metadados -->
+            <div class="dark-glass p-6 rounded-xl space-y-4">
+                <h2 class="text-xl font-semibold text-white border-b border-slate-700 pb-2">Informações Gerais</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-400 mb-1">Nome do Curso / Matriz</label>
+                        <input type="text" id="m-name" required placeholder="Ex: Engenharia Civil - 2024" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2 focus:ring-2 focus:ring-cyan-500 focus:outline-none">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-400 mb-1">Horas Optativas</label>
+                        <input type="number" id="m-opt" required value="0" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-400 mb-1">Horas Humanidades</label>
+                        <input type="number" id="m-hum" required value="0" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-400 mb-1">Horas Compl.</label>
+                        <input type="number" id="m-comp" required value="0" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-400 mb-1">Horas Extensão</label>
+                        <input type="number" id="m-ext" required value="0" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Adicionar Disciplina -->
+            <div class="dark-glass p-6 rounded-xl space-y-4">
+                <h2 class="text-xl font-semibold text-white border-b border-slate-700 pb-2">Adicionar Disciplina</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div class="md:col-span-1">
+                        <label class="block text-sm font-medium text-slate-400 mb-1">Código</label>
+                        <input type="text" id="n-id" placeholder="Ex: MAT123" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-medium text-slate-400 mb-1">Nome da Disciplina</label>
+                        <input type="text" id="n-name" placeholder="Ex: Cálculo 1" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2">
+                    </div>
+                    <div class="md:col-span-1">
+                        <label class="block text-sm font-medium text-slate-400 mb-1">Tipo</label>
+                        <select id="n-type" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2">
+                            <option value="subject">Obrigatória</option>
+                            <option value="optional">Optativa</option>
+                            <option value="humanities">Humanidades</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-400 mb-1">Período</label>
+                        <input type="number" id="n-period" value="1" min="1" max="10" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-400 mb-1">Carga Hor. Teórica</label>
+                        <input type="number" id="n-cht" value="60" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-400 mb-1">Pré-requisitos (códigos)</label>
+                        <input type="text" id="n-deps" placeholder="Separados por vírgula" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2">
+                    </div>
+                    <div class="flex items-end">
+                        <button type="button" id="btn-add-node" class="w-full bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-2 px-4 rounded-lg transition-colors">
+                            + Adicionar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lista de Disciplinas -->
+            <div class="dark-glass p-6 rounded-xl space-y-4">
+                <h2 class="text-xl font-semibold text-white border-b border-slate-700 pb-2">Disciplinas Cadastradas (<span id="nodes-count">0</span>)</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-sm text-slate-400">
+                        <thead class="text-xs uppercase bg-slate-800 text-slate-300">
+                            <tr>
+                                <th class="px-4 py-3">Cód.</th>
+                                <th class="px-4 py-3">Nome</th>
+                                <th class="px-4 py-3">Período</th>
+                                <th class="px-4 py-3">CHT</th>
+                                <th class="px-4 py-3">Tipo</th>
+                                <th class="px-4 py-3">Pré-req.</th>
+                                <th class="px-4 py-3">Ação</th>
+                            </tr>
+                        </thead>
+                        <tbody id="nodes-tbody" class="divide-y divide-slate-700">
+                            <!-- Inserido via JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Botões Finais -->
+            <div class="flex justify-end gap-4">
+                <button type="button" id="btn-publish" class="bg-gradient-to-r from-emerald-500 to-emerald-400 hover:from-emerald-400 hover:to-emerald-300 text-white font-bold py-3 px-8 rounded-lg shadow-lg shadow-emerald-500/30 transition-all transform hover:scale-105">
+                    Publicar Matriz
+                </button>
+            </div>
+            <p id="publish-status" class="text-right text-sm mt-2 hidden"></p>
+        </form>
+    </div>
+
+    <script type="module">
+        import { saveMatrix } from '../assets/firebase-config.js';
+
+        let nodes = [];
+
+        const btnAdd = document.getElementById('btn-add-node');
+        const btnPublish = document.getElementById('btn-publish');
+        const tbody = document.getElementById('nodes-tbody');
+        const countSpan = document.getElementById('nodes-count');
+        const statusP = document.getElementById('publish-status');
+
+        function renderTable() {
+            tbody.innerHTML = '';
+            countSpan.textContent = nodes.length;
+
+            nodes.forEach((node, index) => {
+                const tr = document.createElement('tr');
+                tr.className = "hover:bg-slate-800/50 transition-colors";
+                tr.innerHTML = `
+                    <td class="px-4 py-3 font-medium text-white">${node.id}</td>
+                    <td class="px-4 py-3">${node.name}</td>
+                    <td class="px-4 py-3">${node.period}</td>
+                    <td class="px-4 py-3">${node.cht}h</td>
+                    <td class="px-4 py-3 capitalize">${node.type}</td>
+                    <td class="px-4 py-3">${node.dependencies.join(', ')}</td>
+                    <td class="px-4 py-3">
+                        <button type="button" onclick="removeNode(${index})" class="text-red-400 hover:text-red-300">Remover</button>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        window.removeNode = (index) => {
+            nodes.splice(index, 1);
+            renderTable();
+        };
+
+        btnAdd.addEventListener('click', () => {
+            const id = document.getElementById('n-id').value.trim().toUpperCase();
+            const name = document.getElementById('n-name').value.trim();
+            const type = document.getElementById('n-type').value;
+            const period = parseInt(document.getElementById('n-period').value) || 1;
+            const cht = parseInt(document.getElementById('n-cht').value) || 0;
+            const depsStr = document.getElementById('n-deps').value;
+            
+            if (!id || !name) {
+                alert("Código e Nome são obrigatórios.");
+                return;
+            }
+
+            const dependencies = depsStr ? depsStr.split(',').map(s => s.trim().toUpperCase()).filter(s => s) : [];
+
+            // Auto-calculate rough visual position (x, y) based on period
+            // period 1 -> x=5, period 2 -> x=15, etc.
+            const x = (period - 1) * 10 + 5;
+            
+            // For y, count how many nodes already exist in this period to stagger them vertically
+            const nodesInPeriod = nodes.filter(n => n.period === period).length;
+            const y = (nodesInPeriod * 10) + 2; // e.g. 2, 12, 22...
+
+            nodes.push({ id, name, type, period, cht, dependencies, x, y });
+            
+            // Limpa form
+            document.getElementById('n-id').value = '';
+            document.getElementById('n-name').value = '';
+            document.getElementById('n-deps').value = '';
+
+            renderTable();
+        });
+
+        btnPublish.addEventListener('click', async () => {
+            const mName = document.getElementById('m-name').value.trim();
+            if (!mName || nodes.length === 0) {
+                alert("Preencha o nome da matriz e adicione pelo menos uma disciplina.");
+                return;
+            }
+
+            const mOpt = parseInt(document.getElementById('m-opt').value) || 0;
+            const mHum = parseInt(document.getElementById('m-hum').value) || 0;
+            const mComp = parseInt(document.getElementById('m-comp').value) || 0;
+            const mExt = parseInt(document.getElementById('m-ext').value) || 0;
+
+            const matrixData = {
+                name: mName,
+                totalOptional: mOpt,
+                totalHumanities: mHum,
+                totalComplementary: mComp,
+                totalExtension: mExt,
+                nodes: nodes
+            };
+
+            btnPublish.disabled = true;
+            btnPublish.textContent = "Publicando...";
+            statusP.classList.remove('hidden');
+            statusP.className = "text-right text-sm mt-2 text-yellow-400";
+            statusP.textContent = "Salvando no Firebase...";
+
+            const res = await saveMatrix(matrixData);
+
+            if (res.success) {
+                statusP.className = "text-right text-sm mt-2 text-green-400";
+                statusP.textContent = "Matriz publicada com sucesso! ID: " + res.id;
+                setTimeout(() => {
+                    window.location.href = '../index.html';
+                }, 2000);
+            } else {
+                statusP.className = "text-right text-sm mt-2 text-red-400";
+                statusP.textContent = "Erro ao publicar: " + res.error + " - Você configurou suas credenciais no firebase-config.js?";
+                btnPublish.disabled = false;
+                btnPublish.textContent = "Publicar Matriz";
+            }
+        });
+
+    </script>
+</body>
+</html>
