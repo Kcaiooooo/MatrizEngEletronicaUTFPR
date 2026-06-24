@@ -5,6 +5,9 @@ def generate_arrays():
     with open('docs/Matrizes/Matrizes em PDF/parsed_subjects.json', 'r', encoding='utf-8') as f:
         subs = json.load(f)
         
+    # Filter out ENADE subjects
+    subs = [s for s in subs if s['id'] != 'ENADE']
+        
     mandatory = []
     humanities = []
     optional = []

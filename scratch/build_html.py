@@ -26,6 +26,10 @@ def main():
         'UTFPR - Câmpus Curitiba (Matriz 978)',
         'UTFPR - Câmpus Curitiba (Matriz 973 - Matriz 2)'
     )
+    html = html.replace(
+        'id="period-slider" type="range" min="1" max="9"',
+        'id="period-slider" type="range" min="1" max="10"'
+    )
 
     # 2. Replace LocalStorage Keys
     html = html.replace('_Automacao', '_Mecatronica')

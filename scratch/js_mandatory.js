@@ -1,12 +1,11 @@
 const allNodesData = [
             // --- Período 1 ---
             { id: 'COE70A', name: 'COMUNICAÇÃO ORAL E ESCRITA', dependencies: [], period: 1, chs: 2, cht: 30, x: 5.5, y: 2.0, type: 'subject' },
-            { id: 'ELN71A', name: 'INTRODUÇÃO À ENGENHARIA MECATRÔNICA', dependencies: [], period: 1, chs: 2, cht: 30, x: 18.2, y: 2.0, type: 'subject' },
-            { id: 'ELN71B', name: 'PRINCÍPIOS DE MECATRÔNICA', dependencies: [], period: 1, chs: 3, cht: 45, x: 30.9, y: 2.0, type: 'subject' },
-            { id: 'ENADE', name: 'ENADE INGRESSANTE', dependencies: [], period: 1, chs: 0, cht: 0, x: 43.6, y: 2.0, type: 'subject' },
-            { id: 'FCH7FB', name: 'FUNDAMENTOS DA ÉTICA', dependencies: [], period: 1, chs: 3, cht: 45, x: 56.4, y: 2.0, type: 'subject' },
-            { id: 'MAT7GA', name: 'GEOMETRIA ANALÍTICA', dependencies: [], equivalents: [{ id: 'MECP71A', cht: 60 }], period: 1, chs: 4, cht: 60, x: 69.1, y: 2.0, type: 'subject' },
-            { id: 'MAT7PC', name: 'PRÉ-CÁLCULO', dependencies: [], period: 1, chs: 4, cht: 60, x: 81.8, y: 2.0, type: 'subject' },
+            { id: 'ELN71A', name: 'INTRODUÇÃO À ENGENHARIA MECATRÔNICA', dependencies: [], period: 1, chs: 2, cht: 30, x: 20.3, y: 2.0, type: 'subject' },
+            { id: 'ELN71B', name: 'PRINCÍPIOS DE MECATRÔNICA', dependencies: [], period: 1, chs: 3, cht: 45, x: 35.2, y: 2.0, type: 'subject' },
+            { id: 'FCH7FB', name: 'FUNDAMENTOS DA ÉTICA', dependencies: [], period: 1, chs: 3, cht: 45, x: 50.0, y: 2.0, type: 'subject' },
+            { id: 'MAT7GA', name: 'GEOMETRIA ANALÍTICA', dependencies: [], equivalents: [{ id: 'MECP71A', cht: 60 }], period: 1, chs: 4, cht: 60, x: 64.8, y: 2.0, type: 'subject' },
+            { id: 'MAT7PC', name: 'PRÉ-CÁLCULO', dependencies: [], period: 1, chs: 4, cht: 60, x: 79.7, y: 2.0, type: 'subject' },
             { id: 'MEC71A', name: 'DESENHO TÉCNICO', dependencies: [], period: 1, chs: 3, cht: 45, x: 94.5, y: 2.0, type: 'subject' },
 
             // --- Período 2 ---
@@ -79,7 +78,6 @@ const allNodesData = [
             { id: 'MEC79E', name: 'SISTEMAS DE GESTÃO DA QUALIDADE', dependencies: [], period: 9, chs: 2, cht: 30, x: 94.5, y: 86.0, type: 'subject' },
 
             // --- Período 10 ---
-            { id: 'ELN70A', name: 'TCC 2', dependencies: ["ELN79A"], period: 10, chs: 1, cht: 15, x: 5.5, y: 96.5, type: 'subject' },
-            { id: 'ENADE', name: 'ENADE CONCLUINTE', dependencies: [], period: 10, chs: 0, cht: 0, x: 94.5, y: 96.5, type: 'subject' },
+            { id: 'ELN70A', name: 'TCC 2', dependencies: ["ELN79A"], period: 10, chs: 1, cht: 15, x: 50.0, y: 96.5, type: 'subject' },
 
         ];
