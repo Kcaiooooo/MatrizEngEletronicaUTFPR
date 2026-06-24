@@ -64,6 +64,17 @@ def generate_arrays():
         s['y'] = 10 + row * 12
         s['type'] = 'humanities'
         
+    # Scale Humanities y-coordinates to fit in range [5, 95]
+    if humanities:
+        min_h_y = min(s['y'] for s in humanities)
+        max_h_y = max(s['y'] for s in humanities)
+        if max_h_y > min_h_y:
+            for s in humanities:
+                s['y'] = round(5 + (s['y'] - min_h_y) * 90 / (max_h_y - min_h_y), 1)
+        else:
+            for s in humanities:
+                s['y'] = 50.0
+        
     # 3. Coordinate generation for Optional (Trilhas)
     # Group by track (group_id)
     by_opt_group = {}
@@ -89,6 +100,17 @@ def generate_arrays():
         # Advance y_start for the next group
         rows_used = (len(g_subs) + cols - 1) // cols
         y_start += rows_used * 8 + 6
+
+    # Scale Optional y-coordinates to fit in range [5, 95]
+    if optional:
+        min_o_y = min(s['y'] for s in optional)
+        max_o_y = max(s['y'] for s in optional)
+        if max_o_y > min_o_y:
+            for s in optional:
+                s['y'] = round(5 + (s['y'] - min_o_y) * 90 / (max_o_y - min_o_y), 1)
+        else:
+            for s in optional:
+                s['y'] = 50.0
         
     # Build JS outputs
     def to_js_obj(s):
