@@ -16,12 +16,12 @@ def get_modal_html(pix_path):
             </div>
 
             <div class="space-y-3 text-gray-300 text-sm leading-relaxed mb-5">
-                <p>Olá, acadêmico(a)! 👋</p>
+                <p>Olá, colega acadêmico(a)! 👋</p>
                 <p>
                     Me chamo <strong class="text-white">Caio</strong>, sou estudante de Engenharia Eletrônica na UTFPR e criei o <strong class="text-white">K-Matrizes</strong> de forma 100% independente no meu tempo livre para facilitar o planejamento de grade de todos nós.
                 </p>
                 <p>
-                    A plataforma é e sempre será <strong class="text-emerald-400">gratuita</strong>. No entanto, manter a ferramenta atualizada, com novas matrizes e hospedagem, exige tempo e dedicação constante.
+                    A plataforma é e sempre será <strong class="text-emerald-400">gratuita e de código aberto</strong>. No entanto, manter a ferramenta atualizada, com novas matrizes e hospedagem, exige tempo e dedicação constante.
                 </p>
                 <p>
                     Se o K-Matrizes te ajudou a organizar o seu semestre, considere fazer uma contribuição de <strong class="text-amber-300 font-semibold">qualquer valor (até mesmo R$ 1,00 ajuda demais!)</strong> via Pix.
