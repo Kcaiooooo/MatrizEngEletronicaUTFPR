@@ -104,6 +104,24 @@ def main():
     optional_pattern = re.compile(r'const allOptionalNodesData = \[.*?\];', re.DOTALL)
     html = optional_pattern.sub(js_optional, html)
 
+    # 9. Replace SEO text block for Mecatrônica
+    html = html.replace(
+        'Sobre o curso de Engenharia de Controle e Automação (Matriz 978 - UTFPR)',
+        'Sobre o curso de Engenharia Mecatrônica (Matriz 973 - UTFPR)'
+    )
+    html = html.replace(
+        'Engenharia de Controle e Automação (Matriz 978)',
+        'Engenharia Mecatrônica (Matriz 973 - Matriz 2)'
+    )
+    html = html.replace(
+        'acadêmicos de Automação',
+        'acadêmicos de Mecatrônica'
+    )
+    html = html.replace(
+        'Sistemas de Controle, Controladores Lógicos Programáveis (CLP), Robótica Industrial e Instrumentação',
+        'Mecânica dos Sólidos, Eletrônica Analógica, Robótica, Acionamentos Hidráulicos e Pneumáticos'
+    )
+
     # Write the new HTML page
     with open('pages/Skill tree Mecatronica.html', 'w', encoding='utf-8') as f:
         f.write(html)
