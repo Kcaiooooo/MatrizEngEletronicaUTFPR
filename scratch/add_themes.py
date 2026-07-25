@@ -1,32 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJV3L9BNMQ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+import os
+import glob
 
-      gtag('config', 'G-HJV3L9BNMQ');
-    </script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termos de Uso - K-Matrizes UTFPR</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; background-color: #111827; color: #d1d5db; }
-        .font-header { font-family: 'Roboto Slab', serif; }
-        h2 { font-size: 1.25rem; font-weight: 700; color: #93c5fd; margin-top: 2rem; margin-bottom: 0.5rem; }
-        p, li { line-height: 1.8; color: #d1d5db; }
-        ul { list-style-type: disc; padding-left: 1.5rem; }
-        a { color: #60a5fa; }
-    </style>
-<style>
-
+THEME_CSS = """
 /* Theme Custom Properties & Global Overrides */
 :root, [data-theme="dark"] {
     --bg-main: #111827;
@@ -310,66 +285,17 @@ footer {
 [data-theme="dracula"] .bg-gray-900 {
     background-color: #11111b !important;
 }
+"""
 
-</style>
-    <script>
+HEAD_SCRIPT = """    <script>
       (function() {
         var t = localStorage.getItem('kmatrizes_theme') || 'dark';
         document.documentElement.setAttribute('data-theme', t);
       })();
     </script>
+"""
 
-</head>
-<body class="p-6 md:p-12">
-    <div class="max-w-3xl mx-auto">
-        <a href="../index.html" class="text-blue-400 hover:underline text-sm mb-8 inline-block">← Voltar para a página inicial</a>
-
-        <h1 class="text-3xl md:text-4xl font-bold font-header text-blue-400 mt-4 mb-2">Termos de Uso</h1>
-        <p class="text-sm text-gray-500 mb-8">Última atualização: Junho de 2025</p>
-
-        <p>Ao acessar e utilizar a plataforma <strong>K-Matrizes</strong>, você concorda com os seguintes termos e condições. Caso não concorde com algum dos termos, solicitamos que não utilize o serviço.</p>
-
-        <h2>1. Sobre a Ferramenta</h2>
-        <p>O K-Matrizes é uma ferramenta educacional de visualização de grades curriculares desenvolvida de forma independente por um estudante da UTFPR. A plataforma <strong>não é um produto oficial da Universidade Tecnológica Federal do Paraná (UTFPR)</strong> e não possui qualquer vínculo institucional formal com a universidade.</p>
-
-        <h2>2. Precisão das Informações</h2>
-        <p>As grades curriculares e pré-requisitos exibidos nesta plataforma foram mapeados com base nos documentos oficiais da UTFPR disponíveis publicamente. No entanto, grades curriculares podem ser alteradas pela instituição a qualquer momento. O usuário é responsável por verificar as informações com a coordenação do seu curso antes de tomar qualquer decisão acadêmica. O K-Matrizes não se responsabiliza por eventuais imprecisões ou desatualizações nas informações exibidas.</p>
-
-        <h2>3. Uso Permitido</h2>
-        <p>Esta ferramenta é fornecida gratuitamente para uso educacional pessoal. É permitido:</p>
-        <ul class="mt-2 mb-4">
-            <li>Visualizar e navegar pelas grades curriculares disponíveis.</li>
-            <li>Registrar seu progresso pessoal usando as funcionalidades da plataforma.</li>
-            <li>Compartilhar o link da plataforma com outros estudantes.</li>
-        </ul>
-        <p>É proibido:</p>
-        <ul class="mt-2 mb-4">
-            <li>Utilizar a plataforma para fins comerciais sem autorização expressa do desenvolvedor.</li>
-            <li>Tentar contornar, hackear ou prejudicar o funcionamento da plataforma.</li>
-            <li>Copiar o código ou o design do projeto sem dar os devidos créditos.</li>
-        </ul>
-
-        <h2>4. Ausência de Garantias</h2>
-        <p>A plataforma é fornecida "como está" (<em>as-is</em>), sem garantias de qualquer tipo, expressas ou implícitas, incluindo, mas não se limitando a, garantias de comercialização, adequação a um propósito específico ou não violação. O desenvolvedor não garante que o serviço será ininterrupto, livre de erros ou completamente preciso.</p>
-
-        <h2>5. Limitação de Responsabilidade</h2>
-        <p>Em nenhuma circunstância o desenvolvedor do K-Matrizes será responsável por quaisquer danos diretos, indiretos, incidentais, especiais ou consequentes resultantes do uso ou da incapacidade de usar este serviço, mesmo que tenha sido avisado da possibilidade de tais danos.</p>
-
-        <h2>6. Alterações nos Termos</h2>
-        <p>O desenvolvedor reserva o direito de modificar estes termos a qualquer momento. As alterações entrarão em vigor imediatamente após a publicação na plataforma. O uso continuado da plataforma após a publicação de quaisquer alterações constitui sua aceitação dos novos termos.</p>
-
-        <h2>7. Contato</h2>
-        <p>Para quaisquer dúvidas relacionadas a estes Termos de Uso, entre em contato pelo e-mail: <a href="mailto:caiocosta281214@gmail.com">caiocosta281214@gmail.com</a>.</p>
-
-        <div class="mt-16 pt-6 border-t border-gray-700 text-center text-sm text-gray-500">
-            <p>K-Matrizes - Ferramenta desenvolvida por Caio Costa. Não é afiliado oficialmente à UTFPR.</p>
-            <div class="flex justify-center gap-6 mt-3">
-                <a href="politica-de-privacidade.html" class="hover:text-gray-300">Política de Privacidade</a>
-                <a href="termos-de-uso.html" class="hover:text-gray-300">Termos de Uso</a>
-            </div>
-        </div>
-    </div>
-
+JS_THEME_MANAGER = """
 <script>
 function changeTheme(themeName) {
     document.documentElement.setAttribute('data-theme', themeName);
@@ -384,6 +310,67 @@ document.addEventListener('DOMContentLoaded', function() {
     selects.forEach(function(s) { s.value = currentTheme; });
 });
 </script>
+"""
 
-</body>
-</html>
+INDEX_THEME_SELECTOR = """
+        <div class="flex justify-center items-center gap-2 mb-6">
+            <label for="theme-select" class="text-sm font-semibold text-gray-300 flex items-center gap-1.5 cursor-pointer">
+                <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-23"></path>
+                </svg>
+                <span>Tema:</span>
+            </label>
+            <select id="theme-select" onchange="changeTheme(this.value)" class="theme-select-input bg-gray-800 text-gray-200 border border-gray-700 text-sm rounded-lg px-3 py-1.5 focus:ring-2 focus:ring-blue-500 focus:outline-none cursor-pointer transition-colors">
+                <option value="dark">Escuro</option>
+                <option value="light">Claro</option>
+                <option value="utfpr">UTFPR (Amarelo)</option>
+                <option value="dracula">Roxo</option>
+            </select>
+        </div>
+"""
+
+PAGE_THEME_SELECTOR = """
+                <div class="flex items-center gap-2 bg-gray-800 border border-gray-600 px-3 py-1.5 rounded-lg">
+                    <span class="text-xs font-semibold text-gray-300 hidden sm:inline">Tema:</span>
+                    <select onchange="changeTheme(this.value)" class="theme-select-input bg-gray-700 text-white border border-gray-600 text-xs sm:text-sm rounded-md p-1 focus:ring-2 focus:ring-blue-500 focus:outline-none cursor-pointer">
+                        <option value="dark">Escuro</option>
+                        <option value="light">Claro</option>
+                        <option value="utfpr">UTFPR (Amarelo)</option>
+                        <option value="dracula">Roxo</option>
+                    </select>
+                </div>
+"""
+
+root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+html_files = [os.path.join(root_dir, "index.html")] + glob.glob(os.path.join(root_dir, "pages", "*.html"))
+
+for filepath in html_files:
+    with open(filepath, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    # Replace SVG casingEl stroke with dynamic CSS variable
+    content = content.replace("casingEl.setAttribute('stroke', '#111827');", "casingEl.setAttribute('stroke', 'var(--bg-container)');")
+
+    # 1. Add HEAD_SCRIPT and THEME_CSS inside <head>
+    style_block = f"<style>\n{THEME_CSS}\n</style>\n{HEAD_SCRIPT}"
+    if "</head>" in content:
+        content = content.replace("</head>", f"{style_block}\n</head>", 1)
+
+    # 2. Add Theme Manager JS before </body>
+    if "</body>" in content:
+        content = content.replace("</body>", f"{JS_THEME_MANAGER}\n</body>", 1)
+
+    # 3. Add Theme selector UI
+    is_index = "index.html" in os.path.basename(filepath)
+    if is_index:
+        if '<header class="mb-10">' in content:
+            content = content.replace('<header class="mb-10">', f'<header class="mb-10">\n{INDEX_THEME_SELECTOR}', 1)
+    else:
+        if '<button id="settings-btn"' in content:
+            content = content.replace('<button id="settings-btn"', f'{PAGE_THEME_SELECTOR}\n                <button id="settings-btn"', 1)
+        elif '<div class="mb-4 flex justify-start">' in content:
+            content = content.replace('<div class="mb-4 flex justify-start">', f'<div class="mb-4 flex justify-between items-center">\n{PAGE_THEME_SELECTOR}', 1)
+
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(content)
+    print(f"Successfully processed {os.path.basename(filepath)}")
