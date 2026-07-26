@@ -9,26 +9,31 @@ files = {
     'mecatronica_973': 'pages/Skill tree Mecatronica.html'
 }
 
-templates = {}
+def extract_array_content(var_name, text):
+    pattern = rf"const\s+{var_name}\s*=\s*\["
+    match = re.search(pattern, text)
+    if not match:
+        return ""
+    start_idx = match.end() - 1
+    bracket_count = 0
+    end_idx = start_idx
+    for i in range(start_idx, len(text)):
+        if text[i] == '[':
+            bracket_count += 1
+        elif text[i] == ']':
+            bracket_count -= 1
+            if bracket_count == 0:
+                end_idx = i
+                break
+    return text[start_idx+1:end_idx]
 
-for key, path in files.items():
-    with open(path, 'r', encoding='utf-8') as f:
-        content = f.read()
-
-    # Extract allNodesData or main nodes
-    nodes = []
-    
-    # Match objects like { id: '...', name: '...', period: X, cht: Y, dependencies: [...] }
-    # Using regex to find items
-    matches = re.findall(r"\{\s*id:\s*['\"]([^'\"]+)['\"],\s*name:\s*['\"]([^'\"]+)['\"].*?period:\s*(\d+).*?cht:\s*(\d+)", content, re.DOTALL)
-    
-    # Let's extract full JS object blocks
-    blocks = re.findall(r"\{\s*id:\s*['\"][^'\"]+['\"].*?\}", content, re.DOTALL)
-    
+def parse_subject_blocks(code_snippet, default_tab_id):
+    if not code_snippet:
+        return []
+    blocks = re.findall(r"\{\s*id:\s*['\"][^'\"]+['\"].*?\}", code_snippet, re.DOTALL)
     sub_list = []
     seen = set()
     for block in blocks:
-        # Extract id
         m_id = re.search(r"id:\s*['\"]([^'\"]+)['\"]", block)
         m_name = re.search(r"name:\s*['\"]([^'\"]+)['\"]", block)
         m_period = re.search(r"period:\s*(\d+)", block)
@@ -57,13 +62,32 @@ for key, path in files.items():
                 'period': s_period,
                 'cht': s_cht,
                 'dependencies': deps,
-                'tabId': 'tab_mandatory'
+                'tabId': default_tab_id
             })
-            
-    templates[key] = sub_list
-    print(f"Extracted {len(sub_list)} subjects for {key}")
+    return sub_list
+
+templates = {}
+
+for key, path in files.items():
+    with open(path, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    mandatory_txt = extract_array_content('allNodesData', content)
+    humanities_txt = extract_array_content('allHumanitiesData', content)
+    
+    optional_txt = extract_array_content('allOptionalNodesData', content) or \
+                   extract_array_content('optionalNodesData', content) or \
+                   extract_array_content('allOptionalData', content)
+    
+    mandatory_subs = parse_subject_blocks(mandatory_txt, 'tab_mandatory')
+    humanities_subs = parse_subject_blocks(humanities_txt, 'tab_humanities')
+    optional_subs = parse_subject_blocks(optional_txt, 'tab_optional')
+    
+    combined = mandatory_subs + humanities_subs + optional_subs
+    templates[key] = combined
+    print(f"{key}: {len(mandatory_subs)} mandatory (tab_mandatory), {len(optional_subs)} optional (tab_optional), {len(humanities_subs)} humanities (tab_humanities) -> total {len(combined)}")
 
 with open('scratch/templates.json', 'w', encoding='utf-8') as out:
     json.dump(templates, out, ensure_ascii=False, indent=2)
 
-print("Saved templates.json")
+print("Saved updated templates.json with exact bracket matching!")
