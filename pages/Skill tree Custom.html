@@ -9444,72 +9444,6 @@ html, body {
             }
         };
 
-        // --- A* PATHFINDING IMPLEMENTATION ---
-        function aStar(graph, start, end) {
-            const openHeap = [start];
-            const closedNodes = {};
-            while (openHeap.length > 0) {
-                openHeap.sort((a, b) => a.f - b.f);
-                const currentNode = openHeap.shift();
-                if (currentNode.x === end.x && currentNode.y === end.y) {
-                    let curr = currentNode; const ret = [];
-                    while (curr.parent) { ret.push(curr); curr = curr.parent; }
-                    return ret.reverse();
-                }
-                closedNodes[`${currentNode.x}-${currentNode.y}`] = true;
-                const neighbors = graph.neighbors(currentNode);
-                for (let i = 0; i < neighbors.length; i++) {
-                    const neighbor = neighbors[i];
-                    const key = `${neighbor.x}-${neighbor.y}`;
-                    if (closedNodes[key] || neighbor.isWall()) { continue; }
-                    const gScore = currentNode.g + 1 + (neighbor.penalty || 0);
-                    let gScoreIsBest = false;
-                    if (!openHeap.includes(neighbor)) {
-                        gScoreIsBest = true;
-                        neighbor.h = Math.abs(neighbor.x - end.x) + Math.abs(neighbor.y - end.y);
-                        openHeap.push(neighbor);
-                    } else if (gScore < neighbor.g) { gScoreIsBest = true; }
-                    if (gScoreIsBest) {
-                        neighbor.parent = currentNode;
-                        neighbor.g = gScore;
-                        neighbor.f = neighbor.g + neighbor.h;
-                    }
-                }
-            }
-            return [];
-        }
-
-        class GridNode {
-            constructor(x, y, weight) {
-                this.x = x; this.y = y; this.weight = weight;
-                this.f = 0; this.g = 0; this.h = 0;
-                this.parent = null; this.penalty = 0;
-            }
-            isWall() { return this.weight === 1; }
-        }
-
-        class Graph {
-            constructor(gridIn) {
-                this.nodes = []; this.grid = [];
-                for (let y = 0; y < gridIn.length; y++) {
-                    this.grid[y] = [];
-                    for (let x = 0; x < gridIn[y].length; x++) {
-                        const node = new GridNode(x, y, gridIn[y][x]);
-                        this.grid[y][x] = node;
-                        this.nodes.push(node);
-                    }
-                }
-            }
-            neighbors(node) {
-                const ret = []; const x = node.x; const y = node.y;
-                if (this.grid[y - 1] && this.grid[y - 1][x]) ret.push(this.grid[y - 1][x]);
-                if (this.grid[y + 1] && this.grid[y + 1][x]) ret.push(this.grid[y + 1][x]);
-                if (this.grid[y] && this.grid[y][x - 1]) ret.push(this.grid[y][x - 1]);
-                if (this.grid[y] && this.grid[y][x + 1]) ret.push(this.grid[y][x + 1]);
-                return ret;
-            }
-        }
-
         function getColorForNodeId(id) {
             let hash = 0;
             if (id) {
@@ -9534,6 +9468,7 @@ html, body {
         let dragStartNodeX = 0;
         let dragStartNodeY = 0;
         let isDraggingMoved = false;
+        let animFrameId = null;
 
         function renderConnectionsOnly() {
             const container = document.getElementById('main-container');
@@ -9549,39 +9484,8 @@ html, body {
             svgEl.innerHTML = defsOuter;
             defsEl = svgEl.querySelector('defs');
 
-            const containerWidth = container.offsetWidth;
-            const containerHeight = container.offsetHeight;
-            const resolution = 25;
-            const gridWidth = Math.max(1, Math.floor(containerWidth / resolution));
-            const gridHeight = Math.max(1, Math.floor(containerHeight / resolution));
-
-            const grid = Array.from({ length: gridHeight }, () => Array(gridWidth).fill(0));
-
             const currentTabId = activeProfile.activeTabId;
             const tabSubjects = activeProfile.subjects.filter(s => (s.tabId || activeProfile.tabs[0].id) === currentTabId);
-
-            // Mark node obstacles on grid
-            tabSubjects.forEach(sub => {
-                const nodeDocEl = container.querySelector(`.node[data-id="${sub.id}"]`);
-                if (!nodeDocEl) return;
-                const actualWidth = nodeDocEl.offsetWidth || 130;
-                const actualHeight = nodeDocEl.offsetHeight || 60;
-                const nodeLeft = nodeDocEl.offsetLeft;
-                const nodeTop = nodeDocEl.offsetTop;
-
-                const startX = Math.max(0, Math.floor(nodeLeft / resolution));
-                const endX = Math.min(gridWidth - 1, Math.floor((nodeLeft + actualWidth) / resolution));
-                const startY = Math.max(0, Math.floor(nodeTop / resolution));
-                const endY = Math.min(gridHeight - 1, Math.floor((nodeTop + actualHeight) / resolution));
-
-                for (let y = startY; y <= endY; y++) {
-                    for (let x = startX; x <= endX; x++) {
-                        if (grid[y] && grid[y][x] !== undefined) grid[y][x] = 1;
-                    }
-                }
-            });
-
-            const graph = new Graph(grid);
 
             tabSubjects.filter(n => n.dependencies && n.dependencies.length > 0).forEach(node => {
                 const totalDeps = node.dependencies.length;
@@ -9603,186 +9507,118 @@ html, body {
                     const parentLeft = parentDocEl.offsetLeft;
                     const parentTop = parentDocEl.offsetTop;
 
-                    const exactStartX = parentLeft + (parentWidth / 2);
-                    const exactStartY = parentTop + parentHeight;
+                    // Exact Bottom-Center of Parent
+                    const startX = parentLeft + (parentWidth / 2);
+                    const startY = parentTop + parentHeight;
 
+                    // Multi-prerequisite horizontal offset
                     let offsetPx = 0;
                     if (totalDeps > 1) {
-                        const spacingPx = resolution;
+                        const spacingPx = 20;
                         const totalWidthPx = (totalDeps - 1) * spacingPx;
                         offsetPx = (index * spacingPx) - (totalWidthPx / 2);
                     }
 
-                    const exactEndX = targetLeft + (targetWidth / 2) + offsetPx;
-                    const exactEndY = targetTop;
+                    // Exact Top-Center of Child
+                    const endX = targetLeft + (targetWidth / 2) + offsetPx;
+                    const endY = targetTop - 5; // Slight offset for marker arrowhead
 
-                    const startX = Math.max(0, Math.min(gridWidth - 1, Math.floor(exactStartX / resolution)));
-                    const startY = Math.max(0, Math.min(gridHeight - 1, Math.floor(exactStartY / resolution)));
-                    const endX = Math.max(0, Math.min(gridWidth - 1, Math.floor(exactEndX / resolution)));
-                    const endY = Math.max(0, Math.min(gridHeight - 1, Math.floor(exactEndY / resolution)));
+                    // Midpoint channel between rows
+                    const midY = (startY + endY) / 2;
 
-                    if (grid[startY] && grid[startY][startX] !== undefined) graph.grid[startY][startX].weight = 0;
-                    if (grid[endY] && grid[endY][endX] !== undefined) graph.grid[endY][endX].weight = 0;
+                    // Pristine Orthogonal Path: Down -> Across -> Down
+                    const pathString = `M ${startX} ${startY} L ${startX} ${midY} L ${endX} ${midY} L ${endX} ${endY}`;
 
-                    const start = graph.grid[startY] ? graph.grid[startY][startX] : null;
-                    const end = graph.grid[endY] ? graph.grid[endY][endX] : null;
+                    const isCompleted = activeProfile.subjectStates[depId] === 'subject-completed';
+                    const lineId = `line-${depId}-to-${node.id}`;
+                    const colors = getColorForNodeId(depId || "default");
 
-                    if (start && end) {
-                        const resultPath = aStar(graph, start, end);
-                        if (resultPath.length > 0) {
-                            resultPath.forEach(point => {
-                                if (point.x !== startX || point.y !== startY) {
-                                    point.penalty = (point.penalty || 0) + 15;
+                    const uniqueMarkerCompletedId = `marker-comp-${depId}`;
+                    const uniqueMarkerLockedId = `marker-lock-${depId}`;
+
+                    if (defsEl && !document.getElementById(uniqueMarkerCompletedId)) {
+                        const markerComp = document.createElementNS('http://www.w3.org/2000/svg', 'marker');
+                        markerComp.setAttribute('id', uniqueMarkerCompletedId);
+                        markerComp.setAttribute('viewBox', '0 0 10 10');
+                        markerComp.setAttribute('refX', '8');
+                        markerComp.setAttribute('refY', '5');
+                        markerComp.setAttribute('markerWidth', '6');
+                        markerComp.setAttribute('markerHeight', '6');
+                        markerComp.setAttribute('orient', 'auto-start-reverse');
+                        markerComp.innerHTML = `<path d="M 0 0 L 10 5 L 0 10 z" fill="${colors.completedColor}" opacity="0.8" filter="drop-shadow(0 0 2px ${colors.glowColor})"></path>`;
+                        defsEl.appendChild(markerComp);
+
+                        const markerLock = document.createElementNS('http://www.w3.org/2000/svg', 'marker');
+                        markerLock.setAttribute('id', uniqueMarkerLockedId);
+                        markerLock.setAttribute('viewBox', '0 0 10 10');
+                        markerLock.setAttribute('refX', '8');
+                        markerLock.setAttribute('refY', '5');
+                        markerLock.setAttribute('markerWidth', '5');
+                        markerLock.setAttribute('markerHeight', '5');
+                        markerLock.setAttribute('orient', 'auto-start-reverse');
+                        markerLock.innerHTML = `<path d="M 0 0 L 10 5 L 0 10 z" fill="${colors.lockedColor}" opacity="0.6"></path>`;
+                        defsEl.appendChild(markerLock);
+                    }
+
+                    // Background Casing Stroke (clean separation)
+                    const casingEl = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                    casingEl.setAttribute('d', pathString);
+                    casingEl.setAttribute('fill', 'none');
+                    casingEl.setAttribute('stroke', 'var(--bg-container)');
+                    casingEl.setAttribute('stroke-width', isCompleted ? '7' : '6');
+                    casingEl.setAttribute('stroke-linecap', 'round');
+                    casingEl.setAttribute('stroke-linejoin', 'round');
+                    svgEl.appendChild(casingEl);
+
+                    // Forefront Line
+                    const lineEl = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                    lineEl.setAttribute('d', pathString);
+                    lineEl.setAttribute('fill', 'none');
+                    lineEl.setAttribute('marker-end', isCompleted ? `url(#${uniqueMarkerCompletedId})` : `url(#${uniqueMarkerLockedId})`);
+                    lineEl.setAttribute('class', isCompleted ? 'line-completed' : 'line-locked');
+
+                    if (isCompleted) {
+                        lineEl.style.stroke = colors.completedColor;
+                        lineEl.style.filter = `drop-shadow(0 0 3px ${colors.glowColor})`;
+                        lineEl.style.strokeWidth = "3";
+                    } else {
+                        lineEl.style.stroke = colors.lockedColor;
+                        lineEl.style.strokeWidth = "2";
+                        lineEl.style.strokeDasharray = "4, 4";
+                    }
+
+                    svgEl.appendChild(lineEl);
+
+                    // Periodic Energy Pulse Animation along active lines
+                    const isTargetCompleted = activeProfile.subjectStates[node.id] === 'subject-completed';
+                    if (isCompleted && !isTargetCompleted) {
+                        const pulseId = `pulse-${lineId}`;
+                        if (!document.getElementById(pulseId)) {
+                            const pulseEl = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                            pulseEl.setAttribute('id', pulseId);
+                            pulseEl.setAttribute('d', pathString);
+                            pulseEl.setAttribute('fill', 'none');
+                            pulseEl.setAttribute('stroke', '#ffffff');
+                            pulseEl.setAttribute('stroke-width', '4');
+                            pulseEl.setAttribute('stroke-linecap', 'round');
+                            pulseEl.setAttribute('stroke-linejoin', 'round');
+                            pulseEl.setAttribute('opacity', '0.6');
+                            pulseEl.style.filter = `drop-shadow(0 0 4px ${colors.completedColor}) drop-shadow(0 0 8px ${colors.glowColor})`;
+
+                            svgEl.appendChild(pulseEl);
+
+                            setTimeout(() => {
+                                const length = pulseEl.getTotalLength();
+                                if (length > 0) {
+                                    const dashLength = Math.max(15, length * 0.15);
+                                    pulseEl.style.strokeDasharray = `${dashLength}, ${length * 3}`;
+                                    pulseEl.style.setProperty('--pulse-start', length + dashLength);
+                                    pulseEl.style.setProperty('--pulse-end', -length);
+                                    pulseEl.style.opacity = '0';
+                                    const delay = (2.5 + Math.random() * 6).toFixed(1);
+                                    pulseEl.style.animation = `travelPulse 2.5s ease-in-out infinite ${delay}s`;
                                 }
-                            });
-
-                            const adjustedEndY = exactEndY - 5;
-                            let pathString = `M ${exactStartX} ${exactStartY}`;
-
-                            const isLineClear = (x1, y1, x2, y2) => {
-                                const minX = Math.min(x1, x2), maxX = Math.max(x1, x2);
-                                const minY = Math.min(y1, y2), maxY = Math.max(y1, y2);
-                                for (let y = minY; y <= maxY; y++) {
-                                    for (let x = minX; x <= maxX; x++) {
-                                        if (grid[y] && grid[y][x] === 1) {
-                                            if (!((x >= startX - 1 && x <= startX + 1 && y >= startY - 1 && y <= startY + 1) ||
-                                                (x >= endX - 1 && x <= endX + 1 && y >= endY - 1 && y <= endY + 1))) {
-                                                return false;
-                                            }
-                                        }
-                                    }
-                                }
-                                return true;
-                            };
-
-                            const midGridY = Math.floor((startY + endY) / 2);
-                            const exactMidY = (exactStartY + adjustedEndY) / 2;
-
-                            if (startX === endX && offsetPx === 0 && isLineClear(startX, startY, endX, endY)) {
-                                pathString += ` L ${exactStartX} ${adjustedEndY}`;
-                            } else if (isLineClear(startX, startY, startX, midGridY) &&
-                                       isLineClear(startX, midGridY, endX, midGridY) &&
-                                       isLineClear(endX, midGridY, endX, endY)) {
-                                pathString += ` L ${exactStartX} ${exactMidY}`;
-                                pathString += ` L ${exactEndX} ${exactMidY}`;
-                                pathString += ` L ${exactEndX} ${adjustedEndY}`;
-                            } else if (resultPath.length > 2) {
-                                const firstGrid = resultPath[1];
-                                const firstGridX = firstGrid.x * resolution + resolution / 2;
-                                const firstGridY = firstGrid.y * resolution + resolution / 2;
-
-                                pathString += ` L ${exactStartX} ${firstGridY}`;
-                                pathString += ` L ${firstGridX} ${firstGridY}`;
-
-                                for (let i = 2; i < resultPath.length - 1; i++) {
-                                    const point = resultPath[i];
-                                    pathString += ` L ${point.x * resolution + resolution / 2} ${point.y * resolution + resolution / 2}`;
-                                }
-
-                                const lastGrid = resultPath[resultPath.length - 2];
-                                const lastGridY = lastGrid.y * resolution + resolution / 2;
-
-                                pathString += ` L ${exactEndX} ${lastGridY}`;
-                                pathString += ` L ${exactEndX} ${adjustedEndY}`;
-                            } else {
-                                const midY = (exactStartY + adjustedEndY) / 2;
-                                pathString += ` L ${exactStartX} ${midY}`;
-                                pathString += ` L ${exactEndX} ${midY}`;
-                                pathString += ` L ${exactEndX} ${adjustedEndY}`;
-                            }
-
-                            const isCompleted = activeProfile.subjectStates[depId] === 'subject-completed';
-                            const lineId = `line-${depId}-to-${node.id}`;
-                            const colors = getColorForNodeId(depId || "default");
-
-                            const uniqueMarkerCompletedId = `marker-comp-${depId}`;
-                            const uniqueMarkerLockedId = `marker-lock-${depId}`;
-
-                            if (defsEl && !document.getElementById(uniqueMarkerCompletedId)) {
-                                const markerComp = document.createElementNS('http://www.w3.org/2000/svg', 'marker');
-                                markerComp.setAttribute('id', uniqueMarkerCompletedId);
-                                markerComp.setAttribute('viewBox', '0 0 10 10');
-                                markerComp.setAttribute('refX', '8');
-                                markerComp.setAttribute('refY', '5');
-                                markerComp.setAttribute('markerWidth', '6');
-                                markerComp.setAttribute('markerHeight', '6');
-                                markerComp.setAttribute('orient', 'auto-start-reverse');
-                                markerComp.innerHTML = `<path d="M 0 0 L 10 5 L 0 10 z" fill="${colors.completedColor}" opacity="0.6" filter="drop-shadow(0 0 2px ${colors.glowColor})"></path>`;
-                                defsEl.appendChild(markerComp);
-
-                                const markerLock = document.createElementNS('http://www.w3.org/2000/svg', 'marker');
-                                markerLock.setAttribute('id', uniqueMarkerLockedId);
-                                markerLock.setAttribute('viewBox', '0 0 10 10');
-                                markerLock.setAttribute('refX', '8');
-                                markerLock.setAttribute('refY', '5');
-                                markerLock.setAttribute('markerWidth', '5');
-                                markerLock.setAttribute('markerHeight', '5');
-                                markerLock.setAttribute('orient', 'auto-start-reverse');
-                                markerLock.innerHTML = `<path d="M 0 0 L 10 5 L 0 10 z" fill="${colors.lockedColor}" opacity="0.6"></path>`;
-                                defsEl.appendChild(markerLock);
-                            }
-
-                            // Background Casing stroke
-                            const casingEl = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-                            casingEl.setAttribute('d', pathString);
-                            casingEl.setAttribute('fill', 'none');
-                            casingEl.setAttribute('stroke', 'var(--bg-container)');
-                            casingEl.setAttribute('stroke-width', isCompleted ? '7' : '6');
-                            casingEl.setAttribute('stroke-linecap', 'round');
-                            casingEl.setAttribute('stroke-linejoin', 'round');
-                            svgEl.appendChild(casingEl);
-
-                            // Forefront line
-                            const lineEl = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-                            lineEl.setAttribute('d', pathString);
-                            lineEl.setAttribute('fill', 'none');
-                            lineEl.setAttribute('marker-end', isCompleted ? `url(#${uniqueMarkerCompletedId})` : `url(#${uniqueMarkerLockedId})`);
-                            lineEl.setAttribute('class', isCompleted ? 'line-completed' : 'line-locked');
-
-                            if (isCompleted) {
-                                lineEl.style.stroke = colors.completedColor;
-                                lineEl.style.filter = `drop-shadow(0 0 3px ${colors.glowColor})`;
-                                lineEl.style.strokeWidth = "3";
-                            } else {
-                                lineEl.style.stroke = colors.lockedColor;
-                                lineEl.style.strokeWidth = "2";
-                                lineEl.style.strokeDasharray = "4, 4";
-                            }
-
-                            svgEl.appendChild(lineEl);
-
-                            // Periodic Energy Pulse Animation along active lines
-                            const isTargetCompleted = activeProfile.subjectStates[node.id] === 'subject-completed';
-                            if (isCompleted && !isTargetCompleted) {
-                                const pulseId = `pulse-${lineId}`;
-                                if (!document.getElementById(pulseId)) {
-                                    const pulseEl = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-                                    pulseEl.setAttribute('id', pulseId);
-                                    pulseEl.setAttribute('d', pathString);
-                                    pulseEl.setAttribute('fill', 'none');
-                                    pulseEl.setAttribute('stroke', '#ffffff');
-                                    pulseEl.setAttribute('stroke-width', '4');
-                                    pulseEl.setAttribute('stroke-linecap', 'round');
-                                    pulseEl.setAttribute('stroke-linejoin', 'round');
-                                    pulseEl.setAttribute('opacity', '0.6');
-                                    pulseEl.style.filter = `drop-shadow(0 0 4px ${colors.completedColor}) drop-shadow(0 0 8px ${colors.glowColor})`;
-
-                                    svgEl.appendChild(pulseEl);
-
-                                    setTimeout(() => {
-                                        const length = pulseEl.getTotalLength();
-                                        if (length > 0) {
-                                            const dashLength = Math.max(15, length * 0.15);
-                                            pulseEl.style.strokeDasharray = `${dashLength}, ${length * 3}`;
-                                            pulseEl.style.setProperty('--pulse-start', length + dashLength);
-                                            pulseEl.style.setProperty('--pulse-end', -length);
-                                            pulseEl.style.opacity = '0';
-                                            const delay = (2.5 + Math.random() * 6).toFixed(1);
-                                            pulseEl.style.animation = `travelPulse 2.5s ease-in-out infinite ${delay}s`;
-                                        }
-                                    }, 50);
-                                }
-                            }
+                            }, 50);
                         }
                     }
                 });
@@ -9934,14 +9770,11 @@ html, body {
                 container.appendChild(nodeEl);
             });
 
-            setTimeout(() => {
-                renderConnectionsOnly();
-            }, 10);
-
+            renderConnectionsOnly();
             updateProgress();
         }
 
-        // Window Mouse Events for Dragging Nodes
+        // Window Mouse Events for Dragging Nodes (using requestAnimationFrame for smooth 60fps)
         window.addEventListener('mousemove', (e) => {
             if (!draggingSubjectId) return;
 
@@ -9973,7 +9806,10 @@ html, body {
                 sub.customY = newYPx;
             }
 
-            renderConnectionsOnly();
+            if (animFrameId) cancelAnimationFrame(animFrameId);
+            animFrameId = requestAnimationFrame(() => {
+                renderConnectionsOnly();
+            });
         });
 
         window.addEventListener('mouseup', () => {
@@ -10442,6 +10278,9 @@ html, body {
         selects.forEach(function(s) { s.value = currentTheme; });
     });
     </script>
+
+    
+
 
     
 
