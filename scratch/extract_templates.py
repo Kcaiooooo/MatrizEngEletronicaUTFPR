@@ -39,6 +39,8 @@ def parse_subject_blocks(code_snippet, default_tab_id):
         m_period = re.search(r"period:\s*(\d+)", block)
         m_cht = re.search(r"cht:\s*(\d+)", block)
         m_deps = re.search(r"dependencies:\s*\[(.*?)\]", block, re.DOTALL)
+        m_x = re.search(r"x:\s*([\d\.]+)", block)
+        m_y = re.search(r"y:\s*([\d\.]+)", block)
         
         if m_id and m_name and m_period and m_cht:
             s_id = m_id.group(1).strip()
@@ -56,14 +58,20 @@ def parse_subject_blocks(code_snippet, default_tab_id):
                 deps = [d.strip().strip("'\"") for d in raw_deps.split(',') if d.strip().strip("'\"")]
                 deps = [d for d in deps if not d.startswith('Periodo:')]
                 
-            sub_list.append({
+            sub_obj = {
                 'id': s_id,
                 'name': s_name,
                 'period': s_period,
                 'cht': s_cht,
                 'dependencies': deps,
                 'tabId': default_tab_id
-            })
+            }
+            if m_x:
+                sub_obj['x'] = float(m_x.group(1))
+            if m_y:
+                sub_obj['y'] = float(m_y.group(1))
+
+            sub_list.append(sub_obj)
     return sub_list
 
 templates = {}
@@ -90,4 +98,4 @@ for key, path in files.items():
 with open('scratch/templates.json', 'w', encoding='utf-8') as out:
     json.dump(templates, out, ensure_ascii=False, indent=2)
 
-print("Saved updated templates.json with exact bracket matching!")
+print("Saved updated templates.json with x and y coordinates!")
