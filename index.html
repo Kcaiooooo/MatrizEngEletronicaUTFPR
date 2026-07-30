@@ -603,7 +603,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 <button type="button" onclick="closeRequestCourseModal()" class="text-gray-400 hover:text-white text-2xl font-bold cursor-pointer">&times;</button>
             </div>
 
-            <form id="form-request-course" onsubmit="submitRequestCourseForm(event)" class="space-y-4">
+            <form id="form-request-course" action="https://formsubmit.co/7c913242673a4723e187318fe0fd47d3" method="POST" enctype="multipart/form-data" class="space-y-4">
+                <input type="hidden" name="_subject" id="req-email-subject" value="[K-Matrizes] Nova Matriz Solicitada!">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+
                 <!-- Passo 1: Identificação -->
                 <div class="space-y-2.5">
                     <div class="flex items-center gap-2 text-xs font-bold text-blue-400 uppercase tracking-wider">
@@ -613,12 +617,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     <div>
                         <label class="block text-xs font-medium text-gray-300 mb-1">Nome do Curso *</label>
-                        <input type="text" id="req-course-name" required placeholder="ex: Engenharia Mecânica" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm text-gray-100 focus:outline-none focus:border-blue-500">
+                        <input type="text" name="Nome do Curso" id="req-course-name" required placeholder="ex: Engenharia Mecânica" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm text-gray-100 focus:outline-none focus:border-blue-500">
                     </div>
 
                     <div>
                         <label class="block text-xs font-medium text-gray-300 mb-1">Instituição / Câmpus *</label>
-                        <input type="text" id="req-institution" required placeholder="ex: UTFPR - Curitiba, Ponta Grossa, etc." class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm text-gray-100 focus:outline-none focus:border-blue-500">
+                        <input type="text" name="Instituição / Câmpus" id="req-institution" required placeholder="ex: UTFPR - Curitiba, Ponta Grossa, etc." class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm text-gray-100 focus:outline-none focus:border-blue-500">
                     </div>
                 </div>
 
@@ -654,7 +658,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     <div>
                         <label class="block text-xs font-medium text-gray-300 mb-1">Faça o upload da sua matriz (PDF) *</label>
-                        <input type="file" id="req-pdf-file" accept=".pdf" required class="w-full bg-gray-800 border border-gray-700 rounded-lg p-2 text-xs text-gray-300 cursor-pointer file:mr-3 file:py-1 file:px-3 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-500">
+                        <!-- FormSubmit requer name="attachment" para enviar o PDF anexo no e-mail -->
+                        <input type="file" name="attachment" id="req-pdf-file" accept=".pdf" required class="w-full bg-gray-800 border border-gray-700 rounded-lg p-2 text-xs text-gray-300 cursor-pointer file:mr-3 file:py-1 file:px-3 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-500">
                     </div>
 
                     <div class="text-xs text-gray-300 bg-gray-800/70 p-2.5 rounded-lg border border-gray-700 text-center leading-relaxed">
@@ -695,11 +700,13 @@ document.addEventListener('DOMContentLoaded', function() {
         async function submitRequestCourseForm(e) {
         e.preventDefault();
 
+        const form = document.getElementById('form-request-course');
         const courseName = document.getElementById('req-course-name').value.trim();
         const institution = document.getElementById('req-institution').value.trim();
         const pdfFile = document.getElementById('req-pdf-file').files[0];
         const statusMsg = document.getElementById('req-status-msg');
         const btnSubmit = document.getElementById('btn-submit-req');
+        const subjectInput = document.getElementById('req-email-subject');
 
         if (!courseName || !institution || !pdfFile) {
             if (statusMsg) {
@@ -709,8 +716,12 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
+        if (subjectInput) {
+            subjectInput.value = `[K-Matrizes] Nova Matriz: ${courseName} - ${institution}`;
+        }
+
         if (statusMsg) {
-            statusMsg.textContent = '⏳ Enviando matriz diretamente para o Desenvolvedor...';
+            statusMsg.textContent = '⏳ Anexando arquivo PDF e enviando para o Desenvolvedor...';
             statusMsg.className = 'text-xs text-center text-yellow-400 font-semibold';
         }
         if (btnSubmit) {
@@ -718,40 +729,25 @@ document.addEventListener('DOMContentLoaded', function() {
             btnSubmit.innerHTML = '<span>⏳ Enviando...</span>';
         }
 
-        // Prepare AJAX FormData for automatic background delivery without opening email client
-        const formData = new FormData();
-        formData.append('_subject', `[K-Matrizes] Nova Matriz Solicitada: ${courseName} - ${institution}`);
-        formData.append('_captcha', 'false');
-        formData.append('_template', 'table');
-        formData.append('Curso', courseName);
-        formData.append('Instituição / Câmpus', institution);
-        formData.append('Arquivo Matriz PDF', pdfFile);
+        const formData = new FormData(form);
 
         try {
             const response = await fetch('https://formsubmit.co/ajax/7c913242673a4723e187318fe0fd47d3', {
                 method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
+                body: formData
             });
 
             const result = await response.json().catch(() => ({ success: 'true' }));
 
             if (statusMsg) {
-                statusMsg.textContent = '✅ Matriz enviada com sucesso ao Desenvolvedor!';
+                statusMsg.textContent = '✅ Matriz e PDF enviados com sucesso ao Desenvolvedor!';
                 statusMsg.className = 'text-xs text-center text-emerald-400 font-semibold';
             }
 
             setTimeout(() => {
-                alert(`🚀 Solicitação enviada com sucesso!
-
-Curso: ${courseName}
-Instituição: ${institution}
-
-Obrigado por ajudar a expandir o K-Matrizes!`);
+                alert(`🚀 Solicitação enviada com sucesso!\n\nCurso: ${courseName}\nInstituição: ${institution}\nArquivo PDF: ${pdfFile.name}\n\nObrigado por ajudar a expandir o K-Matrizes!`);
                 closeRequestCourseModal();
-                document.getElementById('form-request-course').reset();
+                form.reset();
                 if (btnSubmit) {
                     btnSubmit.disabled = false;
                     btnSubmit.innerHTML = '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg><span>Enviar matriz para o Dev</span>';
@@ -760,27 +756,15 @@ Obrigado por ajudar a expandir o K-Matrizes!`);
             }, 1200);
 
         } catch (error) {
-            console.error('Erro no envio automático via Fetch:', error);
-
-            // Fallback for offline/adblockers: use mailto link
-            const emailSubject = encodeURIComponent(`[K-Matrizes] Nova Matriz: ${courseName} - ${institution}`);
-            const emailBody = encodeURIComponent(`Olá Dev!
-
-Nova solicitação de matriz:
-- Curso: ${courseName}
-- Instituição: ${institution}
-- Arquivo: ${pdfFile.name}`);
-            window.location.href = `mailto:caiocosta281214@gmail.com?subject=${emailSubject}&body=${emailBody}`;
-
-            if (btnSubmit) {
-                btnSubmit.disabled = false;
-                btnSubmit.innerHTML = '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg><span>Enviar matriz para o Dev</span>';
-            }
-            if (statusMsg) statusMsg.textContent = '';
-            closeRequestCourseModal();
+            console.error('Erro no envio automático:', error);
+            // Submit form natively as multipart fallback
+            form.submit();
         }
     }
     </script>
+
+
+    
 
 
     
