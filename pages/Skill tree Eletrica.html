@@ -5,11 +5,11 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJV3L9BNMQ"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'G-HJV3L9BNMQ');
+        gtag('config', 'G-HJV3L9BNMQ');
     </script>
 
     <meta charset="UTF-8">
@@ -21,7 +21,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Slab:wght@700&display=swap"
         rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -521,311 +521,328 @@
         /* ================================================= */
         /* === ESTILOS PARA DISPOSITIVOS MÓVEIS (FIM) ==== */
         /* ================================================= */
-    
+
         .modal-overlay.hidden {
             display: none !important;
             opacity: 0 !important;
             pointer-events: none !important;
         }
+
         .modal-overlay.active {
             opacity: 1 !important;
             pointer-events: auto !important;
             display: flex !important;
         }
-    
-</style>
-<style>
+    </style>
+    <style>
+        /* Theme Custom Properties & Global Overrides */
+        :root,
+        [data-theme="dark"] {
+            --bg-main: #111827;
+            --bg-sec: #1f2937;
+            --bg-card: #1f2937;
+            --bg-panel: #1f2937;
+            --bg-container: #111827;
+            --bg-grid: rgba(255, 255, 255, 0.04);
+            --text-main: #f3f4f6;
+            --text-sec: #d1d5db;
+            --text-muted: #9ca3af;
+            --border-main: #374151;
+            --border-subtle: #4b5563;
 
-/* Theme Custom Properties & Global Overrides */
-:root, [data-theme="dark"] {
-    --bg-main: #111827;
-    --bg-sec: #1f2937;
-    --bg-card: #1f2937;
-    --bg-panel: #1f2937;
-    --bg-container: #111827;
-    --bg-grid: rgba(255, 255, 255, 0.04);
-    --text-main: #f3f4f6;
-    --text-sec: #d1d5db;
-    --text-muted: #9ca3af;
-    --border-main: #374151;
-    --border-subtle: #4b5563;
-    
-    --node-locked-bg: #374151;
-    --node-locked-border: #4b5563;
-    --node-locked-text: #9ca3af;
-    
-    --node-avail-bg: #2563eb;
-    --node-avail-border: #60a5fa;
-    --node-avail-text: #ffffff;
-    --node-avail-shadow: rgba(59, 130, 246, 0.5);
-    
-    --node-comp-bg: #16a34a;
-    --node-comp-border: #4ade80;
-    --node-comp-text: #ffffff;
-    --node-comp-shadow: rgba(74, 222, 128, 0.7);
-    
-    --node-inprog-bg: #ea580c;
-    --node-inprog-border: #f97316;
-    --node-inprog-text: #ffffff;
-    --node-inprog-shadow: rgba(234, 88, 12, 0.5);
-    
-    --node-satis-bg: #4a4a28;
-    --node-satis-border: #fbbf24;
-    --node-satis-text: #fde68a;
+            --node-locked-bg: #374151;
+            --node-locked-border: #4b5563;
+            --node-locked-text: #9ca3af;
 
-    --line-default: #4b5563;
-    --line-active: #60a5fa;
-}
+            --node-avail-bg: #2563eb;
+            --node-avail-border: #60a5fa;
+            --node-avail-text: #ffffff;
+            --node-avail-shadow: rgba(59, 130, 246, 0.5);
 
-[data-theme="light"] {
-    --bg-main: #f8fafc;
-    --bg-sec: #ffffff;
-    --bg-card: #ffffff;
-    --bg-panel: #f1f5f9;
-    --bg-container: #f8fafc;
-    --bg-grid: rgba(0, 0, 0, 0.06);
-    --text-main: #0f172a;
-    --text-sec: #334155;
-    --text-muted: #64748b;
-    --border-main: #e2e8f0;
-    --border-subtle: #cbd5e1;
-    
-    --node-locked-bg: #e2e8f0;
-    --node-locked-border: #94a3b8;
-    --node-locked-text: #475569;
-    
-    --node-avail-bg: #2563eb;
-    --node-avail-border: #1d4ed8;
-    --node-avail-text: #ffffff;
-    --node-avail-shadow: rgba(37, 99, 235, 0.3);
-    
-    --node-comp-bg: #16a34a;
-    --node-comp-border: #15803d;
-    --node-comp-text: #ffffff;
-    --node-comp-shadow: rgba(22, 163, 74, 0.35);
-    
-    --node-inprog-bg: #ea580c;
-    --node-inprog-border: #c2410c;
-    --node-inprog-text: #ffffff;
-    --node-inprog-shadow: rgba(234, 88, 12, 0.35);
-    
-    --node-satis-bg: #fef08a;
-    --node-satis-border: #d97706;
-    --node-satis-text: #78350f;
+            --node-comp-bg: #16a34a;
+            --node-comp-border: #4ade80;
+            --node-comp-text: #ffffff;
+            --node-comp-shadow: rgba(74, 222, 128, 0.7);
 
-    --line-default: #94a3b8;
-    --line-active: #2563eb;
-}
+            --node-inprog-bg: #ea580c;
+            --node-inprog-border: #f97316;
+            --node-inprog-text: #ffffff;
+            --node-inprog-shadow: rgba(234, 88, 12, 0.5);
 
-[data-theme="utfpr"] {
-    --bg-main: #0d0d0d;
-    --bg-sec: #171717;
-    --bg-card: #171717;
-    --bg-panel: #262626;
-    --bg-container: #0d0d0d;
-    --bg-grid: rgba(245, 158, 11, 0.08);
-    --text-main: #fffbeb;
-    --text-sec: #fef08a;
-    --text-muted: #d97706;
-    --border-main: #451a03;
-    --border-subtle: #78350f;
-    
-    --node-locked-bg: #262626;
-    --node-locked-border: #404040;
-    --node-locked-text: #a3a3a3;
-    
-    --node-avail-bg: #d97706;
-    --node-avail-border: #fbbf24;
-    --node-avail-text: #ffffff;
-    --node-avail-shadow: rgba(245, 158, 11, 0.5);
-    
-    --node-comp-bg: #15803d;
-    --node-comp-border: #4ade80;
-    --node-comp-text: #ffffff;
-    --node-comp-shadow: rgba(74, 222, 128, 0.5);
-    
-    --node-inprog-bg: #ea580c;
-    --node-inprog-border: #fb923c;
-    --node-inprog-text: #ffffff;
-    --node-inprog-shadow: rgba(249, 115, 22, 0.5);
-    
-    --node-satis-bg: #713f12;
-    --node-satis-border: #fef08a;
-    --node-satis-text: #fef9c3;
+            --node-satis-bg: #4a4a28;
+            --node-satis-border: #fbbf24;
+            --node-satis-text: #fde68a;
 
-    --line-default: #525252;
-    --line-active: #f59e0b;
-}
+            --line-default: #4b5563;
+            --line-active: #60a5fa;
+        }
 
-[data-theme="dracula"] {
-    --bg-main: #181825;
-    --bg-sec: #1e1e2e;
-    --bg-card: #1e1e2e;
-    --bg-panel: #313244;
-    --bg-container: #11111b;
-    --bg-grid: rgba(203, 166, 247, 0.08);
-    --text-main: #cdd6f4;
-    --text-sec: #bac2de;
-    --text-muted: #a6adc8;
-    --border-main: #45475a;
-    --border-subtle: #585b70;
-    
-    --node-locked-bg: #313244;
-    --node-locked-border: #45475a;
-    --node-locked-text: #6c7086;
-    
-    --node-avail-bg: #89b4fa;
-    --node-avail-border: #b4befe;
-    --node-avail-text: #11111b;
-    --node-avail-shadow: rgba(137, 180, 250, 0.5);
-    
-    --node-comp-bg: #a6e3a1;
-    --node-comp-border: #94e2d5;
-    --node-comp-text: #11111b;
-    --node-comp-shadow: rgba(166, 227, 161, 0.6);
-    
-    --node-inprog-bg: #fab387;
-    --node-inprog-border: #f9e2af;
-    --node-inprog-text: #11111b;
-    --node-inprog-shadow: rgba(250, 179, 135, 0.5);
-    
-    --node-satis-bg: #585b70;
-    --node-satis-border: #f5c2e7;
-    --node-satis-text: #cdd6f4;
+        [data-theme="light"] {
+            --bg-main: #f8fafc;
+            --bg-sec: #ffffff;
+            --bg-card: #ffffff;
+            --bg-panel: #f1f5f9;
+            --bg-container: #f8fafc;
+            --bg-grid: rgba(0, 0, 0, 0.06);
+            --text-main: #0f172a;
+            --text-sec: #334155;
+            --text-muted: #64748b;
+            --border-main: #e2e8f0;
+            --border-subtle: #cbd5e1;
 
-    --line-default: #585b70;
-    --line-active: #cba6f7;
-}
+            --node-locked-bg: #e2e8f0;
+            --node-locked-border: #94a3b8;
+            --node-locked-text: #475569;
 
-/* Theme Global Overrides */
-html, body {
-    background-color: var(--bg-main) !important;
-    color: var(--text-sec) !important;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
+            --node-avail-bg: #2563eb;
+            --node-avail-border: #1d4ed8;
+            --node-avail-text: #ffffff;
+            --node-avail-shadow: rgba(37, 99, 235, 0.3);
 
-.selection-card {
-    background-color: var(--bg-card) !important;
-    border-color: var(--border-main) !important;
-}
+            --node-comp-bg: #16a34a;
+            --node-comp-border: #15803d;
+            --node-comp-text: #ffffff;
+            --node-comp-shadow: rgba(22, 163, 74, 0.35);
 
-details {
-    background-color: var(--bg-sec) !important;
-    border-color: var(--border-main) !important;
-    color: var(--text-sec) !important;
-}
+            --node-inprog-bg: #ea580c;
+            --node-inprog-border: #c2410c;
+            --node-inprog-text: #ffffff;
+            --node-inprog-shadow: rgba(234, 88, 12, 0.35);
 
-footer {
-    background-color: var(--bg-sec) !important;
-    border-color: var(--border-main) !important;
-}
+            --node-satis-bg: #fef08a;
+            --node-satis-border: #d97706;
+            --node-satis-text: #78350f;
 
-.modal-box {
-    background-color: var(--bg-card) !important;
-    border-color: var(--border-main) !important;
-    color: var(--text-sec) !important;
-}
+            --line-default: #94a3b8;
+            --line-active: #2563eb;
+        }
 
-#main-container,
-#humanities-container,
-#optional-container {
-    background-color: var(--bg-container) !important;
-    background-image:
-        linear-gradient(var(--bg-grid) 1px, transparent 1px),
-        linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px) !important;
-}
+        [data-theme="utfpr"] {
+            --bg-main: #0d0d0d;
+            --bg-sec: #171717;
+            --bg-card: #171717;
+            --bg-panel: #262626;
+            --bg-container: #0d0d0d;
+            --bg-grid: rgba(245, 158, 11, 0.08);
+            --text-main: #fffbeb;
+            --text-sec: #fef08a;
+            --text-muted: #d97706;
+            --border-main: #451a03;
+            --border-subtle: #78350f;
 
-#progress-panel,
-.bg-gray-700 {
-    background-color: var(--bg-panel) !important;
-    color: var(--text-main) !important;
-    border: 1px solid var(--border-main) !important;
-}
+            --node-locked-bg: #262626;
+            --node-locked-border: #404040;
+            --node-locked-text: #a3a3a3;
 
-.subject-locked, .humanities-locked, .optional-locked {
-    background-color: var(--node-locked-bg) !important;
-    border-color: var(--node-locked-border) !important;
-    color: var(--node-locked-text) !important;
-}
+            --node-avail-bg: #d97706;
+            --node-avail-border: #fbbf24;
+            --node-avail-text: #ffffff;
+            --node-avail-shadow: rgba(245, 158, 11, 0.5);
 
-.subject-available, .humanities-available, .optional-available {
-    background-color: var(--node-avail-bg) !important;
-    border-color: var(--node-avail-border) !important;
-    color: var(--node-avail-text) !important;
-    box-shadow: 0 0 15px var(--node-avail-shadow) !important;
-}
+            --node-comp-bg: #15803d;
+            --node-comp-border: #4ade80;
+            --node-comp-text: #ffffff;
+            --node-comp-shadow: rgba(74, 222, 128, 0.5);
 
-.subject-completed, .humanities-completed, .optional-completed {
-    background-color: var(--node-comp-bg) !important;
-    border-color: var(--node-comp-border) !important;
-    color: var(--node-comp-text) !important;
-    box-shadow: 0 0 20px var(--node-comp-shadow) !important;
-}
+            --node-inprog-bg: #ea580c;
+            --node-inprog-border: #fb923c;
+            --node-inprog-text: #ffffff;
+            --node-inprog-shadow: rgba(249, 115, 22, 0.5);
 
-.subject-inprogress, .humanities-inprogress, .optional-inprogress {
-    background-color: var(--node-inprog-bg) !important;
-    border-color: var(--node-inprog-border) !important;
-    color: var(--node-inprog-text) !important;
-    box-shadow: 0 0 15px var(--node-inprog-shadow) !important;
-}
+            --node-satis-bg: #713f12;
+            --node-satis-border: #fef08a;
+            --node-satis-text: #fef9c3;
 
-.subject-satisfied, .humanities-satisfied, .optional-satisfied {
-    background-color: var(--node-satis-bg) !important;
-    border-color: var(--node-satis-border) !important;
-    color: var(--node-satis-text) !important;
-}
+            --line-default: #525252;
+            --line-active: #f59e0b;
+        }
 
-/* Light Mode Specific Utility Overrides */
-[data-theme="light"] .text-gray-200,
-[data-theme="light"] .text-gray-300 {
-    color: #1e293b !important;
-}
-[data-theme="light"] .text-gray-400 {
-    color: #475569 !important;
-}
-[data-theme="light"] .bg-gray-800 {
-    background-color: #f1f5f9 !important;
-    color: #0f172a !important;
-    border-color: #cbd5e1 !important;
-}
-[data-theme="light"] .bg-gray-900 {
-    background-color: #e2e8f0 !important;
-    color: #0f172a !important;
-}
-[data-theme="light"] .bg-gray-600 {
-    background-color: #cbd5e1 !important;
-}
-[data-theme="light"] .border-gray-600,
-[data-theme="light"] .border-gray-700 {
-    border-color: #cbd5e1 !important;
-}
+        [data-theme="dracula"] {
+            --bg-main: #181825;
+            --bg-sec: #1e1e2e;
+            --bg-card: #1e1e2e;
+            --bg-panel: #313244;
+            --bg-container: #11111b;
+            --bg-grid: rgba(203, 166, 247, 0.08);
+            --text-main: #cdd6f4;
+            --text-sec: #bac2de;
+            --text-muted: #a6adc8;
+            --border-main: #45475a;
+            --border-subtle: #585b70;
 
-/* UTFPR Gold Specific Utility Overrides */
-[data-theme="utfpr"] .bg-gray-800 {
-    background-color: #171717 !important;
-    color: #fef08a !important;
-    border-color: #451a03 !important;
-}
-[data-theme="utfpr"] .bg-gray-900 {
-    background-color: #0a0a0a !important;
-}
+            --node-locked-bg: #313244;
+            --node-locked-border: #45475a;
+            --node-locked-text: #6c7086;
 
-/* Roxo Specific Utility Overrides */
-[data-theme="dracula"] .bg-gray-800 {
-    background-color: #1e1e2e !important;
-    color: #cdd6f4 !important;
-    border-color: #45475a !important;
-}
-[data-theme="dracula"] .bg-gray-900 {
-    background-color: #11111b !important;
-}
+            --node-avail-bg: #89b4fa;
+            --node-avail-border: #b4befe;
+            --node-avail-text: #11111b;
+            --node-avail-shadow: rgba(137, 180, 250, 0.5);
 
-</style>
+            --node-comp-bg: #a6e3a1;
+            --node-comp-border: #94e2d5;
+            --node-comp-text: #11111b;
+            --node-comp-shadow: rgba(166, 227, 161, 0.6);
+
+            --node-inprog-bg: #fab387;
+            --node-inprog-border: #f9e2af;
+            --node-inprog-text: #11111b;
+            --node-inprog-shadow: rgba(250, 179, 135, 0.5);
+
+            --node-satis-bg: #585b70;
+            --node-satis-border: #f5c2e7;
+            --node-satis-text: #cdd6f4;
+
+            --line-default: #585b70;
+            --line-active: #cba6f7;
+        }
+
+        /* Theme Global Overrides */
+        html,
+        body {
+            background-color: var(--bg-main) !important;
+            color: var(--text-sec) !important;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .selection-card {
+            background-color: var(--bg-card) !important;
+            border-color: var(--border-main) !important;
+        }
+
+        details {
+            background-color: var(--bg-sec) !important;
+            border-color: var(--border-main) !important;
+            color: var(--text-sec) !important;
+        }
+
+        footer {
+            background-color: var(--bg-sec) !important;
+            border-color: var(--border-main) !important;
+        }
+
+        .modal-box {
+            background-color: var(--bg-card) !important;
+            border-color: var(--border-main) !important;
+            color: var(--text-sec) !important;
+        }
+
+        #main-container,
+        #humanities-container,
+        #optional-container {
+            background-color: var(--bg-container) !important;
+            background-image:
+                linear-gradient(var(--bg-grid) 1px, transparent 1px),
+                linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px) !important;
+        }
+
+        #progress-panel,
+        .bg-gray-700 {
+            background-color: var(--bg-panel) !important;
+            color: var(--text-main) !important;
+            border: 1px solid var(--border-main) !important;
+        }
+
+        .subject-locked,
+        .humanities-locked,
+        .optional-locked {
+            background-color: var(--node-locked-bg) !important;
+            border-color: var(--node-locked-border) !important;
+            color: var(--node-locked-text) !important;
+        }
+
+        .subject-available,
+        .humanities-available,
+        .optional-available {
+            background-color: var(--node-avail-bg) !important;
+            border-color: var(--node-avail-border) !important;
+            color: var(--node-avail-text) !important;
+            box-shadow: 0 0 15px var(--node-avail-shadow) !important;
+        }
+
+        .subject-completed,
+        .humanities-completed,
+        .optional-completed {
+            background-color: var(--node-comp-bg) !important;
+            border-color: var(--node-comp-border) !important;
+            color: var(--node-comp-text) !important;
+            box-shadow: 0 0 20px var(--node-comp-shadow) !important;
+        }
+
+        .subject-inprogress,
+        .humanities-inprogress,
+        .optional-inprogress {
+            background-color: var(--node-inprog-bg) !important;
+            border-color: var(--node-inprog-border) !important;
+            color: var(--node-inprog-text) !important;
+            box-shadow: 0 0 15px var(--node-inprog-shadow) !important;
+        }
+
+        .subject-satisfied,
+        .humanities-satisfied,
+        .optional-satisfied {
+            background-color: var(--node-satis-bg) !important;
+            border-color: var(--node-satis-border) !important;
+            color: var(--node-satis-text) !important;
+        }
+
+        /* Light Mode Specific Utility Overrides */
+        [data-theme="light"] .text-gray-200,
+        [data-theme="light"] .text-gray-300 {
+            color: #1e293b !important;
+        }
+
+        [data-theme="light"] .text-gray-400 {
+            color: #475569 !important;
+        }
+
+        [data-theme="light"] .bg-gray-800 {
+            background-color: #f1f5f9 !important;
+            color: #0f172a !important;
+            border-color: #cbd5e1 !important;
+        }
+
+        [data-theme="light"] .bg-gray-900 {
+            background-color: #e2e8f0 !important;
+            color: #0f172a !important;
+        }
+
+        [data-theme="light"] .bg-gray-600 {
+            background-color: #cbd5e1 !important;
+        }
+
+        [data-theme="light"] .border-gray-600,
+        [data-theme="light"] .border-gray-700 {
+            border-color: #cbd5e1 !important;
+        }
+
+        /* UTFPR Gold Specific Utility Overrides */
+        [data-theme="utfpr"] .bg-gray-800 {
+            background-color: #171717 !important;
+            color: #fef08a !important;
+            border-color: #451a03 !important;
+        }
+
+        [data-theme="utfpr"] .bg-gray-900 {
+            background-color: #0a0a0a !important;
+        }
+
+        /* Roxo Specific Utility Overrides */
+        [data-theme="dracula"] .bg-gray-800 {
+            background-color: #1e1e2e !important;
+            color: #cdd6f4 !important;
+            border-color: #45475a !important;
+        }
+
+        [data-theme="dracula"] .bg-gray-900 {
+            background-color: #11111b !important;
+        }
+    </style>
     <script>
-      (function() {
-        var t = localStorage.getItem('kmatrizes_theme') || 'dark';
-        document.documentElement.setAttribute('data-theme', t);
-      })();
+        (function () {
+            var t = localStorage.getItem('kmatrizes_theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', t);
+        })();
     </script>
 
 </head>
@@ -836,33 +853,27 @@ footer {
 
     <!-- Banners Laterais -->
     <div class="hidden 2xl:flex fixed left-0 top-0 h-full w-[200px] items-center justify-center bg-transparent z-0">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3479585390253152"
-     crossorigin="anonymous"></script>
-<!-- Matriz_Lateral_Esquerda -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-3479585390253152"
-     data-ad-slot="3923364912"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
+        <script async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3479585390253152"
+            crossorigin="anonymous"></script>
+        <!-- Matriz_Lateral_Esquerda -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3479585390253152"
+            data-ad-slot="3923364912" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
     <div class="hidden 2xl:flex fixed right-0 top-0 h-full w-[200px] items-center justify-center bg-transparent z-0">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3479585390253152"
-     crossorigin="anonymous"></script>
-<!-- Matriz_Lateral_Direita -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-3479585390253152"
-     data-ad-slot="1914775525"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
+        <script async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3479585390253152"
+            crossorigin="anonymous"></script>
+        <!-- Matriz_Lateral_Direita -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3479585390253152"
+            data-ad-slot="1914775525" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
 
 
     <div class="max-w-7xl mx-auto">
@@ -883,18 +894,15 @@ footer {
         </header>
         <!-- Banner_Topo_Matriz -->
         <div class="flex justify-center w-full mb-6">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3479585390253152"
-     crossorigin="anonymous"></script>
-<!-- Banner_Topo_Matriz -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-3479585390253152"
-     data-ad-slot="3914252901"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+            <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3479585390253152"
+                crossorigin="anonymous"></script>
+            <!-- Banner_Topo_Matriz -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3479585390253152"
+                data-ad-slot="3914252901" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
         </div>
 
 
@@ -921,7 +929,8 @@ footer {
             <hr class="border-gray-600 my-4">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div>
-                    <div class="flex justify-between mb-1"><span class="text-base font-medium text-red-300">Trilhas</span><span id="optional-progress-text"
+                    <div class="flex justify-between mb-1"><span
+                            class="text-base font-medium text-red-300">Trilhas</span><span id="optional-progress-text"
                             class="text-sm font-medium text-red-300">0/300h (0.0%)</span></div>
                     <div class="w-full bg-gray-900 rounded-full h-4">
                         <div id="optional-progress-bar" class="bg-red-500 h-4 rounded-full transition-all duration-500"
@@ -1006,20 +1015,24 @@ footer {
                     ?
                 </button>
 
-                
+
                 <button id="btn-share-progress" onclick="openShareModal()"
                     class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold py-2 px-4 rounded-lg transition-all duration-300 flex items-center gap-1.5 shadow-md cursor-pointer">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                    </svg>
                     <span>Compartilhar Progresso</span>
                 </button>
                 <button id="reset-button"
                     class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300">
                     Resetar Progresso
                 </button>
-                
+
                 <div class="flex items-center gap-2 bg-gray-800 border border-gray-600 px-3 py-1.5 rounded-lg">
                     <span class="text-xs font-semibold text-gray-300 hidden sm:inline">Tema:</span>
-                    <select onchange="changeTheme(this.value)" class="theme-select-input bg-gray-700 text-white border border-gray-600 text-xs sm:text-sm rounded-md p-1 focus:ring-2 focus:ring-blue-500 focus:outline-none cursor-pointer">
+                    <select onchange="changeTheme(this.value)"
+                        class="theme-select-input bg-gray-700 text-white border border-gray-600 text-xs sm:text-sm rounded-md p-1 focus:ring-2 focus:ring-blue-500 focus:outline-none cursor-pointer">
                         <option value="dark">Escuro</option>
                         <option value="light">Claro</option>
                         <option value="utfpr">UTFPR (Amarelo)</option>
@@ -1146,7 +1159,7 @@ footer {
     <audio id="celebration-audio" src="../assets/audio/vitoria.mp3" preload="auto" loop></audio>
 
     <script type="module">
-        
+
         // --- CONFIGURATION CONSTANTS ---
         const TOTAL_COMPLEMENTARY_HOURS = 15;
         const TOTAL_EXTENSION_HOURS = 465;
@@ -2821,50 +2834,24 @@ footer {
         initializeTree();
     </script>
 
-            
 
 
-<script>
-function changeTheme(themeName) {
-    document.documentElement.setAttribute('data-theme', themeName);
-    localStorage.setItem('kmatrizes_theme', themeName);
-    var selects = document.querySelectorAll('.theme-select-input');
-    selects.forEach(function(s) { s.value = themeName; });
-}
-document.addEventListener('DOMContentLoaded', function() {
-    var currentTheme = localStorage.getItem('kmatrizes_theme') || 'dark';
-    document.documentElement.setAttribute('data-theme', currentTheme);
-    var selects = document.querySelectorAll('.theme-select-input');
-    selects.forEach(function(s) { s.value = currentTheme; });
-});
-</script>
 
+    <script>
+        function changeTheme(themeName) {
+            document.documentElement.setAttribute('data-theme', themeName);
+            localStorage.setItem('kmatrizes_theme', themeName);
+            var selects = document.querySelectorAll('.theme-select-input');
+            selects.forEach(function (s) { s.value = themeName; });
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            var currentTheme = localStorage.getItem('kmatrizes_theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            var selects = document.querySelectorAll('.theme-select-input');
+            selects.forEach(function (s) { s.value = currentTheme; });
+        });
+    </script>
 
-    
-
-
-    
-
-
-    
-
-
-    
-
-
-    
-
-
-    
-
-
-    
-
-
-    
-
-
-    
 
 
     <!-- Modal de Tutorial / Ajuda para Importação do Histórico (?) -->
@@ -2874,45 +2861,55 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h3 class="text-lg font-bold font-header text-cyan-400 flex items-center gap-2">
                     <span>📖</span> Como Importar seu Histórico Escolar (PDF)
                 </h3>
-                <button type="button" onclick="closeImportTutorialModal()" class="text-gray-400 hover:text-white text-2xl font-bold">&times;</button>
+                <button type="button" onclick="closeImportTutorialModal()"
+                    class="text-gray-400 hover:text-white text-2xl font-bold">&times;</button>
             </div>
 
             <div class="space-y-3 text-sm text-gray-200">
                 <div class="flex gap-3 items-start bg-gray-800/80 p-3 rounded-lg border border-gray-700">
-                    <span class="bg-cyan-600 text-white font-bold w-6 h-6 rounded-full flex items-center justify-center shrink-0 text-xs">1</span>
+                    <span
+                        class="bg-cyan-600 text-white font-bold w-6 h-6 rounded-full flex items-center justify-center shrink-0 text-xs">1</span>
                     <div>
                         <strong class="text-cyan-300">Acesse o Portal do Aluno</strong>
-                        <p class="text-xs text-gray-300 mt-0.5">Entre no Portal do Aluno / Sistema Acadêmico da UTFPR.</p>
+                        <p class="text-xs text-gray-300 mt-0.5">Entre no Portal do Aluno / Sistema Acadêmico da UTFPR.
+                        </p>
                     </div>
                 </div>
 
                 <div class="flex gap-3 items-start bg-gray-800/80 p-3 rounded-lg border border-gray-700">
-                    <span class="bg-cyan-600 text-white font-bold w-6 h-6 rounded-full flex items-center justify-center shrink-0 text-xs">2</span>
+                    <span
+                        class="bg-cyan-600 text-white font-bold w-6 h-6 rounded-full flex items-center justify-center shrink-0 text-xs">2</span>
                     <div>
                         <strong class="text-cyan-300">Clique em Histórico Completo</strong>
-                        <p class="text-xs text-gray-300 mt-0.5">Acesse a seção de consultas e selecione o histórico escolar completo.</p>
+                        <p class="text-xs text-gray-300 mt-0.5">Acesse a seção de consultas e selecione o histórico
+                            escolar completo.</p>
                     </div>
                 </div>
 
                 <div class="flex gap-3 items-start bg-gray-800/80 p-3 rounded-lg border border-gray-700">
-                    <span class="bg-cyan-600 text-white font-bold w-6 h-6 rounded-full flex items-center justify-center shrink-0 text-xs">3</span>
+                    <span
+                        class="bg-cyan-600 text-white font-bold w-6 h-6 rounded-full flex items-center justify-center shrink-0 text-xs">3</span>
                     <div>
                         <strong class="text-cyan-300">Imprimir e Salvar em PDF</strong>
-                        <p class="text-xs text-gray-300 mt-0.5">Clique no botão <strong>Imprimir</strong> no topo da tela e escolha a opção <strong>"Salvar como PDF"</strong> no seu computador ou celular.</p>
+                        <p class="text-xs text-gray-300 mt-0.5">Clique no botão <strong>Imprimir</strong> no topo da
+                            tela e escolha a opção <strong>"Salvar como PDF"</strong> no seu computador ou celular.</p>
                     </div>
                 </div>
 
                 <div class="flex gap-3 items-start bg-gray-800/80 p-3 rounded-lg border border-gray-700">
-                    <span class="bg-cyan-600 text-white font-bold w-6 h-6 rounded-full flex items-center justify-center shrink-0 text-xs">4</span>
+                    <span
+                        class="bg-cyan-600 text-white font-bold w-6 h-6 rounded-full flex items-center justify-center shrink-0 text-xs">4</span>
                     <div>
                         <strong class="text-cyan-300">Importar no K-Matrizes</strong>
-                        <p class="text-xs text-gray-300 mt-0.5">Clique no botão <strong>"Importar Histórico (PDF)"</strong> nesta página e selecione o arquivo PDF baixado!</p>
+                        <p class="text-xs text-gray-300 mt-0.5">Clique no botão <strong>"Importar Histórico
+                                (PDF)"</strong> nesta página e selecione o arquivo PDF baixado!</p>
                     </div>
                 </div>
             </div>
 
             <div class="pt-2 text-center">
-                <button type="button" onclick="closeImportTutorialModal()" class="bg-cyan-600 hover:bg-cyan-700 text-white font-semibold text-sm px-6 py-2 rounded-lg transition-colors cursor-pointer">
+                <button type="button" onclick="closeImportTutorialModal()"
+                    class="bg-cyan-600 hover:bg-cyan-700 text-white font-semibold text-sm px-6 py-2 rounded-lg transition-colors cursor-pointer">
                     Entendido!
                 </button>
             </div>
@@ -2927,7 +2924,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h3 class="text-xl font-bold font-header text-emerald-400 flex items-center gap-2">
                     <span>🎓</span> Compartilhar Seu Progresso
                 </h3>
-                <button type="button" onclick="closeShareModal()" class="text-gray-400 hover:text-white text-2xl font-bold">&times;</button>
+                <button type="button" onclick="closeShareModal()"
+                    class="text-gray-400 hover:text-white text-2xl font-bold">&times;</button>
             </div>
 
             <p class="text-xs text-gray-300">
@@ -2935,18 +2933,28 @@ document.addEventListener('DOMContentLoaded', function() {
             </p>
 
             <!-- Preview do Canvas -->
-            <div class="relative w-full overflow-hidden rounded-xl border border-gray-700 shadow-2xl bg-gray-900 flex justify-center p-2">
-                <canvas id="share-canvas" width="1200" height="675" class="w-full h-auto max-h-[350px] object-contain rounded-lg"></canvas>
+            <div
+                class="relative w-full overflow-hidden rounded-xl border border-gray-700 shadow-2xl bg-gray-900 flex justify-center p-2">
+                <canvas id="share-canvas" width="1200" height="675"
+                    class="w-full h-auto max-h-[350px] object-contain rounded-lg"></canvas>
             </div>
 
             <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
-                <button type="button" id="btn-native-share" onclick="handleNativeShare()" class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-sm px-6 py-2.5 rounded-xl transition-all shadow-lg hover:shadow-emerald-500/25 flex items-center gap-2 cursor-pointer">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+                <button type="button" id="btn-native-share" onclick="handleNativeShare()"
+                    class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-sm px-6 py-2.5 rounded-xl transition-all shadow-lg hover:shadow-emerald-500/25 flex items-center gap-2 cursor-pointer">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                    </svg>
                     <span>🚀 Compartilhar Progresso</span>
                 </button>
 
-                <button type="button" id="btn-download-badge" class="bg-gray-700 hover:bg-gray-600 text-white font-semibold text-sm px-5 py-2.5 rounded-xl transition-all flex items-center gap-2 border border-gray-600 cursor-pointer">
-                    <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                <button type="button" id="btn-download-badge"
+                    class="bg-gray-700 hover:bg-gray-600 text-white font-semibold text-sm px-5 py-2.5 rounded-xl transition-all flex items-center gap-2 border border-gray-600 cursor-pointer">
+                    <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
                     <span>📥 Baixar PNG</span>
                 </button>
             </div>
@@ -2956,436 +2964,424 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <!-- Script do Tutorial (?) e Compartilhamento Nativo v3 (DOM Stats Reader) -->
     <script>
-    function getStatsFromDOM() {
-        let mainPercent = 0, completedCore = 0, totalCore = 0;
-        let optionalComp = 0, optionalReq = 300, optionalPercent = 0;
-        let humanitiesComp = 0, humanitiesReq = 210, humanitiesPercent = 0;
-        let acComp = 0, acReq = 15, acPercent = 0;
-        let cceComp = 0, cceReq = 465, ccePercent = 0;
+        function getStatsFromDOM() {
+            let mainPercent = 0, completedCore = 0, totalCore = 0;
+            let optionalComp = 0, optionalReq = 300, optionalPercent = 0;
+            let humanitiesComp = 0, humanitiesReq = 210, humanitiesPercent = 0;
+            let acComp = 0, acReq = 15, acPercent = 0;
+            let cceComp = 0, cceReq = 465, ccePercent = 0;
 
-        // 1. Core / Obrigatórias
-        const elCore = document.querySelector('#total-progress-text, [id*="total-progress"]');
-        if (elCore && elCore.textContent) {
-            const m = elCore.textContent.match(/([\d\.]+)\%\s*\((?:(\d+)\/(\d+))?\)/);
-            if (m) {
-                mainPercent = parseFloat(m[1]) || 0;
-                if (m[2]) completedCore = parseInt(m[2]);
-                if (m[3]) totalCore = parseInt(m[3]);
+            // 1. Core / Obrigatórias
+            const elCore = document.querySelector('#total-progress-text, [id*="total-progress"]');
+            if (elCore && elCore.textContent) {
+                const m = elCore.textContent.match(/([\d\.]+)\%\s*\((?:(\d+)\/(\d+))?\)/);
+                if (m) {
+                    mainPercent = parseFloat(m[1]) || 0;
+                    if (m[2]) completedCore = parseInt(m[2]);
+                    if (m[3]) totalCore = parseInt(m[3]);
+                }
+            }
+
+            // 2. Humanidades
+            const elHum = document.querySelector('#humanities-progress-text, [id*="humanities-progress"]');
+            if (elHum && elHum.textContent) {
+                const m = elHum.textContent.match(/(\d+)\/(\d+)h\s*\(([\d\.]+)\%\)/);
+                if (m) {
+                    humanitiesComp = parseInt(m[1]);
+                    humanitiesReq = parseInt(m[2]);
+                    humanitiesPercent = parseFloat(m[3]);
+                }
+            }
+
+            // 3. Trilhas / Optativas
+            const elOpt = document.querySelector('#optional-progress-text, [id*="optional-progress"]');
+            if (elOpt && elOpt.textContent) {
+                const m = elOpt.textContent.match(/(\d+)\/(\d+)h\s*\(([\d\.]+)\%\)/);
+                if (m) {
+                    optionalComp = parseInt(m[1]);
+                    optionalReq = parseInt(m[2]);
+                    optionalPercent = parseFloat(m[3]);
+                }
+            }
+
+            // 4. Extensão (CCE)
+            const elCce = document.querySelector('#ext-progress-text, [id*="ext-progress"]');
+            if (elCce && elCce.textContent) {
+                const m = elCce.textContent.match(/(\d+)\/(\d+)h\s*\(([\d\.]+)\%\)/);
+                if (m) {
+                    cceComp = parseInt(m[1]);
+                    cceReq = parseInt(m[2]);
+                    ccePercent = parseFloat(m[3]);
+                }
+            }
+
+            // 5. Complementares (AC)
+            const elAc = document.querySelector('#comp-progress-text, [id*="comp-progress"]');
+            if (elAc && elAc.textContent) {
+                const m = elAc.textContent.match(/(\d+)\/(\d+)h\s*\(([\d\.]+)\%\)/);
+                if (m) {
+                    acComp = parseInt(m[1]);
+                    acReq = parseInt(m[2]);
+                    acPercent = parseFloat(m[3]);
+                }
+            }
+
+            return {
+                mainPercent, completedCore, totalCore,
+                optionalComp, optionalReq, optionalPercent,
+                humanitiesComp, humanitiesReq, humanitiesPercent,
+                acComp, acReq, acPercent,
+                cceComp, cceReq, ccePercent
+            };
+        }
+
+        function openImportTutorialModal() {
+            const modal = document.getElementById('modal-tutorial-import');
+            if (!modal) return;
+            modal.classList.remove('hidden');
+            modal.classList.add('active');
+        }
+
+        function closeImportTutorialModal() {
+            const modal = document.getElementById('modal-tutorial-import');
+            if (modal) {
+                modal.classList.remove('active');
+                modal.classList.add('hidden');
             }
         }
 
-        // 2. Humanidades
-        const elHum = document.querySelector('#humanities-progress-text, [id*="humanities-progress"]');
-        if (elHum && elHum.textContent) {
-            const m = elHum.textContent.match(/(\d+)\/(\d+)h\s*\(([\d\.]+)\%\)/);
-            if (m) {
-                humanitiesComp = parseInt(m[1]);
-                humanitiesReq = parseInt(m[2]);
-                humanitiesPercent = parseFloat(m[3]);
+        function openShareModal() {
+            const modal = document.getElementById('modal-share-badge');
+            if (!modal) return;
+            modal.classList.remove('hidden');
+            modal.classList.add('active');
+            setTimeout(() => {
+                generateShareBadgeCanvas();
+            }, 80);
+        }
+
+        function closeShareModal() {
+            const modal = document.getElementById('modal-share-badge');
+            if (modal) {
+                modal.classList.remove('active');
+                modal.classList.add('hidden');
             }
         }
 
-        // 3. Trilhas / Optativas
-        const elOpt = document.querySelector('#optional-progress-text, [id*="optional-progress"]');
-        if (elOpt && elOpt.textContent) {
-            const m = elOpt.textContent.match(/(\d+)\/(\d+)h\s*\(([\d\.]+)\%\)/);
-            if (m) {
-                optionalComp = parseInt(m[1]);
-                optionalReq = parseInt(m[2]);
-                optionalPercent = parseFloat(m[3]);
+        function generateShareBadgeCanvas() {
+            const canvas = document.getElementById('share-canvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+
+            const width = 1200;
+            const height = 675;
+
+            // Read exact rendered stats directly from DOM elements
+            const pStats = getStatsFromDOM();
+
+            // Get course title from page
+            let courseTitle = document.title.split('|')[0].trim();
+            courseTitle = courseTitle.replace('Skill Tree', '').replace('Grade Interativa', '').replace('Matriz Curricular -', '').trim();
+            if (!courseTitle) courseTitle = "Engenharia UTFPR";
+
+            // Background Gradient
+            const bgGrad = ctx.createLinearGradient(0, 0, width, height);
+            bgGrad.addColorStop(0, '#0f172a');
+            bgGrad.addColorStop(0.5, '#1e1b4b');
+            bgGrad.addColorStop(1, '#0f172a');
+            ctx.fillStyle = bgGrad;
+            ctx.fillRect(0, 0, width, height);
+
+            // Grid overlay
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.03)';
+            ctx.lineWidth = 1;
+            for (let x = 0; x < width; x += 40) {
+                ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, height); ctx.stroke();
             }
-        }
-
-        // 4. Extensão (CCE)
-        const elCce = document.querySelector('#ext-progress-text, [id*="ext-progress"]');
-        if (elCce && elCce.textContent) {
-            const m = elCce.textContent.match(/(\d+)\/(\d+)h\s*\(([\d\.]+)\%\)/);
-            if (m) {
-                cceComp = parseInt(m[1]);
-                cceReq = parseInt(m[2]);
-                ccePercent = parseFloat(m[3]);
+            for (let y = 0; y < height; y += 40) {
+                ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(width, y); ctx.stroke();
             }
-        }
 
-        // 5. Complementares (AC)
-        const elAc = document.querySelector('#comp-progress-text, [id*="comp-progress"]');
-        if (elAc && elAc.textContent) {
-            const m = elAc.textContent.match(/(\d+)\/(\d+)h\s*\(([\d\.]+)\%\)/);
-            if (m) {
-                acComp = parseInt(m[1]);
-                acReq = parseInt(m[2]);
-                acPercent = parseFloat(m[3]);
-            }
-        }
+            // Outer Border
+            ctx.strokeStyle = 'rgba(99, 102, 241, 0.3)';
+            ctx.lineWidth = 8;
+            ctx.strokeRect(20, 20, width - 40, height - 40);
 
-        return {
-            mainPercent, completedCore, totalCore,
-            optionalComp, optionalReq, optionalPercent,
-            humanitiesComp, humanitiesReq, humanitiesPercent,
-            acComp, acReq, acPercent,
-            cceComp, cceReq, ccePercent
-        };
-    }
+            // Header Brand Badge
+            ctx.fillStyle = '#38bdf8';
+            ctx.font = 'bold 24px Inter, sans-serif';
+            ctx.textAlign = 'left';
+            ctx.fillText('🎓 K-MATRIZES · UTFPR CÂMPUS CURITIBA', 60, 75);
 
-    function openImportTutorialModal() {
-        const modal = document.getElementById('modal-tutorial-import');
-        if (!modal) return;
-        modal.classList.remove('hidden');
-        modal.classList.add('active');
-    }
+            // Course Subtitle
+            ctx.fillStyle = '#94a3b8';
+            ctx.font = '600 20px Inter, sans-serif';
+            ctx.fillText(courseTitle.toUpperCase(), 60, 110);
 
-    function closeImportTutorialModal() {
-        const modal = document.getElementById('modal-tutorial-import');
-        if (modal) {
-            modal.classList.remove('active');
-            modal.classList.add('hidden');
-        }
-    }
+            // Main Hero Metric (Obrigatórias)
+            const mainGrad = ctx.createLinearGradient(60, 0, 600, 0);
+            mainGrad.addColorStop(0, '#fbbf24');
+            mainGrad.addColorStop(0.5, '#f59e0b');
+            mainGrad.addColorStop(1, '#10b981');
+            ctx.fillStyle = mainGrad;
+            ctx.font = 'bold 84px "Roboto Slab", serif';
+            ctx.fillText(`${pStats.mainPercent.toFixed(1)}%`, 60, 205);
 
-    function openShareModal() {
-        const modal = document.getElementById('modal-share-badge');
-        if (!modal) return;
-        modal.classList.remove('hidden');
-        modal.classList.add('active');
-        setTimeout(() => {
-            generateShareBadgeCanvas();
-        }, 80);
-    }
+            ctx.fillStyle = '#ffffff';
+            ctx.font = 'bold 26px Inter, sans-serif';
+            ctx.fillText(`PROGRESSO DE OBRIGATÓRIAS (${pStats.completedCore}/${pStats.totalCore} MATÉRIAS)`, 60, 250);
 
-    function closeShareModal() {
-        const modal = document.getElementById('modal-share-badge');
-        if (modal) {
-            modal.classList.remove('active');
-            modal.classList.add('hidden');
-        }
-    }
-
-    function generateShareBadgeCanvas() {
-        const canvas = document.getElementById('share-canvas');
-        if (!canvas) return;
-        const ctx = canvas.getContext('2d');
-
-        const width = 1200;
-        const height = 675;
-
-        // Read exact rendered stats directly from DOM elements
-        const pStats = getStatsFromDOM();
-
-        // Get course title from page
-        let courseTitle = document.title.split('|')[0].trim();
-        courseTitle = courseTitle.replace('Skill Tree', '').replace('Grade Interativa', '').replace('Matriz Curricular -', '').trim();
-        if (!courseTitle) courseTitle = "Engenharia UTFPR";
-
-        // Background Gradient
-        const bgGrad = ctx.createLinearGradient(0, 0, width, height);
-        bgGrad.addColorStop(0, '#0f172a');
-        bgGrad.addColorStop(0.5, '#1e1b4b');
-        bgGrad.addColorStop(1, '#0f172a');
-        ctx.fillStyle = bgGrad;
-        ctx.fillRect(0, 0, width, height);
-
-        // Grid overlay
-        ctx.strokeStyle = 'rgba(255, 255, 255, 0.03)';
-        ctx.lineWidth = 1;
-        for (let x = 0; x < width; x += 40) {
-            ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, height); ctx.stroke();
-        }
-        for (let y = 0; y < height; y += 40) {
-            ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(width, y); ctx.stroke();
-        }
-
-        // Outer Border
-        ctx.strokeStyle = 'rgba(99, 102, 241, 0.3)';
-        ctx.lineWidth = 8;
-        ctx.strokeRect(20, 20, width - 40, height - 40);
-
-        // Header Brand Badge
-        ctx.fillStyle = '#38bdf8';
-        ctx.font = 'bold 24px Inter, sans-serif';
-        ctx.textAlign = 'left';
-        ctx.fillText('🎓 K-MATRIZES · UTFPR CÂMPUS CURITIBA', 60, 75);
-
-        // Course Subtitle
-        ctx.fillStyle = '#94a3b8';
-        ctx.font = '600 20px Inter, sans-serif';
-        ctx.fillText(courseTitle.toUpperCase(), 60, 110);
-
-        // Main Hero Metric (Obrigatórias)
-        const mainGrad = ctx.createLinearGradient(60, 0, 600, 0);
-        mainGrad.addColorStop(0, '#fbbf24');
-        mainGrad.addColorStop(0.5, '#f59e0b');
-        mainGrad.addColorStop(1, '#10b981');
-        ctx.fillStyle = mainGrad;
-        ctx.font = 'bold 84px "Roboto Slab", serif';
-        ctx.fillText(`${pStats.mainPercent.toFixed(1)}%`, 60, 205);
-
-        ctx.fillStyle = '#ffffff';
-        ctx.font = 'bold 26px Inter, sans-serif';
-        ctx.fillText(`PROGRESSO DE OBRIGATÓRIAS (${pStats.completedCore}/${pStats.totalCore} MATÉRIAS)`, 60, 250);
-
-        // Main Hero Progress Bar Track
-        const mainBarX = 60;
-        const mainBarY = 270;
-        const mainBarW = width - 120;
-        const mainBarH = 26;
-        ctx.fillStyle = 'rgba(30, 41, 59, 0.8)';
-        ctx.beginPath();
-        ctx.roundRect(mainBarX, mainBarY, mainBarW, mainBarH, 13);
-        ctx.fill();
-        ctx.strokeStyle = '#334155';
-        ctx.lineWidth = 2;
-        ctx.stroke();
-
-        // Main Hero Progress Bar Fill
-        const mainFillW = Math.max(16, (mainBarW * Math.min(100, pStats.mainPercent)) / 100);
-        const barGrad = ctx.createLinearGradient(mainBarX, 0, mainBarX + mainBarW, 0);
-        barGrad.addColorStop(0, '#3b82f6');
-        barGrad.addColorStop(0.5, '#8b5cf6');
-        barGrad.addColorStop(1, '#10b981');
-        ctx.fillStyle = barGrad;
-        ctx.beginPath();
-        ctx.roundRect(mainBarX, mainBarY, mainFillW, mainBarH, 13);
-        ctx.fill();
-
-        // Sub Category Progress Bars (Re-using exact top panel bars)
-        const categories = [
-            { label: 'CICLO DE HUMANIDADES', comp: pStats.humanitiesComp, req: pStats.humanitiesReq, percent: pStats.humanitiesPercent, unit: 'h', color: '#a855f7' },
-            { label: 'TRILHAS / OPTATIVAS', comp: pStats.optionalComp, req: pStats.optionalReq, percent: pStats.optionalPercent, unit: 'h', color: '#ec4899' },
-            { label: 'HORAS DE EXTENSÃO (CCE)', comp: pStats.cceComp, req: pStats.cceReq, percent: pStats.ccePercent, unit: 'h', color: '#eab308' },
-            { label: 'HORAS COMPLEMENTARES (AC)', comp: pStats.acComp, req: pStats.acReq, percent: pStats.acPercent, unit: 'h', color: '#06b6d4' }
-        ];
-
-        const gridY = 330;
-        const colW = (width - 160) / 2;
-        const rowH = 100;
-
-        categories.forEach((cat, idx) => {
-            const col = idx % 2;
-            const row = Math.floor(idx / 2);
-            const bx = 60 + col * (colW + 40);
-            const by = gridY + row * (rowH + 15);
-
-            // Container Box
-            ctx.fillStyle = 'rgba(15, 23, 42, 0.7)';
+            // Main Hero Progress Bar Track
+            const mainBarX = 60;
+            const mainBarY = 270;
+            const mainBarW = width - 120;
+            const mainBarH = 26;
+            ctx.fillStyle = 'rgba(30, 41, 59, 0.8)';
             ctx.beginPath();
-            ctx.roundRect(bx, by, colW, rowH, 14);
+            ctx.roundRect(mainBarX, mainBarY, mainBarW, mainBarH, 13);
             ctx.fill();
-            ctx.strokeStyle = 'rgba(51, 65, 85, 0.8)';
-            ctx.lineWidth = 1.5;
+            ctx.strokeStyle = '#334155';
+            ctx.lineWidth = 2;
             ctx.stroke();
 
-            // Label + Value
-            ctx.fillStyle = '#94a3b8';
-            ctx.font = 'bold 14px Inter, sans-serif';
-            ctx.textAlign = 'left';
-            ctx.fillText(cat.label, bx + 20, by + 32);
-
-            ctx.fillStyle = cat.color;
-            ctx.font = 'bold 15px Inter, sans-serif';
-            ctx.textAlign = 'right';
-            ctx.fillText(`${cat.comp}/${cat.req}${cat.unit} (${cat.percent.toFixed(1)}%)`, bx + colW - 20, by + 32);
-
-            // Track
-            const trackX = bx + 20;
-            const trackY = by + 52;
-            const trackW = colW - 40;
-            const trackH = 18;
-            ctx.fillStyle = 'rgba(30, 41, 59, 0.9)';
+            // Main Hero Progress Bar Fill
+            const mainFillW = Math.max(16, (mainBarW * Math.min(100, pStats.mainPercent)) / 100);
+            const barGrad = ctx.createLinearGradient(mainBarX, 0, mainBarX + mainBarW, 0);
+            barGrad.addColorStop(0, '#3b82f6');
+            barGrad.addColorStop(0.5, '#8b5cf6');
+            barGrad.addColorStop(1, '#10b981');
+            ctx.fillStyle = barGrad;
             ctx.beginPath();
-            ctx.roundRect(trackX, trackY, trackW, trackH, 9);
+            ctx.roundRect(mainBarX, mainBarY, mainFillW, mainBarH, 13);
             ctx.fill();
 
-            // Fill
-            const catFillW = Math.max(10, (trackW * Math.min(100, cat.percent)) / 100);
-            ctx.fillStyle = cat.color;
-            ctx.beginPath();
-            ctx.roundRect(trackX, trackY, catFillW, trackH, 9);
-            ctx.fill();
-        });
+            // Sub Category Progress Bars (Re-using exact top panel bars)
+            const categories = [
+                { label: 'CICLO DE HUMANIDADES', comp: pStats.humanitiesComp, req: pStats.humanitiesReq, percent: pStats.humanitiesPercent, unit: 'h', color: '#a855f7' },
+                { label: 'TRILHAS / OPTATIVAS', comp: pStats.optionalComp, req: pStats.optionalReq, percent: pStats.optionalPercent, unit: 'h', color: '#ec4899' },
+                { label: 'HORAS DE EXTENSÃO (CCE)', comp: pStats.cceComp, req: pStats.cceReq, percent: pStats.ccePercent, unit: 'h', color: '#eab308' },
+                { label: 'HORAS COMPLEMENTARES (AC)', comp: pStats.acComp, req: pStats.acReq, percent: pStats.acPercent, unit: 'h', color: '#06b6d4' }
+            ];
 
-        // Footer Banner
-        ctx.fillStyle = '#64748b';
-        ctx.font = '500 17px Inter, sans-serif';
-        ctx.textAlign = 'center';
-        ctx.fillText('Acompanhe sua grade interativa e pré-requisitos em: kmatrizesutfpr.com.br', width / 2, 615);
-    }
+            const gridY = 330;
+            const colW = (width - 160) / 2;
+            const rowH = 100;
 
-    async function handleNativeShare() {
-        const canvas = document.getElementById('share-canvas');
-        if (!canvas) return;
+            categories.forEach((cat, idx) => {
+                const col = idx % 2;
+                const row = Math.floor(idx / 2);
+                const bx = 60 + col * (colW + 40);
+                const by = gridY + row * (rowH + 15);
 
-        const btnShare = document.getElementById('btn-native-share');
-        if (btnShare) btnShare.innerHTML = '<span>⏳ Preparando...</span>';
+                // Container Box
+                ctx.fillStyle = 'rgba(15, 23, 42, 0.7)';
+                ctx.beginPath();
+                ctx.roundRect(bx, by, colW, rowH, 14);
+                ctx.fill();
+                ctx.strokeStyle = 'rgba(51, 65, 85, 0.8)';
+                ctx.lineWidth = 1.5;
+                ctx.stroke();
 
-        let courseTitle = document.title.split('|')[0].trim();
-        courseTitle = courseTitle.replace('Skill Tree', '').replace('Grade Interativa', '').replace('Matriz Curricular -', '').trim();
-        
-        let pStats = getStatsFromDOM();
+                // Label + Value
+                ctx.fillStyle = '#94a3b8';
+                ctx.font = 'bold 14px Inter, sans-serif';
+                ctx.textAlign = 'left';
+                ctx.fillText(cat.label, bx + 20, by + 32);
 
-        const shareText = `🎓 Concluí ${pStats.mainPercent.toFixed(1)}% (${pStats.completedCore}/${pStats.totalCore}) das disciplinas de ${courseTitle} na UTFPR! Acompanhe sua grade no K-Matrizes: https://kmatrizesutfpr.com.br`;
+                ctx.fillStyle = cat.color;
+                ctx.font = 'bold 15px Inter, sans-serif';
+                ctx.textAlign = 'right';
+                ctx.fillText(`${cat.comp}/${cat.req}${cat.unit} (${cat.percent.toFixed(1)}%)`, bx + colW - 20, by + 32);
 
-        canvas.toBlob(async (blob) => {
-            if (!blob) return;
+                // Track
+                const trackX = bx + 20;
+                const trackY = by + 52;
+                const trackW = colW - 40;
+                const trackH = 18;
+                ctx.fillStyle = 'rgba(30, 41, 59, 0.9)';
+                ctx.beginPath();
+                ctx.roundRect(trackX, trackY, trackW, trackH, 9);
+                ctx.fill();
 
-            // 1. Try Web Share API with File
-            try {
-                const file = new File([blob], 'meu_progresso_utfpr.png', { type: 'image/png' });
-                if (navigator.canShare && navigator.canShare({ files: [file] })) {
-                    await navigator.share({
-                        title: 'Meu Progresso na UTFPR - K-Matrizes',
-                        text: shareText,
-                        files: [file]
-                    });
-                    if (btnShare) btnShare.innerHTML = '<span>✅ Compartilhado!</span>';
-                    setTimeout(() => { resetShareBtn(); }, 2500);
-                    return;
-                }
-            } catch(e) {
-                console.log('Web share file failed, trying fallback...', e);
-            }
-
-            // 2. Try Web Share API text/url
-            try {
-                if (navigator.share) {
-                    await navigator.share({
-                        title: 'Meu Progresso na UTFPR - K-Matrizes',
-                        text: shareText,
-                        url: 'https://kmatrizesutfpr.com.br'
-                    });
-                    if (btnShare) btnShare.innerHTML = '<span>✅ Compartilhado!</span>';
-                    setTimeout(() => { resetShareBtn(); }, 2500);
-                    return;
-                }
-            } catch(e) {
-                console.log('Web share text failed...', e);
-            }
-
-            // 3. Fallback: Download & Clipboard copy
-            fallbackDownloadAndCopy(canvas, blob, shareText);
-            resetShareBtn();
-        }, 'image/png');
-    }
-
-    function resetShareBtn() {
-        const btnShare = document.getElementById('btn-native-share');
-        if (btnShare) {
-            btnShare.innerHTML = '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg><span>🚀 Compartilhar Progresso</span>';
-        }
-    }
-
-    async function fallbackDownloadAndCopy(canvas, blob, shareText) {
-        // Download PNG file
-        const link = document.createElement('a');
-        link.download = 'meu_progresso_utfpr.png';
-        link.href = canvas.toDataURL('image/png');
-        link.click();
-
-        // Copy Image directly to clipboard if supported
-        let imageCopied = false;
-        if (navigator.clipboard && window.ClipboardItem && blob) {
-            try {
-                await navigator.clipboard.write([
-                    new ClipboardItem({ 'image/png': blob })
-                ]);
-                imageCopied = true;
-            } catch(e) {
-                console.log('Clipboard image copy not allowed:', e);
-            }
-        }
-
-        if (!imageCopied && navigator.clipboard) {
-            navigator.clipboard.writeText(shareText);
-        }
-
-        alert(imageCopied 
-            ? '✨ Imagem copiada para a área de transferência e baixada! Você já pode colar (Ctrl+V) no WhatsApp ou Instagram.' 
-            : '✨ Imagem do progresso baixada e legenda copiada! Você já pode colar no seu aplicativo favorito.');
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
-        const btnDownload = document.getElementById('btn-download-badge');
-        if (btnDownload) {
-            btnDownload.addEventListener('click', function() {
-                const canvas = document.getElementById('share-canvas');
-                if (!canvas) return;
-                const link = document.createElement('a');
-                link.download = 'meu_progresso_utfpr.png';
-                link.href = canvas.toDataURL('image/png');
-                link.click();
+                // Fill
+                const catFillW = Math.max(10, (trackW * Math.min(100, cat.percent)) / 100);
+                ctx.fillStyle = cat.color;
+                ctx.beginPath();
+                ctx.roundRect(trackX, trackY, catFillW, trackH, 9);
+                ctx.fill();
             });
+
+            // Footer Banner
+            ctx.fillStyle = '#64748b';
+            ctx.font = '500 17px Inter, sans-serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('Acompanhe sua grade interativa e pré-requisitos em: kmatrizesutfpr.com.br', width / 2, 615);
         }
-    });
+
+        async function handleNativeShare() {
+            const canvas = document.getElementById('share-canvas');
+            if (!canvas) return;
+
+            const btnShare = document.getElementById('btn-native-share');
+            if (btnShare) btnShare.innerHTML = '<span>⏳ Preparando...</span>';
+
+            let courseTitle = document.title.split('|')[0].trim();
+            courseTitle = courseTitle.replace('Skill Tree', '').replace('Grade Interativa', '').replace('Matriz Curricular -', '').trim();
+
+            let pStats = getStatsFromDOM();
+
+            const shareText = `🎓 Concluí ${pStats.mainPercent.toFixed(1)}% (${pStats.completedCore}/${pStats.totalCore}) das disciplinas de ${courseTitle} na UTFPR! Acompanhe sua grade no K-Matrizes: https://kmatrizesutfpr.com.br`;
+
+            canvas.toBlob(async (blob) => {
+                if (!blob) return;
+
+                // 1. Try Web Share API with File
+                try {
+                    const file = new File([blob], 'meu_progresso_utfpr.png', { type: 'image/png' });
+                    if (navigator.canShare && navigator.canShare({ files: [file] })) {
+                        await navigator.share({
+                            title: 'Meu Progresso na UTFPR - K-Matrizes',
+                            text: shareText,
+                            files: [file]
+                        });
+                        if (btnShare) btnShare.innerHTML = '<span>✅ Compartilhado!</span>';
+                        setTimeout(() => { resetShareBtn(); }, 2500);
+                        return;
+                    }
+                } catch (e) {
+                    console.log('Web share file failed, trying fallback...', e);
+                }
+
+                // 2. Try Web Share API text/url
+                try {
+                    if (navigator.share) {
+                        await navigator.share({
+                            title: 'Meu Progresso na UTFPR - K-Matrizes',
+                            text: shareText,
+                            url: 'https://kmatrizesutfpr.com.br'
+                        });
+                        if (btnShare) btnShare.innerHTML = '<span>✅ Compartilhado!</span>';
+                        setTimeout(() => { resetShareBtn(); }, 2500);
+                        return;
+                    }
+                } catch (e) {
+                    console.log('Web share text failed...', e);
+                }
+
+                // 3. Fallback: Download & Clipboard copy
+                fallbackDownloadAndCopy(canvas, blob, shareText);
+                resetShareBtn();
+            }, 'image/png');
+        }
+
+        function resetShareBtn() {
+            const btnShare = document.getElementById('btn-native-share');
+            if (btnShare) {
+                btnShare.innerHTML = '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg><span>🚀 Compartilhar Progresso</span>';
+            }
+        }
+
+        async function fallbackDownloadAndCopy(canvas, blob, shareText) {
+            // Download PNG file
+            const link = document.createElement('a');
+            link.download = 'meu_progresso_utfpr.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+
+            // Copy Image directly to clipboard if supported
+            let imageCopied = false;
+            if (navigator.clipboard && window.ClipboardItem && blob) {
+                try {
+                    await navigator.clipboard.write([
+                        new ClipboardItem({ 'image/png': blob })
+                    ]);
+                    imageCopied = true;
+                } catch (e) {
+                    console.log('Clipboard image copy not allowed:', e);
+                }
+            }
+
+            if (!imageCopied && navigator.clipboard) {
+                navigator.clipboard.writeText(shareText);
+            }
+
+            alert(imageCopied
+                ? '✨ Imagem copiada para a área de transferência e baixada! Você já pode colar (Ctrl+V) no WhatsApp ou Instagram.'
+                : '✨ Imagem do progresso baixada e legenda copiada! Você já pode colar no seu aplicativo favorito.');
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const btnDownload = document.getElementById('btn-download-badge');
+            if (btnDownload) {
+                btnDownload.addEventListener('click', function () {
+                    const canvas = document.getElementById('share-canvas');
+                    if (!canvas) return;
+                    const link = document.createElement('a');
+                    link.download = 'meu_progresso_utfpr.png';
+                    link.href = canvas.toDataURL('image/png');
+                    link.click();
+                });
+            }
+        });
     </script>
-
-
-    
-
-
-    
-
-
-    
-
-
-    
-
-
-    
-
-
-    
-
-
-    
-
-
-    
-
-
-    
 
 
     <!-- =====================================================
          MODAL DE DOAÇÃO (POPUP DE ABERTURA)
          ===================================================== -->
     <div id="modal-doacao" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-label="Apoie o K-Matrizes">
-        <div class="modal-box text-left relative max-w-md w-[92%] p-6 md:p-7 bg-gray-800 border border-gray-700 rounded-2xl shadow-2xl z-[1000]">
+        <div
+            class="modal-box text-left relative max-w-md w-[92%] p-6 md:p-7 bg-gray-800 border border-gray-700 rounded-2xl shadow-2xl z-[1000]">
             <div class="flex justify-between items-center mb-4">
                 <h3 class="text-xl font-bold text-amber-400 font-header flex items-center gap-2">
                     🎓 Apoie o K-Matrizes!
                 </h3>
-                <button id="btn-close-doacao-x" class="text-gray-400 hover:text-white text-2xl leading-none font-bold px-2 py-1">&times;</button>
+                <button id="btn-close-doacao-x"
+                    class="text-gray-400 hover:text-white text-2xl leading-none font-bold px-2 py-1">&times;</button>
             </div>
 
             <div class="space-y-3 text-gray-300 text-sm leading-relaxed mb-5">
                 <p>Olá, colega acadêmico(a)! 👋</p>
                 <p>
-                    Me chamo <strong class="text-white">Caio</strong>, sou estudante de Engenharia Eletrônica na UTFPR e criei o <strong class="text-white">K-Matrizes</strong> de forma 100% independente no meu tempo livre para facilitar o planejamento de grade de todos nós.
+                    Me chamo <strong class="text-white">Caio</strong>, sou estudante de Engenharia Eletrônica na UTFPR e
+                    criei o <strong class="text-white">K-Matrizes</strong> de forma 100% independente no meu tempo livre
+                    para facilitar o planejamento de grade de todos nós.
                 </p>
                 <p>
-                    A plataforma é e sempre será <strong class="text-emerald-400">gratuita e de código aberto</strong>. No entanto, manter a ferramenta atualizada, com novas matrizes e hospedagem, exige tempo e dedicação constante.
+                    A plataforma é e sempre será <strong class="text-emerald-400">gratuita e de código aberto</strong>.
+                    No entanto, manter a ferramenta atualizada, com novas matrizes e hospedagem, exige tempo e dedicação
+                    constante.
                 </p>
                 <p>
-                    Se o K-Matrizes te ajudou a organizar o seu semestre, considere fazer uma contribuição de <strong class="text-amber-300 font-semibold">qualquer valor (até mesmo R$ 1,00 ajuda demais!)</strong> via Pix.
+                    Se o K-Matrizes te ajudou a organizar o seu semestre, considere fazer uma contribuição de <strong
+                        class="text-amber-300 font-semibold">qualquer valor (até mesmo R$ 1,00 ajuda demais!)</strong>
+                    via Pix.
                 </p>
             </div>
 
             <div class="bg-gray-900/80 border border-gray-700/80 rounded-xl p-4 text-center mb-5">
-                <img src="../assets/imagens/PIX.png" alt="QR Code PIX Doação" class="w-36 h-36 mx-auto rounded-lg border border-gray-600 shadow-md mb-3">
+                <img src="../assets/imagens/PIX.png" alt="QR Code PIX Doação"
+                    class="w-36 h-36 mx-auto rounded-lg border border-gray-600 shadow-md mb-3">
                 <p class="text-xs text-gray-400 mb-2">Chave PIX (E-mail):</p>
                 <div class="flex items-center justify-center gap-2">
-                    <span id="pix-key-text" class="text-amber-400 font-mono bg-gray-800 px-3 py-1.5 rounded-lg text-xs md:text-sm border border-gray-700 select-all font-semibold">
+                    <span id="pix-key-text"
+                        class="text-amber-400 font-mono bg-gray-800 px-3 py-1.5 rounded-lg text-xs md:text-sm border border-gray-700 select-all font-semibold">
                         caiocosta281214@gmail.com
                     </span>
-                    <button id="btn-copy-pix" class="bg-amber-600 hover:bg-amber-500 text-white font-semibold text-xs px-3 py-1.5 rounded-lg transition-colors flex items-center gap-1">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 012-2v-8a2 2 0 01-2-2h-8a2 2 0 01-2 2v8a2 2 0 012 2z"/></svg>
+                    <button id="btn-copy-pix"
+                        class="bg-amber-600 hover:bg-amber-500 text-white font-semibold text-xs px-3 py-1.5 rounded-lg transition-colors flex items-center gap-1">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 012-2v-8a2 2 0 01-2-2h-8a2 2 0 01-2 2v8a2 2 0 012 2z" />
+                        </svg>
                         <span id="copy-btn-label">Copiar</span>
                     </button>
                 </div>
             </div>
 
             <div class="flex justify-end pt-1">
-                <button id="btn-close-doacao" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm px-6 py-2.5 rounded-xl transition-all shadow-lg hover:shadow-blue-500/25">
+                <button id="btn-close-doacao"
+                    class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm px-6 py-2.5 rounded-xl transition-all shadow-lg hover:shadow-blue-500/25">
                     Continuar para o site ➔
                 </button>
             </div>
