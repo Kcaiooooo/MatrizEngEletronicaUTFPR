@@ -812,7 +812,22 @@
             border-color: #cbd5e1 !important;
         }
 
-        /* UTFPR Gold Specific Utility Overrides */
+        /* Light Mode — Color Contrast Fixes
+           Pastel (-300) and light (-400) shades have poor contrast on white.
+           We darken them to -600/-700 equivalents which pass WCAG AA. */
+        [data-theme="light"] .text-amber-300,
+        [data-theme="light"] .text-amber-400 { color: #b45309 !important; } /* amber-700 */
+        [data-theme="light"] .text-yellow-400 { color: #a16207 !important; } /* yellow-700 */
+        [data-theme="light"] .text-red-300 { color: #b91c1c !important; }    /* red-700 */
+        [data-theme="light"] .text-purple-300 { color: #7e22ce !important; } /* purple-800 */
+        [data-theme="light"] .text-emerald-300,
+        [data-theme="light"] .text-emerald-400 { color: #047857 !important; } /* emerald-700 */
+        [data-theme="light"] .text-cyan-300 { color: #0e7490 !important; }   /* cyan-700 */
+        [data-theme="light"] .text-blue-400 { color: #1d4ed8 !important; }   /* blue-700 */
+        [data-theme="light"] .text-pink-300 { color: #be185d !important; }   /* pink-700 */
+        [data-theme="light"] .text-rose-300 { color: #be123c !important; }   /* rose-700 */
+
+
         [data-theme="utfpr"] .bg-gray-800 {
             background-color: #171717 !important;
             color: #fef08a !important;
