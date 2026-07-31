@@ -3843,13 +3843,12 @@
 
             results.sort((a, b) => b.score - a.score);
 
-            const total = results.length;
             results.forEach((item, index) => {
-                if (item.score >= 7.0 || (total > 0 && index < Math.ceil(total * 0.3))) {
+                if (item.score >= 7.0) {
                     item.priority = 'high';
                     item.priorityLabel = '🔴 Alta Prioridade (Gargalo)';
                     item.badgeClass = 'bg-red-500/20 text-red-400 border-red-500/40';
-                } else if (item.score >= 3.5 || (total > 0 && index < Math.ceil(total * 0.7))) {
+                } else if (item.score >= 3.5) {
                     item.priority = 'medium';
                     item.priorityLabel = '🟡 Média Prioridade';
                     item.badgeClass = 'bg-amber-500/20 text-amber-400 border-amber-500/40';
