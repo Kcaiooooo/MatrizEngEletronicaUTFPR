@@ -10520,6 +10520,27 @@
     <!-- =====================================================
          MODAL DE ANÁLISE DE PRIORIDADE DE MATÉRIAS
          ===================================================== -->
+    
+
+    <!-- =====================================================
+         MODAL EXPLICATIVO DO ANALISADOR DE MATÉRIAS
+         ===================================================== -->
+    
+            </div>
+
+            <div class="mt-5 pt-3 border-t border-gray-700 flex justify-end">
+                <button onclick="closeAnalyzerHelpModal()" class="bg-amber-600 hover:bg-amber-500 text-white font-bold px-5 py-2 rounded-xl text-xs transition-colors cursor-pointer shadow">
+                    Entendi!
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- =====================================================
+         MODAL DE ANÁLISE DE PRIORIDADE DE MATÉRIAS
+         ===================================================== -->
     <div id="modal-priority-analyzer" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-label="Analisador de Prioridades de Matérias">
         <div class="modal-box text-left relative max-w-4xl w-[94%] max-h-[90vh] flex flex-col p-5 md:p-6 bg-gray-800 border border-gray-700 rounded-2xl shadow-2xl z-[1000] overflow-hidden">
             <!-- Modal Header -->
@@ -10589,7 +10610,7 @@
 
             <div class="space-y-3 text-xs md:text-sm text-gray-300 leading-relaxed">
                 <p>
-                    O <strong class="text-white">Analisador de Matérias</strong> calcula em tempo real quais disciplinas liberam mais opções na sua grade para você não perder tempo e evitar travamentos no curso.
+                    O <strong class="text-white">Analisador de Matérias</strong> calcula em tempo real quais disciplinas liberarão mais opções na sua grade para você não perder tempo e evitar travamentos no curso.
                 </p>
 
                 <div class="bg-gray-900/80 p-3 rounded-xl border border-gray-700/80 space-y-2">
@@ -10605,13 +10626,13 @@
                     <div class="font-bold text-gray-200 text-xs">Categorias de Prioridade:</div>
                     <div class="grid grid-cols-1 gap-2 text-xs">
                         <div class="bg-red-500/10 border border-red-500/30 p-2 rounded-lg">
-                            <strong class="text-red-400">🔴 Alta Prioridade (Gargalo):</strong> Matérias críticas. Adiar uma dessas pode atrasar semestres inteiros do seu curso.
+                            <strong class="text-red-400">🔴 Alta Prioridade (Gargalo):</strong> Matérias críticas (Score ≥ 7.0). Adiar uma dessas pode atrasar semestres inteiros do seu curso.
                         </div>
                         <div class="bg-amber-500/10 border border-amber-500/30 p-2 rounded-lg">
-                            <strong class="text-amber-400">🟡 Média Prioridade:</strong> Importantes para o avanço constante da grade.
+                            <strong class="text-amber-400">🟡 Média Prioridade:</strong> Importantes para o avanço da grade (Score 3.5 a 6.9).
                         </div>
                         <div class="bg-emerald-500/10 border border-emerald-500/30 p-2 rounded-lg">
-                            <strong class="text-emerald-400">🟢 Flexível:</strong> Não travam pré-requisitos futuros. Podem ser cursadas em semestres posteriores com calma.
+                            <strong class="text-emerald-400">🟢 Flexível:</strong> Não travam pré-requisitos futuros (Score < 3.5). Podem ser cursadas em semestres posteriores com calma.
                         </div>
                     </div>
                 </div>
@@ -10770,13 +10791,13 @@
 
             results.sort((a, b) => b.score - a.score);
 
-            const total = results.length;
             results.forEach((item, index) => {
-                if (item.score >= 7.0 || (total > 0 && index < Math.ceil(total * 0.3))) {
+                // Classificação rigorosa baseada no score real e desbloqueios
+                if (item.score >= 7.0) {
                     item.priority = 'high';
                     item.priorityLabel = '🔴 Alta Prioridade (Gargalo)';
                     item.badgeClass = 'bg-red-500/20 text-red-400 border-red-500/40';
-                } else if (item.score >= 3.5 || (total > 0 && index < Math.ceil(total * 0.7))) {
+                } else if (item.score >= 3.5) {
                     item.priority = 'medium';
                     item.priorityLabel = '🟡 Média Prioridade';
                     item.badgeClass = 'bg-amber-500/20 text-amber-400 border-amber-500/40';

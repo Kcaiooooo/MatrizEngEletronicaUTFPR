@@ -1030,114 +1030,7 @@
                 
                 
                 
-                <div class="flex items-center gap-1">
-                    <button id="btn-priority-analyzer" onclick="openPriorityAnalyzerModal()"
-                        class="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white font-bold py-2 px-4 rounded-lg transition-all duration-300 flex items-center gap-1.5 shadow-md cursor-pointer">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                        </svg>
-                        <span>Analisador de Matérias</span>
-                    </button>
-                    <button type="button" onclick="openAnalyzerHelpModal()"
-                        class="w-9 h-9 rounded-lg bg-amber-600/30 hover:bg-amber-600/60 text-amber-300 font-extrabold border border-amber-500/50 flex items-center justify-center transition-all cursor-pointer text-base shrink-0 shadow-md"
-                        title="Como funciona o Analisador de Matérias?">
-                        ?
-                    </button>
-                </div>
-                <button id="btn-share-progress" onclick="openShareModal()"
-                    class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold py-2 px-4 rounded-lg transition-all duration-300 flex items-center gap-1.5 shadow-md cursor-pointer">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
-                    </svg>
-                    <span>Compartilhar Progresso</span>
-                </button>
-                <button id="reset-button"
-                    class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300">
-                    Resetar Progresso
-                </button>
-
-                <div class="flex items-center gap-2 bg-gray-800 border border-gray-600 px-3 py-1.5 rounded-lg">
-                    <span class="text-xs font-semibold text-gray-300 hidden sm:inline">Tema:</span>
-                    <select onchange="changeTheme(this.value)"
-                        class="theme-select-input bg-gray-700 text-white border border-gray-600 text-xs sm:text-sm rounded-md p-1 focus:ring-2 focus:ring-blue-500 focus:outline-none cursor-pointer">
-                        <option value="dark">Escuro</option>
-                        <option value="light">Claro</option>
-                        <option value="utfpr">UTFPR (Amarelo)</option>
-                        <option value="dracula">Roxo</option>
-                    </select>
-                </div>
-
-                <button id="settings-btn"
-                    class="bg-gray-600 hover:bg-gray-500 text-white p-2 rounded-lg transition-colors duration-300 flex items-center justify-center"
-                    title="Configurações">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                </button>
-            </div>
-            <p id="upload-status" class="text-center text-gray-400 h-4"></p>
-        </div>
-
-        <div class="flex justify-center mb-4 border-b border-gray-600">
-            <button id="tab-main" class="tab-btn active">Obrigatorias</button>
-            <button id="tab-humanities" class="tab-btn">Humanidades</button>
-            <button id="tab-optional" class="tab-btn">Trilhas</button>
-        </div>
-
-        <div class="tree-wrapper">
-            <div id="main-container" class="shadow-2xl">
-                <svg id="main-lines"
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none;">
-                    <defs>
-                        <marker id="arrow-completed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6"
-                            markerHeight="6" orient="auto-start-reverse">
-                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#16a34a" filter="drop-shadow(0 0 2px #4ade80)"></path>
-                        </marker>
-                        <marker id="arrow-locked" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5"
-                            orient="auto-start-reverse">
-                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#4b5563"></path>
-                        </marker>
-                    </defs>
-                </svg>
-            </div>
-
-            <div id="humanities-container" class="shadow-2xl hidden">
-                <svg id="humanities-lines"
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none;">
-                    <defs>
-                        <marker id="h-arrow-completed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6"
-                            markerHeight="6" orient="auto-start-reverse">
-                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#16a34a" filter="drop-shadow(0 0 2px #4ade80)"></path>
-                        </marker>
-                        <marker id="h-arrow-locked" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5"
-                            markerHeight="5" orient="auto-start-reverse">
-                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#4b5563"></path>
-                        </marker>
-                    </defs>
-                </svg>
-            </div>
-
-            <div id="optional-container" class="shadow-2xl hidden">
-                <svg id="optional-lines"
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none;">
-                    <defs>
-                        <marker id="o-arrow-completed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6"
-                            markerHeight="6" orient="auto-start-reverse">
-                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#16a34a" filter="drop-shadow(0 0 2px #4ade80)"></path>
-                        </marker>
-                        <marker id="o-arrow-locked" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5"
-                            markerHeight="5" orient="auto-start-reverse">
-                            <path d="M 0 0 L 10 5 L 0 10 z" fill="#4b5563"></path>
-                        </marker>
-                    </defs>
-                </svg>
-            </div>
-        </div>
+                
     </div>
 
     <div id="settings-modal" class="modal-overlay hidden">
@@ -3630,6 +3523,27 @@
     <!-- =====================================================
          MODAL DE ANÁLISE DE PRIORIDADE DE MATÉRIAS
          ===================================================== -->
+    
+
+    <!-- =====================================================
+         MODAL EXPLICATIVO DO ANALISADOR DE MATÉRIAS
+         ===================================================== -->
+    
+            </div>
+
+            <div class="mt-5 pt-3 border-t border-gray-700 flex justify-end">
+                <button onclick="closeAnalyzerHelpModal()" class="bg-amber-600 hover:bg-amber-500 text-white font-bold px-5 py-2 rounded-xl text-xs transition-colors cursor-pointer shadow">
+                    Entendi!
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- =====================================================
+         MODAL DE ANÁLISE DE PRIORIDADE DE MATÉRIAS
+         ===================================================== -->
     <div id="modal-priority-analyzer" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-label="Analisador de Prioridades de Matérias">
         <div class="modal-box text-left relative max-w-4xl w-[94%] max-h-[90vh] flex flex-col p-5 md:p-6 bg-gray-800 border border-gray-700 rounded-2xl shadow-2xl z-[1000] overflow-hidden">
             <!-- Modal Header -->
@@ -3699,7 +3613,7 @@
 
             <div class="space-y-3 text-xs md:text-sm text-gray-300 leading-relaxed">
                 <p>
-                    O <strong class="text-white">Analisador de Matérias</strong> calcula em tempo real quais disciplinas liberam mais opções na sua grade para você não perder tempo e evitar travamentos no curso.
+                    O <strong class="text-white">Analisador de Matérias</strong> calcula em tempo real quais disciplinas liberarão mais opções na sua grade para você não perder tempo e evitar travamentos no curso.
                 </p>
 
                 <div class="bg-gray-900/80 p-3 rounded-xl border border-gray-700/80 space-y-2">
@@ -3715,13 +3629,13 @@
                     <div class="font-bold text-gray-200 text-xs">Categorias de Prioridade:</div>
                     <div class="grid grid-cols-1 gap-2 text-xs">
                         <div class="bg-red-500/10 border border-red-500/30 p-2 rounded-lg">
-                            <strong class="text-red-400">🔴 Alta Prioridade (Gargalo):</strong> Matérias críticas. Adiar uma dessas pode atrasar semestres inteiros do seu curso.
+                            <strong class="text-red-400">🔴 Alta Prioridade (Gargalo):</strong> Matérias críticas (Score ≥ 7.0). Adiar uma dessas pode atrasar semestres inteiros do seu curso.
                         </div>
                         <div class="bg-amber-500/10 border border-amber-500/30 p-2 rounded-lg">
-                            <strong class="text-amber-400">🟡 Média Prioridade:</strong> Importantes para o avanço constante da grade.
+                            <strong class="text-amber-400">🟡 Média Prioridade:</strong> Importantes para o avanço da grade (Score 3.5 a 6.9).
                         </div>
                         <div class="bg-emerald-500/10 border border-emerald-500/30 p-2 rounded-lg">
-                            <strong class="text-emerald-400">🟢 Flexível:</strong> Não travam pré-requisitos futuros. Podem ser cursadas em semestres posteriores com calma.
+                            <strong class="text-emerald-400">🟢 Flexível:</strong> Não travam pré-requisitos futuros (Score < 3.5). Podem ser cursadas em semestres posteriores com calma.
                         </div>
                     </div>
                 </div>
@@ -3880,13 +3794,13 @@
 
             results.sort((a, b) => b.score - a.score);
 
-            const total = results.length;
             results.forEach((item, index) => {
-                if (item.score >= 7.0 || (total > 0 && index < Math.ceil(total * 0.3))) {
+                // Classificação rigorosa baseada no score real e desbloqueios
+                if (item.score >= 7.0) {
                     item.priority = 'high';
                     item.priorityLabel = '🔴 Alta Prioridade (Gargalo)';
                     item.badgeClass = 'bg-red-500/20 text-red-400 border-red-500/40';
-                } else if (item.score >= 3.5 || (total > 0 && index < Math.ceil(total * 0.7))) {
+                } else if (item.score >= 3.5) {
                     item.priority = 'medium';
                     item.priorityLabel = '🟡 Média Prioridade';
                     item.badgeClass = 'bg-amber-500/20 text-amber-400 border-amber-500/40';
