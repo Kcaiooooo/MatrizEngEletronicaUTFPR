@@ -234,12 +234,11 @@
         .node .tooltip {
             visibility: hidden;
             opacity: 0;
-            /* GARANTA QUE ESTAS LINHAS ESTEJAM AQUI */
             width: 220px;
-            background-color: #1f2937;
-            color: #fff;
+            background-color: var(--bg-card);
+            color: var(--text-main);
             text-align: center;
-            border-radius: 6px;
+            border-radius: 8px;
             padding: 8px;
             position: absolute;
             z-index: 20;
@@ -247,7 +246,8 @@
             left: 50%;
             margin-left: -110px;
             transition: opacity 0.3s;
-            border: 1px solid #4b5563;
+            border: 1px solid var(--border-main);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
         }
 
         .node .tooltip::after {
@@ -258,7 +258,7 @@
             margin-left: -5px;
             border-width: 5px;
             border-style: solid;
-            border-color: #1f2937 transparent transparent transparent;
+            border-color: var(--bg-card) transparent transparent transparent;
         }
 
         .node .tooltip.visible,
@@ -418,12 +418,11 @@
         .node .tooltip-satisfied {
             visibility: hidden;
             opacity: 0;
-            /* GARANTA QUE ESTAS LINHAS ESTEJAM AQUI */
             width: 220px;
-            background-color: #1f2937;
-            color: #fff;
+            background-color: var(--bg-card);
+            color: var(--text-main);
             text-align: center;
-            border-radius: 6px;
+            border-radius: 8px;
             padding: 8px;
             position: absolute;
             z-index: 20;
@@ -431,8 +430,8 @@
             left: 50%;
             margin-left: -110px;
             transition: opacity 0.3s;
-            border: 2px solid #fbbf24;
-            /* Borda Dourada */
+            border: 2px solid var(--node-satis-border);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
         }
 
         .node .tooltip-satisfied::after {
@@ -443,7 +442,7 @@
             margin-left: -5px;
             border-width: 5px;
             border-style: solid;
-            border-color: #fbbf24 transparent transparent transparent;
+            border-color: var(--node-satis-border) transparent transparent transparent;
         }
 
         /* Adicione este novo estilo para o tooltip posicionado abaixo */
@@ -462,12 +461,12 @@
             /* Coloca a seta no topo do tooltip */
             margin-left: -5px;
             /* Inverte a direção da borda para apontar para cima */
-            border-color: transparent transparent #1f2937 transparent;
+            border-color: transparent transparent var(--bg-card) transparent;
         }
 
         /* Se você também quer que a borda dourada funcione para tooltips satisfeitos abaixo */
         .node .tooltip-satisfied.below::after {
-            border-color: transparent transparent #fbbf24 transparent;
+            border-color: transparent transparent var(--node-satis-border) transparent;
         }
 
         /* ================================================= */
@@ -852,101 +851,80 @@
         }
 
         /* =====================================================
-           PRIORITY ANALYZER MODAL — THEME OVERRIDES
+           ALL MODALS — THEME OVERRIDES
            ===================================================== */
 
-        /* Light theme overrides */
-        [data-theme="light"] #modal-priority-analyzer .modal-box,
-        [data-theme="light"] #modal-analyzer-help .modal-box {
+        /* Light theme overrides for all modals */
+        [data-theme="light"] .modal-box {
             background-color: #ffffff !important;
-            border-color: #e2e8f0 !important;
+            border-color: #cbd5e1 !important;
             color: #0f172a !important;
         }
-        [data-theme="light"] #modal-priority-analyzer .text-gray-400,
-        [data-theme="light"] #modal-analyzer-help .text-gray-400 { color: #475569 !important; }
-        [data-theme="light"] #modal-priority-analyzer .text-gray-200,
-        [data-theme="light"] #modal-priority-analyzer .text-gray-300,
-        [data-theme="light"] #modal-analyzer-help .text-gray-200,
-        [data-theme="light"] #modal-analyzer-help .text-gray-300 { color: #1e293b !important; }
-        [data-theme="light"] #modal-priority-analyzer .text-white,
-        [data-theme="light"] #modal-analyzer-help .text-white { color: #0f172a !important; }
-        [data-theme="light"] #modal-priority-analyzer .border-gray-700,
-        [data-theme="light"] #modal-priority-analyzer .border-gray-700\/50,
-        [data-theme="light"] #modal-priority-analyzer .border-gray-700\/60,
-        [data-theme="light"] #modal-priority-analyzer .border-gray-700\/80,
-        [data-theme="light"] #modal-analyzer-help .border-gray-700 { border-color: #cbd5e1 !important; }
-        [data-theme="light"] #modal-priority-analyzer .bg-gray-900\/60,
-        [data-theme="light"] #modal-priority-analyzer .bg-gray-900\/80,
-        [data-theme="light"] #modal-priority-analyzer .bg-gray-900\/90,
-        [data-theme="light"] #modal-priority-analyzer .bg-gray-900\/40,
-        [data-theme="light"] #modal-analyzer-help .bg-gray-900\/80 { background-color: #f1f5f9 !important; }
-        [data-theme="light"] #modal-priority-analyzer select,
-        [data-theme="light"] #modal-priority-analyzer input { background-color: #ffffff !important; color: #0f172a !important; border-color: #cbd5e1 !important; }
-        [data-theme="light"] #modal-priority-analyzer .bg-gray-700,
-        [data-theme="light"] #modal-priority-analyzer .hover\:bg-gray-600:hover { background-color: #e2e8f0 !important; color: #0f172a !important; }
-        [data-theme="light"] #modal-priority-analyzer .text-gray-500 { color: #64748b !important; }
+        [data-theme="light"] .modal-box .text-gray-400 { color: #475569 !important; }
+        [data-theme="light"] .modal-box .text-gray-200,
+        [data-theme="light"] .modal-box .text-gray-300 { color: #1e293b !important; }
+        [data-theme="light"] .modal-box .text-white { color: #0f172a !important; }
+        [data-theme="light"] .modal-box .border-gray-700,
+        [data-theme="light"] .modal-box .border-gray-600,
+        [data-theme="light"] .modal-box [class*="border-gray-700"] { border-color: #cbd5e1 !important; }
+        [data-theme="light"] .modal-box .bg-gray-800,
+        [data-theme="light"] .modal-box .bg-gray-900,
+        [data-theme="light"] .modal-box [class*="bg-gray-800"],
+        [data-theme="light"] .modal-box [class*="bg-gray-900"] { background-color: #f1f5f9 !important; color: #0f172a !important; }
+        [data-theme="light"] .modal-box select,
+        [data-theme="light"] .modal-box input { background-color: #ffffff !important; color: #0f172a !important; border-color: #cbd5e1 !important; }
+        [data-theme="light"] .modal-box .bg-gray-700,
+        [data-theme="light"] .modal-box .bg-gray-500,
+        [data-theme="light"] .modal-box .hover\:bg-gray-600:hover { background-color: #e2e8f0 !important; color: #0f172a !important; }
+        [data-theme="light"] .modal-box .text-gray-500 { color: #64748b !important; }
 
-        /* UTFPR Gold theme overrides */
-        [data-theme="utfpr"] #modal-priority-analyzer .modal-box,
-        [data-theme="utfpr"] #modal-analyzer-help .modal-box {
+        /* UTFPR Gold theme overrides for all modals */
+        [data-theme="utfpr"] .modal-box {
             background-color: #171717 !important;
             border-color: #451a03 !important;
             color: #fef08a !important;
         }
-        [data-theme="utfpr"] #modal-priority-analyzer .text-gray-400,
-        [data-theme="utfpr"] #modal-analyzer-help .text-gray-400 { color: #d97706 !important; }
-        [data-theme="utfpr"] #modal-priority-analyzer .text-gray-200,
-        [data-theme="utfpr"] #modal-priority-analyzer .text-gray-300,
-        [data-theme="utfpr"] #modal-analyzer-help .text-gray-200,
-        [data-theme="utfpr"] #modal-analyzer-help .text-gray-300 { color: #fef08a !important; }
-        [data-theme="utfpr"] #modal-priority-analyzer .text-white,
-        [data-theme="utfpr"] #modal-analyzer-help .text-white { color: #fffbeb !important; }
-        [data-theme="utfpr"] #modal-priority-analyzer .border-gray-700,
-        [data-theme="utfpr"] #modal-priority-analyzer .border-gray-700\/50,
-        [data-theme="utfpr"] #modal-priority-analyzer .border-gray-700\/60,
-        [data-theme="utfpr"] #modal-priority-analyzer .border-gray-700\/80,
-        [data-theme="utfpr"] #modal-analyzer-help .border-gray-700 { border-color: #451a03 !important; }
-        [data-theme="utfpr"] #modal-priority-analyzer .bg-gray-900\/60,
-        [data-theme="utfpr"] #modal-priority-analyzer .bg-gray-900\/80,
-        [data-theme="utfpr"] #modal-priority-analyzer .bg-gray-900\/90,
-        [data-theme="utfpr"] #modal-priority-analyzer .bg-gray-900\/40,
-        [data-theme="utfpr"] #modal-analyzer-help .bg-gray-900\/80 { background-color: rgba(10,10,10,0.9) !important; }
-        [data-theme="utfpr"] #modal-priority-analyzer select,
-        [data-theme="utfpr"] #modal-priority-analyzer input { background-color: #0d0d0d !important; color: #fef08a !important; border-color: #451a03 !important; }
-        [data-theme="utfpr"] #modal-priority-analyzer .bg-gray-700,
-        [data-theme="utfpr"] #modal-priority-analyzer .hover\:bg-gray-600:hover { background-color: #262626 !important; color: #fef08a !important; }
-        [data-theme="utfpr"] #modal-priority-analyzer .text-gray-500 { color: #d97706 !important; }
+        [data-theme="utfpr"] .modal-box .text-gray-400 { color: #d97706 !important; }
+        [data-theme="utfpr"] .modal-box .text-gray-200,
+        [data-theme="utfpr"] .modal-box .text-gray-300 { color: #fef08a !important; }
+        [data-theme="utfpr"] .modal-box .text-white { color: #fffbeb !important; }
+        [data-theme="utfpr"] .modal-box .border-gray-700,
+        [data-theme="utfpr"] .modal-box .border-gray-600,
+        [data-theme="utfpr"] .modal-box [class*="border-gray-700"] { border-color: #451a03 !important; }
+        [data-theme="utfpr"] .modal-box .bg-gray-800,
+        [data-theme="utfpr"] .modal-box .bg-gray-900,
+        [data-theme="utfpr"] .modal-box [class*="bg-gray-800"],
+        [data-theme="utfpr"] .modal-box [class*="bg-gray-900"] { background-color: rgba(10,10,10,0.9) !important; color: #fef08a !important; }
+        [data-theme="utfpr"] .modal-box select,
+        [data-theme="utfpr"] .modal-box input { background-color: #0d0d0d !important; color: #fef08a !important; border-color: #451a03 !important; }
+        [data-theme="utfpr"] .modal-box .bg-gray-700,
+        [data-theme="utfpr"] .modal-box .bg-gray-500,
+        [data-theme="utfpr"] .modal-box .hover\:bg-gray-600:hover { background-color: #262626 !important; color: #fef08a !important; }
+        [data-theme="utfpr"] .modal-box .text-gray-500 { color: #d97706 !important; }
 
-        /* Dracula theme overrides */
-        [data-theme="dracula"] #modal-priority-analyzer .modal-box,
-        [data-theme="dracula"] #modal-analyzer-help .modal-box {
+        /* Dracula theme overrides for all modals */
+        [data-theme="dracula"] .modal-box {
             background-color: #1e1e2e !important;
             border-color: #45475a !important;
             color: #bac2de !important;
         }
-        [data-theme="dracula"] #modal-priority-analyzer .text-gray-400,
-        [data-theme="dracula"] #modal-analyzer-help .text-gray-400 { color: #a6adc8 !important; }
-        [data-theme="dracula"] #modal-priority-analyzer .text-gray-200,
-        [data-theme="dracula"] #modal-priority-analyzer .text-gray-300,
-        [data-theme="dracula"] #modal-analyzer-help .text-gray-200,
-        [data-theme="dracula"] #modal-analyzer-help .text-gray-300 { color: #cdd6f4 !important; }
-        [data-theme="dracula"] #modal-priority-analyzer .text-white,
-        [data-theme="dracula"] #modal-analyzer-help .text-white { color: #cdd6f4 !important; }
-        [data-theme="dracula"] #modal-priority-analyzer .border-gray-700,
-        [data-theme="dracula"] #modal-priority-analyzer .border-gray-700\/50,
-        [data-theme="dracula"] #modal-priority-analyzer .border-gray-700\/60,
-        [data-theme="dracula"] #modal-priority-analyzer .border-gray-700\/80,
-        [data-theme="dracula"] #modal-analyzer-help .border-gray-700 { border-color: #45475a !important; }
-        [data-theme="dracula"] #modal-priority-analyzer .bg-gray-900\/60,
-        [data-theme="dracula"] #modal-priority-analyzer .bg-gray-900\/80,
-        [data-theme="dracula"] #modal-priority-analyzer .bg-gray-900\/90,
-        [data-theme="dracula"] #modal-priority-analyzer .bg-gray-900\/40,
-        [data-theme="dracula"] #modal-analyzer-help .bg-gray-900\/80 { background-color: rgba(17,17,27,0.9) !important; }
-        [data-theme="dracula"] #modal-priority-analyzer select,
-        [data-theme="dracula"] #modal-priority-analyzer input { background-color: #11111b !important; color: #cdd6f4 !important; border-color: #45475a !important; }
-        [data-theme="dracula"] #modal-priority-analyzer .bg-gray-700,
-        [data-theme="dracula"] #modal-priority-analyzer .hover\:bg-gray-600:hover { background-color: #313244 !important; color: #cdd6f4 !important; }
-        [data-theme="dracula"] #modal-priority-analyzer .text-gray-500 { color: #6c7086 !important; }
+        [data-theme="dracula"] .modal-box .text-gray-400 { color: #a6adc8 !important; }
+        [data-theme="dracula"] .modal-box .text-gray-200,
+        [data-theme="dracula"] .modal-box .text-gray-300 { color: #cdd6f4 !important; }
+        [data-theme="dracula"] .modal-box .text-white { color: #cdd6f4 !important; }
+        [data-theme="dracula"] .modal-box .border-gray-700,
+        [data-theme="dracula"] .modal-box .border-gray-600,
+        [data-theme="dracula"] .modal-box [class*="border-gray-700"] { border-color: #45475a !important; }
+        [data-theme="dracula"] .modal-box .bg-gray-800,
+        [data-theme="dracula"] .modal-box .bg-gray-900,
+        [data-theme="dracula"] .modal-box [class*="bg-gray-800"],
+        [data-theme="dracula"] .modal-box [class*="bg-gray-900"] { background-color: rgba(17,17,27,0.9) !important; color: #cdd6f4 !important; }
+        [data-theme="dracula"] .modal-box select,
+        [data-theme="dracula"] .modal-box input { background-color: #11111b !important; color: #cdd6f4 !important; border-color: #45475a !important; }
+        [data-theme="dracula"] .modal-box .bg-gray-700,
+        [data-theme="dracula"] .modal-box .bg-gray-500,
+        [data-theme="dracula"] .modal-box .hover\:bg-gray-600:hover { background-color: #313244 !important; color: #cdd6f4 !important; }
+        [data-theme="dracula"] .modal-box .text-gray-500 { color: #6c7086 !important; }
     </style>
     <script>
         (function () {
@@ -2338,7 +2316,7 @@
 
                 let message = `Esta matéria (${node.name}) está bloqueada.`;
                 if (node.dependencies.length > 0) {
-                    message += ` Requer: <strong class="text-white">${prereqs}</strong>.`;
+                    message += ` Requer: <strong style="color: var(--text-main); font-weight: 700;">${prereqs}</strong>.`;
                 }
                 message += ` Deseja liberá-la mesmo assim?`
                 modalText.innerHTML = message;
