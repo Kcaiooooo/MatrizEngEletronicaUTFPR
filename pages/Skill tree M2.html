@@ -3543,7 +3543,7 @@
 
             <!-- Footer -->
             <div class="pt-4 border-t border-gray-700 flex justify-between items-center text-xs text-gray-400 shrink-0">
-                <span class="hidden sm:inline">💡 *Dica: Você pode marcar disciplinas como "Cursando" ou "Concluída" diretamente por aqui.*</span>
+                <span class="hidden sm:inline">💡 *Dica: Marque as disciplinas concluídas diretamente na árvore do site para atualizar este relatório.*</span>
                 <button onclick="closePriorityAnalyzerModal()" class="bg-gray-700 hover:bg-gray-600 text-white font-semibold px-4 py-1.5 rounded-lg transition-colors cursor-pointer ml-auto">
                     Fechar
                 </button>
@@ -3778,33 +3778,6 @@
             if (modal) modal.classList.add('hidden');
         }
 
-        function setSubjectStateFromAnalyzer(nodeId, targetState) {
-            const allNodes = getAllNodesList();
-            const node = allNodes.find(n => n && String(n.id) === String(nodeId));
-            if (!node) return;
-
-            let prefix = 'subject-';
-            if (node.type === 'humanities' || (typeof humanitiesNodes !== 'undefined' && Array.isArray(humanitiesNodes) && humanitiesNodes.includes(node))) {
-                prefix = 'humanities-';
-            } else if (node.type === 'optional' || (typeof optionalNodes !== 'undefined' && Array.isArray(optionalNodes) && optionalNodes.includes(node))) {
-                prefix = 'optional-';
-            }
-
-            const newState = prefix + targetState;
-            if (typeof activeProfile !== 'undefined' && activeProfile && activeProfile.subjectStates) {
-                activeProfile.subjectStates[node.id] = newState;
-            } else {
-                node.state = newState;
-            }
-
-            if (typeof updateAllSubjectStates === 'function') updateAllSubjectStates();
-            if (typeof renderActiveTree === 'function') renderActiveTree();
-            if (typeof updateAllProgressBars === 'function') updateAllProgressBars();
-            if (typeof saveState === 'function') saveState();
-
-            renderPriorityReport();
-        }
-
         function renderPriorityReport() {
             const summaryBar = document.getElementById('analyzer-summary-bar');
             const listEl = document.getElementById('analyzer-report-list');
@@ -3903,18 +3876,6 @@
                                 </span>
                                 ${unlockedTagsHtml}
                             </div>
-                        </div>
-
-                        <!-- Actions -->
-                        <div class="flex items-center gap-2 shrink-0 self-end md:self-center">
-                            <button onclick="setSubjectStateFromAnalyzer('${n.id}', 'inprogress')" 
-                                class="${isInProgress ? 'bg-blue-700 text-white' : 'bg-gray-800 hover:bg-blue-600/80 text-gray-300 hover:text-white'} text-xs font-semibold px-3 py-1.5 rounded-lg border border-gray-700 transition-colors cursor-pointer flex items-center gap-1" title="Marcar como Cursando">
-                                ▶ Cursando
-                            </button>
-                            <button onclick="setSubjectStateFromAnalyzer('${n.id}', 'completed')" 
-                                class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-3 py-1.5 rounded-lg transition-colors cursor-pointer flex items-center gap-1 shadow" title="Marcar como Concluída">
-                                ✓ Concluir
-                            </button>
                         </div>
                     </div>
                 `;
