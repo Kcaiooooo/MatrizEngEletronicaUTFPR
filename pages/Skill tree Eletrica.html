@@ -2178,47 +2178,54 @@
                 nodeEl.style.top = `${node.y}%`;
                 nodeEl.dataset.id = node.id;
 
-                // --- Dynamic Color Inheritance ---
-                if (node.dependencies && node.dependencies.length > 0) {
-                    const depColors = node.dependencies.map(depId => getColorForNodeId(depId));
-                    const isLocked = node.state.endsWith('-locked');
+                                    // --- Dynamic Color Inheritance & Line Matching ---
+                    const nodeColor = getColorForNodeId(node.id);
+                    const isCompleted = node.state.endsWith('-completed') || node.state.endsWith('-satisfied');
                     const isAvailable = node.state.endsWith('-available');
+                    const isLocked = node.state.endsWith('-locked');
 
-                    if (isLocked || isAvailable) {
-                        let bgStyle = '';
-                        let borderStyle = '';
-                        let shadowStyle = '';
-
-                        if (depColors.length === 1) {
-                            const hue = depColors[0].hue;
-                            if (isLocked) {
-                                bgStyle = `hsl(${hue}, 20%, 25%)`;
-                                borderStyle = `hsl(${hue}, 35%, 35%)`;
-                            } else { // available
-                                bgStyle = `hsl(${hue}, 70%, 45%)`;
-                                borderStyle = `hsl(${hue}, 85%, 60%)`;
-                                shadowStyle = `0 0 15px hsl(${hue}, 80%, 50%)`;
-                            }
-                        } else {
-                            // Multiple dependencies -> Gradient
-                            if (isLocked) {
-                                const stops = depColors.map(c => `hsl(${c.hue}, 20%, 25%)`).join(', ');
-                                bgStyle = `linear-gradient(135deg, ${stops})`;
-                                borderStyle = `hsl(${depColors[0].hue}, 35%, 35%)`;
-                            } else { // available
-                                const stops = depColors.map(c => `hsl(${c.hue}, 70%, 45%)`).join(', ');
-                                bgStyle = `linear-gradient(135deg, ${stops})`;
-                                borderStyle = `hsl(${depColors[0].hue}, 85%, 60%)`;
-                                shadowStyle = `0 0 15px hsl(${depColors[0].hue}, 80%, 50%)`;
+                    if (node.dependencies && node.dependencies.length > 0) {
+                        const depColors = node.dependencies.map(depId => getColorForNodeId(depId));
+                        if (isCompleted) {
+                            nodeEl.style.background = nodeColor.completedColor;
+                            nodeEl.style.borderColor = `hsl(${nodeColor.hue}, 85%, 65%)`;
+                            nodeEl.style.boxShadow = `0 0 12px ${nodeColor.glowColor}`;
+                        } else if (isAvailable || isLocked) {
+                            if (depColors.length === 1) {
+                                const hue = depColors[0].hue;
+                                if (isLocked) {
+                                    nodeEl.style.background = `hsl(${hue}, 20%, 25%)`;
+                                    nodeEl.style.borderColor = `hsl(${hue}, 35%, 35%)`;
+                                } else { // available
+                                    nodeEl.style.background = `hsl(${hue}, 70%, 45%)`;
+                                    nodeEl.style.borderColor = `hsl(${hue}, 85%, 60%)`;
+                                    nodeEl.style.boxShadow = `0 0 15px hsl(${hue}, 80%, 50%)`;
+                                }
+                            } else {
+                                if (isLocked) {
+                                    const stops = depColors.map(c => `hsl(${c.hue}, 20%, 25%)`).join(', ');
+                                    nodeEl.style.background = `linear-gradient(135deg, ${stops})`;
+                                    nodeEl.style.borderColor = `hsl(${depColors[0].hue}, 35%, 35%)`;
+                                } else { // available
+                                    const stops = depColors.map(c => `hsl(${c.hue}, 70%, 45%)`).join(', ');
+                                    nodeEl.style.background = `linear-gradient(135deg, ${stops})`;
+                                    nodeEl.style.borderColor = `hsl(${depColors[0].hue}, 85%, 60%)`;
+                                    nodeEl.style.boxShadow = `0 0 15px hsl(${depColors[0].hue}, 80%, 50%)`;
+                                }
                             }
                         }
-
-                        nodeEl.style.background = bgStyle;
-                        nodeEl.style.borderColor = borderStyle;
-                        if (shadowStyle) nodeEl.style.boxShadow = shadowStyle;
+                    } else {
+                        if (isCompleted) {
+                            nodeEl.style.background = nodeColor.completedColor;
+                            nodeEl.style.borderColor = `hsl(${nodeColor.hue}, 85%, 65%)`;
+                            nodeEl.style.boxShadow = `0 0 12px ${nodeColor.glowColor}`;
+                        } else if (isAvailable) {
+                            nodeEl.style.background = nodeColor.completedColor;
+                            nodeEl.style.borderColor = `hsl(${nodeColor.hue}, 85%, 60%)`;
+                            nodeEl.style.boxShadow = `0 0 15px ${nodeColor.glowColor}`;
+                        }
                     }
-                }
-                // ---------------------------------
+                    // ---------------------------------
 
                 const nodeName = document.createElement('span');
                 nodeName.textContent = node.name;

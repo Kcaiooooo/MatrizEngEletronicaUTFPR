@@ -386,6 +386,21 @@ footer {
       })();
     </script>
 
+<script>
+        function changeTheme(themeName) {
+            document.documentElement.setAttribute('data-theme', themeName);
+            localStorage.setItem('kmatrizes_theme', themeName);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('kmatrizes_theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            const select = document.getElementById('theme-select');
+            if (select) {
+                select.value = savedTheme;
+            }
+        });
+    </script>
 </head>
 <body class="min-h-screen flex flex-col">
 
