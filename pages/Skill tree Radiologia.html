@@ -3060,9 +3060,11 @@
                     return null;
                 }
                 const groupConfig = OPTIONAL_GROUPS_CONFIG[groupId];
-                const subjectsInGroup = nodes.filter(n => n.groupId === groupId);
+                // For group [1099] include humanitiesNodes and optionalNodes as well
+                const allSearchable = [...nodes, ...humanitiesNodes, ...optionalNodes];
+                const subjectsInGroup = allSearchable.filter(n => n.groupId === groupId);
                 const completedHours = subjectsInGroup
-                    .filter(n => n.state === 'subject-completed')
+                    .filter(n => n.state === 'subject-completed' || n.state === 'humanities-completed' || n.state === 'optional-completed')
                     .reduce((sum, n) => sum + n.cht, 0);
 
                 const requiredHours = groupConfig.requiredHours;
@@ -3084,18 +3086,22 @@
                     nodeEl.dataset.id = node.id;
 
                                         // --- Dynamic Color Inheritance & Line Matching ---
+                    // Every node gets a unique hue based on its OWN id (for line matching)
                     const nodeColor = getColorForNodeId(node.id);
                     const isCompleted = node.state.endsWith('-completed') || node.state.endsWith('-satisfied');
                     const isAvailable = node.state.endsWith('-available');
                     const isLocked = node.state.endsWith('-locked');
 
-                    if (node.dependencies && node.dependencies.length > 0) {
-                        const depColors = node.dependencies.map(depId => getColorForNodeId(depId));
-                        if (isCompleted) {
-                            nodeEl.style.background = nodeColor.completedColor;
-                            nodeEl.style.borderColor = `hsl(${nodeColor.hue}, 85%, 65%)`;
-                            nodeEl.style.boxShadow = `0 0 12px ${nodeColor.glowColor}`;
-                        } else if (isAvailable || isLocked) {
+                    if (isCompleted) {
+                        // Completed: use node's own color (matches its outgoing lines)
+                        nodeEl.style.background = nodeColor.completedColor;
+                        nodeEl.style.borderColor = `hsl(${nodeColor.hue}, 85%, 65%)`;
+                        nodeEl.style.boxShadow = `0 0 12px ${nodeColor.glowColor}`;
+                    } else if (node.dependencies && node.dependencies.length > 0) {
+                        const depColors = node.dependencies
+                            .filter(d => !d.startsWith('Periodo:'))
+                            .map(depId => getColorForNodeId(depId));
+                        if (depColors.length > 0) {
                             if (depColors.length === 1) {
                                 const hue = depColors[0].hue;
                                 if (isLocked) {
@@ -3119,16 +3125,11 @@
                                 }
                             }
                         }
-                    } else {
-                        if (isCompleted) {
-                            nodeEl.style.background = nodeColor.completedColor;
-                            nodeEl.style.borderColor = `hsl(${nodeColor.hue}, 85%, 65%)`;
-                            nodeEl.style.boxShadow = `0 0 12px ${nodeColor.glowColor}`;
-                        } else if (isAvailable) {
-                            nodeEl.style.background = nodeColor.completedColor;
-                            nodeEl.style.borderColor = `hsl(${nodeColor.hue}, 85%, 60%)`;
-                            nodeEl.style.boxShadow = `0 0 15px ${nodeColor.glowColor}`;
-                        }
+                    } else if (isAvailable) {
+                        // Root nodes (no deps) available: use own color
+                        nodeEl.style.background = `hsl(${nodeColor.hue}, 70%, 45%)`;
+                        nodeEl.style.borderColor = `hsl(${nodeColor.hue}, 85%, 60%)`;
+                        nodeEl.style.boxShadow = `0 0 15px hsl(${nodeColor.hue}, 80%, 50%)`;
                     }
                     // ---------------------------------
 
@@ -3490,48 +3491,29 @@
                 // Se já celebrou, não faz nada
                 if (celebrationShown) return;
 
-                // --- 1. VERIFICAÇÕES BÁSICAS ---
-                const completedSubjects = nodes.filter(s => s.state === 'subject-completed' || s.state === 'subject-satisfied').length;
-                const totalCompletedOptional = optionalNodes.filter(n => n.state === 'optional-completed').reduce((sum, n) => sum + n.cht, 0);
-                const totalCompletedHumanities = humanitiesNodes.filter(n => n.state === 'humanities-completed').reduce((sum, n) => sum + n.cht, 0);
+                // --- RADIOLOGIA: Requisitos de conclusão ---
+                // 1. Todas as obrigatórias concluídas
+                const completedMandatory = nodes.filter(s => s.state === 'subject-completed' || s.state === 'subject-satisfied').length;
+                const allMandatoryDone = completedMandatory >= nodes.length;
 
-                // Condições numéricas da M2
-                const basicRequirementsMet =
-                    completedSubjects >= nodes.length &&
-                    totalCompletedOptional >= TOTAL_OPTIONAL_HOURS &&
-                    totalCompletedHumanities >= TOTAL_HUMANITIES_HOURS;
+                // 2. 60h de optativas (humanísticas + profissionais) concluídas
+                const completedOptionalHrs = optionalNodes
+                    .filter(n => n.state === 'optional-completed')
+                    .reduce((sum, n) => sum + n.cht, 0);
+                const completedHumanitiesHrs = humanitiesNodes
+                    .filter(n => n.state === 'humanities-completed')
+                    .reduce((sum, n) => sum + n.cht, 0);
+                const totalOptativas = completedOptionalHrs + completedHumanitiesHrs;
+                const optativasDone = totalOptativas >= 60;
 
-                // --- 2. VERIFICAÇÃO DE TRILHA COMPLETA (M2) ---
-                let hasCompletedTrack = false;
-                let completedTrackName = '';
+                console.log(`Status Tecnólogo em Radiologia:
+            - Obrigatórias: ${completedMandatory}/${nodes.length} ${allMandatoryDone ? '✓' : '...'}
+            - Optativas: ${totalOptativas}/60h ${optativasDone ? '✓' : '...'}`);
 
-                // Cria conjunto de IDs completados para verificação rápida
-                const completedOptionalIds = new Set(
-                    optionalNodes
-                        .filter(n => n.state === 'optional-completed')
-                        .map(n => n.id)
-                );
-
-                // Varre APENAS as trilhas oficiais da M2 (Telecom, Bio, Pesquisa, Sinais)
-                for (const [trackName, subjectIds] of Object.entries(SPECIALIZATION_TRACKS_M2)) {
-                    const isTrackComplete = subjectIds.every(id => completedOptionalIds.has(id));
-
-                    if (isTrackComplete) {
-                        hasCompletedTrack = true;
-                        completedTrackName = trackName;
-                        break;
-                    }
-                }
-
-                // Debug no console
-                console.log(`Status Curso (M2):
-            - Requisitos Básicos: ${basicRequirementsMet ? 'OK' : 'Pendente'}
-            - Trilha Completa: ${hasCompletedTrack ? 'OK (' + completedTrackName + ')' : 'Pendente'}`);
-
-                // --- 3. DECISÃO FINAL ---
-                if (basicRequirementsMet && hasCompletedTrack) {
+                // --- DECISÃO FINAL ---
+                if (allMandatoryDone && optativasDone) {
                     celebrationModal.classList.remove('hidden');
-                    celebrationAudio.play();
+                    try { celebrationAudio.play(); } catch(e) {}
                     celebrationShown = true;
                     saveState();
                 }
