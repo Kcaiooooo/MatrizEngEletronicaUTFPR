@@ -1011,24 +1011,15 @@
                         class="w-full h-2 bg-gray-600 rounded-lg appearance-none cursor-pointer">
                 </div>
                 <hr class="border-gray-600 my-4">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 gap-6">
                     <div>
                         <div class="flex justify-between mb-1"><span
-                                class="text-base font-medium text-red-300">Profissional Complementar (Optativas)</span><span
-                                id="optional-progress-text" class="text-sm font-medium text-red-300">0/60h
+                                class="text-base font-medium text-amber-300">Disciplinas Optativas (Grupo [1099] — Humanísticas e Profissionais)</span><span
+                                id="optional-progress-text" class="text-sm font-medium text-amber-300">0/60h
                                 (0.0%)</span></div>
                         <div class="w-full bg-gray-900 rounded-full h-4">
                             <div id="optional-progress-bar"
-                                class="bg-red-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between mb-1"><span class="text-base font-medium text-purple-300">Formação Humanística & Sociais</span><span id="humanities-progress-text"
-                                class="text-sm font-medium text-purple-300">0/60h (0.0%)</span></div>
-                        <div class="w-full bg-gray-900 rounded-full h-4">
-                            <div id="humanities-progress-bar"
-                                class="bg-purple-500 h-4 rounded-full transition-all duration-500" style="width: 0%">
-                            </div>
+                                class="bg-amber-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div>
                         </div>
                     </div>
                 </div>
@@ -3362,24 +3353,21 @@
                     periodProgressBar.style.width = `${(currentPeriod / 6) * 100}%`;
                 }
 
-                // Optional/Tracks progress (Group [1099] requirement: 60h total)
-                const totalCompletedOptional = optionalNodes
+                // Single Combined Optativas Progress Bar (Group [1099] requirement: 60h total across humanísticas & profissionais)
+                const completedOptionalHours = optionalNodes
                     .filter(n => n.state === 'optional-completed')
                     .reduce((sum, n) => sum + n.cht, 0);
-                const optionalProgress = (totalCompletedOptional / 60) * 100;
-                if (optionalProgressBar && optionalProgressText) {
-                    optionalProgressBar.style.width = `${Math.min(optionalProgress, 100)}%`;
-                    optionalProgressText.textContent = `${totalCompletedOptional}/60h (${optionalProgress.toFixed(1)}%)`;
-                }
 
-                // Humanities progress (Group [1099] requirement: 60h total)
-                const totalCompletedHumanities = humanitiesNodes
+                const completedHumanitiesHours = humanitiesNodes
                     .filter(n => n.state === 'humanities-completed')
                     .reduce((sum, n) => sum + n.cht, 0);
-                const humanitiesProgress = (totalCompletedHumanities / 60) * 100;
-                if (humanitiesProgressBar && humanitiesProgressText) {
-                    humanitiesProgressBar.style.width = `${Math.min(humanitiesProgress, 100)}%`;
-                    humanitiesProgressText.textContent = `${totalCompletedHumanities}/60h (${humanitiesProgress.toFixed(1)}%)`;
+
+                const totalCompletedOptativas = completedOptionalHours + completedHumanitiesHours;
+                const optativasProgress = (totalCompletedOptativas / 60) * 100;
+
+                if (optionalProgressBar && optionalProgressText) {
+                    optionalProgressBar.style.width = `${Math.min(optativasProgress, 100)}%`;
+                    optionalProgressText.textContent = `${totalCompletedOptativas}/60h (${optativasProgress.toFixed(1)}%)`;
                 }
 
                 // 5. Progresso Grupo 1015 (Administração e Economia)
