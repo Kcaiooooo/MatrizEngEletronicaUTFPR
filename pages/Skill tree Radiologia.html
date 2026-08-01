@@ -996,7 +996,7 @@
                 <div>
                     <div class="flex justify-between mb-1"><span class="text-base font-medium text-gray-200">Progresso
                             do Curso (Obrigatórias)</span><span id="total-progress-text"
-                            class="text-sm font-medium text-gray-200">0%</span></div>
+                            class="text-sm font-medium text-gray-200">0.0% (0/2565h)</span></div>
                     <div class="w-full bg-gray-600 rounded-full h-4">
                         <div id="total-progress-bar" class="bg-green-500 h-4 rounded-full transition-all duration-500"
                             style="width: 0%"></div>
@@ -1217,8 +1217,8 @@
         <script type="module">
 
             // --- CONFIGURATION CONSTANTS ---
-            const TOTAL_HUMANITIES_HOURS = 210;
-            const TOTAL_OPTIONAL_HOURS = 300;
+            const TOTAL_HUMANITIES_HOURS = 60;
+            const TOTAL_OPTIONAL_HOURS = 60;
             const NODE_WIDTH = 130;
             const NODE_HEIGHT = 90;
 
@@ -3345,37 +3345,42 @@
             }
 
             function updateAllProgressBars() {
-                // Main progress
-                const coreNodes = nodes.filter(n => n.groupId !== '[1015]');
-                const completedSubjects = coreNodes.filter(s => s.state === 'subject-completed' || s.state === 'subject-satisfied').length;
-                const totalProgress = coreNodes.length > 0 ? (completedSubjects / coreNodes.length) * 100 : 0;
-                totalProgressBar.style.width = `${totalProgress}%`;
-                totalProgressText.textContent = `${totalProgress.toFixed(1)}% (${completedSubjects}/${coreNodes.length})`;
+                // Main mandatory progress (Total 2565h in 35 subjects)
+                const coreNodes = nodes;
+                const completedCoreHours = coreNodes
+                    .filter(s => s.state === 'subject-completed' || s.state === 'subject-satisfied')
+                    .reduce((sum, s) => sum + s.cht, 0);
+                const totalProgress = (completedCoreHours / 2565) * 100;
+                totalProgressBar.style.width = `${Math.min(totalProgress, 100)}%`;
+                totalProgressText.textContent = `${totalProgress.toFixed(1)}% (${completedCoreHours}/2565h)`;
 
-                // Period progress (agora lendo do slider)
+                // Period progress
                 const periodDisplay = document.getElementById('period-display');
                 periodDisplay.textContent = `Período ${currentPeriod}`;
-                // Opcional: Se quiser manter uma barra de progresso visual para o período
-                const periodProgressBar = document.getElementById('period-progress-bar'); // Se você manteve a barra de progresso no HTML
+                const periodProgressBar = document.getElementById('period-progress-bar');
                 if (periodProgressBar) {
-                    periodProgressBar.style.width = `${(currentPeriod / 10) * 100}%`;
+                    periodProgressBar.style.width = `${(currentPeriod / 6) * 100}%`;
                 }
 
-                // Optional/Tracks progress
+                // Optional/Tracks progress (Group [1099] requirement: 60h total)
                 const totalCompletedOptional = optionalNodes
                     .filter(n => n.state === 'optional-completed')
                     .reduce((sum, n) => sum + n.cht, 0);
-                const optionalProgress = (totalCompletedOptional / TOTAL_OPTIONAL_HOURS) * 100;
-                optionalProgressBar.style.width = `${Math.min(optionalProgress, 100)}%`;
-                optionalProgressText.textContent = `${totalCompletedOptional}/${TOTAL_OPTIONAL_HOURS}h (${optionalProgress.toFixed(1)}%)`;
+                const optionalProgress = (totalCompletedOptional / 60) * 100;
+                if (optionalProgressBar && optionalProgressText) {
+                    optionalProgressBar.style.width = `${Math.min(optionalProgress, 100)}%`;
+                    optionalProgressText.textContent = `${totalCompletedOptional}/60h (${optionalProgress.toFixed(1)}%)`;
+                }
 
-                // Humanities progress
+                // Humanities progress (Group [1099] requirement: 60h total)
                 const totalCompletedHumanities = humanitiesNodes
                     .filter(n => n.state === 'humanities-completed')
                     .reduce((sum, n) => sum + n.cht, 0);
-                const humanitiesProgress = (totalCompletedHumanities / TOTAL_HUMANITIES_HOURS) * 100;
-                humanitiesProgressBar.style.width = `${Math.min(humanitiesProgress, 100)}%`;
-                humanitiesProgressText.textContent = `${totalCompletedHumanities}/${TOTAL_HUMANITIES_HOURS}h (${humanitiesProgress.toFixed(1)}%)`;
+                const humanitiesProgress = (totalCompletedHumanities / 60) * 100;
+                if (humanitiesProgressBar && humanitiesProgressText) {
+                    humanitiesProgressBar.style.width = `${Math.min(humanitiesProgress, 100)}%`;
+                    humanitiesProgressText.textContent = `${totalCompletedHumanities}/60h (${humanitiesProgress.toFixed(1)}%)`;
+                }
 
                 // 5. Progresso Grupo 1015 (Administração e Economia)
                 if (group1015ProgressBar && group1015ProgressText) {
