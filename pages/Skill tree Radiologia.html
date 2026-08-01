@@ -1014,8 +1014,8 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <div class="flex justify-between mb-1"><span
-                                class="text-base font-medium text-red-300">Trilhas</span><span
-                                id="optional-progress-text" class="text-sm font-medium text-red-300">0/300h
+                                class="text-base font-medium text-red-300">Profissional Complementar (Optativas)</span><span
+                                id="optional-progress-text" class="text-sm font-medium text-red-300">0/60h
                                 (0.0%)</span></div>
                         <div class="w-full bg-gray-900 rounded-full h-4">
                             <div id="optional-progress-bar"
@@ -1023,23 +1023,11 @@
                         </div>
                     </div>
                     <div>
-                        <div class="flex justify-between mb-1"><span class="text-base font-medium text-purple-300">Ciclo
-                                de Humanidades</span><span id="humanities-progress-text"
-                                class="text-sm font-medium text-purple-300">0/210h (0.0%)</span></div>
+                        <div class="flex justify-between mb-1"><span class="text-base font-medium text-purple-300">Formação Humanística & Sociais</span><span id="humanities-progress-text"
+                                class="text-sm font-medium text-purple-300">0/60h (0.0%)</span></div>
                         <div class="w-full bg-gray-900 rounded-full h-4">
                             <div id="humanities-progress-bar"
                                 class="bg-purple-500 h-4 rounded-full transition-all duration-500" style="width: 0%">
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between mb-1"><span
-                                class="text-base font-medium text-emerald-300">Administração E Economia</span><span
-                                id="group1015-progress-text" class="text-sm font-medium text-emerald-300">0/120h
-                                (0.0%)</span></div>
-                        <div class="w-full bg-gray-900 rounded-full h-4 mb-2">
-                            <div id="group1015-progress-bar"
-                                class="bg-emerald-500 h-4 rounded-full transition-all duration-500" style="width: 0%">
                             </div>
                         </div>
                     </div>
@@ -1120,9 +1108,9 @@
             </div>
 
             <div class="flex justify-center mb-4 border-b border-gray-600">
-                <button id="tab-main" class="tab-btn active">Obrigatorias</button>
-                <button id="tab-humanities" class="tab-btn">Humanidades</button>
-                <button id="tab-optional" class="tab-btn">Trilhas</button>
+                <button id="tab-main" class="tab-btn active">Obrigatórias</button>
+                <button id="tab-humanities" class="tab-btn">Formação Humanística</button>
+                <button id="tab-optional" class="tab-btn">Profissional Complementar (Optativas)</button>
             </div>
 
             <div class="tree-wrapper">
@@ -1252,58 +1240,356 @@
 
             // --- DEFINIÇÃO DOS GRUPOS ---
             const OPTIONAL_GROUPS_CONFIG = {
-                // --- Grupos de Matérias Obrigatórias ---
-                '[1005]': { requiredHours: 90, name: 'Computação' },
-                '[1006]': { requiredHours: 165, name: 'Circuitos Elétricos' },
-                '[1007]': { requiredHours: 105, name: 'Eletromagnetismo' },
-                '[1009]': { requiredHours: 120, name: 'Instrumentação' },
-                '[1010]': { requiredHours: 255, name: 'Física' },
-                '[1011]': { requiredHours: 105, name: 'Mecânica Dos Sólidos' },
-                '[1012]': { requiredHours: 405, name: 'Matemática' },
-                '[1014]': { requiredHours: 30, name: 'Ciências Do Ambiente' },
-                '[1015]': { requiredHours: 120, name: 'Administração E Economia' },
-                '[1017]': { requiredHours: 240, name: 'Controle E Automação' },
-                '[1018]': { requiredHours: 315, name: 'Eletrônica Digital' },
-                '[1020]': { requiredHours: 135, name: 'Prática De Engenharia' },
-                '[1021]': { requiredHours: 75, name: 'Opção De Idioma: Circuitos Digitais' },
-                '[1022]': { requiredHours: 60, name: 'Opção De Idioma: Microcontroladores' },
-                '[1023]': { requiredHours: 60, name: 'Opção De Idioma: Arq E Org De Computador' },
-                '[1024]': { requiredHours: 60, name: 'Opção De Idioma: Sistemas Operacionais' },
-                '[1025]': { requiredHours: 60, name: 'Opção De Idioma: Sistemas Embarcados' },
-                '[1026]': { requiredHours: 60, name: 'Opção De Idioma: Pds' },
-                '[1027]': { requiredHours: 60, name: 'Opção De Idioma: Modelagem E Simulação' },
-                '[1028]': { requiredHours: 60, name: 'Opção De Idioma: Controle 1' },
-                '[1029]': { requiredHours: 60, name: 'Opção De Idioma: Controle 2' },
-                '[1030]': { requiredHours: 60, name: 'Opção De Idioma: Automação' },
-                '[1031]': { requiredHours: 75, name: 'Opção De Idioma: Eletrônica De Potência' },
-                '[1032]': { requiredHours: 60, name: 'Opção De Idioma: Princ De Comunicações' },
-                '[1033]': { requiredHours: 75, name: 'Opção De Idioma: Comunicações Digitals' },
-                '[1040]': { requiredHours: 240, name: 'Disciplinas Clássicas Eletron Analógica' },
-                '[1041]': { requiredHours: 90, name: 'Disciplinas De Matemática Aplicada' },
-
-                // --- Grupos de Matérias de Humanidades ---
-                '[1013]': { requiredHours: 210, name: 'Ciclo De Humanidades' },
-                '[1042]': { requiredHours: 210, name: 'Ciências Sociais E Aplicadas' },
-                '[1043]': { requiredHours: 210, name: 'Ciências Humanas' },
-                '[1044]': { requiredHours: 210, name: 'Linguística, Letras E Artes' },
-                '[1045]': { requiredHours: 210, name: 'Saúde' },
-                '[1046]': { requiredHours: 210, name: 'Disciplinas Convalidadas De Humanas' },
-
-                // --- Grupos de Trilhas ---
-                '[1034]': { requiredHours: 360, name: 'Trilhas De Aprofundamento' },
-                '[1035]': { requiredHours: 360, name: 'Telecomunicações' },
-                '[1036]': { requiredHours: 270, name: 'Engenharia Biomédica' },
-                '[1037]': { requiredHours: 315, name: 'Pesquisa Científica' },
-                '[1038]': { requiredHours: 240, name: 'Proc De Sinais, Imagens E Padrões' },
-                '[1039]': { requiredHours: 360, name: 'Trilha Eletiva' },
-                '[1047]': { requiredHours: 330, name: 'Optativas' },
-                '[1111]': { requiredHours: 285, name: 'Computação' }
+                '[1099]': { requiredHours: 60, name: 'Disciplinas Optativas' }
             };
             // ----------------------------------------------------------------
 
             // --- ESTRUTURA DE DADOS (Árvore Principal - Obrigatórias) ---
-            var allHumanitiesData = [];
-            var allOptionalNodesData = [];
+            var allHumanitiesData = [
+            {
+                        "id": "CAART04",
+                        "name": "PRÁTICA ARTÍSTICA MUSICAL: GRUPOS INSTRUMENTAIS 1",
+                        "period": 2,
+                        "x": 26,
+                        "y": 12,
+                        "cht": 90,
+                        "dependencies": [],
+                        "type": "humanities",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FCH7FA",
+                        "name": "FILOSOFIA DA CIÊNCIA E DA TECNOLOGIA",
+                        "period": 2,
+                        "x": 26,
+                        "y": 24,
+                        "cht": 45,
+                        "dependencies": [],
+                        "type": "humanities",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FCH7PB",
+                        "name": "RELAÇÕES INTERPESSOAIS, GRUPO E PODER",
+                        "period": 2,
+                        "x": 26,
+                        "y": 36,
+                        "cht": 30,
+                        "dependencies": [],
+                        "type": "humanities",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FCH7PC",
+                        "name": "PLANEJAMENTO DE CARREIRA",
+                        "period": 2,
+                        "x": 26,
+                        "y": 48,
+                        "cht": 60,
+                        "dependencies": [],
+                        "type": "humanities",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FCH7SC",
+                        "name": "TECNOLOGIA, TRABALHO E SAÚDE",
+                        "period": 2,
+                        "x": 26,
+                        "y": 60,
+                        "cht": 45,
+                        "dependencies": [],
+                        "type": "humanities",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FCH7XA",
+                        "name": "TECNOLOGIA SOCIAL E ECONOMIA SOLIDÁRIA",
+                        "period": 2,
+                        "x": 26,
+                        "y": 72,
+                        "cht": 60,
+                        "dependencies": [],
+                        "type": "humanities",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FCH7XB",
+                        "name": "PRESENÇA AFRICANA NO BRASIL: TECNOLOGIA, TRABALHO E CULTURA",
+                        "period": 2,
+                        "x": 26,
+                        "y": 84,
+                        "cht": 45,
+                        "dependencies": [],
+                        "type": "humanities",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FCH7XC",
+                        "name": "PRESENÇA AFRICANA NO BRASIL",
+                        "period": 2,
+                        "x": 26,
+                        "y": 96,
+                        "cht": 30,
+                        "dependencies": [],
+                        "type": "humanities",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "GEE7F1",
+                        "name": "FUNDAMENTOS DE FINANÇAS",
+                        "period": 2,
+                        "x": 42,
+                        "y": 12,
+                        "cht": 60,
+                        "dependencies": [],
+                        "type": "humanities",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "GEE7G1",
+                        "name": "FUNDAMENTOS DE GESTÃO DE PESSOAS",
+                        "period": 2,
+                        "x": 42,
+                        "y": 24,
+                        "cht": 45,
+                        "dependencies": [],
+                        "type": "humanities",
+                        "groupId": "[1099]"
+            }
+];
+            var allOptionalNodesData = [
+            {
+                        "id": "DIN8Z1",
+                        "name": "ERGONOMIA APLICADA À RADIOLOGIA",
+                        "period": 2,
+                        "x": 26,
+                        "y": 10,
+                        "cht": 45,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "EDU70I",
+                        "name": "EDUCAÇÃO ESPECIAL E PROCESSOS INCLUSIVOS",
+                        "period": 2,
+                        "x": 26,
+                        "y": 20,
+                        "cht": 45,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "EDU70J",
+                        "name": "LIBRAS",
+                        "period": 2,
+                        "x": 26,
+                        "y": 30,
+                        "cht": 45,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS7E1",
+                        "name": "FÍSICA EXPERIMENTAL 1",
+                        "period": 2,
+                        "x": 26,
+                        "y": 40,
+                        "cht": 30,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS7E2",
+                        "name": "FÍSICA EXPERIMENTAL 2",
+                        "period": 2,
+                        "x": 26,
+                        "y": 50,
+                        "cht": 30,
+                        "dependencies": [
+                                    "FIS7E1"
+                        ],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8A1",
+                        "name": "RADIOLOGIA VETERINÁRIA",
+                        "period": 2,
+                        "x": 26,
+                        "y": 60,
+                        "cht": 30,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8A2",
+                        "name": "NORMAS E RECOMENDAÇÕES EM RADIOLOGIA",
+                        "period": 2,
+                        "x": 26,
+                        "y": 70,
+                        "cht": 30,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8A3",
+                        "name": "RADIOLOGIA FORENSE",
+                        "period": 2,
+                        "x": 26,
+                        "y": 80,
+                        "cht": 30,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8A4",
+                        "name": "RADIOLOGIA NO CENTRO CIRÚRGICO",
+                        "period": 2,
+                        "x": 42,
+                        "y": 10,
+                        "cht": 30,
+                        "dependencies": [
+                                    "FIS82B"
+                        ],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8A5",
+                        "name": "PROTOCOLOS EM TC E RM",
+                        "period": 2,
+                        "x": 42,
+                        "y": 20,
+                        "cht": 30,
+                        "dependencies": [
+                                    "FIS85A",
+                                    "FIS85B"
+                        ],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8A6",
+                        "name": "SAÚDE COLETIVA",
+                        "period": 2,
+                        "x": 42,
+                        "y": 30,
+                        "cht": 75,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8A7",
+                        "name": "VOLUNTARIADO EM SAÚDE",
+                        "period": 2,
+                        "x": 42,
+                        "y": 40,
+                        "cht": 75,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8A8",
+                        "name": "DESENVOLVIMENTO DE MATERIAL DIDÁTICO INTERATIVO PARA ENSINO DE RADIOLOGIA",
+                        "period": 2,
+                        "x": 42,
+                        "y": 50,
+                        "cht": 75,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8A9",
+                        "name": "RADIOBIOLOGIA MOLECULAR E CELULAR",
+                        "period": 2,
+                        "x": 42,
+                        "y": 60,
+                        "cht": 30,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8B1",
+                        "name": "FÍSICA NUCLEAR APLICADA À RADIOLOGIA",
+                        "period": 2,
+                        "x": 42,
+                        "y": 70,
+                        "cht": 30,
+                        "dependencies": [
+                                    "FIS83F"
+                        ],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8B2",
+                        "name": "MANUFATURA ADITIVA EM RADIOLOGIA",
+                        "period": 2,
+                        "x": 42,
+                        "y": 80,
+                        "cht": 30,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8B3",
+                        "name": "LABORATÓRIO DE DOSIMETRIA",
+                        "period": 2,
+                        "x": 58,
+                        "y": 10,
+                        "cht": 30,
+                        "dependencies": [
+                                    "FIS84E"
+                        ],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8B4",
+                        "name": "RADIOLOGIA E COMUNIDADE",
+                        "period": 2,
+                        "x": 58,
+                        "y": 20,
+                        "cht": 75,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "GEE7E3",
+                        "name": "FUNDAMENTOS DE ECONOMIA",
+                        "period": 2,
+                        "x": 58,
+                        "y": 30,
+                        "cht": 30,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "GEE7M1",
+                        "name": "FUNDAMENTOS DE MARKETING",
+                        "period": 2,
+                        "x": 58,
+                        "y": 40,
+                        "cht": 45,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            }
+];
             var allNodesData = [
             {
                         "id": "COE70A",
@@ -1311,7 +1597,7 @@
                         "period": 1,
                         "x": 10,
                         "y": 8,
-                        "cht": 60,
+                        "cht": 30,
                         "dependencies": []
             },
             {
@@ -1319,8 +1605,8 @@
                         "name": "ENADE INGRESSANTE",
                         "period": 1,
                         "x": 10,
-                        "y": 18.5,
-                        "cht": 60,
+                        "y": 19,
+                        "cht": 0,
                         "dependencies": []
             },
             {
@@ -1328,7 +1614,7 @@
                         "name": "FÍSICA APLICADA À ÁREA DA SAÚDE 1",
                         "period": 1,
                         "x": 10,
-                        "y": 29.0,
+                        "y": 30,
                         "cht": 60,
                         "dependencies": []
             },
@@ -1337,17 +1623,17 @@
                         "name": "INTRODUÇÃO À RADIOLOGIA",
                         "period": 1,
                         "x": 10,
-                        "y": 39.5,
-                        "cht": 60,
+                        "y": 41,
+                        "cht": 30,
                         "dependencies": []
             },
             {
                         "id": "FIS81C",
-                        "name": "ANATOMIA",
+                        "name": "ANATOMIA HUMANA 1",
                         "period": 1,
                         "x": 10,
-                        "y": 50.0,
-                        "cht": 60,
+                        "y": 52,
+                        "cht": 45,
                         "dependencies": []
             },
             {
@@ -1355,35 +1641,35 @@
                         "name": "TÓPICOS MATEMÁTICOS 1",
                         "period": 1,
                         "x": 10,
-                        "y": 60.5,
-                        "cht": 60,
+                        "y": 63,
+                        "cht": 90,
                         "dependencies": []
             },
             {
                         "id": "QBI81A",
-                        "name": "FUNDAMENTOS DE",
+                        "name": "FUNDAMENTOS DE BIOQUÍMICA",
                         "period": 1,
                         "x": 10,
-                        "y": 71.0,
-                        "cht": 60,
+                        "y": 74,
+                        "cht": 45,
                         "dependencies": []
             },
             {
                         "id": "QBI81B",
-                        "name": "BIOLOGIA",
+                        "name": "BIOLOGIA CELULAR E MICROBIOLOGIA",
                         "period": 1,
                         "x": 10,
-                        "y": 81.5,
-                        "cht": 60,
+                        "y": 85,
+                        "cht": 45,
                         "dependencies": []
             },
             {
                         "id": "FIS80A",
-                        "name": "ESTÁGIO",
+                        "name": "ESTÁGIO CURRICULAR OBRIGATÓRIO",
                         "period": 2,
                         "x": 26,
                         "y": 8,
-                        "cht": 60,
+                        "cht": 600,
                         "dependencies": [
                                     "FIS83C",
                                     "FIS83D"
@@ -1394,7 +1680,7 @@
                         "name": "FÍSICA APLICADA À AREA DE SAÚDE 2",
                         "period": 2,
                         "x": 26,
-                        "y": 18.5,
+                        "y": 19,
                         "cht": 60,
                         "dependencies": [
                                     "FIS81A"
@@ -1405,8 +1691,8 @@
                         "name": "BIOSSEGURANÇA",
                         "period": 2,
                         "x": 26,
-                        "y": 29.0,
-                        "cht": 60,
+                        "y": 30,
+                        "cht": 45,
                         "dependencies": []
             },
             {
@@ -1414,7 +1700,7 @@
                         "name": "FISIOLOGIA GERAL",
                         "period": 2,
                         "x": 26,
-                        "y": 39.5,
+                        "y": 41,
                         "cht": 60,
                         "dependencies": [
                                     "FIS81C"
@@ -1425,17 +1711,17 @@
                         "name": "BIOÉTICA",
                         "period": 2,
                         "x": 26,
-                        "y": 50.0,
-                        "cht": 60,
+                        "y": 52,
+                        "cht": 30,
                         "dependencies": []
             },
             {
                         "id": "FIS82E",
-                        "name": "ANATOMIA",
+                        "name": "ANATOMIA HUMANA 2",
                         "period": 2,
                         "x": 26,
-                        "y": 60.5,
-                        "cht": 60,
+                        "y": 63,
+                        "cht": 45,
                         "dependencies": [
                                     "FIS81C"
                         ]
@@ -1445,15 +1731,15 @@
                         "name": "TÓPICOS MATEMÁTICOS 2",
                         "period": 2,
                         "x": 26,
-                        "y": 71.0,
-                        "cht": 60,
+                        "y": 74,
+                        "cht": 90,
                         "dependencies": [
                                     "MAT7T1"
                         ]
             },
             {
                         "id": "FIS83A",
-                        "name": "FÍSICA APLICADA À ÀREA",
+                        "name": "FÍSICA APLICADA À ÁREA DA SAÚDE 3",
                         "period": 3,
                         "x": 42,
                         "y": 8,
@@ -1467,7 +1753,7 @@
                         "name": "FORMAÇÃO DE IMAGENS 1",
                         "period": 3,
                         "x": 42,
-                        "y": 18.5,
+                        "y": 19,
                         "cht": 60,
                         "dependencies": []
             },
@@ -1476,28 +1762,28 @@
                         "name": "PROTEÇÃO RADIOLÓGICA",
                         "period": 3,
                         "x": 42,
-                        "y": 29.0,
+                        "y": 30,
                         "cht": 60,
                         "dependencies": []
             },
             {
                         "id": "FIS83D",
-                        "name": "EXAMES RADIOLÓGICOS",
+                        "name": "EXAMES RADIOLÓGICOS CONVENCIONAIS 1",
                         "period": 3,
                         "x": 42,
-                        "y": 39.5,
-                        "cht": 60,
+                        "y": 41,
+                        "cht": 90,
                         "dependencies": [
                                     "FIS82E"
                         ]
             },
             {
                         "id": "FIS83E",
-                        "name": "ASSISTÊNCIA INTEGRAL",
+                        "name": "ASSISTÊNCIA INTEGRAL AO PACIENTE EM RADIOLOGIA",
                         "period": 3,
                         "x": 42,
-                        "y": 50.0,
-                        "cht": 60,
+                        "y": 52,
+                        "cht": 30,
                         "dependencies": [
                                     "FIS82B",
                                     "FIS82E"
@@ -1508,26 +1794,26 @@
                         "name": "FÍSICA DAS RADIAÇÕES",
                         "period": 3,
                         "x": 42,
-                        "y": 60.5,
-                        "cht": 60,
+                        "y": 63,
+                        "cht": 90,
                         "dependencies": []
             },
             {
                         "id": "FCH7PA",
-                        "name": "PSICOLOGIA DO",
+                        "name": "PSICOLOGIA DO TRABALHO",
                         "period": 4,
                         "x": 58,
                         "y": 8,
-                        "cht": 60,
+                        "cht": 30,
                         "dependencies": []
             },
             {
                         "id": "FIS84A",
-                        "name": "METODOLOGIA DA",
+                        "name": "METODOLOGIA DA PESQUISA",
                         "period": 4,
                         "x": 58,
-                        "y": 18.5,
-                        "cht": 60,
+                        "y": 19,
+                        "cht": 30,
                         "dependencies": []
             },
             {
@@ -1535,8 +1821,8 @@
                         "name": "MAMOGRAFIA",
                         "period": 4,
                         "x": 58,
-                        "y": 29.0,
-                        "cht": 60,
+                        "y": 30,
+                        "cht": 45,
                         "dependencies": [
                                     "FIS83B"
                         ]
@@ -1546,17 +1832,17 @@
                         "name": "RADIOTERAPIA",
                         "period": 4,
                         "x": 58,
-                        "y": 39.5,
-                        "cht": 60,
+                        "y": 41,
+                        "cht": 45,
                         "dependencies": []
             },
             {
                         "id": "FIS84D",
-                        "name": "EXAMES RADIOLÓGICOS",
+                        "name": "EXAMES RADIOLÓGICOS CONVENCIONAIS 2",
                         "period": 4,
                         "x": 58,
-                        "y": 50.0,
-                        "cht": 60,
+                        "y": 52,
+                        "cht": 75,
                         "dependencies": [
                                     "FIS83D"
                         ]
@@ -1566,8 +1852,8 @@
                         "name": "DOSIMETRIA",
                         "period": 4,
                         "x": 58,
-                        "y": 60.5,
-                        "cht": 60,
+                        "y": 63,
+                        "cht": 30,
                         "dependencies": []
             },
             {
@@ -1575,40 +1861,40 @@
                         "name": "FORMAÇÃO DE IMAGENS 2",
                         "period": 4,
                         "x": 58,
-                        "y": 71.0,
-                        "cht": 60,
+                        "y": 74,
+                        "cht": 45,
                         "dependencies": [
                                     "FIS83B"
                         ]
             },
             {
                         "id": "FIS84G",
-                        "name": "ANATOMOFISIOPATOLOGIA",
+                        "name": "ANATOMOFISIOPATOLOGIA NAS IMAGENS MÉDICAS 1",
                         "period": 4,
                         "x": 58,
-                        "y": 81.5,
-                        "cht": 60,
+                        "y": 85,
+                        "cht": 45,
                         "dependencies": [
                                     "FIS82E"
                         ]
             },
             {
                         "id": "FIS85A",
-                        "name": "TOMOGRAFIA",
+                        "name": "TOMOGRAFIA COMPUTADORIZADA",
                         "period": 5,
                         "x": 74,
                         "y": 8,
-                        "cht": 60,
+                        "cht": 45,
                         "dependencies": [
                                     "FIS84F"
                         ]
             },
             {
                         "id": "FIS85B",
-                        "name": "RESSONÂNCIA",
+                        "name": "RESSONÂNCIA MAGNÉTICA",
                         "period": 5,
                         "x": 74,
-                        "y": 18.5,
+                        "y": 19,
                         "cht": 60,
                         "dependencies": [
                                     "FIS83A"
@@ -1616,11 +1902,11 @@
             },
             {
                         "id": "FIS85C",
-                        "name": "LABORATÓRIO DE",
+                        "name": "LABORATÓRIO DE RADIOLOGIA",
                         "period": 5,
                         "x": 74,
-                        "y": 29.0,
-                        "cht": 60,
+                        "y": 30,
+                        "cht": 30,
                         "dependencies": [
                                     "FIS83B"
                         ]
@@ -1630,70 +1916,70 @@
                         "name": "CARTAS TÉCNICAS",
                         "period": 5,
                         "x": 74,
-                        "y": 39.5,
-                        "cht": 60,
+                        "y": 41,
+                        "cht": 30,
                         "dependencies": [
                                     "FIS84F"
                         ]
             },
             {
                         "id": "FIS85E",
-                        "name": "TRABALHO DE",
+                        "name": "TRABALHO DE CONCLUSÃO 1",
                         "period": 5,
                         "x": 74,
-                        "y": 50.0,
-                        "cht": 60,
+                        "y": 52,
+                        "cht": 30,
                         "dependencies": [
                                     "FIS84A"
                         ]
             },
             {
                         "id": "FIS85F",
-                        "name": "RADIOLOGIA",
+                        "name": "RADIOLOGIA ODONTOLÓGICA",
                         "period": 5,
                         "x": 74,
-                        "y": 60.5,
-                        "cht": 60,
+                        "y": 63,
+                        "cht": 30,
                         "dependencies": [
                                     "FIS83B"
                         ]
             },
             {
                         "id": "FIS85G",
-                        "name": "ANATOMOFISIOPATOLOGIA",
+                        "name": "ANATOMOFISIOPATOLOGIA NAS IMAGENS MÉDICAS 2",
                         "period": 5,
                         "x": 74,
-                        "y": 71.0,
-                        "cht": 60,
+                        "y": 74,
+                        "cht": 30,
                         "dependencies": [
                                     "FIS84G"
                         ]
             },
             {
                         "id": "GEE7A1",
-                        "name": "FUNDAMENTOS DE",
+                        "name": "FUNDAMENTOS DE ADMINISTRAÇÃO",
                         "period": 5,
                         "x": 74,
-                        "y": 81.5,
-                        "cht": 60,
+                        "y": 85,
+                        "cht": 45,
                         "dependencies": []
             },
             {
                         "id": "ENADE6",
-                        "name": "ENADE",
+                        "name": "ENADE CONCLUINTE",
                         "period": 6,
                         "x": 90,
                         "y": 8,
-                        "cht": 60,
+                        "cht": 0,
                         "dependencies": []
             },
             {
                         "id": "FIS86A",
-                        "name": "PROCESSAMENTO DE",
+                        "name": "PROCESSAMENTO DE IMAGENS DIGITAIS",
                         "period": 6,
                         "x": 90,
-                        "y": 18.5,
-                        "cht": 60,
+                        "y": 19,
+                        "cht": 45,
                         "dependencies": []
             },
             {
@@ -1701,7 +1987,7 @@
                         "name": "MEDICINA NUCLEAR",
                         "period": 6,
                         "x": 90,
-                        "y": 29.0,
+                        "y": 30,
                         "cht": 60,
                         "dependencies": [
                                     "FIS82C"
@@ -1712,42 +1998,388 @@
                         "name": "RADIOLOGIA INDUSTRIAL",
                         "period": 6,
                         "x": 90,
-                        "y": 39.5,
-                        "cht": 60,
+                        "y": 41,
+                        "cht": 30,
                         "dependencies": []
             },
             {
                         "id": "FIS86D",
-                        "name": "ULTRASSOM N",
+                        "name": "ULTRASSOM",
                         "period": 6,
                         "x": 90,
-                        "y": 50.0,
-                        "cht": 60,
+                        "y": 52,
+                        "cht": 30,
                         "dependencies": []
             },
             {
                         "id": "FIS86E",
-                        "name": "TRABALHO DE",
+                        "name": "TRABALHO DE CONCLUSÃO 2",
                         "period": 6,
                         "x": 90,
-                        "y": 60.5,
+                        "y": 63,
                         "cht": 60,
-                        "dependencies": []
+                        "dependencies": [
+                                    "Periodo:6",
+                                    "FIS85E"
+                        ]
             },
             {
                         "id": "GEE7E1",
-                        "name": "FUNDAMENTOS DE",
+                        "name": "FUNDAMENTOS DE EMPREENDEDORISMO",
                         "period": 6,
                         "x": 90,
-                        "y": 71.0,
-                        "cht": 60,
+                        "y": 74,
+                        "cht": 30,
                         "dependencies": []
             }
 ];
 
             // --- ESTRUTURA DE DADOS (Árvore de Humanidades) ---
-            var allHumanitiesData = [];
-            var allOptionalNodesData = [];
+            var allHumanitiesData = [
+            {
+                        "id": "CAART04",
+                        "name": "PRÁTICA ARTÍSTICA MUSICAL: GRUPOS INSTRUMENTAIS 1",
+                        "period": 2,
+                        "x": 26,
+                        "y": 12,
+                        "cht": 90,
+                        "dependencies": [],
+                        "type": "humanities",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FCH7FA",
+                        "name": "FILOSOFIA DA CIÊNCIA E DA TECNOLOGIA",
+                        "period": 2,
+                        "x": 26,
+                        "y": 24,
+                        "cht": 45,
+                        "dependencies": [],
+                        "type": "humanities",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FCH7PB",
+                        "name": "RELAÇÕES INTERPESSOAIS, GRUPO E PODER",
+                        "period": 2,
+                        "x": 26,
+                        "y": 36,
+                        "cht": 30,
+                        "dependencies": [],
+                        "type": "humanities",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FCH7PC",
+                        "name": "PLANEJAMENTO DE CARREIRA",
+                        "period": 2,
+                        "x": 26,
+                        "y": 48,
+                        "cht": 60,
+                        "dependencies": [],
+                        "type": "humanities",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FCH7SC",
+                        "name": "TECNOLOGIA, TRABALHO E SAÚDE",
+                        "period": 2,
+                        "x": 26,
+                        "y": 60,
+                        "cht": 45,
+                        "dependencies": [],
+                        "type": "humanities",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FCH7XA",
+                        "name": "TECNOLOGIA SOCIAL E ECONOMIA SOLIDÁRIA",
+                        "period": 2,
+                        "x": 26,
+                        "y": 72,
+                        "cht": 60,
+                        "dependencies": [],
+                        "type": "humanities",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FCH7XB",
+                        "name": "PRESENÇA AFRICANA NO BRASIL: TECNOLOGIA, TRABALHO E CULTURA",
+                        "period": 2,
+                        "x": 26,
+                        "y": 84,
+                        "cht": 45,
+                        "dependencies": [],
+                        "type": "humanities",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FCH7XC",
+                        "name": "PRESENÇA AFRICANA NO BRASIL",
+                        "period": 2,
+                        "x": 26,
+                        "y": 96,
+                        "cht": 30,
+                        "dependencies": [],
+                        "type": "humanities",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "GEE7F1",
+                        "name": "FUNDAMENTOS DE FINANÇAS",
+                        "period": 2,
+                        "x": 42,
+                        "y": 12,
+                        "cht": 60,
+                        "dependencies": [],
+                        "type": "humanities",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "GEE7G1",
+                        "name": "FUNDAMENTOS DE GESTÃO DE PESSOAS",
+                        "period": 2,
+                        "x": 42,
+                        "y": 24,
+                        "cht": 45,
+                        "dependencies": [],
+                        "type": "humanities",
+                        "groupId": "[1099]"
+            }
+];
+            var allOptionalNodesData = [
+            {
+                        "id": "DIN8Z1",
+                        "name": "ERGONOMIA APLICADA À RADIOLOGIA",
+                        "period": 2,
+                        "x": 26,
+                        "y": 10,
+                        "cht": 45,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "EDU70I",
+                        "name": "EDUCAÇÃO ESPECIAL E PROCESSOS INCLUSIVOS",
+                        "period": 2,
+                        "x": 26,
+                        "y": 20,
+                        "cht": 45,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "EDU70J",
+                        "name": "LIBRAS",
+                        "period": 2,
+                        "x": 26,
+                        "y": 30,
+                        "cht": 45,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS7E1",
+                        "name": "FÍSICA EXPERIMENTAL 1",
+                        "period": 2,
+                        "x": 26,
+                        "y": 40,
+                        "cht": 30,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS7E2",
+                        "name": "FÍSICA EXPERIMENTAL 2",
+                        "period": 2,
+                        "x": 26,
+                        "y": 50,
+                        "cht": 30,
+                        "dependencies": [
+                                    "FIS7E1"
+                        ],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8A1",
+                        "name": "RADIOLOGIA VETERINÁRIA",
+                        "period": 2,
+                        "x": 26,
+                        "y": 60,
+                        "cht": 30,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8A2",
+                        "name": "NORMAS E RECOMENDAÇÕES EM RADIOLOGIA",
+                        "period": 2,
+                        "x": 26,
+                        "y": 70,
+                        "cht": 30,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8A3",
+                        "name": "RADIOLOGIA FORENSE",
+                        "period": 2,
+                        "x": 26,
+                        "y": 80,
+                        "cht": 30,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8A4",
+                        "name": "RADIOLOGIA NO CENTRO CIRÚRGICO",
+                        "period": 2,
+                        "x": 42,
+                        "y": 10,
+                        "cht": 30,
+                        "dependencies": [
+                                    "FIS82B"
+                        ],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8A5",
+                        "name": "PROTOCOLOS EM TC E RM",
+                        "period": 2,
+                        "x": 42,
+                        "y": 20,
+                        "cht": 30,
+                        "dependencies": [
+                                    "FIS85A",
+                                    "FIS85B"
+                        ],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8A6",
+                        "name": "SAÚDE COLETIVA",
+                        "period": 2,
+                        "x": 42,
+                        "y": 30,
+                        "cht": 75,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8A7",
+                        "name": "VOLUNTARIADO EM SAÚDE",
+                        "period": 2,
+                        "x": 42,
+                        "y": 40,
+                        "cht": 75,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8A8",
+                        "name": "DESENVOLVIMENTO DE MATERIAL DIDÁTICO INTERATIVO PARA ENSINO DE RADIOLOGIA",
+                        "period": 2,
+                        "x": 42,
+                        "y": 50,
+                        "cht": 75,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8A9",
+                        "name": "RADIOBIOLOGIA MOLECULAR E CELULAR",
+                        "period": 2,
+                        "x": 42,
+                        "y": 60,
+                        "cht": 30,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8B1",
+                        "name": "FÍSICA NUCLEAR APLICADA À RADIOLOGIA",
+                        "period": 2,
+                        "x": 42,
+                        "y": 70,
+                        "cht": 30,
+                        "dependencies": [
+                                    "FIS83F"
+                        ],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8B2",
+                        "name": "MANUFATURA ADITIVA EM RADIOLOGIA",
+                        "period": 2,
+                        "x": 42,
+                        "y": 80,
+                        "cht": 30,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8B3",
+                        "name": "LABORATÓRIO DE DOSIMETRIA",
+                        "period": 2,
+                        "x": 58,
+                        "y": 10,
+                        "cht": 30,
+                        "dependencies": [
+                                    "FIS84E"
+                        ],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "FIS8B4",
+                        "name": "RADIOLOGIA E COMUNIDADE",
+                        "period": 2,
+                        "x": 58,
+                        "y": 20,
+                        "cht": 75,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "GEE7E3",
+                        "name": "FUNDAMENTOS DE ECONOMIA",
+                        "period": 2,
+                        "x": 58,
+                        "y": 30,
+                        "cht": 30,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            },
+            {
+                        "id": "GEE7M1",
+                        "name": "FUNDAMENTOS DE MARKETING",
+                        "period": 2,
+                        "x": 58,
+                        "y": 40,
+                        "cht": 45,
+                        "dependencies": [],
+                        "type": "optional",
+                        "groupId": "[1099]"
+            }
+];
 
             // --- DOM ELEMENTS ---
             const mainContainer = document.getElementById('main-container');
@@ -2086,24 +2718,12 @@
             }
 
             function renderOptionalTrackHeaders() {
-                // Removendo headers antigos para evitar duplicatas ao redimensionar
                 optionalContainer.querySelectorAll('.track-header').forEach(h => h.remove());
-
-                // Headers com posicionamento vertical (y) reajustado e comprimido
-                const trackPositions = {
-                    'Trilha: Telecomunicações': 8,
-                    'Trilha: Engenharia Biomédica': 20,
-                    'Trilha: Pesquisa Científica': 32,
-                    'Trilha: Proc. de Sinais, Imagens e Padrões': 44,
-                    'Trilha Eletiva e Optativas': 58,
-                };
-                Object.entries(trackPositions).forEach(([name, yPos]) => {
-                    const header = document.createElement('div');
-                    header.className = 'track-header';
-                    header.textContent = name;
-                    header.style.top = `${yPos}%`;
-                    optionalContainer.appendChild(header);
-                });
+                const header = document.createElement('div');
+                header.className = 'track-header';
+                header.textContent = 'Disciplinas Optativas (Formação Profissional Complementar)';
+                header.style.top = '4%';
+                optionalContainer.appendChild(header);
             }
 
             function getColorForNodeId(id) {
