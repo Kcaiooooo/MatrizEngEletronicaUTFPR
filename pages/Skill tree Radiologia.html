@@ -4506,6 +4506,7 @@
                     <div class="font-bold text-amber-300 text-xs uppercase tracking-wider">Como é calculada a prioridade?</div>
                     <ul class="space-y-1.5 text-xs text-gray-300 list-disc list-inside">
                         <li><strong class="text-emerald-400">🔓 Desbloqueio Imediato:</strong> Matérias travadas que ficam 100% liberadas assim que você conclui esta disciplina.</li>
+                        <li><strong class="text-purple-400">🎯 Trilhas de Especialização:</strong> Matérias de trilhas optativas só são recomendadas após você cursar ou marcar a primeira disciplina daquela trilha.</li>
                         <li><strong class="text-amber-400">🔗 Impacto no Longo Prazo:</strong> Quantidade total de matérias futuras no curso que exigem esta disciplina na cadeia de pré-requisitos.</li>
                         <li><strong class="text-cyan-400">📏 Tamanho da Cadeia:</strong> Profundidade da esteira de matérias até a formatura/TCC.</li>
                     </ul>
@@ -4589,9 +4590,83 @@
             const allNodes = getAllNodesList();
             if (!allNodes || allNodes.length === 0) return [];
 
-            const availableNodes = allNodes.filter(n => {
+            // Identificação das Trilhas de Especialização
+            const tracksConfig = (typeof SPECIALIZATION_TRACKS !== 'undefined') 
+                ? SPECIALIZATION_TRACKS 
+                : ((typeof SPECIALIZATION_TRACKS_M2 !== 'undefined') ? SPECIALIZATION_TRACKS_M2 : {});
+
+            const subjectToTracksMap = {};
+            for (const [trackName, subjectIds] of Object.entries(tracksConfig)) {
+                if (Array.isArray(subjectIds)) {
+                    subjectIds.forEach(id => {
+                        const strId = String(id).trim();
+                        if (!subjectToTracksMap[strId]) subjectToTracksMap[strId] = new Set();
+                        subjectToTracksMap[strId].add(trackName);
+                    });
+                }
+            }
+
+            // Identifica as trilhas das quais o usuário já cursou/concluiu ao menos 1 matéria
+            const activeTracks = new Set();
+            const fullCheckNodes = [...allNodes];
+            if (typeof optionalNodes !== 'undefined' && Array.isArray(optionalNodes)) {
+                fullCheckNodes.push(...optionalNodes);
+            }
+
+            fullCheckNodes.forEach(n => {
+                if (!n || !n.id) return;
                 const s = getNodeState(n);
-                return s && (s.endsWith('-available') || s.endsWith('-inprogress') || s === 'subject-available' || s === 'available' || s === 'inprogress');
+                const isTaken = s && (
+                    s.endsWith('-completed') || 
+                    s.endsWith('-satisfied') || 
+                    s.endsWith('-inprogress') || 
+                    s === 'completed' || 
+                    s === 'satisfied' || 
+                    s === 'inprogress' ||
+                    s === 'subject-completed' ||
+                    s === 'subject-satisfied' ||
+                    s === 'subject-inprogress' ||
+                    s === 'optional-completed' ||
+                    s === 'optional-inprogress'
+                );
+                const strId = String(n.id).trim();
+                if (isTaken && subjectToTracksMap[strId]) {
+                    subjectToTracksMap[strId].forEach(trackName => activeTracks.add(trackName));
+                }
+            });
+
+            // Filtra as matérias disponíveis respeitando a regra de trilhas
+            const availableNodes = allNodes.filter(n => {
+                if (!n || !n.id) return false;
+                const s = getNodeState(n);
+                const isAvailableOrInProgress = s && (
+                    s.endsWith('-available') || 
+                    s.endsWith('-inprogress') || 
+                    s === 'subject-available' || 
+                    s === 'available' || 
+                    s === 'inprogress' ||
+                    s === 'optional-available' ||
+                    s === 'optional-inprogress'
+                );
+                if (!isAvailableOrInProgress) return false;
+
+                // Regra de Trilhas: Só recomenda matéria de trilha se a trilha já foi iniciada pelo usuário
+                const strId = String(n.id).trim();
+                const nodeTracks = subjectToTracksMap[strId];
+                if (nodeTracks && nodeTracks.size > 0) {
+                    let belongsToActiveTrack = false;
+                    for (const trackName of nodeTracks) {
+                        if (activeTracks.has(trackName)) {
+                            belongsToActiveTrack = true;
+                            break;
+                        }
+                    }
+                    if (!belongsToActiveTrack) {
+                        return false; // Trilha ainda não iniciada -> não recomenda
+                    }
+                }
+
+                return true;
             });
 
             function getDirectDependents(nodeId) {
