@@ -3282,6 +3282,8 @@
             window.nodes = typeof nodes !== "undefined" ? nodes : [];
             window.humanitiesNodes = typeof humanitiesNodes !== "undefined" ? humanitiesNodes : [];
             window.optionalNodes = typeof optionalNodes !== "undefined" ? optionalNodes : [];
+            const _tracksRef = (typeof SPECIALIZATION_TRACKS !== 'undefined') ? SPECIALIZATION_TRACKS : ((typeof SPECIALIZATION_TRACKS_M2 !== 'undefined') ? SPECIALIZATION_TRACKS_M2 : {});
+            window.SPECIALIZATION_TRACKS = _tracksRef;
                 // Primeiro, verifica os grupos para reverter o estado 'satisfeito' se a condição não for mais atendida
                 for (const groupId in OPTIONAL_GROUPS_CONFIG) {
                     const group = OPTIONAL_GROUPS_CONFIG[groupId];
@@ -4591,9 +4593,12 @@
             if (!allNodes || allNodes.length === 0) return [];
 
             // 1. Identificação das Trilhas de Especialização
-            const tracksConfig = (typeof SPECIALIZATION_TRACKS !== 'undefined') 
-                ? SPECIALIZATION_TRACKS 
-                : ((typeof SPECIALIZATION_TRACKS_M2 !== 'undefined') ? SPECIALIZATION_TRACKS_M2 : {});
+            // Uses window.SPECIALIZATION_TRACKS (exported from module scope) for cross-script access
+            const tracksConfig = (typeof window.SPECIALIZATION_TRACKS !== 'undefined' && Object.keys(window.SPECIALIZATION_TRACKS).length > 0)
+                ? window.SPECIALIZATION_TRACKS
+                : ((typeof SPECIALIZATION_TRACKS !== 'undefined') 
+                    ? SPECIALIZATION_TRACKS 
+                    : ((typeof SPECIALIZATION_TRACKS_M2 !== 'undefined') ? SPECIALIZATION_TRACKS_M2 : {}));
 
             const subjectToTracksMap = {};
             for (const [trackName, subjectIds] of Object.entries(tracksConfig)) {
