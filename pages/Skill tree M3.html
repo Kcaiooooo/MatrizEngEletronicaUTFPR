@@ -3841,7 +3841,7 @@
             const allNodes = getAllNodesList();
             if (!allNodes || allNodes.length === 0) return [];
 
-            // Identificação das Trilhas de Especialização
+            // 1. Identificação das Trilhas de Especialização
             const tracksConfig = (typeof SPECIALIZATION_TRACKS !== 'undefined') 
                 ? SPECIALIZATION_TRACKS 
                 : ((typeof SPECIALIZATION_TRACKS_M2 !== 'undefined') ? SPECIALIZATION_TRACKS_M2 : {});
@@ -3857,17 +3857,20 @@
                 }
             }
 
-            // Identifica as trilhas das quais o usuário já cursou/concluiu ao menos 1 matéria
-            const activeTracks = new Set();
+            // 2. Coleta todos os nós para verificar o histórico do usuário
             const fullCheckNodes = [...allNodes];
             if (typeof optionalNodes !== 'undefined' && Array.isArray(optionalNodes)) {
-                fullCheckNodes.push(...optionalNodes);
+                optionalNodes.forEach(opt => {
+                    if (opt && opt.id && !fullCheckNodes.some(n => n && n.id === opt.id)) {
+                        fullCheckNodes.push(opt);
+                    }
+                });
             }
 
-            fullCheckNodes.forEach(n => {
-                if (!n || !n.id) return;
+            function isNodeTaken(n) {
+                if (!n) return false;
                 const s = getNodeState(n);
-                const isTaken = s && (
+                return s && (
                     s.endsWith('-completed') || 
                     s.endsWith('-satisfied') || 
                     s.endsWith('-inprogress') || 
@@ -3880,13 +3883,34 @@
                     s === 'optional-completed' ||
                     s === 'optional-inprogress'
                 );
+            }
+
+            function isOptionalOrTrackNode(n) {
+                if (!n) return false;
+                if (n.type === 'optional' || n.tabId === 'optional') return true;
+                if (n.groupId) return true;
                 const strId = String(n.id).trim();
-                if (isTaken && subjectToTracksMap[strId]) {
-                    subjectToTracksMap[strId].forEach(trackName => activeTracks.add(trackName));
+                if (subjectToTracksMap[strId] && subjectToTracksMap[strId].size > 0) return true;
+                if (typeof optionalNodes !== 'undefined' && Array.isArray(optionalNodes) && optionalNodes.some(opt => opt && opt.id === n.id)) return true;
+                return false;
+            }
+
+            // 3. Verifica se o usuário já iniciou alguma matéria de trilha / optativa
+            const activeTracks = new Set();
+            let hasStartedAnyOptional = false;
+
+            fullCheckNodes.forEach(n => {
+                if (!n || !n.id) return;
+                if (isNodeTaken(n) && isOptionalOrTrackNode(n)) {
+                    hasStartedAnyOptional = true;
+                    const strId = String(n.id).trim();
+                    if (subjectToTracksMap[strId]) {
+                        subjectToTracksMap[strId].forEach(t => activeTracks.add(t));
+                    }
                 }
             });
 
-            // Filtra as matérias disponíveis respeitando a regra de trilhas
+            // 4. Filtra as matérias disponíveis respeitando a regra de trilhas/optativas
             const availableNodes = allNodes.filter(n => {
                 if (!n || !n.id) return false;
                 const s = getNodeState(n);
@@ -3901,19 +3925,28 @@
                 );
                 if (!isAvailableOrInProgress) return false;
 
-                // Regra de Trilhas: Só recomenda matéria de trilha se a trilha já foi iniciada pelo usuário
-                const strId = String(n.id).trim();
-                const nodeTracks = subjectToTracksMap[strId];
-                if (nodeTracks && nodeTracks.size > 0) {
-                    let belongsToActiveTrack = false;
-                    for (const trackName of nodeTracks) {
-                        if (activeTracks.has(trackName)) {
-                            belongsToActiveTrack = true;
-                            break;
-                        }
+                // Regra de Trilhas/Optativas:
+                if (isOptionalOrTrackNode(n)) {
+                    // Se o usuário NÃO iniciou NENHUMA optativa/trilha ainda -> oculta todas as optativas!
+                    if (!hasStartedAnyOptional) {
+                        return false;
                     }
-                    if (!belongsToActiveTrack) {
-                        return false; // Trilha ainda não iniciada -> não recomenda
+
+                    const strId = String(n.id).trim();
+                    const nodeTracks = subjectToTracksMap[strId];
+
+                    // Se pertence a trilha(s) específica(s): só recomenda se a trilha está ativa
+                    if (nodeTracks && nodeTracks.size > 0) {
+                        let belongsToActiveTrack = false;
+                        for (const trackName of nodeTracks) {
+                            if (activeTracks.has(trackName)) {
+                                belongsToActiveTrack = true;
+                                break;
+                            }
+                        }
+                        if (!belongsToActiveTrack) {
+                            return false; // Trilha específica ainda não iniciada -> não recomenda
+                        }
                     }
                 }
 
