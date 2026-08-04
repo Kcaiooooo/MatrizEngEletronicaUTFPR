@@ -2745,10 +2745,15 @@
 
             function renderOptionalTrackHeaders() {
                 optionalContainer.querySelectorAll('.track-header').forEach(h => h.remove());
+                const trackNodes = optionalNodes.filter(node => typeof node.y === 'number');
+                const minY = trackNodes.length > 0 ? Math.min(...trackNodes.map(node => node.y)) : 10;
+                const maxY = trackNodes.length > 0 ? Math.max(...trackNodes.map(node => node.y)) : 70;
+                const yPos = Math.max(25, Math.min(75, (minY + maxY) / 2));
+
                 const header = document.createElement('div');
                 header.className = 'track-header';
                 header.textContent = 'Disciplinas Optativas (Formação Profissional Complementar)';
-                header.style.top = '4%';
+                header.style.top = `${yPos}%`;
                 optionalContainer.appendChild(header);
             }
 
