@@ -687,9 +687,9 @@ footer {
                     </div>
 
                     <div>
-                        <label class="block text-xs font-medium text-gray-300 mb-1">Seu Contato (E-mail ou WhatsApp) *</label>
-                        <input type="text" name="Contato do Usuário" id="req-user-contact" required placeholder="ex: seu-email@utfpr.edu.br ou (41) 99999-9999" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm text-gray-100 focus:outline-none focus:border-blue-500">
-                        <p class="text-[11px] text-gray-400 mt-1">Informe seu e-mail ou número de WhatsApp para o desenvolvedor mandar mensagem caso tenha dúvidas.</p>
+                        <label class="block text-xs font-medium text-gray-300 mb-1">Seu Contato (E-mail ou WhatsApp) <span class="text-gray-400 text-[11px] font-normal">(Opcional)</span></label>
+                        <input type="text" name="Contato do Usuário" id="req-user-contact" placeholder="ex: seu-email@utfpr.edu.br ou (41) 99999-9999" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm text-gray-100 focus:outline-none focus:border-blue-500">
+                        <p class="text-[11px] text-gray-400 mt-1">Opcional: informe seu e-mail ou WhatsApp para o desenvolvedor tirar dúvidas se necessário.</p>
                     </div>
                 </div>
 
@@ -768,7 +768,7 @@ footer {
         const btnSubmit = document.getElementById('btn-submit-req');
         const subjectInput = document.getElementById('req-email-subject');
 
-        if (!courseName || !institution || !description || !userContact) {
+        if (!courseName || !institution || !description) {
             if (statusMsg) {
                 statusMsg.textContent = 'Por favor, preencha os campos obrigatórios (*).';
                 statusMsg.className = 'text-xs text-center text-red-400 font-semibold';
