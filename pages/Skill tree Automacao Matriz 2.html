@@ -1290,13 +1290,14 @@
 
         // --- DEFINIÇÃO DAS TRILHAS DE ESPECIALIZAÇÃO (CONTROLE E AUTOMAÇÃO) ---
                 const SPECIALIZATION_TRACKS = {
-            'Automação [213]': ['ET7DA', 'ET7DI'],
+            'Automação [213]': ['ET7DA', 'ET7DB', 'ET7DC', 'ET7DD', 'ET7DE', 'ET7DF', 'ET7DG', 'ET7DH', 'ET7DI', 'ET7DJ', 'ET7DK', 'ET7DL', 'ET7DM'],
             'Controle [214]': ['EL6AB', 'EL6AC', 'EL6AD', 'EL68F', 'ET7GD'],
-            'Produção Industrial [212]': ['GE70M', 'GE70N', 'GE70O', 'GE70P', 'GE70Q', 'GE70R'],
+            'Produção Industrial [212]': ['ET7AA', 'ET7AB', 'ET7AC', 'ET7AD', 'ET7AE', 'ET7AF', 'ET7AG', 'ET7AH', 'ET7AI', 'GE70F', 'GE70H', 'GE70K', 'GE70M', 'GE70N', 'GE70O', 'GE70P', 'GE70Q', 'GE70R'],
             'Instalações e Gerenciamento [216]': ['ET75B', 'ET76B', 'ET77B'],
             'Sistemas de Potência [218]': ['ET77J', 'ET78J'],
             'Manutenção e Máquinas [219]': ['ET7FF', 'ET7FQ', 'ET76E'],
             'Eletrônica Industrial [220]': ['EL6EA', 'EL66D', 'EL68A', 'ET7BK'],
+            'Ciências Ambientais [210]': ['ET70F', 'QB7AH', 'QB7AI', 'QB70E', 'QB70F', 'QB74I'],
             'Outros Departamentos [222]': ['CC63R', 'CC64B', 'EL6BF', 'EL6DA', 'IF65D', 'ME60D', 'ME64I']
         };
 
@@ -1314,7 +1315,7 @@
         const allNodesData = [
             {
                         "id": "CE70A",
-                        "name": "COMUNICAÇÃO INSTRUMENTAL",
+                        "name": "COMUNICAÇÃO LINGUÍSTICA",
                         "dependencies": [],
                         "cht": 30,
                         "type": "subject",
@@ -1334,7 +1335,7 @@
             },
             {
                         "id": "ET71C",
-                        "name": "INTRODUÇÃO À ENGENHARIA DE CONTROLE E AUTOMAÇÃO",
+                        "name": "INTRODUÇÃO A ENGENHARIA",
                         "dependencies": [],
                         "cht": 30,
                         "type": "subject",
@@ -1407,9 +1408,7 @@
             {
                         "id": "ET72F",
                         "name": "ELETRICIDADE E MAGNETISMO",
-                        "dependencies": [
-                                    "MA71A"
-                        ],
+                        "dependencies": [],
                         "cht": 75,
                         "type": "subject",
                         "y": 15.0,
@@ -1477,7 +1476,7 @@
             },
             {
                         "id": "ET73F",
-                        "name": "CIRCUITOS ELÉTRICOS 1",
+                        "name": "CIRCUITOS ELÉTRICOS A",
                         "dependencies": [
                                     "ET72F"
                         ],
@@ -1500,34 +1499,35 @@
                         "x": 23.3
             },
             {
-                        "id": "FI73M",
-                        "name": "FÍSICA TEÓRICA 3",
+                        "id": "FI70C",
+                        "name": "PRINCÍPIOS DE RESISTÊNCIA DOS MATERIAIS",
                         "dependencies": [
-                                    "FI72M"
+                                    "FI70A"
                         ],
-                        "cht": 60,
+                        "cht": 45,
                         "type": "subject",
                         "y": 25.0,
                         "period": 3,
                         "x": 41.1
             },
             {
-                        "id": "FI73N",
-                        "name": "FÍSICA EXPERIMENTAL 2",
+                        "id": "MA70C",
+                        "name": "CÁLCULO NUMÉRICO",
                         "dependencies": [
-                                    "FI72N"
+                                    "IF71A",
+                                    "MA72A"
                         ],
-                        "cht": 30,
+                        "cht": 60,
                         "type": "subject",
                         "y": 25.0,
                         "period": 3,
                         "x": 58.9
             },
             {
-                        "id": "MA70C",
-                        "name": "CÁLCULO NUMÉRICO",
+                        "id": "MA70G",
+                        "name": "EQUAÇÕES DIFERENCIAIS ORDINÁRIAS",
                         "dependencies": [
-                                    "IF71A",
+                                    "MA71B",
                                     "MA72A"
                         ],
                         "cht": 60,
@@ -1561,20 +1561,34 @@
                         "x": 5.5
             },
             {
-                        "id": "ET74F",
-                        "name": "CIRCUITOS ELÉTRICOS 2",
+                        "id": "ET74E",
+                        "name": "ELETROMAGNETISMO",
                         "dependencies": [
-                                    "ET73F"
+                                    "ET72F",
+                                    "MA73A"
+                        ],
+                        "cht": 60,
+                        "type": "subject",
+                        "y": 35.0,
+                        "period": 4,
+                        "x": 20.3
+            },
+            {
+                        "id": "ET74F",
+                        "name": "CIRCUITOS ELÉTRICOS B",
+                        "dependencies": [
+                                    "ET73F",
+                                    "MA70G"
                         ],
                         "cht": 90,
                         "type": "subject",
                         "y": 35.0,
                         "period": 4,
-                        "x": 27.8
+                        "x": 35.2
             },
             {
                         "id": "ET74H",
-                        "name": "SISTEMAS DE MEDIÇÃO",
+                        "name": "SISTEMAS DE INSTRUMENTAÇÃO 1",
                         "dependencies": [
                                     "ET73F"
                         ],
@@ -1585,16 +1599,26 @@
                         "x": 50.0
             },
             {
-                        "id": "FI70C",
-                        "name": "PRINCÍPIOS DE FÍSICA MODERNA",
+                        "id": "FI74M",
+                        "name": "FÍSICA TEÓRICA 4",
                         "dependencies": [
-                                    "FI73M"
+                                    "ET72F"
                         ],
-                        "cht": 45,
+                        "cht": 60,
                         "type": "subject",
                         "y": 35.0,
                         "period": 4,
-                        "x": 72.2
+                        "x": 64.8
+            },
+            {
+                        "id": "GE70D",
+                        "name": "ECONOMIA",
+                        "dependencies": [],
+                        "cht": 30,
+                        "type": "subject",
+                        "y": 35.0,
+                        "period": 4,
+                        "x": 79.7
             },
             {
                         "id": "MA74C",
@@ -1610,7 +1634,7 @@
             },
             {
                         "id": "ES70B",
-                        "name": "PSICOLOGIA APLICADA",
+                        "name": "PSICOLOGIA APLICADA AO TRABALHO",
                         "dependencies": [],
                         "cht": 30,
                         "type": "subject",
@@ -1628,11 +1652,24 @@
                         "type": "subject",
                         "y": 45.0,
                         "period": 5,
-                        "x": 27.8
+                        "x": 20.3
             },
             {
                         "id": "ET75E",
                         "name": "MÁQUINAS ELÉTRICAS 1",
+                        "dependencies": [
+                                    "ET74E",
+                                    "ET74F"
+                        ],
+                        "cht": 60,
+                        "type": "subject",
+                        "y": 45.0,
+                        "period": 5,
+                        "x": 35.2
+            },
+            {
+                        "id": "ET75F",
+                        "name": "MEDIDAS ELÉTRICAS",
                         "dependencies": [
                                     "ET74F"
                         ],
@@ -1643,22 +1680,35 @@
                         "x": 50.0
             },
             {
-                        "id": "ET75F",
-                        "name": "MEDIDAS ELÉTRICAS",
+                        "id": "ET75H",
+                        "name": "SINAIS E SISTEMAS 1",
                         "dependencies": [
-                                    "ET74H"
+                                    "ET74F",
+                                    "MA74C"
                         ],
                         "cht": 60,
                         "type": "subject",
                         "y": 45.0,
                         "period": 5,
-                        "x": 72.2
+                        "x": 64.8
             },
             {
-                        "id": "ET75G",
-                        "name": "SISTEMAS E SINAIS",
+                        "id": "IF72A",
+                        "name": "COMPUTAÇÃO 2",
                         "dependencies": [
-                                    "ET74F"
+                                    "IF71A"
+                        ],
+                        "cht": 60,
+                        "type": "subject",
+                        "y": 45.0,
+                        "period": 5,
+                        "x": 79.7
+            },
+            {
+                        "id": "MA70H",
+                        "name": "PROBABILIDADE E ESTATÍSTICA",
+                        "dependencies": [
+                                    "MA72A"
                         ],
                         "cht": 60,
                         "type": "subject",
@@ -1670,7 +1720,7 @@
                         "id": "ET76C",
                         "name": "ELETRÔNICA DE POTÊNCIA",
                         "dependencies": [
-                                    "ET75C"
+                                    "ET74C"
                         ],
                         "cht": 90,
                         "type": "subject",
@@ -1679,24 +1729,74 @@
                         "x": 5.5
             },
             {
-                        "id": "ET76D",
+                        "id": "ET76F",
+                        "name": "SISTEMAS ELETROMAGNÉTICOS",
+                        "dependencies": [
+                                    "ET72B",
+                                    "ET74H"
+                        ],
+                        "cht": 45,
+                        "type": "subject",
+                        "y": 55.0,
+                        "period": 6,
+                        "x": 20.3
+            },
+            {
+                        "id": "ET76G",
+                        "name": "SISTEMAS ELETROPNEUMÁTICOS",
+                        "dependencies": [
+                                    "ET72B",
+                                    "ET74H"
+                        ],
+                        "cht": 45,
+                        "type": "subject",
+                        "y": 55.0,
+                        "period": 6,
+                        "x": 35.2
+            },
+            {
+                        "id": "ET76H",
                         "name": "SISTEMAS DE CONTROLE 1",
                         "dependencies": [
-                                    "ET75G"
+                                    "ET75H"
                         ],
-                        "cht": 90,
+                        "cht": 60,
                         "type": "subject",
                         "y": 55.0,
                         "period": 6,
                         "x": 50.0
             },
             {
-                        "id": "ET76F",
-                        "name": "MICROCONTROLADORES",
+                        "id": "ET77E",
+                        "name": "MÁQUINAS ELÉTRICAS 3",
                         "dependencies": [
-                                    "ET75C"
+                                    "ET75E"
                         ],
-                        "cht": 45,
+                        "cht": 60,
+                        "type": "subject",
+                        "y": 55.0,
+                        "period": 6,
+                        "x": 64.8
+            },
+            {
+                        "id": "FI70D",
+                        "name": "FENÔMENOS DE TRANSPORTE 1",
+                        "dependencies": [
+                                    "FI72M"
+                        ],
+                        "cht": 30,
+                        "type": "subject",
+                        "y": 55.0,
+                        "period": 6,
+                        "x": 79.7
+            },
+            {
+                        "id": "GE70L",
+                        "name": "GESTÃO DA PRODUÇÃO",
+                        "dependencies": [
+                                    "GE70D"
+                        ],
+                        "cht": 30,
                         "type": "subject",
                         "y": 55.0,
                         "period": 6,
@@ -1706,7 +1806,8 @@
                         "id": "ET77A",
                         "name": "REDES INDUSTRIAIS",
                         "dependencies": [
-                                    "ET76F"
+                                    "ET75C",
+                                    "IF72A"
                         ],
                         "cht": 60,
                         "type": "subject",
@@ -1716,55 +1817,91 @@
             },
             {
                         "id": "ET77C",
-                        "name": "SISTEMAS DE CONTROLE 2",
+                        "name": "SISTEMAS MICROCONTROLADOS",
                         "dependencies": [
-                                    "ET76D"
+                                    "ET75C"
                         ],
                         "cht": 60,
                         "type": "subject",
                         "y": 65.0,
                         "period": 7,
-                        "x": 27.8
+                        "x": 20.3
             },
             {
                         "id": "ET77D",
-                        "name": "SISTEMAS DE AUTOMAÇÃO",
+                        "name": "SISTEMAS DE INSTRUMENTAÇÃO 2",
+                        "dependencies": [
+                                    "ET74H",
+                                    "ET75H"
+                        ],
+                        "cht": 30,
+                        "type": "subject",
+                        "y": 65.0,
+                        "period": 7,
+                        "x": 35.2
+            },
+            {
+                        "id": "ET77F",
+                        "name": "CONTROLADORES LÓGICOS PROGRAMÁVEIS",
                         "dependencies": [
                                     "ET76F"
                         ],
-                        "cht": 30,
+                        "cht": 60,
                         "type": "subject",
                         "y": 65.0,
                         "period": 7,
                         "x": 50.0
             },
             {
-                        "id": "ET77E",
-                        "name": "MÁQUINAS ELÉTRICAS 2",
+                        "id": "ET77G",
+                        "name": "SISTEMAS HIDRÁULICOS",
                         "dependencies": [
-                                    "ET75E"
+                                    "ET72B",
+                                    "ET74H"
+                        ],
+                        "cht": 45,
+                        "type": "subject",
+                        "y": 65.0,
+                        "period": 7,
+                        "x": 64.8
+            },
+            {
+                        "id": "ET77H",
+                        "name": "SISTEMAS DE CONTROLE 2",
+                        "dependencies": [
+                                    "ET76H"
                         ],
                         "cht": 60,
                         "type": "subject",
                         "y": 65.0,
                         "period": 7,
-                        "x": 72.2
+                        "x": 79.7
             },
             {
-                        "id": "ET77F",
-                        "name": "CONTROLADORES PROGRAMÁVEIS",
+                        "id": "FI70E",
+                        "name": "FENÔMENOS DE TRANSPORTE 2",
                         "dependencies": [
-                                    "ET76F"
+                                    "FI70D"
                         ],
-                        "cht": 60,
+                        "cht": 45,
                         "type": "subject",
                         "y": 65.0,
                         "period": 7,
                         "x": 94.5
             },
             {
-                        "id": "ET78A",
-                        "name": "INSTRUMENTAÇÃO INDUSTRIAL",
+                        "id": "ET70C",
+                        "name": "ESTÁGIO SUPERVISIONADO",
+                        "dependencies": [],
+                        "cht": 400,
+                        "type": "subject",
+                        "y": 75.0,
+                        "period": 8,
+                        "x": 5.5
+            },
+            {
+                        "id": "ET78F",
+                        "name": "SUPERVISÃO DE PROCESSOS",
                         "dependencies": [
                                     "ET77F"
                         ],
@@ -1772,39 +1909,13 @@
                         "type": "subject",
                         "y": 75.0,
                         "period": 8,
-                        "x": 5.5
+                        "x": 50.0
             },
             {
-                        "id": "ET78B",
-                        "name": "PROJETO DE SISTEMAS DE CONTROLE",
-                        "dependencies": [
-                                    "ET77C"
-                        ],
-                        "cht": 60,
-                        "type": "subject",
-                        "y": 75.0,
-                        "period": 8,
-                        "x": 35.2
-            },
-            {
-                        "id": "ET78C",
-                        "name": "AUTOMAÇÃO DE PROCESSOS",
-                        "dependencies": [
-                                    "ET77D"
-                        ],
-                        "cht": 60,
-                        "type": "subject",
-                        "y": 75.0,
-                        "period": 8,
-                        "x": 64.8
-            },
-            {
-                        "id": "ET78D",
-                        "name": "INSTALAÇÕES ELÉTRICAS INDUSTRIAIS",
-                        "dependencies": [
-                                    "ET77E"
-                        ],
-                        "cht": 60,
+                        "id": "ET78I",
+                        "name": "METODOLOGIA APLICADA AO TCC",
+                        "dependencies": [],
+                        "cht": 30,
                         "type": "subject",
                         "y": 75.0,
                         "period": 8,
@@ -1813,7 +1924,10 @@
             {
                         "id": "ET79F",
                         "name": "SISTEMAS ROBÓTICOS",
-                        "dependencies": [],
+                        "dependencies": [
+                                    "ET77G",
+                                    "MA71B"
+                        ],
                         "cht": 60,
                         "type": "subject",
                         "y": 85.0,
@@ -1822,7 +1936,7 @@
             },
             {
                         "id": "ET79H",
-                        "name": "FUNDAMENTOS DE SEGURANÇA DO TRABALHO",
+                        "name": "FUNDAMENTOS DE ENGENHARIA DE SEGURANÇA DO TRABALHO",
                         "dependencies": [],
                         "cht": 45,
                         "type": "subject",
@@ -1834,7 +1948,7 @@
                         "id": "ET79I",
                         "name": "TRABALHO DE CONCLUSÃO DE CURSO 1",
                         "dependencies": [
-                                    "ET78B"
+                                    "ET78I"
                         ],
                         "cht": 60,
                         "type": "subject",
@@ -1843,24 +1957,14 @@
                         "x": 94.5
             },
             {
-                        "id": "ET70A",
-                        "name": "ESTÁGIO SUPERVISIONADO",
-                        "dependencies": [],
-                        "cht": 180,
-                        "type": "subject",
-                        "y": 94.0,
-                        "period": 10,
-                        "x": 5.5
-            },
-            {
                         "id": "ET70H",
-                        "name": "ÉTICA, PROFISSÃO E SOCIEDADE",
+                        "name": "ÉTICA, PROFISSÃO E CIDADANIA",
                         "dependencies": [],
                         "cht": 30,
                         "type": "subject",
                         "y": 94.0,
                         "period": 10,
-                        "x": 50.0
+                        "x": 5.5
             },
             {
                         "id": "ET70I",
