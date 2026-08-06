@@ -1111,8 +1111,7 @@
 
             <div class="flex justify-center mb-4 border-b border-gray-600">
                 <button id="tab-main" class="tab-btn active">Obrigatórias</button>
-                <button id="tab-humanities" class="tab-btn">Formação Humanística</button>
-                <button id="tab-optional" class="tab-btn">Profissional Complementar (Optativas)</button>
+                <button id="tab-optional" class="tab-btn">Disciplinas Optativas</button>
             </div>
 
             <div class="tree-wrapper">
@@ -1132,41 +1131,7 @@
                         </defs>
                     </svg>
                 </div>
-
-                <div id="humanities-container" class="shadow-2xl hidden">
-                    <svg id="humanities-lines"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none;">
-                        <defs>
-                            <marker id="h-arrow-completed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6"
-                                markerHeight="6" orient="auto-start-reverse">
-                                <path d="M 0 0 L 10 5 L 0 10 z" fill="#16a34a" filter="drop-shadow(0 0 2px #4ade80)">
-                                </path>
-                            </marker>
-                            <marker id="h-arrow-locked" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5"
-                                markerHeight="5" orient="auto-start-reverse">
-                                <path d="M 0 0 L 10 5 L 0 10 z" fill="#4b5563"></path>
-                            </marker>
-                        </defs>
-                    </svg>
-                </div>
-
-                <div id="optional-container" class="shadow-2xl hidden">
-                    <svg id="optional-lines"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none;">
-                        <defs>
-                            <marker id="o-arrow-completed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6"
-                                markerHeight="6" orient="auto-start-reverse">
-                                <path d="M 0 0 L 10 5 L 0 10 z" fill="#16a34a" filter="drop-shadow(0 0 2px #4ade80)">
-                                </path>
-                            </marker>
-                            <marker id="o-arrow-locked" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5"
-                                markerHeight="5" orient="auto-start-reverse">
-                                <path d="M 0 0 L 10 5 L 0 10 z" fill="#4b5563"></path>
-                            </marker>
-                        </defs>
-                    </svg>
-                </div>
-            </div>
+</div>
         </div>
 
         <div id="settings-modal" class="modal-overlay hidden">
@@ -1247,7 +1212,8 @@
             // ----------------------------------------------------------------
 
             // --- ESTRUTURA DE DADOS (Árvore Principal - Obrigatórias) ---
-            var allHumanitiesData = [
+            var allHumanitiesData = [];
+            var allOptionalNodesData = [
             {
                         "id": "CAART04",
                         "name": "PRÁTICA ARTÍSTICA MUSICAL: GRUPOS INSTRUMENTAIS 1",
@@ -1256,7 +1222,7 @@
                         "y": 10,
                         "cht": 90,
                         "dependencies": [],
-                        "type": "humanities",
+                        "type": "optional",
                         "groupId": "[1099]"
             },
             {
@@ -1267,7 +1233,7 @@
                         "y": 10,
                         "cht": 45,
                         "dependencies": [],
-                        "type": "humanities",
+                        "type": "optional",
                         "groupId": "[1099]"
             },
             {
@@ -1278,7 +1244,7 @@
                         "y": 10,
                         "cht": 30,
                         "dependencies": [],
-                        "type": "humanities",
+                        "type": "optional",
                         "groupId": "[1099]"
             },
             {
@@ -1289,7 +1255,7 @@
                         "y": 10,
                         "cht": 60,
                         "dependencies": [],
-                        "type": "humanities",
+                        "type": "optional",
                         "groupId": "[1099]"
             },
             {
@@ -1300,7 +1266,7 @@
                         "y": 10,
                         "cht": 45,
                         "dependencies": [],
-                        "type": "humanities",
+                        "type": "optional",
                         "groupId": "[1099]"
             },
             {
@@ -1311,7 +1277,7 @@
                         "y": 25,
                         "cht": 60,
                         "dependencies": [],
-                        "type": "humanities",
+                        "type": "optional",
                         "groupId": "[1099]"
             },
             {
@@ -1322,7 +1288,7 @@
                         "y": 25,
                         "cht": 45,
                         "dependencies": [],
-                        "type": "humanities",
+                        "type": "optional",
                         "groupId": "[1099]"
             },
             {
@@ -1333,7 +1299,7 @@
                         "y": 25,
                         "cht": 30,
                         "dependencies": [],
-                        "type": "humanities",
+                        "type": "optional",
                         "groupId": "[1099]"
             },
             {
@@ -1344,7 +1310,7 @@
                         "y": 25,
                         "cht": 60,
                         "dependencies": [],
-                        "type": "humanities",
+                        "type": "optional",
                         "groupId": "[1099]"
             },
             {
@@ -1355,17 +1321,15 @@
                         "y": 25,
                         "cht": 45,
                         "dependencies": [],
-                        "type": "humanities",
+                        "type": "optional",
                         "groupId": "[1099]"
-            }
-];
-            var allOptionalNodesData = [
+            },
             {
                         "id": "DIN8Z1",
                         "name": "ERGONOMIA APLICADA À RADIOLOGIA",
                         "period": 2,
                         "x": 10,
-                        "y": 10,
+                        "y": 40,
                         "cht": 45,
                         "dependencies": [],
                         "type": "optional",
@@ -1376,7 +1340,7 @@
                         "name": "EDUCAÇÃO ESPECIAL E PROCESSOS INCLUSIVOS",
                         "period": 2,
                         "x": 30,
-                        "y": 10,
+                        "y": 40,
                         "cht": 45,
                         "dependencies": [],
                         "type": "optional",
@@ -1387,7 +1351,7 @@
                         "name": "LIBRAS",
                         "period": 2,
                         "x": 50,
-                        "y": 10,
+                        "y": 40,
                         "cht": 45,
                         "dependencies": [],
                         "type": "optional",
@@ -1398,7 +1362,7 @@
                         "name": "FÍSICA EXPERIMENTAL 1",
                         "period": 2,
                         "x": 70,
-                        "y": 10,
+                        "y": 40,
                         "cht": 30,
                         "dependencies": [],
                         "type": "optional",
@@ -1409,7 +1373,7 @@
                         "name": "FÍSICA EXPERIMENTAL 2",
                         "period": 2,
                         "x": 90,
-                        "y": 10,
+                        "y": 40,
                         "cht": 30,
                         "dependencies": [
                                     "FIS7E1"
@@ -1422,7 +1386,7 @@
                         "name": "RADIOLOGIA VETERINÁRIA",
                         "period": 2,
                         "x": 10,
-                        "y": 25,
+                        "y": 55,
                         "cht": 30,
                         "dependencies": [],
                         "type": "optional",
@@ -1433,7 +1397,7 @@
                         "name": "NORMAS E RECOMENDAÇÕES EM RADIOLOGIA",
                         "period": 2,
                         "x": 30,
-                        "y": 25,
+                        "y": 55,
                         "cht": 30,
                         "dependencies": [],
                         "type": "optional",
@@ -1444,7 +1408,7 @@
                         "name": "RADIOLOGIA FORENSE",
                         "period": 2,
                         "x": 50,
-                        "y": 25,
+                        "y": 55,
                         "cht": 30,
                         "dependencies": [],
                         "type": "optional",
@@ -1455,7 +1419,7 @@
                         "name": "RADIOLOGIA NO CENTRO CIRÚRGICO",
                         "period": 2,
                         "x": 70,
-                        "y": 25,
+                        "y": 55,
                         "cht": 30,
                         "dependencies": [
                                     "FIS82B"
@@ -1468,7 +1432,7 @@
                         "name": "PROTOCOLOS EM TC E RM",
                         "period": 2,
                         "x": 90,
-                        "y": 25,
+                        "y": 55,
                         "cht": 30,
                         "dependencies": [
                                     "FIS85A",
@@ -1482,7 +1446,7 @@
                         "name": "SAÚDE COLETIVA",
                         "period": 2,
                         "x": 10,
-                        "y": 40,
+                        "y": 70,
                         "cht": 75,
                         "dependencies": [],
                         "type": "optional",
@@ -1493,7 +1457,7 @@
                         "name": "VOLUNTARIADO EM SAÚDE",
                         "period": 2,
                         "x": 30,
-                        "y": 40,
+                        "y": 70,
                         "cht": 75,
                         "dependencies": [],
                         "type": "optional",
@@ -1504,7 +1468,7 @@
                         "name": "DESENVOLVIMENTO DE MATERIAL DIDÁTICO INTERATIVO PARA ENSINO DE RADIOLOGIA",
                         "period": 2,
                         "x": 50,
-                        "y": 40,
+                        "y": 70,
                         "cht": 75,
                         "dependencies": [],
                         "type": "optional",
@@ -1515,7 +1479,7 @@
                         "name": "RADIOBIOLOGIA MOLECULAR E CELULAR",
                         "period": 2,
                         "x": 70,
-                        "y": 40,
+                        "y": 70,
                         "cht": 30,
                         "dependencies": [],
                         "type": "optional",
@@ -1526,7 +1490,7 @@
                         "name": "FÍSICA NUCLEAR APLICADA À RADIOLOGIA",
                         "period": 2,
                         "x": 90,
-                        "y": 40,
+                        "y": 70,
                         "cht": 30,
                         "dependencies": [
                                     "FIS83F"
@@ -1539,7 +1503,7 @@
                         "name": "MANUFATURA ADITIVA EM RADIOLOGIA",
                         "period": 2,
                         "x": 10,
-                        "y": 55,
+                        "y": 85,
                         "cht": 30,
                         "dependencies": [],
                         "type": "optional",
@@ -1550,7 +1514,7 @@
                         "name": "LABORATÓRIO DE DOSIMETRIA",
                         "period": 2,
                         "x": 30,
-                        "y": 55,
+                        "y": 85,
                         "cht": 30,
                         "dependencies": [
                                     "FIS84E"
@@ -1563,7 +1527,7 @@
                         "name": "RADIOLOGIA E COMUNIDADE",
                         "period": 2,
                         "x": 50,
-                        "y": 55,
+                        "y": 85,
                         "cht": 75,
                         "dependencies": [],
                         "type": "optional",
@@ -1574,7 +1538,7 @@
                         "name": "FUNDAMENTOS DE ECONOMIA",
                         "period": 2,
                         "x": 70,
-                        "y": 55,
+                        "y": 85,
                         "cht": 30,
                         "dependencies": [],
                         "type": "optional",
@@ -1585,7 +1549,7 @@
                         "name": "FUNDAMENTOS DE MARKETING",
                         "period": 2,
                         "x": 90,
-                        "y": 55,
+                        "y": 85,
                         "cht": 45,
                         "dependencies": [],
                         "type": "optional",
@@ -2062,7 +2026,7 @@
 
             // --- DOM ELEMENTS ---
             const mainContainer = document.getElementById('main-container');
-            const humanitiesContainer = document.getElementById('humanities-container');
+            // const humanitiesContainer = null;
             const optionalContainer = document.getElementById('optional-container');
 
             const resetButton = document.getElementById('reset-button');
@@ -2085,7 +2049,7 @@
             const modalText = document.getElementById('modal-text');
 
             const tabMain = document.getElementById('tab-main');
-            const tabHumanities = document.getElementById('tab-humanities');
+            // const tabHumanities = null;
             const tabOptional = document.getElementById('tab-optional');
 
             const celebrationModal = document.getElementById('celebration-modal');
@@ -2405,7 +2369,7 @@
 
                 const header = document.createElement('div');
                 header.className = 'track-header';
-                header.textContent = 'Disciplinas Optativas (Formação Profissional Complementar)';
+                header.textContent = 'Disciplinas Optativas (Humanísticas e Profissionais)';
                 header.style.top = `${yPos}%`;
                 optionalContainer.appendChild(header);
             }
@@ -3152,14 +3116,10 @@
                 const completedMandatory = nodes.filter(s => s.state === 'subject-completed' || s.state === 'subject-satisfied').length;
                 const allMandatoryDone = completedMandatory >= nodes.length;
 
-                // 2. 60h de optativas (humanísticas + profissionais) concluídas
-                const completedOptionalHrs = optionalNodes
+                // 2. 60h de optativas (humanísticas e profissionais) concluídas
+                const totalOptativas = optionalNodes
                     .filter(n => n.state === 'optional-completed')
                     .reduce((sum, n) => sum + n.cht, 0);
-                const completedHumanitiesHrs = humanitiesNodes
-                    .filter(n => n.state === 'humanities-completed')
-                    .reduce((sum, n) => sum + n.cht, 0);
-                const totalOptativas = completedOptionalHrs + completedHumanitiesHrs;
                 const optativasDone = totalOptativas >= 60;
 
                 console.log(`Status Tecnólogo em Radiologia:
@@ -3190,19 +3150,16 @@
                 activeTree = newTab;
 
                 mainContainer.classList.toggle('hidden', newTab !== 'main');
-                humanitiesContainer.classList.toggle('hidden', newTab !== 'humanities');
                 optionalContainer.classList.toggle('hidden', newTab !== 'optional');
 
                 tabMain.classList.toggle('active', newTab === 'main');
-                tabHumanities.classList.toggle('active', newTab === 'humanities');
                 tabOptional.classList.toggle('active', newTab === 'optional');
 
                 renderActiveTree();
             }
 
             tabMain.addEventListener('click', () => switchTab('main'));
-            tabHumanities.addEventListener('click', () => switchTab('humanities'));
-            tabOptional.addEventListener('click', () => switchTab('optional'));
+                        tabOptional.addEventListener('click', () => switchTab('optional'));
 
             cancelOverrideBtn.addEventListener('click', () => {
                 prerequisiteModal.classList.add('hidden');
