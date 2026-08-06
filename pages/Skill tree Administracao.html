@@ -2788,8 +2788,6 @@
         function renderActiveTree() {
             if (activeTree === 'main') {
                 renderTree(mainContainer, nodes, 'main-lines', 'arrow-completed', 'arrow-locked');
-            } else if (activeTree === 'humanities') {
-                renderTree(humanitiesContainer, humanitiesNodes, 'humanities-lines', 'h-arrow-completed', 'h-arrow-locked');
             } else {
                 renderTree(optionalContainer, optionalNodes, 'optional-lines', 'o-arrow-completed', 'o-arrow-locked');
                 renderOptionalTrackHeaders();
@@ -3720,21 +3718,19 @@
         });
 
         function switchTab(newTab) {
+            if (newTab === 'humanities') newTab = 'optional';
             activeTree = newTab;
 
             mainContainer.classList.toggle('hidden', newTab !== 'main');
-            humanitiesContainer.classList.toggle('hidden', newTab !== 'humanities');
             optionalContainer.classList.toggle('hidden', newTab !== 'optional');
 
             tabMain.classList.toggle('active', newTab === 'main');
-            tabHumanities.classList.toggle('active', newTab === 'humanities');
             tabOptional.classList.toggle('active', newTab === 'optional');
 
             renderActiveTree();
         }
 
         tabMain.addEventListener('click', () => switchTab('main'));
-        tabHumanities.addEventListener('click', () => switchTab('humanities'));
         tabOptional.addEventListener('click', () => switchTab('optional'));
 
         cancelOverrideBtn.addEventListener('click', () => {
