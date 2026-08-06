@@ -1811,7 +1811,9 @@
             {
                         "id": "COC70A",
                         "name": "ESTÁGIO SUPERVISIONADO",
-                        "dependencies": [],
+                        "dependencies": [
+                        "Periodo:7"
+            ],
                         "cht": 360,
                         "type": "subject",
                         "y": 65.0,
@@ -2025,51 +2027,39 @@
 
         // --- DATA STRUCTURE (Humanities Tree) ---
         const allHumanitiesData = [
-            // --- Grupo [1136] - Ciências Humanas, Linguagens, Letras e Artes ---
-            { id: 'EDU70J', name: 'LIBRAS', dependencies: ['Periodo:3'], period: 5, cht: 45, type: 'humanities', x: 10, y: 10, groupId: '[1136]' },
-            { id: 'FCH7AA', name: 'DANÇA E TECNOLOGIA', dependencies: ['Periodo:3'], period: 5, cht: 60, type: 'humanities', x: 30, y: 10, groupId: '[1136]' },
-            { id: 'FCH7AB', name: 'QUESTÕES CONTEMPORÂNEAS DO CORPO', dependencies: ['Periodo:3'], period: 5, cht: 60, type: 'humanities', x: 50, y: 10, groupId: '[1136]' },
-            { id: 'FCH7FA', name: 'FILOSOFIA DA CIÊNCIA E DA TECNOLOGIA', dependencies: ['Periodo:3'], period: 5, cht: 45, type: 'humanities', x: 70, y: 10, groupId: '[1136]' },
-            { id: 'FCH7FB', name: 'FUNDAMENTOS DA ÉTICA', dependencies: ['Periodo:3'], period: 5, cht: 45, type: 'humanities', x: 90, y: 10, groupId: '[1136]' },
-
-            { id: 'FCH7FC', name: 'TEORIA DAS CIÊNCIAS HUMANAS', dependencies: ['Periodo:3'], period: 5, cht: 45, type: 'humanities', x: 10, y: 25, groupId: '[1136]' },
-            { id: 'FCH7GA', name: 'METROPOLIZAÇÃO CONTEMPORÂNEA', dependencies: ['Periodo:3'], period: 5, cht: 45, type: 'humanities', x: 30, y: 25, groupId: '[1136]' },
-            { id: 'FCH7HA', name: 'HISTÓRIA DA TÉCNICA E DA TECNOLOGIA', dependencies: ['Periodo:3'], period: 5, cht: 45, type: 'humanities', x: 50, y: 25, groupId: '[1136]' },
-            { id: 'FCH7HB', name: 'HISTÓRIA GERAL DA ECONOMIA', dependencies: ['Periodo:3'], period: 5, cht: 45, type: 'humanities', x: 70, y: 25, groupId: '[1136]' },
-            { id: 'FCH7HC', name: 'CAPITALISMO CONTEMPORÂNEO E ECONOMIA POLÍTICA', dependencies: ['Periodo:3'], period: 5, cht: 45, type: 'humanities', x: 90, y: 25, groupId: '[1136]' },
-
-            { id: 'FCH7PA', name: 'PSICOLOGIA DO TRABALHO', dependencies: ['Periodo:3'], period: 5, cht: 30, type: 'humanities', x: 10, y: 40, groupId: '[1136]' },
-            { id: 'FCH7PB', name: 'RELAÇÕES INTERPESSOAIS, GRUPO E PODER', dependencies: ['Periodo:3'], period: 5, cht: 30, type: 'humanities', x: 30, y: 40, groupId: '[1136]' },
-            { id: 'FCH7PC', name: 'PLANEJAMENTO DE CARREIRA', dependencies: ['Periodo:3'], period: 5, cht: 60, type: 'humanities', x: 50, y: 40, groupId: '[1136]' },
-            { id: 'FCH7SA', name: 'SOCIOLOGIA', dependencies: ['Periodo:3'], period: 5, cht: 45, type: 'humanities', x: 70, y: 40, groupId: '[1136]' },
-            { id: 'FCH7SB', name: 'TECNOLOGIA E SOCIEDADE', dependencies: ['Periodo:3'], period: 5, cht: 45, type: 'humanities', x: 90, y: 40, groupId: '[1136]' },
-
-            { id: 'FCH7SC', name: 'TECNOLOGIA, TRABALHO E SAÚDE', dependencies: ['Periodo:3'], period: 5, cht: 45, type: 'humanities', x: 10, y: 55, groupId: '[1136]' },
-            { id: 'FCH7SD', name: 'SOCIEDADE E POLÍTICA NO BRASIL', dependencies: ['Periodo:3'], period: 5, cht: 45, type: 'humanities', x: 30, y: 55, groupId: '[1136]' },
-            { id: 'FCH7SE', name: 'SOCIEDADE E POLÍTICA NO PARANÁ', dependencies: ['Periodo:3'], period: 5, cht: 45, type: 'humanities', x: 50, y: 55, groupId: '[1136]' },
-            { id: 'FCH7SF', name: 'POLÍTICA, INSTITUIÇÕES E CIDADANIA NO PARANÁ', dependencies: ['Periodo:3'], period: 5, cht: 60, type: 'humanities', x: 70, y: 55, groupId: '[1136]' },
-            { id: 'FCH7XA', name: 'TECNOLOGIA SOCIAL E ECONOMIA SOLIDÁRIA', dependencies: ['Periodo:3'], period: 5, cht: 60, type: 'humanities', x: 90, y: 55, groupId: '[1136]' },
-
-            { id: 'FCH7XB', name: 'PRESENÇA AFRICANA NO BRASIL: TECNOLOGIA, TRABALHO E CULTURA', dependencies: ['Periodo:3'], period: 5, cht: 45, type: 'humanities', x: 10, y: 70, groupId: '[1136]' },
-            { id: 'FCH7XC', name: 'PRESENÇA AFRICANA NO BRASIL', dependencies: ['Periodo:3'], period: 5, cht: 30, type: 'humanities', x: 30, y: 70, groupId: '[1136]' },
-            { id: 'FCH7XD', name: 'DIREITOS HUMANOS, SEGURANÇA E DIVERSIDADE', dependencies: ['Periodo:3'], period: 5, cht: 45, type: 'humanities', x: 50, y: 70, groupId: '[1136]' },
-            { id: 'FCH7XE', name: 'POLÍTICAS PÚBLICAS', dependencies: ['Periodo:3'], period: 5, cht: 45, type: 'humanities', x: 70, y: 70, groupId: '[1136]' },
-            { id: 'FCH7XF', name: 'DIMENSÃO AMBIENTAL NA GESTÃO URBANA', dependencies: ['Periodo:3'], period: 5, cht: 45, type: 'humanities', x: 90, y: 70, groupId: '[1136]' },
-            { id: 'FCH7XG', name: 'TECNOPOLÍTICAS DA SOCIEDADE CONTEMPORÂNEA', dependencies: ['Periodo:3'], period: 5, cht: 45, type: 'humanities', x: 50, y: 76, groupId: '[1136]' },
-
-            // --- Grupo [1137] - Empregabilidade e Empreendedorismo ---
-            { id: 'ELT7GA', name: 'DECISÃO MULTICRITÉRIO', dependencies: ['Periodo:5'], period: 8, cht: 45, type: 'humanities', x: 10, y: 86, groupId: '[1137]' },
-            { id: 'ELT7GB', name: 'PRODUÇÃO SUSTENTÁVEL', dependencies: ['Periodo:5'], period: 8, cht: 45, type: 'humanities', x: 30, y: 86, groupId: '[1137]' },
-            { id: 'ELT7GC', name: 'ANALYTICS PARA OPERAÇÕES, ENERGIA E INDÚSTRIA', dependencies: ['Periodo:5'], period: 8, cht: 45, type: 'humanities', x: 50, y: 86, groupId: '[1137]' },
-            { id: 'GEE7A2', name: 'FUNDAMENTOS DE ADMINISTRAÇÃO', dependencies: ['Periodo:5'], period: 8, cht: 45, type: 'humanities', x: 70, y: 86, groupId: '[1137]' },
-            { id: 'GEE7E2', name: 'FUNDAMENTOS DE EMPREENDEDORISMO', dependencies: ['Periodo:5'], period: 8, cht: 30, type: 'humanities', x: 90, y: 86, groupId: '[1137]' },
-
-            { id: 'GEE7E6', name: 'FUNDAMENTOS DE ENGENHARIA ECONÔMICA E VIABILIDADE', dependencies: ['Periodo:5'], period: 8, cht: 60, type: 'humanities', x: 20, y: 92, groupId: '[1137]' },
-            { id: 'GEE7F2', name: 'FUNDAMENTOS DE FINANÇAS', dependencies: ['Periodo:5'], period: 8, cht: 60, type: 'humanities', x: 40, y: 92, groupId: '[1137]' },
-            { id: 'GEE7G2', name: 'FUNDAMENTOS DE GESTÃO DE PESSOAS', dependencies: ['Periodo:5'], period: 8, cht: 45, type: 'humanities', x: 60, y: 92, groupId: '[1137]' },
-            { id: 'GEE7G4', name: 'FUNDAMENTOS DE GESTÃO DA PRODUÇÃO', dependencies: ['Periodo:5'], period: 8, cht: 45, type: 'humanities', x: 80, y: 92, groupId: '[1137]' },
-            { id: 'GEE7M2', name: 'FUNDAMENTOS DE MARKETING', dependencies: ['Periodo:5'], period: 8, cht: 45, type: 'humanities', x: 35, y: 95, groupId: '[1137]' },
-            { id: 'QBI7CA', name: 'CIÊNCIAS DO AMBIENTE', dependencies: ['Periodo:5'], period: 8, cht: 30, type: 'humanities', x: 55, y: 95, groupId: '[1137]', alternative: { id: 'QB70J / QB70E / QB17CA', name: 'QB70J, QB70E, QB17CA' } },
+            { id: 'CAART18', name: 'INTRODUÇÃO DE VIOLÃO POPULAR, TEORIA MUSICAL E PRÁTICA DE CANTO 1', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 10.0, y: 10.0, groupId: '[1097]' },
+            { id: 'CAART19', name: 'INTRODUÇÃO DE VIOLÃO POPULAR, TEORIA MUSICAL E PRÁTICA DE CANTO 2', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 30.0, y: 10.0, groupId: '[1097]' },
+            { id: 'CAART20', name: 'TÓPICOS DE APRECIAÇÃO MUSICAL', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 50.0, y: 10.0, groupId: '[1097]' },
+            { id: 'CAART26', name: 'COMPOSIÇÃO E ELEMENTOS DE MÚSICA', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 70.0, y: 10.0, groupId: '[1097]' },
+            { id: 'EDU70J', name: 'LIBRAS', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 90.0, y: 10.0, groupId: '[1097]' },
+            { id: 'FCH7AA', name: 'DANÇA E TECNOLOGIA', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 10.0, y: 25.0, groupId: '[1097]' },
+            { id: 'FCH7AB', name: 'QUESTÕES CONTEMPORÂNEAS DO CORPO', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 30.0, y: 25.0, groupId: '[1097]' },
+            { id: 'FCH7FA', name: 'FILOSOFIA DA CIÊNCIA E DA TECNOLOGIA', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 50.0, y: 25.0, groupId: '[1097]' },
+            { id: 'FCH7FB', name: 'FUNDAMENTOS DA ÉTICA', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 70.0, y: 25.0, groupId: '[1097]' },
+            { id: 'FCH7FC', name: 'TEORIA DAS CIÊNCIAS HUMANAS', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 90.0, y: 25.0, groupId: '[1097]' },
+            { id: 'FCH7GA', name: 'METROPOLIZAÇÃO CONTEMPORÂNEA: TECNOLOGIA E TERRITÓRIO', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 10.0, y: 40.0, groupId: '[1097]' },
+            { id: 'FCH7HA', name: 'HISTÓRIA DA TÉCNICA E DA TECNOLOGIA', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 30.0, y: 40.0, groupId: '[1097]' },
+            { id: 'FCH7HB', name: 'HISTÓRIA GERAL DA ECONOMIA', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 50.0, y: 40.0, groupId: '[1097]' },
+            { id: 'FCH7HC', name: 'CAPITALISMO CONTEMPORÂNEO E ECONOMIA POLÍTICA', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 70.0, y: 40.0, groupId: '[1097]' },
+            { id: 'FCH7PA', name: 'PSICOLOGIA DO TRABALHO', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 90.0, y: 40.0, groupId: '[1097]' },
+            { id: 'FCH7PB', name: 'RELAÇÕES INTERPESSOAIS, GRUPO E PODER', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 10.0, y: 55.0, groupId: '[1097]' },
+            { id: 'FCH7PC', name: 'PLANEJAMENTO DE CARREIRA', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 30.0, y: 55.0, groupId: '[1097]' },
+            { id: 'FCH7SA', name: 'SOCIOLOGIA', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 50.0, y: 55.0, groupId: '[1097]' },
+            { id: 'FCH7SB', name: 'TECNOLOGIA E SOCIEDADE', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 70.0, y: 55.0, groupId: '[1097]' },
+            { id: 'FCH7SC', name: 'TECNOLOGIA, TRABALHO E SAÚDE', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 90.0, y: 55.0, groupId: '[1097]' },
+            { id: 'FCH7SD', name: 'SOCIEDADE E POLÍTICA NO BRASIL', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 10.0, y: 70.0, groupId: '[1097]' },
+            { id: 'FCH7SE', name: 'SOCIEDADE E POLÍTICA NO PARANÁ', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 30.0, y: 70.0, groupId: '[1097]' },
+            { id: 'FCH7SF', name: 'POLÍTICA, INSTITUIÇÕES E CIDADANIA NO PARANÁ', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 50.0, y: 70.0, groupId: '[1097]' },
+            { id: 'FCH7XA', name: 'TECNOLOGIA SOCIAL E ECONOMIA SOLIDÁRIA', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 70.0, y: 70.0, groupId: '[1097]' },
+            { id: 'FCH7XB', name: 'PRESENÇA AFRICANA NO BRASIL: TECNOLOGIA, TRABALHO E CULTURA', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 90.0, y: 70.0, groupId: '[1097]' },
+            { id: 'FCH7XC', name: 'PRESENÇA AFRICANA NO BRASIL', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 10.0, y: 85.0, groupId: '[1097]' },
+            { id: 'FCH7XD', name: 'DIREITOS HUMANOS, SEGURANÇA E DIVERSIDADE', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 30.0, y: 85.0, groupId: '[1097]' },
+            { id: 'FCH7XE', name: 'POLÍTICAS PÚBLICAS', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 50.0, y: 85.0, groupId: '[1097]' },
+            { id: 'FCH7XF', name: 'DIMENSÃO AMBIENTAL NA GESTÃO URBANA', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 70.0, y: 85.0, groupId: '[1097]' },
+            { id: 'FCH7XG', name: 'TECNOPOLÍTICAS DA SOCIEDADE CONTEMPORÂNEA', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 90.0, y: 85.0, groupId: '[1097]' },
+            { id: 'GEE7E3', name: 'FUNDAMENTOS DE ECONOMIA', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 10.0, y: 100.0, groupId: '[1097]' },
+            { id: 'GEE7G1', name: 'FUNDAMENTOS DE GESTÃO DE PESSOAS', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 30.0, y: 100.0, groupId: '[1097]' },
+            { id: 'GEE7M1', name: 'FUNDAMENTOS DE MARKETING', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 50.0, y: 100.0, groupId: '[1097]' }
         ];
         // --- DATA STRUCTURE (Optional & Tracks Tree) ---
         const allOptionalNodesData = [
@@ -3573,7 +3563,7 @@
 
         function updateAllProgressBars() {
             // 1. Progresso Principal (Obrigatórias)
-            const coreNodes = nodes.filter(n => n.groupId !== '[1137]');
+            const coreNodes = nodes.filter(n => true);
             const completedSubjects = coreNodes.filter(s => s.state === 'subject-completed' || s.state === 'subject-satisfied').length;
             const totalProgress = coreNodes.length > 0 ? (completedSubjects / coreNodes.length) * 100 : 0;
             totalProgressBar.style.width = `${totalProgress}%`;
@@ -3597,7 +3587,7 @@
 
             // 4. Progresso Humanidades
             const totalCompletedHumanities = humanitiesNodes
-                .filter(n => n.state === 'humanities-completed' && n.groupId !== '[1137]')
+                .filter(n => n.state === 'humanities-completed' && true)
                 .reduce((sum, n) => sum + n.cht, 0);
             const humanitiesProgress = (totalCompletedHumanities / TOTAL_HUMANITIES_HOURS) * 100;
             humanitiesProgressBar.style.width = `${Math.min(humanitiesProgress, 100)}%`;
@@ -3619,9 +3609,9 @@
 
             // 5. Progresso Grupo 1137 (Empregabilidade e Empreendedorismo)
             if (group1142ProgressBar && group1142ProgressText) {
-                const group1142Nodes = humanitiesNodes.filter(n => n.groupId === '[1137]' && n.state === 'humanities-completed');
+                const group1142Nodes = humanitiesNodes.filter(n => n.groupId === '[1097]' && n.state === 'humanities-completed');
                 const group1142Hours = group1142Nodes.reduce((sum, n) => sum + n.cht, 0);
-                const group1142Req = OPTIONAL_GROUPS_CONFIG['[1137]'] ? OPTIONAL_GROUPS_CONFIG['[1137]'].requiredHours : 135;
+                const group1142Req = OPTIONAL_GROUPS_CONFIG['[1097]'] ? OPTIONAL_GROUPS_CONFIG['[1097]'].requiredHours : 135;
                 const group1142ProgressVar = group1142Req > 0 ? (group1142Hours / group1142Req) * 100 : 0;
                 group1142ProgressBar.style.width = `${Math.min(group1142ProgressVar, 100)}%`;
                 group1142ProgressText.textContent = `${group1142Hours}/${group1142Req}h (${group1142ProgressVar.toFixed(1)}%)`;
