@@ -1297,13 +1297,17 @@
 
         // --- DEFINIÇÃO DOS GRUPOS ---
         const OPTIONAL_GROUPS_CONFIG = {
-            '[1174]': { requiredHours: 210, name: 'Ciclo De Humanidades' },
-            '[1175]': { requiredHours: 60, name: 'Opções De Programação De Computador' },
+            // Grupos já existentes
             '[1176]': { requiredHours: 60, name: 'Opções De Expressão Gráfica' },
             '[1177]': { requiredHours: 90, name: 'Opções De Adm, Empreend E Economia' },
-            '[1180]': { requiredHours: 300, name: 'Trilhas De Aprofundamento' },
             '[1187]': { requiredHours: 180, name: 'Opções De Circuitos Elétricos' },
+            '[1202]': { requiredHours: 45, name: 'Opções De Ativ De Síntese E Ic 2' },
+
+            // Novos grupos adicionados
+            '[1175]': { requiredHours: 60, name: 'Opções De Programação De Computador' },
             '[1190]': { requiredHours: 120, name: 'Opções De Instrumentos E Medidas' },
+            '[1191]': { requiredHours: 60, name: 'Conceitos De Instrumentos E Medidas' },
+            '[1192]': { requiredHours: 60, name: 'Aplicações De Instrumentos E Medidas' },
             '[1193]': { requiredHours: 210, name: 'Opções De Física Aplicada' },
             '[1194]': { requiredHours: 30, name: 'Opções De Ciências Do Ambiente' },
             '[1195]': { requiredHours: 45, name: 'Opções De Estrutura De Dados' },
@@ -1313,7 +1317,6 @@
             '[1199]': { requiredHours: 75, name: 'Opções De Idioma: Circuitos Digitais' },
             '[1200]': { requiredHours: 60, name: 'Opções De Idioma: Microcontroladores' },
             '[1201]': { requiredHours: 60, name: 'Opções De Idioma: Pds' },
-            '[1202]': { requiredHours: 45, name: 'Opções De Ativ De Síntese E Ic 2' },
             '[1203]': { requiredHours: 60, name: 'Opções De Idioma: Controle 1' },
             '[1204]': { requiredHours: 60, name: 'Opçoes De Idioma: Arq Org Computador' },
             '[1205]': { requiredHours: 60, name: 'Opções De Idioma: Sistemas Operacionais' },
@@ -1329,23 +1332,22 @@
 
         // --- DATA STRUCTURE (Main Tree) ---
         const allNodesData = [
-            { id: 'ELS03', name: 'Atividades Complementares', dependencies: [], period: 2, chs: 4, cht: 60, x: 20, y: 12, type: 'subject' },
             // Período 1
-            { id: 'ELB11', "equivalents": [{"id": "EL71E", "cht": 60}, {"id": "ELN73B", "cht": 45}], name: 'Algoritmos', dependencies: [], period: 1, chs: 3, "cht": 60, x: 5.5, y: 2, type: 'subject', alternative: { id: 'EL71E / ELN73B', name: 'EL71E, ELN73B' } },
-            { id: 'ELE11', "equivalents": [{"id": "EEX11", "cht": 45}, {"id": "ELEX10", "cht": 45}], name: 'Eletricidade Prática', dependencies: [], period: 1, chs: 4, "cht": 60, x: 20, y: 2, type: 'subject', alternative: { id: 'EEX11 / ELEX10', name: 'EEX11, ELEX10' } },
-            { id: 'ELE15', name: 'Acolhimento', dependencies: [], period: 1, chs: 2, "cht": 60, x: 35, y: 2, type: 'subject' },
-            { id: 'MAT7GA', "equivalents": [{"id": "MECP71A", "cht": 60}], name: 'Geometria Analítica', dependencies: [], period: 1, chs: 4, "cht": 60, x: 50, y: 2, type: 'subject' },
-            { id: 'MAT7PC', name: 'Pré-Cálculo', dependencies: [], period: 1, chs: 4, "cht": 60, x: 65, y: 2, type: 'subject' },
-            { id: 'QBI7QT', name: 'Química Teórica', dependencies: [], period: 1, chs: 4, "cht": 60, x: 80, y: 2, type: 'subject' },
-            { id: 'QBI7QE', name: 'Química Exp.', dependencies: [], period: 1, chs: 2, "cht": 60, x: 94.5, y: 2, type: 'subject' },
+            { id: 'ELB11', name: 'Algoritmos', dependencies: [], period: 1, chs: 3, cht: 45, x: 5.5, y: 2, type: 'subject', alternative: { id: 'EL71E / ELN73B', name: 'EL71E, ELN73B' } },
+            { id: 'ELE11', name: 'Eletricidade Prática', dependencies: [], period: 1, chs: 4, cht: 60, x: 20, y: 2, type: 'subject', alternative: { id: 'EEX11 / ELEX10', name: 'EEX11, ELEX10' } },
+            { id: 'ELE15', name: 'Acolhimento', dependencies: [], period: 1, chs: 2, cht: 30, x: 35, y: 2, type: 'subject' },
+            { id: 'MAT7GA', name: 'Geometria Analítica', dependencies: [], period: 1, chs: 4, cht: 60, x: 50, y: 2, type: 'subject' },
+            { id: 'MAT7PC', name: 'Pré-Cálculo', dependencies: [], period: 1, chs: 4, cht: 60, x: 65, y: 2, type: 'subject' },
+            { id: 'QBI7QT', name: 'Química Teórica', dependencies: [], period: 1, chs: 4, cht: 60, x: 80, y: 2, type: 'subject' },
+            { id: 'QBI7QE', name: 'Química Exp.', dependencies: [], period: 1, chs: 2, cht: 30, x: 94.5, y: 2, type: 'subject' },
 
             // Período 2
             { id: 'ELB13', name: 'Desenho Técnico', dependencies: [], period: 2, cht: 30, chs: 2, x: 5.5, y: 13, type: 'subject', groupId: '[1176]', alternative: { id: 'EEF11 / ELEF10', name: 'EEF11, ELEF10' } },
             { id: 'ELB23', name: 'Desenho Técnico Aplicado', dependencies: [], period: 2, cht: 30, chs: 2, x: 20, y: 13, type: 'subject', groupId: '[1176]', alternative: { id: 'EEF21 / EL74H / ELEF20', name: 'EEF21, EL74H, ELEF20' } },
             { id: 'ELB21', name: 'Prog. de Computador', dependencies: ['ELB11'], period: 2, chs: 4, cht: 60, x: 35, y: 13, type: 'subject', alternative: { id: 'EL72E / ELN74B', name: 'EL72E, ELN74B' }, groupId: '[1175]' },
-            { id: 'MAT7AL', "equivalents": [{"id": "MECP72A", "cht": 60}], name: 'Álgebra Linear', dependencies: ['MAT7GA'], period: 2, chs: 4, "cht": 60, x: 50, y: 13, type: 'subject' },
-            { id: 'MAT7C1', "equivalents": [{"id": "MECP71B", "cht": 90}], name: 'Cálculo 1', dependencies: ['MAT7PC'], period: 2, chs: 6, "cht": 60, x: 65, y: 13, type: 'subject' },
-            { id: 'ELE21', name: 'Intro. Comunicação e Redes', dependencies: [], period: 2, "cht": 60, chs: 3, x: 80, y: 13, type: 'subject' },
+            { id: 'MAT7AL', name: 'Álgebra Linear', dependencies: ['MAT7GA'], period: 2, chs: 4, cht: 60, x: 50, y: 13, type: 'subject' },
+            { id: 'MAT7C1', name: 'Cálculo 1', dependencies: ['MAT7PC'], period: 2, chs: 6, cht: 90, x: 65, y: 13, type: 'subject' },
+            { id: 'ELE21', name: 'Intro. Comunicação e Redes', dependencies: [], period: 2, cht: 45, chs: 3, x: 80, y: 13, type: 'subject' },
             { id: 'QBI7CA', name: 'Ciências do Ambiente', dependencies: [], period: 2, cht: 30, chs: 2, x: 94.5, y: 13, type: 'subject', groupId: '[1194]', alternative: { id: 'QB70J / QB70E / QB17CA', name: 'QB70J, QB70E, QB17CA' } },
 
             // Período 3
@@ -1354,33 +1356,33 @@
             { id: 'ELB21R', name: 'Est. de Prog. de Computador', dependencies: ['ELB11'], period: 3, chs: 4, cht: 60, x: 30.9, y: 23, type: 'subject', groupId: '[1175]' },
             { id: 'ELP31T', name: 'Teoria de Circuitos Elétricos CC', dependencies: ['MAT7C1'], period: 3, cht: 60, chs: 4, x: 43.6, y: 23, type: 'subject', groupId: '[1187]' },
             { id: 'ELP31TP', name: 'Circuitos Elétricos 1 (Int.)', dependencies: ['MAT7C1'], period: 3, chs: 6, cht: 90, x: 56.4, y: 23, type: 'subject', groupId: '[1187]' },
-            { id: 'FIS7F1', "equivalents": [{"id": "MECP72C", "cht": 60}], name: 'Física 1', dependencies: ['MAT7C1'], period: 3, chs: 4, "cht": 60, x: 69.1, y: 23, type: 'subject' },
-            { id: 'MAT7C2', "equivalents": [{"id": "MECP72B", "cht": 90}], name: 'Cálculo 2', dependencies: ['MAT7C1'], period: 3, chs: 6, "cht": 60, x: 81.8, y: 23, type: 'subject' },
-            { id: 'MAT7ED', name: 'Eq. Dif. Ordinárias', dependencies: ['MAT7C1'], period: 3, "cht": 60, chs: 4, x: 94.5, y: 23, type: 'subject' },
+            { id: 'FIS7F1', name: 'Física 1', dependencies: ['MAT7C1'], period: 3, chs: 4, cht: 60, x: 69.1, y: 23, type: 'subject' },
+            { id: 'MAT7C2', name: 'Cálculo 2', dependencies: ['MAT7C1'], period: 3, chs: 6, cht: 90, x: 81.8, y: 23, type: 'subject' },
+            { id: 'MAT7ED', name: 'Eq. Dif. Ordinárias', dependencies: ['MAT7C1'], period: 3, cht: 60, chs: 4, x: 94.5, y: 23, type: 'subject' },
 
             // Período 4
             { id: 'ICSE20', name: 'Técnicas de Prog.', dependencies: ['ELP35'], period: 4, chs: 4, cht: 60, x: 5.5, y: 34, type: 'subject', alternative: { id: 'ICSE20R', name: 'ICSE20R' }, groupId: '[1197]' },
-            { id: 'ELP41', "equivalents": [{"id": "ET74C", "cht": 90}], name: 'Eletrônica Analógica 1', dependencies: ['ELP31T'], period: 4, chs: 4, "cht": 60, x: 16.25, y: 34, type: 'subject', alternative: { id: 'ET74C', "equivalents": [{"id": "ET74C", "cht": 90}], name: 'ET74C' } },
+            { id: 'ELP41', name: 'Eletrônica Analógica 1', dependencies: ['ELP31T'], period: 4, chs: 4, cht: 60, x: 16.25, y: 34, type: 'subject', alternative: { id: 'ET74C', name: 'ET74C' } },
             { id: 'ELP42P', name: 'Prática de Circuitos Elétricos', dependencies: ['ELP31T'], period: 4, cht: 45, chs: 3, x: 27.5, y: 34, type: 'subject', groupId: '[1187]' },
             { id: 'ELP42T', name: 'Teoria de Circuitos Elétricos CA', dependencies: ['ELP31T'], period: 4, cht: 75, chs: 5, x: 38.75, y: 34, type: 'subject', groupId: '[1187]' },
             { id: 'ELP42TP', name: 'Circuitos Elétricos 2 (Int.)', dependencies: ['ELP31TP'], period: 4, chs: 6, cht: 90, x: 50, y: 34, type: 'subject', groupId: '[1187]' },
-            { id: 'FIS7F2', "equivalents": [{"id": "MECP73A", "cht": 60}], name: 'Física 2', dependencies: ['FIS7F1'], period: 4, chs: 4, "cht": 60, x: 61.25, y: 34, type: 'subject' },
-            { id: 'ELB31', "equivalents": [{"id": "MA70H", "cht": 60}], name: 'Prob. e Estatística', dependencies: ['MAT7C1'], period: 4, chs: 3, "cht": 60, x: 72.5, y: 34, type: 'subject', alternative: { id: 'MA70H', "equivalents": [{"id": "MA70H", "cht": 60}], name: 'MA70H' } },
+            { id: 'FIS7F2', name: 'Física 2', dependencies: ['FIS7F1'], period: 4, chs: 4, cht: 60, x: 61.25, y: 34, type: 'subject' },
+            { id: 'ELB31', name: 'Prob. e Estatística', dependencies: ['MAT7C1'], period: 4, chs: 3, cht: 45, x: 72.5, y: 34, type: 'subject', alternative: { id: 'MA70H', name: 'MA70H' } },
             { id: 'ELB51', name: 'Mecânica Geral', dependencies: ['FIS7F1'], period: 4, cht: 60, chs: 4, x: 83.75, y: 34, type: 'subject', groupId: '[1198]', alternative: { id: 'F170A', name: 'F170A' } },
             { id: 'ELB61', name: 'Princípios de Resist. dos Materiais', dependencies: ['ELB51'], period: 4, cht: 45, chs: 3, x: 94.5, y: 34, type: 'subject', groupId: '[1198]', alternative: { id: 'MEC72B', name: 'MEC72B' } },
 
             // Período 5
-            { id: 'ELP51', "equivalents": [{"id": "EEE31", "cht": 60}, {"id": "ELEE30", "cht": 60}], name: 'Eletrônica Analógica 2', dependencies: ['ELP41'], period: 5, chs: 4, "cht": 60, x: 5.5, y: 45, type: 'subject', alternative: { id: 'EEE31 / ELEE30', name: 'EEE31, ELEE30' } },
+            { id: 'ELP51', name: 'Eletrônica Analógica 2', dependencies: ['ELP41'], period: 5, chs: 4, cht: 60, x: 5.5, y: 45, type: 'subject', alternative: { id: 'EEE31 / ELEE30', name: 'EEE31, ELEE30' } },
             { id: 'ELF41', name: 'Circuitos Digitais', dependencies: ['ELP41'], period: 5, chs: 5, cht: 75, x: 17.86, y: 45, type: 'subject', alternative: { id: 'EEB31 / ELEB30', name: 'EEB31, ELEB30' }, groupId: '[1199]' },
-            { id: 'FIS7E1', "equivalents": [{"id": "MECP73B", "cht": 30}], name: 'Física Exp. 1', dependencies: ['FIS7F1'], period: 5, chs: 2, "cht": 60, x: 30.72, y: 45, type: 'subject' },
-            { id: 'ELB66', "equivalents": [{"id": "ELEQ30", "cht": 75}, {"id": "ET75H", "cht": 60}], name: 'Sinais e Sistemas', dependencies: ['MAT7C2'], period: 5, chs: 6, "cht": 60, x: 43.58, y: 45, type: 'subject', alternative: { id: 'ELEQ30 / ET75H / ET7GF', name: 'ELEQ30, ET75H, ET7GF' } },
+            { id: 'FIS7E1', name: 'Física Exp. 1', dependencies: ['FIS7F1'], period: 5, chs: 2, cht: 30, x: 30.72, y: 45, type: 'subject' },
+            { id: 'ELB66', name: 'Sinais e Sistemas', dependencies: ['MAT7C2'], period: 5, chs: 6, cht: 90, x: 43.58, y: 45, type: 'subject', alternative: { id: 'ELEQ30 / ET75H / ET7GF', name: 'ELEQ30, ET75H, ET7GF' } },
             { id: 'ELB52', name: 'Eletromagnetismo 1', dependencies: ['MAT7C2'], period: 5, chs: 4, cht: 60, x: 56.44, y: 45, type: 'subject', alternative: { id: 'ET74E', name: 'ET74E' } },
             { id: 'ELP64', name: 'Eletromag. 2: Linhas e Antenas', dependencies: ['ELB52'], period: 5, chs: 4, cht: 60, x: 69.3, y: 45, type: 'subject' },
             { id: 'ELP65', name: 'Máquinas Elétricas', dependencies: ['ELB52'], period: 5, cht: 60, chs: 4, x: 82.16, y: 45, type: 'subject' },
             { id: 'ELT74A', name: 'Fund. Fenômenos de Transporte', dependencies: ['FIS7F2'], period: 5, cht: 30, chs: 2, x: 94.5, y: 45, type: 'subject' },
 
             // Período 6
-            { id: 'ELP61', "equivalents": [{"id": "EEE32", "cht": 60}, {"id": "ELEE31", "cht": 60}], name: 'Eletrônica Analógica 3', dependencies: ['ELP51'], period: 6, chs: 4, "cht": 60, x: 5.5, y: 55, type: 'subject', alternative: { id: 'EEF32 / ELEE31', name: 'EEF32, ELEE31' } },
+            { id: 'ELP61', name: 'Eletrônica Analógica 3', dependencies: ['ELP51'], period: 6, chs: 4, cht: 60, x: 5.5, y: 55, type: 'subject', alternative: { id: 'EEF32 / ELEE31', name: 'EEF32, ELEE31' } },
             { id: 'ELF52', name: 'Microcontrolados', dependencies: ['ELF41'], period: 6, chs: 4, cht: 60, x: 27.5, y: 55, type: 'subject', alternative: { id: 'CSW40 / ELEW31', name: 'CSW40, ELEW31' }, groupId: '[1200]' },
             { id: 'ELP34', name: 'Medidas Elétricas', dependencies: ['ELP42P', 'ELP42T', 'MAT7ED'], period: 6, chs: 4, cht: 60, x: 50, y: 55, type: 'subject', groupId: '[1191]', alternative: { id: 'ELT75F / ET75F', name: 'ELT75F, ET75F' } },
             { id: 'ELF51', name: 'PDS', dependencies: ['ELB66'], period: 6, chs: 4, cht: 60, x: 72.5, y: 55, type: 'subject', alternative: { id: 'EEQ32 / ELEQ31', name: 'EEQ32, ELEQ31' }, groupId: '[1201]' },
@@ -1390,14 +1392,14 @@
             { id: 'ELE64', name: 'Oficina de Integração (Genérica)', dependencies: ['Periodo:6'], period: 7, cht: 45, chs: 3, x: 5.5, y: 66, type: 'subject', groupId: '[1202]', alternative: { id: 'EEX22 / ELEX21', name: 'EEX22, ELEX21' } },
             { id: 'ELXB1', name: 'Oficina de Int. (Biomédica)', dependencies: ['Periodo:6'], period: 7, cht: 45, chs: 3, x: 17.86, y: 66, type: 'subject', groupId: '[1202]' },
             { id: 'ELXT1', name: 'Oficina de Int. (Telecom)', dependencies: ['Periodo:6'], period: 7, cht: 45, chs: 3, x: 30.72, y: 66, type: 'subject', groupId: '[1202]' },
-            { id: 'ELP71', name: 'Eletrônica Analógica 4', dependencies: ['ELP61'], period: 7, chs: 4, "cht": 60, x: 43.58, y: 66, type: 'subject' },
+            { id: 'ELP71', name: 'Eletrônica Analógica 4', dependencies: ['ELP61'], period: 7, chs: 4, cht: 60, x: 43.58, y: 66, type: 'subject' },
             { id: 'ELF61', name: 'Arq. de Computadores', dependencies: ['ELF52'], period: 7, chs: 4, cht: 60, x: 56.44, y: 66, type: 'subject', alternative: { id: 'CSW30 / ELEW30', name: 'CSW30, ELEW30' }, groupId: '[1204]' },
             { id: 'ELF66', name: 'Sistemas Operacionais', dependencies: ['ELF52'], period: 7, chs: 4, cht: 60, x: 69.3, y: 66, type: 'subject', alternative: { id: 'ICSO30', name: 'ICSO30' }, groupId: '[1205]' },
             { id: 'ELF62', name: 'Controle 1', dependencies: ['ELB66'], period: 7, chs: 4, cht: 60, x: 82.16, y: 66, type: 'subject', alternative: { id: 'EEC21 / EL76A / ELEC20 / ET76H', name: 'EEC21, EL76A, ELEC20, ET76H' }, groupId: '[1203]' },
-            { id: 'ELS02', name: 'Estágio Obrigatório', dependencies: [], period: 7, "cht": 60, chs: 0, x: 94.5, y: 66, type: 'subject' },
+            { id: 'ELS02', name: 'Estágio Obrigatório', dependencies: [], period: 7, cht: 360, chs: 0, x: 94.5, y: 66, type: 'subject' },
 
             // Período 8
-            { id: 'ELP66', name: 'Planej. de Carreira', dependencies: [], period: 8, chs: 2, "cht": 60, x: 5.5, y: 77, type: 'subject' },
+            { id: 'ELP66', name: 'Planej. de Carreira', dependencies: [], period: 8, chs: 2, cht: 30, x: 5.5, y: 77, type: 'subject' },
             { id: 'ELF84', name: 'Eletrônica de Potência', dependencies: ['ELP61'], period: 8, chs: 5, cht: 75, x: 23, y: 77, type: 'subject', alternative: { id: 'EL76G / ET76C', name: 'EL76G, ET76C' }, groupId: '[1210]' },
             { id: 'ELF74', name: 'Sistemas Embarcados', dependencies: ['ELF61', 'ELF66'], period: 8, chs: 4, cht: 60, x: 41, y: 77, type: 'subject', alternative: { id: 'CSW41 / ELEW32', name: 'CSW41, ELEW32' }, groupId: '[1208]' },
             { id: 'ELP73', name: 'Princ. de Comunicações', dependencies: ['ELB66', 'ELP71'], period: 8, chs: 4, cht: 60, x: 59, y: 77, type: 'subject', alternative: { id: 'ELW71', name: 'Communication Systems' }, groupId: '[1209]' },
@@ -1405,13 +1407,13 @@
             { id: 'ELTE3', name: 'Lógica Reconfigurável', dependencies: ['ELB66'], period: 8, cht: 60, chs: 4, x: 94.5, y: 77, type: 'subject', groupId: '[1207]', alternative: { id: 'CSW42 / ELEW33', name: 'CSW42, ELEW33' } },
 
             // Período 9
-            { id: 'ELE91', name: 'TCC 1', dependencies: [], period: 9, chs: 3, "cht": 60, x: 5.5, y: 87, type: 'subject' },
-            { id: 'ELO91', name: 'Ética e Cidadania', dependencies: [], period: 9, chs: 2, "cht": 60, x: 35, y: 87, type: 'subject' },
+            { id: 'ELE91', name: 'TCC 1', dependencies: [], period: 9, chs: 3, cht: 45, x: 5.5, y: 87, type: 'subject' },
+            { id: 'ELO91', name: 'Ética e Cidadania', dependencies: [], period: 9, chs: 2, cht: 30, x: 35, y: 87, type: 'subject' },
             { id: 'ELF73', name: 'Com. Digitais', dependencies: ['ELP73'], period: 9, chs: 5, cht: 75, x: 65, y: 87, type: 'subject', alternative: { id: 'ELW73', name: 'Digital Communications' }, groupId: '[1212]' },
             { id: 'ELF81', name: 'Controle a Ev. Discretos', dependencies: ['ELF62'], period: 9, chs: 4, cht: 60, x: 94.5, y: 87, type: 'subject', alternative: { id: 'EEC46 / EL76B', name: 'EEC46, EL76B' }, groupId: '[1211]' },
 
             // Período 10
-            { id: 'ELE92', name: 'TCC 2', dependencies: ['ELE91'], period: 10, chs: 0, "cht": 60, x: 5.5, y: 98, type: 'subject' },
+            { id: 'ELE92', name: 'TCC 2', dependencies: ['ELE91'], period: 10, chs: 0, cht: 15, x: 5.5, y: 98, type: 'subject' },
             { id: 'ELO92', name: 'Empreendedorismo', dependencies: [], period: 10, cht: 30, chs: 2, x: 15, y: 98, type: 'subject', alternative: { id: 'ELBAA / GE70T / GEE7E1 / ME781', name: 'ELBAA, GE70T, GEE7E1, ME781' } },
             { id: 'GEE7A1', name: 'Fund. de Administração', dependencies: [], period: 10, cht: 45, chs: 3, x: 25, y: 98, type: 'subject', groupId: '[1177]' },
             { id: 'GEE7E3', name: 'Fund. de Economia', dependencies: [], period: 10, cht: 30, chs: 2, x: 35, y: 98, type: 'subject', groupId: '[1177]' },
@@ -1425,39 +1427,62 @@
 
         // --- DATA STRUCTURE (Humanities Tree) ---
         const allHumanitiesData = [
-            { id: 'CAART18', name: 'INTRODUÇÃO DE VIOLÃO POPULAR, TEORIA MUSICAL E PRÁTICA DE CANTO 1', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 10.0, y: 5.0, groupId: '[1174]' },
-            { id: 'CAART19', name: 'INTRODUÇÃO DE VIOLÃO POPULAR, TEORIA MUSICAL E PRÁTICA DE CANTO 2', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 30.0, y: 5.0, groupId: '[1174]' },
-            { id: 'CAART20', name: 'TÓPICOS DE APRECIAÇÃO MUSICAL', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 50.0, y: 5.0, groupId: '[1174]' },
-            { id: 'CAART26', name: 'COMPOSIÇÃO E ELEMENTOS DE MÚSICA', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 70.0, y: 5.0, groupId: '[1174]' },
-            { id: 'EDU70J', name: 'LIBRAS', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 90.0, y: 5.0, groupId: '[1174]' },
-            { id: 'FCH7AA', name: 'DANÇA E TECNOLOGIA', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 10.0, y: 11.5, groupId: '[1174]' },
-            { id: 'FCH7AB', name: 'QUESTÕES CONTEMPORÂNEAS DO CORPO', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 30.0, y: 11.5, groupId: '[1174]' },
-            { id: 'FCH7FA', name: 'FILOSOFIA DA CIÊNCIA E DA TECNOLOGIA', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 50.0, y: 11.5, groupId: '[1174]' },
-            { id: 'FCH7FB', name: 'FUNDAMENTOS DA ÉTICA', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 70.0, y: 11.5, groupId: '[1174]' },
-            { id: 'FCH7FC', name: 'TEORIA DAS CIÊNCIAS HUMANAS', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 90.0, y: 11.5, groupId: '[1174]' },
-            { id: 'FCH7GA', name: 'METROPOLIZAÇÃO CONTEMPORÂNEA: TECNOLOGIA E TERRITÓRIO', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 10.0, y: 18.0, groupId: '[1174]' },
-            { id: 'FCH7HA', name: 'HISTÓRIA DA TÉCNICA E DA TECNOLOGIA', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 30.0, y: 18.0, groupId: '[1174]' },
-            { id: 'FCH7HB', name: 'HISTÓRIA GERAL DA ECONOMIA', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 50.0, y: 18.0, groupId: '[1174]' },
-            { id: 'FCH7HC', name: 'CAPITALISMO CONTEMPORÂNEO E ECONOMIA POLÍTICA', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 70.0, y: 18.0, groupId: '[1174]' },
-            { id: 'FCH7PA', name: 'PSICOLOGIA DO TRABALHO', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 90.0, y: 18.0, groupId: '[1174]' },
-            { id: 'FCH7PB', name: 'RELAÇÕES INTERPESSOAIS, GRUPO E PODER', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 10.0, y: 24.5, groupId: '[1174]' },
-            { id: 'FCH7PC', name: 'PLANEJAMENTO DE CARREIRA', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 30.0, y: 24.5, groupId: '[1174]' },
-            { id: 'FCH7SA', name: 'SOCIOLOGIA', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 50.0, y: 24.5, groupId: '[1174]' },
-            { id: 'FCH7SB', name: 'TECNOLOGIA E SOCIEDADE', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 70.0, y: 24.5, groupId: '[1174]' },
-            { id: 'FCH7SC', name: 'TECNOLOGIA, TRABALHO E SAÚDE', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 90.0, y: 24.5, groupId: '[1174]' },
-            { id: 'FCH7SD', name: 'SOCIEDADE E POLÍTICA NO BRASIL', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 10.0, y: 31.0, groupId: '[1174]' },
-            { id: 'FCH7SE', name: 'SOCIEDADE E POLÍTICA NO PARANÁ', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 30.0, y: 31.0, groupId: '[1174]' },
-            { id: 'FCH7SF', name: 'POLÍTICA, INSTITUIÇÕES E CIDADANIA NO PARANÁ', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 50.0, y: 31.0, groupId: '[1174]' },
-            { id: 'FCH7XA', name: 'TECNOLOGIA SOCIAL E ECONOMIA SOLIDÁRIA', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 70.0, y: 31.0, groupId: '[1174]' },
-            { id: 'FCH7XB', name: 'PRESENÇA AFRICANA NO BRASIL: TECNOLOGIA, TRABALHO E CULTURA', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 90.0, y: 31.0, groupId: '[1174]' },
-            { id: 'FCH7XC', name: 'PRESENÇA AFRICANA NO BRASIL', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 10.0, y: 37.5, groupId: '[1174]' },
-            { id: 'FCH7XD', name: 'DIREITOS HUMANOS, SEGURANÇA E DIVERSIDADE', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 30.0, y: 37.5, groupId: '[1174]' },
-            { id: 'FCH7XE', name: 'POLÍTICAS PÚBLICAS', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 50.0, y: 37.5, groupId: '[1174]' },
-            { id: 'FCH7XF', name: 'DIMENSÃO AMBIENTAL NA GESTÃO URBANA', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 70.0, y: 37.5, groupId: '[1174]' },
-            { id: 'FCH7XG', name: 'TECNOPOLÍTICAS DA SOCIEDADE CONTEMPORÂNEA', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 90.0, y: 37.5, groupId: '[1174]' },
-            { id: 'GEE7E3', name: 'FUNDAMENTOS DE ECONOMIA', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 10.0, y: 44.0, groupId: '[1174]' },
-            { id: 'GEE7G1', name: 'FUNDAMENTOS DE GESTÃO DE PESSOAS', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 30.0, y: 44.0, groupId: '[1174]' },
-            { id: 'GEE7M1', name: 'FUNDAMENTOS DE MARKETING', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 50.0, y: 44.0, groupId: '[1174]' }
+            // --- INÍCIO DO CÓDIGO PARA allHumanitiesData ---
+            // Período 2 - [1215] Linguística, Letras e Artes
+            { id: 'CAART02', name: 'Prática Musical 1', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 5.5, y: 5 },
+            { id: 'CAART03', name: 'Prática Musical 2', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 5.5, y: 12 },
+            { id: 'CAART04', name: 'Grupos Instrumentais 1', dependencies: [], period: 2, cht: 90, type: 'humanities', x: 5.5, y: 19 },
+            { id: 'CAART05', name: 'Grupos Instrumentais 2', dependencies: [], period: 2, cht: 90, type: 'humanities', x: 5.5, y: 26 },
+            { id: 'CAART06', name: 'Grupos Instrumentais 3', dependencies: [], period: 2, cht: 90, type: 'humanities', x: 5.5, y: 33 },
+            { id: 'CAART07', name: 'Grupos Instrumentais 4', dependencies: [], period: 2, cht: 90, type: 'humanities', x: 5.5, y: 40 },
+            { id: 'EDU70J', name: 'Libras', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 16.25, y: 5 },
+            { id: 'EDU7AG', name: 'Espanhol para Eng. 1', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 16.25, y: 12 },
+            { id: 'EDU7AH', name: 'Espanhol para Eng. 2', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 16.25, y: 19 },
+            { id: 'EDU7AI', name: 'Prática de Escrita para Eng.', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 16.25, y: 26 },
+            { id: 'LEM7A1', name: 'Alemão 1', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 27.5, y: 5 },
+            { id: 'LEM7A2', name: 'Alemão 2', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 27.5, y: 12 },
+            { id: 'LEM7A3', name: 'Alemão 3', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 27.5, y: 19 },
+            { id: 'LEM7A4', name: 'Alemão 4', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 27.5, y: 26 },
+            { id: 'LEM7A5', name: 'Alemão 5', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 27.5, y: 33 },
+            { id: 'LEM7F1', name: 'Francês 1', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 38.75, y: 5 },
+            { id: 'LEM7F2', name: 'Francês 2', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 38.75, y: 12 },
+            { id: 'LEM7F3', name: 'Francês 3', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 38.75, y: 19 },
+            { id: 'LEM7F4', name: 'Francês 4', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 38.75, y: 26 },
+            { id: 'LEM7F5', name: 'Francês 5', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 38.75, y: 33 },
+
+            // Período 2 - [1214] Ciências Humanas
+            { id: 'FCH7FA', name: 'Filosofia da Ciência e Tec.', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 50, y: 5 },
+            { id: 'FCH7FC', name: 'Teoria das Ciências Humanas', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 50, y: 12 },
+            { id: 'FCH7GA', name: 'Metropolização Contemp.', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 50, y: 19 },
+            { id: 'FCH7HA', name: 'História da Técnica e Tec.', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 50, y: 26 },
+            { id: 'FCH7HB', name: 'História Geral da Economia', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 50, y: 33 },
+            { id: 'FCH7HC', name: 'Capitalismo Contemp.', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 50, y: 40 },
+            { id: 'FCH7PA', name: 'Psicologia do Trabalho', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 61.25, y: 5 },
+            { id: 'FCH7PB', name: 'Relações Interpessoais', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 61.25, y: 12 },
+            { id: 'FCH7SA', name: 'Sociologia', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 61.25, y: 19 },
+            { id: 'FCH7SB', name: 'Tecnologia e Sociedade', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 61.25, y: 26 },
+            { id: 'FCH7SC', name: 'Tec., Trabalho e Saúde', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 61.25, y: 33 },
+            { id: 'FCH7SD', name: 'Sociedade e Política no BR', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 61.25, y: 40 },
+            { id: 'FCH7XC', name: 'Presença Africana no Brasil', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 72.5, y: 5 },
+            { id: 'FCH7XF', name: 'Dimensão Amb. na Gestão Urbana', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 72.5, y: 12 },
+            { id: 'FCH7XG', name: 'Tecnopolíticas da Soc. Contemp.', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 72.5, y: 19 },
+
+            // Período 2 - [1213] Ciências Sociais e Aplicadas & [1216] Saúde & [1217] Eletivas
+            { id: 'ELH04', name: 'Inovação Tec. e Financiamento', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 83.75, y: 5 },
+            { id: 'ELH05', name: 'Noções Jurídicas p/ Empreend.', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 83.75, y: 12 },
+            { id: 'ELH06', name: 'Metodologias Ativas p/ Eng.', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 83.75, y: 19 },
+            { id: 'LICOM7AB', name: 'Comunicação Soc. e Eventos', dependencies: [], period: 2, cht: 105, type: 'humanities', x: 83.75, y: 26 },
+            { id: 'ELH01', name: 'Fund. de Primeiros Socorros', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 94.5, y: 5 },
+            { id: 'ELH02', name: 'Prática de Grupo com Música', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 94.5, y: 12 },
+            { id: 'ELH07', name: 'Humanidades 1', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 94.5, y: 19 },
+            { id: 'ELH08', name: 'Humanidades 2', dependencies: [], period: 2, cht: 45, type: 'humanities', x: 94.5, y: 26 },
+            { id: 'ELH09', name: 'Humanidades 3', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 94.5, y: 33 },
+            { id: 'ELS03', name: 'Ativ. Complementares', dependencies: [], period: 2, cht: 15, type: 'humanities', x: 83.75, y: 33 },
+            { id: 'ELH10', name: 'Humanidades 4', dependencies: [], period: 2, cht: 75, type: 'humanities', x: 94.5, y: 40 },
+            { id: 'ELH14', name: 'Humanidades 5', dependencies: [], period: 2, cht: 30, type: 'humanities', x: 94.5, y: 47 },
+            { id: 'ELH15', name: 'Inteligência Artificial e Informática na Educação', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 27.5, y: 40 },
+            { id: 'ELH16', name: 'Prática de Habilidades Sociais por Meio de Jogos de Tabuleiros', dependencies: [], period: 2, cht: 60, type: 'humanities', x: 38.75, y: 40 }
+            // --- FIM DO CÓDIGO PARA allHumanitiesData ---
         ];
 
         // --- DATA STRUCTURE (Optional & Tracks Tree) ---
