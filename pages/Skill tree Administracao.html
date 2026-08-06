@@ -978,10 +978,9 @@
             </a>
         </div>
         <header class="text-center mb-6">
-            <h1 class="text-4xl md:text-5xl font-bold font-header text-blue-400">Matriz Curricular - Engenharia
-                Administração
+            <h1 class="text-4xl md:text-5xl font-bold font-header text-blue-400">Matriz Curricular - Bacharelado em Administração
             </h1>
-            <p class="text-gray-300 mt-2">UTFPR - Câmpus Curitiba (Matriz 967 - Matriz 2)</p>
+            <p class="text-gray-300 mt-2">UTFPR - Câmpus Curitiba (Matriz 967 - Matriz 4)</p>
         </header>
         <!-- Banner_Topo_Matriz -->
         <div class="flex justify-center w-full mb-6">
@@ -1021,17 +1020,16 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div>
                     <div class="flex justify-between mb-1"><span
-                            class="text-base font-medium text-red-300">Trilhas</span><span id="optional-progress-text"
-                            class="text-sm font-medium text-red-300">0/240h (0.0%)</span></div>
+                            class="text-base font-medium text-red-300">Optativas de Aperfeiçoamento</span><span id="optional-progress-text"
+                            class="text-sm font-medium text-red-300">0/405h (0.0%)</span></div>
                     <div class="w-full bg-gray-900 rounded-full h-4">
                         <div id="optional-progress-bar" class="bg-red-500 h-4 rounded-full transition-all duration-500"
                             style="width: 0%"></div>
                     </div>
                 </div>
                 <div>
-                    <div class="flex justify-between mb-1"><span class="text-base font-medium text-purple-300">Ciclo de
-                            Humanidades</span><span id="humanities-progress-text"
-                            class="text-sm font-medium text-purple-300">0/120h (0.0%)</span></div>
+                    <div class="flex justify-between mb-1"><span class="text-base font-medium text-purple-300">Eletivas e Extensão</span><span id="humanities-progress-text"
+                            class="text-sm font-medium text-purple-300">0/405h (0.0%)</span></div>
                     <div class="w-full bg-gray-900 rounded-full h-4">
                         <div id="humanities-progress-bar"
                             class="bg-purple-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div>
@@ -1040,7 +1038,7 @@
                 <div>
                     <div class="flex justify-between mb-1"><span class="text-base font-medium text-pink-300">Horas
                             Complementares (AC)</span><span id="comp-progress-text"
-                            class="text-sm font-medium text-pink-300">0/15h (0.0%)</span></div>
+                            class="text-sm font-medium text-pink-300">0/120h (0.0%)</span></div>
                     <div class="w-full bg-gray-900 rounded-full h-4 mb-2">
                         <div id="comp-progress-bar" class="bg-pink-500 h-4 rounded-full transition-all duration-500"
                             style="width: 0%"></div>
@@ -1049,7 +1047,7 @@
                 <div>
                     <div class="flex justify-between mb-1"><span class="text-base font-medium text-amber-300">Horas de
                             Extensão (CCE)</span><span id="ext-progress-text"
-                            class="text-sm font-medium text-amber-300">0/420h (0.0%)</span></div>
+                            class="text-sm font-medium text-amber-300">0/315h (0.0%)</span></div>
                     <div class="w-full bg-gray-900 rounded-full h-4 mb-2">
                         <div id="ext-progress-bar" class="bg-amber-500 h-4 rounded-full transition-all duration-500"
                             style="width: 0%"></div>
@@ -1164,8 +1162,8 @@
 
         <div class="flex justify-center mb-4 border-b border-gray-600">
             <button id="tab-main" class="tab-btn active">Obrigatorias</button>
-            <button id="tab-humanities" class="tab-btn">Humanidades</button>
-            <button id="tab-optional" class="tab-btn">Trilhas</button>
+            <button id="tab-humanities" class="tab-btn">Eletivas e Extensão</button>
+            <button id="tab-optional" class="tab-btn">Optativas de Aperfeiçoamento</button>
         </div>
 
         <div class="tree-wrapper">
@@ -1268,9 +1266,9 @@
     <script type="module">
 
         // --- CONFIGURATION CONSTANTS ---
-        const TOTAL_COMPLEMENTARY_HOURS = 120;
+                const TOTAL_COMPLEMENTARY_HOURS = 120;
         const TOTAL_EXTENSION_HOURS = 315;
-        const TOTAL_HUMANITIES_HOURS = 90;
+        const TOTAL_HUMANITIES_HOURS = 405;
         const TOTAL_OPTIONAL_HOURS = 120;
         const NODE_WIDTH = 130;
         const NODE_HEIGHT = 90;
