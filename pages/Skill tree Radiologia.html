@@ -2308,6 +2308,14 @@
                 humanitiesNodes = JSON.parse(JSON.stringify(allHumanitiesData));
                 optionalNodes = JSON.parse(JSON.stringify(allOptionalNodesData));
 
+                // Garante estados padrão iniciais para nós sem estado
+                nodes.forEach(node => {
+                    if (!node.state) node.state = node.dependencies.length === 0 ? 'subject-available' : 'subject-locked';
+                });
+                optionalNodes.forEach(node => {
+                    if (!node.state) node.state = node.dependencies.length === 0 ? 'optional-available' : 'optional-locked';
+                });
+
                 // TENTA CARREGAR O ESTADO SALVO
                 const stateLoaded = loadState();
 
@@ -2317,11 +2325,8 @@
                     nodes.forEach(node => {
                         node.state = node.dependencies.length === 0 ? 'subject-available' : 'subject-locked';
                     });
-                    humanitiesNodes.forEach(node => {
-                        node.state = 'humanities-locked';
-                    });
                     optionalNodes.forEach(node => {
-                        node.state = 'optional-locked';
+                        node.state = node.dependencies.length === 0 ? 'optional-available' : 'optional-locked';
                     });
                 }
 
@@ -2702,7 +2707,8 @@
             function renderNodes(container, data) {
                 data.forEach(node => {
                     const nodeEl = document.createElement('div');
-                    nodeEl.className = `node ${node.state}`;
+                    nodeEl.id = `node-${node.id}`;
+                    nodeEl.className = `node ${node.state || (node.type === 'optional' ? 'optional-available' : 'subject-available')}`;
                     nodeEl.style.left = `${node.x}%`;
                     nodeEl.style.top = `${node.y}%`;
                     nodeEl.dataset.id = node.id;
