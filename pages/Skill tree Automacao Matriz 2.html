@@ -3483,7 +3483,17 @@
                 humanitiesNodes.forEach(subject => {
                     // === NOVA VERIFICAÇÃO ===
                     if (subject.override || subject.state.endsWith('-completed') || subject.state.endsWith('-inprogress') || subject.state.endsWith('-satisfied')) return;
-                    const allDependenciesMet = subject.dependencies.every(depId => humanitiesNodes.find(p => p.id === depId)?.state === 'humanities-completed');
+                    const allDependenciesMet = subject.dependencies.every(depId => {
+                        if (depId.startsWith('Periodo:')) {
+                            const requiredPeriod = parseInt(depId.split(':')[1], 10);
+                            return currentPeriod >= requiredPeriod;
+                        }
+                        const parentInHumanities = humanitiesNodes.find(p => p.id === depId);
+                        if (parentInHumanities) return parentInHumanities.state === 'humanities-completed';
+                        const parentInMain = nodes.find(p => p.id === depId);
+                        if (parentInMain) return parentInMain.state === 'subject-completed';
+                        return false;
+                    });
                     const isPeriodAvailable = subject.period <= currentPeriod + 2;
                     const newState = (allDependenciesMet && isPeriodAvailable) ? 'humanities-available' : 'humanities-locked';
                     if (subject.state !== newState) {
