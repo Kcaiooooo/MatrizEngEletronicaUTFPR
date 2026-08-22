@@ -14,7 +14,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Técnico em Automação Industrial (977) - K-Matrizes UTFPR</title>
+    <title>Tecnologia em Automação Industrial (977) - K-Matrizes UTFPR</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -956,11 +956,9 @@
             </a>
         </div>
         <header class="text-center mb-6">
-            <h1 class="text-4xl md:text-5xl font-bold font-header text-blue-400">Técnico em Automação Industrial</h1>
+            <h1 class="text-4xl md:text-5xl font-bold font-header text-blue-400">Tecnologia em Automação Industrial</h1>
             <p class="text-gray-300 mt-2">UTFPR - Câmpus Curitiba (Matriz 977 / Curso 185)</p>
         </header>
-
-
 
         <div id="progress-panel" class="bg-gray-700 p-6 rounded-lg shadow-lg mb-6 space-y-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -986,8 +984,8 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div>
                     <div class="flex justify-between mb-1"><span
-                            class="text-base font-medium text-red-300">Trilhas</span><span id="optional-progress-text"
-                            class="text-sm font-medium text-red-300">0/540h (0.0%)</span></div>
+                            class="text-base font-medium text-red-300">Optativas de Automação</span><span id="optional-progress-text"
+                            class="text-sm font-medium text-red-300">0/45h (0.0%)</span></div>
                     <div class="w-full bg-gray-900 rounded-full h-4">
                         <div id="optional-progress-bar" class="bg-red-500 h-4 rounded-full transition-all duration-500"
                             style="width: 0%"></div>
@@ -996,38 +994,37 @@
                 <div>
                     <div class="flex justify-between mb-1"><span class="text-base font-medium text-purple-300">Ciclo de
                             Humanidades</span><span id="humanities-progress-text"
-                            class="text-sm font-medium text-purple-300">0/135h (0.0%)</span></div>
+                            class="text-sm font-medium text-purple-300">0/75h (0.0%)</span></div>
                     <div class="w-full bg-gray-900 rounded-full h-4">
                         <div id="humanities-progress-bar"
                             class="bg-purple-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div>
                     </div>
                 </div>
                 <div>
-                    <div class="flex justify-between mb-1"><span class="text-base font-medium text-pink-300">Horas
-                            Complementares (AC)</span><span id="comp-progress-text"
-                            class="text-sm font-medium text-pink-300">0/15h (0.0%)</span></div>
+                    <div class="flex justify-between mb-1"><span
+                            class="text-base font-medium text-emerald-300">Gestão</span><span id="management-progress-text"
+                            class="text-sm font-medium text-emerald-300">0/30h (0.0%)</span></div>
                     <div class="w-full bg-gray-900 rounded-full h-4 mb-2">
-                        <div id="comp-progress-bar" class="bg-pink-500 h-4 rounded-full transition-all duration-500"
-                            style="width: 0%"></div>
+                        <div id="management-progress-bar"
+                            class="bg-emerald-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div>
                     </div>
                 </div>
                 <div>
                     <div class="flex justify-between mb-1"><span class="text-base font-medium text-amber-300">Horas de
                             Extensão (CCE)</span><span id="ext-progress-text"
-                            class="text-sm font-medium text-amber-300">0/420h (0.0%)</span></div>
+                            class="text-sm font-medium text-amber-300">0/285h (0.0%)</span></div>
                     <div class="w-full bg-gray-900 rounded-full h-4 mb-2">
                         <div id="ext-progress-bar" class="bg-amber-500 h-4 rounded-full transition-all duration-500"
                             style="width: 0%"></div>
                     </div>
                 </div>
                 <div>
-                    <div class="flex justify-between mb-1"><span
-                            class="text-base font-medium text-emerald-300">Empregabilidade e
-                            Empreendedorismo</span><span id="group1142-progress-text"
-                            class="text-sm font-medium text-emerald-300">0/135h (0.0%)</span></div>
+                    <div class="flex justify-between mb-1"><span class="text-base font-medium text-pink-300">Horas
+                            Complementares (AC)</span><span id="comp-progress-text"
+                            class="text-sm font-medium text-pink-300">0/0h (0.0%)</span></div>
                     <div class="w-full bg-gray-900 rounded-full h-4 mb-2">
-                        <div id="group1142-progress-bar"
-                            class="bg-emerald-500 h-4 rounded-full transition-all duration-500" style="width: 0%"></div>
+                        <div id="comp-progress-bar" class="bg-pink-500 h-4 rounded-full transition-all duration-500"
+                            style="width: 0%"></div>
                     </div>
                 </div>
                 <div class="md:col-span-2 grid grid-cols-2 gap-4">
@@ -1137,9 +1134,9 @@
         </div>
 
         <div class="flex justify-center mb-4 border-b border-gray-600">
-            <button id="tab-main" class="tab-btn active">Obrigatorias</button>
-            <button id="tab-humanities" class="tab-btn">Humanidades</button>
-            <button id="tab-optional" class="tab-btn">Trilhas</button>
+            <button id="tab-main" class="tab-btn active">Obrigatórias</button>
+            <button id="tab-humanities" class="tab-btn">Humanidades e Gestão</button>
+            <button id="tab-optional" class="tab-btn">Optativas de Automação</button>
         </div>
 
         <div class="tree-wrapper">
@@ -1242,9 +1239,10 @@
     <script type="module">
 
         // --- CONFIGURATION CONSTANTS ---
-                const TOTAL_COMPLEMENTARY_HOURS = 0;
+        const TOTAL_COMPLEMENTARY_HOURS = 0;
         const TOTAL_EXTENSION_HOURS = 285;
         const TOTAL_HUMANITIES_HOURS = 75;
+        const TOTAL_MANAGEMENT_HOURS = 30;
         const TOTAL_OPTIONAL_HOURS = 45;
         const NODE_WIDTH = 130;
         const NODE_HEIGHT = 90;
@@ -1259,40 +1257,49 @@
 
         const OPTIONAL_GROUPS_CONFIG = {
             '[1130]': { requiredHours: 45, name: 'Optativas de Automação' },
-            '[1131]': { requiredHours: 75, name: 'Optativas de Humanidades e Gestão' }
+            '[1132]': { requiredHours: 75, name: 'Ciclo de Humanidades' },
+            '[1133]': { requiredHours: 30, name: 'Gestão' }
         };
         // ----------------------------------------------------------------
 
         // --- DATA STRUCTURE (Main Tree) ---
         const allNodesData = [
             {"id": "ELT81A", "name": "COMUNICAÇÃO ORAL E ESCRITA", "period": 1, "cht": 30, "dependencies": [], "type": "subject", "x": 5.0, "y": 5.0, "groupId": null},
-            {"id": "ELT81B", "name": "FENÔMENOS ELETROMAGNÉTICOS", "period": 1, "cht": 90, "dependencies": [], "type": "subject", "x": 23.0, "y": 5.0, "groupId": null},
-            {"id": "ELT81C", "name": "INTRODUÇÃO À TECNOLOGIA EM AUTOMAÇÃO", "period": 1, "cht": 60, "dependencies": [], "type": "subject", "x": 41.0, "y": 5.0, "groupId": null},
-            {"id": "ELT81D", "name": "DESENHO TÉCNICO", "period": 1, "cht": 45, "dependencies": [], "type": "subject", "x": 59.0, "y": 5.0, "groupId": null},
-            {"id": "INF71A", "name": "COMPUTAÇÃO 1", "period": 1, "cht": 60, "dependencies": [], "type": "subject", "x": 77.0, "y": 5.0, "groupId": null},
+            {"id": "ELT81B", "name": "FENÔMENOS ELETROMAGNÉTICOS", "period": 1, "cht": 90, "dependencies": [], "type": "subject", "x": 20.0, "y": 5.0, "groupId": null},
+            {"id": "ELT81C", "name": "INTRODUÇÃO À TECNOLOGIA EM AUTOMAÇÃO", "period": 1, "cht": 60, "dependencies": [], "type": "subject", "x": 35.0, "y": 5.0, "groupId": null},
+            {"id": "ELT81D", "name": "DESENHO TÉCNICO", "period": 1, "cht": 45, "dependencies": [], "type": "subject", "x": 50.0, "y": 5.0, "groupId": null},
+            {"id": "INF71A", "name": "COMPUTAÇÃO 1", "period": 1, "cht": 60, "dependencies": [], "type": "subject", "x": 65.0, "y": 5.0, "groupId": null},
+            {"id": "MAT7T1", "name": "TÓPICOS MATEMÁTICOS 1", "period": 1, "cht": 90, "dependencies": [], "type": "subject", "x": 80.0, "y": 5.0, "groupId": null},
+
             {"id": "ELT82A", "name": "FUNDAMENTOS DE GESTÃO DE PROJETOS", "period": 2, "cht": 45, "dependencies": [], "type": "subject", "x": 5.0, "y": 22.0, "groupId": null},
             {"id": "ELT82B", "name": "ANÁLISE DE CIRCUITOS", "period": 2, "cht": 75, "dependencies": [], "type": "subject", "x": 20.0, "y": 22.0, "groupId": null},
             {"id": "ELT82C", "name": "INSTALAÇÕES ELÉTRICAS", "period": 2, "cht": 75, "dependencies": [], "type": "subject", "x": 35.0, "y": 22.0, "groupId": null},
             {"id": "ELT82E", "name": "ELETRÔNICA ANALÓGICA", "period": 2, "cht": 75, "dependencies": [], "type": "subject", "x": 50.0, "y": 22.0, "groupId": null},
             {"id": "ELT82F", "name": "ELETRÔNICA DIGITAL", "period": 2, "cht": 75, "dependencies": [], "type": "subject", "x": 65.0, "y": 22.0, "groupId": null},
-            {"id": "EST70A", "name": "TÓPICOS MATEMÁTICOS 1", "period": 2, "cht": 60, "dependencies": [], "type": "subject", "x": 80.0, "y": 22.0, "groupId": null},
-            {"id": "ELT83A", "name": "SEGURANÇA E LEGISLAÇÃO", "period": 3, "cht": 60, "dependencies": [], "type": "subject", "x": 5.0, "y": 39.0, "groupId": null},
-            {"id": "ELT83B", "name": "SISTEMAS MICROCONTROLADOS", "period": 3, "cht": 60, "dependencies": [], "type": "subject", "x": 23.0, "y": 39.0, "groupId": null},
-            {"id": "ELT83C", "name": "SISTEMAS ELETROMAGNÉTICOS", "period": 3, "cht": 60, "dependencies": [], "type": "subject", "x": 41.0, "y": 39.0, "groupId": null},
-            {"id": "ELT83D", "name": "EFICIÊNCIA ENERGÉTICA", "period": 3, "cht": 45, "dependencies": [], "type": "subject", "x": 59.0, "y": 39.0, "groupId": null},
-            {"id": "ELT83F", "name": "OFICINA DE INTEGRAÇÃO E EXTENSÃO 1", "period": 3, "cht": 45, "dependencies": ["ELT82F"], "type": "subject", "x": 77.0, "y": 39.0, "groupId": null},
+            {"id": "EST70A", "name": "INTRODUÇÃO À ESTATÍSTICA", "period": 2, "cht": 60, "dependencies": [], "type": "subject", "x": 80.0, "y": 22.0, "groupId": null, "alternative": {"id": "EST70C", "cht": 60}},
+
+            {"id": "ELT80A", "name": "ESTÁGIO OBRIGATÓRIO", "period": 3, "cht": 360, "dependencies": [], "type": "subject", "x": 5.0, "y": 39.0, "groupId": null},
+            {"id": "ELT83A", "name": "SEGURANÇA E LEGISLAÇÃO PROFISSIONAL", "period": 3, "cht": 60, "dependencies": [], "type": "subject", "x": 18.0, "y": 39.0, "groupId": null},
+            {"id": "ELT83B", "name": "SISTEMAS MICROCONTROLADOS", "period": 3, "cht": 60, "dependencies": [], "type": "subject", "x": 31.0, "y": 39.0, "groupId": null},
+            {"id": "ELT83C", "name": "SISTEMAS ELETROMAGNÉTICOS", "period": 3, "cht": 60, "dependencies": [], "type": "subject", "x": 44.0, "y": 39.0, "groupId": null},
+            {"id": "ELT83D", "name": "EFICIÊNCIA ENERGÉTICA", "period": 3, "cht": 45, "dependencies": [], "type": "subject", "x": 57.0, "y": 39.0, "groupId": null},
+            {"id": "ELT83F", "name": "OFICINA DE INTEGRAÇÃO E EXTENSÃO 1", "period": 3, "cht": 105, "dependencies": ["ELT82F"], "type": "subject", "x": 70.0, "y": 39.0, "groupId": null},
+            {"id": "GEE7G3", "name": "FUNDAMENTOS DE GESTÃO DA PRODUÇÃO", "period": 3, "cht": 45, "dependencies": [], "type": "subject", "x": 83.0, "y": 39.0, "groupId": null},
+
             {"id": "ELT84A", "name": "INTRODUÇÃO À INTELIGÊNCIA ARTIFICIAL", "period": 4, "cht": 45, "dependencies": [], "type": "subject", "x": 5.0, "y": 56.0, "groupId": null},
             {"id": "ELT84B", "name": "CONTROLADORES LÓGICOS PROGRAMÁVEIS", "period": 4, "cht": 60, "dependencies": ["ELT83C"], "type": "subject", "x": 20.0, "y": 56.0, "groupId": null},
             {"id": "ELT84C", "name": "SISTEMAS PNEUMÁTICOS E HIDRÁULICOS", "period": 4, "cht": 60, "dependencies": ["ELT83C"], "type": "subject", "x": 35.0, "y": 56.0, "groupId": null},
             {"id": "ELT84D", "name": "MÁQUINAS ELÉTRICAS", "period": 4, "cht": 75, "dependencies": [], "type": "subject", "x": 50.0, "y": 56.0, "groupId": null},
             {"id": "ELT84E", "name": "MANUTENÇÃO DE SISTEMAS ELETRÔNICOS", "period": 4, "cht": 75, "dependencies": ["ELT82E"], "type": "subject", "x": 65.0, "y": 56.0, "groupId": null},
             {"id": "ELT84F", "name": "GERÊNCIA DE MANUTENÇÃO", "period": 4, "cht": 45, "dependencies": [], "type": "subject", "x": 80.0, "y": 56.0, "groupId": null},
+
             {"id": "ELT85A", "name": "MANUTENÇÃO DE SISTEMAS AUTOMATIZADOS", "period": 5, "cht": 75, "dependencies": [], "type": "subject", "x": 5.0, "y": 73.0, "groupId": null},
             {"id": "ELT85B", "name": "INTERNET DAS COISAS INDUSTRIAL (IIoT)", "period": 5, "cht": 60, "dependencies": [], "type": "subject", "x": 20.0, "y": 73.0, "groupId": null},
             {"id": "ELT85C", "name": "REDES INDUSTRIAIS APLICADAS", "period": 5, "cht": 45, "dependencies": ["ELT84B"], "type": "subject", "x": 35.0, "y": 73.0, "groupId": null},
             {"id": "ELT85D", "name": "ACIONAMENTO ELETRÔNICO DE MÁQUINAS", "period": 5, "cht": 60, "dependencies": ["ELT84D"], "type": "subject", "x": 50.0, "y": 73.0, "groupId": null},
             {"id": "ELT85E", "name": "INSTRUMENTAÇÃO INDUSTRIAL", "period": 5, "cht": 60, "dependencies": ["ELT82E"], "type": "subject", "x": 65.0, "y": 73.0, "groupId": null},
             {"id": "ELT85F", "name": "OFICINA DE INTEGRAÇÃO E EXTENSÃO 2", "period": 5, "cht": 90, "dependencies": ["ELT83F"], "type": "subject", "x": 80.0, "y": 73.0, "groupId": null},
+
             {"id": "ELT86A", "name": "SISTEMAS A EVENTOS DISCRETOS", "period": 6, "cht": 45, "dependencies": [], "type": "subject", "x": 5.0, "y": 90.0, "groupId": null},
             {"id": "ELT86B", "name": "ROBÓTICA APLICADA E SERVOMECANISMOS", "period": 6, "cht": 75, "dependencies": [], "type": "subject", "x": 20.0, "y": 90.0, "groupId": null},
             {"id": "ELT86C", "name": "SUPERVISÃO DE PROCESSOS", "period": 6, "cht": 60, "dependencies": [], "type": "subject", "x": 35.0, "y": 90.0, "groupId": null},
@@ -1303,26 +1310,26 @@
 
         // --- DATA STRUCTURE (Humanities Tree) ---
         const allHumanitiesData = [
-            {"id": "EDU70J", "name": "LIBRAS", "period": 2, "cht": 45, "dependencies": [], "type": "humanities", "x": 10.0, "y": 5.0, "groupId": "[1131]"},
-            {"id": "FCH7FB", "name": "FUNDAMENTOS DA ÉTICA", "period": 2, "cht": 45, "dependencies": [], "type": "humanities", "x": 30.0, "y": 5.0, "groupId": "[1131]"},
-            {"id": "FCH7PA", "name": "PSICOLOGIA DO TRABALHO", "period": 2, "cht": 30, "dependencies": [], "type": "humanities", "x": 50.0, "y": 5.0, "groupId": "[1131]"},
-            {"id": "FCH7PC", "name": "PLANEJAMENTO DE CARREIRA", "period": 2, "cht": 60, "dependencies": [], "type": "humanities", "x": 70.0, "y": 5.0, "groupId": "[1131]"},
-            {"id": "FCH7SB", "name": "TECNOLOGIA E SOCIEDADE", "period": 2, "cht": 45, "dependencies": [], "type": "humanities", "x": 90.0, "y": 5.0, "groupId": "[1131]"},
-            {"id": "FCH7SC", "name": "TECNOLOGIA, TRABALHO E SAÚDE", "period": 2, "cht": 45, "dependencies": [], "type": "humanities", "x": 10.0, "y": 11.5, "groupId": "[1131]"},
-            {"id": "FCH7XB", "name": "PRESENÇA AFRICANA NO BRASIL: TECNOLOGIA, TRABALHO E CULTURA", "period": 2, "cht": 45, "dependencies": [], "type": "humanities", "x": 30.0, "y": 11.5, "groupId": "[1131]"},
-            {"id": "FCH7XD", "name": "DIREITOS HUMANOS, SEGURANÇA E DIVERSIDADE", "period": 2, "cht": 45, "dependencies": [], "type": "humanities", "x": 50.0, "y": 11.5, "groupId": "[1131]"},
-            {"id": "FCH7XF", "name": "DIMENSÃO AMBIENTAL NA GESTÃO URBANA", "period": 2, "cht": 45, "dependencies": [], "type": "humanities", "x": 70.0, "y": 11.5, "groupId": "[1131]"},
-            {"id": "ELT8BA", "name": "PRODUÇÃO (GESTÃO E ANÁLISE)", "period": 2, "cht": 45, "dependencies": [], "type": "humanities", "x": 90.0, "y": 11.5, "groupId": "[1131]"},
-            {"id": "GEE7M1", "name": "FUNDAMENTOS DE MARKETING", "period": 2, "cht": 45, "dependencies": [], "type": "humanities", "x": 10.0, "y": 18.0, "groupId": "[1131]"},
-            {"id": "QBI7CA", "name": "CIÊNCIAS DO AMBIENTE", "period": 2, "cht": 30, "dependencies": [], "type": "humanities", "x": 30.0, "y": 18.0, "groupId": "[1131]"},
+            {"id": "EDU70J", "name": "LIBRAS", "period": 2, "cht": 45, "dependencies": [], "type": "humanities", "x": 10.0, "y": 5.0, "groupId": "[1132]"},
+            {"id": "FCH7FB", "name": "FUNDAMENTOS DA ÉTICA", "period": 2, "cht": 45, "dependencies": [], "type": "humanities", "x": 30.0, "y": 5.0, "groupId": "[1132]"},
+            {"id": "FCH7PA", "name": "PSICOLOGIA DO TRABALHO", "period": 2, "cht": 30, "dependencies": [], "type": "humanities", "x": 50.0, "y": 5.0, "groupId": "[1132]"},
+            {"id": "FCH7PC", "name": "PLANEJAMENTO DE CARREIRA", "period": 2, "cht": 60, "dependencies": [], "type": "humanities", "x": 70.0, "y": 5.0, "groupId": "[1132]"},
+            {"id": "FCH7SB", "name": "TECNOLOGIA E SOCIEDADE", "period": 2, "cht": 45, "dependencies": [], "type": "humanities", "x": 90.0, "y": 5.0, "groupId": "[1132]"},
+            {"id": "FCH7SC", "name": "TECNOLOGIA, TRABALHO E SAÚDE", "period": 2, "cht": 45, "dependencies": [], "type": "humanities", "x": 10.0, "y": 14.0, "groupId": "[1132]"},
+            {"id": "FCH7XB", "name": "PRESENÇA AFRICANA NO BRASIL: TECNOLOGIA, TRABALHO E CULTURA", "period": 2, "cht": 45, "dependencies": [], "type": "humanities", "x": 30.0, "y": 14.0, "groupId": "[1132]"},
+            {"id": "FCH7XD", "name": "DIREITOS HUMANOS, SEGURANÇA E DIVERSIDADE", "period": 2, "cht": 45, "dependencies": [], "type": "humanities", "x": 50.0, "y": 14.0, "groupId": "[1132]"},
+            {"id": "FCH7XF", "name": "DIMENSÃO AMBIENTAL NA GESTÃO URBANA", "period": 2, "cht": 45, "dependencies": [], "type": "humanities", "x": 70.0, "y": 14.0, "groupId": "[1132]"},
+            {"id": "ELT8BA", "name": "PRODUÇÃO SUSTENTÁVEL", "period": 2, "cht": 45, "dependencies": [], "type": "humanities", "x": 20.0, "y": 24.0, "groupId": "[1133]"},
+            {"id": "GEE7M1", "name": "FUNDAMENTOS DE MARKETING", "period": 2, "cht": 45, "dependencies": [], "type": "humanities", "x": 50.0, "y": 24.0, "groupId": "[1133]"},
+            {"id": "QBI7CA", "name": "CIÊNCIAS DO AMBIENTE", "period": 2, "cht": 30, "dependencies": [], "type": "humanities", "x": 80.0, "y": 24.0, "groupId": "[1133]"},
         ];
         // --- DATA STRUCTURE (Optional & Tracks Tree) ---
         const allOptionalNodesData = [
             {"id": "ELT7AC", "name": "PROJETOS DE QUADROS ELÉTRICOS DE AUTOMAÇÃO", "period": 4, "cht": 60, "dependencies": [], "type": "optional", "x": 15.0, "y": 10.0, "groupId": "[1130]"},
             {"id": "ELT8AA", "name": "ROBÓTICA PEDAGÓGICA NA EDUCAÇÃO BÁSICA", "period": 4, "cht": 45, "dependencies": [], "type": "optional", "x": 50.0, "y": 10.0, "groupId": "[1130]"},
             {"id": "ELT8AB", "name": "SENSORES INTELIGENTES", "period": 4, "cht": 45, "dependencies": [], "type": "optional", "x": 85.0, "y": 10.0, "groupId": "[1130]"},
-            {"id": "ELT8AC", "name": "CONTROLADORES LÓGICOS PROGRAMÁVEIS 2", "period": 4, "cht": 60, "dependencies": ["ELT84B"], "type": "optional", "x": 15.0, "y": 25.0, "groupId": "[1130]"},
-            {"id": "ELT8AD", "name": "REDES INDUSTRIAIS", "period": 4, "cht": 60, "dependencies": [], "type": "optional", "x": 50.0, "y": 25.0, "groupId": "[1130]"},
+            {"id": "ELT8AC", "name": "CONTROLADORES LÓGICOS PROGRAMÁVEIS 2", "period": 4, "cht": 60, "dependencies": ["ELT84B"], "type": "optional", "x": 30.0, "y": 25.0, "groupId": "[1130]"},
+            {"id": "ELT8AD", "name": "REDES INDUSTRIAIS", "period": 4, "cht": 60, "dependencies": [], "type": "optional", "x": 70.0, "y": 25.0, "groupId": "[1130]"},
         ];
 
         // --- DOM ELEMENTS ---
@@ -1341,8 +1348,8 @@
         const compProgressText = document.getElementById('comp-progress-text');
         const extProgressBar = document.getElementById('ext-progress-bar');
         const extProgressText = document.getElementById('ext-progress-text');
-        const group1142ProgressBar = document.getElementById('group1142-progress-bar');
-        const group1142ProgressText = document.getElementById('group1142-progress-text');
+        const managementProgressBar = document.getElementById('management-progress-bar');
+        const managementProgressText = document.getElementById('management-progress-text');
         const humanitiesProgressBar = document.getElementById('humanities-progress-bar');
         const humanitiesProgressText = document.getElementById('humanities-progress-text');
         const optionalProgressBar = document.getElementById('optional-progress-bar');
@@ -2416,45 +2423,43 @@
                 periodProgressBar.style.width = `${(currentPeriod / 6) * 100}%`;
             }
 
-            // 3. Progresso Optativas/Trilhas
+            // 3. Progresso Optativas de Automação [1130]
             const totalCompletedOptional = optionalNodes
                 .filter(n => n.state === 'optional-completed')
                 .reduce((sum, n) => sum + n.cht, 0);
-            const optionalProgress = (totalCompletedOptional / TOTAL_OPTIONAL_HOURS) * 100;
+            const optionalProgress = TOTAL_OPTIONAL_HOURS > 0 ? (totalCompletedOptional / TOTAL_OPTIONAL_HOURS) * 100 : 0;
             optionalProgressBar.style.width = `${Math.min(optionalProgress, 100)}%`;
             optionalProgressText.textContent = `${totalCompletedOptional}/${TOTAL_OPTIONAL_HOURS}h (${optionalProgress.toFixed(1)}%)`;
 
-            // 4. Progresso Humanidades
+            // 4. Progresso Ciclo de Humanidades [1132]
             const totalCompletedHumanities = humanitiesNodes
-                .filter(n => n.state === 'humanities-completed' && true)
+                .filter(n => n.groupId === '[1132]' && n.state === 'humanities-completed')
                 .reduce((sum, n) => sum + n.cht, 0);
-            const humanitiesProgress = (totalCompletedHumanities / TOTAL_HUMANITIES_HOURS) * 100;
+            const humanitiesProgress = TOTAL_HUMANITIES_HOURS > 0 ? (totalCompletedHumanities / TOTAL_HUMANITIES_HOURS) * 100 : 0;
             humanitiesProgressBar.style.width = `${Math.min(humanitiesProgress, 100)}%`;
             humanitiesProgressText.textContent = `${totalCompletedHumanities}/${TOTAL_HUMANITIES_HOURS}h (${humanitiesProgress.toFixed(1)}%)`;
 
-            // --- CORREÇÃO: ADICIONADO CÁLCULO PARA AC (Complementares) ---
-            const completedCompHours = completedAcActivities.reduce((sum, activity) => sum + activity.hours, 0);
-            const compProgress = (completedCompHours / TOTAL_COMPLEMENTARY_HOURS) * 100;
-            // Atualiza a barra e o texto
-            compProgressBar.style.width = `${Math.min(compProgress, 100)}%`;
-            compProgressText.textContent = `${completedCompHours}/${TOTAL_COMPLEMENTARY_HOURS}h (${compProgress.toFixed(1)}%)`;
+            // 5. Progresso Gestão [1133]
+            if (managementProgressBar && managementProgressText) {
+                const totalCompletedManagement = humanitiesNodes
+                    .filter(n => n.groupId === '[1133]' && n.state === 'humanities-completed')
+                    .reduce((sum, n) => sum + n.cht, 0);
+                const managementProgress = TOTAL_MANAGEMENT_HOURS > 0 ? (totalCompletedManagement / TOTAL_MANAGEMENT_HOURS) * 100 : 0;
+                managementProgressBar.style.width = `${Math.min(managementProgress, 100)}%`;
+                managementProgressText.textContent = `${totalCompletedManagement}/${TOTAL_MANAGEMENT_HOURS}h (${managementProgress.toFixed(1)}%)`;
+            }
 
-            // --- CORREÇÃO: ADICIONADO CÁLCULO PARA CCE (Extensão) ---
+            // 6. Progresso CCE (Extensão)
             const completedExtHours = completedCceActivities.reduce((sum, activity) => sum + activity.hours, 0);
-            const extProgress = (completedExtHours / TOTAL_EXTENSION_HOURS) * 100;
-            // Atualiza a barra e o texto
+            const extProgress = TOTAL_EXTENSION_HOURS > 0 ? (completedExtHours / TOTAL_EXTENSION_HOURS) * 100 : 0;
             extProgressBar.style.width = `${Math.min(extProgress, 100)}%`;
             extProgressText.textContent = `${completedExtHours}/${TOTAL_EXTENSION_HOURS}h (${extProgress.toFixed(1)}%)`;
 
-            // 5. Progresso Grupo 1137 (Empregabilidade e Empreendedorismo)
-            if (group1142ProgressBar && group1142ProgressText) {
-                const group1142Nodes = humanitiesNodes.filter(n => n.groupId === '[1097]' && n.state === 'humanities-completed');
-                const group1142Hours = group1142Nodes.reduce((sum, n) => sum + n.cht, 0);
-                const group1142Req = OPTIONAL_GROUPS_CONFIG['[1097]'] ? OPTIONAL_GROUPS_CONFIG['[1097]'].requiredHours : 135;
-                const group1142ProgressVar = group1142Req > 0 ? (group1142Hours / group1142Req) * 100 : 0;
-                group1142ProgressBar.style.width = `${Math.min(group1142ProgressVar, 100)}%`;
-                group1142ProgressText.textContent = `${group1142Hours}/${group1142Req}h (${group1142ProgressVar.toFixed(1)}%)`;
-            }
+            // 7. Progresso AC (Complementares)
+            const completedCompHours = completedAcActivities.reduce((sum, activity) => sum + activity.hours, 0);
+            const compProgress = TOTAL_COMPLEMENTARY_HOURS > 0 ? (completedCompHours / TOTAL_COMPLEMENTARY_HOURS) * 100 : (completedCompHours > 0 ? 100 : 0);
+            compProgressBar.style.width = `${Math.min(compProgress, 100)}%`;
+            compProgressText.textContent = `${completedCompHours}/${TOTAL_COMPLEMENTARY_HOURS}h (${compProgress.toFixed(1)}%)`;
 
             // Verifica celebração
             checkAndCelebrate();
@@ -2511,7 +2516,8 @@
 
             // Cálculo das horas totais concluídas
             const totalCompletedOptional = optionalNodes.filter(n => n.state === 'optional-completed').reduce((sum, n) => sum + n.cht, 0);
-            const totalCompletedHumanities = humanitiesNodes.filter(n => n.state === 'humanities-completed').reduce((sum, n) => sum + n.cht, 0);
+            const totalCompletedHumanities = humanitiesNodes.filter(n => n.groupId === '[1132]' && n.state === 'humanities-completed').reduce((sum, n) => sum + n.cht, 0);
+            const totalCompletedManagement = humanitiesNodes.filter(n => n.groupId === '[1133]' && n.state === 'humanities-completed').reduce((sum, n) => sum + n.cht, 0);
             const completedCompHours = completedAcActivities.reduce((sum, n) => sum + n.hours, 0);
             const completedExtHours = completedCceActivities.reduce((sum, n) => sum + n.hours, 0);
 
@@ -2520,39 +2526,14 @@
                 completedSubjects >= nodes.length &&
                 totalCompletedOptional >= TOTAL_OPTIONAL_HOURS &&
                 totalCompletedHumanities >= TOTAL_HUMANITIES_HOURS &&
-                completedCompHours >= TOTAL_COMPLEMENTARY_HOURS &&
+                totalCompletedManagement >= TOTAL_MANAGEMENT_HOURS &&
                 completedExtHours >= TOTAL_EXTENSION_HOURS;
 
-            // --- 2. VERIFICAÇÃO DE TRILHA COMPLETA (Novo Requisito) ---
-            let hasCompletedTrack = false;
-            let completedTrackName = '';
+            // Debug
+            console.log(`Status Curso: Requisitos Básicos: ${basicRequirementsMet ? 'OK' : 'Pendente'}`);
 
-            // Cria um conjunto (Set) com os IDs das optativas que o aluno já fez para busca rápida
-            const completedOptionalIds = new Set(
-                optionalNodes
-                    .filter(n => n.state === 'optional-completed')
-                    .map(n => n.id)
-            );
-
-            // Varre cada trilha definida na constante
-            for (const [trackName, subjectIds] of Object.entries(SPECIALIZATION_TRACKS)) {
-                // Verifica se TODAS as matérias daquela trilha estão no conjunto de completas
-                const isTrackComplete = subjectIds.every(id => completedOptionalIds.has(id));
-
-                if (isTrackComplete) {
-                    hasCompletedTrack = true;
-                    completedTrackName = trackName;
-                    break; // Se achou uma trilha completa, pode parar de procurar
-                }
-            }
-
-            // Debug para você ver no console o que está faltando
-            console.log(`Status Curso:
-            - Requisitos Básicos: ${basicRequirementsMet ? 'OK' : 'Pendente'}
-            - Trilha Completa: ${hasCompletedTrack ? 'OK (' + completedTrackName + ')' : 'Pendente (Nenhuma trilha fechada)'}`);
-
-            // --- 3. DECISÃO FINAL ---
-            if (basicRequirementsMet && hasCompletedTrack) {
+            // --- 2. DECISÃO FINAL ---
+            if (basicRequirementsMet) {
                 celebrationModal.classList.remove('hidden');
                 celebrationAudio.play();
                 celebrationShown = true;
