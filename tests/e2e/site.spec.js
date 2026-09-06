@@ -68,6 +68,92 @@ test('home, temas e navegação em tela móvel', async ({page}) => {
     await expect(page.locator('html')).toHaveAttribute('data-theme','light');
 });
 
+for (const course of courses.filter(course => ['eletrica', 'administracao', 'm2'].includes(course.id))) {
+    test(`mapa móvel com viewport interno: ${course.id}`, async ({page}) => {
+        await page.setViewportSize({width:390,height:844});
+        await page.goto('/'+course.page);
+        await expect(page.locator('#main-container .node').first()).toBeVisible();
+
+        const metrics = await page.evaluate(() => {
+            const viewport = document.querySelector('.tree-wrapper');
+            const map = document.querySelector('#main-container');
+            return {
+                documentWidth: document.documentElement.scrollWidth,
+                viewportWidth: viewport.clientWidth,
+                viewportHeight: viewport.clientHeight,
+                mapWidth: map.clientWidth,
+                mapHeight: map.clientHeight,
+                mapScrollWidth: viewport.scrollWidth,
+                mapScrollHeight: viewport.scrollHeight,
+                touchAction: getComputedStyle(viewport).touchAction,
+            };
+        });
+
+        expect(metrics.documentWidth).toBe(390);
+        expect(metrics.mapWidth).toBeGreaterThan(metrics.viewportWidth);
+        expect(metrics.mapHeight).toBeGreaterThan(metrics.viewportHeight);
+        expect(metrics.mapScrollWidth).toBeGreaterThan(metrics.viewportWidth);
+        expect(metrics.mapScrollHeight).toBeGreaterThan(metrics.viewportHeight);
+        expect(metrics.touchAction).toBe('none');
+
+        const zoomControls = page.locator('.tree-zoom-controls');
+        await expect(zoomControls).toBeVisible();
+        await expect(zoomControls.locator('[data-zoom-level]')).toHaveText('100%');
+        const initialStageWidth = await page.locator('.tree-stage').evaluate(element => element.clientWidth);
+        await zoomControls.getByRole('button', {name: 'Aumentar zoom'}).click();
+        await expect(zoomControls.locator('[data-zoom-level]')).toHaveText('110%');
+        await expect.poll(() => page.locator('.tree-stage').evaluate(element => element.clientWidth)).toBeGreaterThan(initialStageWidth);
+        await zoomControls.getByRole('button', {name: 'Redefinir zoom'}).click();
+        await expect(zoomControls.locator('[data-zoom-level]')).toHaveText('100%');
+
+        const viewport = page.locator('.tree-wrapper');
+        await viewport.scrollIntoViewIfNeeded();
+        const blankPoint = await page.evaluate(() => {
+            const viewport = document.querySelector('.tree-wrapper');
+            const rect = viewport.getBoundingClientRect();
+            for (let y = 8; y < rect.height - 8; y += 16) {
+                for (let x = 8; x < rect.width - 8; x += 16) {
+                    const element = document.elementFromPoint(rect.left + x, rect.top + y);
+                    if (element && !element.closest('.node')) return {x: rect.left + x, y: rect.top + y};
+                }
+            }
+            return {x: rect.left + rect.width - 8, y: rect.top + rect.height - 8};
+        });
+        await page.mouse.move(blankPoint.x, blankPoint.y);
+        await page.mouse.down();
+        await page.mouse.move(blankPoint.x - 180, blankPoint.y, {steps: 8});
+        await page.mouse.up();
+
+        await expect.poll(() => viewport.evaluate(element => element.scrollLeft)).toBeGreaterThan(0);
+    });
+}
+
+test('pinça amplia a matriz pelo ponto central do gesto', async ({page}) => {
+    await page.setViewportSize({width:390,height:844});
+    await page.goto('/pages/Skill tree Eletrica.html');
+    const viewport = page.locator('.tree-wrapper');
+    await expect(viewport.locator('.tree-zoom-controls')).toBeVisible();
+
+    await page.evaluate(() => {
+        const element = document.querySelector('.tree-wrapper');
+        const dispatch = (type, pointerId, clientX, clientY) => element.dispatchEvent(new PointerEvent(type, {
+            bubbles: true,
+            cancelable: true,
+            pointerId,
+            pointerType: 'touch',
+            clientX,
+            clientY,
+        }));
+        dispatch('pointerdown', 1, 80, 220);
+        dispatch('pointerdown', 2, 280, 220);
+        dispatch('pointermove', 2, 360, 220);
+        dispatch('pointerup', 1, 80, 220);
+        dispatch('pointerup', 2, 360, 220);
+    });
+
+    await expect(viewport.locator('[data-zoom-level]')).toHaveText('140%');
+});
+
 test('JSON inválido não impede o carregamento', async ({page}) => {
     await page.goto('/');
     await page.evaluate(()=>localStorage.setItem('skillTreeProgress_Eletrica','{invalid'));

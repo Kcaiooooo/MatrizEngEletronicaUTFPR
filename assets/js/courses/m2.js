@@ -1,5 +1,6 @@
 import { TOTAL_HUMANITIES_HOURS, TOTAL_OPTIONAL_HOURS, NODE_WIDTH, NODE_HEIGHT, SPECIALIZATION_TRACKS_M2, OPTIONAL_GROUPS_CONFIG, allNodesData, allHumanitiesData, allOptionalNodesData } from '../data/m2.js';
 import { parseProgress, renderActivityList as renderSafeActivityList } from '../shared/progress.js';
+import { installTreePan } from '../shared/tree-pan.js';
 const storage = window.KMStorage.forCourse({"progressKey":"skillTreeProgress_M2","legacyProgressKey":"skillTreeProgress_M2","glowKey":"skillTreeGlowEnabled_M2","legacyGlowKey":"skillTreeGlowEnabled_M2"});
 
 
@@ -40,63 +41,9 @@ const storage = window.KMStorage.forCourse({"progressKey":"skillTreeProgress_M2"
             const closeSettingsBtn = document.getElementById('close-settings-btn');
             const glowToggle = document.getElementById('glow-toggle');
 
-            // =======================================================================
-            // LÓGICA PARA NAVEGAÇÃO POR ARRASTE (PAN)
-            // =======================================================================
+            // Navegação compartilhada da matriz.
             const panningContainer = document.querySelector('.tree-wrapper');
-            let isPanning = false;
-            let startPos = { x: 0, y: 0 };
-            let scrollPos = { left: 0, top: 0 };
-
-            const startPan = (e) => {
-                isPanning = true;
-                panningContainer.style.cursor = 'grabbing';
-                panningContainer.style.userSelect = 'none';
-
-                const clientX = e.touches ? e.touches[0].clientX : e.clientX;
-                const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-
-                startPos.x = clientX;
-                startPos.y = clientY;
-                // --- LINHAS ALTERADAS ---
-                scrollPos.left = window.scrollX || document.documentElement.scrollLeft;
-                scrollPos.top = window.scrollY || document.documentElement.scrollTop;
-            };
-
-            const duringPan = (e) => {
-                if (!isPanning) return;
-
-                // Previne a rolagem nativa da página para que nosso arraste funcione
-                e.preventDefault();
-
-                const clientX = e.touches ? e.touches[0].clientX : e.clientX;
-                const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-                const dx = clientX - startPos.x;
-                const dy = clientY - startPos.y;
-
-                // Atualiza a rolagem da janela principal, não mais do container
-                window.scrollTo(scrollPos.left - dx, scrollPos.top - dy);
-            };
-
-            const endPan = () => {
-                isPanning = false;
-                panningContainer.style.cursor = 'grab'; // Volta o cursor para "mão aberta"
-                panningContainer.style.userSelect = 'auto';
-            };
-
-            // Adiciona os eventos para o RATO
-            panningContainer.addEventListener('mousedown', startPan);
-            panningContainer.addEventListener('mousemove', duringPan);
-            panningContainer.addEventListener('mouseup', endPan);
-            panningContainer.addEventListener('mouseleave', endPan);
-
-            // Adiciona os eventos para o TOQUE (dispositivos móveis)
-            panningContainer.addEventListener('touchstart', startPan);
-            panningContainer.addEventListener('touchmove', duringPan);
-            panningContainer.addEventListener('touchend', endPan);
-            // =======================================================================
-            //  FIM DA LOGICA 
-            // =======================================================================
+            installTreePan(panningContainer);
 
 
             // --- STATE ---
