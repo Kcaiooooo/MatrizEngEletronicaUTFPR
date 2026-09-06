@@ -1,0 +1,9 @@
+.storage-notice {
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    padding: 1rem;
+    background: #78350f;
+    color: #fff;
+    text-align: center;
+}
