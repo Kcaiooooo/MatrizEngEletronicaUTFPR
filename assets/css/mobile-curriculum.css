@@ -1,0 +1,125 @@
+/* Mobile viewport for the interactive curriculum map. */
+.tree-stage {
+    flex: none;
+}
+
+.tree-zoom-controls {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .tree-wrapper {
+        width: 100%;
+        max-width: 100%;
+        height: min(72vh, 680px);
+        min-height: 420px;
+        overflow: auto;
+        overscroll-behavior: contain;
+        touch-action: none;
+        -webkit-overflow-scrolling: touch;
+        cursor: grab;
+        border: 1px solid var(--border-main, #374151);
+    }
+
+    .tree-wrapper.is-panning {
+        cursor: grabbing;
+        user-select: none;
+    }
+
+    .tree-zoom-controls {
+        position: sticky;
+        top: 8px;
+        z-index: 20;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        width: max-content;
+        margin: 0.5rem 0.5rem -2.75rem auto;
+        padding: 0.25rem;
+        border: 1px solid var(--border-main, #374151);
+        border-radius: 0.5rem;
+        background: var(--bg-panel, #1f2937);
+        box-shadow: 0 2px 8px rgb(0 0 0 / 25%);
+        pointer-events: none;
+    }
+
+    .tree-zoom-controls button,
+    .tree-zoom-controls output {
+        min-width: 2.25rem;
+        min-height: 2.25rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--border-main, #4b5563);
+        border-radius: 0.35rem;
+        background: var(--bg-card, #374151);
+        color: var(--text-main, #f9fafb);
+        font: inherit;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    .tree-zoom-controls button {
+        pointer-events: auto;
+        cursor: pointer;
+    }
+
+    .tree-zoom-controls button:active {
+        transform: scale(0.95);
+    }
+
+    .tree-zoom-controls output {
+        min-width: 3.25rem;
+        font-size: 0.8rem;
+    }
+
+    #main-container,
+    #humanities-container,
+    #optional-container {
+        width: 1000px !important;
+        min-width: 1000px !important;
+        height: 1200px !important;
+        min-height: 1200px !important;
+        overflow: visible;
+    }
+
+    .node {
+        width: 120px;
+        height: 80px;
+        font-size: 10px;
+    }
+
+    .tab-btn {
+        min-height: 44px;
+        padding: 0.65rem 0.85rem;
+    }
+
+    .modal-box {
+        width: calc(100vw - 2rem);
+        max-height: calc(100svh - 2rem);
+        overflow-y: auto;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .tree-wrapper {
+        height: min(70vh, 600px);
+        min-height: 360px;
+    }
+
+    .node {
+        width: 112px;
+        height: 76px;
+        font-size: 9px;
+    }
+
+    .tab-btn {
+        padding-inline: 0.55rem;
+        font-size: 0.8rem;
+    }
+}

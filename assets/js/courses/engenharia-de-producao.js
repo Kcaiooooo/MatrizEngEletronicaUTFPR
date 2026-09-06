@@ -1,5 +1,6 @@
 import { TOTAL_MANDATORY_HOURS, TOTAL_EXTENSION_HOURS, TOTAL_HUMANITIES_HOURS, TOTAL_OPTIONAL_HOURS, TOTAL_COMPLEMENTARY_HOURS, TOTAL_DEGREE_HOURS, NODE_WIDTH, NODE_HEIGHT, OPTIONAL_LAYOUT_MIN_X, OPTIONAL_LAYOUT_MAX_X, OPTIONAL_LAYOUT_MIN_Y, OPTIONAL_LAYOUT_MAX_Y, SPECIALIZATION_TRACKS, OPTIONAL_GROUPS_CONFIG, allNodesData, allHumanitiesData, allOptionalNodesData } from '../data/engenharia-de-producao.js';
 import { parseProgress, parsePeriodDependency, renderActivityList as renderSafeActivityList } from '../shared/progress.js';
+import { installTreePan } from '../shared/tree-pan.js';
 const storage = window.KMStorage.forCourse({"progressKey":"skillTreeProgress_Producao","legacyProgressKey":"skillTreeProgress_Producao","glowKey":"skillTreeGlowEnabled_Producao","legacyGlowKey":"skillTreeGlowEnabled_Producao"});
 // --- DOM ELEMENTS ---
         const mainContainer = document.getElementById('main-container');
@@ -50,53 +51,9 @@ const storage = window.KMStorage.forCourse({"progressKey":"skillTreeProgress_Pro
         
 
 
-        // =======================================================================
-        //  DRAG & PAN
-        // =======================================================================
-        let isPanning = false;
-        let startX = 0;
-        let startY = 0;
-        let scrollLeft = 0;
-        let scrollTop = 0;
-
+        // Navegação compartilhada da matriz.
         const panningContainer = document.querySelector('.tree-wrapper');
-
-        function startPan(e) {
-            if (e.target.closest('.node')) return;
-            isPanning = true;
-            panningContainer.style.cursor = 'grabbing';
-            startX = (e.pageX || (e.touches && e.touches[0].pageX)) - panningContainer.offsetLeft;
-            startY = (e.pageY || (e.touches && e.touches[0].pageY)) - panningContainer.offsetTop;
-            scrollLeft = window.scrollX || document.documentElement.scrollLeft;
-            scrollTop = window.scrollY || document.documentElement.scrollTop;
-        }
-
-        function duringPan(e) {
-            if (!isPanning) return;
-            e.preventDefault();
-            const x = (e.pageX || (e.touches && e.touches[0].pageX)) - panningContainer.offsetLeft;
-            const y = (e.pageY || (e.touches && e.touches[0].pageY)) - panningContainer.offsetTop;
-            const walkX = (x - startX);
-            const walkY = (y - startY);
-            window.scrollTo(scrollLeft - walkX, scrollTop - walkY);
-        }
-
-        function endPan() {
-            isPanning = false;
-            if (panningContainer) panningContainer.style.cursor = 'grab';
-        }
-
-        if (panningContainer) {
-            panningContainer.addEventListener('mousedown', startPan);
-            panningContainer.addEventListener('mousemove', duringPan);
-            panningContainer.addEventListener('mouseup', endPan);
-            panningContainer.addEventListener('mouseleave', endPan);
-            panningContainer.addEventListener('touchstart', startPan);
-            panningContainer.addEventListener('touchmove', duringPan);
-            panningContainer.addEventListener('touchend', endPan);
-        }
-        // =======================================================================
-        //  FIM DA LOGICA PAN
+        installTreePan(panningContainer);
         // =======================================================================
 
         let nodes = [];
