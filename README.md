@@ -4,19 +4,6 @@ Matrizes curriculares interativas: disciplinas obrigatórias, humanidades, optat
 pré-requisitos, período atual, atividades, importação de histórico em PDF e cartão
 de progresso. O site continua estático, sem backend ou framework obrigatório.
 
-## Desenvolvimento
-
-Requer Node.js 22 ou superior.
-
-```sh
-npm ci
-npm run build
-npm run dev
-```
-
-Abra <http://127.0.0.1:4173>. As alterações desta refatoração são desenvolvidas e
-testadas na branch `develop`. Esses comandos não publicam o site.
-
 ## Estrutura
 
 - `index.html` e `pages/`: conteúdo e estrutura das páginas; URLs existentes preservadas.
