@@ -56,6 +56,50 @@ for (const course of courses) {
     });
 }
 
+for (const course of courses.filter(course => ['m2', 'm3'].includes(course.id))) {
+    test(`detalhes da ementa no cartão: ${course.id}`, async ({ page }) => {
+        await page.goto('/' + course.page);
+        const node = page.locator('#main-container .node').first();
+        await expect(node).toBeVisible();
+        const stateBeforeDetails = await node.getAttribute('class');
+        await node.hover();
+        const detailsButton = node.locator('.course-more-info');
+        const nodeBox = await node.boundingBox();
+        const buttonBox = await detailsButton.boundingBox();
+        await page.mouse.move(nodeBox.x + nodeBox.width / 2, nodeBox.y + nodeBox.height / 2);
+        await page.mouse.move(buttonBox.x + buttonBox.width / 2, buttonBox.y + buttonBox.height / 2, { steps: 12 });
+        await expect(detailsButton).toBeVisible();
+        await detailsButton.click();
+
+        const modal = page.locator('#course-details-modal');
+        await expect(modal).toBeVisible();
+        await expect(modal.locator('#course-details-title')).toContainText('ELB11');
+        await expect(modal.locator('.course-details-source')).toContainText(course.id === 'm2' ? 'PPC M906' : 'PPC M968');
+        await expect(modal.locator('.course-details-section-title').first()).toBeVisible();
+        await expect(modal.locator('.course-details-content')).toContainText('Ementa');
+        if (course.id === 'm2') {
+            await expect(modal.locator('.course-details-content')).toContainText('Objetivos da disciplina');
+            await expect(modal.locator('.course-details-content')).toContainText('Referências bibliográficas');
+        }
+
+        await page.keyboard.press('Escape');
+        await expect(modal).toBeHidden();
+        await expect(node).toHaveAttribute('class', stateBeforeDetails);
+    });
+
+    test(`exibe apenas o card da matéria sob o mouse: ${course.id}`, async ({ page }) => {
+        await page.goto('/' + course.page);
+        const nodes = page.locator('#main-container .node');
+        const first = nodes.nth(0);
+        const second = nodes.nth(1);
+        await first.hover();
+        await expect(first.locator('.tooltip')).toHaveClass(/visible/);
+        await second.hover();
+        await expect(first.locator('.tooltip')).not.toHaveClass(/visible/);
+        await expect(second.locator('.tooltip')).toHaveClass(/visible/);
+    });
+}
+
 test('home, temas e navegação em tela móvel', async ({page}) => {
     await page.setViewportSize({width:390,height:844});
     await page.goto('/');

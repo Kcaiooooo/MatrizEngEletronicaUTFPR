@@ -1,8 +1,21 @@
 import { TOTAL_COMPLEMENTARY_HOURS, TOTAL_EXTENSION_HOURS, TOTAL_HUMANITIES_HOURS, TOTAL_OPTIONAL_HOURS, NODE_WIDTH, NODE_HEIGHT, SPECIALIZATION_TRACKS, OPTIONAL_GROUPS_CONFIG, allNodesData, allHumanitiesData, allOptionalNodesData } from '../data/m3.js';
 import { parseProgress, renderActivityList as renderSafeActivityList } from '../shared/progress.js';
 import { installTreePan } from '../shared/tree-pan.js';
+import { setupCourseDetailsModal, showCourseDetails } from '../shared/course-details.js';
 const storage = window.KMStorage.forCourse({"progressKey":"skillTreeProgress_M3","legacyProgressKey":"skillTreeProgress_M3","glowKey":"skillTreeGlowEnabled_M3","legacyGlowKey":"skillTreeGlowEnabled_M3"});
 
+
+setupCourseDetailsModal();
+let ppcDetailsPromise;
+const loadPpcDetails = () => ppcDetailsPromise ??= import('../data/ppc-m3-details.js').then(module => module.PPC_M3_DETAILS);
+const PPC_DETAIL_ALIASES = {
+    ELE92: 'ELE101',
+    FCH7HA: 'FCH7FA',
+    FCH7XF: 'FCH7X',
+    ELN7AC: 'EL77D',
+    ELN7AD: 'EL77E',
+    ELX92: 'ELX91'
+};
 
         // --- DOM ELEMENTS ---
         const mainContainer = document.getElementById('main-container');
@@ -749,20 +762,49 @@ const storage = window.KMStorage.forCourse({"progressKey":"skillTreeProgress_M3"
                     tooltipHTML += `<p class="text-xs ${colorClass} mt-2">Período: ${node.period} | CHT: ${node.cht}</p>`;
                 }
                 tooltipHTML += groupProgressHTML;
+                tooltipHTML += `<button type="button" class="course-more-info" aria-label="Mais informações sobre ${node.name}">Mais informações</button>`;
                 tooltip.innerHTML = tooltipHTML;
 
                 nodeEl.appendChild(nodeName);
                 nodeEl.appendChild(tooltip);
 
+                const detailsButton = tooltip.querySelector('.course-more-info');
+                detailsButton?.addEventListener('pointerdown', event => event.stopPropagation());
+                detailsButton?.addEventListener('click', event => {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    loadPpcDetails().then(details => {
+                        const detail = details[node.id] || details[PPC_DETAIL_ALIASES[node.id]];
+                        showCourseDetails(node, detail);
+                    }).catch(() => showCourseDetails(node, null));
+                });
+
+                // Mantém o card aberto durante o caminho do nó até o botão.
+                let tooltipHideTimer;
+                const cancelTooltipHide = () => {
+                    clearTimeout(tooltipHideTimer);
+                };
+                const scheduleTooltipHide = () => {
+                    clearTimeout(tooltipHideTimer);
+                    tooltipHideTimer = setTimeout(() => {
+                        if (!tooltip.matches(':hover')) tooltip.classList.remove('visible');
+                    }, 600);
+                };
+                detailsButton?.addEventListener('pointerenter', cancelTooltipHide);
+
                 // --- NOVOS EVENT LISTENERS ---
-                nodeEl.addEventListener('mouseover', () => {
+                nodeEl.addEventListener('mouseenter', () => {
+                    cancelTooltipHide();
+                    document.querySelectorAll('.node .tooltip.visible').forEach(otherTooltip => {
+                        if (otherTooltip !== tooltip) otherTooltip.classList.remove('visible');
+                    });
                     positionTooltip(nodeEl, tooltip);
                     tooltip.classList.add('visible');
                 });
 
-                nodeEl.addEventListener('mouseout', () => {
-                    tooltip.classList.remove('visible');
-                });
+                nodeEl.addEventListener('mouseleave', scheduleTooltipHide);
+                tooltip.addEventListener('mouseenter', cancelTooltipHide);
+                tooltip.addEventListener('mouseleave', scheduleTooltipHide);
 
                 nodeEl.addEventListener('click', () => handleNodeClick(node.id));
                 nodeEl.addEventListener('contextmenu', (e) => {
