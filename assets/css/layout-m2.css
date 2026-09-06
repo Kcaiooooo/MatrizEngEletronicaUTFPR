@@ -232,6 +232,16 @@ body {
             border-color: var(--bg-card) transparent transparent transparent;
         }
 
+        /* Área invisível que elimina o vão entre o nó e o card. */
+        .node .tooltip::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -18px;
+            height: 18px;
+        }
+
         .node .tooltip.visible,
         .node .tooltip-satisfied.visible {
             visibility: visible;
@@ -433,6 +443,11 @@ body {
             margin-left: -5px;
             /* Inverte a direção da borda para apontar para cima */
             border-color: transparent transparent var(--bg-card) transparent;
+        }
+
+        .node .tooltip.below::before {
+            top: -18px;
+            bottom: auto;
         }
 
         /* Se você também quer que a borda dourada funcione para tooltips satisfeitos abaixo */
