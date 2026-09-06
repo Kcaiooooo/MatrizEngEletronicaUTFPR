@@ -1,0 +1,132 @@
+[
+  {
+    "id": "administracao",
+    "page": "pages/Skill tree Administracao.html",
+    "progressKey": "skillTreeProgress_Mecatronica_administracao",
+    "legacyProgressKey": "skillTreeProgress_Mecatronica",
+    "glowKey": "skillTreeGlowEnabled_Mecatronica_administracao",
+    "legacyGlowKey": "skillTreeGlowEnabled_Mecatronica",
+    "data": "assets/js/data/administracao.js",
+    "dataHash": "69076afa34c616f433f0e11f20b348d26f7911aad6165b9fbbad94b35e13f248"
+  },
+  {
+    "id": "automacao-matriz-2",
+    "page": "pages/Skill tree Automacao Matriz 2.html",
+    "progressKey": "skillTreeProgress_Automacao_automacao-matriz-2",
+    "legacyProgressKey": "skillTreeProgress_Automacao",
+    "glowKey": "skillTreeGlowEnabled_Automacao_automacao-matriz-2",
+    "legacyGlowKey": "skillTreeGlowEnabled_Automacao",
+    "data": "assets/js/data/automacao-matriz-2.js",
+    "dataHash": "fc87a6b8b45b057cdbb0f460b061118081fc2ac9fef2113b4f3a42f75cca7fa1"
+  },
+  {
+    "id": "automacao",
+    "page": "pages/Skill tree Automacao.html",
+    "progressKey": "skillTreeProgress_Automacao_automacao",
+    "legacyProgressKey": "skillTreeProgress_Automacao",
+    "glowKey": "skillTreeGlowEnabled_Automacao_automacao",
+    "legacyGlowKey": "skillTreeGlowEnabled_Automacao",
+    "data": "assets/js/data/automacao.js",
+    "dataHash": "a04b94118fd57765d2db5f7fc573257755d32b01f54460874f82d56253158470"
+  },
+  {
+    "id": "eletrica",
+    "page": "pages/Skill tree Eletrica.html",
+    "progressKey": "skillTreeProgress_Eletrica",
+    "legacyProgressKey": "skillTreeProgress_Eletrica",
+    "glowKey": "skillTreeGlowEnabled_Eletrica",
+    "legacyGlowKey": "skillTreeGlowEnabled_Eletrica",
+    "data": "assets/js/data/eletrica.js",
+    "dataHash": "d3415a493b7430127b59d27773b8ead05ea84e009f3d228f3503df94648a9c81"
+  },
+  {
+    "id": "engenharia-ambiental",
+    "page": "pages/Skill tree Engenharia Ambiental.html",
+    "progressKey": "skillTreeProgress_Ambiental",
+    "legacyProgressKey": "skillTreeProgress_Ambiental",
+    "glowKey": "skillTreeGlowEnabled_Ambiental",
+    "legacyGlowKey": "skillTreeGlowEnabled_Ambiental",
+    "data": "assets/js/data/engenharia-ambiental.js",
+    "dataHash": "6fa4e91b07e448f67dc84a2b829f276e47baa5b456e00142333169772ba588a6"
+  },
+  {
+    "id": "engenharia-civil",
+    "page": "pages/Skill tree Engenharia Civil.html",
+    "progressKey": "skillTreeProgress_Automacao_engenharia-civil",
+    "legacyProgressKey": "skillTreeProgress_Automacao",
+    "glowKey": "skillTreeGlowEnabled_Automacao_engenharia-civil",
+    "legacyGlowKey": "skillTreeGlowEnabled_Automacao",
+    "data": "assets/js/data/engenharia-civil.js",
+    "dataHash": "7ce8f008830b1270e51176e19b54f065a6c947286b11824447eef5c46d8dff66"
+  },
+  {
+    "id": "engenharia-de-producao",
+    "page": "pages/Skill tree Engenharia de Producao.html",
+    "progressKey": "skillTreeProgress_Producao",
+    "legacyProgressKey": "skillTreeProgress_Producao",
+    "glowKey": "skillTreeGlowEnabled_Producao",
+    "legacyGlowKey": "skillTreeGlowEnabled_Producao",
+    "data": "assets/js/data/engenharia-de-producao.js",
+    "dataHash": "75660a47a11451e28c8aecbe1c70744b3f15fe9e5eb06eeda88b74e18d1b0c4f"
+  },
+  {
+    "id": "m2",
+    "page": "pages/Skill tree M2.html",
+    "progressKey": "skillTreeProgress_M2",
+    "legacyProgressKey": "skillTreeProgress_M2",
+    "glowKey": "skillTreeGlowEnabled_M2",
+    "legacyGlowKey": "skillTreeGlowEnabled_M2",
+    "data": "assets/js/data/m2.js",
+    "dataHash": "7033b64bb54b6526e50f21c95251d58182f1734dde53b93b49410016a1a4e8a1"
+  },
+  {
+    "id": "m3",
+    "page": "pages/Skill tree M3.html",
+    "progressKey": "skillTreeProgress_M3",
+    "legacyProgressKey": "skillTreeProgress_M3",
+    "glowKey": "skillTreeGlowEnabled_M3",
+    "legacyGlowKey": "skillTreeGlowEnabled_M3",
+    "data": "assets/js/data/m3.js",
+    "dataHash": "4a60df8dc38b70d6e2ee21767ef66ed048ecb1937d036709f7905e4645bb0992"
+  },
+  {
+    "id": "mecanica",
+    "page": "pages/Skill tree Mecanica.html",
+    "progressKey": "skillTreeProgress_Mecatronica_mecanica",
+    "legacyProgressKey": "skillTreeProgress_Mecatronica",
+    "glowKey": "skillTreeGlowEnabled_Mecatronica_mecanica",
+    "legacyGlowKey": "skillTreeGlowEnabled_Mecatronica",
+    "data": "assets/js/data/mecanica.js",
+    "dataHash": "1893e3d742ab23b32e7c85123d38a362506af637d69a4b2eaa4cc959c8ec3ab1"
+  },
+  {
+    "id": "mecatronica",
+    "page": "pages/Skill tree Mecatronica.html",
+    "progressKey": "skillTreeProgress_Mecatronica_mecatronica",
+    "legacyProgressKey": "skillTreeProgress_Mecatronica",
+    "glowKey": "skillTreeGlowEnabled_Mecatronica_mecatronica",
+    "legacyGlowKey": "skillTreeGlowEnabled_Mecatronica",
+    "data": "assets/js/data/mecatronica.js",
+    "dataHash": "3af1b7a76af1cb0d7bf5b4cebc5fc26c7859203b53623feaeb60a432fc41913d"
+  },
+  {
+    "id": "radiologia",
+    "page": "pages/Skill tree Radiologia.html",
+    "progressKey": "skillTreeProgress_Radiologia",
+    "legacyProgressKey": "skillTreeProgress_Radiologia",
+    "glowKey": "skillTreeGlowEnabled_Radiologia",
+    "legacyGlowKey": "skillTreeGlowEnabled_Radiologia",
+    "data": "assets/js/data/radiologia.js",
+    "dataHash": "95b2f3dda18afbdc504b5fc49a6dad13aa1534b8962c05314d67670562ff1bc8"
+  },
+  {
+    "id": "tecnico-automacao-industrial",
+    "page": "pages/Skill tree Tecnico Automacao Industrial.html",
+    "progressKey": "skillTreeProgress_TecnAutomacao",
+    "legacyProgressKey": "skillTreeProgress_TecnAutomacao",
+    "glowKey": "skillTreeGlowEnabled_TecnAutomacao",
+    "legacyGlowKey": "skillTreeGlowEnabled_TecnAutomacao",
+    "data": "assets/js/data/tecnico-automacao-industrial.js",
+    "dataHash": "d83529dd510a91801c6e1c734a786da4f1e18f57cb527b4c08818a6057141d70"
+  }
+]

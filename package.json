@@ -1,0 +1,21 @@
+{
+  "name": "k-matrizes-utfpr",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "tailwindcss -i assets/css/tailwind.input.css -o assets/css/utilities.css --minify",
+    "test": "node --test tests/unit/*.test.mjs",
+    "test:e2e": "playwright test",
+    "check": "npm run build && npm test && npm run test:e2e"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "acorn": "8.18.0",
+    "tailwindcss": "3.4.17"
+  }
+}
