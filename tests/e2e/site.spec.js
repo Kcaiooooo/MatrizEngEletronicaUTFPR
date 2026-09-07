@@ -98,6 +98,54 @@ for (const course of courses.filter(course => ['m2', 'm3'].includes(course.id)))
         await expect(first.locator('.tooltip')).not.toHaveClass(/visible/);
         await expect(second.locator('.tooltip')).toHaveClass(/visible/);
     });
+
+    test(`colore matéria com dependência única pela seta: ${course.id}`, async ({ page }) => {
+        const data = await import('../../' + course.data);
+        const target = data.allNodesData.find(node => node.dependencies?.length === 1);
+        const parentId = target.dependencies[0];
+
+        await page.goto('/');
+        await page.evaluate(({ key, targetId, parentId }) => {
+            localStorage.setItem(key, JSON.stringify({
+                currentPeriod: 10,
+                nodesState: [{ id: parentId, state: 'subject-completed' }],
+            }));
+        }, { key: course.progressKey, targetId: target.id, parentId });
+        await page.goto('/' + course.page);
+
+        const targetNode = page.locator(`#main-container [data-id="${target.id}"]`);
+        await expect(targetNode).toHaveClass(/subject-available/);
+        const arrow = page.locator(`#main-lines path.line-completed[marker-end*="${parentId}"]`).first();
+        await expect(arrow).toHaveCount(1);
+
+        const colors = await page.evaluate(({ targetId, parentId }) => {
+            const targetElement = document.querySelector(`#main-container [data-id="${targetId}"]`);
+            const arrowElement = document.querySelector(`#main-lines path.line-completed[marker-end*="${parentId}"]`);
+            const hue = (color) => {
+                const [r, g, b] = color.match(/\d+/g).map(Number).map(value => value / 255);
+                const max = Math.max(r, g, b);
+                const min = Math.min(r, g, b);
+                const delta = max - min;
+                if (delta === 0) return 0;
+                let result;
+                if (max === r) result = ((g - b) / delta) % 6;
+                else if (max === g) result = (b - r) / delta + 2;
+                else result = (r - g) / delta + 4;
+                return (result * 60 + 360) % 360;
+            };
+            return {
+                targetBackground: getComputedStyle(targetElement).backgroundColor,
+                targetBackgroundPriority: targetElement.style.getPropertyPriority('background-color'),
+                targetHue: hue(getComputedStyle(targetElement).backgroundColor),
+                arrowHue: hue(getComputedStyle(arrowElement).stroke),
+            };
+        }, { targetId: target.id, parentId });
+
+        expect(colors.targetBackground).not.toBe('rgb(37, 99, 235)');
+        expect(colors.targetBackgroundPriority).toBe('important');
+        const hueDistance = Math.abs(colors.targetHue - colors.arrowHue);
+        expect(Math.min(hueDistance, 360 - hueDistance)).toBeLessThan(1);
+    });
 }
 
 test('home, temas e navegação em tela móvel', async ({page}) => {
