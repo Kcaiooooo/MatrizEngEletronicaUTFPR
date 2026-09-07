@@ -470,7 +470,8 @@ const storage = window.KMStorage.forCourse({"progressKey":"skillTreeProgress_Tec
                                     }
                                 });
 
-                                const adjustedEndY = exactEndY - 5; // Ajuste para a seta tocar perfeitamente a borda
+                                // The arrow tip ends exactly at the target's top edge.
+                                const adjustedEndY = exactEndY;
 
                                 let pathString = `M ${exactStartX} ${exactStartY}`;
 
@@ -524,15 +525,16 @@ const storage = window.KMStorage.forCourse({"progressKey":"skillTreeProgress_Tec
 
                                     const lastGrid = resultPath[resultPath.length - 2];
                                     const lastGridY = lastGrid.y * resolution + resolution / 2;
+                                    const finalApproachY = Math.min(lastGridY, adjustedEndY - 12);
 
-                                    pathString += ` L ${exactEndX} ${lastGridY}`;
+                                    pathString += ` L ${exactEndX} ${finalApproachY}`;
+                                    pathString += ` L ${exactEndX} ${adjustedEndY}`;
                                 } else {
                                     const midY = (exactStartY + adjustedEndY) / 2;
                                     pathString += ` L ${exactStartX} ${midY}`;
                                     pathString += ` L ${exactEndX} ${midY}`;
+                                    pathString += ` L ${exactEndX} ${adjustedEndY}`;
                                 }
-
-                                pathString += ` L ${exactEndX} ${adjustedEndY}`;
 
                                 const isCompleted = parentNode.state.endsWith('-completed') || parentNode.state.endsWith('-satisfied');
                                 const lineId = `line-${depId}-to-${node.id}`;
@@ -547,7 +549,7 @@ const storage = window.KMStorage.forCourse({"progressKey":"skillTreeProgress_Tec
                                     const markerComp = document.createElementNS('http://www.w3.org/2000/svg', 'marker');
                                     markerComp.setAttribute('id', uniqueMarkerCompletedId);
                                     markerComp.setAttribute('viewBox', '0 0 10 10');
-                                    markerComp.setAttribute('refX', '8');
+                                        markerComp.setAttribute('refX', '10');
                                     markerComp.setAttribute('refY', '5');
                                     markerComp.setAttribute('markerWidth', '6');
                                     markerComp.setAttribute('markerHeight', '6');
@@ -558,7 +560,7 @@ const storage = window.KMStorage.forCourse({"progressKey":"skillTreeProgress_Tec
                                     const markerLock = document.createElementNS('http://www.w3.org/2000/svg', 'marker');
                                     markerLock.setAttribute('id', uniqueMarkerLockedId);
                                     markerLock.setAttribute('viewBox', '0 0 10 10');
-                                    markerLock.setAttribute('refX', '8');
+                                        markerLock.setAttribute('refX', '10');
                                     markerLock.setAttribute('refY', '5');
                                     markerLock.setAttribute('markerWidth', '5');
                                     markerLock.setAttribute('markerHeight', '5');
