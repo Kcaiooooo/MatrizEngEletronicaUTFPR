@@ -676,9 +676,18 @@ const storage = window.KMStorage.forCourse({"progressKey":"skillTreeProgress_Rad
                             }
                         }
 
-                        nodeEl.style.background = bgStyle;
-                        nodeEl.style.borderColor = borderStyle;
-                        if (shadowStyle) nodeEl.style.boxShadow = shadowStyle;
+                        // Theme styles use !important on the state background. Apply
+                        // inherited colors with the same priority so a single
+                        // dependency is not reset to the generic blue state color.
+                        if (bgStyle.startsWith('linear-gradient')) {
+                            nodeEl.style.setProperty('background-image', bgStyle, 'important');
+                            nodeEl.style.setProperty('background-color', 'transparent', 'important');
+                        } else {
+                            nodeEl.style.setProperty('background-image', 'none', 'important');
+                            nodeEl.style.setProperty('background-color', bgStyle, 'important');
+                        }
+                        nodeEl.style.setProperty('border-color', borderStyle, 'important');
+                        if (shadowStyle) nodeEl.style.setProperty('box-shadow', shadowStyle, 'important');
                     }
                 }
                 // ---------------------------------
