@@ -60,6 +60,45 @@ function addSingleDependencyColorTest(course) {
     });
 }
 
+function addArrowGeometryTest(course) {
+    test(`mantém setas encostadas e orientadas nas matérias: ${course.id}`, async ({ page }) => {
+        await page.goto('/' + course.page);
+        const geometry = await page.evaluate(() => {
+            const svg = document.querySelector('#main-lines');
+            const svgRect = svg.getBoundingClientRect();
+            const targetTops = [...document.querySelectorAll('#main-container .node')]
+                .map(node => node.getBoundingClientRect().top - svgRect.top);
+            const paths = [...svg.querySelectorAll('path.line-locked, path.line-completed')];
+            const invalid = [];
+            const markerRefs = new Set();
+
+            paths.forEach(path => {
+                const values = (path.getAttribute('d').match(/-?\d+(?:\.\d+)?/g) || []).map(Number);
+                const points = [];
+                for (let index = 0; index < values.length; index += 2) {
+                    points.push([values[index], values[index + 1]]);
+                }
+                const end = points.at(-1);
+                const previous = points.at(-2);
+                const markerId = path.getAttribute('marker-end')?.match(/#([^)]*)/)?.[1];
+                if (markerId) markerRefs.add(document.getElementById(markerId)?.getAttribute('refX'));
+
+                const isVerticalApproach = Math.abs(end[0] - previous[0]) < 0.5 && Math.abs(end[1] - previous[1]) >= 1;
+                const reachesTargetTop = targetTops.some(top => Math.abs(top - end[1]) < 1);
+                if (!isVerticalApproach || !reachesTargetTop) {
+                    invalid.push({ end, previous, isVerticalApproach, reachesTargetTop });
+                }
+            });
+
+            return { pathCount: paths.length, invalid, markerRefs: [...markerRefs] };
+        });
+
+        expect(geometry.pathCount).toBeGreaterThan(0);
+        expect(geometry.invalid).toEqual([]);
+        expect(geometry.markerRefs).toEqual(['10']);
+    });
+}
+
 for (const course of courses) {
     test(`histórico legado, abas e persistência: ${course.id}`, async ({ page }) => {
         const data = await import('../../'+course.data);
@@ -148,11 +187,11 @@ for (const course of courses.filter(course => ['m2', 'm3'].includes(course.id)))
         await second.hover();
         await expect(first.locator('.tooltip')).not.toHaveClass(/visible/);
         await expect(second.locator('.tooltip')).toHaveClass(/visible/);
-}
     });
 }
 
 for (const course of courses) addSingleDependencyColorTest(course);
+for (const course of courses) addArrowGeometryTest(course);
 
 test('home, temas e navegação em tela móvel', async ({page}) => {
     await page.setViewportSize({width:390,height:844});
