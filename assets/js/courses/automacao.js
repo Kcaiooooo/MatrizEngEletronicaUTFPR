@@ -1,4 +1,4 @@
-import { TOTAL_COMPLEMENTARY_HOURS, TOTAL_EXTENSION_HOURS, TOTAL_HUMANITIES_HOURS, TOTAL_OPTIONAL_HOURS, NODE_WIDTH, NODE_HEIGHT, OPTIONAL_LAYOUT_MIN_X, OPTIONAL_LAYOUT_MAX_X, OPTIONAL_LAYOUT_MIN_Y, OPTIONAL_LAYOUT_MAX_Y, SPECIALIZATION_TRACKS, OPTIONAL_GROUPS_CONFIG, allNodesData, allHumanitiesData, allOptionalNodesData } from '../data/automacao.js';
+import { TOTAL_COMPLEMENTARY_HOURS, TOTAL_EXTENSION_HOURS, TOTAL_HUMANITIES_HOURS, TOTAL_OPTIONAL_HOURS, REQUIRED_TRACK_GROUP_IDS, FORMATION_COMPLEMENTARY_GROUP_IDS, NODE_WIDTH, NODE_HEIGHT, OPTIONAL_LAYOUT_MIN_X, OPTIONAL_LAYOUT_MAX_X, OPTIONAL_LAYOUT_MIN_Y, OPTIONAL_LAYOUT_MAX_Y, SPECIALIZATION_TRACKS, OPTIONAL_GROUPS_CONFIG, allNodesData, allHumanitiesData, allOptionalNodesData } from '../data/automacao.js';
 import { parseProgress, renderActivityList as renderSafeActivityList } from '../shared/progress.js';
 import { installTreePan } from '../shared/tree-pan.js';
 const storage = window.KMStorage.forCourse({"progressKey":"skillTreeProgress_Automacao_automacao","legacyProgressKey":"skillTreeProgress_Automacao","glowKey":"skillTreeGlowEnabled_Automacao_automacao","legacyGlowKey":"skillTreeGlowEnabled_Automacao"});
@@ -675,6 +675,34 @@ const storage = window.KMStorage.forCourse({"progressKey":"skillTreeProgress_Aut
             });
         }
 
+        function getCompletedHoursForGroup(nodeList, groupId) {
+            return nodeList
+                .filter(node => node.groupId === groupId && node.state.endsWith('-completed'))
+                .reduce((sum, node) => sum + node.cht, 0);
+        }
+
+        /**
+         * Returns the hours that count toward the 405 h Trilhas requirement.
+         * Formation Complementar is represented by four alternative groups;
+         * only the best-progress alternative contributes to the total.
+         */
+        function getCompletedOptionalHours() {
+            const completedRequiredTracks = REQUIRED_TRACK_GROUP_IDS.reduce((sum, groupId) => {
+                const requiredHours = OPTIONAL_GROUPS_CONFIG[groupId]?.requiredHours || 135;
+                const completedHours = getCompletedHoursForGroup(optionalNodes, groupId);
+                return sum + Math.min(completedHours, requiredHours);
+            }, 0);
+
+            const formationRequiredHours = OPTIONAL_GROUPS_CONFIG['[1140]']?.requiredHours || 135;
+            const completedFormationAlternative = FORMATION_COMPLEMENTARY_GROUP_IDS.reduce((best, groupId) => {
+                const completedHours = getCompletedHoursForGroup(optionalNodes, groupId);
+                const requiredHours = OPTIONAL_GROUPS_CONFIG[groupId]?.requiredHours || formationRequiredHours;
+                return Math.max(best, Math.min(completedHours, requiredHours));
+            }, 0);
+
+            return Math.min(TOTAL_OPTIONAL_HOURS, completedRequiredTracks + completedFormationAlternative);
+        }
+
         function getGroupProgress(groupId) {
             if (!groupId || !OPTIONAL_GROUPS_CONFIG[groupId]) {
                 return null;
@@ -1054,9 +1082,7 @@ const storage = window.KMStorage.forCourse({"progressKey":"skillTreeProgress_Aut
             }
 
             // 3. Progresso Optativas/Trilhas
-            const totalCompletedOptional = optionalNodes
-                .filter(n => n.state === 'optional-completed')
-                .reduce((sum, n) => sum + n.cht, 0);
+            const totalCompletedOptional = getCompletedOptionalHours();
             const optionalProgress = (totalCompletedOptional / TOTAL_OPTIONAL_HOURS) * 100;
             optionalProgressBar.style.width = `${Math.min(optionalProgress, 100)}%`;
             optionalProgressText.textContent = `${totalCompletedOptional}/${TOTAL_OPTIONAL_HOURS}h (${optionalProgress.toFixed(1)}%)`;
@@ -1085,8 +1111,7 @@ const storage = window.KMStorage.forCourse({"progressKey":"skillTreeProgress_Aut
 
             // 5. Progresso Grupo 1137 (Empregabilidade e Empreendedorismo)
             if (group1142ProgressBar && group1142ProgressText) {
-                const group1142Nodes = humanitiesNodes.filter(n => n.groupId === '[1137]' && n.state === 'humanities-completed');
-                const group1142Hours = group1142Nodes.reduce((sum, n) => sum + n.cht, 0);
+                const group1142Hours = getCompletedHoursForGroup(humanitiesNodes, '[1137]');
                 const group1142Req = OPTIONAL_GROUPS_CONFIG['[1137]'] ? OPTIONAL_GROUPS_CONFIG['[1137]'].requiredHours : 135;
                 const group1142ProgressVar = group1142Req > 0 ? (group1142Hours / group1142Req) * 100 : 0;
                 group1142ProgressBar.style.width = `${Math.min(group1142ProgressVar, 100)}%`;
@@ -1147,8 +1172,9 @@ const storage = window.KMStorage.forCourse({"progressKey":"skillTreeProgress_Aut
             const completedSubjects = nodes.filter(s => s.state === 'subject-completed' || s.state === 'subject-satisfied').length;
 
             // Cálculo das horas totais concluídas
-            const totalCompletedOptional = optionalNodes.filter(n => n.state === 'optional-completed').reduce((sum, n) => sum + n.cht, 0);
-            const totalCompletedHumanities = humanitiesNodes.filter(n => n.state === 'humanities-completed').reduce((sum, n) => sum + n.cht, 0);
+            const totalCompletedOptional = getCompletedOptionalHours();
+            const totalCompletedHumanities = getCompletedHoursForGroup(humanitiesNodes, '[1136]');
+            const totalCompletedEmployability = getCompletedHoursForGroup(humanitiesNodes, '[1137]');
             const completedCompHours = completedAcActivities.reduce((sum, n) => sum + n.hours, 0);
             const completedExtHours = completedCceActivities.reduce((sum, n) => sum + n.hours, 0);
 
@@ -1157,6 +1183,7 @@ const storage = window.KMStorage.forCourse({"progressKey":"skillTreeProgress_Aut
                 completedSubjects >= nodes.length &&
                 totalCompletedOptional >= TOTAL_OPTIONAL_HOURS &&
                 totalCompletedHumanities >= TOTAL_HUMANITIES_HOURS &&
+                totalCompletedEmployability >= (OPTIONAL_GROUPS_CONFIG['[1137]']?.requiredHours || 135) &&
                 completedCompHours >= TOTAL_COMPLEMENTARY_HOURS &&
                 completedExtHours >= TOTAL_EXTENSION_HOURS;
 

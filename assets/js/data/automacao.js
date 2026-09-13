@@ -4,7 +4,14 @@ const TOTAL_EXTENSION_HOURS = 420;
 
 const TOTAL_HUMANITIES_HOURS = 135;
 
-const TOTAL_OPTIONAL_HOURS = 540;
+// The curriculum requires 135 h in each of the Automação e Sistemas and
+// Modelagem e Controle tracks, plus 135 h from one Formação Complementar
+// alternative. The four 114x groups are alternatives within that last quota.
+const TOTAL_OPTIONAL_HOURS = 405;
+
+const REQUIRED_TRACK_GROUP_IDS = ['[1139]', '[1138]'];
+
+const FORMATION_COMPLEMENTARY_GROUP_IDS = ['[1146]', '[1147]', '[1148]', '[1149]'];
 
 const NODE_WIDTH = 130;
 
@@ -45,7 +52,7 @@ const OPTIONAL_GROUPS_CONFIG = {
             '[1138]': { requiredHours: 135, name: 'Modelagem e Controle' },
             '[1139]': { requiredHours: 135, name: 'Automação e Sistemas' },
             '[1140]': { requiredHours: 135, name: 'Formação Complementar' },
-            '[1146]': { requiredHours: 134, name: 'Instalações e Eficiência Energética' },
+            '[1146]': { requiredHours: 135, name: 'Instalações e Eficiência Energética' },
             '[1147]': { requiredHours: 135, name: 'Energia e Sustentabilidade' },
             '[1148]': { requiredHours: 135, name: 'Manutenção Industrial' },
             '[1149]': { requiredHours: 135, name: 'Projetos Eletrônicos e de Máquinas' }
@@ -267,4 +274,4 @@ const allOptionalNodesData = [
             { id: 'ELT77B', name: 'INSTALAÇÕES ELÉTRICAS INDUSTRIAIS 1', dependencies: ['ELT76B'], period: 8, cht: 75, x: 65, y: 106, type: 'optional', groupId: '[1146]' }
         ];
 
-export { TOTAL_COMPLEMENTARY_HOURS, TOTAL_EXTENSION_HOURS, TOTAL_HUMANITIES_HOURS, TOTAL_OPTIONAL_HOURS, NODE_WIDTH, NODE_HEIGHT, OPTIONAL_LAYOUT_MIN_X, OPTIONAL_LAYOUT_MAX_X, OPTIONAL_LAYOUT_MIN_Y, OPTIONAL_LAYOUT_MAX_Y, SPECIALIZATION_TRACKS, OPTIONAL_GROUPS_CONFIG, allNodesData, allHumanitiesData, allOptionalNodesData };
+export { TOTAL_COMPLEMENTARY_HOURS, TOTAL_EXTENSION_HOURS, TOTAL_HUMANITIES_HOURS, TOTAL_OPTIONAL_HOURS, REQUIRED_TRACK_GROUP_IDS, FORMATION_COMPLEMENTARY_GROUP_IDS, NODE_WIDTH, NODE_HEIGHT, OPTIONAL_LAYOUT_MIN_X, OPTIONAL_LAYOUT_MAX_X, OPTIONAL_LAYOUT_MIN_Y, OPTIONAL_LAYOUT_MAX_Y, SPECIALIZATION_TRACKS, OPTIONAL_GROUPS_CONFIG, allNodesData, allHumanitiesData, allOptionalNodesData };
