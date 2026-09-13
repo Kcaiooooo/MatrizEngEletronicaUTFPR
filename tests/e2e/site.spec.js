@@ -190,6 +190,31 @@ for (const course of courses.filter(course => ['m2', 'm3'].includes(course.id)))
     });
 }
 
+test('calcula as trilhas da matriz 978 sem somar alternativas de Formação Complementar', async ({ page }) => {
+    const data = await import('../../assets/js/data/automacao.js');
+    const nodesByGroup = data.allOptionalNodesData.reduce((groups, node) => {
+        (groups[node.groupId] ??= []).push(node);
+        return groups;
+    }, {});
+    const optionalNodesState = [];
+    for (const groupId of ['[1139]', '[1138]', '[1146]', '[1147]']) {
+        let selectedHours = 0;
+        for (const node of nodesByGroup[groupId]) {
+            optionalNodesState.push({ id: node.id, state: 'optional-completed' });
+            selectedHours += node.cht;
+            if (selectedHours >= 135) break;
+        }
+    }
+
+    await page.goto('/');
+    await page.evaluate(({ key, optionalNodesState }) => {
+        localStorage.setItem(key, JSON.stringify({ currentPeriod: 10, optionalNodesState }));
+    }, { key: 'skillTreeProgress_Automacao_automacao', optionalNodesState });
+    await page.goto('/pages/Skill tree Automacao.html');
+
+    await expect(page.locator('#optional-progress-text')).toHaveText('405/405h (100.0%)');
+});
+
 for (const course of courses) addSingleDependencyColorTest(course);
 for (const course of courses) addArrowGeometryTest(course);
 
