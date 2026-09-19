@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:32:19   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "ponta-grossa",
+    "name": "Ponta Grossa",
+    "code": "06"
+  },
+  "course": {
+    "id": "0025",
+    "name": "Tecnol. Fab. Mecânica",
+    "sourceName": "TECNOL. FAB. MECÂNICA"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=25"
+  },
+  "fingerprint": "09bfa1b0a7eb6dee24761055db1ecf99b553134c04485483e6c03352ce5adbd3",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "TECNOL. FAB. MECÂNICA",
+    "ultima_atualizacao": "19/09/2026 17:32:19   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "CL101",
+        "nome": "Comunicação Linguística",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AI11",
+            "enquadramento": "Presencial",
+            "vagas_total": 54,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Automação Ind.",
+                "Tecnol. Fab. Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "L-013",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "L-013",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diego Gomes Do Valle"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEMA00H",
+        "nome": "Gestão Da Manutenção",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AI61",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Automação Ind.",
+                "Tecnol. Fab. Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N4",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "K003",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "K003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Oscar Regis Junior"
+            ],
+            "optativa_matrizes": [
+              "Matriz:826",
+              "Matriz:827"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GEPRD00H",
+        "nome": "Gestão Da Produção",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "FM62",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Fab. Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "L005",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "L005",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "L005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Shih Yung Chin"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:826",
+              "Matriz:814"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GESAMO00H",
+        "nome": "Gestão Ambiental Organizacional",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "FM62",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Automação Ind.",
+                "Tecnol. Análise D.Sist",
+                "Tecnol. Fab. Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "L105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daniel Poletto Tesser"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:824",
+              "Matriz:814",
+              "Matriz:820"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "INTEECO00H",
+        "nome": "Introdução À Engenharia Econômica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AI61",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Automação Ind.",
+                "Tecnol. Fab. Mecânica"
+              ],
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "LABOSP2",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "LABOSP2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Tavares Treinta"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "PF37A",
+        "nome": "Trabalho De Conclusão De Curso",
+        "creditos": 12,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MT631",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [],
+            "optativa_matrizes": [
+              "Matriz:807"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

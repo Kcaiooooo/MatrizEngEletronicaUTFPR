@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:32:46   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "toledo",
+    "name": "Toledo",
+    "code": "09"
+  },
+  "course": {
+    "id": "0008",
+    "name": "Língua Inglesa - Calem",
+    "sourceName": "LÍNGUA INGLESA - CALEM"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=8"
+  },
+  "fingerprint": "7f50ae5471a5cfaed3c267231ea02f26f580b09202634f16aa42511d3db27b97",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "LÍNGUA INGLESA - CALEM",
+    "ultima_atualizacao": "19/09/2026 17:32:46   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "ING01",
+        "nome": "Inglês 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "LEM1",
+            "enquadramento": "Presencial",
+            "vagas_total": 9,
+            "vagas_calouros": 9,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Língua Inglesa - Calem"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "C306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucielen Porfirio"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ING02",
+        "nome": "Inglês 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "LEM2",
+            "enquadramento": "Presencial",
+            "vagas_total": 14,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Língua Inglesa - Calem"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "5T1",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "C306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucielen Porfirio"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ING04",
+        "nome": "Inglês 4",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "LEM4",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Língua Inglesa - Calem"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "C306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucielen Porfirio"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

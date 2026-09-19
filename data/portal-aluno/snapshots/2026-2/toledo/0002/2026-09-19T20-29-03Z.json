@@ -1,0 +1,2501 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:32:43   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "toledo",
+    "name": "Toledo",
+    "code": "09"
+  },
+  "course": {
+    "id": "0002",
+    "name": "Tec. Proc. Quím.",
+    "sourceName": "TEC. PROC. QUÍM."
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=2"
+  },
+  "fingerprint": "1d4590fb16212e0e5e999dc6f62e61c33ee6b7503b589fb69d9f075c8237f293",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "TEC. PROC. QUÍM.",
+    "ultima_atualizacao": "19/09/2026 17:32:43   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "HUM001",
+        "nome": "Leitura E Escrita Acadêmica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPET",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T3",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "AVA",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daiane Da Silva Lourenco"
+            ],
+            "optativa_matrizes": [
+              "Matriz:21",
+              "Matriz:60",
+              "Matriz:52",
+              "Matriz:55",
+              "Matriz:54",
+              "Matriz:53",
+              "Matriz:58"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HUM002",
+        "nome": "Economia Contemporânea",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPCP",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "03VIDEOCON",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "03VIDEOCON",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "AVA",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diane Aparecida Ostroski Weber"
+            ],
+            "optativa_matrizes": [
+              "Matriz:21",
+              "Matriz:60",
+              "Matriz:61",
+              "Matriz:57",
+              "Matriz:52",
+              "Matriz:55",
+              "Matriz:56",
+              "Matriz:33",
+              "Matriz:41",
+              "Matriz:54",
+              "Matriz:53",
+              "Matriz:58"
+            ]
+          },
+          {
+            "codigo": "OPPQ",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "03VIDEOCON",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "03VIDEOCON",
+                "sede": null
+              },
+              {
+                "horario": "7M1",
+                "sala": "AVA",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diane Aparecida Ostroski Weber"
+            ],
+            "optativa_matrizes": [
+              "Matriz:21",
+              "Matriz:60",
+              "Matriz:61",
+              "Matriz:57",
+              "Matriz:52",
+              "Matriz:55",
+              "Matriz:56",
+              "Matriz:33",
+              "Matriz:41",
+              "Matriz:54",
+              "Matriz:53",
+              "Matriz:58"
+            ]
+          },
+          {
+            "codigo": "OPTI",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sist. Para Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "03VIDEOCON",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "03VIDEOCON",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "AVA",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diane Aparecida Ostroski Weber"
+            ],
+            "optativa_matrizes": [
+              "Matriz:21",
+              "Matriz:60",
+              "Matriz:61",
+              "Matriz:57",
+              "Matriz:52",
+              "Matriz:55",
+              "Matriz:56",
+              "Matriz:33",
+              "Matriz:41",
+              "Matriz:54",
+              "Matriz:53",
+              "Matriz:58"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HUM004",
+        "nome": "Engenharia E Gestão Financeira 1",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPET",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "AVA",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "AVA",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "AVA",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Osni Hoss"
+            ],
+            "optativa_matrizes": [
+              "Matriz:21",
+              "Matriz:60",
+              "Matriz:61",
+              "Matriz:57",
+              "Matriz:52",
+              "Matriz:55",
+              "Matriz:56",
+              "Matriz:33",
+              "Matriz:41",
+              "Matriz:54",
+              "Matriz:58"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HUM006",
+        "nome": "Estudos Culturais E Relações Étnico-Raciais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPCP",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T1",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "7M3",
+                "sala": "AVA",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daiane Da Silva Lourenco"
+            ],
+            "optativa_matrizes": [
+              "Matriz:21",
+              "Matriz:60",
+              "Matriz:61",
+              "Matriz:57",
+              "Matriz:55",
+              "Matriz:54",
+              "Matriz:53",
+              "Matriz:58"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HUM009",
+        "nome": "Inglês 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPBP",
+            "enquadramento": "Presencial",
+            "vagas_total": 16,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "C306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucielen Porfirio"
+            ],
+            "optativa_matrizes": [
+              "Matriz:21",
+              "Matriz:60",
+              "Matriz:61",
+              "Matriz:57",
+              "Matriz:52",
+              "Matriz:55",
+              "Matriz:54",
+              "Matriz:53",
+              "Matriz:58"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HUM010",
+        "nome": "Inglês 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPBP",
+            "enquadramento": "Presencial",
+            "vagas_total": 11,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Eng. De Bioprocessos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "5T1",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "C306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucielen Porfirio"
+            ],
+            "optativa_matrizes": [
+              "Matriz:21",
+              "Matriz:60",
+              "Matriz:61",
+              "Matriz:57",
+              "Matriz:52",
+              "Matriz:55",
+              "Matriz:54",
+              "Matriz:53",
+              "Matriz:58"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HUM012",
+        "nome": "Inglês 4",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPBP",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "C306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucielen Porfirio"
+            ],
+            "optativa_matrizes": [
+              "Matriz:21",
+              "Matriz:60",
+              "Matriz:61",
+              "Matriz:57",
+              "Matriz:52",
+              "Matriz:55",
+              "Matriz:54",
+              "Matriz:53",
+              "Matriz:58"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HUM014",
+        "nome": "Libras",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPBP",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. De Bioprocessos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T5",
+                "sala": "C204",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "C204",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "C204",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "C204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Aline Keryn Pin"
+            ],
+            "optativa_matrizes": [
+              "Matriz:21",
+              "Matriz:60",
+              "Matriz:61",
+              "Matriz:57",
+              "Matriz:52",
+              "Matriz:55",
+              "Matriz:54",
+              "Matriz:53",
+              "Matriz:58"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HUM020",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPCP",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "AVA",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "AVA",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sandra Regina Da Silva Pinela"
+            ],
+            "optativa_matrizes": [
+              "Matriz:60",
+              "Matriz:52",
+              "Matriz:55",
+              "Matriz:54",
+              "Matriz:58"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HUM041",
+        "nome": "Soft Skills",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPBP",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "C205",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "C205",
+                "sede": null
+              },
+              {
+                "horario": "7M2",
+                "sala": "AVA",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cibele Barbosa Ferreira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:21",
+              "Matriz:60",
+              "Matriz:58"
+            ]
+          },
+          {
+            "codigo": "OPBPA",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "E205",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "E205",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "AVA",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cibele Barbosa Ferreira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:21",
+              "Matriz:60",
+              "Matriz:58"
+            ]
+          },
+          {
+            "codigo": "OPPQ",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "AVA",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "AVA",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "AVA",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cibele Barbosa Ferreira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:21",
+              "Matriz:60",
+              "Matriz:58"
+            ]
+          },
+          {
+            "codigo": "SI33",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sist. Para Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "E204",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "E204",
+                "sede": null
+              },
+              {
+                "horario": "7M3",
+                "sala": "AVA",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cibele Barbosa Ferreira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:21",
+              "Matriz:60",
+              "Matriz:58"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "PQ56Q",
+        "nome": "Trabalho De Conclusão De Curso 2",
+        "creditos": 0,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ63",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Tatiana Shioji Tiuman"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ51A",
+        "nome": "Profissional Da Tecnologia Em Processos Químicos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ13",
+            "enquadramento": "Presencial",
+            "vagas_total": 42,
+            "vagas_calouros": 36,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "E103",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "E103",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "E103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Guilherme Felipe Lenz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ51B",
+        "nome": "Química Geral E Inorgânica 1",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ13",
+            "enquadramento": "Presencial",
+            "vagas_total": 52,
+            "vagas_calouros": 36,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "E103",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "E103",
+                "sede": null
+              },
+              {
+                "horario": "3N1",
+                "sala": "E103",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "E103",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "E103",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "E103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Solange Maria Cottica",
+              "Guilherme Felipe Lenz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ51C",
+        "nome": "Técnicas Laboratoriais Básicas",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ13",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 20,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "K01 LABQ1",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "K01 LABQ1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Solange Maria Cottica"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ51D",
+        "nome": "Gestão De Laboratórios E Segurança No Trabalho",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ13",
+            "enquadramento": "Presencial",
+            "vagas_total": 43,
+            "vagas_calouros": 36,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "E103",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "E103",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "E103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Andre Cremonez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ51E",
+        "nome": "Geometria E Álgebra De Vetores",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ13",
+            "enquadramento": "Presencial",
+            "vagas_total": 43,
+            "vagas_calouros": 36,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "E103",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "E103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ivan Jose Coser"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ51F",
+        "nome": "Estatística",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ13",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 36,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "E103",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "E103",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "E103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Paulo De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ51G",
+        "nome": "Cálculo 1",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ13",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 36,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "E103",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "E103",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "E103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tatiany Mottin Dartora"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ51H",
+        "nome": "Desenho Técnico",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ13",
+            "enquadramento": "Presencial",
+            "vagas_total": 43,
+            "vagas_calouros": 36,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "C202 LINF4",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "C202 LINF4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gilberto Da Cunha Goncalves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ52A",
+        "nome": "Química Geral E Inorgânica 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ23",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "E104",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "E104",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "E104",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "E104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo Schneider"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ52B",
+        "nome": "Química Experimental",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ23",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "K01 LABQ1",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "K01 LABQ1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Kelen Menezes Flores Rossi De Aguiar"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ52C",
+        "nome": "Físico-Química 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ23",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "E104",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "E104",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "E104",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "E104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Kelen Menezes Flores Rossi De Aguiar"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ52D",
+        "nome": "Química Orgânica 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ23",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "E104",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "E104",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "E104",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "E104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Guilherme Felipe Lenz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ52E",
+        "nome": "Química Analítica 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ23",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "E104",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "E104",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "E104",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "E104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Solange Maria Cottica"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ52F",
+        "nome": "Física Geral E Experimental 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ23",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "E104",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "E104",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "E104",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "E104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ernesto Osvaldo Wrasse"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ52G",
+        "nome": "Cálculo 2",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ23",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N3",
+                "sala": "E104",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "E104",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "E104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ivan Jose Coser"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SP23",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Ivan Jose Coser"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ53A",
+        "nome": "Fenômenos De Transporte",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ33",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "E105",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "E105",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "E105",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "E105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gilberto Da Cunha Goncalves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ53B",
+        "nome": "Bioquímica",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ33",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "E105",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "E105",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "E105",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "E105",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "E105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Solange Maria Cottica",
+              "Paulo Andre Cremonez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ53C",
+        "nome": "Físico-Química 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ33",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "E105",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "E105",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "E105",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "E105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Kelen Menezes Flores Rossi De Aguiar"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ53D",
+        "nome": "Química Orgânica 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ33",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "E105",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "E105",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "E105",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "E105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Viviane Da Silva Lobo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ53E",
+        "nome": "Química Analítica 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ33",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "E105",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "E105",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "E105",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "E105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Clayton Antunes Martin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ53F",
+        "nome": "Física Geral E Experimental 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ33",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "E105",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "E105",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "E105",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "E105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ernesto Osvaldo Wrasse"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ54A",
+        "nome": "Introdução Aos Cálculos De Processos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ43",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "E106",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "E106",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "E106",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "E106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Michelle Maria Detoni Zanette"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ54B",
+        "nome": "Microbiologia",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ43",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "E106",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "E106",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "E106",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "E106",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "E106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tatiana Shioji Tiuman"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ54C",
+        "nome": "Físico-Química Dos Materiais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ43",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "E106",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "E106",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "E106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo Schneider"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ54D",
+        "nome": "Análise Orgânica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ43",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "E106",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "E106",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "E106",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "E106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Viviane Da Silva Lobo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ54E",
+        "nome": "Métodos Cromatográficos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ43",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "E106",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "E106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Clayton Antunes Martin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ54F",
+        "nome": "Análise Instrumental",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ43",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "E106",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "E106",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "E106",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "C206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Clayton Antunes Martin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ55A",
+        "nome": "Instalações Industriais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ53",
+            "enquadramento": "Presencial",
+            "vagas_total": 6,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "E203",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "E203",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "E203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gilberto Da Cunha Goncalves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ55B",
+        "nome": "Tratamento De Água E Geração De Vapor",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ53",
+            "enquadramento": "Presencial",
+            "vagas_total": 6,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "E203",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "E203",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "E203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Andre Cremonez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ55D",
+        "nome": "Operações Unitárias",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ53",
+            "enquadramento": "Presencial",
+            "vagas_total": 6,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "E203",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "E203",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "E203",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "E203",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "E203",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "E203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Camila Vargas Neves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ56B",
+        "nome": "Tecnologia Das Fermentações Industriais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ63",
+            "enquadramento": "Presencial",
+            "vagas_total": 6,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "E205",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "E205",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "E205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Andre Cremonez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ56C",
+        "nome": "Tecnologia Em Processamento Farmacêutico",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ63",
+            "enquadramento": "Presencial",
+            "vagas_total": 6,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "E205",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "E205",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "E205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo Fiori Zara"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ56D",
+        "nome": "Tecnologia De Processos Químicos",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ63",
+            "enquadramento": "Presencial",
+            "vagas_total": 6,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "E205",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "E205",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "E205",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "E205",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "E205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Camila Vargas Neves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ56E",
+        "nome": "Controle E Tratamento De Resíduos",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "PQ63",
+            "enquadramento": "Presencial",
+            "vagas_total": 8,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "E205",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "E205",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "E205",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "E205",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "E205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Michelle Maria Detoni Zanette"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TPQ56F",
+        "nome": "Oficina De Investigação Técnico-Científica Em Processos Químicos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 45,
+        "turmas": [
+          {
+            "codigo": "PQ63",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "E205",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "E205",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "E205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gilberto Da Cunha Goncalves",
+              "Guilherme Felipe Lenz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSIN33G",
+        "nome": "História Da Tecnologia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI33",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sist. Para Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "E204",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "E204",
+                "sede": null
+              },
+              {
+                "horario": "7M6",
+                "sala": "AVA",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cezar Ricardo De Freitas"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSIN34G",
+        "nome": "Leitura E Escrita Acadêmica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI43",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sist. Para Internet"
+              ],
+              [
+                "Lic. Em Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "E204",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "E204",
+                "sede": null
+              },
+              {
+                "horario": "7M2",
+                "sala": "ON-LINE 01",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daiane Da Silva Lourenco"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSIN35G",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI53",
+            "enquadramento": "Presencial",
+            "vagas_total": 42,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sist. Para Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "AVA",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "AVA",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sandra Regina Da Silva Pinela"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

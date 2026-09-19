@@ -1,0 +1,2709 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:32:40   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "santa-helena",
+    "name": "Santa Helena",
+    "code": "13"
+  },
+  "course": {
+    "id": "0002",
+    "name": "Ciência Da Computação",
+    "sourceName": "CIÊNCIA DA COMPUTAÇÃO"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=2"
+  },
+  "fingerprint": "ab4cc2bbc188f0c44e9de06096aee9ad267608389cd6e829594ed6a636d92af3",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "CIÊNCIA DA COMPUTAÇÃO",
+    "ultima_atualizacao": "19/09/2026 17:32:40   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "CC1AED1",
+        "nome": "Algoritmos E Estrutura De Dados I",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 29,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "L5",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "L5",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L5",
+                "sede": null
+              },
+              {
+                "horario": "5T1",
+                "sala": "L5",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "L5",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "L5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Anderson Brilhador"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC1ICC",
+        "nome": "Introdução À Ciência Da Computação",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 29,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "L4",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "L4",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "L4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Giuvane Conti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC1MBD",
+        "nome": "Modelagem De Banco De Dados",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 29,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "L8",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "L8",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "L8",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "L8",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leiliane Pereira De Rezende"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC2AED2",
+        "nome": "Algoritmos E Estrutura De Dados Ii",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC2",
+            "enquadramento": "Presencial",
+            "vagas_total": 33,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "E11",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "E11",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "E11",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "E11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Djonatham Caua Fritzen Christ"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC2CLD",
+        "nome": "Circuitos Lógicos Digitais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC2",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "E11",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "E11",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "E11",
+                "sede": null
+              },
+              {
+                "horario": "4T1",
+                "sala": "E11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gloria Patricia Lopez Sepulveda"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC2ER",
+        "nome": "Engenharia De Requisitos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC2",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "E10",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "E10",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "E10",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "E10",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Davi Marcondes Rocha"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC2POO",
+        "nome": "Programação Orientada A Objetos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC2",
+            "enquadramento": "Presencial",
+            "vagas_total": 34,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "E10",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "E10",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "E10",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "E10",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Giuvane Conti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC3AED3",
+        "nome": "Algoritmos E Estrutura De Dados Iii",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC3",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "E09",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago Franca Naves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC3AOC",
+        "nome": "Arquitetura E Organização De Computadores",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC3",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "E09",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Djonatham Caua Fritzen Christ"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC3ES",
+        "nome": "Engenharia De Software",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC3",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "3T1",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "E09",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wellington De Souza Ferreira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC3PI1",
+        "nome": "Projeto Integrador I: Computação E Educação",
+        "creditos": 12,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 180,
+        "turmas": [
+          {
+            "codigo": "CC3",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T6",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "7M1",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "7M2",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "7M3",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "7M6",
+                "sala": "REMOTA",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Agnaldo Da Costa",
+              "Giani Carla Ito"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC4IHC",
+        "nome": "Interação Humano Computador",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC4",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "L5",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "L5",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "L5",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "L7",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wellington De Souza Ferreira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC4LBD",
+        "nome": "Laboratório De Banco De Dados",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC4",
+            "enquadramento": "Presencial",
+            "vagas_total": 47,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "L5",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "L5",
+                "sede": null
+              },
+              {
+                "horario": "5M1",
+                "sala": "L5",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "L5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leiliane Pereira De Rezende"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC4PO",
+        "nome": "Pesquisa E Ordenação",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC4",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "E09",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gloria Patricia Lopez Sepulveda"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC4RC",
+        "nome": "Redes De Computadores",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC4",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "E10",
+                "sede": null
+              },
+              {
+                "horario": "6M1",
+                "sala": "E10",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "E10",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "E10",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Agnaldo Da Costa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC4SO",
+        "nome": "Sistemas Operacionais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC4",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "L5",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "L5",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "L5",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "L5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Agnaldo Da Costa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC5AG",
+        "nome": "Algoritmos Em Grafos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC5",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "L8",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "L8",
+                "sede": null
+              },
+              {
+                "horario": "5T1",
+                "sala": "L8",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "L8",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leiliane Pereira De Rezende"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC5PI2",
+        "nome": "Projeto Integrador Ii: Desenvolvimento, Inovação E Empreendedorismo Social",
+        "creditos": 12,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 180,
+        "turmas": [
+          {
+            "codigo": "CC5",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T6",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "7M1",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "7M2",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "7M3",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "7M6",
+                "sala": "REMOTA",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paula Regina Zarelli",
+              "Alexandre Meira De Vasconcelos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC5PLDS",
+        "nome": "Paradigmas De Linguagens E Desenvolvimento De Sistemas",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC5",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "L4",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "L4",
+                "sede": null
+              },
+              {
+                "horario": "6T1",
+                "sala": "L4",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "L4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Djonatham Caua Fritzen Christ"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC5QS",
+        "nome": "Qualidade De Software",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC5",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "L4",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L4",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "L4",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "L4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vera Lucia Vasilevski Dos Santos Araujo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC5SDT",
+        "nome": "Sistemas Distribuídos E Tecnologias",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC5",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "L6",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "L6",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "L6",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "L6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Keller Tesser"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC6FIA",
+        "nome": "Fundamentos De Inteligência Artificial",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC6",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "L5",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "L5",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "L5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago Franca Naves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC6IBDDA",
+        "nome": "Introdução A Big Data E Data Analytics",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC6",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "E11",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "E11",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "E11",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "E11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Arlete Teresinha Beuren"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC6LFTC",
+        "nome": "Linguagens Formais E Teoria Da Computação",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC6",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "L7",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "L7",
+                "sede": null
+              },
+              {
+                "horario": "3M1",
+                "sala": "L7",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "L7",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franck Carlos Velez Benito"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC6PDSW",
+        "nome": "Projeto E Desenvolvimento De Sistemas Web",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC6",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "L4",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "L4",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "L4",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "L4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wellington De Souza Ferreira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC6TRC",
+        "nome": "Tecnologias De Redes De Computadores",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC6",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "E10",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "E10",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "E10",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "E10",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Keller Tesser"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC7C",
+        "nome": "Compiladores",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC7",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "L8",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "L8",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "L8",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "L8",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franck Carlos Velez Benito"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC7CS",
+        "nome": "Cibersegurança",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC7",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "E09",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gloria Patricia Lopez Sepulveda"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC7IAA",
+        "nome": "Inteligência Artificial Aplicada",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC7",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "3M1",
+                "sala": "E09",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago Franca Naves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC7PI3",
+        "nome": "Projeto Integrador Iii: Tecnologia E Mundo Do Trabalho",
+        "creditos": 12,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 180,
+        "turmas": [
+          {
+            "codigo": "CC7",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T6",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "7M1",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "7M2",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "7M3",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "REMOTA",
+                "sede": null
+              },
+              {
+                "horario": "7M6",
+                "sala": "REMOTA",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Arlete Teresinha Beuren",
+              "Davi Marcondes Rocha"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC7VC",
+        "nome": "Visão Computacional",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC7",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "5M1",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "E09",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Anderson Brilhador"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC8CG",
+        "nome": "Computação Gráfica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC8",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "E10",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "E10",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "E10",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "E10",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Anderson Brilhador"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ED117D",
+        "nome": "Libras 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB8",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "L9",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "L9",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Debora Michela Prediger"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HU1LA",
+        "nome": "Linguagem Acadêmica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC1",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 29,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ],
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T1",
+                "sala": "L8",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "L8",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "L8",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vera Lucia Vasilevski Dos Santos Araujo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MA1FM",
+        "nome": "Fundamentos De Matemática",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 29,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "L8",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "L8",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "L8",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "L8",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joao Augusto Navarro Cossich"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MA1LM",
+        "nome": "Lógica Matemática",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 29,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "L8",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "L8",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "L8",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Davi Marcondes Rocha"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MA2MA",
+        "nome": "Matemática Aplicada",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC2",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ],
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "L7",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "L7",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "L7",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "L7",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Evandro Alves Nakajima"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MA3AL",
+        "nome": "Álgebra Linear",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC3",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T1",
+                "sala": "L9",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "L9",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "L9",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Evandro Alves Nakajima"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MA3CA",
+        "nome": "Cálculo Aplicado",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC3",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "L9",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "L9",
+                "sede": null
+              },
+              {
+                "horario": "5T1",
+                "sala": "L9",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "L9",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vanderlea De Lima Inaba"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MA4PE",
+        "nome": "Probabilidade E Estatística",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC4",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "L8",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "L8",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "L8",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "L8",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joao Augusto Navarro Cossich"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MA5MN",
+        "nome": "Métodos Numéricos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC5",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "L7",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "L7",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "L7",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vanderlea De Lima Inaba"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MA6PO",
+        "nome": "Pesquisa Operacional",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC6",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "L6",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "L6",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "L6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joao Augusto Navarro Cossich"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "OPEDADM",
+        "nome": "Desenvolvimento De Aplicações Para Dispositivos Móveis",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC8",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "L4",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "L4",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "L4",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "L4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wellington De Souza Ferreira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:11"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPEIE",
+        "nome": "Informática Na Educação",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC7",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "E09",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "E09",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Djonatham Caua Fritzen Christ"
+            ],
+            "optativa_matrizes": [
+              "Matriz:11"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPEPPD",
+        "nome": "Programação Paralela E Distribuída",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC8",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "L6",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "L6",
+                "sede": null
+              },
+              {
+                "horario": "5T1",
+                "sala": "L6",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "L6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Giani Carla Ito"
+            ],
+            "optativa_matrizes": [
+              "Matriz:11"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPERP",
+        "nome": "Redes De Petri",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC7",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "L9",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "L9",
+                "sede": null
+              },
+              {
+                "horario": "3T1",
+                "sala": "L9",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "L9",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franck Carlos Velez Benito"
+            ],
+            "optativa_matrizes": [
+              "Matriz:11"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPETCD",
+        "nome": "Tópicos Em Ciência De Dados",
+        "creditos": 2,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC7",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "E11",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "E11",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "E11",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "E11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Arlete Teresinha Beuren"
+            ],
+            "optativa_matrizes": [
+              "Matriz:11"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPETDS",
+        "nome": "Tecnologia Em Desenvolvimento De Sistemas",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC7",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "L4",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "L4",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "L4",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "L4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Giuvane Conti"
+            ],
+            "optativa_matrizes": [
+              "Matriz:11"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPHE",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC2",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ],
+              [
+                "Agronomia"
+              ],
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T2",
+                "sala": "L7",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "L7",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paula Regina Zarelli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:11"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPHIT2",
+        "nome": "Inglês Técnico Ii",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC4",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ],
+              [
+                "Agronomia"
+              ],
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "L10",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "L10",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vera Lucia Vasilevski Dos Santos Araujo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:11"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPHMP",
+        "nome": "Metodologia Da Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB7",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ],
+              [
+                "Ciência Da Computação"
+              ],
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "L4",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "L4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alexandre Meira De Vasconcelos"
+            ],
+            "optativa_matrizes": [
+              "Matriz:11"
+            ]
+          },
+          {
+            "codigo": "CC2",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ],
+              [
+                "Ciências Biológicas"
+              ],
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M4",
+                "sala": "L6",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "L6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alexandre Meira De Vasconcelos"
+            ],
+            "optativa_matrizes": [
+              "Matriz:11"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPHRHL",
+        "nome": "Relações Humanas E Liderança",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC2",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ],
+              [
+                "Agronomia"
+              ],
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T5",
+                "sala": "L7",
+                "sede": null
+              },
+              {
+                "horario": "6T1",
+                "sala": "L7",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paula Regina Zarelli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:11"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "TCC1",
+        "nome": "Trabalho De Conclusão De Curso I",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC6",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M6",
+                "sala": "REMOTA",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franck Carlos Velez Benito"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TCC2",
+        "nome": "Trabalho De Conclusão De Curso Ii",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC8",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "7M1",
+                "sala": "REMOTA",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franck Carlos Velez Benito"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TCC22",
+        "nome": "Tcc 2",
+        "creditos": 1,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TCC2",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "7M1",
+                "sala": "REMOTA",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franck Carlos Velez Benito"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

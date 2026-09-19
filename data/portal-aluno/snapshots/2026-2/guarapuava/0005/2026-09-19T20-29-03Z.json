@@ -1,0 +1,2924 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:31:20   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "guarapuava",
+    "name": "Guarapuava",
+    "code": "12"
+  },
+  "course": {
+    "id": "0005",
+    "name": "Eng. Civil",
+    "sourceName": "ENG. CIVIL"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=5"
+  },
+  "fingerprint": "260dca069a27f4a8c9e12298c12e917950c208e3098f2b372ad294f194f6a6e9",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "ENG. CIVIL",
+    "ultima_atualizacao": "19/09/2026 17:31:20   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "CIV21B",
+        "nome": "Cálculo Diferencial 1",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DPCI",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "SALA H209",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "SALA H209",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "SALA H209",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Francini Damiani E Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV21C",
+        "nome": "Geometria Analítica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DPCI",
+            "enquadramento": "Presencial",
+            "vagas_total": 17,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "SALA H209",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "SALA H209",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "SALA H209",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Flavia Konowalenko"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV22A",
+        "nome": "Metodologia Da Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV2",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "SALA F6",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "SALA F6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marizete Righi Cechin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV22B",
+        "nome": "Cálculo Integral 1",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV2",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "SALA H310",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "SALA H310",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "SALA H310",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alex Sandro De Castilho"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "DPCI",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T4",
+                "sala": "SALA H209",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "SALA H209",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "SALA H209",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Francini Damiani E Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV22C",
+        "nome": "Probabilidade E Estatística",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV2",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T5",
+                "sala": "SALA H310",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "SALA H310",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "SALA H310",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "SALA H310",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thalita Monteiro Obal"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV22D",
+        "nome": "Física: Mecânica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV2",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T3",
+                "sala": "SALA H310",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "SALA H310",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "SALA H310",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "SALA H310",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Aline Milan Farias"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV22E",
+        "nome": "Modelagem Da Informação Da Construção",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV2",
+            "enquadramento": "Presencial",
+            "vagas_total": 43,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "LAB A6",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "LAB A6",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "LAB A6",
+                "sede": null
+              },
+              {
+                "horario": "5T1",
+                "sala": "LAB A6",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "LAB A6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gladis Cristina Furlan"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV22F",
+        "nome": "Argamassa E Concreto",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV2",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "SALA H310",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "SALA H310",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "SALA H310",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "SALA H310",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gessica Katalyne Bilcati Holzmann"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV22G",
+        "nome": "Ciência, Tecnologia E Sociedade",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV2",
+            "enquadramento": "Presencial",
+            "vagas_total": 43,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "SALA H310",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "SALA H310",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Priscila Meier De Andrade Tribeck"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV23A",
+        "nome": "Leitura E Produção De Textos Acadêmicos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV3",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "SALA H306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Beatriz Matte Braun"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV23B",
+        "nome": "Cálculo Diferencial E Integral 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV3",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "SALA H309",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Francini Damiani E Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV23C",
+        "nome": "Álgebra Linear",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV3",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "SALA H309",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Aura Rosa Belzarez Guedez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV23D",
+        "nome": "Física: Termodinâmica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV3",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "SALA H310",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "SALA H310",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Lucia Ferreira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV23E",
+        "nome": "Processos E Técnicas Na Construção Civil",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV3",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "SALA H309",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Juliano Miranda"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV23F",
+        "nome": "Análise De Sistemas Estruturais Isostáticos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV3",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "SALA H309",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Edson Florentino De Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV23G",
+        "nome": "Fundamentos De Engenharia E Segurança Do Trabalho",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV3",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M4",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "SALA H309",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andre Luiz Soares"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV24A",
+        "nome": "Cálculo Diferencial E Integral 3",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV4",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "SALA H309",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Michel Teston Semensato"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV24B",
+        "nome": "Equações Diferenciais Ordinárias",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV4",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "6T1",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "SALA H309",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Michel Teston Semensato"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV24C",
+        "nome": "Física: Oscilações E Ondas",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV4",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T4",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "SALA H309",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diogo Zampieri Montanher"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV24D",
+        "nome": "Sistemas Complementares E Planejamento Na Construção Civil",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV4",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T5",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "3T1",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "SALA H309",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rodrigo Scoczynski Ribeiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV24E",
+        "nome": "Resistência Dos Materiais 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV4",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "4T1",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "SALA H309",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Edson Florentino De Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV24F",
+        "nome": "Mecânica Dos Fluídos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV4",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "SALA H309",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mariane Kempka"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV24G",
+        "nome": "Algoritmos E Linguagem De Programação",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV4",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "LAB H206",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "LAB H206",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "LAB H206",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "LAB H206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sediane Carmem Lunardi Hernandes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV25A",
+        "nome": "Cálculo Numérico Computacional",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV5",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "SALA H308",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "SALA H308",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "SALA H308",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "SALA H308",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Michel Teston Semensato"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV25B",
+        "nome": "Física Experimental",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV5",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "LAB B4 FIS",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "LAB B4 FIS",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Antonio Carlos Amaro De Faria Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV25C",
+        "nome": "Resistência Dos Materiais 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV5",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "SALA H308",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "SALA H308",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "SALA H308",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "SALA H308",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tassiane Apolinario De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV25E",
+        "nome": "Engenharia Da Qualidade",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV5",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "SALA H308",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "SALA H308",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Guilherme Fernando Ribeiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV25T",
+        "nome": "Topografia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV5",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "SALA H308",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "SALA H308",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcela Maier Farias Czap"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV26A",
+        "nome": "Instalações Hidrossanitárias",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV6",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "SALA H308",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "SALA H308",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "SALA H308",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "SALA H308",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rodrigo Scoczynski Ribeiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV26C",
+        "nome": "Análise De Sistemas Estruturais Hiperestáticos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV6",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "SALA H308",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "SALA H308",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "SALA H308",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "SALA H308",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vinicius De Barros Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV26E",
+        "nome": "Engenharia Econômica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV6",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "SALA H308",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "SALA H308",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriano Martins De Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV26H",
+        "nome": "Hidráulica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV6",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "SALA H308",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "SALA H308",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "SALA H309",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mariane Kempka"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV26P",
+        "nome": "Projeto De Estradas",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV6",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "SALA H308",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "SALA H308",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Henrique Brasil Filho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV27A",
+        "nome": "Instalações Elétricas",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV7",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "6T1",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "SALA H306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Juliano Miranda"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV27C",
+        "nome": "Estrutura De Concreto Armado 1",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV7",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "5M1",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "SALA H307",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vinicius De Barros Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV27D",
+        "nome": "Hidrologia Para Engenharia Civil",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV7",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "SALA H307",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Dimaghi Schwamback"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV27E",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV7",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "SALA F6",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "SALA F6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriano Martins De Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV27F",
+        "nome": "Projeto E Execução De Pavimentos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV7",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "SALA H307",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Henrique Brasil Filho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV27M",
+        "nome": "Mecânica Dos Solos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV7",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "SALA H307",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Petronio Rodrigo Mello Montezuma"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV28A",
+        "nome": "Elementos De Fundações",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV8",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "6T1",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "SALA H307",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Petronio Rodrigo Mello Montezuma"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV28B",
+        "nome": "Ética, Profissão E Cidadania",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV8",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "SALA H306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Priscila Meier De Andrade Tribeck"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV28C",
+        "nome": "Estruturas De Concreto Armado 2",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV8",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T3",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "SALA H307",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tassiane Apolinario De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV28E",
+        "nome": "Saneamento",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV8",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "5T1",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "SALA H307",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Dimaghi Schwamback"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV28F",
+        "nome": "Gestão De Projetos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV8",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "SALA F6",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "SALA F6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andre Luiz Soares"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV28H",
+        "nome": "Trabalho De Conclusão De Curso",
+        "creditos": 0,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV8",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Mariane Kempka"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC710A",
+        "nome": "Trabalho De Conclusão De Curso 2",
+        "creditos": 0,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EC10",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Mariane Kempka"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC78B",
+        "nome": "Sistemas Hidráulicos Urbanos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV8",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "SALA H305",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "SALA H305",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "SALA H305",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mariane Kempka"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC79A",
+        "nome": "Ética, Profissão E Cidadania",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EC9",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "SALA H306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Priscila Meier De Andrade Tribeck"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC79B",
+        "nome": "Gestão De Projetos De Edifícios",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EC9",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "SALA H306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcela Maier Farias Czap"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC79C",
+        "nome": "Gerenciamento De Obras",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EC9",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "SALA H306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Juliano Miranda"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC79D",
+        "nome": "Estruturas De Fundações",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EC9",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "SALA H306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Henrique Brasil Filho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC79E",
+        "nome": "Patologia E Recuperação Das Construções",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EC9",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "SALA H306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Allan Thierry Branco Torres"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC79F",
+        "nome": "Trabalho De Conclusão De Curso 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EC9",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "SALA H306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gladis Cristina Furlan"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EM49C",
+        "nome": "Engenharia Econômica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM9",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "SALA F11",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "SALA F11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriano Martins De Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FMT12C",
+        "nome": "Física: Mecânica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT2",
+            "enquadramento": "Presencial",
+            "vagas_total": 29,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "SALA F11",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "SALA F11",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "SALA F11",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "SALA F11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diogo Zampieri Montanher"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FMT13C",
+        "nome": "Física: Oscilações E Ondas",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT3",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "SALA F10",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "SALA F10",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diogo Zampieri Montanher"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FMT13H",
+        "nome": "Física: Termodinâmica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT3",
+            "enquadramento": "Presencial",
+            "vagas_total": 48,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "SALA F10",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "SALA F10",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Lucia Ferreira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HUM041",
+        "nome": "Soft Skills",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPCI",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecânica",
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "SALA H207",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "SALA H207",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "SALA H207",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcela Maier Farias Czap"
+            ],
+            "optativa_matrizes": [
+              "Matriz:7",
+              "Matriz:27",
+              "Matriz:22"
+            ]
+          },
+          {
+            "codigo": "REDE",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecânica",
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "SALA B2",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "SALA B2",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "SALA B2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cibele Barbosa Ferreira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:7",
+              "Matriz:27",
+              "Matriz:22"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPT1A",
+        "nome": "Indústria 4.0",
+        "creditos": 4,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 120,
+        "turmas": [
+          {
+            "codigo": "MEIUA",
+            "enquadramento": "Presencial",
+            "vagas_total": 12,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecânica",
+                "Eng. Civil",
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "MEI-U",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "MEI-U",
+                "sede": null
+              },
+              {
+                "horario": "7M2",
+                "sala": "MEI-U",
+                "sede": null
+              },
+              {
+                "horario": "7M3",
+                "sala": "MEI-U",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andre Luiz Soares"
+            ],
+            "optativa_matrizes": [
+              "Matriz:20",
+              "Matriz:19",
+              "Matriz:27",
+              "Matriz:22",
+              "Matriz:17",
+              "Matriz:15"
+            ]
+          },
+          {
+            "codigo": "MEIUB",
+            "enquadramento": "Presencial",
+            "vagas_total": 12,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecânica",
+                "Eng. Civil",
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "MEI-U",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "MEI-U",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "MEI-U",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "MEI-U",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andre Luiz Soares"
+            ],
+            "optativa_matrizes": [
+              "Matriz:20",
+              "Matriz:19",
+              "Matriz:27",
+              "Matriz:22",
+              "Matriz:17",
+              "Matriz:15"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPT2F",
+        "nome": "Tópicos Especiais Em Estruturas De Concreto",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPCI",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "SALA H306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vinicius De Barros Souza"
+            ],
+            "optativa_matrizes": [
+              "Matriz:22"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPT2L",
+        "nome": "Projeto De Construções Metálicas",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPCI",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "SALA H306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tassiane Apolinario De Oliveira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:22"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPT2X",
+        "nome": "Avaliações E Perícias",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPCI",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "SALA H306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Allan Thierry Branco Torres"
+            ],
+            "optativa_matrizes": [
+              "Matriz:22"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPT4H",
+        "nome": "Qualidade E Desempenho Das Edificações",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPCI",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "SALA H306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gessica Katalyne Bilcati Holzmann"
+            ],
+            "optativa_matrizes": [
+              "Matriz:22"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPT5R",
+        "nome": "Introdução À Astronomia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 45,
+        "turmas": [
+          {
+            "codigo": "ASTR",
+            "enquadramento": "Presencial",
+            "vagas_total": 27,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecânica",
+                "Eng. Civil",
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "SALA F6",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "SALA F6",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "SALA F6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Lucia Ferreira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:20",
+              "Matriz:19",
+              "Matriz:22",
+              "Matriz:7",
+              "Matriz:27",
+              "Matriz:4"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

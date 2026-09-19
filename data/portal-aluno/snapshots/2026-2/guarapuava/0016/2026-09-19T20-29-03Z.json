@@ -1,0 +1,346 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:31:26   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "guarapuava",
+    "name": "Guarapuava",
+    "code": "12"
+  },
+  "course": {
+    "id": "0016",
+    "name": "Arquitet E Urbanismo",
+    "sourceName": "ARQUITET E URBANISMO"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=16"
+  },
+  "fingerprint": "2b2bef8c9682d8f396658ddd9a66dce29c583da48401a90c97966c96b13c0ad0",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "ARQUITET E URBANISMO",
+    "ultima_atualizacao": "19/09/2026 17:31:26   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "ARQ11E",
+        "nome": "Física",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DPAR",
+            "enquadramento": "Presencial",
+            "vagas_total": 18,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Arquitet E Urbanismo"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "SALA H205",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "SALA H205",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "SALA H205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Aline Milan Farias"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ARQ12A",
+        "nome": "Desenho Arquitetônico",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ARQ2",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Arquitet E Urbanismo"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "SALA H208",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "SALA H208",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "SALA H208",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "SALA H208",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Presente De Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ARQ12B",
+        "nome": "Desenho De Observação E Perspectiva",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ARQ2",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Arquitet E Urbanismo"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "SALA H209",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "SALA H209",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "SALA H209",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "SALA H209",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Kalinoski"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ARQ12C",
+        "nome": "Estudo Da Forma",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ARQ2",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Arquitet E Urbanismo"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "SALA H209",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "SALA H209",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "SALA H209",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "SALA H209",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Haziel Pereira Lobo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ARQ12D",
+        "nome": "Resistência Dos Materiais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ARQ2",
+            "enquadramento": "Presencial",
+            "vagas_total": 9,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Arquitet E Urbanismo"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "SALA H209",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "SALA H209",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "SALA H209",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Henrique Brasil Filho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ARQ12E",
+        "nome": "Laboratório De Construções De Modelos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ARQ2",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Arquitet E Urbanismo"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "LAB H104",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "LAB H104",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "LAB H104",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "LAB H104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Emeli Lalesca Aparecida Da Guarda"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ARQ12F",
+        "nome": "Topografia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ARQ2",
+            "enquadramento": "Presencial",
+            "vagas_total": 27,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Arquitet E Urbanismo"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "SALA H209",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "SALA H209",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcela Maier Farias Czap"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

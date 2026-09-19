@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:32:37   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "ponta-grossa",
+    "name": "Ponta Grossa",
+    "code": "06"
+  },
+  "course": {
+    "id": "0104",
+    "name": "Lic Computação - Con",
+    "sourceName": "LIC COMPUTAÇÃO - CON"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=104"
+  },
+  "fingerprint": "4694c387207eebe3f53eacf548ccb792cac8d0f8ec9e85a720441b1ee779f9ba",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "LIC COMPUTAÇÃO - CON",
+    "ultima_atualizacao": "19/09/2026 17:32:37   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "LC05C",
+        "nome": "Abordagens Pedagógicas Em Ead 2",
+        "creditos": 0,
+        "creditos_assincronos": 6,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CON5",
+            "enquadramento": "Presencial",
+            "vagas_total": 0,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Con"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Elaine Ferreira Machado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LC05E",
+        "nome": "Engenharia De Software",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CON5",
+            "enquadramento": "Presencial",
+            "vagas_total": 0,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Con"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Eliana Claudia Mayumi Ishikawa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LC06A",
+        "nome": "Appc 6 – Tdic Em Projetos Educacionais 2",
+        "creditos": 0,
+        "creditos_assincronos": 6,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CON6",
+            "enquadramento": "EaD",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Con"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Mario Jose Van Thienen Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LC06B",
+        "nome": "Abordagens Pedagógicas Em Ead 3",
+        "creditos": 0,
+        "creditos_assincronos": 6,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CON6",
+            "enquadramento": "EaD",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Con"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Elaine Ferreira Machado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LC06C",
+        "nome": "Empreendedorismo",
+        "creditos": 0,
+        "creditos_assincronos": 3,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CON6",
+            "enquadramento": "EaD",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Con"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Camila Lopes Ferreira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LC06D",
+        "nome": "Programação De Aplicativos Móveis",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CON6",
+            "enquadramento": "EaD",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Con"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Diego Roberto Antunes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LC06E",
+        "nome": "Desenvolvimento De Jogos",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CON6",
+            "enquadramento": "EaD",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Con"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Geraldo Ranthum"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LC06F",
+        "nome": "Design Instrucional",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CON6",
+            "enquadramento": "EaD",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Con"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Awdry Feisser Miquelin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

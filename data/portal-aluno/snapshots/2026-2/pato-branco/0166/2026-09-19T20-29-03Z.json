@@ -1,0 +1,1133 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:31:58   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "pato-branco",
+    "name": "Pato Branco",
+    "code": "05"
+  },
+  "course": {
+    "id": "0166",
+    "name": "Ciências Contábeis",
+    "sourceName": "CIÊNCIAS CONTÁBEIS"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=166"
+  },
+  "fingerprint": "e892d8f08b65a32f31a7d892a8308a271768fe18567a4fd10da853a07fea3569",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "CIÊNCIAS CONTÁBEIS",
+    "ultima_atualizacao": "19/09/2026 17:31:58   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "AI22B",
+        "nome": "Análise De Investimentos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "O201",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "O201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Carlos Scheitt"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "2BSP",
+            "enquadramento": "Presencial",
+            "vagas_total": 3,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Luiz Carlos Scheitt"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CA26B",
+        "nome": "Contabilidade Avançada Ii",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "O-202",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "O-202",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "O-202",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "O-202",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marivania Rufato Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CI21B",
+        "nome": "Contabilidade Introdutória I",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1BSE",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "O203",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "O203",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "O203",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "O203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo Adriano Antonelli"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CI22B",
+        "nome": "Contabilidade Introdutória Ii",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "O201",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "O201",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "O201",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "O201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo Adriano Antonelli"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CI24B",
+        "nome": "Contabilidade Intermediária Ii",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "O002",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "O002",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "O004",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "O004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luciane Dagostini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CP26B",
+        "nome": "Contabilidade Aplicada Ao Setor Público I",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "Q006",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "Q006",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "Q006",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "Q006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Fernande Casagrande"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CR28B",
+        "nome": "Controladoria Ii",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "O203",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "O203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Oldair Roberto Giasson"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CT28B",
+        "nome": "Contabilidade Tributária",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "O004",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "O004",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "O004",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "O004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Priscila Rubbo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "DT24B",
+        "nome": "Direito Do Trabalho",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "Q004",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "Q004",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "Q004",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "Q004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Bianca Strucker"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EA22B",
+        "nome": "Estatística Básica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 43,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "O201",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "O201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Carlos Scheitt"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE45MC",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5MC",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "Q005",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "Q005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Norma Brambilla"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE45S",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção",
+                "Tec Analise Des Sist",
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "P203",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "P203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Norma Brambilla"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE46M",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 11,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "Q007",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "Q007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Norma Brambilla"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE47EL",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7EL",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elizandra Machado Follmann"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE48CP",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8CP",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elizandra Machado Follmann"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE48NB",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8CV",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "M105",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "M105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Norma Brambilla"
+            ],
+            "optativa_matrizes": [
+              "Matriz:657",
+              "Matriz:489",
+              "Matriz:635"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EM29MC",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "9MC",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "Q005",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "Q005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Norma Brambilla"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EP22B",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N2",
+                "sala": "O201",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "O201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elizandra Machado Follmann"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FI22B",
+        "nome": "Filosofia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 42,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "O201",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "O201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Nilson De Farias"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "JE24B",
+        "nome": "Jogos De Empresas",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "P202",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "P202",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marivania Rufato Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:627"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LC24B",
+        "nome": "Laboratório Contábil",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4BSA",
+            "enquadramento": "Presencial",
+            "vagas_total": 18,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "V109",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "V109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo Adriano Antonelli"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "4BSB",
+            "enquadramento": "Presencial",
+            "vagas_total": 18,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "V109",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "V109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sandra Mara Iesbik Valmorbida"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LE22B",
+        "nome": "Leitura E Produção De Textos Empresariais",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 43,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "O201",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "O201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Maria Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MC24B",
+        "nome": "Mercado De Capitais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "O203",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "O203",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "O003",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "O003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eliandro Schvirck"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ME22B",
+        "nome": "Microeconomia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "O201",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "O201",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "O201",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "O201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elizangela Mara Carvalheiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TB34B",
+        "nome": "Trabalho De Conclusão De Curso",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4B",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Ricardo Adriano Antonelli"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TE24B",
+        "nome": "Tópicos Especiais Em Contabilidade",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "O201",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "O201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eliandro Schvirck"
+            ],
+            "optativa_matrizes": [
+              "Matriz:627"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

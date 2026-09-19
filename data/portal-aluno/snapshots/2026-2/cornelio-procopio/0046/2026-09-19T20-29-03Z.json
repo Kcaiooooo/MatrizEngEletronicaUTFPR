@@ -1,0 +1,2207 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:29:38   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "cornelio-procopio",
+    "name": "Cornélio Procópio",
+    "code": "02"
+  },
+  "course": {
+    "id": "0046",
+    "name": "Licenc. Matemática",
+    "sourceName": "LICENC. MATEMÁTICA"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=46"
+  },
+  "fingerprint": "b578cd6744e848686fa0cd162fbbc2b82ecf617b2806dcbb2cd32d5c2edc14c1",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "LICENC. MATEMÁTICA",
+    "ultima_atualizacao": "19/09/2026 17:29:38   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "LM11A",
+        "nome": "Fundamentos Da Matemática",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L11",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "A146",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "A146",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "A146",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "A146",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "A146",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Debora Aparecida Francisco Albanez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM11B",
+        "nome": "Matemática Elementar",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L11",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "A135",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "A135",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "A135",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "A135",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Maria Lucia De Carvalho Fontanini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM11C",
+        "nome": "Lógica Matemática",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L11",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "A038",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "A038",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "A038",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "A038",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "A038",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tiago Henrique Dos Reis"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM11D",
+        "nome": "Funções Reais De Uma Variável Real",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L11",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "A144",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "A144",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "A144",
+                "sede": null
+              },
+              {
+                "horario": "3N1",
+                "sala": "A135",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "A135",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "A135",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Michele Cristina Valentino"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM11E",
+        "nome": "Fundamentos De Filosofia E De História Da Educação",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L11",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "A135",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "A135",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "A135",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Bondarik"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM12A",
+        "nome": "Cálculo Diferencial",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L21",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "A144",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "A144",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "A144",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "A144",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "A144",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Prado Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM12B",
+        "nome": "Matemática Computacional 1",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L21",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "I204",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "I204",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "I204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago De Souza Pinto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM12C",
+        "nome": "Fundamentos Da Didática Geral",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L21",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "A145",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "A145",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rosianne Silva Walter"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM12D",
+        "nome": "Metodologia Do Ensino De Matemática",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L21",
+            "enquadramento": "Presencial",
+            "vagas_total": 14,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "A148",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "A148",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "A148",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "A148",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jader Otavio Dalto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM12E",
+        "nome": "Geometria 1",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L21",
+            "enquadramento": "Presencial",
+            "vagas_total": 19,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "A134",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "A134",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "A134",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "A134",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "A134",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "A134",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Anderson Paiao Dos Santos"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 1,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM12F",
+        "nome": "Libras 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L21",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "A145",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "A145",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Debora Goncalves Ribeiro Dias"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM13A",
+        "nome": "Geometria 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L31",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "A143",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "A143",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "A143",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "A143",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago Pinguello De Andrade"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM13B",
+        "nome": "Geometria Analítica",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L31",
+            "enquadramento": "Presencial",
+            "vagas_total": 9,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "A143",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "A143",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "A143",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "A143",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "A143",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Prado Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM13C",
+        "nome": "Cálculo Integral",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L31",
+            "enquadramento": "Presencial",
+            "vagas_total": 8,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "A035",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "A035",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "A035",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "A035",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Augusto Bassani Varea"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM13D",
+        "nome": "Álgebra Linear 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L31",
+            "enquadramento": "Presencial",
+            "vagas_total": 11,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "A143",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "A143",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "A143",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "A143",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Michele Cristina Valentino"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM13E",
+        "nome": "Psicologia Da Educação",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L31",
+            "enquadramento": "Presencial",
+            "vagas_total": 7,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "A143",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "A143",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "A143",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rosianne Silva Walter"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM13F",
+        "nome": "Inclusão E Educação Matemática",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L31",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "A148",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "A148",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "A148",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eliane Maria De Oliveira Araman"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM13G",
+        "nome": "Libras 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L31",
+            "enquadramento": "Presencial",
+            "vagas_total": 4,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "A143",
+                "sede": null
+              },
+              {
+                "horario": "3N1",
+                "sala": "A143",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Debora Goncalves Ribeiro Dias"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM14A",
+        "nome": "Cálculo De Funções Reais De Várias Variáveis Reais",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L41",
+            "enquadramento": "Presencial",
+            "vagas_total": 6,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "A035",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "A035",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "A035",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "A035",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "A035",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "A035",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Evandro Estevao Marquesone"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 1,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Evandro Estevao Marquesone"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM14B",
+        "nome": "Álgebra Linear 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L41",
+            "enquadramento": "Presencial",
+            "vagas_total": 7,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "A035",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "A035",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "A035",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "A035",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago Pinguello De Andrade"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM14C",
+        "nome": "Teoria Dos Números",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L41",
+            "enquadramento": "Presencial",
+            "vagas_total": 6,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "A134",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "A134",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "A134",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "A134",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Anderson Paiao Dos Santos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM14D",
+        "nome": "Laboratório De Matemática",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L41",
+            "enquadramento": "Presencial",
+            "vagas_total": 9,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "A148",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "A148",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "A148",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Dayani Quero Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM14E",
+        "nome": "Tendências Em Educação Matemática 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L41",
+            "enquadramento": "Presencial",
+            "vagas_total": 7,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "A035",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "A035",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "A035",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "A035",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eliane Maria De Oliveira Araman"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM14F",
+        "nome": "Fundamentos Da Organização Do Trabalho Pedagógico E Gestão Escolar",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L41",
+            "enquadramento": "Presencial",
+            "vagas_total": 12,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "A035",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "A035",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "A035",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Bondarik"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM15A",
+        "nome": "Álgebra",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L51",
+            "enquadramento": "Presencial",
+            "vagas_total": 3,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "A038",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "A038",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "A038",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "A038",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tiago Henrique Dos Reis"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 1,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Tiago Henrique Dos Reis"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM15B",
+        "nome": "Física A",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L51",
+            "enquadramento": "Presencial",
+            "vagas_total": 4,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "P104",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "P104",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "P104",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "P104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ronaldo Penna Neves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM15C",
+        "nome": "Probabilidade E Estatística 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L51",
+            "enquadramento": "Presencial",
+            "vagas_total": 2,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "A145",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "A145",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "A145",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "A145",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elisangela Aparecida Da Silva Lizzi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM15D",
+        "nome": "Fundamentos Políticos E Normativos Da Educação",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L51",
+            "enquadramento": "Presencial",
+            "vagas_total": 9,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "A136",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "A136",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Bondarik"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM15E",
+        "nome": "Tendências Em Educação Matemática 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L51",
+            "enquadramento": "Presencial",
+            "vagas_total": 3,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "A148",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "A148",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "A148",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "A148",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Linlya Natassia Sachs Camerlengo De Barbosa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM15F",
+        "nome": "Prática De Ensino A",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L51",
+            "enquadramento": "Presencial",
+            "vagas_total": 3,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "P104",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "P104",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "P104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago De Souza Pinto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM16A",
+        "nome": "Análise Real 1",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L61",
+            "enquadramento": "Presencial",
+            "vagas_total": 8,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "A140",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "A140",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "A140",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "A140",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "A140",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vinicius Araujo Peralta"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 1,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Debora Aparecida Francisco Albanez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM16B",
+        "nome": "Equações Diferenciais Ordinárias",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L61",
+            "enquadramento": "Presencial",
+            "vagas_total": 6,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "A140",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "A140",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "A140",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "A140",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago De Souza Pinto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM16C",
+        "nome": "Física B",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L61",
+            "enquadramento": "Presencial",
+            "vagas_total": 7,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "A140",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "A140",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "A140",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "A140",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tiago Debarba"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM16D",
+        "nome": "Metodologia Da Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L61",
+            "enquadramento": "Presencial",
+            "vagas_total": 7,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N2",
+                "sala": "A140",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "A140",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elisangela Aparecida Da Silva Lizzi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM16E",
+        "nome": "Tecnologias Digitais Da Informação E Comunicação",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L61",
+            "enquadramento": "Presencial",
+            "vagas_total": 6,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "LIM",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "LIM",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "LIM",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Armando Paulo Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM16F",
+        "nome": "Prática B",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L61",
+            "enquadramento": "Presencial",
+            "vagas_total": 7,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "I202",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "I202",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "I202",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "I202",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Dayani Quero Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM17A",
+        "nome": "Análise Real 2",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L71",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "A136",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "A136",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "A136",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "A136",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "A136",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vinicius Araujo Peralta"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM17B",
+        "nome": "Trabalho De Conclusão De Curso 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L71",
+            "enquadramento": "Presencial",
+            "vagas_total": 6,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N4",
+                "sala": "P104",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "P104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Glaucia Maria Bressan"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM17C",
+        "nome": "História Da Matemática",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L71",
+            "enquadramento": "Presencial",
+            "vagas_total": 8,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "A134",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "A134",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "A134",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "A134",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Maria Lucia De Carvalho Fontanini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM17D",
+        "nome": "Prática De Ensino C",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L71",
+            "enquadramento": "Presencial",
+            "vagas_total": 8,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "I202",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "I202",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "I202",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "I202",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Dayani Quero Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM18B",
+        "nome": "Trabalho De Conclusão De Curso 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L81",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "P203",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "P203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Glaucia Maria Bressan"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 1,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Glaucia Maria Bressan"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM18C",
+        "nome": "Prática De Ensino D",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L81",
+            "enquadramento": "Presencial",
+            "vagas_total": 7,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "A148",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "A148",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "A146",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "A146",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Linlya Natassia Sachs Camerlengo De Barbosa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM18E",
+        "nome": "Cálculo Numérico",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L81",
+            "enquadramento": "Presencial",
+            "vagas_total": 3,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "P104",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "P104",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "P104",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "P104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Glaucia Maria Bressan"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LM19L",
+        "nome": "Educação Estatística E Educação Matemática",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L71",
+            "enquadramento": "Presencial",
+            "vagas_total": 7,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "I202",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "I202",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Dayani Quero Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:189"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LM19N",
+        "nome": "Tópicos Especiais Em Educação",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L71",
+            "enquadramento": "Presencial",
+            "vagas_total": 13,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc. Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "LIM",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "LIM",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "LIM",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "LIM",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Armando Paulo Da Silva",
+              "Dayani Quero Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:189"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LM38B",
+        "nome": "Prática De Ensino D",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "L81A",
+            "enquadramento": "Presencial",
+            "vagas_total": 4,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "R305",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "R305",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "A136",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "A136",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago De Souza Pinto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

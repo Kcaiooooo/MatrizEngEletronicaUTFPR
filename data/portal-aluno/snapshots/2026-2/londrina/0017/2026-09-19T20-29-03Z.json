@@ -1,0 +1,2833 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:31:30   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "londrina",
+    "name": "Londrina",
+    "code": "08"
+  },
+  "course": {
+    "id": "0017",
+    "name": "Lic Em Química",
+    "sourceName": "LIC EM QUÍMICA"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=17"
+  },
+  "fingerprint": "eff81968b5041a58a8cbddbe4a267e2ab3111bcc5c6036644873989700fd7246",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "LIC EM QUÍMICA",
+    "ultima_atualizacao": "19/09/2026 17:31:30   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "CHS015",
+        "nome": "Escola Pública No Brasil",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q13",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "K212",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Suseli Cristiane Alves Camilo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CHS016",
+        "nome": "Interpretação E Produção De Textos Acadêmicos E Práticas Docentes",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q13",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "K212",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Givan Jose Ferreira Dos Santos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CHS017",
+        "nome": "Políticas Educacionais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q13",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "K212",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Suseli Cristiane Alves Camilo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CHS021",
+        "nome": "Comunicação Oral E Estratégica Para O Ensino De Química",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 45,
+        "turmas": [
+          {
+            "codigo": "Q23",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "K203",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "K203",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "ZSV03",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alcioni Galdino Vieira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CHS022",
+        "nome": "Currículo E Conhecimento Escolar",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q23",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "ZSV03",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "K203",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "K203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Suseli Cristiane Alves Camilo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:48"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CHS023",
+        "nome": "Organização Do Trabalho Pedagógico E Gestão Escolar",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q33",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "B204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Suseli Cristiane Alves Camilo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CHS024",
+        "nome": "Psicologia Da Educação",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q34",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "ZSV04",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Zenaide De Fatima Dante Correia Rocha"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CHS025",
+        "nome": "Didática Geral",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q43",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "ZSV02",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Zenaide De Fatima Dante Correia Rocha"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CHS027",
+        "nome": "Sociologia Da Educação",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q23",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "K203",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "K203",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "ZSV03",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Suseli Cristiane Alves Camilo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:70"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CHS05L",
+        "nome": "Libras 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q13",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 22,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N4",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "K212",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Antonio Alves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CHS06L",
+        "nome": "Libras 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q23",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ],
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "K203",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "K203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Antonio Alves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ED87A",
+        "nome": "Libras 2",
+        "creditos": 6,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q83",
+            "enquadramento": "Presencial",
+            "vagas_total": 14,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ],
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "K203",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "K203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Antonio Alves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ES87A",
+        "nome": "Estágio Curricular Obrigatório 2",
+        "creditos": 10,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q73",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "ZSV04",
+                "sede": null
+              },
+              {
+                "horario": "5M1",
+                "sala": "ZSV04",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "ZSV04",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "ZSV02",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "ZSV02",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "ZSV02",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "ZSV02",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cristiane Beatriz Dal Bosco Rezzadori"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ES88A",
+        "nome": "Estágio Curricular Obrigatório 3",
+        "creditos": 10,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q83",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "ZSV08",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "ZSV08",
+                "sede": null
+              },
+              {
+                "horario": "3N1",
+                "sala": "ZSV01",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "ZSV01",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "ZSV01",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "ZSV01",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "A106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcia Camilo Figueiredo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ESTLC1",
+        "nome": "Estágio Curricular Obrigatório 1",
+        "creditos": 10,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q53",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "ZSV04",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "ZSV04",
+                "sede": null
+              },
+              {
+                "horario": "5M6",
+                "sala": "ZSV04",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "ZSV04",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "ZSV04",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "ZSV04",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "ZSV04",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "ZSV04",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cristiane Beatriz Dal Bosco Rezzadori"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ESTLC2",
+        "nome": "Estágio Curricular Obrigatório 2",
+        "creditos": 10,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q63",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "ZSV04",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "ZSV04",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "ZSV05",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "ZSV05",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "ZSV05",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "ZSV05",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "ZSV05",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cristiane Beatriz Dal Bosco Rezzadori"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS018",
+        "nome": "Física 1",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q33",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N3",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "B204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Carlos Pocas"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS019",
+        "nome": "Física Experimental 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q33",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "K201",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "K201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Sergio De Camargo Filho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS020",
+        "nome": "Física 2",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q43",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N3",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "B205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Matheus Lucas Gumieri Pereira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS021",
+        "nome": "Física Experimental 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q43",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "K204",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "K204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marco Aurelio Toledo Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS023",
+        "nome": "Física Experimental 3",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q53",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "K301",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "K301",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Matheus Lucas Gumieri Pereira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HU67A",
+        "nome": "Ética, Profissão E Cidadania",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ME81",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "K214",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "K214",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Di Flora Garcia"
+            ],
+            "optativa_matrizes": [
+              "Matriz:48"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HU94N",
+        "nome": "Libras 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "A102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Antonio Alves"
+            ],
+            "optativa_matrizes": [
+              "Matriz:19"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HU99A",
+        "nome": "Ética Profissão E Cidadania",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T5",
+                "sala": "K207",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "K207",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Di Flora Garcia"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT019",
+        "nome": "Fundamentos De Matemática Para A Formação Do Professor De Química",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q13",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "3N1",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "K212",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo De Sa Teles"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT020",
+        "nome": "Álgebra Vetorial",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q23",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "K203",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "K203",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "K203",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "K203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Felipe Goncalves Carneiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT021",
+        "nome": "Cálculo Diferencial E Integral 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q23",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "K203",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "K203",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "K203",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "K203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Manuel Francisco Zuloeta Jimenez"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SH23",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Manuel Francisco Zuloeta Jimenez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT022",
+        "nome": "Cálculo Diferencial E Integral 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q33",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "K210",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "K210",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Manuel Francisco Zuloeta Jimenez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT05L",
+        "nome": "Estatística",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q43",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "B205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joelmir Andre Borssoi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MI88A",
+        "nome": "Microbiologia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q83",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "A305",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "A305",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "A103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alexandre Rodrigo Coelho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "OP69B",
+        "nome": "Processo De Projeto Em Engenharia",
+        "creditos": 4,
+        "creditos_assincronos": 6,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ME51",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "6T2",
+                "sala": "B207",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "B207",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "B207",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B207",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B207",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B207",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Florian",
+              "Erico Daniel Ricardi Guerreiro",
+              "Haroldo Lhou Hasegawa"
+            ],
+            "optativa_matrizes": [
+              "Matriz:19",
+              "Matriz:30",
+              "Matriz:35",
+              "Matriz:48",
+              "Matriz:1"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPLB01",
+        "nome": "Química De Materiais Avançados",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q63",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "B203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Natalia Mariana Monezi"
+            ],
+            "optativa_matrizes": [
+              "Matriz:70"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "QM86C",
+        "nome": "Análise Orgânica",
+        "creditos": 6,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DP63",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "K303",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "K303",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "K303",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Renato Marcio Ribeiro Viana"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QM86D",
+        "nome": "Química Inorgânica Experimental 1",
+        "creditos": 6,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DP63",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "B303",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "B303",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "B303",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cristiano Torres Miranda"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QM86E",
+        "nome": "Físico-Química 2",
+        "creditos": 3.3333333333333333e+37,
+        "creditos_assincronos": 6.666666666666666e+39,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DP63",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "A106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcos Antonio Piza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QM87A",
+        "nome": "Bioquímica 1",
+        "creditos": 3.3333333333333333e+37,
+        "creditos_assincronos": 6.666666666666666e+39,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q73",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "A305",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "A305",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Claudio Takeo Ueno"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QM87D",
+        "nome": "Introdução Aos Métodos Cromatográficos",
+        "creditos": 6,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q73",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "B203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vanessa Kienen Coronado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QM87E",
+        "nome": "Físico Química Experimental 1",
+        "creditos": 6,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q73",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "B305",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "B305",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "B305",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcos Antonio Piza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QM88A",
+        "nome": "Química Ambiental 1",
+        "creditos": 4.666666666666666e+37,
+        "creditos_assincronos": 5.333333333333333e+39,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q83",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "K310",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "K310",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "A106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leila Droprinchinski Martins"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI026",
+        "nome": "Ciências Na Comunidade 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "Q13",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "ZSV07",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "ZSV07",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cristiano Torres Miranda"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI027",
+        "nome": "Química E Sustentabilidade Ambiental",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q13",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "K212",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alessandra Furtado Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI028",
+        "nome": "Laboratório De Química 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q13",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 22,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "K009",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "K009",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Renato Marcio Ribeiro Viana"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI029",
+        "nome": "Princípios E Aplicações De Química 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q13",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "K212",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Natalia Mariana Monezi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI031",
+        "nome": "Ciências Na Comunidade 2",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 90,
+        "turmas": [
+          {
+            "codigo": "Q23",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N5",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "K203",
+                "sede": null
+              },
+              {
+                "horario": "7M2",
+                "sala": "ZSV07",
+                "sede": null
+              },
+              {
+                "horario": "7M3",
+                "sala": "ZSV07",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "ZSV07",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "ZSV07",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cristiano Torres Miranda"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI032",
+        "nome": "Fundamentos De Físico-Química",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q23",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "B203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcos Antonio Piza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI033",
+        "nome": "Laboratório De Química 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q23",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "B305",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "B305",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabio Vandresen"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI034",
+        "nome": "Princípios E Aplicações De Química 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q23",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "K203",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "K203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Natalia Mariana Monezi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI035",
+        "nome": "Fundamentos Da Educação Química 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q33",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "ZSV04",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cristiane Beatriz Dal Bosco Rezzadori"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI036",
+        "nome": "Química Analítica 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q33",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ],
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "B204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Janksyn Bertozzi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI037",
+        "nome": "Química Inorgânica 1",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q33",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "B306",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "B306",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "B204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cristiano Torres Miranda"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI038",
+        "nome": "Fundamentos Da Educação Química 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q43",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "3T1",
+                "sala": "ZSV03",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcia Camilo Figueiredo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI039",
+        "nome": "Química Analítica 2",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q43",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ],
+              [
+                "Eng Química"
+              ],
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "B205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vanessa Kienen Coronado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI040",
+        "nome": "Química Orgânica 1",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q43",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "B205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Antonio Laverde Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI041",
+        "nome": "Química Inorgânica 2",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q53",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "B206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alessandra Stevanato"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI042",
+        "nome": "Química Orgânica 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q53",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "B206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Fernando Cabeca"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI043",
+        "nome": "Química Orgânica Experimental",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q63",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "K008",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "K008",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "K008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Fernando Cabeca"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI044",
+        "nome": "Físico-Química 1",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q63",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "B203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcos Antonio Piza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI045",
+        "nome": "Análise Instrumental",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q63",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "K010",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "K010",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "K010",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "B203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alesandro Bail"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TC87A",
+        "nome": "Tcc 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q73",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "K314",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "K314",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alessandra Stevanato"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TC88A",
+        "nome": "Trabalho De Conclusão De Curso 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q83",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N5",
+                "sala": "K314",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "ZSV01",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alessandra Stevanato"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

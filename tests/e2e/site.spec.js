@@ -230,6 +230,243 @@ test('home, temas e navegação em tela móvel', async ({page}) => {
     await expect(page.locator('html')).toHaveAttribute('data-theme','light');
 });
 
+test('home e matrizes exibem atalho para turmas abertas', async ({ page }) => {
+    await page.goto('/');
+    await expect(page.locator('a[href="pages/Turmas Abertas.html"]')).not.toHaveCount(0);
+
+    await page.goto('/pages/Skill tree M3.html');
+    const shortcut = page.getByRole('link', { name: 'Turmas abertas', exact: true });
+    await expect(shortcut).toHaveAttribute('href', 'Turmas Abertas.html');
+});
+
+for (const course of courses) {
+    test(`atalho para turmas abertas na matriz: ${course.id}`, async ({ page }) => {
+        await page.goto('/' + course.page);
+        await expect(page.getByRole('link', { name: 'Turmas abertas', exact: true })).toHaveCount(1);
+    });
+}
+
+test('turmas abertas exibem a captura oficial, filtram disciplinas e listam o histórico', async ({ page }) => {
+    await page.goto('/pages/Turmas Abertas.html');
+    await expect(page.locator('#grade-content')).toBeVisible();
+    await expect(page.locator('#source-note')).toContainText('Sistema Acadêmico UTFPR');
+    await expect(page.locator('#campus-select')).toHaveValue('curitiba');
+    await page.locator('#course-select').selectOption('0250');
+    await expect(page.locator('#stat-disciplines')).toHaveText('150');
+    await expect(page.locator('#history-list .gnh-history-item')).toHaveCount(1);
+    await page.locator('#discipline-code').fill('MAT7AL');
+    await expect(page.locator('#disciplines-list .gnh-discipline')).toHaveCount(1);
+    await expect(page.locator('#disciplines-list')).toContainText('Álgebra Linear');
+    await expect(page.locator('#disciplines-list')).toContainText('Ecoville');
+    await expect(page.locator('#disciplines-list')).toContainText('Willian Goulart Gomes Velasco');
+});
+
+test('disciplinas ofertadas filtram por código, nome e horário', async ({ page }) => {
+    await page.goto('/pages/Turmas Abertas.html');
+    await page.locator('#course-select').selectOption('0250');
+    await page.locator('#discipline-code').fill('MAT7AL');
+    await page.locator('#discipline-search').fill('álgebra linear');
+    await page.locator('#discipline-schedule').fill('2T2');
+
+    await expect(page.locator('#disciplines-list .gnh-discipline')).toHaveCount(1);
+    await expect(page.locator('#disciplines-list .gnh-discipline-name')).toHaveText('Álgebra Linear');
+    await expect(page.locator('#disciplines-list .gnh-class')).toHaveCount(1);
+    await expect(page.locator('#disciplines-list')).toContainText('Turma S51');
+    await expect(page.locator('#disciplines-list')).toContainText('2T2');
+});
+
+test('busca matéria equivalente em todos os cursos do câmpus', async ({ page }) => {
+    await page.goto('/pages/Turmas Abertas.html');
+    await page.locator('#course-select').selectOption('0250');
+    await page.locator('#discipline-code').fill('MATZAL');
+    await page.locator('#discipline-campus-scope').check();
+
+    await expect(page.locator('#discipline-scope-note')).toBeVisible();
+    await expect(page.locator('#disciplines-list .gnh-discipline')).not.toHaveCount(0);
+    await expect(page.locator('#disciplines-list .gnh-discipline-course')).not.toHaveCount(0);
+    await expect(page.locator('#disciplines-list .gnh-discipline-code').first()).toHaveText('MAT7GA');
+
+    await page.locator('#disciplines-list .gnh-discipline').first().locator('summary').click();
+    await page.locator('#disciplines-list .gnh-class').first().click();
+    await expect(page.locator('#calendar-note')).toContainText('1 turma(s) selecionada(s)');
+});
+
+test('turmas abertas montam um calendário com as turmas selecionadas', async ({ page }) => {
+    await page.goto('/pages/Turmas Abertas.html');
+    await page.locator('#course-select').selectOption('0250');
+    await page.locator('#discipline-code').fill('MAT7AL');
+    await page.locator('#disciplines-list .gnh-discipline').first().locator('summary').click();
+    const turma = page.locator('.gnh-class').first();
+    await expect(page.locator('.gnh-calendar-checkbox')).toHaveCount(0);
+    await turma.click();
+    await expect(turma).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.locator('#calendar-note')).toContainText('1 turma(s) selecionada(s)');
+    await expect(page.locator('#calendar-grid')).toContainText('Início');
+    await expect(page.locator('#calendar-grid')).toContainText('07h30');
+    await expect(page.locator('#calendar-grid .gnh-calendar-header')).toHaveText(['Turno', 'Início', 'Térm.', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb']);
+    const calendarMetrics = await page.locator('.gnh-calendar-scroll').evaluate(element => ({
+        clientWidth: element.clientWidth,
+        scrollWidth: element.scrollWidth,
+        clientHeight: element.clientHeight,
+        scrollHeight: element.scrollHeight,
+    }));
+    expect(calendarMetrics.scrollWidth).toBe(calendarMetrics.clientWidth);
+    expect(calendarMetrics.scrollHeight).toBe(calendarMetrics.clientHeight);
+    await expect(page.locator('.gnh-calendar-event').first()).toBeVisible();
+    await expect(page.locator('#clear-calendar')).toBeEnabled();
+    await page.locator('#clear-calendar').click();
+    await expect(page.locator('#calendar-note')).toContainText('Selecione uma ou mais turmas');
+    await expect(page.locator('#clear-calendar')).toBeDisabled();
+});
+
+test('calendário persiste e mantém turmas ao trocar de curso', async ({ page }) => {
+    await page.goto('/pages/Turmas Abertas.html');
+    await page.locator('#course-select').selectOption('0250');
+    await page.locator('#discipline-code').fill('MAT7AL');
+    await page.locator('#disciplines-list .gnh-discipline').first().locator('summary').click();
+    await page.locator('.gnh-class').first().click();
+    await expect(page.locator('#calendar-note')).toContainText('1 turma(s) selecionada(s)');
+
+    await page.locator('#course-select').selectOption('0002');
+    await expect(page.locator('#selection-note')).toContainText('ENG.IND.ELETRÔNICA');
+    await expect(page.locator('#calendar-note')).toContainText('1 turma(s) selecionada(s)');
+    await expect(page.locator('.gnh-calendar-event').first()).toBeVisible();
+    await page.reload();
+    await expect(page.locator('#calendar-note')).toContainText('1 turma(s) selecionada(s)');
+    await expect(page.locator('.gnh-calendar-event').first()).toBeVisible();
+});
+
+test('calendário compacto não cria rolagem em tela móvel', async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.goto('/pages/Turmas Abertas.html');
+    await page.locator('#course-select').selectOption('0250');
+    await page.locator('#discipline-code').fill('MAT7AL');
+    await page.locator('#disciplines-list .gnh-discipline').first().locator('summary').click();
+    await page.locator('.gnh-class').first().click();
+    const metrics = await page.evaluate(() => {
+        const calendar = document.querySelector('.gnh-calendar-scroll');
+        return {
+            documentWidth: document.documentElement.scrollWidth,
+            viewportWidth: window.innerWidth,
+            calendarWidth: calendar.clientWidth,
+            calendarScrollWidth: calendar.scrollWidth,
+            calendarHeight: calendar.clientHeight,
+        };
+    });
+    expect(metrics.documentWidth).toBe(metrics.viewportWidth);
+    expect(metrics.calendarScrollWidth).toBe(metrics.calendarWidth);
+    expect(metrics.calendarHeight).toBeLessThan(500);
+});
+
+test('calendário bloqueia conflitos, sinaliza o limite e pré-visualiza horários', async ({ page }) => {
+    await page.goto('/pages/Turmas Abertas.html');
+    await page.locator('#course-select').selectOption('0250');
+    await page.locator('#discipline-code').fill('MAT7AL');
+    await page.locator('#disciplines-list .gnh-discipline').first().locator('summary').click();
+    const classes = page.locator('#disciplines-list .gnh-class');
+    const first = classes.nth(0);
+    const second = classes.nth(1);
+    await first.click();
+
+    await second.hover();
+    await expect(page.locator('.gnh-calendar-cell-conflict').first()).toBeVisible();
+    await second.click();
+    await expect(second).toHaveAttribute('aria-pressed', 'false');
+    await expect(page.locator('#calendar-validation')).toContainText('Conflito de horário');
+
+    await page.locator('#calendar-limit').fill('1');
+    await expect(page.locator('#calendar-usage')).toHaveText('Aulas usadas: 4 / 1');
+    await expect(page.locator('#calendar-validation')).toContainText('limite de 1 aulas/semana');
+    await expect(page.locator('.gnh-mini-calendar-card')).toHaveCSS('position', 'sticky');
+});
+
+test('minicalendário acompanha a rolagem e remove uma turma ao clicar nela', async ({ page }) => {
+    await page.goto('/pages/Turmas Abertas.html');
+    await page.locator('#course-select').selectOption('0250');
+    await page.locator('#discipline-code').fill('MAT7AL');
+    await page.locator('#disciplines-list .gnh-discipline').first().locator('summary').click();
+    const turma = page.locator('.gnh-class').first();
+    await turma.click();
+    const miniEvent = page.locator('.gnh-mini-calendar-grid .gnh-calendar-event-clickable').first();
+    await expect(miniEvent).toBeVisible();
+
+    await page.evaluate(() => window.scrollTo(0, document.querySelector('.gnh-layout').offsetTop + 450));
+    const stickyTop = await page.locator('.gnh-mini-calendar-card').evaluate(element => element.getBoundingClientRect().top);
+    expect(stickyTop).toBeGreaterThanOrEqual(0);
+    expect(stickyTop).toBeLessThan(40);
+    const sidebarBoxes = await page.evaluate(() => {
+        const mini = document.querySelector('.gnh-mini-calendar-card').getBoundingClientRect();
+        const history = document.querySelector('.gnh-history-card').getBoundingClientRect();
+        return { miniHeight: mini.height, miniBottom: mini.bottom, historyTop: history.top };
+    });
+    expect(sidebarBoxes.miniHeight).toBeLessThan(600);
+    expect(sidebarBoxes.historyTop).toBeGreaterThanOrEqual(sidebarBoxes.miniBottom);
+
+    await miniEvent.click();
+    await expect(turma).toHaveAttribute('aria-pressed', 'false');
+    await expect(page.locator('#calendar-note')).toContainText('Selecione uma ou mais turmas');
+});
+
+test('grade automática usa a matriz selecionada e encaixa turmas sem conflito', async ({ page }) => {
+    await page.goto('/pages/Turmas Abertas.html');
+    await page.locator('#course-select').selectOption('0250');
+    await expect(page.locator('#stat-disciplines')).toHaveText('150');
+    await page.getByRole('button', { name: 'Grade automática' }).click();
+    await expect(page.locator('#auto-grade-modal')).toBeVisible();
+    await expect(page.locator('#auto-grade-matrix option')).toHaveCount(13);
+    await page.locator('#auto-grade-matrix').selectOption('m2');
+    await page.getByRole('button', { name: 'Montar grade' }).click();
+    await expect(page.locator('#auto-grade-modal')).toBeHidden();
+    await expect(page.locator('#calendar-validation')).toContainText('Grade automática');
+    await expect(page.locator('.gnh-class-selected')).not.toHaveCount(0);
+    await expect(page.locator('.gnh-calendar-cell-conflict')).toHaveCount(0);
+});
+
+test('grade automática respeita dias, turnos e sede disponíveis em Curitiba', async ({ page }) => {
+    await page.goto('/pages/Turmas Abertas.html');
+    await page.locator('#course-select').selectOption('0250');
+    await page.getByRole('button', { name: 'Grade automática' }).click();
+    await expect(page.locator('[data-auto-grade-grid]')).toHaveCount(2);
+    await expect(page.locator('[data-auto-grade-grid="Centro"]')).toBeVisible();
+    await expect(page.locator('[data-auto-grade-grid="Ecoville"]')).toBeVisible();
+    await expect(page.locator('[data-auto-grade-slot]')).toHaveCount(204);
+
+    const centroSlot = page.locator('[data-auto-grade-slot="Centro|7-M-1"]');
+    const ecovilleSlot = page.locator('[data-auto-grade-slot="Ecoville|7-M-1"]');
+    const avoidedClassSlot = page.locator('[data-auto-grade-slot="Centro|2-T-2"]');
+    await centroSlot.click();
+    await ecovilleSlot.click();
+    await avoidedClassSlot.click();
+    await expect(centroSlot).toHaveAttribute('aria-pressed', 'true');
+    await expect(ecovilleSlot).toHaveAttribute('aria-pressed', 'true');
+    await expect(avoidedClassSlot).toHaveAttribute('aria-pressed', 'true');
+    await page.getByRole('button', { name: 'Montar grade' }).click();
+
+    await expect(page.locator('#auto-grade-modal')).toBeHidden();
+    await expect(page.locator('.gnh-class-selected')).not.toHaveCount(0);
+    expect((await page.locator('.gnh-class-selected').allTextContents()).join('\n')).not.toContain('2T2');
+});
+
+test('grade automática usa uma única grade para os demais câmpus', async ({ page }) => {
+    await page.goto('/pages/Turmas Abertas.html');
+    await page.locator('#campus-select').selectOption('apucarana');
+    await expect(page.locator('#auto-grade')).toBeEnabled();
+    await page.getByRole('button', { name: 'Grade automática' }).click();
+    await expect(page.locator('[data-auto-grade-grid]')).toHaveCount(1);
+    await expect(page.locator('[data-auto-grade-grid="__campus__"]')).toBeVisible();
+    await expect(page.locator('[data-auto-grade-grid="Centro"]')).toHaveCount(0);
+});
+
+test('grade automática avisa quando a matriz não corresponde ao curso selecionado', async ({ page }) => {
+    await page.goto('/pages/Turmas Abertas.html');
+    await page.getByRole('button', { name: 'Grade automática' }).click();
+    await page.locator('#auto-grade-matrix').selectOption('m2');
+    await page.getByRole('button', { name: 'Montar grade' }).click();
+    await expect(page.locator('#auto-grade-modal')).toBeVisible();
+    await expect(page.locator('#auto-grade-status')).toContainText('não corresponde');
+    await expect(page.locator('#calendar-note')).toContainText('Selecione uma ou mais turmas');
+});
+
 for (const course of courses.filter(course => ['eletrica', 'administracao', 'm2'].includes(course.id))) {
     test(`mapa móvel com viewport interno: ${course.id}`, async ({page}) => {
         await page.setViewportSize({width:390,height:844});

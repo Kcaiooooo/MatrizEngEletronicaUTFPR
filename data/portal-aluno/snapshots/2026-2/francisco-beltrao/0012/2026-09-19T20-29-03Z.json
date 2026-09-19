@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:31:11   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "francisco-beltrao",
+    "name": "Francisco Beltrão",
+    "code": "11"
+  },
+  "course": {
+    "id": "0012",
+    "name": "Inglês",
+    "sourceName": "INGLÊS"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=12"
+  },
+  "fingerprint": "7fe053a1db337cf25c8347e77450f06b517805f282706f06d243502f7e064ce1",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "INGLÊS",
+    "ultima_atualizacao": "19/09/2026 17:31:11   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "ING03",
+        "nome": "Inglês 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ING",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 25,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T5",
+                "sala": "G102B",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "G102B",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "G102B",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "G102B",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Meggie Rosar Fornazari"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ING04",
+        "nome": "Inglês 4",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ING04",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "G102B",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "G102B",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "G102B",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "G102B",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Meggie Rosar Fornazari"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ING06",
+        "nome": "Inglês 6",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ING06",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "G102B",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "G102B",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "G102B",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "G102B",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fatima Aparecida Cezarin Dos Santos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

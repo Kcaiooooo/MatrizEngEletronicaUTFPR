@@ -1,0 +1,366 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:31:34   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "londrina",
+    "name": "Londrina",
+    "code": "08"
+  },
+  "course": {
+    "id": "0045",
+    "name": "Ciência De Dados I A",
+    "sourceName": "CIÊNCIA DE DADOS I A"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=45"
+  },
+  "fingerprint": "1c552f6f9c14b9f126004c08689dc92aeb706dc3c38456d45cf0cd0788b5f6d9",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "CIÊNCIA DE DADOS I A",
+    "ultima_atualizacao": "19/09/2026 17:31:34   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "CDEEC01",
+        "nome": "Algoritmos 1",
+        "creditos": 2,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CD13",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 40,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência De Dados I A"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "T106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Goncalves Pires"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CDEEC02",
+        "nome": "Introdução À Ciência De Dados E Inteligência Artificial",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CD13",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 40,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência De Dados I A"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "K113",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo Petri Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CHS32C",
+        "nome": "Interpretação E Produção De Textos Científicos E Profissionais",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CD13",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 40,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência De Dados I A"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "K308",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "K308",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Givan Jose Ferreira Dos Santos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT07P",
+        "nome": "Álgebra Linear",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP33",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "K210",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "K210",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "K210",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Pricila Da Silva Barbosa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT07S",
+        "nome": "Álgebra Linear",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS21",
+            "enquadramento": "Presencial",
+            "vagas_total": 27,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "K206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andre Luis Trevisan"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT23C",
+        "nome": "Matemática Discreta",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CD13",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 40,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência De Dados I A"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "K308",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "K308",
+                "sede": null
+              },
+              {
+                "horario": "3N1",
+                "sala": "K308",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "K308",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alireza Mohebi Ashtiani"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PEECX01",
+        "nome": "Projeto Extensionista",
+        "creditos": 8,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 120,
+        "turmas": [
+          {
+            "codigo": "CD13",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 40,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência De Dados I A"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "K303",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "K303",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "K303",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "K303",
+                "sede": null
+              },
+              {
+                "horario": "7M2",
+                "sala": "ZSV11",
+                "sede": null
+              },
+              {
+                "horario": "7M3",
+                "sala": "ZSV11",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "ZSV11",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "ZSV11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Claudia Santos Fiuza Lima"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

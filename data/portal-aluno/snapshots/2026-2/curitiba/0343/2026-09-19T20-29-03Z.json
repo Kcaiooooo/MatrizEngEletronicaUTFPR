@@ -1,0 +1,3807 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:30:47   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "curitiba",
+    "name": "Curitiba",
+    "code": "01"
+  },
+  "course": {
+    "id": "0343",
+    "name": "Lic Letras Português",
+    "sourceName": "LIC LETRAS PORTUGUÊS"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=343"
+  },
+  "fingerprint": "062baee021fae8bf95b11b3ba53d9f37baa79668cfcc948f73ec8d986167a8ae",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "LIC LETRAS PORTUGUÊS",
+    "ultima_atualizacao": "19/09/2026 17:30:47   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [
+        {
+          "marcador": "*",
+          "sede": "Ecoville"
+        },
+        {
+          "marcador": "**",
+          "sede": "Neoville"
+        }
+      ],
+      "sede_sem_marcador": "Centro"
+    },
+    "disciplinas": [
+      {
+        "codigo": "CE78G",
+        "nome": "Filosofia Da Linguagem",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 14,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N2",
+                "sala": "CA-101",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Paula Avila Nunes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:919"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ED70U",
+        "nome": "Libras B",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S83",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática"
+              ],
+              [
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "CE-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CE-102",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rita De Cassia Maestri"
+            ],
+            "optativa_matrizes": [
+              "Matriz:547",
+              "Matriz:906",
+              "Matriz:867",
+              "Matriz:844",
+              "Matriz:616",
+              "Matriz:678",
+              "Matriz:919",
+              "Matriz:843"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EDU70A",
+        "nome": "História Da Profissão Docente",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S65",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 22,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Química"
+              ],
+              [
+                "Lic Física",
+                "Lic Matemática",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "EB-304",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T2",
+                "sala": "EB-304",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Zinara Marcet De Andrade"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S81",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Fisica 9"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T2",
+                "sala": "CA-103",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Zinara Marcet De Andrade"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S83",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática"
+              ],
+              [
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "CE-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M3",
+                "sala": "CE-104",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Zinara Marcet De Andrade"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M5",
+                "sala": "CA-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M6",
+                "sala": "CA-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Zinara Marcet De Andrade"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N4",
+                "sala": "CC-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Solange Freundel Filvock"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EDU70B",
+        "nome": "Pesquisa Em Educação",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S81",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Fisica 9"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "CA-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T2",
+                "sala": "CA-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T3",
+                "sala": "CA-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Flavia Dias De Souza"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S83",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática"
+              ],
+              [
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M6",
+                "sala": "CE-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Solange Freundel Filvock"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "CE-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N2",
+                "sala": "CE-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N3",
+                "sala": "CE-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Solange Freundel Filvock"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EDU70D",
+        "nome": "Psicologia Da Educação",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S65",
+            "enquadramento": "Presencial",
+            "vagas_total": 48,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Química"
+              ],
+              [
+                "Lic Física",
+                "Lic Matemática",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "EB-203",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4T3",
+                "sala": "EB-203",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4T4",
+                "sala": "EB-203",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Samira Abdel Jalil"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:976",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S81",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Fisica 9"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T1",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T2",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T3",
+                "sala": "CA-103",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Samira Abdel Jalil"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:976",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S83",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática"
+              ],
+              [
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "CA-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CA-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CA-102",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Solange Freundel Filvock"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:976",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T2",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CE-302",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Samira Abdel Jalil"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:976",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "CE-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T5",
+                "sala": "CE-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T6",
+                "sala": "CE-206",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Samira Abdel Jalil"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:976",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EDU70E",
+        "nome": "Didática",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S65",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "EB-210",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5T2",
+                "sala": "EB-210",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5T3",
+                "sala": "EB-210",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Lauro Rafael Cruz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S81",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Fisica 9"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "CE-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T2",
+                "sala": "CE-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T3",
+                "sala": "CE-304",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Joao Carlos Pereira De Moraes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S83",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática"
+              ],
+              [
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M2",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M3",
+                "sala": "CA-101",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Lauro Rafael Cruz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "CE-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N2",
+                "sala": "CE-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N3",
+                "sala": "CE-206",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Lauro Rafael Cruz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EDU70H",
+        "nome": "Política Educacional",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "CA-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CA-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Oseias Santos De Oliveira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S81",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Fisica 9"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "CN-133",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T2",
+                "sala": "CN-133",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Silvana Stremel Leite"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S83",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática"
+              ],
+              [
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "CE-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M3",
+                "sala": "CE-105",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Oseias Santos De Oliveira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T5",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T6",
+                "sala": "CE-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Lauro Rafael Cruz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "CE-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T5",
+                "sala": "CE-104",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Lauro Rafael Cruz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EDU70I",
+        "nome": "Educação Especial E Processos Inclusivos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S81",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Fisica 9"
+              ],
+              [
+                "Lic Química",
+                "Téc.Em Multimeios Buti",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T2",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CA-103",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Solange Freundel Filvock"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:976",
+              "Matriz:920",
+              "Matriz:970",
+              "Matriz:973",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S83",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática"
+              ],
+              [
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "CE-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CE-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M6",
+                "sala": "CE-206",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marta Rejane Proenca Filietaz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:976",
+              "Matriz:920",
+              "Matriz:970",
+              "Matriz:973",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T2",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CA-103",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Solange Freundel Filvock"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:976",
+              "Matriz:920",
+              "Matriz:970",
+              "Matriz:973",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "CE-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N4",
+                "sala": "CE-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N5",
+                "sala": "CE-105",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Solange Freundel Filvock"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:976",
+              "Matriz:920",
+              "Matriz:970",
+              "Matriz:973",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EDU70J",
+        "nome": "Libras",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Química",
+                "Téc.Em Multimeios Buti",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "CE-306",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T5",
+                "sala": "CE-306",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T6",
+                "sala": "CE-306",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Leticia Fernandes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T2",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CE-305",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rita De Cassia Maestri"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S03",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "CQ-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T5",
+                "sala": "CQ-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T6",
+                "sala": "CQ-305",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Leticia Fernandes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S04",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "CE-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M3",
+                "sala": "CE-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M4",
+                "sala": "CE-104",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rita De Cassia Maestri"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S65",
+            "enquadramento": "Presencial",
+            "vagas_total": 32,
+            "vagas_calouros": 22,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Química"
+              ],
+              [
+                "Lic Física",
+                "Lic Matemática",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "EB-309",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3T3",
+                "sala": "EB-309",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3T4",
+                "sala": "EB-309",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Rita De Cassia Maestri"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S81",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Fisica 9"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "CE-303",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T5",
+                "sala": "CE-303",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T6",
+                "sala": "CE-303",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Leticia Fernandes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S83",
+            "enquadramento": "Presencial",
+            "vagas_total": 31,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática"
+              ],
+              [
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "CA-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CA-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CA-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Silvia Andreis Witkoski"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "CE-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CE-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M6",
+                "sala": "CE-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Silvia Andreis Witkoski"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "CA-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N4",
+                "sala": "CA-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N5",
+                "sala": "CA-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Leticia Fernandes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EDU70K",
+        "nome": "Tecnologias Digitais Na Educação",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "CA-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T5",
+                "sala": "CA-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T6",
+                "sala": "CA-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Roland Baschta Junior"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:973",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LICP71A",
+        "nome": "Fundamentos E Crítica Da Literatura",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 49,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "CE-201",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CE-201",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T4",
+                "sala": "CE-201",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T5",
+                "sala": "CE-201",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Iamni Reche Bezerra"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP71B",
+        "nome": "Teorias Da Poesia",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 49,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T2",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T3",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T4",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T5",
+                "sala": "CE-305",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rogerio Caetano De Almeida"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP71C",
+        "nome": "Linguística Geral",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 49,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "CE-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T3",
+                "sala": "CE-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T4",
+                "sala": "CE-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T5",
+                "sala": "CE-102",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Gustavo Nishida"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP71D",
+        "nome": "Prática De Ensino Em Produção Textual",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 49,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T1",
+                "sala": "CA-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T2",
+                "sala": "CA-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T3",
+                "sala": "CA-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T4",
+                "sala": "CA-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T5",
+                "sala": "CA-102",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Cora Catalina Gaete Quinteros"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP71E",
+        "nome": "Linguagem E Tecnologia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 49,
+            "vagas_calouros": 44,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "CE-207",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T3",
+                "sala": "CE-207",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T4",
+                "sala": "CE-207",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T5",
+                "sala": "CE-207",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Paula Avila Nunes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP72A",
+        "nome": "Origens Das Literaturas Portuguesa E Brasileira",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N2",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N1",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N2",
+                "sala": "CC-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marcelo Franz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP72B",
+        "nome": "Teorias Da Narrativa",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "CE-307",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N2",
+                "sala": "CE-307",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N3",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N4",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N5",
+                "sala": "CE-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marcio Matiassi Cantarin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP72C",
+        "nome": "Fonética E Fonologia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "CE-303",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N2",
+                "sala": "CE-303",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N3",
+                "sala": "CE-303",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N4",
+                "sala": "CE-303",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Gustavo Nishida"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP72D",
+        "nome": "Prática De Linguística Aplicada Ao Ensino",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "CE-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N2",
+                "sala": "CE-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N3",
+                "sala": "CE-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N4",
+                "sala": "CE-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N5",
+                "sala": "CE-106",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Layana Christine De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP73A",
+        "nome": "Literatura Brasileira: Século Xix",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T3",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T4",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T5",
+                "sala": "CE-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Iamni Reche Bezerra"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP73B",
+        "nome": "Literatura Portuguesa Do Seculo Xix",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "CE-306",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CE-306",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T4",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T5",
+                "sala": "CE-305",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marcelo Franz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP73C",
+        "nome": "Morfologia",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T3",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T1",
+                "sala": "CE-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T2",
+                "sala": "CE-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T3",
+                "sala": "CE-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Andreia De Fatima Rutiquewiski Gomes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP73D",
+        "nome": "Leitura Em Diferentes Mídias",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "CE-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T5",
+                "sala": "CE-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T2",
+                "sala": "CE-303",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T3",
+                "sala": "CE-303",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Layana Christine De Oliveira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LICP74B",
+        "nome": "Sintaxe",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N4",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N5",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N1",
+                "sala": "CA-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N2",
+                "sala": "CA-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Layana Christine De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP74C",
+        "nome": "Estudos Do Texto",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N2",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N3",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N4",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N5",
+                "sala": "CC-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Evandro De Melo Catelan"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LICP74E",
+        "nome": "Projeto Integrador: Tecnologia E Trabalho Docente",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 75,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N2",
+                "sala": "CE-305",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Simone Azevedo Floripi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP74F",
+        "nome": "Metodologia De Ensino De Língua Portuguesa",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "CE-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N4",
+                "sala": "CE-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N5",
+                "sala": "CE-304",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Simone Azevedo Floripi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP75A",
+        "nome": "Modernismos Brasileiros",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T3",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T4",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T5",
+                "sala": "CA-103",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Iamni Reche Bezerra"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP75B",
+        "nome": "Literatura Portuguesa Dos Séculos Xx E Xxi",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "CE-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T5",
+                "sala": "CE-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T2",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T3",
+                "sala": "CE-302",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marcelo Franz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LICP75C",
+        "nome": "Letramentos",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "CE-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T2",
+                "sala": "CE-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T3",
+                "sala": "CE-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T2",
+                "sala": "CE-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T3",
+                "sala": "CE-206",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Maria De Lourdes Rossi Remenche"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP75D",
+        "nome": "Estágio Curricular Obrigatório 1",
+        "creditos": 7,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M3",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M4",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T2",
+                "sala": "CC-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CC-206",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Nivea Rohling"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP75F",
+        "nome": "Metodologia De Ensino Literatura",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "CE-303",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T5",
+                "sala": "CE-303",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T6",
+                "sala": "CE-303",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Paulo Eduardo Benites De Moraes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP76A",
+        "nome": "Prática De Ensino Em Literatura Infantil E Juvenil",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 75,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "CE-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N2",
+                "sala": "CE-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N1",
+                "sala": "CE-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N2",
+                "sala": "CE-105",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Iamni Reche Bezerra"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP76B",
+        "nome": "Semântica E Pragmática",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "CA-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N2",
+                "sala": "CA-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N1",
+                "sala": "CA-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N2",
+                "sala": "CA-102",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Roberlei Alves Bertucci"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP76C",
+        "nome": "Prática De Ensino E Variação Linguística",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N2",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N3",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N4",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N5",
+                "sala": "CE-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Simone Azevedo Floripi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP76D",
+        "nome": "Estágio Curricular Obrigatório 2",
+        "creditos": 7,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 38,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M6",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M3",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M4",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N3",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N4",
+                "sala": "CC-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Paulo Eduardo Benites De Moraes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP76E",
+        "nome": "Projeto Integrador: Literatura E Intermidialidade",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 75,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "CE-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N4",
+                "sala": "CE-105",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rogerio Caetano De Almeida"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP76F",
+        "nome": "Projeto De Pesquisa Em Letras",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 49,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "CA-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N4",
+                "sala": "CA-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N3",
+                "sala": "CA-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N4",
+                "sala": "CA-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Roberlei Alves Bertucci"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP77A",
+        "nome": "Literatura Comparada",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "CE-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T3",
+                "sala": "CE-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T3",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T4",
+                "sala": "CE-305",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Naira De Almeida Nascimento"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LICP77B",
+        "nome": "Estudos De Discurso",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T3",
+                "sala": "CE-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T4",
+                "sala": "CE-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T4",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T5",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T6",
+                "sala": "CE-302",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Layana Christine De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP77C",
+        "nome": "História Das Ideias E Cultura Brasileira",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T4",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T1",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T2",
+                "sala": "CE-305",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Zama Caixeta Nascentes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP77D",
+        "nome": "Estágio Curricular Obrigatório 3",
+        "creditos": 7,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T5",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M3",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M4",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M5",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Andreia De Fatima Rutiquewiski Gomes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP77E",
+        "nome": "Projeto Integrador: Multimodalidade E Ensino Não-Presencial",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 75,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T2",
+                "sala": "CE-302",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Gustavo Nishida"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP78A",
+        "nome": "Prática De Ensino Em Revisão De Texto",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 75,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "CE-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N2",
+                "sala": "CE-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N3",
+                "sala": "CE-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N4",
+                "sala": "CE-104",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Paula Avila Nunes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP78B",
+        "nome": "Literatura Brasileira Contemporânea",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "CE-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N2",
+                "sala": "CE-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N3",
+                "sala": "CE-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N4",
+                "sala": "CE-304",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Naira De Almeida Nascimento"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LICP78C",
+        "nome": "Práticas De Pesquisa Em Letras",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 63,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M3",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M4",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Roberlei Alves Bertucci"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP78D",
+        "nome": "Estágio Curricular Obrigatório 4",
+        "creditos": 7,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N3",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N4",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M4",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M5",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Maria De Lourdes Rossi Remenche"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP7AE",
+        "nome": "Linguística Histórica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "CE-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N2",
+                "sala": "CE-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T6",
+                "sala": "CE-304",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Simone Azevedo Floripi"
+            ],
+            "optativa_matrizes": [
+              "Matriz:984"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LICP7AF",
+        "nome": "Tópicos Em Teoria",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N2",
+                "sala": "CA-101",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Paula Avila Nunes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:825",
+              "Matriz:984"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LICP7BC",
+        "nome": "Literatura E Outras Linguagens",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "CE-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N4",
+                "sala": "CE-304",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marcelo Franz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:984"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LICP7BG",
+        "nome": "Prosa Latino-Americana",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T5",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T6",
+                "sala": "CE-305",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Naira De Almeida Nascimento"
+            ],
+            "optativa_matrizes": [
+              "Matriz:825",
+              "Matriz:984"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

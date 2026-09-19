@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:29:55   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "curitiba",
+    "name": "Curitiba",
+    "code": "01"
+  },
+  "course": {
+    "id": "0036",
+    "name": "Francês",
+    "sourceName": "FRANCÊS"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=36"
+  },
+  "fingerprint": "377c4db212b48578b00f637cfd3b8742d496f2a610db29e93b86af3550c5b0b0",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "FRANCÊS",
+    "ultima_atualizacao": "19/09/2026 17:29:55   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [
+        {
+          "marcador": "*",
+          "sede": "Ecoville"
+        },
+        {
+          "marcador": "**",
+          "sede": "Neoville"
+        }
+      ],
+      "sede_sem_marcador": "Centro"
+    },
+    "disciplinas": [
+      {
+        "codigo": "CL21F",
+        "nome": "Francês 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TF1",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 30,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "CQ-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T3",
+                "sala": "CQ-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T2",
+                "sala": "CQ-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T3",
+                "sala": "CQ-304",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Maclovia Correa Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "TF2",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 30,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "CQ-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T5",
+                "sala": "CQ-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T4",
+                "sala": "CQ-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T5",
+                "sala": "CQ-304",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Maclovia Correa Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CL23F",
+        "nome": "Francês 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TF1",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 25,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "CE-S03",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T3",
+                "sala": "CE-S03",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T2",
+                "sala": "CE-S03",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T3",
+                "sala": "CE-S03",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Claudia Ozon Caldo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,5 +1,6 @@
 docs/
 scratch/
 node_modules/
+.local/
 test-results/
 playwright-report/

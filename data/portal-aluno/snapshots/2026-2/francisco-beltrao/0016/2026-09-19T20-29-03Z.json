@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:31:12   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "francisco-beltrao",
+    "name": "Francisco Beltrão",
+    "code": "11"
+  },
+  "course": {
+    "id": "0016",
+    "name": "Francês",
+    "sourceName": "FRANCÊS"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=16"
+  },
+  "fingerprint": "d4fe7750a19cdd7165ffe721fa658b3bfa62b33cfb204010235118fb61807dab",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "FRANCÊS",
+    "ultima_atualizacao": "19/09/2026 17:31:12   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "FRA01",
+        "nome": "Francês 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "FRA01",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "G102A",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "G102A",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "G102A",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "G102A",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Maria Helene Giovanetti Canteri"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FRA04",
+        "nome": "Francês 4",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "FRA04",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "G102A",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "G102A",
+                "sede": null
+              },
+              {
+                "horario": "5T1",
+                "sala": "G102A",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "G102A",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luciano Lucchetta"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FRA07",
+        "nome": "On Va Parler",
+        "creditos": 1,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "FRA07",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T5",
+                "sala": "G102A",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luciano Lucchetta"
+            ],
+            "optativa_matrizes": [
+              "Matriz:36"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

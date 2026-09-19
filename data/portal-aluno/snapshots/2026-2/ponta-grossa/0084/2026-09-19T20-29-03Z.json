@@ -1,0 +1,2654 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:32:28   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "ponta-grossa",
+    "name": "Ponta Grossa",
+    "code": "06"
+  },
+  "course": {
+    "id": "0084",
+    "name": "Ciências Biológicas",
+    "sourceName": "CIÊNCIAS BIOLÓGICAS"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=84"
+  },
+  "fingerprint": "271ea75523e73d72d5ceffb55a477ff5f6d97db08ec73607295d1f2c8b3ab7fd",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "CIÊNCIAS BIOLÓGICAS",
+    "ultima_atualizacao": "19/09/2026 17:32:28   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "CB03D",
+        "nome": "Genética De Populações",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPT",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "L003",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "L003",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "L003",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "L003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Viviane Demetrio Do Nascimento"
+            ],
+            "optativa_matrizes": [
+              "Matriz:830",
+              "Matriz:804"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CB04D",
+        "nome": "Linguagem E Docência",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPT",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "L103",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "L103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eloiza Aparecida Silva Avila De Matos"
+            ],
+            "optativa_matrizes": [
+              "Matriz:830",
+              "Matriz:804"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CB06P",
+        "nome": "Currículo E Formação De Professores De Ciências E Biologia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPT",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "L103",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "L103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diuliana Nadalon Pereira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:830"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CB07N",
+        "nome": "Biomonitoramento Ambiental",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPT",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "C015",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "C015",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "C015",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "C015",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Ferrari"
+            ],
+            "optativa_matrizes": [
+              "Matriz:830"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CB34H",
+        "nome": "Trabalho De Conclusão De Curso 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB41",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "L008",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "L008",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "L008",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "L008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gizele Iank Leite"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB36A",
+        "nome": "Trabalho De Conclusão De Curso 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "YYY",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Jacqueline Peixoto Neves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB51A",
+        "nome": "Projeto Interdisciplinar Em Tecnologias Sociais E Sustentáveis",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 75,
+        "turmas": [
+          {
+            "codigo": "CB11",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T2",
+                "sala": "L005",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "L005",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "L005",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "L005",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "L005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Natalia De Lima Bueno"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB51B",
+        "nome": "Sociologia Geral",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB11",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "L110",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "L110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Katya Cristina De Lima Picanco"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB51C",
+        "nome": "Arte, Ciência E Tecnologia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB11",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "L004",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "L004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Awdry Feisser Miquelin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB51D",
+        "nome": "Seminários 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB11",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "L001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diego Gomes Do Valle"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB51E",
+        "nome": "Microbiologia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB11A",
+            "enquadramento": "Presencial",
+            "vagas_total": 19,
+            "vagas_calouros": 12,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "L005",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "L005",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "C017",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "C017",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lorena Julia Gali Rodrigues"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "CB11B",
+            "enquadramento": "Presencial",
+            "vagas_total": 13,
+            "vagas_calouros": 12,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "L005",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "L005",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "C017",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "C017",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lorena Julia Gali Rodrigues"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB51F",
+        "nome": "História Da Biologia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB11",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "K107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Igor De Paiva Affonso"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB51G",
+        "nome": "Biologia Celular 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB11",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "L012",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "L012",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB51H",
+        "nome": "Fundamentos Da Matemática",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB11",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 49,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "L004",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "L004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cristiane Toniolo Dias"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB51I",
+        "nome": "Comunicação Linguística",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB11",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "L005",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Flavio Madalosso Vieira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB51J",
+        "nome": "Metodologia De Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB11",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "L004",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "L004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcia De Andrade Pereira Bernardinis"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB52A",
+        "nome": "Projeto Interdisciplinar Em Divulgação Científica",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 75,
+        "turmas": [
+          {
+            "codigo": "CB21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T2",
+                "sala": "L101",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "L101",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "L101",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "L101",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "L101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diuliana Nadalon Pereira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB52B",
+        "nome": "Fundamentos Filosóficos E Sociológicos Da Educação",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB21",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "L005",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "L005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Natalia De Lima Bueno"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB52C",
+        "nome": "Filosofia Geral",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB21",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "L101",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael De Araujo E Viana Leite"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB52D",
+        "nome": "Libras",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB21",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "L102",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "L102",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "L102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Andre Brito Coelho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB52E",
+        "nome": "Geologia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB21",
+            "enquadramento": "Presencial",
+            "vagas_total": 41,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "H104",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "H104",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "H104",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "LAPALEO",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jacqueline Peixoto Neves"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "CB21B",
+            "enquadramento": "Presencial",
+            "vagas_total": 41,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "H104",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "H104",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "H104",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "LAPALEO",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jacqueline Peixoto Neves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB52F",
+        "nome": "Botânica 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB21",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "L101",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "C017",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "C017",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "L101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Ferrari"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB52G",
+        "nome": "Laboratório De Química 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB21C",
+            "enquadramento": "Presencial",
+            "vagas_total": 19,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "H001",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "L101",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "L101",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "H001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cinthia Eloise Domingues"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "CB21D",
+            "enquadramento": "Presencial",
+            "vagas_total": 18,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "H001",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "L101",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "L101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cinthia Eloise Domingues"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB52H",
+        "nome": "Biologia Celular 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB21A",
+            "enquadramento": "Presencial",
+            "vagas_total": 18,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "C016",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "C016",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "L101",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "L101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "CB21B",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "C016",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "C016",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "L101",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "L101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB52I",
+        "nome": "Princípios Da Física",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB21",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "L101",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "L101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Carlos Alves Galvao"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB53A",
+        "nome": "Projeto Interdisciplinar Em Sustentabilidade",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 75,
+        "turmas": [
+          {
+            "codigo": "CB31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T2",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "L002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lia Maris Orth Ritter Antiqueira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB53B",
+        "nome": "História Da Educação",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB31",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "L005",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "L005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Natalia De Lima Bueno"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB53C",
+        "nome": "Educação, Ciência, Tecnologia, Sociedade E Ambiente",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB31",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "L004",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "L004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael De Araujo E Viana Leite"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB53D",
+        "nome": "Botânica 2",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB31",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "C017",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "C017",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "L003",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "L113",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L113",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L003",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "L113",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "L003",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "L113",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "L003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lorena Julia Gali Rodrigues"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB53E",
+        "nome": "Laboratório De Química 2",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB31",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "C212",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "C212",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "C212",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cinthia Eloise Domingues"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB53F",
+        "nome": "Laboratório De Física 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB31",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "K110",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "K110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gilvan Chaves Filho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB53G",
+        "nome": "Embriologia E Histologia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB31",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "L003",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "L003",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "L003",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "C015",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "C015",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "L003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Ferrari"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB54A",
+        "nome": "Projeto Interdisciplinar Em Alfabetização Científica E Tecnológica",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 75,
+        "turmas": [
+          {
+            "codigo": "CB41",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T2",
+                "sala": "L007",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "L007",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "L007",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "L007",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "L007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gizele Iank Leite"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB54B",
+        "nome": "Psicologia Da Educação",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB41",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "L104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Natalia De Lima Bueno"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB54C",
+        "nome": "Didática Para O Ensino De Ciências E Biologia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB41",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "L001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Awdry Feisser Miquelin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB54D",
+        "nome": "Zoologia 1",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB41A",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "C015",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "C015",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "L105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leticia Cuccolo Karling"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB54E",
+        "nome": "Botânica 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB41",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "C017",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "C017",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lorena Julia Gali Rodrigues"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB54F",
+        "nome": "Bioquímica Básica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB41",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "C212",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "C212",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "C016",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "C016",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB54G",
+        "nome": "Laboratório De Física 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB41",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "K107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Carlos Alves Galvao"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB55A",
+        "nome": "Projeto Interdisciplinar Em Tecnologia Da Informação E Comunicação",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 75,
+        "turmas": [
+          {
+            "codigo": "CB51",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T2",
+                "sala": "L006",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "L006",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "L006",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "L006",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "L006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Awdry Feisser Miquelin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB55B",
+        "nome": "Ensino De Ciências E Biologia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB51",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "L007",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "L007",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L007",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L007",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "L007",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "L007",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "L007",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "L007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elaine Ferreira Machado",
+              "Gizele Iank Leite"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB55C",
+        "nome": "Política Educacional E Gestão Da Educação Básica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB51",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "L104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gizele Iank Leite"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB55D",
+        "nome": "História E Cultura Afro Brasileira",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB51",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "L011",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "L011",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Katya Cristina De Lima Picanco"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB55E",
+        "nome": "Biofísica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB51",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "L110",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "L110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rozane De Fatima Turchiello Gomez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB55F",
+        "nome": "Zoologia 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB51",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "C015",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "C015",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Igor De Paiva Affonso"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB55G",
+        "nome": "Química Ambiental",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB51",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "L110",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "L110",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "L110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lorena Julia Gali Rodrigues"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB55H",
+        "nome": "Genética",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB51",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "L007",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "L007",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "L007",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "L007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Viviane Demetrio Do Nascimento"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB56A",
+        "nome": "Parasitologia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB61",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "K107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leticia Cuccolo Karling"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB56B",
+        "nome": "Paleontologia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB61",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "LAPALEO",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "LAPALEO",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "LAPALEO",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "LAPALEO",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jacqueline Peixoto Neves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB56C",
+        "nome": "Zoologia 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB61",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T2",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "L001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jacqueline Peixoto Neves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB56D",
+        "nome": "Evolução",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB61",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "L109",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "L109",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "L109",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "L109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Viviane Demetrio Do Nascimento"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB56E",
+        "nome": "Bioestatística",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB61",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "L106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Guatacara Dos Santos Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB56F",
+        "nome": "Ecologia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB61",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "L112",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L112",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "L112",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "L112",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Igor De Paiva Affonso"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB56G",
+        "nome": "Biologia De Campo",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB61",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "K107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leticia Cuccolo Karling",
+              "Igor De Paiva Affonso"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

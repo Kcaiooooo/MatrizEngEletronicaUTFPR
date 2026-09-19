@@ -1,0 +1,1360 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:31:34   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "londrina",
+    "name": "Londrina",
+    "code": "08"
+  },
+  "course": {
+    "id": "0044",
+    "name": "Sistemas De Informação",
+    "sourceName": "SISTEMAS DE INFORMAÇÃO"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=44"
+  },
+  "fingerprint": "454fe5a17c66cb2965ba6b92c81d344e1171688e92b1da24809862ef987ff3d3",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "SISTEMAS DE INFORMAÇÃO",
+    "ultima_atualizacao": "19/09/2026 17:31:34   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "CHS007",
+        "nome": "Estudos Étnicos E Raciais",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "K206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Di Flora Garcia"
+            ],
+            "optativa_matrizes": [
+              "Matriz:60"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CHS031",
+        "nome": "Inglês Instrumental",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI13",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 40,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Sistemas De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "K303",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "K303",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "K303",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "K303",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mirian Ruffini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CHS032",
+        "nome": "Interpretação E Produção De Textos Científicos E Profissionais",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI13",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 40,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Sistemas De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "K303",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "K303",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Givan Jose Ferreira Dos Santos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CHS05M",
+        "nome": "Libras 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ME41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T5",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "K305",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Antonio Alves"
+            ],
+            "optativa_matrizes": [
+              "Matriz:63"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CHS05T",
+        "nome": "Libras 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T5",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "B204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Antonio Alves"
+            ],
+            "optativa_matrizes": [
+              "Matriz:64"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CHS06P",
+        "nome": "Libras 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP23",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "K205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Antonio Alves"
+            ],
+            "optativa_matrizes": [
+              "Matriz:61"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CHS07T",
+        "nome": "Estudos Étnicos E Raciais",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM21",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T5",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "A106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Di Flora Garcia"
+            ],
+            "optativa_matrizes": [
+              "Matriz:64"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CHS09B",
+        "nome": "Estudos Sociais De Ciência E Tecnologia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI23",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Sistemas De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "K305",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Di Flora Garcia"
+            ],
+            "optativa_matrizes": [
+              "Matriz:72"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CHS09P",
+        "nome": "Estudos Sociais De Ciência E Tecnologia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP23",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "K205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alcioni Galdino Vieira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:61"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EEC008",
+        "nome": "Algoritmos E Lógica De Programação",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI13",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 40,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Sistemas De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "K109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mauricio Correia Lemes Neto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEC009",
+        "nome": "Fundamentos De Sistemas De Informação",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI13",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 40,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Sistemas De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "K109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Goncalves Pires"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEC010",
+        "nome": "Engenharia De Software",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI13",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 40,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Sistemas De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "K106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriana Herden"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEC011",
+        "nome": "Programação De Computadores 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI23",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Sistemas De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "T106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alessandro Botelho Bovo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEC012",
+        "nome": "Banco De Dados 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI23",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Sistemas De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "T106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eidy Leandro Tanaka Guandeline"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEC013",
+        "nome": "Análise Orientada A Objetos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI23",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Sistemas De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "K113",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriana Herden"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEC014",
+        "nome": "Estrutura De Dados 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI23",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Sistemas De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "K106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Henrique Yoshikazu Shishido"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEC015",
+        "nome": "Estruturas De Dados 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI33",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Sistemas De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "K102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Danilo Sipoli Sanches"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEC016",
+        "nome": "Programação Web Front-End",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI33",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Sistemas De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "K106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Willian Massami Watanabe"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEC017",
+        "nome": "Interação Humano-Computador",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 30,
+        "turmas": [
+          {
+            "codigo": "SI33",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Sistemas De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "K102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriana Herden"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEC018",
+        "nome": "Banco De Dados 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI33",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Sistemas De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "K102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eidy Leandro Tanaka Guandeline"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEC019",
+        "nome": "Programação Orientada A Objetos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI33",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Sistemas De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "K106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernando Henrique Campos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEC020",
+        "nome": "Arquitetura De Software",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI43",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Sistemas De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "K102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Goncalves Pires"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEC021",
+        "nome": "Programação Web Back-End",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI43",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Sistemas De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "K113",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Willian Massami Watanabe"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEC022",
+        "nome": "Projeto Integrador 1",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 90,
+        "turmas": [
+          {
+            "codigo": "SI43",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Sistemas De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "K113",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Danilo Sipoli Sanches"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEC023",
+        "nome": "Redes De Computadores",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI43",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Sistemas De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "K109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Henrique Yoshikazu Shishido"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENP05B",
+        "nome": "Desenvolvimento De Novos Negócios",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI33",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Sistemas De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "K305",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Alberto Ribas"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENP46B",
+        "nome": "Gestão De Serviços",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI43",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Sistemas De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "K308",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "K308",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raul Hidetoci Mioshi Junior"
+            ],
+            "optativa_matrizes": [
+              "Matriz:72"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MAT023",
+        "nome": "Matemática Discreta",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI23",
+            "enquadramento": "Presencial",
+            "vagas_total": 37,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Sistemas De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "K308",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "K308",
+                "sede": null
+              },
+              {
+                "horario": "3N1",
+                "sala": "K308",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "K308",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alireza Mohebi Ashtiani"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT03B",
+        "nome": "Probabilidade E Estatística",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI33",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Sistemas De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "K210",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "K210",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "K210",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "K211",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joelmir Andre Borssoi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "OPSI18",
+        "nome": "Redes Neurais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI43",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Sistemas De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "K113",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Silvio Ricardo Rodrigues Sanches"
+            ],
+            "optativa_matrizes": [
+              "Matriz:72"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

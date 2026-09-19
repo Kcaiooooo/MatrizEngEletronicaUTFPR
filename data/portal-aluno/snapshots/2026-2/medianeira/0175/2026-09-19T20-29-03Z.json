@@ -1,0 +1,2941 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:31:42   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "medianeira",
+    "name": "Medianeira",
+    "code": "04"
+  },
+  "course": {
+    "id": "0175",
+    "name": "Tecnol.Manut.Indl.",
+    "sourceName": "TECNOL.MANUT.INDL."
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=175"
+  },
+  "fingerprint": "3992d14ac90079a4ddfbcd379138373d270def9f3d3a35126c20801e87e936dc",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "TECNOL.MANUT.INDL.",
+    "ultima_atualizacao": "19/09/2026 17:31:42   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "COM1001",
+        "nome": "Informática Instrumental",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AGR1",
+            "enquadramento": "Presencial",
+            "vagas_total": 38,
+            "vagas_calouros": 34,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Gestão Do Agronegócio"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "L12A",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "L12A",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diego Venancio Thomaz"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "AMB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 40,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "L12A",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "L12A",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diego Venancio Thomaz"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "ELE1",
+            "enquadramento": "Presencial",
+            "vagas_total": 53,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "L12A",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "L12A",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cesar Alfredo Cardoso"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP1",
+            "enquadramento": "Presencial",
+            "vagas_total": 49,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng.Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "I21",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "I21",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diego Venancio Thomaz"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "TAL1",
+            "enquadramento": "Presencial",
+            "vagas_total": 4,
+            "vagas_calouros": 4,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol Em Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "L18",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "L18",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcos Ricardo Muller"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "TMI1",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ],
+              [
+                "Tecnol Em Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "L12A",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "L12A",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cesar Alfredo Cardoso"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELE1043",
+        "nome": "Segurança No Trabalho E Meio Ambiente",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI1",
+            "enquadramento": "Presencial",
+            "vagas_total": 48,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl.",
+                "Química Industrial"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "I16",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "I16",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Yuri Ferruzzi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELE1044",
+        "nome": "Eletricidade",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI2",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "J43",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "J43",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "J43",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "J43",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "J43",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Edson Andreoli"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELE1045",
+        "nome": "Instrumentos E Medidas",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI2",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "J49",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "J49",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "J49",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Katiani Pereira Da Conceicao"
+            ],
+            "optativa_matrizes": [
+              "Matriz:653"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ELE1046",
+        "nome": "Instalações Elétricas Prediais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI2",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "J27",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "J27",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "J27",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "J27",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Yuri Ferruzzi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELE1047",
+        "nome": "Análise De Projetos Elétricos Prediais",
+        "creditos": 3,
+        "creditos_assincronos": 3,
+        "horas_extensionistas": 90,
+        "turmas": [
+          {
+            "codigo": "TMI3",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "J43",
+                "sede": null
+              },
+              {
+                "horario": "3N1",
+                "sala": "J47",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "J47",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Katiani Pereira Da Conceicao"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELE1048",
+        "nome": "Máquinas Elétricas",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI3",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "J28",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "J28",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "J28",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "J28",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "J28",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcos Fischborn"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELE1049",
+        "nome": "Eletrônica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI3",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "J49",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "J49",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "J47",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "J47",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alexandre Victor Casella"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELE1050",
+        "nome": "Acionamentos De Máquinas",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI4",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "J43",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "J43",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "J43",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "J43",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "J43",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Amauri Massochin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELE1051",
+        "nome": "Eletrônica Industrial",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI4",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "J47",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "J47",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "J47",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "J47",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Filipe Marangoni"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELE1052",
+        "nome": "Elementos De Eletrônica Digital",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI4",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ],
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "J41",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "J41",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "J41",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "J41",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cristiane Lionco De Oliveira",
+              "Thiago Naufal Santelo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELE1053",
+        "nome": "Análise De Projetos Elétricos Industriais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI5",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "I21",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "I21",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "I21",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ismael Burgardt"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELE1054",
+        "nome": "Acionamentos Industriais Por Clp",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 6,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Giovano Mayer"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "TMI5",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "J44",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "J44",
+                "sede": null
+              },
+              {
+                "horario": "3N1",
+                "sala": "J44",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "J44",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "J44",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Giovano Mayer"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELE1055",
+        "nome": "Manutenção Eletrônica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI5",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "J41",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "J41",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "J41",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alberto Noboru Miyadaira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELE1056",
+        "nome": "Manutenção De Instalações Elétricas Prediais E Industriais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI6",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "J47",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "J47",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "J47",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ismael Burgardt"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELE1057",
+        "nome": "Gerenciamento E Conservação De Energia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI6",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "J44",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "J44",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "J44",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Edson Andreoli"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS1006",
+        "nome": "Física",
+        "creditos": 3,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI1",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "I16",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "I16",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "I16",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo Augusto Mascarello Gotardo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HLA1001",
+        "nome": "Leitura E Escrita Acadêmica",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AGR1",
+            "enquadramento": "Presencial",
+            "vagas_total": 34,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Gestão Do Agronegócio"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "I12",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "I12",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Silvana Mendonca Lopes Valentin"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "AMB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 34,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "I11",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "I11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jacqueline Lidiane De Souza"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "CC5",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "J47",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "J47",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Claudimara Cassoli Bortoloto"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "ELE1",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "I11",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "I11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Dayse Grassi Bernardon"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP1",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng.Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "I11",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "I11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Dayse Grassi Bernardon"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "TAL1",
+            "enquadramento": "Presencial",
+            "vagas_total": 36,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol Em Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "J47",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "J47",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Claudimara Cassoli Bortoloto"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "TMI1",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "I16",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "I16",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Silvana Mendonca Lopes Valentin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HLA1004",
+        "nome": "Libras 1",
+        "creditos": 1,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPTAHUMAN",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "I11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Dayse Grassi Bernardon"
+            ],
+            "optativa_matrizes": [
+              "Matriz:665",
+              "Matriz:655",
+              "Matriz:653",
+              "Matriz:656",
+              "Matriz:660",
+              "Matriz:654",
+              "Matriz:659",
+              "Matriz:658"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HLA1005",
+        "nome": "Sociologia",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP3",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Eng.Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "L23",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "L23",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Claudimara Cassoli Bortoloto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:665",
+              "Matriz:655",
+              "Matriz:656",
+              "Matriz:660",
+              "Matriz:657",
+              "Matriz:654",
+              "Matriz:659",
+              "Matriz:658",
+              "Matriz:662"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HLA1006",
+        "nome": "Filosofia",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AMB6",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "H35",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "H35",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lairton Moacir Winter"
+            ],
+            "optativa_matrizes": [
+              "Matriz:665",
+              "Matriz:655",
+              "Matriz:659",
+              "Matriz:658"
+            ]
+          },
+          {
+            "codigo": "CC1",
+            "enquadramento": "Presencial",
+            "vagas_total": 51,
+            "vagas_calouros": 41,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "L21",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "L21",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lairton Moacir Winter"
+            ],
+            "optativa_matrizes": [
+              "Matriz:665",
+              "Matriz:655",
+              "Matriz:659",
+              "Matriz:658"
+            ]
+          },
+          {
+            "codigo": "ELE2",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "L21",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "L21",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lairton Moacir Winter"
+            ],
+            "optativa_matrizes": [
+              "Matriz:665",
+              "Matriz:655",
+              "Matriz:659",
+              "Matriz:658"
+            ]
+          },
+          {
+            "codigo": "EP4",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng.Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "L21",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "L21",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lairton Moacir Winter"
+            ],
+            "optativa_matrizes": [
+              "Matriz:665",
+              "Matriz:655",
+              "Matriz:659",
+              "Matriz:658"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HLA1007",
+        "nome": "Psicologia E Desenvolvimento Humano",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPHUMCC",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "H37",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "H37",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Shiderlene Vieira De Almeida Araujo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:665",
+              "Matriz:655",
+              "Matriz:653",
+              "Matriz:656",
+              "Matriz:660",
+              "Matriz:657",
+              "Matriz:654",
+              "Matriz:659",
+              "Matriz:658",
+              "Matriz:662"
+            ]
+          },
+          {
+            "codigo": "TMI5OP",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "I16",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "I16",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Shiderlene Vieira De Almeida Araujo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:665",
+              "Matriz:655",
+              "Matriz:653",
+              "Matriz:656",
+              "Matriz:660",
+              "Matriz:657",
+              "Matriz:654",
+              "Matriz:659",
+              "Matriz:658",
+              "Matriz:662"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HLA1008",
+        "nome": "Inglês Básico 1",
+        "creditos": 3,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPTAH",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "H34",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "H34",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "H34",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joice Maria Maltauro Juliano"
+            ],
+            "optativa_matrizes": [
+              "Matriz:665",
+              "Matriz:655",
+              "Matriz:653",
+              "Matriz:656",
+              "Matriz:660",
+              "Matriz:657",
+              "Matriz:654",
+              "Matriz:659",
+              "Matriz:658",
+              "Matriz:662"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HLA1015",
+        "nome": "Introdução À Língua Brasileira De Sinais",
+        "creditos": 1,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "BQLQ4",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc.Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "H38",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Silvana Mendonca Lopes Valentin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HLA1017",
+        "nome": "Noções Linguísticas E Culturais Da Língua Brasileira De Sinais",
+        "creditos": 1,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "LQ5",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol Em Alimentos",
+                "Licenc.Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "I43",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Silvana Mendonca Lopes Valentin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT1001",
+        "nome": "Fundamentos De Matemática",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AMB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "L21",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "L21",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "L21",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "L21",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vanessa Hlenka"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "CC1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "I26",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "I26",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "I26",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "I26",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jairo Marlon Correa"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "ELE1",
+            "enquadramento": "Presencial",
+            "vagas_total": 64,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "L22",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "L22",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "L22",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "L22",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Priscila Pigatto Gasparin"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP1",
+            "enquadramento": "Presencial",
+            "vagas_total": 14,
+            "vagas_calouros": 14,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng.Produção",
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "L41",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "L41",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "L41",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "L41",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tatiane Tambarussi Thomaz"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "TMI1",
+            "enquadramento": "Presencial",
+            "vagas_total": 27,
+            "vagas_calouros": 27,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl.",
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "L42",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "L42",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "L42",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "L42",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cleverson Goncalves Dos Santos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT1010",
+        "nome": "Estatística",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI2",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "I26",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "I26",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "I26",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vanessa Hlenka"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MEC1008",
+        "nome": "Desenho Técnico",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI1",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "I25",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "I25",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "I25",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Cesar Tonin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MEC1009",
+        "nome": "Introdução À Manutenção Industrial",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI1",
+            "enquadramento": "Presencial",
+            "vagas_total": 34,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "J35",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "J35",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Igor Fernando Basso"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MEC1010",
+        "nome": "Tecnologia Dos Materiais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI1",
+            "enquadramento": "Presencial",
+            "vagas_total": 34,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "J21",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "J21",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "J21",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Igor Seicho Kiyomura"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MEC1011",
+        "nome": "Resistência Dos Materiais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI2",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "J21",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "J21",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "J21",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marlos Wander Grigoleto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:662"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MEC1012",
+        "nome": "Desenho Mecânico Em Cad 3d",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI2",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "J22",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "J22",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "J22",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Cesar Tonin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MEC1013",
+        "nome": "Laboratório De Processos Mecânicos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI3",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "J25",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "J25",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "J25",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ivair Marchetti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MEC1014",
+        "nome": "Elementos De Máquinas",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI3",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "J27",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "J27",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "J27",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Igor Seicho Kiyomura"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MEC1015",
+        "nome": "Bombas E Tubulações",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI3",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "J35",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "J35",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "J35",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago Destri Cabral"
+            ],
+            "optativa_matrizes": [
+              "Matriz:653"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MEC1017",
+        "nome": "Sistemas De Manutenção",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI4",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "J21",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "J21",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "J21",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marlos Wander Grigoleto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:653"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MEC1018",
+        "nome": "Ensaios Destrutivos E Não Destrutivos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI4",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "J21",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "J21",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "J21",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marlos Wander Grigoleto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MEC1019",
+        "nome": "Geração E Distribuição De Vapor",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI4",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "J42",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "J42",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "J42",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Dirceu De Melo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:660"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MEC1020",
+        "nome": "Lubrificação",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI5",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "J21",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "J21",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Anderson Miguel Lenz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MEC1021",
+        "nome": "Manutenção Preditiva",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI5",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "J21",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "J21",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "J24",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "J24",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Igor Fernando Basso"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MEC1022",
+        "nome": "Processos De Fabricação Mecânica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI5",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "J25",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "J25",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "J25",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ivair Marchetti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MEC1023",
+        "nome": "Manutenção Em Sistemas De Refrigeração E Ar Condicionado",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI5",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N3",
+                "sala": "J35",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "J35",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "J35",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Anderson Miguel Lenz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MEC1024",
+        "nome": "Manutenção Industrial",
+        "creditos": 4,
+        "creditos_assincronos": 3,
+        "horas_extensionistas": 105,
+        "turmas": [
+          {
+            "codigo": "TMI6",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "J22",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "J22",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "J22",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "J22",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Anderson Miguel Lenz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MEC1025",
+        "nome": "Sistemas Hidráulicos E Pneumáticos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI6",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "J42",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "J42",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "J42",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "J42",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Dirceu De Melo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MEC1026",
+        "nome": "Usinagem Por Cnc",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI6",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "J25B",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "J25B",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "J25B",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ivair Marchetti",
+              "Igor Fernando Basso"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MEC1027",
+        "nome": "Análise De Falhas Mecânicas",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI6",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "J21",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "J21",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Anderson Miguel Lenz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MEC1028",
+        "nome": "Soldagem Para Manutenção",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI6",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N3",
+                "sala": "J25",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "J25",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "J25",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ivair Marchetti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MEC1030",
+        "nome": "Desenho De Montagem E Detalhamento Mecânico",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI6",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "J22",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "J22",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "J22",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Cesar Tonin"
+            ],
+            "optativa_matrizes": [
+              "Matriz:659"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "PRO1003",
+        "nome": "Projetos Inovadores Aplicados",
+        "creditos": 2,
+        "creditos_assincronos": 6,
+        "horas_extensionistas": 120,
+        "turmas": [
+          {
+            "codigo": "MEIU1",
+            "enquadramento": "Presencial",
+            "vagas_total": 0,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Eng.Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T3",
+                "sala": "A301",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "A301",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Reginaldo Borges",
+              "Elias Lira Dos Santos Junior"
+            ],
+            "optativa_matrizes": [
+              "Matriz:659",
+              "Matriz:665",
+              "Matriz:655",
+              "Matriz:653",
+              "Matriz:656",
+              "Matriz:660",
+              "Matriz:654",
+              "Matriz:658",
+              "Matriz:662"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "PRO1016",
+        "nome": "Gestão Da Qualidade Na Manutenção",
+        "creditos": 3,
+        "creditos_assincronos": 3,
+        "horas_extensionistas": 90,
+        "turmas": [
+          {
+            "codigo": "TMI4",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "H610",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "H610",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "H610",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Laercio Wrasse"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PRO1053",
+        "nome": "Administração",
+        "creditos": 3,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TECNOLOG",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol Em Alimentos",
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "H610",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "H610",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "H610",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Neron Alipio Cortes Berghauser"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PRO1054",
+        "nome": "Empreendedorismo",
+        "creditos": 3,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TECNOLOG",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol Em Alimentos",
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N3",
+                "sala": "H611",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "H611",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "H611",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Neron Alipio Cortes Berghauser"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI1055",
+        "nome": "Química Aplicada À Manutenção Industrial",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TMI1",
+            "enquadramento": "Presencial",
+            "vagas_total": 34,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "I16",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "I16",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "I16",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Suelen Specht Calegaro Milioli"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

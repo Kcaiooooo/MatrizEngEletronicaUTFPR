@@ -1,0 +1,3816 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:29:52   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "curitiba",
+    "name": "Curitiba",
+    "code": "01"
+  },
+  "course": {
+    "id": "0006",
+    "name": "Eng. Prod. Civil",
+    "sourceName": "ENG. PROD. CIVIL"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=6"
+  },
+  "fingerprint": "d8540463eb6905661049f7f1503b169f3fd31aad89286c262aa8abc1b4d7b0e6",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "ENG. PROD. CIVIL",
+    "ultima_atualizacao": "19/09/2026 17:29:52   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [
+        {
+          "marcador": "*",
+          "sede": "Ecoville"
+        },
+        {
+          "marcador": "**",
+          "sede": "Neoville"
+        }
+      ],
+      "sede_sem_marcador": "Centro"
+    },
+    "disciplinas": [
+      {
+        "codigo": "COE70A",
+        "nome": "Comunicação Oral E Escrita",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "E11",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ],
+              [
+                "Eng De Computação",
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N2",
+                "sala": "CE-108",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Jamea Cristina Batista Silva Franklin"
+            ],
+            "optativa_matrizes": [
+              "Matriz:995",
+              "Matriz:983",
+              "Matriz:981",
+              "Matriz:985",
+              "Matriz:959",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974"
+            ]
+          },
+          {
+            "codigo": "S21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "CE-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N3",
+                "sala": "CE-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Lucas Roecker Lazarin"
+            ],
+            "optativa_matrizes": [
+              "Matriz:995",
+              "Matriz:983",
+              "Matriz:981",
+              "Matriz:985",
+              "Matriz:959",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974"
+            ]
+          },
+          {
+            "codigo": "S23",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M5",
+                "sala": "CE-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M6",
+                "sala": "CE-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Denise Regina Stacheski"
+            ],
+            "optativa_matrizes": [
+              "Matriz:995",
+              "Matriz:983",
+              "Matriz:981",
+              "Matriz:985",
+              "Matriz:959",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974"
+            ]
+          },
+          {
+            "codigo": "S25",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Contr/Automação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "CC-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M4",
+                "sala": "CC-206",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Gabriella Hauber Pimentel"
+            ],
+            "optativa_matrizes": [
+              "Matriz:995",
+              "Matriz:983",
+              "Matriz:981",
+              "Matriz:985",
+              "Matriz:959",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974"
+            ]
+          },
+          {
+            "codigo": "S55",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "CA-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M4",
+                "sala": "CA-102",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Cora Catalina Gaete Quinteros"
+            ],
+            "optativa_matrizes": [
+              "Matriz:995",
+              "Matriz:983",
+              "Matriz:981",
+              "Matriz:985",
+              "Matriz:959",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ED70U",
+        "nome": "Libras B",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S83",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática"
+              ],
+              [
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "CE-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CE-102",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rita De Cassia Maestri"
+            ],
+            "optativa_matrizes": [
+              "Matriz:547",
+              "Matriz:906",
+              "Matriz:867",
+              "Matriz:844",
+              "Matriz:616",
+              "Matriz:678",
+              "Matriz:919",
+              "Matriz:843"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EDU70J",
+        "nome": "Libras",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Química",
+                "Téc.Em Multimeios Buti",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "CE-306",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T5",
+                "sala": "CE-306",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T6",
+                "sala": "CE-306",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Leticia Fernandes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T2",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CE-305",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rita De Cassia Maestri"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S03",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "CQ-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T5",
+                "sala": "CQ-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T6",
+                "sala": "CQ-305",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Leticia Fernandes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S04",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "CE-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M3",
+                "sala": "CE-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M4",
+                "sala": "CE-104",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rita De Cassia Maestri"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S81",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Fisica 9"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "CE-303",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T5",
+                "sala": "CE-303",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T6",
+                "sala": "CE-303",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Leticia Fernandes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S83",
+            "enquadramento": "Presencial",
+            "vagas_total": 31,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática"
+              ],
+              [
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "CA-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CA-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CA-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Silvia Andreis Witkoski"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "CE-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CE-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M6",
+                "sala": "CE-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Silvia Andreis Witkoski"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EST70B",
+        "nome": "Noções De Estatística",
+        "creditos": 0,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "EaD",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Wesley Bertoli Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S53",
+            "enquadramento": "EaD",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Wesley Bertoli Da Silva",
+              "Angelica Maria Tortola Ribeiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS7E1",
+        "nome": "Física Experimental 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S11",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "CN-137",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T6",
+                "sala": "CN-137",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Cristovao Renato Morais Rincoski"
+            ],
+            "optativa_matrizes": [
+              "Matriz:920",
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S12",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "CN-137",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T5",
+                "sala": "CN-137",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Frieda Saicla Barros"
+            ],
+            "optativa_matrizes": [
+              "Matriz:920",
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S15",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "CN-137",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M4",
+                "sala": "CN-137",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Ricardo Fernandes Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:920",
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S16",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T3",
+                "sala": "CN-137",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T4",
+                "sala": "CN-137",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Cristovao Renato Morais Rincoski"
+            ],
+            "optativa_matrizes": [
+              "Matriz:920",
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S21",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T5",
+                "sala": "CN-137",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T6",
+                "sala": "CN-137",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Ricardo Fernandes Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:920",
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S23",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "CN-137",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CN-137",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Frieda Saicla Barros"
+            ],
+            "optativa_matrizes": [
+              "Matriz:920",
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S24",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M5",
+                "sala": "CN-137",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M6",
+                "sala": "CN-137",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Pedro Zambianchi Junior"
+            ],
+            "optativa_matrizes": [
+              "Matriz:920",
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S25",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Contr/Automação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "CN-137",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M4",
+                "sala": "CN-137",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Cristovao Renato Morais Rincoski"
+            ],
+            "optativa_matrizes": [
+              "Matriz:920",
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S26",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Contr/Automação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M5",
+                "sala": "CN-137",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M6",
+                "sala": "CN-137",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Cristovao Renato Morais Rincoski"
+            ],
+            "optativa_matrizes": [
+              "Matriz:920",
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S41",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "EK-020",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T2",
+                "sala": "EK-020",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Marcia Muller"
+            ],
+            "optativa_matrizes": [
+              "Matriz:920",
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S42",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T5",
+                "sala": "EK-020",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T6",
+                "sala": "EK-020",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Marcia Muller"
+            ],
+            "optativa_matrizes": [
+              "Matriz:920",
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S43",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "EK-020",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T4",
+                "sala": "EK-020",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Jose Luis Fabris"
+            ],
+            "optativa_matrizes": [
+              "Matriz:920",
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S44",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "EK-020",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T4",
+                "sala": "EK-020",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Marcia Muller"
+            ],
+            "optativa_matrizes": [
+              "Matriz:920",
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S51",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "CN-137",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T2",
+                "sala": "CN-137",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Frieda Saicla Barros"
+            ],
+            "optativa_matrizes": [
+              "Matriz:920",
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S52",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T1",
+                "sala": "CN-137",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T2",
+                "sala": "CN-137",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Cristovao Renato Morais Rincoski"
+            ],
+            "optativa_matrizes": [
+              "Matriz:920",
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S55",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M5",
+                "sala": "CN-137",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M6",
+                "sala": "CN-137",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Walmor Cardoso Godoi"
+            ],
+            "optativa_matrizes": [
+              "Matriz:920",
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S71",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "CN-137",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T2",
+                "sala": "CN-137",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Cristovao Renato Morais Rincoski"
+            ],
+            "optativa_matrizes": [
+              "Matriz:920",
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S72",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "CN-137",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T2",
+                "sala": "CN-137",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Ricardo Fernandes Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:920",
+              "Matriz:959"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FIS7F1",
+        "nome": "Física Teórica 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "EB-202",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4T2",
+                "sala": "EB-202",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "6T5",
+                "sala": "EB-202",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "6T6",
+                "sala": "EB-202",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Fabiano Moreno Peres"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "CE-207",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M3",
+                "sala": "CE-207",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M2",
+                "sala": "CE-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M3",
+                "sala": "CE-101",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Joao Victor Zamperlini Dos Santos"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S03",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "CA-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T3",
+                "sala": "CA-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T1",
+                "sala": "CN-022",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T2",
+                "sala": "CN-022",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Keli Fabiana Seidel"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S11",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "CN-022",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N3",
+                "sala": "CN-022",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T4",
+                "sala": "CA-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T5",
+                "sala": "CA-301",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Joao Victor Zamperlini Dos Santos"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S15",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T4",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T3",
+                "sala": "CA-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T4",
+                "sala": "CA-301",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Cristhiane Goncalves"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S21",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "CN-022",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T6",
+                "sala": "CN-022",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N1",
+                "sala": "CA-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T6",
+                "sala": "CA-301",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Joao Victor Zamperlini Dos Santos"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S23",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "CE-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CE-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M3",
+                "sala": "CN-022",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M4",
+                "sala": "CN-022",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Keli Fabiana Seidel"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S25",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Contr/Automação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "CE-201",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CE-201",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M3",
+                "sala": "CN-022",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M4",
+                "sala": "CN-022",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Cristhiane Goncalves"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S51",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T5",
+                "sala": "EL-103",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4T6",
+                "sala": "EL-103",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "6T1",
+                "sala": "EL-102",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "6T2",
+                "sala": "EL-102",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Fabiano Moreno Peres"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S55",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "EK-105",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4T4",
+                "sala": "EK-105",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "6T3",
+                "sala": "EL-208",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "6T4",
+                "sala": "EL-208",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Fabiano Moreno Peres"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S67",
+            "enquadramento": "Presencial",
+            "vagas_total": 61,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química",
+                "Lic Química",
+                "Química Ambiental"
+              ],
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "EC-205",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3N2",
+                "sala": "EC-205",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5N1",
+                "sala": "EC-205",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5N2",
+                "sala": "EC-205",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Rita Zanlorensi Visneck Costa"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FIS7F2",
+        "nome": "Física Teórica 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "CE-308",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M5",
+                "sala": "CE-308",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M4",
+                "sala": "CE-307",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M5",
+                "sala": "CE-307",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Joao Victor Zamperlini Dos Santos"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "EB-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T4",
+                "sala": "EB-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4T3",
+                "sala": "EB-210",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4T4",
+                "sala": "EB-210",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Bergerson Van Hallen Vieira Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S11",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "CC-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T3",
+                "sala": "CC-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T5",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T6",
+                "sala": "CA-103",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marcos Brown Goncalves"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S15",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "CA-004",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T2",
+                "sala": "CA-004",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CA-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T4",
+                "sala": "CA-301",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Diogenes Borges Vasconcelos"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T6",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T5",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T6",
+                "sala": "CA-101",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Sara Rachel Orsi Moretto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S23",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "CC-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M4",
+                "sala": "CC-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M3",
+                "sala": "CE-308",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CE-308",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marcos Brown Goncalves"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S25",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Contr/Automação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "CQ-009B",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T3",
+                "sala": "CQ-009B",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T2",
+                "sala": "CQ-009B",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T3",
+                "sala": "CQ-009B",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Sara Rachel Orsi Moretto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T5",
+                "sala": "EL-103",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3T6",
+                "sala": "EL-103",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5T5",
+                "sala": "EL-103",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5T6",
+                "sala": "EL-103",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Bergerson Van Hallen Vieira Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S43",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "EL-103",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3T3",
+                "sala": "EL-103",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5T2",
+                "sala": "EL-103",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5T3",
+                "sala": "EL-103",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Bergerson Van Hallen Vieira Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S45",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Da Produção"
+              ],
+              [
+                "Eng Mecânica",
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T5",
+                "sala": "EL-104",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T6",
+                "sala": "EL-104",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4T5",
+                "sala": "EL-101",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4T6",
+                "sala": "EL-101",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Emilson Ribeiro Viana Junior"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S51",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "CC-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T4",
+                "sala": "CC-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T3",
+                "sala": "CA-004",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T4",
+                "sala": "CA-004",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Ricardo Fernandes Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S55",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "CA-004",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T3",
+                "sala": "CA-004",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T2",
+                "sala": "CA-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T3",
+                "sala": "CA-301",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marcos Brown Goncalves"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S67",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química",
+                "Lic Química",
+                "Química Ambiental"
+              ],
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "EL-103",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2N2",
+                "sala": "EL-103",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4N1",
+                "sala": "EL-103",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4N2",
+                "sala": "EL-103",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Emilson Ribeiro Viana Junior"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S71",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "CN-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CN-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M4",
+                "sala": "CN-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M5",
+                "sala": "CN-104",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rafael Carvalho Barreto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FIS7F3",
+        "nome": "Física Teórica 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S41",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "EL-102",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T4",
+                "sala": "EL-102",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4T3",
+                "sala": "EL-102",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4T4",
+                "sala": "EL-102",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Luciana Rocha Hirsch"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S43",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "EL-102",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T2",
+                "sala": "EL-102",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4T1",
+                "sala": "EL-102",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4T2",
+                "sala": "EL-102",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Bergerson Van Hallen Vieira Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S45",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Da Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "EL-102",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T4",
+                "sala": "EL-102",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4T3",
+                "sala": "EL-102",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4T4",
+                "sala": "EL-102",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Luciana Rocha Hirsch"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "EB-308",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T6",
+                "sala": "EB-308",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4N1",
+                "sala": "EB-301",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4T6",
+                "sala": "EB-301",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Luciana Rocha Hirsch"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S67",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química",
+                "Eng Amb/Sanitária",
+                "Química Ambiental"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "EL-103",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2N4",
+                "sala": "EL-103",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4N3",
+                "sala": "EL-103",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4N4",
+                "sala": "EL-103",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Luciana Rocha Hirsch"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S71",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "CN-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M3",
+                "sala": "CN-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M2",
+                "sala": "CN-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M3",
+                "sala": "CN-104",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rafael Carvalho Barreto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GE70H",
+        "nome": "Gestão Financeira",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S71",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ],
+              [
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "CA-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M5",
+                "sala": "CA-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Armando Rasoto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:708",
+              "Matriz:709"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MAT7AL",
+        "nome": "Álgebra Linear",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "CE-307",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T5",
+                "sala": "CE-307",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N2",
+                "sala": "CE-307",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N3",
+                "sala": "CE-307",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Willian Goulart Gomes Velasco"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S11",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "CE-208",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T5",
+                "sala": "CE-208",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N2",
+                "sala": "CE-308",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N3",
+                "sala": "CE-308",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Kennedy Martins Pedroso"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S15",
+            "enquadramento": "Presencial",
+            "vagas_total": 61,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "CE-208",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T4",
+                "sala": "CE-208",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T1",
+                "sala": "CE-208",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T2",
+                "sala": "CE-208",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Patricia Sanez Pacheco"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S23",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "CE-308",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M2",
+                "sala": "CE-308",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T2",
+                "sala": "CE-307",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T3",
+                "sala": "CE-307",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Kennedy Martins Pedroso"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S43",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "EK-307",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2M3",
+                "sala": "EK-307",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5M2",
+                "sala": "EK-307",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5M3",
+                "sala": "EK-307",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Paula Olga Gneri"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S51",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "EK-307",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T2",
+                "sala": "EK-307",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4T1",
+                "sala": "EK-307",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4T2",
+                "sala": "EK-307",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Mari Sano"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S73",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sist De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T5",
+                "sala": "CE-308",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T6",
+                "sala": "CE-308",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T4",
+                "sala": "CE-208",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T5",
+                "sala": "CE-208",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Patricia Sanez Pacheco"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT7C1",
+        "nome": "Cálculo Diferencial E Integral 1",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S11",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T3",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T4",
+                "sala": "CE-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T5",
+                "sala": "CE-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T2",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T3",
+                "sala": "CE-108",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Priscila Savulski Ferreira De Miranda"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S15",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T5",
+                "sala": "CE-208",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T6",
+                "sala": "CE-208",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T5",
+                "sala": "CE-201",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T6",
+                "sala": "CE-201",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T5",
+                "sala": "CE-308",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T6",
+                "sala": "CE-308",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Christian Manuel Surco Chuno"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S21",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "CE-307",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N5",
+                "sala": "CE-307",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N4",
+                "sala": "CE-207",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N5",
+                "sala": "CE-207",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N2",
+                "sala": "CE-207",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N3",
+                "sala": "CE-207",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Andres David Baez Sanchez"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S23",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "CE-107",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M4",
+                "sala": "CE-107",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T2",
+                "sala": "CE-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CE-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M5",
+                "sala": "CE-308",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M6",
+                "sala": "CE-308",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Francismar Ferreira Lima"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S25",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Contr/Automação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M5",
+                "sala": "CE-308",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M6",
+                "sala": "CE-308",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M6",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M4",
+                "sala": "CE-308",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CE-308",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Francismar Ferreira Lima"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S55",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "EK-204",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2M5",
+                "sala": "EK-204",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3T1",
+                "sala": "EK-204",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3T2",
+                "sala": "EK-204",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5M4",
+                "sala": "EL-102",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5M5",
+                "sala": "EL-102",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Paula Olga Gneri"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S73",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sist De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "CE-308",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T2",
+                "sala": "CE-308",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T3",
+                "sala": "CE-308",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T1",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T2",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T3",
+                "sala": "CE-108",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Christian Manuel Surco Chuno"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S81",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T5",
+                "sala": "CE-207",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T6",
+                "sala": "CE-207",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T1",
+                "sala": "CE-207",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T2",
+                "sala": "CE-207",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T4",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T5",
+                "sala": "CE-108",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Priscila Savulski Ferreira De Miranda"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT7ED",
+        "nome": "Equações Diferenciais Ordinárias",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "CE-201",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M4",
+                "sala": "CE-201",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M3",
+                "sala": "CE-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M4",
+                "sala": "CE-301",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Mateus Bernardes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S11",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "CA-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T6",
+                "sala": "CA-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N1",
+                "sala": "CC-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T6",
+                "sala": "CC-301",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Felix Pedro Quispe Gomez"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S21",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T6",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N1",
+                "sala": "CE-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T6",
+                "sala": "CE-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Andres David Baez Sanchez"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S23",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "CE-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T3",
+                "sala": "CE-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M3",
+                "sala": "CC-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M4",
+                "sala": "CC-301",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Felix Pedro Quispe Gomez"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S25",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Contr/Automação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "CE-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T3",
+                "sala": "CE-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CE-201",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M6",
+                "sala": "CE-201",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Mateus Bernardes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S41",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T5",
+                "sala": "EK-307",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3T6",
+                "sala": "EK-307",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4T5",
+                "sala": "EK-307",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4T6",
+                "sala": "EK-307",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Luiz Pedro Palacio Daniel"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S43",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T5",
+                "sala": "EL-101",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T6",
+                "sala": "EL-101",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3T5",
+                "sala": "EL-101",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3T6",
+                "sala": "EL-101",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Felipe Bertelli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S51",
+            "enquadramento": "Presencial",
+            "vagas_total": 42,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "EB-303",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T3",
+                "sala": "EB-303",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3T3",
+                "sala": "EB-302",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3T4",
+                "sala": "EB-302",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Felipe Bertelli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S71",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "CA-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M3",
+                "sala": "CA-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M4",
+                "sala": "CE-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CE-301",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Felix Pedro Quispe Gomez"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          },
+          {
+            "codigo": "S83",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M5",
+                "sala": "CE-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M6",
+                "sala": "CE-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M5",
+                "sala": "CE-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M6",
+                "sala": "CE-101",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Kennedy Martins Pedroso"
+            ],
+            "optativa_matrizes": [
+              "Matriz:959"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MAT7GA",
+        "nome": "Geometria Analítica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T2",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T1",
+                "sala": "CE-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T2",
+                "sala": "CE-301",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Aline Cristina Da Rocha"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "CE-307",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T2",
+                "sala": "CE-307",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T2",
+                "sala": "CE-308",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T3",
+                "sala": "CE-308",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Willian Goulart Gomes Velasco"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S03",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "CE-201",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N3",
+                "sala": "CE-201",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N1",
+                "sala": "CE-307",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T6",
+                "sala": "CE-307",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Willian Goulart Gomes Velasco"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S81",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Física",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "CE-308",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T2",
+                "sala": "CE-308",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T2",
+                "sala": "CE-208",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T3",
+                "sala": "CE-208",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Thais Mariane Biembengut Faria"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

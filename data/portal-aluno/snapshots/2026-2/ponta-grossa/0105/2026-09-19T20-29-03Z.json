@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:32:38   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "ponta-grossa",
+    "name": "Ponta Grossa",
+    "code": "06"
+  },
+  "course": {
+    "id": "0105",
+    "name": "Lic Computação - Cla",
+    "sourceName": "LIC COMPUTAÇÃO - CLA"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=105"
+  },
+  "fingerprint": "6b47a0f160382e53bad0429b31261eaa784f0ac338cbbd64d3f8ef8e3d3dd853",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "LIC COMPUTAÇÃO - CLA",
+    "ultima_atualizacao": "19/09/2026 17:32:38   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "LC05B",
+        "nome": "Educação Inclusiva E Tecnologias Assistivas",
+        "creditos": 0,
+        "creditos_assincronos": 5,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CLA5",
+            "enquadramento": "Presencial",
+            "vagas_total": 0,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Cla"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Viviane Demetrio Do Nascimento"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LC05C",
+        "nome": "Abordagens Pedagógicas Em Ead 2",
+        "creditos": 0,
+        "creditos_assincronos": 6,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CLA5",
+            "enquadramento": "Presencial",
+            "vagas_total": 0,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Cla"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Elaine Ferreira Machado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LC05E",
+        "nome": "Engenharia De Software",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CLA5",
+            "enquadramento": "Presencial",
+            "vagas_total": 0,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Cla"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Eliana Claudia Mayumi Ishikawa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LC06A",
+        "nome": "Appc 6 – Tdic Em Projetos Educacionais 2",
+        "creditos": 0,
+        "creditos_assincronos": 6,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CLA6",
+            "enquadramento": "EaD",
+            "vagas_total": 55,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Cla"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Mario Jose Van Thienen Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LC06B",
+        "nome": "Abordagens Pedagógicas Em Ead 3",
+        "creditos": 0,
+        "creditos_assincronos": 6,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CLA6",
+            "enquadramento": "EaD",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Cla"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Elaine Ferreira Machado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LC06C",
+        "nome": "Empreendedorismo",
+        "creditos": 0,
+        "creditos_assincronos": 3,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CLA6",
+            "enquadramento": "EaD",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Cla"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Camila Lopes Ferreira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LC06D",
+        "nome": "Programação De Aplicativos Móveis",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CLA6",
+            "enquadramento": "EaD",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Cla"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Diego Roberto Antunes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LC06E",
+        "nome": "Desenvolvimento De Jogos",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CLA6",
+            "enquadramento": "EaD",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Cla"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Geraldo Ranthum"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LC06F",
+        "nome": "Design Instrucional",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CLA6",
+            "enquadramento": "EaD",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Cla"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Awdry Feisser Miquelin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

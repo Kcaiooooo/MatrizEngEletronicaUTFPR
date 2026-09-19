@@ -1,0 +1,1118 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:32:38   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "ponta-grossa",
+    "name": "Ponta Grossa",
+    "code": "06"
+  },
+  "course": {
+    "id": "0106",
+    "name": "Engenharia Mecatrônica",
+    "sourceName": "ENGENHARIA MECATRÔNICA"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=106"
+  },
+  "fingerprint": "5ae9ba54e600c97a546524b5c6a1b53360df827461ca262a8cb44c01d2ef4ea5",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "ENGENHARIA MECATRÔNICA",
+    "ultima_atualizacao": "19/09/2026 17:32:38   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "CL101",
+        "nome": "Comunicação Linguística",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MC11",
+            "enquadramento": "Presencial",
+            "vagas_total": 36,
+            "vagas_calouros": 35,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "L-013",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "L-013",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diego Gomes Do Valle"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "DESENHO2",
+        "nome": "Desenho Técnico 2",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MC31",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "LABOSP3",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "LABOSP3",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "LABOSP3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tiago Lima De Sousa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS101",
+        "nome": "Fundamentos De Física",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MC11",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 35,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "L010",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "L010",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Carlos Alves Galvao"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS121",
+        "nome": "Física 1",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MC21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "L001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Romeu Miqueias Szmoski"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS131",
+        "nome": "Física Experimental 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MC21",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "K110",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "K110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Carlos Alves Galvao"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS143",
+        "nome": "Mecânica Geral 1",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MC31",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "L011",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "L011",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "L011",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Celso Goncalves De Quadros"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "INF101",
+        "nome": "Computação 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MC21",
+            "enquadramento": "Presencial",
+            "vagas_total": 18,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N5",
+                "sala": "V1-102",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "V1-105",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "V1-105",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "V1-105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcella Scoczynski Ribeiro Martins"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT101",
+        "nome": "Pré-Cálculo",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MC11",
+            "enquadramento": "Presencial",
+            "vagas_total": 38,
+            "vagas_calouros": 35,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "L-013",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "L-013",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "L-013",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "L-013",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ednei Felix Reis"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MAT121",
+        "nome": "Matrizes E Vetores",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MC21",
+            "enquadramento": "Presencial",
+            "vagas_total": 27,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "L-013",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "L-013",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "L-013",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Henrique De Lima"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MAT122",
+        "nome": "Álgebra Linear",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MC31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "L012",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "L012",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "L012",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "L012",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Carlos Alberto De Pontes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MAT131",
+        "nome": "Cálculo 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MC21",
+            "enquadramento": "Presencial",
+            "vagas_total": 58,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Automação Ind.",
+                "Engenharia Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "L006",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "L006",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "L006",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "L006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Henrique De Lima"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT132",
+        "nome": "Cálculo 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AI31",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Automação Ind.",
+                "Engenharia Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "L-013",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "L-013",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "L-013",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "L-013",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Carlos Alberto De Pontes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MC01A",
+        "nome": "Introdução À Engenharia Mecatrônica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MC11",
+            "enquadramento": "Presencial",
+            "vagas_total": 36,
+            "vagas_calouros": 35,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "L001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Murilo Oliveira Leme"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MC01B",
+        "nome": "Metrologia Mecânica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MC11",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 35,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "L001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luciano Augusto Lourencato"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MC01C",
+        "nome": "Desenho Técnico 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MC11",
+            "enquadramento": "Presencial",
+            "vagas_total": 37,
+            "vagas_calouros": 35,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "LABOSP3",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "LABOSP3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tiago Lima De Sousa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MC03A",
+        "nome": "Eletricidade",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MC31",
+            "enquadramento": "Presencial",
+            "vagas_total": 21,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "L010",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "L010",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "L010",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Bruno Knevitz Hammerschmitt"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MC03B",
+        "nome": "Sistemas Digitais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MC31",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "L011",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "L011",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "L011",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "L011",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Francisco Jose Viglus"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MC03C",
+        "nome": "Ciência De Dados",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MC31",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "V1-105",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "L011",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "V1-105",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "L011",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "L011",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "V1-105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Iara Da Cunha Ribeiro Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MC04D",
+        "nome": "Soldagem",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCOP",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "C212",
+                "sede": null
+              },
+              {
+                "horario": "2N1",
+                "sala": "SOLD",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "C212",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "SOLD",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "SOLD",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roger Navarro Verastegui"
+            ],
+            "optativa_matrizes": [
+              "Matriz:843"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MC04G",
+        "nome": "Manufatura Aditiva De Metais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCOP",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecatrônica"
+              ],
+              [
+                "Engenharia Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "K102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Anderson Geraldo Marenda Pukasiewicz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:843"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MEC62A",
+        "nome": "Ciência Dos Materiais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MC21",
+            "enquadramento": "Presencial",
+            "vagas_total": 29,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "L011",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "L011",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "L011",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "L011",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabio Edenei Mainginski"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI101",
+        "nome": "Química Geral 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MC11",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 35,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "L110",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "L110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Fernando Quintino Pereira Marchesi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI121",
+        "nome": "Química Experimental",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MC11A",
+            "enquadramento": "Presencial",
+            "vagas_total": 21,
+            "vagas_calouros": 18,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "C002",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "C002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Octavio De Araujo"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "MC11B",
+            "enquadramento": "Presencial",
+            "vagas_total": 21,
+            "vagas_calouros": 18,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "C003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Aline Coqueiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "SESAT00H",
+        "nome": "Segurança E Saúde Do Trabalho",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MC21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "L008",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "L008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ariel Orlei Michaloski"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:799",
+              "Matriz:827",
+              "Matriz:826",
+              "Matriz:814",
+              "Matriz:821"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

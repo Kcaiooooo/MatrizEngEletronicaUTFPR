@@ -1,0 +1,6599 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:30:09   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "curitiba",
+    "name": "Curitiba",
+    "code": "01"
+  },
+  "course": {
+    "id": "0215",
+    "name": "Tecnol. Sist. Telec.",
+    "sourceName": "TECNOL. SIST. TELEC."
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=215"
+  },
+  "fingerprint": "92179332f7bc82c4746d406d05d88077eaaf6cd7d08e71342d52e46528837a18",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "TECNOL. SIST. TELEC.",
+    "ultima_atualizacao": "19/09/2026 17:30:09   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [
+        {
+          "marcador": "*",
+          "sede": "Ecoville"
+        },
+        {
+          "marcador": "**",
+          "sede": "Neoville"
+        }
+      ],
+      "sede_sem_marcador": "Centro"
+    },
+    "disciplinas": [
+      {
+        "codigo": "CAART02",
+        "nome": "Prática Musical E Interações Humanas: Aprendizado Coletivo De Violino, Viola Erudita, Violoncelo E Contrabaixo Acústico 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "S11",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "CT-016",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T5",
+                "sala": "CT-016",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T4",
+                "sala": "CT-016",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T5",
+                "sala": "CT-016",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Matheus Theodorovitz Prust"
+            ],
+            "optativa_matrizes": [
+              "Matriz:973",
+              "Matriz:968",
+              "Matriz:957",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:906",
+              "Matriz:972"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CAART03",
+        "nome": "Prática Musical E Interações Humanas: Aprendizado Coletivo De Violino, Viola Erudita, Violoncelo E Contrabaixo Acústico 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "S11",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "CT-016",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T3",
+                "sala": "CT-016",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T2",
+                "sala": "CT-016",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T3",
+                "sala": "CT-016",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Matheus Theodorovitz Prust"
+            ],
+            "optativa_matrizes": [
+              "Matriz:973",
+              "Matriz:968",
+              "Matriz:957",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:906",
+              "Matriz:972"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CAART04",
+        "nome": "Prática Artística Musical: Grupos Instrumentais 1",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 90,
+        "turmas": [
+          {
+            "codigo": "S11",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "CT-016",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N2",
+                "sala": "CT-016",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N3",
+                "sala": "CT-016",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N1",
+                "sala": "CT-016",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N2",
+                "sala": "CT-016",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N3",
+                "sala": "CT-016",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Matheus Theodorovitz Prust"
+            ],
+            "optativa_matrizes": [
+              "Matriz:973",
+              "Matriz:920",
+              "Matriz:968",
+              "Matriz:906",
+              "Matriz:957",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:972"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "COE70A",
+        "nome": "Comunicação Oral E Escrita",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "E11",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ],
+              [
+                "Eng De Computação",
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N2",
+                "sala": "CE-108",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Jamea Cristina Batista Silva Franklin"
+            ],
+            "optativa_matrizes": [
+              "Matriz:995",
+              "Matriz:983",
+              "Matriz:981",
+              "Matriz:985",
+              "Matriz:959",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974"
+            ]
+          },
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "CQ-306",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N5",
+                "sala": "CQ-306",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Jamea Cristina Batista Silva Franklin"
+            ],
+            "optativa_matrizes": [
+              "Matriz:995",
+              "Matriz:983",
+              "Matriz:981",
+              "Matriz:985",
+              "Matriz:959",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974"
+            ]
+          },
+          {
+            "codigo": "S21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "CE-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N3",
+                "sala": "CE-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Lucas Roecker Lazarin"
+            ],
+            "optativa_matrizes": [
+              "Matriz:995",
+              "Matriz:983",
+              "Matriz:981",
+              "Matriz:985",
+              "Matriz:959",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974"
+            ]
+          },
+          {
+            "codigo": "S23",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M5",
+                "sala": "CE-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M6",
+                "sala": "CE-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Denise Regina Stacheski"
+            ],
+            "optativa_matrizes": [
+              "Matriz:995",
+              "Matriz:983",
+              "Matriz:981",
+              "Matriz:985",
+              "Matriz:959",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974"
+            ]
+          },
+          {
+            "codigo": "S25",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Contr/Automação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "CC-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M4",
+                "sala": "CC-206",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Gabriella Hauber Pimentel"
+            ],
+            "optativa_matrizes": [
+              "Matriz:995",
+              "Matriz:983",
+              "Matriz:981",
+              "Matriz:985",
+              "Matriz:959",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974"
+            ]
+          },
+          {
+            "codigo": "S55",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "CA-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M4",
+                "sala": "CA-102",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Cora Catalina Gaete Quinteros"
+            ],
+            "optativa_matrizes": [
+              "Matriz:995",
+              "Matriz:983",
+              "Matriz:981",
+              "Matriz:985",
+              "Matriz:959",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ED70U",
+        "nome": "Libras B",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S83",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática"
+              ],
+              [
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "CE-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CE-102",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rita De Cassia Maestri"
+            ],
+            "optativa_matrizes": [
+              "Matriz:547",
+              "Matriz:906",
+              "Matriz:867",
+              "Matriz:844",
+              "Matriz:616",
+              "Matriz:678",
+              "Matriz:919",
+              "Matriz:843"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EDU70J",
+        "nome": "Libras",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Química",
+                "Téc.Em Multimeios Buti",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "CE-306",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T5",
+                "sala": "CE-306",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T6",
+                "sala": "CE-306",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Leticia Fernandes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T2",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CE-305",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rita De Cassia Maestri"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S03",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "CQ-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T5",
+                "sala": "CQ-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T6",
+                "sala": "CQ-305",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Leticia Fernandes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S04",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "CE-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M3",
+                "sala": "CE-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M4",
+                "sala": "CE-104",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rita De Cassia Maestri"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S81",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Fisica 9"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "CE-303",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T5",
+                "sala": "CE-303",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T6",
+                "sala": "CE-303",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Leticia Fernandes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S83",
+            "enquadramento": "Presencial",
+            "vagas_total": 31,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática"
+              ],
+              [
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "CA-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CA-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CA-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Silvia Andreis Witkoski"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "CE-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CE-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M6",
+                "sala": "CE-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Silvia Andreis Witkoski"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ELB11",
+        "nome": "Algoritmos De Programação",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 32,
+            "vagas_calouros": 15,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ],
+              [
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "CQ-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N2",
+                "sala": "CQ-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N3",
+                "sala": "CQ-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Luis Alberto Lucas"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "N12",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 15,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ],
+              [
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "CQ-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N2",
+                "sala": "CQ-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N3",
+                "sala": "CQ-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Edenilson Jose Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S14",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ],
+              [
+                "Tecnol. Sist. Telec.",
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "CQ-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N2",
+                "sala": "CQ-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N3",
+                "sala": "CQ-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Edenilson Jose Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELB21",
+        "nome": "Programação De Computador",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ],
+              [
+                "Eng Eletrônica",
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "CQ-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N2",
+                "sala": "CQ-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N4",
+                "sala": "CQ-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N5",
+                "sala": "CQ-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Valfredo Pilla Junior"
+            ],
+            "optativa_matrizes": [
+              "Matriz:968",
+              "Matriz:906"
+            ]
+          },
+          {
+            "codigo": "S12",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ],
+              [
+                "Tecnol. Sist. Telec.",
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "CQ-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N2",
+                "sala": "CQ-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N3",
+                "sala": "CQ-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T6",
+                "sala": "CQ-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Edenilson Jose Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:968",
+              "Matriz:906"
+            ]
+          },
+          {
+            "codigo": "S13",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ],
+              [
+                "Tecnol. Sist. Telec.",
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "CQ-210",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N2",
+                "sala": "CQ-210",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N3",
+                "sala": "CQ-210",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N4",
+                "sala": "CQ-210",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Danillo Leal Belmonte"
+            ],
+            "optativa_matrizes": [
+              "Matriz:968",
+              "Matriz:906"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ELE13",
+        "nome": "Redes",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ],
+              [
+                "Eng Eletrônica",
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "CQ-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N2",
+                "sala": "CQ-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N3",
+                "sala": "CQ-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Kleber Kendy Horikawa Nabas"
+            ],
+            "optativa_matrizes": [
+              "Matriz:973"
+            ]
+          },
+          {
+            "codigo": "N12",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ],
+              [
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "CQ-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N2",
+                "sala": "CQ-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N3",
+                "sala": "CQ-102",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Kleber Kendy Horikawa Nabas"
+            ],
+            "optativa_matrizes": [
+              "Matriz:973"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ELE14",
+        "nome": "Redes 2",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "CQ-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N2",
+                "sala": "CQ-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N3",
+                "sala": "CQ-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Kleber Kendy Horikawa Nabas"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELN73B",
+        "nome": "Algoritmos De Programação",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S15",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Mecatrônica"
+              ],
+              [
+                "Tecnol. Sist. Telec.",
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "CQ-110",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M4",
+                "sala": "CQ-110",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CQ-110",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Daniel Rossato De Oliveira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S16",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Mecatrônica"
+              ],
+              [
+                "Tecnol. Sist. Telec.",
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T2",
+                "sala": "CQ-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T3",
+                "sala": "CQ-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T4",
+                "sala": "CQ-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Luis Alberto Lucas"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELN74B",
+        "nome": "Programação De Computador",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S15",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Mecatrônica"
+              ],
+              [
+                "Tecnol. Sist. Telec.",
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "CQ-201",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T2",
+                "sala": "CQ-201",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T3",
+                "sala": "CQ-201",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T4",
+                "sala": "CQ-201",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Edenilson Jose Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELN81A",
+        "nome": "Eletricidade",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "CQ-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N2",
+                "sala": "CQ-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N3",
+                "sala": "CQ-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N4",
+                "sala": "CQ-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N5",
+                "sala": "CQ-305",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Robson Luiz Schiefler E Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELN81B",
+        "nome": "Introdução A Práticas De Eletrônica Com Microcontroladores Modernos",
+        "creditos": 1,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 15,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "CQ-107",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N1",
+                "sala": "CQ-107",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N2",
+                "sala": "CQ-107",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N2",
+                "sala": "CQ-107",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N3",
+                "sala": "CQ-107",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N3",
+                "sala": "CQ-107",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Ronald Lewis Karp",
+              "Gabriel Kovalhuk"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "N12",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 15,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "CQ-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N1",
+                "sala": "CQ-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N2",
+                "sala": "CQ-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N2",
+                "sala": "CQ-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N3",
+                "sala": "CQ-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N3",
+                "sala": "CQ-101",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Ronald Lewis Karp",
+              "Nelson Garcia De Paula"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELN81C",
+        "nome": "Introdução A Sistemas De Telecomunicações",
+        "creditos": 0,
+        "creditos_assincronos": 3,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "EaD",
+            "vagas_total": 49,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Alexandre Jorge Miziara"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELN82A",
+        "nome": "Cálculo Para Telecomunicações",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "EaD",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Humberto Remigio Gamba"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELN82B",
+        "nome": "Linhas De Transmissão",
+        "creditos": 3,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "CQ-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N2",
+                "sala": "CQ-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N4",
+                "sala": "CQ-213",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N5",
+                "sala": "CQ-213",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Valmir De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELN82C",
+        "nome": "Redes Convergentes E Redes Legadas",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "CQ-201",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N4",
+                "sala": "CQ-201",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N5",
+                "sala": "CQ-201",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Alexandre Jorge Miziara"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELN82D",
+        "nome": "Frameworks De Gestão De Serviços",
+        "creditos": 0,
+        "creditos_assincronos": 3,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "EaD",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Jamea Cristina Batista Silva Franklin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELN83A",
+        "nome": "Segurança De Redes",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "CQ-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N4",
+                "sala": "CQ-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N5",
+                "sala": "CQ-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Joilson Alves Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELN83B",
+        "nome": "Comunicações Digitais",
+        "creditos": 4,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "CQ-201",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N2",
+                "sala": "CQ-201",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N3",
+                "sala": "CQ-201",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N4",
+                "sala": "CQ-201",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N5",
+                "sala": "CQ-201",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marcos Eduardo Pivaro Monteiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELN83C",
+        "nome": "Comunicações Sem Fio",
+        "creditos": 2,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "CQ-210",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N1",
+                "sala": "CQ-210",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N2",
+                "sala": "CQ-210",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N2",
+                "sala": "CQ-210",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Jamil De Araujo Farhat",
+              "Alexandre Jorge Miziara"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELN84A",
+        "nome": "Redes Sem Fio",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "CQ-210",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N4",
+                "sala": "CQ-210",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N5",
+                "sala": "CQ-210",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Jamil De Araujo Farhat"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELN84B",
+        "nome": "Radiopropagação E Antenas",
+        "creditos": 4,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "CQ-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N4",
+                "sala": "CQ-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N5",
+                "sala": "CQ-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N1",
+                "sala": "CQ-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N2",
+                "sala": "CQ-105",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Paulo De Tarso Neves Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELN84C",
+        "nome": "Teoria Da Informação",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "CQ-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N4",
+                "sala": "CQ-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N5",
+                "sala": "CQ-304",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Francisco Muller Machado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELN84D",
+        "nome": "Projeto Integrador",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "EaD",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Marcos Talau"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELN85A",
+        "nome": "Laboratório De Integração De Redes E Serviços",
+        "creditos": 1,
+        "creditos_assincronos": 3,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "CQ-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N2",
+                "sala": "CQ-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Joilson Alves Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELN85B",
+        "nome": "Gerência De Redes",
+        "creditos": 1,
+        "creditos_assincronos": 3,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "CQ-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N5",
+                "sala": "CQ-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Lincoln Herbert Teixeira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELN85C",
+        "nome": "Redes Móveis: Lte, 4g, 5g",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "CQ-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N2",
+                "sala": "CQ-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N3",
+                "sala": "CQ-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Lincoln Herbert Teixeira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELN8AB",
+        "nome": "Computação Em Nuvem",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "CB-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N3",
+                "sala": "CB-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N4",
+                "sala": "CB-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N4",
+                "sala": "CB-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N5",
+                "sala": "CB-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N5",
+                "sala": "CQ-301",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Christian Carlos De Souza Mendes",
+              "Lincoln Herbert Teixeira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:957"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ELN8BA",
+        "nome": "Ciência De Dados",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "CQ-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N2",
+                "sala": "CQ-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N3",
+                "sala": "CQ-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Lincoln Herbert Teixeira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:957"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ELN8BD",
+        "nome": "Engenharia De Prompt",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 75,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ],
+              [
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "CQ-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N5",
+                "sala": "CQ-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Valfredo Pilla Junior"
+            ],
+            "optativa_matrizes": [
+              "Matriz:973",
+              "Matriz:957"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ELN8CA",
+        "nome": "Linux Básico",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ],
+              [
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "CQ-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N4",
+                "sala": "CQ-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N5",
+                "sala": "CQ-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marcos Talau"
+            ],
+            "optativa_matrizes": [
+              "Matriz:957"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ELN8CB",
+        "nome": "Virtualização",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "CQ-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N2",
+                "sala": "CQ-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N3",
+                "sala": "CQ-102",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marcos Talau"
+            ],
+            "optativa_matrizes": [
+              "Matriz:957"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ELN8CD",
+        "nome": "Desenvolvimento Para Sistemas Gnu/Linux",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 90,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ],
+              [
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "CQ-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N4",
+                "sala": "CQ-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N5",
+                "sala": "CQ-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marcos Talau"
+            ],
+            "optativa_matrizes": [
+              "Matriz:973",
+              "Matriz:957"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ELN8DA",
+        "nome": "Arquitetura E Organização De Computadores",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "CQ-309",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N2",
+                "sala": "CQ-309",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N3",
+                "sala": "CQ-309",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Robson Luiz Schiefler E Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:957"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ELN8DI",
+        "nome": "Technological Craftsmanship Works",
+        "creditos": 7,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 105,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ],
+              [
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "CQ-313",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N2",
+                "sala": "CQ-313",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marcos Eduardo Pivaro Monteiro"
+            ],
+            "optativa_matrizes": [
+              "Matriz:973",
+              "Matriz:957"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ELN8DJ",
+        "nome": "Visão Prática Da Gestão Da Segurança Da Informação E Suas Aplicações",
+        "creditos": 8,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 120,
+        "turmas": [
+          {
+            "codigo": "N12",
+            "enquadramento": "Presencial",
+            "vagas_total": 2,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ],
+              [
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "CB-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N4",
+                "sala": "CB-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N5",
+                "sala": "CB-301",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Christian Carlos De Souza Mendes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:973",
+              "Matriz:957"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ELN8DK",
+        "nome": "Estudos De Casos E Projetos De Cabeamento Estruturado",
+        "creditos": 7,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 105,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ],
+              [
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "CQ-110",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N2",
+                "sala": "CQ-110",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Christian Carlos De Souza Mendes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:973",
+              "Matriz:957"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ELN8EC",
+        "nome": "Introdução À Sustentabilidade Ambiental",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 90,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ],
+              [
+                "Eng Mecatrônica",
+                "Química Ambiental"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "CQ-201",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N2",
+                "sala": "CQ-201",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Ubiradir Mendes Pinto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:973",
+              "Matriz:948",
+              "Matriz:957"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ELP41",
+        "nome": "Eletrônica Analógica 1: Materiais Semicondutores",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S11",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ],
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "CQ-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N2",
+                "sala": "CQ-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N3",
+                "sala": "CQ-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T6",
+                "sala": "CQ-108",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Paulo Jose Abatti"
+            ],
+            "optativa_matrizes": [
+              "Matriz:957",
+              "Matriz:906"
+            ]
+          },
+          {
+            "codigo": "S12",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ],
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "CQ-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N2",
+                "sala": "CQ-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N3",
+                "sala": "CQ-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T6",
+                "sala": "CQ-104",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Renata Oliveira De Sousa"
+            ],
+            "optativa_matrizes": [
+              "Matriz:957",
+              "Matriz:906"
+            ]
+          },
+          {
+            "codigo": "S13",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ],
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "CQ-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T4",
+                "sala": "CQ-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T5",
+                "sala": "CQ-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T6",
+                "sala": "CQ-104",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Humberto Remigio Gamba"
+            ],
+            "optativa_matrizes": [
+              "Matriz:957",
+              "Matriz:906"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ELTB6",
+        "nome": "Tópicos Avançados Em Comunicações",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S11",
+            "enquadramento": "Presencial",
+            "vagas_total": 12,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "CB-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T4",
+                "sala": "CB-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T5",
+                "sala": "CB-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T5",
+                "sala": "CB-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T4",
+                "sala": "CQ-107",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T4",
+                "sala": "CQ-107",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T5",
+                "sala": "CQ-107",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T5",
+                "sala": "CQ-107",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Alexandre De Almeida Prado Pohl",
+              "Paulo De Tarso Neves Junior"
+            ],
+            "optativa_matrizes": [
+              "Matriz:616",
+              "Matriz:957",
+              "Matriz:968",
+              "Matriz:962",
+              "Matriz:906"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EST70B",
+        "nome": "Noções De Estatística",
+        "creditos": 0,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "EaD",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Kleber Kendy Horikawa Nabas"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S01",
+            "enquadramento": "EaD",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Wesley Bertoli Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S53",
+            "enquadramento": "EaD",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Wesley Bertoli Da Silva",
+              "Angelica Maria Tortola Ribeiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7AA",
+        "nome": "Dança E Tecnologia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "CE-207",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M4",
+                "sala": "CE-207",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M5",
+                "sala": "CE-207",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Juliana Maria Greca"
+            ],
+            "optativa_matrizes": [
+              "Matriz:980",
+              "Matriz:957",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:973"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "CE-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M4",
+                "sala": "CE-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M5",
+                "sala": "CE-105",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Juliana Maria Greca"
+            ],
+            "optativa_matrizes": [
+              "Matriz:980",
+              "Matriz:957",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:973"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7AB",
+        "nome": "Questões Contemporâneas Do Corpo",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "CE-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CE-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CE-105",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Juliana Maria Greca"
+            ],
+            "optativa_matrizes": [
+              "Matriz:957",
+              "Matriz:972",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:974",
+              "Matriz:973",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "CA-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M4",
+                "sala": "CA-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CA-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Juliana Maria Greca"
+            ],
+            "optativa_matrizes": [
+              "Matriz:957",
+              "Matriz:972",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:974",
+              "Matriz:973",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7FA",
+        "nome": "Filosofia Da Ciência E Da Tecnologia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 47,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "CE-307",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M2",
+                "sala": "CE-307",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M3",
+                "sala": "CE-307",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Alex Calazans"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:995",
+              "Matriz:973",
+              "Matriz:983",
+              "Matriz:957",
+              "Matriz:976",
+              "Matriz:972",
+              "Matriz:979",
+              "Matriz:978",
+              "Matriz:960",
+              "Matriz:920",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S71",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T3",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T4",
+                "sala": "CE-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Veronica Ferreira Bahr Calazans"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:995",
+              "Matriz:973",
+              "Matriz:983",
+              "Matriz:957",
+              "Matriz:976",
+              "Matriz:972",
+              "Matriz:979",
+              "Matriz:978",
+              "Matriz:960",
+              "Matriz:920",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S73",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sist De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T3",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T4",
+                "sala": "CC-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Alex Calazans"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:995",
+              "Matriz:973",
+              "Matriz:983",
+              "Matriz:957",
+              "Matriz:976",
+              "Matriz:972",
+              "Matriz:979",
+              "Matriz:978",
+              "Matriz:960",
+              "Matriz:920",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S93",
+            "enquadramento": "Presencial",
+            "vagas_total": 47,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Educação Física"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M4",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CC-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marcio Luiz Miotto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:995",
+              "Matriz:973",
+              "Matriz:983",
+              "Matriz:957",
+              "Matriz:976",
+              "Matriz:972",
+              "Matriz:979",
+              "Matriz:978",
+              "Matriz:960",
+              "Matriz:920",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7FB",
+        "nome": "Fundamentos Da Ética",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S31",
+            "enquadramento": "Presencial",
+            "vagas_total": 52,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Design",
+                "Química Ambiental"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M2",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M3",
+                "sala": "CE-108",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marcio Luiz Miotto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:972",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:985",
+              "Matriz:982",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S32",
+            "enquadramento": "Presencial",
+            "vagas_total": 47,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Design"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "CC-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CC-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T4",
+                "sala": "CC-301",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Andrea Maila Voss"
+            ],
+            "optativa_matrizes": [
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:972",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:985",
+              "Matriz:982",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7GA",
+        "nome": "Metropolização Contemporânea: Tecnologia E Território",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "CQ-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T3",
+                "sala": "CQ-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T4",
+                "sala": "CQ-304",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marcos Antonio Silverio"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:957",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:823",
+              "Matriz:845",
+              "Matriz:784",
+              "Matriz:873",
+              "Matriz:888",
+              "Matriz:806",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:961",
+              "Matriz:867",
+              "Matriz:870",
+              "Matriz:844",
+              "Matriz:708",
+              "Matriz:709",
+              "Matriz:906",
+              "Matriz:919",
+              "Matriz:962",
+              "Matriz:755",
+              "Matriz:948"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7HA",
+        "nome": "História Da Técnica E Da Tecnologia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Química Ambiental"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3T5",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3T6",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Maria Jose Menezes Lourega Belli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:995",
+              "Matriz:983",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:981",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:972",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:973"
+            ]
+          },
+          {
+            "codigo": "S03",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "CE-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T4",
+                "sala": "CE-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T5",
+                "sala": "CE-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T5",
+                "sala": "CE-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T6",
+                "sala": "CE-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T6",
+                "sala": "CE-106",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Gilson Leandro Queluz",
+              "Elena Camargo Shizuno"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:995",
+              "Matriz:983",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:981",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:972",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:973"
+            ]
+          },
+          {
+            "codigo": "S73",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sist De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T4",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T5",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T5",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T6",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T6",
+                "sala": "CE-302",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Gilson Leandro Queluz",
+              "Elena Camargo Shizuno"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:995",
+              "Matriz:983",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:981",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:972",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:973"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7HB",
+        "nome": "História Geral Da Economia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "6T4",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "6T5",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "6T6",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Sandro Marlus Wambier"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:973",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:981",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:845",
+              "Matriz:784",
+              "Matriz:873",
+              "Matriz:888",
+              "Matriz:806",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:961",
+              "Matriz:867",
+              "Matriz:755",
+              "Matriz:870",
+              "Matriz:844",
+              "Matriz:708",
+              "Matriz:709",
+              "Matriz:906",
+              "Matriz:919",
+              "Matriz:823",
+              "Matriz:962",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N2",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N3",
+                "sala": "CE-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Sandro Marlus Wambier"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:973",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:981",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:845",
+              "Matriz:784",
+              "Matriz:873",
+              "Matriz:888",
+              "Matriz:806",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:961",
+              "Matriz:867",
+              "Matriz:755",
+              "Matriz:870",
+              "Matriz:844",
+              "Matriz:708",
+              "Matriz:709",
+              "Matriz:906",
+              "Matriz:919",
+              "Matriz:823",
+              "Matriz:962",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7HC",
+        "nome": "Capitalismo Contemporâneo E Economia Política",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "EL-208",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5T5",
+                "sala": "EL-208",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5T6",
+                "sala": "EL-208",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Sandro Marlus Wambier"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:973",
+              "Matriz:957",
+              "Matriz:981",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:845",
+              "Matriz:784",
+              "Matriz:873",
+              "Matriz:888",
+              "Matriz:806",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:961",
+              "Matriz:867",
+              "Matriz:755",
+              "Matriz:870",
+              "Matriz:844",
+              "Matriz:708",
+              "Matriz:709",
+              "Matriz:906",
+              "Matriz:919",
+              "Matriz:823",
+              "Matriz:962",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "CE-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N2",
+                "sala": "CE-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N3",
+                "sala": "CE-301",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Sandro Marlus Wambier"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:973",
+              "Matriz:957",
+              "Matriz:981",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:845",
+              "Matriz:784",
+              "Matriz:873",
+              "Matriz:888",
+              "Matriz:806",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:961",
+              "Matriz:867",
+              "Matriz:755",
+              "Matriz:870",
+              "Matriz:844",
+              "Matriz:708",
+              "Matriz:709",
+              "Matriz:906",
+              "Matriz:919",
+              "Matriz:823",
+              "Matriz:962",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7PA",
+        "nome": "Psicologia Do Trabalho",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T5",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Juliana Lopes Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N2",
+                "sala": "CC-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Juliana Lopes Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S03",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T5",
+                "sala": "CA-101",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Juliana Lopes Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S04",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "6M2",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M2",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M3",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M3",
+                "sala": "CC-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Maria Luisa Carvalho",
+              "Thainara Granero De Melo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S05",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CA-101",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Juliana Lopes Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil",
+                "Química Ambiental"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T3",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Juliana Lopes Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M4",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M4",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M5",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M5",
+                "sala": "CE-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Maria Luisa Carvalho",
+              "Thainara Granero De Melo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S73",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sist De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T5",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T5",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T6",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T6",
+                "sala": "CC-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Maria Sara De Lima Dias",
+              "Thainara Granero De Melo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "T81",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Em Radiologia",
+                "Química Ambiental"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T4",
+                "sala": "CE-303",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T5",
+                "sala": "CE-303",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Maria Luisa Carvalho"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:977"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7PC",
+        "nome": "Planejamento De Carreira",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T2",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T3",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T3",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T4",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T4",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T5",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T5",
+                "sala": "CC-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Maria Sara De Lima Dias",
+              "Thainara Granero De Melo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:973",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:972",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7SB",
+        "nome": "Tecnologia E Sociedade",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "EL-208",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2N2",
+                "sala": "EL-208",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2N3",
+                "sala": "EL-208",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Lino Trevisan"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:973",
+              "Matriz:982",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Química",
+                "Lic Química",
+                "Química Ambiental"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4N2",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4N3",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Roberto Ranna Keller"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:973",
+              "Matriz:982",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S04",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "CE-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M5",
+                "sala": "CE-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M6",
+                "sala": "CE-104",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Roberto Ranna Keller"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:973",
+              "Matriz:982",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S05",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "CE-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N2",
+                "sala": "CE-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N3",
+                "sala": "CE-102",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Roberto Ranna Keller"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:973",
+              "Matriz:982",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7SC",
+        "nome": "Tecnologia, Trabalho E Saúde",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T3",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T4",
+                "sala": "CA-101",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Armenes De Jesus Ramos Junior"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:973",
+              "Matriz:957",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:920",
+              "Matriz:845",
+              "Matriz:784",
+              "Matriz:873",
+              "Matriz:888",
+              "Matriz:806",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:867",
+              "Matriz:755",
+              "Matriz:870",
+              "Matriz:844",
+              "Matriz:708",
+              "Matriz:709",
+              "Matriz:906",
+              "Matriz:919",
+              "Matriz:823",
+              "Matriz:962",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "CA-107",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CA-107",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T4",
+                "sala": "CA-107",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Armenes De Jesus Ramos Junior"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:973",
+              "Matriz:957",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:920",
+              "Matriz:845",
+              "Matriz:784",
+              "Matriz:873",
+              "Matriz:888",
+              "Matriz:806",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:867",
+              "Matriz:755",
+              "Matriz:870",
+              "Matriz:844",
+              "Matriz:708",
+              "Matriz:709",
+              "Matriz:906",
+              "Matriz:919",
+              "Matriz:823",
+              "Matriz:962",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S03",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "6T2",
+                "sala": "CE-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T3",
+                "sala": "CE-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T4",
+                "sala": "CE-304",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Armenes De Jesus Ramos Junior"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:973",
+              "Matriz:957",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:920",
+              "Matriz:845",
+              "Matriz:784",
+              "Matriz:873",
+              "Matriz:888",
+              "Matriz:806",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:867",
+              "Matriz:755",
+              "Matriz:870",
+              "Matriz:844",
+              "Matriz:708",
+              "Matriz:709",
+              "Matriz:906",
+              "Matriz:919",
+              "Matriz:823",
+              "Matriz:962",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7SD",
+        "nome": "Sociedade E Política No Brasil",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "CQ-311",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M4",
+                "sala": "CQ-311",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M5",
+                "sala": "CQ-311",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Monica Helena Harrich Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:995",
+              "Matriz:973",
+              "Matriz:983",
+              "Matriz:957",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "EB-311",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T3",
+                "sala": "EB-311",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T4",
+                "sala": "EB-311",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Monica Helena Harrich Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:995",
+              "Matriz:973",
+              "Matriz:983",
+              "Matriz:957",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7SF",
+        "nome": "Política, Instituições E Cidadania No Paraná",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M6",
+                "sala": "CC-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Monica Helena Harrich Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:995",
+              "Matriz:973",
+              "Matriz:983",
+              "Matriz:957",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:962",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7XA",
+        "nome": "Tecnologia Social E Economia Solidária",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Química Ambiental"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5M2",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5M3",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5M3",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5M4",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5M4",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5M5",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5M5",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Marcos Antonio Silverio",
+              "Lino Trevisan"
+            ],
+            "optativa_matrizes": [
+              "Matriz:957",
+              "Matriz:976",
+              "Matriz:972",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:920",
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:948"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M2",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M3",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M3",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CE-305",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marcos Antonio Silverio",
+              "Maria Luisa Carvalho"
+            ],
+            "optativa_matrizes": [
+              "Matriz:957",
+              "Matriz:976",
+              "Matriz:972",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:920",
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:948"
+            ]
+          },
+          {
+            "codigo": "S03",
+            "enquadramento": "Presencial",
+            "vagas_total": 0,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "CE-107",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M3",
+                "sala": "CE-107",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CE-107",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CE-107",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [],
+            "optativa_matrizes": [
+              "Matriz:957",
+              "Matriz:976",
+              "Matriz:972",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:920",
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:948"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7XC",
+        "nome": "Presença Africana No Brasil",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "CQ-309",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T3",
+                "sala": "CQ-309",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Andrea Maila Voss"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:995",
+              "Matriz:983",
+              "Matriz:957",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:920",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:962",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:973"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7XD",
+        "nome": "Direitos Humanos, Segurança E Diversidade",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "EL-208",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4M4",
+                "sala": "EL-208",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4M5",
+                "sala": "EL-208",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Elena Camargo Shizuno"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:948",
+              "Matriz:985",
+              "Matriz:963",
+              "Matriz:957",
+              "Matriz:959",
+              "Matriz:976",
+              "Matriz:972",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Química Ambiental"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "CQ-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M4",
+                "sala": "CQ-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CQ-301",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Elena Camargo Shizuno"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:948",
+              "Matriz:985",
+              "Matriz:963",
+              "Matriz:957",
+              "Matriz:959",
+              "Matriz:976",
+              "Matriz:972",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:977"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7XE",
+        "nome": "Políticas Públicas",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "CE-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N2",
+                "sala": "CE-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N3",
+                "sala": "CE-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Maria Jose Menezes Lourega Belli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:995",
+              "Matriz:973",
+              "Matriz:948",
+              "Matriz:983",
+              "Matriz:957",
+              "Matriz:972",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7XF",
+        "nome": "Dimensão Ambiental Na Gestão Urbana",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Química Ambiental"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M3",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "6M4",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "6M5",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Maria Jose Menezes Lourega Belli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:957",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:972",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:967",
+              "Matriz:845",
+              "Matriz:784",
+              "Matriz:873",
+              "Matriz:888",
+              "Matriz:806",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:973",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:867",
+              "Matriz:755",
+              "Matriz:870",
+              "Matriz:844",
+              "Matriz:708",
+              "Matriz:709",
+              "Matriz:906",
+              "Matriz:919",
+              "Matriz:823",
+              "Matriz:962",
+              "Matriz:980",
+              "Matriz:977",
+              "Matriz:948"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "CE-303",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N2",
+                "sala": "CE-303",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N3",
+                "sala": "CE-303",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Maria Jose Menezes Lourega Belli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:957",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:972",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:967",
+              "Matriz:845",
+              "Matriz:784",
+              "Matriz:873",
+              "Matriz:888",
+              "Matriz:806",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:973",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:867",
+              "Matriz:755",
+              "Matriz:870",
+              "Matriz:844",
+              "Matriz:708",
+              "Matriz:709",
+              "Matriz:906",
+              "Matriz:919",
+              "Matriz:823",
+              "Matriz:962",
+              "Matriz:980",
+              "Matriz:977",
+              "Matriz:948"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GEE70S",
+        "nome": "Gestão Da Tecnologia E Inovação",
+        "creditos": 0,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "EaD",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Ubiradir Mendes Pinto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE7E3",
+        "nome": "Fundamentos De Economia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S41",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ],
+              [
+                "Eng Mecatrônica",
+                "Química Ambiental"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "EK-201",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T5",
+                "sala": "EK-201",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Maria Lucia Figueiredo Gomes De Meza"
+            ],
+            "optativa_matrizes": [
+              "Matriz:960",
+              "Matriz:980",
+              "Matriz:982",
+              "Matriz:957",
+              "Matriz:920",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:906",
+              "Matriz:948",
+              "Matriz:961",
+              "Matriz:972"
+            ]
+          },
+          {
+            "codigo": "S43",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ],
+              [
+                "Eng Mecatrônica",
+                "Química Ambiental"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "EK-201",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T5",
+                "sala": "EK-201",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Maria Lucia Figueiredo Gomes De Meza"
+            ],
+            "optativa_matrizes": [
+              "Matriz:960",
+              "Matriz:980",
+              "Matriz:982",
+              "Matriz:957",
+              "Matriz:920",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:906",
+              "Matriz:948",
+              "Matriz:961",
+              "Matriz:972"
+            ]
+          },
+          {
+            "codigo": "S71",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ],
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "CE-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T5",
+                "sala": "CE-206",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Andrea De Souza"
+            ],
+            "optativa_matrizes": [
+              "Matriz:960",
+              "Matriz:980",
+              "Matriz:982",
+              "Matriz:957",
+              "Matriz:920",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:906",
+              "Matriz:948",
+              "Matriz:961",
+              "Matriz:972"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GEE7E5",
+        "nome": "Fundamentos De Engenharia Econômica E Análise De Viabilidade",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil"
+              ],
+              [
+                "Tecnol. Sist. Telec.",
+                "Eng Eletrônica",
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "EB-210",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2N3",
+                "sala": "EB-210",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4N2",
+                "sala": "EB-210",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4N3",
+                "sala": "EB-210",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Janine Nicolosi Correa"
+            ],
+            "optativa_matrizes": [
+              "Matriz:957",
+              "Matriz:906",
+              "Matriz:968",
+              "Matriz:962",
+              "Matriz:972",
+              "Matriz:973"
+            ]
+          },
+          {
+            "codigo": "S55",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ],
+              [
+                "Eng Civil",
+                "Eng Mecatrônica"
+              ],
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "EB-204",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2M3",
+                "sala": "EB-204",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3M2",
+                "sala": "EB-212",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3M3",
+                "sala": "EB-212",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Janine Nicolosi Correa"
+            ],
+            "optativa_matrizes": [
+              "Matriz:957",
+              "Matriz:906",
+              "Matriz:968",
+              "Matriz:962",
+              "Matriz:972",
+              "Matriz:973"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GEE7F1",
+        "nome": "Fundamentos De Finanças",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Química Ambiental"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "EB-302",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T3",
+                "sala": "EB-302",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T4",
+                "sala": "EB-302",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T5",
+                "sala": "EB-302",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Armando Rasoto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:973",
+              "Matriz:957",
+              "Matriz:906",
+              "Matriz:920",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:948",
+              "Matriz:962",
+              "Matriz:972",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GEE7G1",
+        "nome": "Fundamentos De Gestão De Pessoas",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Química Ambiental"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "CC-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N2",
+                "sala": "CC-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N3",
+                "sala": "CC-206",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Ney Nakazato Miyahira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:960",
+              "Matriz:957",
+              "Matriz:973",
+              "Matriz:920",
+              "Matriz:981",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:982",
+              "Matriz:906",
+              "Matriz:948",
+              "Matriz:962",
+              "Matriz:972",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "CQ-009B",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T5",
+                "sala": "CQ-009B",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T6",
+                "sala": "CQ-009B",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rejane Cioli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:960",
+              "Matriz:957",
+              "Matriz:973",
+              "Matriz:920",
+              "Matriz:981",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:982",
+              "Matriz:906",
+              "Matriz:948",
+              "Matriz:962",
+              "Matriz:972",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GEE7G3",
+        "nome": "Fundamentos De Gestão Da Produção",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Tecn Automação Ind"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "CQ-008",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N2",
+                "sala": "CQ-008",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N3",
+                "sala": "CQ-008",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Paula Caldas Brognoli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:957",
+              "Matriz:976",
+              "Matriz:968",
+              "Matriz:906",
+              "Matriz:948",
+              "Matriz:962",
+              "Matriz:972",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GEE7G6",
+        "nome": "Fundamentos De Gestão De Projetos",
+        "creditos": 1,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ],
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "CQ-210",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N2",
+                "sala": "CQ-210",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Jamea Cristina Batista Silva Franklin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE7M1",
+        "nome": "Fundamentos De Marketing",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Química Ambiental"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "EB-303",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3N2",
+                "sala": "EB-303",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3N3",
+                "sala": "EB-303",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Paula Caldas Brognoli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:960",
+              "Matriz:973",
+              "Matriz:957",
+              "Matriz:976",
+              "Matriz:920",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:906",
+              "Matriz:948",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:972",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S95",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Comunic Organizacional"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N2",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N3",
+                "sala": "CE-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Ney Nakazato Miyahira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:960",
+              "Matriz:973",
+              "Matriz:957",
+              "Matriz:976",
+              "Matriz:920",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:906",
+              "Matriz:948",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:972",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ICSB30",
+        "nome": "Introdução A Banco De Dados",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ],
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "CQ-210",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N2",
+                "sala": "CQ-210",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N3",
+                "sala": "CQ-210",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N4",
+                "sala": "CQ-210",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Danillo Leal Belmonte"
+            ],
+            "optativa_matrizes": [
+              "Matriz:957",
+              "Matriz:968"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ICSE20",
+        "nome": "Técnicas De Programação",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "CB-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N2",
+                "sala": "CB-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N1",
+                "sala": "CB-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N2",
+                "sala": "CB-301",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Ionildo Jose Sanches"
+            ],
+            "optativa_matrizes": [
+              "Matriz:968"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "EaD",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação",
+                "Sist De Informação"
+              ],
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M3",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M4",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M5",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Milton Borsato"
+            ],
+            "optativa_matrizes": [
+              "Matriz:968"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ICSIX0",
+        "nome": "Inteligência Artificial E Sociedade",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "S73",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "CA-001",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N1",
+                "sala": "CA-001",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N2",
+                "sala": "CA-001",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N2",
+                "sala": "CA-001",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T5",
+                "sala": "CA-001",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T5",
+                "sala": "CA-001",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T6",
+                "sala": "CA-001",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T6",
+                "sala": "CA-001",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Gustavo Alberto Gimenez Lugo",
+              "Geraldo Augusto Pinto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:806",
+              "Matriz:957",
+              "Matriz:981",
+              "Matriz:962"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MAT7PC",
+        "nome": "Pré-Cálculo",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "CQ-309",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N5",
+                "sala": "CQ-309",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N4",
+                "sala": "CQ-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N5",
+                "sala": "CQ-304",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Ubirajara Zoccoli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985"
+            ]
+          },
+          {
+            "codigo": "N12",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ],
+              [
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "CQ-309",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N2",
+                "sala": "CQ-309",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N4",
+                "sala": "CQ-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N5",
+                "sala": "CQ-305",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Kleber Kendy Horikawa Nabas"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985"
+            ]
+          },
+          {
+            "codigo": "S16",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Mecatrônica"
+              ],
+              [
+                "Tecnol. Sist. Telec.",
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T5",
+                "sala": "CE-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T6",
+                "sala": "CE-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T5",
+                "sala": "CE-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T6",
+                "sala": "CE-106",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Jamea Cristina Batista Silva Franklin"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
