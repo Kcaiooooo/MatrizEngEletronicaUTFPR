@@ -1,0 +1,1471 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:31:17   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "guarapuava",
+    "name": "Guarapuava",
+    "code": "12"
+  },
+  "course": {
+    "id": "0002",
+    "name": "Sistemas Internet",
+    "sourceName": "SISTEMAS INTERNET"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=2"
+  },
+  "fingerprint": "c16b9674e5a105856703541763489cb7f1a2bc301d87c21df4b3d8a1c873ea89",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "SISTEMAS INTERNET",
+    "ultima_atualizacao": "19/09/2026 17:31:17   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "GSI35B",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TSI5B",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sistemas Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "SALA H309",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriano Martins De Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GSI36B",
+        "nome": "Gestão De Startups",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EAD",
+            "enquadramento": "EaD",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Guilherme Fernando Ribeiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HSI36E",
+        "nome": "Informática Na Sociedade",
+        "creditos": 0,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EAD",
+            "enquadramento": "EaD",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Luciano Ogiboski"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HUM1A",
+        "nome": "Ética, Profissão E Cidadania",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUME",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "SALA H306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Priscila Meier De Andrade Tribeck"
+            ],
+            "optativa_matrizes": [
+              "Matriz:20",
+              "Matriz:27",
+              "Matriz:16",
+              "Matriz:15",
+              "Matriz:19"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HUM1K",
+        "nome": "Ciência, Tecnologia E Sociedade",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPSI",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sistemas Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "SALA B11",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "SALA B11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Priscila Meier De Andrade Tribeck"
+            ],
+            "optativa_matrizes": [
+              "Matriz:15"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LSI31E",
+        "nome": "Comunicação Linguística",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TSI1",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sistemas Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "SALA B11",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "SALA B11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luan Jose Vaz Chagas"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LSI33E",
+        "nome": "Língua Inglesa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TSI3",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sistemas Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "SALA H303",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "SALA H303",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Beatriz Matte Braun"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LSI34F",
+        "nome": "Língua Inglesa No Contexto De Tecnologia Da Informação",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TSI4",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sistemas Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "SALA H303",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "SALA H303",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Beatriz Matte Braun"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "OPT1A",
+        "nome": "Indústria 4.0",
+        "creditos": 4,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 120,
+        "turmas": [
+          {
+            "codigo": "MEIUA",
+            "enquadramento": "Presencial",
+            "vagas_total": 12,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecânica",
+                "Eng. Civil",
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "MEI-U",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "MEI-U",
+                "sede": null
+              },
+              {
+                "horario": "7M2",
+                "sala": "MEI-U",
+                "sede": null
+              },
+              {
+                "horario": "7M3",
+                "sala": "MEI-U",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andre Luiz Soares"
+            ],
+            "optativa_matrizes": [
+              "Matriz:20",
+              "Matriz:19",
+              "Matriz:27",
+              "Matriz:22",
+              "Matriz:17",
+              "Matriz:15"
+            ]
+          },
+          {
+            "codigo": "MEIUB",
+            "enquadramento": "Presencial",
+            "vagas_total": 12,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecânica",
+                "Eng. Civil",
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "MEI-U",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "MEI-U",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "MEI-U",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "MEI-U",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andre Luiz Soares"
+            ],
+            "optativa_matrizes": [
+              "Matriz:20",
+              "Matriz:19",
+              "Matriz:27",
+              "Matriz:22",
+              "Matriz:17",
+              "Matriz:15"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "SI106E",
+        "nome": "Trabalho De Conclusão De Curso 2",
+        "creditos": 0,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SI6",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Diego Marczal"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSI31A",
+        "nome": "Desenvolvimento De Páginas Web Com Html E Css",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TSI1",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sistemas Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "LAB C1",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "LAB C1",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "LAB C1",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "LAB C1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Denis Lucas Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSI31B",
+        "nome": "Fundamentos De Sistemas Computacionais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TSI1",
+            "enquadramento": "Presencial",
+            "vagas_total": 43,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sistemas Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "LAB C1",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "LAB C1",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "LAB C1",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "LAB C1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sediane Carmem Lunardi Hernandes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSI31C",
+        "nome": "Pensamento Computacional E Linguagem De Programação Visual",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DPSI",
+            "enquadramento": "Presencial",
+            "vagas_total": 32,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Sistemas Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "SALA B11",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "SALA B11",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "SALA B11",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "SALA B11",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "SALA B11",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "SALA B11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diego Marczal"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "TSI1",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sistemas Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "SALA B11",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "SALA B11",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "SALA B11",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "SALA B11",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "SALA B11",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "SALA B11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Renata Luiza Stange Carneiro Gomes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSI31D",
+        "nome": "Introdução À Computação",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TSI1",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sistemas Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "SALA B11",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "SALA B11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Eduardo Andrade Iatskiu"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSI32A",
+        "nome": "Projeto De Software",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TSI2",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sistemas Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "LAB H206",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "LAB H206",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "LAB H206",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "LAB H206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Denis Lucas Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSI32B",
+        "nome": "Desenvolvimento De Páginas Web Com Framework E Css",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TSI2",
+            "enquadramento": "Presencial",
+            "vagas_total": 47,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sistemas Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "LAB F7 INF",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "LAB F7 INF",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "LAB F7 INF",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "LAB F7 INF",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roni Fabio Banaszewski"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSI32C",
+        "nome": "Fundamentos Em Servidores Web",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TSI2",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sistemas Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "LAB F7 INF",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "LAB F7 INF",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "LAB F7 INF",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "LAB F7 INF",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sediane Carmem Lunardi Hernandes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSI32D",
+        "nome": "Fundamentos De Programação",
+        "creditos": 4,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TSI2",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sistemas Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "LAB F7 INF",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "LAB F7 INF",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "LAB F7 INF",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "LAB F7 INF",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eleandro Maschio Krynski"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSI33A",
+        "nome": "Desenvolvimento De Aplicações Frontend Web Com Frameworks E Componentes",
+        "creditos": 2,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TSI3",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sistemas Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "LAB C1",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "LAB C1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roni Fabio Banaszewski"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSI33B",
+        "nome": "Desenvolvimento E Operações Na Web",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TSI3",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sistemas Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "LAB C1",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "LAB C1",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "LAB B6 INF",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "LAB B6 INF",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Hermano Pereira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSI33C",
+        "nome": "Programação Orientada A Objetos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TSI3",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sistemas Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "LAB F7 INF",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "LAB F7 INF",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "LAB F7 INF",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "LAB F7 INF",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Emerson Andre Fedechen"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSI33D",
+        "nome": "Banco De Dados Relacional",
+        "creditos": 4,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TSI3",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sistemas Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "LAB H206",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "LAB H206",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "LAB H206",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "LAB H206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Marcos Vichar Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSI34A",
+        "nome": "Programação Para Dispositivos Móveis",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TSI4",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sistemas Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "LAB B6 INF",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "LAB B6 INF",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "LAB B6 INF",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "LAB B6 INF",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andres Jesse Porfirio"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSI34B",
+        "nome": "Resolução De Problemas",
+        "creditos": 4,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TSI4",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sistemas Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "LAB B6 INF",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "LAB B6 INF",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "LAB B6 INF",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "LAB B6 INF",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eleandro Maschio Krynski"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSI34D",
+        "nome": "Desenvolvimento De Aplicações Backend",
+        "creditos": 2,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TSI4",
+            "enquadramento": "Presencial",
+            "vagas_total": 27,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sistemas Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "LAB B6 INF",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "LAB B6 INF",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diego Marczal"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSI34E",
+        "nome": "Banco De Dados Nosql",
+        "creditos": 2,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TSI4",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sistemas Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "LAB B6 INF",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "LAB B6 INF",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Marcos Vichar Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSI35A",
+        "nome": "Desenvolvimento De Projetos Para Dispositivos Móveis",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EAD",
+            "enquadramento": "EaD",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Andres Jesse Porfirio"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSI35C",
+        "nome": "Desenvolvimento E Operações Na Nuvem",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EAD",
+            "enquadramento": "EaD",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Hermano Pereira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSI35D",
+        "nome": "Desenvolvimento De Aplicações Backend Com Framework",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EAD",
+            "enquadramento": "EaD",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Carlos Eduardo Andrade Iatskiu"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSI35F",
+        "nome": "Trabalho De Conclusão De Curso 1",
+        "creditos": 2,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TSI5",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sistemas Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "LAB B7 INF",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "LAB B7 INF",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Denis Lucas Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSI36A",
+        "nome": "Tópicos Especiais",
+        "creditos": 0,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EAD",
+            "enquadramento": "EaD",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Roni Fabio Banaszewski"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSI36C",
+        "nome": "Computação Em Nuvem",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EAD",
+            "enquadramento": "EaD",
+            "vagas_total": 27,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Hermano Pereira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSI36D",
+        "nome": "Arquitetura De Sistemas Web",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EAD",
+            "enquadramento": "EaD",
+            "vagas_total": 27,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Renata Luiza Stange Carneiro Gomes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TSI36F",
+        "nome": "Trabalho De Conclusão De Curso 2",
+        "creditos": 0,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TSI6",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Diego Marczal"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "XSI34C",
+        "nome": "Projetos De Extensão",
+        "creditos": 2,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 90,
+        "turmas": [
+          {
+            "codigo": "TSI4",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sistemas Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "SALA B11",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "SALA B11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Emerson Andre Fedechen"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "XSI35E",
+        "nome": "Projetos De Extensão Colaborativos",
+        "creditos": 2,
+        "creditos_assincronos": 8,
+        "horas_extensionistas": 150,
+        "turmas": [
+          {
+            "codigo": "TSI5",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sistemas Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "SALA B11",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "SALA B11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luciano Ogiboski"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

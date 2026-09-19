@@ -1,0 +1,2792 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:31:21   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "guarapuava",
+    "name": "Guarapuava",
+    "code": "12"
+  },
+  "course": {
+    "id": "0013",
+    "name": "Eng. Mecatrônica",
+    "sourceName": "ENG. MECATRÔNICA"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=13"
+  },
+  "fingerprint": "addcb56a73cbe6f4b70724d28d59842258bbcb9dddd070e0f4db985a9d290896",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "ENG. MECATRÔNICA",
+    "ultima_atualizacao": "19/09/2026 17:31:21   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "CIV22D",
+        "nome": "Física: Mecânica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV2",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T3",
+                "sala": "SALA H310",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "SALA H310",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "SALA H310",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "SALA H310",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Aline Milan Farias"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV23D",
+        "nome": "Física: Termodinâmica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV3",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "SALA H310",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "SALA H310",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Lucia Ferreira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CIV24C",
+        "nome": "Física: Oscilações E Ondas",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CIV4",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T4",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "SALA H309",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diogo Zampieri Montanher"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FMT12C",
+        "nome": "Física: Mecânica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT2",
+            "enquadramento": "Presencial",
+            "vagas_total": 29,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "SALA F11",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "SALA F11",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "SALA F11",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "SALA F11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diogo Zampieri Montanher"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FMT13C",
+        "nome": "Física: Oscilações E Ondas",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT3",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "SALA F10",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "SALA F10",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diogo Zampieri Montanher"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FMT13H",
+        "nome": "Física: Termodinâmica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT3",
+            "enquadramento": "Presencial",
+            "vagas_total": 48,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "SALA F10",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "SALA F10",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Lucia Ferreira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FMT14A",
+        "nome": "Física Experimental",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT4",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "LAB B4 FIS",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "LAB B4 FIS",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Antonio Carlos Amaro De Faria Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GMT12D",
+        "nome": "Fundamentos De Engenharia E Segurança Do Trabalho",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT2",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "SALA F11",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "SALA F11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Guilherme Fernando Ribeiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GMT13E",
+        "nome": "Gestão Ambiental",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT3",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "SALA F10",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "SALA F10",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Allan Thierry Branco Torres"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GMT16A",
+        "nome": "Engenharia Da Qualidade",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT6",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "SALA H308",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "SALA H308",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo Vinicius Bubna Biscaia"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GMT17A",
+        "nome": "Gestão Da Produção",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT7",
+            "enquadramento": "Presencial",
+            "vagas_total": 3,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "SALA F12",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "SALA F12",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "SALA F12",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Guilherme Fernando Ribeiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GMT17G",
+        "nome": "Engenharia Econômica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT7",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "SALA H309",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriano Martins De Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HMT16G",
+        "nome": "Ciência, Tecnologia E Sociedade",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT6",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "SALA B11",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "SALA B11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Priscila Meier De Andrade Tribeck"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HUM1A",
+        "nome": "Ética, Profissão E Cidadania",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUME",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "SALA H306",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "SALA H306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Priscila Meier De Andrade Tribeck"
+            ],
+            "optativa_matrizes": [
+              "Matriz:20",
+              "Matriz:27",
+              "Matriz:16",
+              "Matriz:15",
+              "Matriz:19"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LMT11G",
+        "nome": "Comunicação Em Engenharia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 53,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "SALA F12",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "SALA F12",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luan Jose Vaz Chagas"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LMT12H",
+        "nome": "Metodologia Da Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT2",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "SALA F6",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "SALA F6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marizete Righi Cechin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LMT13I",
+        "nome": "Leitura E Escrita De Textos Acadêmicos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT3",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "SALA F6",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "SALA F6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marizete Righi Cechin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT11F",
+        "nome": "Desenho Técnico",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N3",
+                "sala": "SALA F12",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "SALA F12",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "SALA F12",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo Vinicius Bubna Biscaia"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT11H",
+        "nome": "Introdução À Engenharia Mecatrônica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "SALA F12",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "SALA F12",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Henrique Ajuz Holzmann"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT12E",
+        "nome": "Ciência Dos Materiais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT2",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "SALA F11",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "SALA F11",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "SALA F11",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "SALA F11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rolf De Campos Intema"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT12F",
+        "nome": "Desenho De Máquinas",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT2",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "LAB C1",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "LAB C1",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "LAB C1",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "LAB C1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Henrique Ajuz Holzmann"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT12G",
+        "nome": "Eletricidade",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT2",
+            "enquadramento": "Presencial",
+            "vagas_total": 37,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "SALA F11",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "SALA F11",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "SALA F11",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "SALA F11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Arthur Hirata Bertachi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT13D",
+        "nome": "Estática",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT3",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "SALA F10",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "SALA F10",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "SALA F12",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "SALA F12",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Filipe Macedo Moreira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT13F",
+        "nome": "Ensaios Dos Materiais",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT3",
+            "enquadramento": "Presencial",
+            "vagas_total": 32,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T5",
+                "sala": "SALA F12",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "SALA F12",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Viviane Teleginski Mazur"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT13G",
+        "nome": "Circuitos Eletricos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT3",
+            "enquadramento": "Presencial",
+            "vagas_total": 16,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "LAB C4",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "LAB C4",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "LAB C4",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "LAB C4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Arthur Hirata Bertachi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT14C",
+        "nome": "Mecânica Dos Sólidos",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT4",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "SALA H307",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Filipe Macedo Moreira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT14E",
+        "nome": "Corrosão E Tratamento Dos Materiais",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT4",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "SALA H307",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rolf De Campos Intema"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT14F",
+        "nome": "Metrologia Mecânica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT4",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "SALA H307",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Fernando Rigatti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT14G",
+        "nome": "Máquinas Elétricas",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT4",
+            "enquadramento": "Presencial",
+            "vagas_total": 8,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "LAB A9",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "LAB A9",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "LAB A9",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "LAB A9",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lilian Rosana Kremer Schultz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT14H",
+        "nome": "Eletrônica Aplicada",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT4",
+            "enquadramento": "Presencial",
+            "vagas_total": 8,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "LAB A11",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "LAB A11",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "LAB A11",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "LAB A11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lilian Rosana Kremer Schultz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT15B",
+        "nome": "Fenômenos De Transporte",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT5",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N3",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "SALA H307",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Fernando Rigatti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT15D",
+        "nome": "Processos Inovadores De Manufatura",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT5",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "LAB A10",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "LAB A10",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "LAB A10",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "LAB A10",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Filipe Macedo Moreira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT15E",
+        "nome": "Dinâmica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT5",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T5",
+                "sala": "SALA F10",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "SALA F10",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "SALA F10",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "SALA F10",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Denise Alves Ramalho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT15F",
+        "nome": "Instrumentação Industrial",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT5",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "LAB C4",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "LAB C4",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "LAB C4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Hilson Henrique Daum"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT15G",
+        "nome": "Eletrônica De Potência",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT5",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "LAB A11",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "LAB A11",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "LAB A11",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "LAB A11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Felipe Van Kan"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT16B",
+        "nome": "Hidráulica E Pneumática",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT6",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "LAB E4",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "LAB E4",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "LAB E4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Guilherme Felipe Abibe Machado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT16C",
+        "nome": "Mecanismos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT6",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "LAB A10",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "LAB A10",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "LAB A10",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "LAB A10",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Fernando Rigatti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT16D",
+        "nome": "Teoria De Controle 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT6B",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "LAB A6",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "LAB A6",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "LAB A6",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "LAB A6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lyvia Regina Biagi Silva Bertachi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT16E",
+        "nome": "Circuitos Digitais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT6",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "LAB A11",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "LAB A11",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "LAB A11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Hilson Henrique Daum"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT17B",
+        "nome": "Elementos De Máquinas",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT7",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "LAB A6",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "LAB A6",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "LAB A6",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "LAB A6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Viviane Teleginski Mazur"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT17C",
+        "nome": "Comando Numérico Computadorizado",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT7",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "LAB E1",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "LAB E1",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "LAB E1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Guilherme Felipe Abibe Machado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT17D",
+        "nome": "Automação Industrial",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT7",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T5",
+                "sala": "LAB C1",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "LAB C1",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "LAB C1",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "LAB C1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Arthur Hirata Bertachi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MCT17F",
+        "nome": "Teoria De Controle 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT7",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "LAB A12",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "LAB A12",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "LAB A12",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "LAB A12",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Felipe Van Kan"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MMT11A",
+        "nome": "Cálculo Diferencial E Integral 1",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DPMT",
+            "enquadramento": "Presencial",
+            "vagas_total": 51,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "SALA H309",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "SALA H309",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alex Sandro De Castilho"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "MCT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "SALA F12",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "SALA F12",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "SALA F12",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "SALA F12",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "SALA F12",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "SALA F12",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Bruno Leonardo Macedo Ferreira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MMT11B",
+        "nome": "Geometria Analítica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DPMT",
+            "enquadramento": "Presencial",
+            "vagas_total": 17,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "SALA H209",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "SALA H209",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "SALA H209",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Flavia Konowalenko"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "MCT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "SALA F12",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "SALA F12",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "SALA F12",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elvis Manuel Rodriguez Torrealba"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MMT12A",
+        "nome": "Cálculo Diferencial E Integral 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT2",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "SALA F11",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "SALA F11",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "SALA F11",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "SALA F11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elvis Manuel Rodriguez Torrealba"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MMT12B",
+        "nome": "Probabilidade E Estatística",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT2",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "SALA F11",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "SALA F11",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "SALA F11",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "SALA F11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Francini Damiani E Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MMT13A",
+        "nome": "Equações Diferenciais Ordinárias",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT3",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "SALA F10",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "SALA F10",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "SALA F10",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "SALA F10",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elvis Manuel Rodriguez Torrealba"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MMT13B",
+        "nome": "Álgebra Linear",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT3",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "SALA F10",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "SALA F10",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "SALA F10",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Bruno Leonardo Macedo Ferreira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MMT14B",
+        "nome": "Matemática Para Engenharia Mecatrônica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT4",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "SALA H307",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "SALA H307",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Juliano Dos Santos Gonschorowski"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MMT15A",
+        "nome": "Cálculo Numérico Computacional",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT5",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "LAB A6",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "LAB A6",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "LAB A6",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "LAB A6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elvis Manuel Rodriguez Torrealba"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "OPT1A",
+        "nome": "Indústria 4.0",
+        "creditos": 4,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 120,
+        "turmas": [
+          {
+            "codigo": "MEIUA",
+            "enquadramento": "Presencial",
+            "vagas_total": 12,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecânica",
+                "Eng. Civil",
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "MEI-U",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "MEI-U",
+                "sede": null
+              },
+              {
+                "horario": "7M2",
+                "sala": "MEI-U",
+                "sede": null
+              },
+              {
+                "horario": "7M3",
+                "sala": "MEI-U",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andre Luiz Soares"
+            ],
+            "optativa_matrizes": [
+              "Matriz:20",
+              "Matriz:19",
+              "Matriz:27",
+              "Matriz:22",
+              "Matriz:17",
+              "Matriz:15"
+            ]
+          },
+          {
+            "codigo": "MEIUB",
+            "enquadramento": "Presencial",
+            "vagas_total": 12,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecânica",
+                "Eng. Civil",
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "MEI-U",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "MEI-U",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "MEI-U",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "MEI-U",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andre Luiz Soares"
+            ],
+            "optativa_matrizes": [
+              "Matriz:20",
+              "Matriz:19",
+              "Matriz:27",
+              "Matriz:22",
+              "Matriz:17",
+              "Matriz:15"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPT5R",
+        "nome": "Introdução À Astronomia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 45,
+        "turmas": [
+          {
+            "codigo": "ASTR",
+            "enquadramento": "Presencial",
+            "vagas_total": 27,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecânica",
+                "Eng. Civil",
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "SALA F6",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "SALA F6",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "SALA F6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Lucia Ferreira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:20",
+              "Matriz:19",
+              "Matriz:22",
+              "Matriz:7",
+              "Matriz:27",
+              "Matriz:4"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "PMT11E",
+        "nome": "Fundamentos De Programação E Algoritmos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "LAB B6 INF",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "LAB B6 INF",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "LAB B6 INF",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "LAB B6 INF",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Marcos Vichar Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QMT11C",
+        "nome": "Química",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DPMT",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "SALA H308",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "SALA H308",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "SALA H308",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rolf De Campos Intema"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "MCT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "SALA F12",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "SALA F12",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "SALA F12",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Martha Tussolini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QMT11D",
+        "nome": "Química Experimental",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MCT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 53,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T5",
+                "sala": "LAB F1 QUI",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "LAB F1 QUI",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Martha Tussolini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "XMT14D",
+        "nome": "Processos De Fusão E União De Materiais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 45,
+        "turmas": [
+          {
+            "codigo": "MCT4",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "LAB E2",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "LAB E2",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "LAB E2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Henrique Ajuz Holzmann"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "XMT15C",
+        "nome": "Processos De Manufatura De Formas E Superfícies",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 45,
+        "turmas": [
+          {
+            "codigo": "MCT5",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "SALA H308",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "SALA H308",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "SALA H308",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Viviane Teleginski Mazur"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "XMT16F",
+        "nome": "Acionamentos Eletroeletrônicos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 30,
+        "turmas": [
+          {
+            "codigo": "MCT6",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "LAB A9",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "LAB A9",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lilian Rosana Kremer Schultz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "XMT17E",
+        "nome": "Sistemas Embarcados",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "MCT7",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "LAB A12",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "LAB A12",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "LAB A12",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "LAB A12",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Felipe Van Kan"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

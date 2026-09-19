@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:29:33   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "cornelio-procopio",
+    "name": "Cornélio Procópio",
+    "code": "02"
+  },
+  "course": {
+    "id": "0012",
+    "name": "Inglês",
+    "sourceName": "INGLÊS"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=12"
+  },
+  "fingerprint": "72848e6d94badb05e1b49ae5f7e25bbd6f729e610b63b32bbe16b9919a6cc5d4",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "INGLÊS",
+    "ultima_atualizacao": "19/09/2026 17:29:33   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "ING01",
+        "nome": "Lingua Inglesa 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "I11",
+            "enquadramento": "Presencial",
+            "vagas_total": 33,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "CALEM II",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "CALEM II",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "CALEM II",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "CALEM II",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Maisa De Alcantara Zakir"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "I12",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "CALEM II",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "CALEM II",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "CALEM II",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "CALEM II",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Maisa De Alcantara Zakir"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ING02",
+        "nome": "Lingua Inglesa 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "I21",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "CALEM II",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "CALEM II",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "CALEM II",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "CALEM II",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Maisa De Alcantara Zakir"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ING04",
+        "nome": "Lingua Inglesa 4",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "I41",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "CALEM II",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "CALEM II",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "CALEM II",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "CALEM II",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabiano Bernardes De Toledo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ING05",
+        "nome": "Lingua Inglesa 5",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "I51",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "CALEM II",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "CALEM II",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "CALEM II",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "CALEM II",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabiano Bernardes De Toledo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

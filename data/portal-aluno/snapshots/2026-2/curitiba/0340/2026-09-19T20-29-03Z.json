@@ -1,0 +1,4463 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:30:44   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "curitiba",
+    "name": "Curitiba",
+    "code": "01"
+  },
+  "course": {
+    "id": "0340",
+    "name": "Lic Letras Inglês",
+    "sourceName": "LIC LETRAS INGLÊS"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=340"
+  },
+  "fingerprint": "48b8f5fab8b611380ce7353f24fea7dbcd65efd552525df4fba634d6c3ba80c4",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "LIC LETRAS INGLÊS",
+    "ultima_atualizacao": "19/09/2026 17:30:44   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [
+        {
+          "marcador": "*",
+          "sede": "Ecoville"
+        },
+        {
+          "marcador": "**",
+          "sede": "Neoville"
+        }
+      ],
+      "sede_sem_marcador": "Centro"
+    },
+    "disciplinas": [
+      {
+        "codigo": "CL78H",
+        "nome": "Estágio Curricular Obrigatório 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "E01",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Andressa Brawerman Albini"
+            ],
+            "optativa_matrizes": [
+              "Matriz:822"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CL78J",
+        "nome": "Trabalho De Conclusão De Curso 2",
+        "creditos": 0,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "E01",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Silvana Ayub Polchlopek"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ED70U",
+        "nome": "Libras B",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S83",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática"
+              ],
+              [
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "CE-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CE-102",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rita De Cassia Maestri"
+            ],
+            "optativa_matrizes": [
+              "Matriz:547",
+              "Matriz:906",
+              "Matriz:867",
+              "Matriz:844",
+              "Matriz:616",
+              "Matriz:678",
+              "Matriz:919",
+              "Matriz:843"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EDU70A",
+        "nome": "História Da Profissão Docente",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S65",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 22,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Química"
+              ],
+              [
+                "Lic Física",
+                "Lic Matemática",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "EB-304",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T2",
+                "sala": "EB-304",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Zinara Marcet De Andrade"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S81",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Fisica 9"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T2",
+                "sala": "CA-103",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Zinara Marcet De Andrade"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S83",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática"
+              ],
+              [
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "CE-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M3",
+                "sala": "CE-104",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Zinara Marcet De Andrade"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M5",
+                "sala": "CA-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M6",
+                "sala": "CA-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Zinara Marcet De Andrade"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N4",
+                "sala": "CC-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Solange Freundel Filvock"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EDU70B",
+        "nome": "Pesquisa Em Educação",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S81",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Fisica 9"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "CA-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T2",
+                "sala": "CA-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T3",
+                "sala": "CA-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Flavia Dias De Souza"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S83",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática"
+              ],
+              [
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M6",
+                "sala": "CE-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Solange Freundel Filvock"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "CE-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N2",
+                "sala": "CE-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N3",
+                "sala": "CE-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Solange Freundel Filvock"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EDU70D",
+        "nome": "Psicologia Da Educação",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S65",
+            "enquadramento": "Presencial",
+            "vagas_total": 48,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Química"
+              ],
+              [
+                "Lic Física",
+                "Lic Matemática",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "EB-203",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4T3",
+                "sala": "EB-203",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4T4",
+                "sala": "EB-203",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Samira Abdel Jalil"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:976",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S81",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Fisica 9"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T1",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T2",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T3",
+                "sala": "CA-103",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Samira Abdel Jalil"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:976",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S83",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática"
+              ],
+              [
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "CA-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CA-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CA-102",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Solange Freundel Filvock"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:976",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T2",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CE-302",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Samira Abdel Jalil"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:976",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "CE-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T5",
+                "sala": "CE-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T6",
+                "sala": "CE-206",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Samira Abdel Jalil"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:976",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EDU70E",
+        "nome": "Didática",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S65",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "EB-210",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5T2",
+                "sala": "EB-210",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5T3",
+                "sala": "EB-210",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Lauro Rafael Cruz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S81",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Fisica 9"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "CE-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T2",
+                "sala": "CE-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T3",
+                "sala": "CE-304",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Joao Carlos Pereira De Moraes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S83",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática"
+              ],
+              [
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M2",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M3",
+                "sala": "CA-101",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Lauro Rafael Cruz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "CE-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N2",
+                "sala": "CE-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N3",
+                "sala": "CE-206",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Lauro Rafael Cruz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EDU70G",
+        "nome": "Gestão Escolar",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S81",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Fisica 9"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "CA-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T4",
+                "sala": "CA-102",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Lauro Rafael Cruz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S83",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática"
+              ],
+              [
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "CA-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M2",
+                "sala": "CA-102",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Oseias Santos De Oliveira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "CA-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M2",
+                "sala": "CA-102",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Oseias Santos De Oliveira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:985",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EDU70H",
+        "nome": "Política Educacional",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "CA-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CA-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Oseias Santos De Oliveira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S65",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Química"
+              ],
+              [
+                "Lic Letras",
+                "Lic Matemática",
+                "Lic Letras Inglês",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T5",
+                "sala": "EB-309",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3T6",
+                "sala": "EB-309",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Silvana Stremel Leite"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S81",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Fisica 9"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "CN-133",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T2",
+                "sala": "CN-133",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Silvana Stremel Leite"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S83",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática"
+              ],
+              [
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "CE-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M3",
+                "sala": "CE-105",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Oseias Santos De Oliveira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T5",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T6",
+                "sala": "CE-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Lauro Rafael Cruz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "CE-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T5",
+                "sala": "CE-104",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Lauro Rafael Cruz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EDU70I",
+        "nome": "Educação Especial E Processos Inclusivos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S81",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Fisica 9"
+              ],
+              [
+                "Lic Química",
+                "Téc.Em Multimeios Buti",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T2",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CA-103",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Solange Freundel Filvock"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:976",
+              "Matriz:920",
+              "Matriz:970",
+              "Matriz:973",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S83",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática"
+              ],
+              [
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "CE-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CE-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M6",
+                "sala": "CE-206",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marta Rejane Proenca Filietaz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:976",
+              "Matriz:920",
+              "Matriz:970",
+              "Matriz:973",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T2",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CA-103",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Solange Freundel Filvock"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:976",
+              "Matriz:920",
+              "Matriz:970",
+              "Matriz:973",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "CE-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N4",
+                "sala": "CE-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N5",
+                "sala": "CE-105",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Solange Freundel Filvock"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:976",
+              "Matriz:920",
+              "Matriz:970",
+              "Matriz:973",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EDU70J",
+        "nome": "Libras",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Química",
+                "Téc.Em Multimeios Buti",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "CE-306",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T5",
+                "sala": "CE-306",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T6",
+                "sala": "CE-306",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Leticia Fernandes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T2",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CE-305",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rita De Cassia Maestri"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S03",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "CQ-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T5",
+                "sala": "CQ-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T6",
+                "sala": "CQ-305",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Leticia Fernandes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S04",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "CE-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M3",
+                "sala": "CE-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M4",
+                "sala": "CE-104",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rita De Cassia Maestri"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S65",
+            "enquadramento": "Presencial",
+            "vagas_total": 32,
+            "vagas_calouros": 22,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Química"
+              ],
+              [
+                "Lic Física",
+                "Lic Matemática",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "EB-309",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3T3",
+                "sala": "EB-309",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3T4",
+                "sala": "EB-309",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Rita De Cassia Maestri"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S81",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Fisica 9"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "CE-303",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T5",
+                "sala": "CE-303",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T6",
+                "sala": "CE-303",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Leticia Fernandes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S83",
+            "enquadramento": "Presencial",
+            "vagas_total": 31,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática"
+              ],
+              [
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "CA-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CA-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CA-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Silvia Andreis Witkoski"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "CE-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CE-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M6",
+                "sala": "CE-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Silvia Andreis Witkoski"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7XD",
+        "nome": "Direitos Humanos, Segurança E Diversidade",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "EL-208",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4M4",
+                "sala": "EL-208",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4M5",
+                "sala": "EL-208",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Elena Camargo Shizuno"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:948",
+              "Matriz:985",
+              "Matriz:963",
+              "Matriz:957",
+              "Matriz:959",
+              "Matriz:976",
+              "Matriz:972",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Química Ambiental"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "CQ-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M4",
+                "sala": "CQ-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CQ-301",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Elena Camargo Shizuno"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:948",
+              "Matriz:985",
+              "Matriz:963",
+              "Matriz:957",
+              "Matriz:959",
+              "Matriz:976",
+              "Matriz:972",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:977"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LEM71A",
+        "nome": "Língua Inglesa I",
+        "creditos": 8,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 51,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M2",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M1",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M2",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M3",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M1",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M2",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M3",
+                "sala": "CN-017",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Jacqueline Andreucci Lindstron"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM71C",
+        "nome": "Fundamentos E Crítica Da Literatura I",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 51,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "CN-022",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M4",
+                "sala": "CN-022",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CN-022",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CN-022",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Jaqueline Bohn Donada"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM71D",
+        "nome": "Introdução Aos Estudos Da Linguagem",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 51,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "CN-022",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M2",
+                "sala": "CN-022",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M4",
+                "sala": "CN-022",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CN-022",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Jeniffer Imaregna Alcantara De Albuquerque"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM71E",
+        "nome": "Leitura E Escrita Acadêmica Em Língua Portuguesa I",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M5",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M6",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M3",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M4",
+                "sala": "CN-019",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Elisa Novaski Cordeiro"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S86",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 23,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M5",
+                "sala": "CA-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M6",
+                "sala": "CA-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M3",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M4",
+                "sala": "CN-017",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Cindy Gleyce Santos Luiz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM71F",
+        "nome": "Linguagem E Tecnologia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 29,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "CE-S03",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M2",
+                "sala": "CE-S03",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M3",
+                "sala": "CE-S03",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Claudia Beatriz Monte Jorge Martins"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S86",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 24,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "CN-021",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M2",
+                "sala": "CN-021",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M3",
+                "sala": "CN-021",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rita De Cassia Veiga Marriott"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM72A",
+        "nome": "Língua Inglesa Ii",
+        "creditos": 8,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T4",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T5",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T4",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T5",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T6",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T1",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T2",
+                "sala": "CN-019",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Juliana Bellini Meireles Sydorak"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM72C",
+        "nome": "Fundamentos E Crítica Da Literatura Ii",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T3",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T4",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T5",
+                "sala": "CN-019",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Juliana Bellini Meireles Sydorak"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM72D",
+        "nome": "Estudos Do Texto",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T4",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T5",
+                "sala": "CC-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Cindy Gleyce Santos Luiz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM72E",
+        "nome": "Leitura E Escrita Acadêmica Em Língua Portuguesa Ii",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T2",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T1",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T2",
+                "sala": "CN-017",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Cindy Gleyce Santos Luiz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM72F",
+        "nome": "Introdução À Pesquisa Em Linguagem",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "CA-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T2",
+                "sala": "CA-105",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Silvana Ayub Polchlopek"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM73A",
+        "nome": "Língua Inglesa Iii",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M5",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M6",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M3",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M3",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M4",
+                "sala": "CC-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Ana Paula Petriu Ferreira Engelbert"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM73B",
+        "nome": "Introdução À Leitura E Escrita Acadêmica Em Língua Inglesa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M5",
+                "sala": "CA-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M6",
+                "sala": "CA-105",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Juliana Bellini Meireles Sydorak"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM73C",
+        "nome": "Cultura E Literatura Brasileira",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M6",
+                "sala": "CC-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Flavia Azevedo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM73D",
+        "nome": "Fonética E Fonologia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M2",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M2",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M3",
+                "sala": "CN-019",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marcia Regina Becker"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM73E",
+        "nome": "Ensino De Pfol I",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "CA-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M2",
+                "sala": "CA-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M3",
+                "sala": "CA-105",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Cindy Gleyce Santos Luiz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM73G",
+        "nome": "Linguística Aplicada Ao Ensino E Aprendizagem De Língua Estrangeira I",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M4",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M5",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M6",
+                "sala": "CN-017",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Fabiana Vanessa Achy De Almeida"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM74A",
+        "nome": "Língua Inglesa Iv",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T5",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T4",
+                "sala": "CN-023",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T5",
+                "sala": "CN-023",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Dante Luiz De Lima"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM74B",
+        "nome": "Leitura E Escrita Acadêmica Em Língua Inglesa I",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T5",
+                "sala": "CN-023",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T6",
+                "sala": "CN-023",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T1",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T2",
+                "sala": "CC-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Jose Orlando Cardoso Do Monte Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM74C",
+        "nome": "Introdução À Leitura Literária Em Língua Inglesa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T2",
+                "sala": "CN-019",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Jaqueline Bohn Donada"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM74D",
+        "nome": "Estudos De Gramática",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T4",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T4",
+                "sala": "CN-017",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Walker Douglas Pincerati"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM74E",
+        "nome": "Ensino De Pfol Ii",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T2",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T3",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T4",
+                "sala": "CC-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Fernanda Deah Chichorro Baldin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM74F",
+        "nome": "Estudos Da Tradução I",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "CN-023",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T2",
+                "sala": "CN-023",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T3",
+                "sala": "CN-023",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Silvana Ayub Polchlopek"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM74G",
+        "nome": "Linguística Aplicada Ao Ensino E Aprendizagem De Língua Estrangeira Ii",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T5",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T6",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T5",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T6",
+                "sala": "CC-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Fabiana Vanessa Achy De Almeida"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM75A",
+        "nome": "Língua Inglesa V",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M5",
+                "sala": "CN-023",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M6",
+                "sala": "CN-023",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M2",
+                "sala": "CN-023",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M3",
+                "sala": "CN-023",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Jose Orlando Cardoso Do Monte Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM75B",
+        "nome": "Leitura E Escrita Acadêmica Em Língua Inglesa Ii",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M4",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M5",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M6",
+                "sala": "CC-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Ana Paula Petriu Ferreira Engelbert"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM75C",
+        "nome": "Literatura Em Língua Inglesa I",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "CA-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M2",
+                "sala": "CA-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M1",
+                "sala": "CA-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M2",
+                "sala": "CA-105",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Dante Luiz De Lima"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM75D",
+        "nome": "Estudos De Variação Linguística",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "CN-022",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M2",
+                "sala": "CN-022",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M3",
+                "sala": "CN-022",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Edson Domingos Fagundes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM75E",
+        "nome": "Metodologia De Ensino E Tecnologia Em Língua Inglesa",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "CN-023",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CN-023",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M6",
+                "sala": "CN-023",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marcia Regina Becker"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM75F",
+        "nome": "Estudos Da Tradução Ii",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M4",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M5",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M6",
+                "sala": "CC-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Flavia Azevedo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM76A",
+        "nome": "Língua Inglesa Vi",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "CN-023",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T4",
+                "sala": "CN-023",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T5",
+                "sala": "CN-023",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T6",
+                "sala": "CN-023",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Jose Orlando Cardoso Do Monte Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM76C",
+        "nome": "Literatura Em Língua Inglesa Ii",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T2",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T5",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T6",
+                "sala": "CN-017",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Jaqueline Bohn Donada"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM76D",
+        "nome": "Estudo Dos Sentidos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "CE-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T2",
+                "sala": "CE-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T3",
+                "sala": "CE-106",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Walker Douglas Pincerati"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM76E",
+        "nome": "Prática De Ensino Em Língua Inglesa I",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T5",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T4",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T5",
+                "sala": "CN-017",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Andressa Brawerman Albini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM76F",
+        "nome": "Estágio Curricular Supervisionado I",
+        "creditos": 9,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 21,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T2",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T3",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T4",
+                "sala": "CC-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rita De Cassia Veiga Marriott"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM77A",
+        "nome": "Língua Inglesa Vii",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M2",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CA-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M6",
+                "sala": "CA-105",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Fabiana Vanessa Achy De Almeida"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM77B",
+        "nome": "Leitura E Escrita Acadêmica Em Língua Inglesa Iii",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M4",
+                "sala": "CN-023",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M5",
+                "sala": "CN-023",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M6",
+                "sala": "CN-023",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Jose Orlando Cardoso Do Monte Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM77C",
+        "nome": "Literatura Em Língua Inglesa Iii",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "CN-023",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M2",
+                "sala": "CN-023",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M3",
+                "sala": "CN-023",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M4",
+                "sala": "CN-023",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marcia Regina Becker"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM77E",
+        "nome": "Prática De Ensino De Língua Inglesa Ii",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M4",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M5",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M6",
+                "sala": "CN-017",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Jacqueline Andreucci Lindstron"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM77F",
+        "nome": "Estágio Curricular Supervisionado Ii",
+        "creditos": 9,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "CA-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M2",
+                "sala": "CA-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M3",
+                "sala": "CA-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M4",
+                "sala": "CA-105",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rita De Cassia Veiga Marriott"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM77G",
+        "nome": "Tcc I",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 32,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "CA-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CA-105",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Silvana Ayub Polchlopek"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM78F",
+        "nome": "Estágio Curricular Suoervisionado Iii",
+        "creditos": 9,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "CA-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T4",
+                "sala": "CA-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T5",
+                "sala": "CA-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T6",
+                "sala": "CA-105",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Andressa Brawerman Albini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM78G",
+        "nome": "Tcc Ii",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "CA-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T2",
+                "sala": "CA-105",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Silvana Ayub Polchlopek"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LEM7AC",
+        "nome": "Gp Tradlin: Tradução Do Texto Literário",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 27,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M2",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M3",
+                "sala": "CC-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Flavia Azevedo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:963"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LEM7AD",
+        "nome": "Gp O Romance De Língua Inglesa Do Romantismo À Contemporaneidade: Teoria",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T1",
+                "sala": "CN-023",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T2",
+                "sala": "CN-023",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T3",
+                "sala": "CN-023",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Dante Luiz De Lima"
+            ],
+            "optativa_matrizes": [
+              "Matriz:963"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LEM7AK",
+        "nome": "Gp Português Para Falantes De Outras Línguas",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T1",
+                "sala": "CA-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T2",
+                "sala": "CA-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T3",
+                "sala": "CA-105",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Fernanda Deah Chichorro Baldin"
+            ],
+            "optativa_matrizes": [
+              "Matriz:963"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LEM7AL",
+        "nome": "Gp Aquisição E Ensino De Inglês Como Língua Estrangeira",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "CN-023",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M2",
+                "sala": "CN-023",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M3",
+                "sala": "CN-023",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Cindy Gleyce Santos Luiz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:963"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LEM7BA",
+        "nome": "Ge O Romance De Língua Inglesa Do Romantismo À Contemporaneidade: Ensino",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 45,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M2",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M3",
+                "sala": "CN-017",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Juliana Bellini Meireles Sydorak"
+            ],
+            "optativa_matrizes": [
+              "Matriz:963"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LEM7BE",
+        "nome": "Ge Português Para Falantes De Outras Línguas",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 45,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M2",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M3",
+                "sala": "CN-019",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Fernanda Deah Chichorro Baldin"
+            ],
+            "optativa_matrizes": [
+              "Matriz:963"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LEM7BG",
+        "nome": "Ge Cultura E Ensino De Línguas Estrangeiras",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 45,
+        "turmas": [
+          {
+            "codigo": "S86",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T1",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T2",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T3",
+                "sala": "CN-017",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Andressa Brawerman Albini"
+            ],
+            "optativa_matrizes": [
+              "Matriz:963"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LEM7CY",
+        "nome": "Shakespeare E Educação",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M5",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M6",
+                "sala": "CN-019",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marcia Regina Becker"
+            ],
+            "optativa_matrizes": [
+              "Matriz:963"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LEM7EA",
+        "nome": "Linguagem E Psicanálise",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T2",
+                "sala": "CN-017",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Walker Douglas Pincerati"
+            ],
+            "optativa_matrizes": [
+              "Matriz:963"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LEM7EB",
+        "nome": "Psicolinguística",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 27,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M5",
+                "sala": "CN-023",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M6",
+                "sala": "CN-023",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Fabiana Vanessa Achy De Almeida"
+            ],
+            "optativa_matrizes": [
+              "Matriz:963"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LEM7EI",
+        "nome": "Tópicos Em Gêneros Literários",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 31,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T5",
+                "sala": "CN-017",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T6",
+                "sala": "CN-017",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Jaqueline Bohn Donada"
+            ],
+            "optativa_matrizes": [
+              "Matriz:963"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

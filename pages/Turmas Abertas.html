@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turmas Abertas | K-Matrizes</title>
+    <meta name="description" content="Consulte turmas abertas da UTFPR por câmpus, curso e versão histórica.">
+    <link rel="stylesheet" href="../assets/css/utilities.css">
+    <link rel="stylesheet" href="../assets/css/site-themes.css">
+    <link rel="stylesheet" href="../assets/css/turmas-abertas.css">
+    <script src="../assets/js/shared/storage.js"></script>
+    <script src="../assets/js/shared/theme.js"></script>
+</head>
+<body class="gnh-page">
+    <header class="gnh-header">
+        <div class="gnh-header-inner">
+            <a class="gnh-back-link" href="../index.html">← K-Matrizes</a>
+            <label class="gnh-theme-control" for="theme-select">Tema
+                <select id="theme-select" class="theme-select-input" aria-label="Tema do site">
+                    <option value="dark">Escuro</option>
+                    <option value="light">Claro</option>
+                    <option value="utfpr">UTFPR</option>
+                    <option value="dracula">Dracula</option>
+                </select>
+            </label>
+        </div>
+    </header>
+
+    <main class="gnh-main">
+        <section class="gnh-hero">
+            <p class="gnh-eyebrow">K-Matrizes · UTFPR</p>
+            <h1>Turmas Abertas</h1>
+            <p class="gnh-lead">Turmas abertas organizadas por câmpus e curso, com capturas versionadas para consultar o que mudou ao longo do tempo.</p>
+            <p id="source-note" class="gnh-source-note">Fonte oficial única: Sistema Acadêmico UTFPR. Os dados são somente para consulta e não fazem matrícula.</p>
+        </section>
+
+        <section class="gnh-card gnh-controls-card" aria-labelledby="filters-title">
+            <div class="gnh-card-heading">
+                <div>
+                    <p class="gnh-eyebrow">Consulta</p>
+                    <h2 id="filters-title">Escolha a grade</h2>
+                </div>
+                <span id="data-status" class="gnh-status" role="status">Carregando dados…</span>
+            </div>
+            <div class="gnh-controls">
+                <label>Câmpus
+                    <select id="campus-select"></select>
+                </label>
+                <label>Curso
+                    <select id="course-select"></select>
+                </label>
+                <label>Versão capturada
+                    <select id="version-select"></select>
+                </label>
+            </div>
+            <p id="selection-note" class="gnh-selection-note"></p>
+        </section>
+
+        <section id="empty-state" class="gnh-card gnh-empty" hidden>
+            <h2>Esse curso ainda não tem captura</h2>
+            <p>O curso está no catálogo oficial, mas ainda não há uma captura de turmas abertas disponível para esta consulta.</p>
+        </section>
+
+        <div id="grade-content" hidden>
+            <section class="gnh-stats" aria-label="Resumo da grade">
+                <div class="gnh-stat"><span>Disciplinas</span><strong id="stat-disciplines">—</strong></div>
+                <div class="gnh-stat"><span>Turmas</span><strong id="stat-classes">—</strong></div>
+                <div class="gnh-stat"><span>Atualização na fonte</span><strong id="stat-source-update">—</strong></div>
+                <div class="gnh-stat"><span>Capturada em</span><strong id="stat-captured">—</strong></div>
+            </section>
+
+            <section class="gnh-card gnh-calendar-card" aria-labelledby="calendar-title">
+                <div class="gnh-card-heading">
+                    <div>
+                        <p class="gnh-eyebrow">Planejamento</p>
+                        <h2 id="calendar-title">Meu calendário</h2>
+                    </div>
+                    <div class="gnh-calendar-actions">
+                        <button id="auto-grade" class="gnh-primary-button" type="button">Grade automática</button>
+                        <button id="clear-calendar" class="gnh-secondary-button" type="button" disabled>Limpar seleção</button>
+                    </div>
+                </div>
+                <p id="calendar-note" class="gnh-muted">Selecione uma ou mais turmas na lista de disciplinas para montar sua semana.</p>
+                <div class="gnh-calendar-tools">
+                    <label class="gnh-limit-control" for="calendar-limit">Limite de aulas/semana
+                        <input id="calendar-limit" type="number" min="1" max="200" step="1" value="40" inputmode="numeric">
+                    </label>
+                    <span id="calendar-usage" class="gnh-calendar-usage">Aulas usadas: 0 / 40</span>
+                </div>
+                <p id="calendar-validation" class="gnh-calendar-validation" role="status" aria-live="polite"></p>
+                <div id="calendar-grid" aria-live="polite"></div>
+            </section>
+
+            <div class="gnh-layout">
+                <section class="gnh-card gnh-disciplines-card" aria-labelledby="disciplines-title">
+                    <div class="gnh-card-heading">
+                        <div>
+                            <p class="gnh-eyebrow">Oferta</p>
+                            <h2 id="disciplines-title">Disciplinas e turmas</h2>
+                        </div>
+                    </div>
+                    <div class="gnh-discipline-filters" role="search" aria-label="Filtros de disciplinas ofertadas">
+                        <label class="gnh-discipline-filter-label" for="discipline-code">Código
+                            <input id="discipline-code" type="search" placeholder="Ex.: MAT7AL" autocomplete="off">
+                        </label>
+                        <label class="gnh-discipline-filter-label" for="discipline-search">Nome da matéria
+                            <input id="discipline-search" type="search" placeholder="Ex.: Álgebra Linear" autocomplete="off">
+                        </label>
+                        <label class="gnh-discipline-filter-label" for="discipline-schedule">Horário
+                            <input id="discipline-schedule" type="search" placeholder="Ex.: 2T2 ou noite" autocomplete="off">
+                        </label>
+                    </div>
+                    <label class="gnh-discipline-scope" for="discipline-campus-scope">
+                        <input id="discipline-campus-scope" type="checkbox">
+                        Procurar esta matéria e equivalentes em todos os cursos do câmpus
+                    </label>
+                    <p id="discipline-scope-note" class="gnh-discipline-scope-note" hidden>Os resultados usam a captura mais recente de cada curso deste câmpus.</p>
+                    <p id="discipline-count" class="gnh-muted"></p>
+                    <div id="disciplines-list" class="gnh-disciplines-list"></div>
+                </section>
+
+                <aside class="gnh-sidebar">
+                    <section class="gnh-card gnh-mini-calendar-card" aria-labelledby="mini-calendar-title">
+                        <p class="gnh-eyebrow">Visão rápida</p>
+                        <h2 id="mini-calendar-title">Mini calendário</h2>
+                        <p class="gnh-muted">Passe o mouse sobre uma turma para ver onde ela se encaixa.</p>
+                        <div id="mini-calendar-grid" aria-live="polite"></div>
+                    </section>
+                </aside>
+            </div>
+
+            <section class="gnh-card gnh-history-card" aria-labelledby="history-title">
+                <p class="gnh-eyebrow">Rastreabilidade</p>
+                <h2 id="history-title">Histórico de versões</h2>
+                <p class="gnh-muted">Cada versão é uma captura imutável. Alterações são comparadas por disciplina.</p>
+                <div id="history-list" class="gnh-history-list"></div>
+                <div id="change-log" class="gnh-change-log"></div>
+            </section>
+        </div>
+    </main>
+
+    <div id="auto-grade-modal" class="gnh-auto-grade-modal" hidden role="dialog" aria-modal="true" aria-labelledby="auto-grade-title">
+        <form id="auto-grade-form" class="gnh-auto-grade-card">
+            <div class="gnh-card-heading">
+                <div>
+                    <p class="gnh-eyebrow">Planejamento assistido</p>
+                    <h2 id="auto-grade-title">Montar grade automática</h2>
+                </div>
+                <button id="auto-grade-close" class="gnh-modal-close" type="button" aria-label="Fechar">×</button>
+            </div>
+            <p class="gnh-muted">Escolha a matriz usada no K-Matrizes. O progresso salvo nessa matriz será usado para ordenar as matérias por prioridade e encaixar o maior número possível no limite atual.</p>
+            <label class="gnh-auto-grade-label" for="auto-grade-matrix">Sua matriz
+                <select id="auto-grade-matrix"></select>
+            </label>
+            <div class="gnh-auto-grade-filters">
+                <p class="gnh-auto-grade-filter-help">Clique nos horários que você precisa evitar. As células marcadas em vermelho serão consideradas indisponíveis; deixe todas livres se não houver restrições.</p>
+                <div id="auto-grade-availability-grids" class="gnh-auto-grade-availability-grids"></div>
+            </div>
+            <p class="gnh-auto-grade-warning">A grade atual será substituída pela sugestão. Depois você poderá ajustar as turmas manualmente.</p>
+            <p id="auto-grade-status" class="gnh-calendar-validation" role="status" aria-live="polite"></p>
+            <div class="gnh-modal-actions">
+                <button id="auto-grade-cancel" class="gnh-secondary-button" type="button">Cancelar</button>
+                <button id="auto-grade-submit" class="gnh-primary-button" type="submit">Montar grade</button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="gnh-footer">
+        <a href="../index.html">Voltar ao K-Matrizes</a>
+        <span>Ferramenta independente, sem vínculo oficial com a UTFPR.</span>
+    </footer>
+
+    <script type="module" src="../assets/js/shared/turmas-abertas.js"></script>
+</body>
+</html>

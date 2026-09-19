@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:32:32   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "ponta-grossa",
+    "name": "Ponta Grossa",
+    "code": "06"
+  },
+  "course": {
+    "id": "0096",
+    "name": "Lic Computação - Rio",
+    "sourceName": "LIC COMPUTAÇÃO - RIO"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=96"
+  },
+  "fingerprint": "188f3e89f233848523f22a3bf1b64c8ade101df8d7a6b66d23e058fe0b9c01ff",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "LIC COMPUTAÇÃO - RIO",
+    "ultima_atualizacao": "19/09/2026 17:32:32   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "LC05B",
+        "nome": "Educação Inclusiva E Tecnologias Assistivas",
+        "creditos": 0,
+        "creditos_assincronos": 5,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "RIO5",
+            "enquadramento": "Presencial",
+            "vagas_total": 0,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Rio"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Viviane Demetrio Do Nascimento"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LC05C",
+        "nome": "Abordagens Pedagógicas Em Ead 2",
+        "creditos": 0,
+        "creditos_assincronos": 6,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "RIO5",
+            "enquadramento": "Presencial",
+            "vagas_total": 0,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Rio"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Elaine Ferreira Machado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LC05E",
+        "nome": "Engenharia De Software",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "RIO5",
+            "enquadramento": "Presencial",
+            "vagas_total": 0,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Rio"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Eliana Claudia Mayumi Ishikawa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LC06A",
+        "nome": "Appc 6 – Tdic Em Projetos Educacionais 2",
+        "creditos": 0,
+        "creditos_assincronos": 6,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "RIO6",
+            "enquadramento": "EaD",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Rio"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Mario Jose Van Thienen Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SCA6",
+            "enquadramento": "EaD",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Rio"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Mario Jose Van Thienen Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LC06B",
+        "nome": "Abordagens Pedagógicas Em Ead 3",
+        "creditos": 0,
+        "creditos_assincronos": 6,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "RIO6",
+            "enquadramento": "EaD",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Rio"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Elaine Ferreira Machado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LC06C",
+        "nome": "Empreendedorismo",
+        "creditos": 0,
+        "creditos_assincronos": 3,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "RIO6",
+            "enquadramento": "EaD",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Rio"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Camila Lopes Ferreira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LC06D",
+        "nome": "Programação De Aplicativos Móveis",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "RIO6",
+            "enquadramento": "EaD",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Rio"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Diego Roberto Antunes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LC06E",
+        "nome": "Desenvolvimento De Jogos",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "RIO6",
+            "enquadramento": "EaD",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Rio"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Geraldo Ranthum"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LC06F",
+        "nome": "Design Instrucional",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "RIO6",
+            "enquadramento": "EaD",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Computação - Rio"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Awdry Feisser Miquelin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

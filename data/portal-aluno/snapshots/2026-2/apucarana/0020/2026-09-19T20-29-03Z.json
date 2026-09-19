@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:29:18   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "apucarana",
+    "name": "Apucarana",
+    "code": "10"
+  },
+  "course": {
+    "id": "0020",
+    "name": "Língua Inglesa",
+    "sourceName": "LÍNGUA INGLESA"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=20"
+  },
+  "fingerprint": "ca96f5e3ca502591123dc61eb76eb3324a027ed5d8f0cfa74cf77a7c7b17e014",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "LÍNGUA INGLESA",
+    "ultima_atualizacao": "19/09/2026 17:29:18   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "IN12B",
+        "nome": "Inglês 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CALEM2",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Língua Inglesa"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "M004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tallyssa Izabella Machado Sirino"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "IN14D",
+        "nome": "Inglês 4",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CALEM4",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Língua Inglesa"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T3",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "M004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tallyssa Izabella Machado Sirino"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

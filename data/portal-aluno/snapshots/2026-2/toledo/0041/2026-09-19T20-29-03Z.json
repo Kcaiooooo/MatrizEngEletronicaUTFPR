@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:32:56   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "toledo",
+    "name": "Toledo",
+    "code": "09"
+  },
+  "course": {
+    "id": "0041",
+    "name": "Língua Alemã - Calem",
+    "sourceName": "LÍNGUA ALEMÃ - CALEM"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=41"
+  },
+  "fingerprint": "0b0c0ec26e02469464b3b0519ef5e5254fa5b753f0bfecdc23b10993207490be",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "LÍNGUA ALEMÃ - CALEM",
+    "ultima_atualizacao": "19/09/2026 17:32:56   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "ALM3",
+        "nome": "Alemão 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ALM3",
+            "enquadramento": "Presencial",
+            "vagas_total": 0,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Língua Alemã - Calem"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "C306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ernesto Osvaldo Wrasse"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALM4",
+        "nome": "Alemão 4",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ALM4",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Língua Alemã - Calem"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "C306",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "C306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ernesto Osvaldo Wrasse"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

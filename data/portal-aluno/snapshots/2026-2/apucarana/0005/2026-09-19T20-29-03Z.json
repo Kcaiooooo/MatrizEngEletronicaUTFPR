@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:29:11   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "apucarana",
+    "name": "Apucarana",
+    "code": "10"
+  },
+  "course": {
+    "id": "0005",
+    "name": "Processos Químicos",
+    "sourceName": "PROCESSOS QUÍMICOS"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=5"
+  },
+  "fingerprint": "d77f1e035df7e2da14c7bc0f1cb92711578247725e4c83992b783c63aae45128",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "PROCESSOS QUÍMICOS",
+    "ultima_atualizacao": "19/09/2026 17:29:11   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "LBLQ6A",
+        "nome": "Libras 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "LQ6A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N4",
+                "sala": "L004B",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "L004B",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daniele Miki Fujikawa Bozoli"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LBLQ7B",
+        "nome": "Libras 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "LQ7A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "L004B",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "L004B",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daniele Miki Fujikawa Bozoli"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

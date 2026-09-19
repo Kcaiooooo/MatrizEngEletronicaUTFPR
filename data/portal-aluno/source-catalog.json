@@ -1,0 +1,1218 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01"
+  },
+  "semester": "2026-2",
+  "campuses": [
+    {
+      "id": "apucarana",
+      "name": "Apucarana",
+      "code": "10",
+      "courses": [
+        {
+          "id": "0002",
+          "portalId": "2",
+          "name": "Design De Moda"
+        },
+        {
+          "id": "0005",
+          "portalId": "5",
+          "name": "Processos Químicos"
+        },
+        {
+          "id": "0007",
+          "portalId": "7",
+          "name": "Engenharia Têxtil"
+        },
+        {
+          "id": "0009",
+          "portalId": "9",
+          "name": "Química"
+        },
+        {
+          "id": "0016",
+          "portalId": "16",
+          "name": "Engenharia Química"
+        },
+        {
+          "id": "0018",
+          "portalId": "18",
+          "name": "Engenharia Civil"
+        },
+        {
+          "id": "0019",
+          "portalId": "19",
+          "name": "Engenharia Elétrica"
+        },
+        {
+          "id": "0020",
+          "portalId": "20",
+          "name": "Língua Inglesa"
+        },
+        {
+          "id": "0022",
+          "portalId": "22",
+          "name": "Engenharia Computação"
+        }
+      ]
+    },
+    {
+      "id": "campo-mourao",
+      "name": "Campo Mourão",
+      "code": "03",
+      "courses": [
+        {
+          "id": "0003",
+          "portalId": "3",
+          "name": "Tecnol Alimentos"
+        },
+        {
+          "id": "0014",
+          "portalId": "14",
+          "name": "Técnico Integ Info"
+        },
+        {
+          "id": "0022",
+          "portalId": "22",
+          "name": "Eng Ambiental"
+        },
+        {
+          "id": "0024",
+          "portalId": "24",
+          "name": "Ingles"
+        },
+        {
+          "id": "0025",
+          "portalId": "25",
+          "name": "Eng De Alimentos"
+        },
+        {
+          "id": "0030",
+          "portalId": "30",
+          "name": "Eng Civil"
+        },
+        {
+          "id": "0031",
+          "portalId": "31",
+          "name": "Eng Eletrônica"
+        },
+        {
+          "id": "0034",
+          "portalId": "34",
+          "name": "Lic Química"
+        },
+        {
+          "id": "0035",
+          "portalId": "35",
+          "name": "Ciênc Computação"
+        },
+        {
+          "id": "0036",
+          "portalId": "36",
+          "name": "Espanhol"
+        },
+        {
+          "id": "0044",
+          "portalId": "44",
+          "name": "Alemão"
+        },
+        {
+          "id": "0054",
+          "portalId": "54",
+          "name": "Engenharia Química"
+        },
+        {
+          "id": "0059",
+          "portalId": "59",
+          "name": "Tec Int Info Internet"
+        },
+        {
+          "id": "0060",
+          "portalId": "60",
+          "name": "Eng Amb/Sanitária"
+        },
+        {
+          "id": "0062",
+          "portalId": "62",
+          "name": "Tecnol Ia Aplicada"
+        },
+        {
+          "id": "0063",
+          "portalId": "63",
+          "name": "Tecnol Ai Sis Autônomo"
+        }
+      ]
+    },
+    {
+      "id": "cornelio-procopio",
+      "name": "Cornélio Procópio",
+      "code": "02",
+      "courses": [
+        {
+          "id": "0012",
+          "portalId": "12",
+          "name": "Inglês"
+        },
+        {
+          "id": "0013",
+          "portalId": "13",
+          "name": "Espanhol"
+        },
+        {
+          "id": "0026",
+          "portalId": "26",
+          "name": "Eng. Ind. Mecanica"
+        },
+        {
+          "id": "0027",
+          "portalId": "27",
+          "name": "Eng. Ind. Eletrica"
+        },
+        {
+          "id": "0029",
+          "portalId": "29",
+          "name": "Analise De Sistemas"
+        },
+        {
+          "id": "0041",
+          "portalId": "41",
+          "name": "Eng. Computação"
+        },
+        {
+          "id": "0042",
+          "portalId": "42",
+          "name": "Eng. Eletrica"
+        },
+        {
+          "id": "0043",
+          "portalId": "43",
+          "name": "Eng. Mecanica"
+        },
+        {
+          "id": "0046",
+          "portalId": "46",
+          "name": "Licenc. Matemática"
+        },
+        {
+          "id": "0049",
+          "portalId": "49",
+          "name": "Eng. Controle/Automa"
+        },
+        {
+          "id": "0052",
+          "portalId": "52",
+          "name": "Inglês Fundamental"
+        },
+        {
+          "id": "0062",
+          "portalId": "62",
+          "name": "Eng. Eletrônica"
+        },
+        {
+          "id": "0063",
+          "portalId": "63",
+          "name": "Inglês Avançado"
+        },
+        {
+          "id": "0065",
+          "portalId": "65",
+          "name": "Bach Eng De Software"
+        },
+        {
+          "id": "0075",
+          "portalId": "75",
+          "name": "Espanhol Intermediario"
+        },
+        {
+          "id": "0078",
+          "portalId": "78",
+          "name": "Espanhol Avançado"
+        },
+        {
+          "id": "0080",
+          "portalId": "80",
+          "name": "Espanhol Avançado 2"
+        },
+        {
+          "id": "0082",
+          "portalId": "82",
+          "name": "Espanhol Avançado 3"
+        },
+        {
+          "id": "0096",
+          "portalId": "96",
+          "name": "Eng. Computação"
+        }
+      ]
+    },
+    {
+      "id": "curitiba",
+      "name": "Curitiba",
+      "code": "01",
+      "courses": [
+        {
+          "id": "0002",
+          "portalId": "2",
+          "name": "Eng.Ind.Eletrônica"
+        },
+        {
+          "id": "0003",
+          "portalId": "3",
+          "name": "Eng.Ind.Eletrotécn."
+        },
+        {
+          "id": "0005",
+          "portalId": "5",
+          "name": "Eng.Ind.Mecânica"
+        },
+        {
+          "id": "0006",
+          "portalId": "6",
+          "name": "Eng. Prod. Civil"
+        },
+        {
+          "id": "0034",
+          "portalId": "34",
+          "name": "Alemão"
+        },
+        {
+          "id": "0035",
+          "portalId": "35",
+          "name": "Espanhol"
+        },
+        {
+          "id": "0036",
+          "portalId": "36",
+          "name": "Francês"
+        },
+        {
+          "id": "0037",
+          "portalId": "37",
+          "name": "Inglês"
+        },
+        {
+          "id": "0039",
+          "portalId": "39",
+          "name": "Tecnol.Em Radiologia"
+        },
+        {
+          "id": "0185",
+          "portalId": "185",
+          "name": "Tecn Automação Ind"
+        },
+        {
+          "id": "0191",
+          "portalId": "191",
+          "name": "Tecn Mecatrônica Ind"
+        },
+        {
+          "id": "0208",
+          "portalId": "208",
+          "name": "Tec Int Mecânica"
+        },
+        {
+          "id": "0209",
+          "portalId": "209",
+          "name": "Téc Int Seg Trabalho"
+        },
+        {
+          "id": "0210",
+          "portalId": "210",
+          "name": "Téc Int Eletrônica"
+        },
+        {
+          "id": "0211",
+          "portalId": "211",
+          "name": "Eng Ind Automação"
+        },
+        {
+          "id": "0212",
+          "portalId": "212",
+          "name": "Eng De Computação"
+        },
+        {
+          "id": "0213",
+          "portalId": "213",
+          "name": "Design"
+        },
+        {
+          "id": "0214",
+          "portalId": "214",
+          "name": "Educação Física"
+        },
+        {
+          "id": "0215",
+          "portalId": "215",
+          "name": "Tecnol. Sist. Telec."
+        },
+        {
+          "id": "0216",
+          "portalId": "216",
+          "name": "Tecnol Processos Amb"
+        },
+        {
+          "id": "0217",
+          "portalId": "217",
+          "name": "Tecn Design Gráfico"
+        },
+        {
+          "id": "0218",
+          "portalId": "218",
+          "name": "Tecn. Comun. Inst."
+        },
+        {
+          "id": "0227",
+          "portalId": "227",
+          "name": "Química"
+        },
+        {
+          "id": "0234",
+          "portalId": "234",
+          "name": "Lic Letras"
+        },
+        {
+          "id": "0235",
+          "portalId": "235",
+          "name": "Lic Física"
+        },
+        {
+          "id": "0236",
+          "portalId": "236",
+          "name": "Sist De Informação"
+        },
+        {
+          "id": "0239",
+          "portalId": "239",
+          "name": "Arquitet E Urbanismo"
+        },
+        {
+          "id": "0250",
+          "portalId": "250",
+          "name": "Eng Eletrônica"
+        },
+        {
+          "id": "0251",
+          "portalId": "251",
+          "name": "Eng Elétrica"
+        },
+        {
+          "id": "0252",
+          "portalId": "252",
+          "name": "Eng Contr/Automação"
+        },
+        {
+          "id": "0253",
+          "portalId": "253",
+          "name": "Eng Mecânica"
+        },
+        {
+          "id": "0254",
+          "portalId": "254",
+          "name": "Eng Civil"
+        },
+        {
+          "id": "0265",
+          "portalId": "265",
+          "name": "Lic Matemática"
+        },
+        {
+          "id": "0274",
+          "portalId": "274",
+          "name": "Administração"
+        },
+        {
+          "id": "0278",
+          "portalId": "278",
+          "name": "Lic Química"
+        },
+        {
+          "id": "0298",
+          "portalId": "298",
+          "name": "Comunic Organizacional"
+        },
+        {
+          "id": "0317",
+          "portalId": "317",
+          "name": "Pfol"
+        },
+        {
+          "id": "0340",
+          "portalId": "340",
+          "name": "Lic Letras Inglês"
+        },
+        {
+          "id": "0341",
+          "portalId": "341",
+          "name": "Eng Mecatrônica"
+        },
+        {
+          "id": "0343",
+          "portalId": "343",
+          "name": "Lic Letras Português"
+        },
+        {
+          "id": "0362",
+          "portalId": "362",
+          "name": "Eng Amb/Sanitária"
+        },
+        {
+          "id": "0398",
+          "portalId": "398",
+          "name": "Química Ambiental"
+        },
+        {
+          "id": "0406",
+          "portalId": "406",
+          "name": "Eng. Da Produção"
+        },
+        {
+          "id": "0409",
+          "portalId": "409",
+          "name": "Lic Fisica 9"
+        }
+      ]
+    },
+    {
+      "id": "dois-vizinhos",
+      "name": "Dois Vizinhos",
+      "code": "07",
+      "courses": [
+        {
+          "id": "0004",
+          "portalId": "4",
+          "name": "Zootecnia"
+        },
+        {
+          "id": "0006",
+          "portalId": "6",
+          "name": "Eng. Florestal"
+        },
+        {
+          "id": "0009",
+          "portalId": "9",
+          "name": "Educação Do Campo"
+        },
+        {
+          "id": "0010",
+          "portalId": "10",
+          "name": "Ciências Biológicas"
+        },
+        {
+          "id": "0011",
+          "portalId": "11",
+          "name": "Agronomia"
+        },
+        {
+          "id": "0016",
+          "portalId": "16",
+          "name": "Inglês - 1"
+        },
+        {
+          "id": "0017",
+          "portalId": "17",
+          "name": "Inglês - 2"
+        },
+        {
+          "id": "0018",
+          "portalId": "18",
+          "name": "Bach Eng De Software"
+        },
+        {
+          "id": "0019",
+          "portalId": "19",
+          "name": "Eng. Bioproc. E Biote"
+        },
+        {
+          "id": "0022",
+          "portalId": "22",
+          "name": "Alemão"
+        },
+        {
+          "id": "0023",
+          "portalId": "23",
+          "name": "Ingles 2"
+        },
+        {
+          "id": "0024",
+          "portalId": "24",
+          "name": "Inglês - 3"
+        },
+        {
+          "id": "0028",
+          "portalId": "28",
+          "name": "Francês"
+        },
+        {
+          "id": "0040",
+          "portalId": "40",
+          "name": "Biologia Bacharelado"
+        },
+        {
+          "id": "0042",
+          "portalId": "42",
+          "name": "Português Para Estrang"
+        }
+      ]
+    },
+    {
+      "id": "francisco-beltrao",
+      "name": "Francisco Beltrão",
+      "code": "11",
+      "courses": [
+        {
+          "id": "0001",
+          "portalId": "1",
+          "name": "Tecnol Em Alimentos"
+        },
+        {
+          "id": "0002",
+          "portalId": "2",
+          "name": "Eng. Ambiental"
+        },
+        {
+          "id": "0007",
+          "portalId": "7",
+          "name": "Lic. Informática"
+        },
+        {
+          "id": "0011",
+          "portalId": "11",
+          "name": "Eng. Química"
+        },
+        {
+          "id": "0012",
+          "portalId": "12",
+          "name": "Inglês"
+        },
+        {
+          "id": "0015",
+          "portalId": "15",
+          "name": "Eng. De Alimentos"
+        },
+        {
+          "id": "0016",
+          "portalId": "16",
+          "name": "Francês"
+        },
+        {
+          "id": "0021",
+          "portalId": "21",
+          "name": "Agronomia"
+        },
+        {
+          "id": "0025",
+          "portalId": "25",
+          "name": "Sist. Informação"
+        },
+        {
+          "id": "0028",
+          "portalId": "28",
+          "name": "Eng. Amb. Sanitária"
+        }
+      ]
+    },
+    {
+      "id": "guarapuava",
+      "name": "Guarapuava",
+      "code": "12",
+      "courses": [
+        {
+          "id": "0001",
+          "portalId": "1",
+          "name": "Eng. Mecânica"
+        },
+        {
+          "id": "0002",
+          "portalId": "2",
+          "name": "Sistemas Internet"
+        },
+        {
+          "id": "0003",
+          "portalId": "3",
+          "name": "Inglês"
+        },
+        {
+          "id": "0005",
+          "portalId": "5",
+          "name": "Eng. Civil"
+        },
+        {
+          "id": "0006",
+          "portalId": "6",
+          "name": "Manutenção Industrial"
+        },
+        {
+          "id": "0008",
+          "portalId": "8",
+          "name": "Inglês P/ Engenharias"
+        },
+        {
+          "id": "0013",
+          "portalId": "13",
+          "name": "Eng. Mecatrônica"
+        },
+        {
+          "id": "0016",
+          "portalId": "16",
+          "name": "Arquitet E Urbanismo"
+        }
+      ]
+    },
+    {
+      "id": "londrina",
+      "name": "Londrina",
+      "code": "08",
+      "courses": [
+        {
+          "id": "0001",
+          "portalId": "1",
+          "name": "Tecnol Alimentos"
+        },
+        {
+          "id": "0003",
+          "portalId": "3",
+          "name": "Eng. Amb. E Sanit."
+        },
+        {
+          "id": "0012",
+          "portalId": "12",
+          "name": "Eng De Materiais"
+        },
+        {
+          "id": "0017",
+          "portalId": "17",
+          "name": "Lic Em Química"
+        },
+        {
+          "id": "0023",
+          "portalId": "23",
+          "name": "Eng Mecânica"
+        },
+        {
+          "id": "0025",
+          "portalId": "25",
+          "name": "Eng De Produção"
+        },
+        {
+          "id": "0028",
+          "portalId": "28",
+          "name": "Eng Química"
+        },
+        {
+          "id": "0043",
+          "portalId": "43",
+          "name": "Eng. Ambiental"
+        },
+        {
+          "id": "0044",
+          "portalId": "44",
+          "name": "Sistemas De Informação"
+        },
+        {
+          "id": "0045",
+          "portalId": "45",
+          "name": "Ciência De Dados I A"
+        }
+      ]
+    },
+    {
+      "id": "medianeira",
+      "name": "Medianeira",
+      "code": "04",
+      "courses": [
+        {
+          "id": "0107",
+          "portalId": "107",
+          "name": "Alemão"
+        },
+        {
+          "id": "0108",
+          "portalId": "108",
+          "name": "Espanhol"
+        },
+        {
+          "id": "0109",
+          "portalId": "109",
+          "name": "Inglês"
+        },
+        {
+          "id": "0165",
+          "portalId": "165",
+          "name": "Língua Alemã"
+        },
+        {
+          "id": "0166",
+          "portalId": "166",
+          "name": "Língua Francesa"
+        },
+        {
+          "id": "0168",
+          "portalId": "168",
+          "name": "Tecnol Em Gestão Amb"
+        },
+        {
+          "id": "0169",
+          "portalId": "169",
+          "name": "Tecnol Em Alimentos"
+        },
+        {
+          "id": "0171",
+          "portalId": "171",
+          "name": "Língua Italiana"
+        },
+        {
+          "id": "0175",
+          "portalId": "175",
+          "name": "Tecnol.Manut.Indl."
+        },
+        {
+          "id": "0176",
+          "portalId": "176",
+          "name": "Tecnol.Anál.Des.Sis."
+        },
+        {
+          "id": "0200",
+          "portalId": "200",
+          "name": "Eng.Produção"
+        },
+        {
+          "id": "0201",
+          "portalId": "201",
+          "name": "Engenharia Alimentos"
+        },
+        {
+          "id": "0202",
+          "portalId": "202",
+          "name": "Engenharia Ambiental"
+        },
+        {
+          "id": "0219",
+          "portalId": "219",
+          "name": "Ciência Computação"
+        },
+        {
+          "id": "0220",
+          "portalId": "220",
+          "name": "Engenharia Elétrica"
+        },
+        {
+          "id": "0262",
+          "portalId": "262",
+          "name": "Licenc.Química"
+        },
+        {
+          "id": "0280",
+          "portalId": "280",
+          "name": "Eng Amb/Sanitária"
+        },
+        {
+          "id": "0282",
+          "portalId": "282",
+          "name": "Química Industrial"
+        },
+        {
+          "id": "0286",
+          "portalId": "286",
+          "name": "Gestão Do Agronegócio"
+        },
+        {
+          "id": "0288",
+          "portalId": "288",
+          "name": "Tecnol Segurança Ciber"
+        }
+      ]
+    },
+    {
+      "id": "pato-branco",
+      "name": "Pato Branco",
+      "code": "05",
+      "courses": [
+        {
+          "id": "0139",
+          "portalId": "139",
+          "name": "Lic Matematica (Anual)"
+        },
+        {
+          "id": "0166",
+          "portalId": "166",
+          "name": "Ciências Contábeis"
+        },
+        {
+          "id": "0167",
+          "portalId": "167",
+          "name": "Administração"
+        },
+        {
+          "id": "0172",
+          "portalId": "172",
+          "name": "Tec Manutenção"
+        },
+        {
+          "id": "0185",
+          "portalId": "185",
+          "name": "Química"
+        },
+        {
+          "id": "0186",
+          "portalId": "186",
+          "name": "Tec Analise Des Sist"
+        },
+        {
+          "id": "0192",
+          "portalId": "192",
+          "name": "Letras (Sem)"
+        },
+        {
+          "id": "0195",
+          "portalId": "195",
+          "name": "Eng De Computação"
+        },
+        {
+          "id": "0202",
+          "portalId": "202",
+          "name": "Engenharia Elétrica"
+        },
+        {
+          "id": "0203",
+          "portalId": "203",
+          "name": "Engenharia Civil"
+        },
+        {
+          "id": "0204",
+          "portalId": "204",
+          "name": "Eng Mecânica"
+        },
+        {
+          "id": "0221",
+          "portalId": "221",
+          "name": "Agrimensura"
+        },
+        {
+          "id": "0228",
+          "portalId": "228",
+          "name": "Agronomia"
+        },
+        {
+          "id": "0231",
+          "portalId": "231",
+          "name": "Espanhol"
+        },
+        {
+          "id": "0232",
+          "portalId": "232",
+          "name": "Inglês"
+        },
+        {
+          "id": "0233",
+          "portalId": "233",
+          "name": "Extra-Curricular"
+        },
+        {
+          "id": "0234",
+          "portalId": "234",
+          "name": "Frances"
+        },
+        {
+          "id": "0235",
+          "portalId": "235",
+          "name": "Alemão"
+        },
+        {
+          "id": "0239",
+          "portalId": "239",
+          "name": "Italiano"
+        },
+        {
+          "id": "0253",
+          "portalId": "253",
+          "name": "Lic. Matemática (Sem)"
+        },
+        {
+          "id": "0258",
+          "portalId": "258",
+          "name": "Ciências Contábeis"
+        },
+        {
+          "id": "0259",
+          "portalId": "259",
+          "name": "Administração"
+        },
+        {
+          "id": "0264",
+          "portalId": "264",
+          "name": "Eng Cart Agrimensura"
+        },
+        {
+          "id": "0272",
+          "portalId": "272",
+          "name": "Química"
+        }
+      ]
+    },
+    {
+      "id": "ponta-grossa",
+      "name": "Ponta Grossa",
+      "code": "06",
+      "courses": [
+        {
+          "id": "0001",
+          "portalId": "1",
+          "name": "Tecnol. Alimentos"
+        },
+        {
+          "id": "0005",
+          "portalId": "5",
+          "name": "Tecnol. Automação Ind."
+        },
+        {
+          "id": "0012",
+          "portalId": "12",
+          "name": "Línguas Estr. Mod."
+        },
+        {
+          "id": "0024",
+          "portalId": "24",
+          "name": "Tecnol. Análise D.Sist"
+        },
+        {
+          "id": "0025",
+          "portalId": "25",
+          "name": "Tecnol. Fab. Mecânica"
+        },
+        {
+          "id": "0037",
+          "portalId": "37",
+          "name": "Engenharia Química"
+        },
+        {
+          "id": "0038",
+          "portalId": "38",
+          "name": "Engenharia Mecânica"
+        },
+        {
+          "id": "0039",
+          "portalId": "39",
+          "name": "Ciência Da Computação"
+        },
+        {
+          "id": "0040",
+          "portalId": "40",
+          "name": "Engenharia Eletrônica"
+        },
+        {
+          "id": "0041",
+          "portalId": "41",
+          "name": "Engenharia De Produção"
+        },
+        {
+          "id": "0043",
+          "portalId": "43",
+          "name": "Inglês"
+        },
+        {
+          "id": "0044",
+          "portalId": "44",
+          "name": "Alemão"
+        },
+        {
+          "id": "0045",
+          "portalId": "45",
+          "name": "Francês"
+        },
+        {
+          "id": "0052",
+          "portalId": "52",
+          "name": "Espanhol"
+        },
+        {
+          "id": "0053",
+          "portalId": "53",
+          "name": "Inglês Instrumental"
+        },
+        {
+          "id": "0066",
+          "portalId": "66",
+          "name": "Ciências Naturais"
+        },
+        {
+          "id": "0071",
+          "portalId": "71",
+          "name": "Inglês Intensivo"
+        },
+        {
+          "id": "0072",
+          "portalId": "72",
+          "name": "Francês Intensivo"
+        },
+        {
+          "id": "0073",
+          "portalId": "73",
+          "name": "Alemão Intensivo"
+        },
+        {
+          "id": "0082",
+          "portalId": "82",
+          "name": "Eng Bioproc E Biotec"
+        },
+        {
+          "id": "0084",
+          "portalId": "84",
+          "name": "Ciências Biológicas"
+        },
+        {
+          "id": "0085",
+          "portalId": "85",
+          "name": "Engenharia Elétrica"
+        },
+        {
+          "id": "0091",
+          "portalId": "91",
+          "name": "Lic Computação - Umu"
+        },
+        {
+          "id": "0094",
+          "portalId": "94",
+          "name": "Lic Computação - Sca"
+        },
+        {
+          "id": "0095",
+          "portalId": "95",
+          "name": "Lic Computação - Tbo"
+        },
+        {
+          "id": "0096",
+          "portalId": "96",
+          "name": "Lic Computação - Rio"
+        },
+        {
+          "id": "0097",
+          "portalId": "97",
+          "name": "Lic Computação - Res"
+        },
+        {
+          "id": "0098",
+          "portalId": "98",
+          "name": "Lic Computação - Ppa"
+        },
+        {
+          "id": "0099",
+          "portalId": "99",
+          "name": "Lic Computação - Par"
+        },
+        {
+          "id": "0100",
+          "portalId": "100",
+          "name": "Lic Computação - Pal"
+        },
+        {
+          "id": "0101",
+          "portalId": "101",
+          "name": "Lic Computação - Jac"
+        },
+        {
+          "id": "0102",
+          "portalId": "102",
+          "name": "Lic Computação - Foz"
+        },
+        {
+          "id": "0103",
+          "portalId": "103",
+          "name": "Lic Computação - Iba"
+        },
+        {
+          "id": "0104",
+          "portalId": "104",
+          "name": "Lic Computação - Con"
+        },
+        {
+          "id": "0105",
+          "portalId": "105",
+          "name": "Lic Computação - Cla"
+        },
+        {
+          "id": "0106",
+          "portalId": "106",
+          "name": "Engenharia Mecatrônica"
+        }
+      ]
+    },
+    {
+      "id": "santa-helena",
+      "name": "Santa Helena",
+      "code": "13",
+      "courses": [
+        {
+          "id": "0001",
+          "portalId": "1",
+          "name": "Ciências Biológicas"
+        },
+        {
+          "id": "0002",
+          "portalId": "2",
+          "name": "Ciência Da Computação"
+        },
+        {
+          "id": "0005",
+          "portalId": "5",
+          "name": "Agronomia"
+        }
+      ]
+    },
+    {
+      "id": "toledo",
+      "name": "Toledo",
+      "code": "09",
+      "courses": [
+        {
+          "id": "0002",
+          "portalId": "2",
+          "name": "Tec. Proc. Quím."
+        },
+        {
+          "id": "0007",
+          "portalId": "7",
+          "name": "Eng. Eletrônica"
+        },
+        {
+          "id": "0008",
+          "portalId": "8",
+          "name": "Língua Inglesa - Calem"
+        },
+        {
+          "id": "0009",
+          "portalId": "9",
+          "name": "Eng. Civil"
+        },
+        {
+          "id": "0011",
+          "portalId": "11",
+          "name": "Lic. Em Matemática"
+        },
+        {
+          "id": "0017",
+          "portalId": "17",
+          "name": "Sist. Para Internet"
+        },
+        {
+          "id": "0019",
+          "portalId": "19",
+          "name": "Eng. De Bioprocessos"
+        },
+        {
+          "id": "0020",
+          "portalId": "20",
+          "name": "Eng. De Computação"
+        },
+        {
+          "id": "0041",
+          "portalId": "41",
+          "name": "Língua Alemã - Calem"
+        }
+      ]
+    }
+  ]
+}

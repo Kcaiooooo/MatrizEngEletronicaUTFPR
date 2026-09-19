@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:29:56   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "curitiba",
+    "name": "Curitiba",
+    "code": "01"
+  },
+  "course": {
+    "id": "0037",
+    "name": "Inglês",
+    "sourceName": "INGLÊS"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=37"
+  },
+  "fingerprint": "60768dc5b9995b39771896fc95ef5f3b69ff72d0b45f6487454a184da8bb39d9",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "INGLÊS",
+    "ultima_atualizacao": "19/09/2026 17:29:56   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [
+        {
+          "marcador": "*",
+          "sede": "Ecoville"
+        },
+        {
+          "marcador": "**",
+          "sede": "Neoville"
+        }
+      ],
+      "sede_sem_marcador": "Centro"
+    },
+    "disciplinas": [
+      {
+        "codigo": "CL23I",
+        "nome": "Inglês 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "NI1",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 30,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T6",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N1",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T6",
+                "sala": "CN-019",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Claudia Beatriz Monte Jorge Martins"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CL25I",
+        "nome": "Inglês 5",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TI1",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 30,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T3",
+                "sala": "CN-019",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T2",
+                "sala": "CN-023",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T3",
+                "sala": "CN-023",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Claudia Beatriz Monte Jorge Martins"
+            ],
+            "optativa_matrizes": [
+              "Matriz:390"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

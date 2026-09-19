@@ -1,0 +1,2472 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:29:35   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "cornelio-procopio",
+    "name": "Cornélio Procópio",
+    "code": "02"
+  },
+  "course": {
+    "id": "0029",
+    "name": "Analise De Sistemas",
+    "sourceName": "ANALISE DE SISTEMAS"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=29"
+  },
+  "fingerprint": "c0e5cb813549b99380732e57a2c4b5ca0fc3eefe797727a29a288964577d1b57",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "ANALISE DE SISTEMAS",
+    "ultima_atualizacao": "19/09/2026 17:29:35   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "AS61A",
+        "nome": "Desenvolvimento Sem Código",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "A040",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "A040",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Antonio Carlos Fernandes Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS61B",
+        "nome": "Fundamentos De Programação",
+        "creditos": 6,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "A040",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "A040",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "A040",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "A040",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "P205",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "P205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luciano Tadeu Esteves Pansanato"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS61C",
+        "nome": "Lógica E Introdução À Estatística",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "P202",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "P202",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "P202",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "P202",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Valter Henrique Biscaro Raposo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS61D",
+        "nome": "Introdução Aos Sistemas Operacionais",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11A",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N2",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "P001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andre Luiz Przybysz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS61E",
+        "nome": "Introdução À Análise E Desenvolvimento De Sistemas",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "P005",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "P005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Antonio Carlos Fernandes Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS61F",
+        "nome": "Comunicação Oral E Escrita",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N11A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 15,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "P103",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "P103",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "P103",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "P103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Guadalupe Estrelita Dos Santos Menta"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "N11B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 15,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "P204",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "P204",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "P204",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "P204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Juliana De Andrade Tonhato"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS62A",
+        "nome": "Programação Orientada A Objetos",
+        "creditos": 6,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N12",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "P205",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "P205",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "P105",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "P105",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "P105",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "P105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Antonio Goncalves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS62B",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N12",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "P105",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "P105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jair De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS62C",
+        "nome": "Banco De Dados",
+        "creditos": 4,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N12",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "P004",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "P004",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "P004",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "P004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Claiton De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS62D",
+        "nome": "Inglês Instrumental",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N12",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N4",
+                "sala": "P103",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "P103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Denise Da Silva De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS62E",
+        "nome": "Interação Homem Computador",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N12",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "P105",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "P105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Anderson Paulo Avila Santos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS62F",
+        "nome": "Programação Web Front-End",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N12",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "P105",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "P105",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "P002",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "P002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gabriel Canhadas Genvigir"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS63A",
+        "nome": "Programação Web Back-End",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N13",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "P005",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "P005",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "P005",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "P005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tatianne Costa Negri Rocha"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS63B",
+        "nome": "Estrutura De Dados",
+        "creditos": 4,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N13",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "I202",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "I202",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "I202",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "I202",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Clayton Kossoski"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS63C",
+        "nome": "Desenvolvimento Ágil",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N13",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "P002",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "P002",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "P002",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "P002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Erica Ferreira De Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS63D",
+        "nome": "Redes De Computadores",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N13",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "P003",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "P003",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "P003",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "P003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Robson Parmezan Bonidia"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS63E",
+        "nome": "Economia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N13",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "P103",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "P103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Cesar De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS63F",
+        "nome": "Estratégias De Inovação",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N13",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "P105",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "P105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cleverson Flor Da Rosa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS64A",
+        "nome": "Programação Web Fullstack",
+        "creditos": 4,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N14",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "A040",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "A040",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "A040",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "A040",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Juliana Costa Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS64B",
+        "nome": "Arquitetura De Software",
+        "creditos": 4,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N14",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "REM",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "REM",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "REM",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "REM",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriano Rivolli Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS64C",
+        "nome": "Certificadora De Competência Comum",
+        "creditos": 0,
+        "creditos_assincronos": 8,
+        "horas_extensionistas": 120,
+        "turmas": [
+          {
+            "codigo": "N14",
+            "enquadramento": "EaD",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Andre Luis Dos Santos Domingues"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS64D",
+        "nome": "Estratégias De Programação",
+        "creditos": 4,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N14",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "A040",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "A040",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "A040",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "A040",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Clayton Kossoski"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS65A",
+        "nome": "Certificadora De Competência Identitária",
+        "creditos": 0,
+        "creditos_assincronos": 8,
+        "horas_extensionistas": 120,
+        "turmas": [
+          {
+            "codigo": "N15",
+            "enquadramento": "EaD",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Fabio Fernandes Da Rocha Vicente"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS65D",
+        "nome": "Programação Para Dispositivos Móveis",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N15",
+            "enquadramento": "EaD",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Eduarda Maganha De Almeida"
+            ],
+            "optativa_matrizes": [
+              "Matriz:171"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "AS65F",
+        "nome": "Processamento De Imagens",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N15",
+            "enquadramento": "EaD",
+            "vagas_total": 13,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Claiton De Oliveira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:171"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "AS65G",
+        "nome": "Mineração De Dados",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N15",
+            "enquadramento": "EaD",
+            "vagas_total": 13,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Giovani Volnei Meinerz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:171"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "AS65M",
+        "nome": "Internet Das Coisas",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N15",
+            "enquadramento": "EaD",
+            "vagas_total": 14,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Lucas Dias Hiera Sampaio"
+            ],
+            "optativa_matrizes": [
+              "Matriz:171"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "AS65N",
+        "nome": "Desenvolvimento De Jogos",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N15",
+            "enquadramento": "EaD",
+            "vagas_total": 13,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Paulo Augusto Nardi"
+            ],
+            "optativa_matrizes": [
+              "Matriz:171"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "AS65S",
+        "nome": "Aprendizagem Profunda",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N15",
+            "enquadramento": "EaD",
+            "vagas_total": 13,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Silvio Ricardo Rodrigues Sanches"
+            ],
+            "optativa_matrizes": [
+              "Matriz:171"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "AS66A",
+        "nome": "Certificadora De Competência Específica",
+        "creditos": 6,
+        "creditos_assincronos": 20,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N16",
+            "enquadramento": "EaD",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Francisco Pereira Junior",
+              "Camila Dias De Oliveira Sestito"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC41A",
+        "nome": "Algoritmos 1",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C12",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 20,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "P001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriane Carla Anastacio Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC43A",
+        "nome": "Estrutura De Dados 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C31",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "P205",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "P205",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "P205",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "P205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabricio Martins Lopes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC44A",
+        "nome": "Estrutura De Dados 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C41",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "P105",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "P105",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "P105",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "P105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rosangela De Fatima Pereira Marquesone"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC44B",
+        "nome": "Bancos De Dados",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C41",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "P205",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "P205",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "P205",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "P205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Giovani Volnei Meinerz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC45A",
+        "nome": "Programação Orientada A Objetos 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C51",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "P105",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "P105",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "P105",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "P105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Augusto Nardi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC46C",
+        "nome": "Desenvolvimento Ágil",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C61",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "P005",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "P005",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "P005",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "P005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Erica Ferreira De Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC47A",
+        "nome": "Inteligência Artificial",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C71",
+            "enquadramento": "EaD",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Silvio Ricardo Rodrigues Sanches",
+              "Claiton De Oliveira",
+              "Lucas Dias Hiera Sampaio",
+              "Natassya Barlate Floro Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC47B",
+        "nome": "Redes De Computadores",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C71",
+            "enquadramento": "EaD",
+            "vagas_total": 42,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Natassya Barlate Floro Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC47C",
+        "nome": "Programação Web Front-End",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C71",
+            "enquadramento": "EaD",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Rosangela De Fatima Pereira Marquesone"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC47D",
+        "nome": "Gerenciamento De Projeto De Software",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C71",
+            "enquadramento": "EaD",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Flavia Belintani Blum Haddad"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC47E",
+        "nome": "Empreendedorismo",
+        "creditos": 0,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C71",
+            "enquadramento": "EaD",
+            "vagas_total": 41,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Josieli Soares Dos Santos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC48A",
+        "nome": "Sistemas Distribuídos",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C81",
+            "enquadramento": "EaD",
+            "vagas_total": 46,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Rogerio Santos Pozza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC48B",
+        "nome": "Programação Web Back-End",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C81",
+            "enquadramento": "EaD",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Tatianne Costa Negri Rocha"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC48C",
+        "nome": "Programação Para Dispositivos Móveis",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C81",
+            "enquadramento": "EaD",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Alexandre Romolo Moreira Feitosa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC48K",
+        "nome": "Processamento De Imagens",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C81",
+            "enquadramento": "EaD",
+            "vagas_total": 13,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Claiton De Oliveira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:191",
+              "Matriz:173"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EC48L",
+        "nome": "Mineração De Dados",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C81",
+            "enquadramento": "EaD",
+            "vagas_total": 13,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Giovani Volnei Meinerz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:191",
+              "Matriz:173"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EC48N",
+        "nome": "Desenvolvimento De Jogos",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C81",
+            "enquadramento": "EaD",
+            "vagas_total": 13,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Paulo Augusto Nardi"
+            ],
+            "optativa_matrizes": [
+              "Matriz:191",
+              "Matriz:173"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EC48P",
+        "nome": "Internet Das Coisas",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C81",
+            "enquadramento": "EaD",
+            "vagas_total": 17,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Lucas Dias Hiera Sampaio"
+            ],
+            "optativa_matrizes": [
+              "Matriz:191",
+              "Matriz:173"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EM36A",
+        "nome": "Economia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "M61",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecanica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "P103",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "P103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joao Luiz Dallamuta Lopes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ES47A",
+        "nome": "Programação Para Dispositivos Móveis",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ES71",
+            "enquadramento": "EaD",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Alexandre Romolo Moreira Feitosa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ES47B",
+        "nome": "Programação Web Fullstack",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ES71",
+            "enquadramento": "EaD",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Juliana Costa Silva",
+              "Anderson Paulo Avila Santos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ES48D",
+        "nome": "Processamento De Imagens",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ES81",
+            "enquadramento": "EaD",
+            "vagas_total": 13,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Claiton De Oliveira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:175"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ES48E",
+        "nome": "Mineração De Dados",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ES81",
+            "enquadramento": "EaD",
+            "vagas_total": 18,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Giovani Volnei Meinerz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:175"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ES48H",
+        "nome": "Programação De Banco De Dados",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ES81",
+            "enquadramento": "EaD",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Eduardo Cotrin Teixeira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:175"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ES48J",
+        "nome": "Desenvolvimento De Jogos",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ES81",
+            "enquadramento": "EaD",
+            "vagas_total": 17,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Paulo Augusto Nardi"
+            ],
+            "optativa_matrizes": [
+              "Matriz:175"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ES48L",
+        "nome": "Realidade Estendida",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ES81",
+            "enquadramento": "EaD",
+            "vagas_total": 41,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Eduardo Filgueiras Damasceno"
+            ],
+            "optativa_matrizes": [
+              "Matriz:175"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ES48M",
+        "nome": "Aprendizagem Profunda",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ES81",
+            "enquadramento": "EaD",
+            "vagas_total": 13,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Silvio Ricardo Rodrigues Sanches"
+            ],
+            "optativa_matrizes": [
+              "Matriz:175"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ES48P",
+        "nome": "Internet Of Things",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ES81",
+            "enquadramento": "EaD",
+            "vagas_total": 14,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Lucas Dias Hiera Sampaio"
+            ],
+            "optativa_matrizes": [
+              "Matriz:175"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

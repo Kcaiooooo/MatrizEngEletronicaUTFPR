@@ -1,0 +1,4513 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:30:38   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "curitiba",
+    "name": "Curitiba",
+    "code": "01"
+  },
+  "course": {
+    "id": "0274",
+    "name": "Administração",
+    "sourceName": "ADMINISTRAÇÃO"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=274"
+  },
+  "fingerprint": "2b8e75090d7014c76f3c2c857ee1b743db35ecb30e6a0e78a7394574453d41da",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "ADMINISTRAÇÃO",
+    "ultima_atualizacao": "19/09/2026 17:30:38   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [
+        {
+          "marcador": "*",
+          "sede": "Ecoville"
+        },
+        {
+          "marcador": "**",
+          "sede": "Neoville"
+        }
+      ],
+      "sede_sem_marcador": "Centro"
+    },
+    "disciplinas": [
+      {
+        "codigo": "EDU70J",
+        "nome": "Libras",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Química",
+                "Téc.Em Multimeios Buti",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "CE-306",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T5",
+                "sala": "CE-306",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T6",
+                "sala": "CE-306",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Leticia Fernandes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T2",
+                "sala": "CE-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CE-305",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rita De Cassia Maestri"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S03",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "CQ-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T5",
+                "sala": "CQ-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T6",
+                "sala": "CQ-305",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Leticia Fernandes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S04",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "CE-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M3",
+                "sala": "CE-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M4",
+                "sala": "CE-104",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rita De Cassia Maestri"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S81",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Fisica 9"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "CE-303",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T5",
+                "sala": "CE-303",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T6",
+                "sala": "CE-303",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Leticia Fernandes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S83",
+            "enquadramento": "Presencial",
+            "vagas_total": 31,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática"
+              ],
+              [
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "CA-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CA-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CA-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Silvia Andreis Witkoski"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "CE-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CE-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M6",
+                "sala": "CE-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Silvia Andreis Witkoski"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:985",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:945",
+              "Matriz:972",
+              "Matriz:973",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EST70A",
+        "nome": "Introdução À Estatística",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N21",
+            "enquadramento": "EaD",
+            "vagas_total": 61,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Roberto Molina De Souza"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S01",
+            "enquadramento": "EaD",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Mauricio Koubay Do Amaral"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S15",
+            "enquadramento": "EaD",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Jose Carlos Pereira Coninck"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S41",
+            "enquadramento": "EaD",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Angelica Maria Tortola Ribeiro"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S43",
+            "enquadramento": "EaD",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Angelica Maria Tortola Ribeiro"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S45",
+            "enquadramento": "EaD",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Mauricio Koubay Do Amaral"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S61",
+            "enquadramento": "EaD",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Jose Carlos Pereira Coninck"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S63",
+            "enquadramento": "EaD",
+            "vagas_total": 61,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Wesley Bertoli Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S71",
+            "enquadramento": "EaD",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Vanessa Ferreira Sehaber"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S83",
+            "enquadramento": "EaD",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Vanessa Ferreira Sehaber"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EST70C",
+        "nome": "Introdução À Estatística",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "CA-003",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T6",
+                "sala": "CA-003",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T5",
+                "sala": "CA-003",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T6",
+                "sala": "CA-003",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Luiz Ledo Mota Melo Junior"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S55",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T5",
+                "sala": "CA-003",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T6",
+                "sala": "CA-003",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T4",
+                "sala": "CA-003",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T5",
+                "sala": "CA-003",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Jose Carlos Pereira Coninck"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S71",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "CA-003",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T3",
+                "sala": "CA-003",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T2",
+                "sala": "CA-003",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T3",
+                "sala": "CA-003",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Vanessa Ferreira Sehaber"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "S73",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sist De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "CA-003",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N2",
+                "sala": "CA-003",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N3",
+                "sala": "CA-003",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N4",
+                "sala": "CA-003",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Luiz Ledo Mota Melo Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7FA",
+        "nome": "Filosofia Da Ciência E Da Tecnologia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 47,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "CE-307",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M2",
+                "sala": "CE-307",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M3",
+                "sala": "CE-307",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Alex Calazans"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:995",
+              "Matriz:973",
+              "Matriz:983",
+              "Matriz:957",
+              "Matriz:976",
+              "Matriz:972",
+              "Matriz:979",
+              "Matriz:978",
+              "Matriz:960",
+              "Matriz:920",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S71",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T3",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T4",
+                "sala": "CE-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Veronica Ferreira Bahr Calazans"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:995",
+              "Matriz:973",
+              "Matriz:983",
+              "Matriz:957",
+              "Matriz:976",
+              "Matriz:972",
+              "Matriz:979",
+              "Matriz:978",
+              "Matriz:960",
+              "Matriz:920",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S73",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sist De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T3",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T4",
+                "sala": "CC-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Alex Calazans"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:995",
+              "Matriz:973",
+              "Matriz:983",
+              "Matriz:957",
+              "Matriz:976",
+              "Matriz:972",
+              "Matriz:979",
+              "Matriz:978",
+              "Matriz:960",
+              "Matriz:920",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S93",
+            "enquadramento": "Presencial",
+            "vagas_total": 47,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Educação Física"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M4",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CC-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marcio Luiz Miotto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:995",
+              "Matriz:973",
+              "Matriz:983",
+              "Matriz:957",
+              "Matriz:976",
+              "Matriz:972",
+              "Matriz:979",
+              "Matriz:978",
+              "Matriz:960",
+              "Matriz:920",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7FB",
+        "nome": "Fundamentos Da Ética",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S31",
+            "enquadramento": "Presencial",
+            "vagas_total": 52,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Design",
+                "Química Ambiental"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M2",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M3",
+                "sala": "CE-108",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marcio Luiz Miotto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:972",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:985",
+              "Matriz:982",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S32",
+            "enquadramento": "Presencial",
+            "vagas_total": 47,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Design"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "CC-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CC-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T4",
+                "sala": "CC-301",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Andrea Maila Voss"
+            ],
+            "optativa_matrizes": [
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:972",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:985",
+              "Matriz:982",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 47,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "CA-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M4",
+                "sala": "CA-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CA-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Andrea Maila Voss"
+            ],
+            "optativa_matrizes": [
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:972",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:985",
+              "Matriz:982",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7HA",
+        "nome": "História Da Técnica E Da Tecnologia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Química Ambiental"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3T5",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3T6",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Maria Jose Menezes Lourega Belli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:995",
+              "Matriz:983",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:981",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:972",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:973"
+            ]
+          },
+          {
+            "codigo": "S03",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "CE-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T4",
+                "sala": "CE-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T5",
+                "sala": "CE-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T5",
+                "sala": "CE-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T6",
+                "sala": "CE-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T6",
+                "sala": "CE-106",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Gilson Leandro Queluz",
+              "Elena Camargo Shizuno"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:995",
+              "Matriz:983",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:981",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:972",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:973"
+            ]
+          },
+          {
+            "codigo": "S73",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sist De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T4",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T5",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T5",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T6",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T6",
+                "sala": "CE-302",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Gilson Leandro Queluz",
+              "Elena Camargo Shizuno"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:995",
+              "Matriz:983",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:981",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:972",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:973"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7PA",
+        "nome": "Psicologia Do Trabalho",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T5",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Juliana Lopes Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N2",
+                "sala": "CC-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Juliana Lopes Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S03",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T5",
+                "sala": "CA-101",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Juliana Lopes Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S04",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "6M2",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M2",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M3",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M3",
+                "sala": "CC-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Maria Luisa Carvalho",
+              "Thainara Granero De Melo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S05",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CA-101",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Juliana Lopes Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil",
+                "Química Ambiental"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "2T3",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Juliana Lopes Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M4",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M4",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M5",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M5",
+                "sala": "CE-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Maria Luisa Carvalho",
+              "Thainara Granero De Melo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S73",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sist De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T5",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T5",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T6",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T6",
+                "sala": "CC-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Maria Sara De Lima Dias",
+              "Thainara Granero De Melo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "T81",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Em Radiologia",
+                "Química Ambiental"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T4",
+                "sala": "CE-303",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T5",
+                "sala": "CE-303",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Maria Luisa Carvalho"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:977"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7PC",
+        "nome": "Planejamento De Carreira",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T2",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T3",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T3",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T4",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T4",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T5",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T5",
+                "sala": "CC-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Maria Sara De Lima Dias",
+              "Thainara Granero De Melo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:973",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:972",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:920",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7SA",
+        "nome": "Sociologia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "CE-107",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M2",
+                "sala": "CE-107",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M3",
+                "sala": "CE-107",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Roberto Ranna Keller"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:973",
+              "Matriz:982",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S71",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "CQ-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CQ-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CQ-301",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Geraldo Augusto Pinto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:973",
+              "Matriz:982",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S73",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sist De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T4",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T5",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T6",
+                "sala": "CE-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Geraldo Augusto Pinto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:973",
+              "Matriz:982",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7XD",
+        "nome": "Direitos Humanos, Segurança E Diversidade",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "EL-208",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4M4",
+                "sala": "EL-208",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "4M5",
+                "sala": "EL-208",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Elena Camargo Shizuno"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:948",
+              "Matriz:985",
+              "Matriz:963",
+              "Matriz:957",
+              "Matriz:959",
+              "Matriz:976",
+              "Matriz:972",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Química Ambiental"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "CQ-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M4",
+                "sala": "CQ-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CQ-301",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Elena Camargo Shizuno"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:948",
+              "Matriz:985",
+              "Matriz:963",
+              "Matriz:957",
+              "Matriz:959",
+              "Matriz:976",
+              "Matriz:972",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:945",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:973",
+              "Matriz:977"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7XF",
+        "nome": "Dimensão Ambiental Na Gestão Urbana",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Química Ambiental"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M3",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "6M4",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "6M5",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Maria Jose Menezes Lourega Belli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:957",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:972",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:967",
+              "Matriz:845",
+              "Matriz:784",
+              "Matriz:873",
+              "Matriz:888",
+              "Matriz:806",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:973",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:867",
+              "Matriz:755",
+              "Matriz:870",
+              "Matriz:844",
+              "Matriz:708",
+              "Matriz:709",
+              "Matriz:906",
+              "Matriz:919",
+              "Matriz:823",
+              "Matriz:962",
+              "Matriz:980",
+              "Matriz:977",
+              "Matriz:948"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "CE-303",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N2",
+                "sala": "CE-303",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N3",
+                "sala": "CE-303",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Maria Jose Menezes Lourega Belli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:957",
+              "Matriz:981",
+              "Matriz:976",
+              "Matriz:972",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:967",
+              "Matriz:845",
+              "Matriz:784",
+              "Matriz:873",
+              "Matriz:888",
+              "Matriz:806",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:973",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:867",
+              "Matriz:755",
+              "Matriz:870",
+              "Matriz:844",
+              "Matriz:708",
+              "Matriz:709",
+              "Matriz:906",
+              "Matriz:919",
+              "Matriz:823",
+              "Matriz:962",
+              "Matriz:980",
+              "Matriz:977",
+              "Matriz:948"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GE78M",
+        "nome": "Trabalho De Conclusão De Curso 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "7M3",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "7M4",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "7M5",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "7M6",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rayane Camila Da Silva Sousa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE71A",
+        "nome": "Economia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M4",
+                "sala": "CE-107",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M5",
+                "sala": "CE-107",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Andrea De Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE71B",
+        "nome": "Teoria Geral Do Estado",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 30,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 59,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "CE-208",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M2",
+                "sala": "CE-208",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M3",
+                "sala": "CE-208",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Antonio Goncalves De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE71D",
+        "nome": "Fundamentos De Administração",
+        "creditos": 2,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "CE-208",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M5",
+                "sala": "CE-208",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N4",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N5",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Georgiana Luna Batinga"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE71G",
+        "nome": "Iniciação Ao Ensino, Pesquisa E Extensão",
+        "creditos": 0,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 15,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "EaD",
+            "vagas_total": 60,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Aurea Cristina Magalhaes Niada"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE72A",
+        "nome": "Microeconomia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M2",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M3",
+                "sala": "CE-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Maria Lucia Figueiredo Gomes De Meza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE72B",
+        "nome": "Instituições De Direito",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "CC-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M2",
+                "sala": "CC-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M3",
+                "sala": "CC-206",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Ana Paula Myszczuk"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE72D",
+        "nome": "Teorias Da Administração",
+        "creditos": 2,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N4",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N5",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Giovanna Pezarico"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE72E",
+        "nome": "Empreendedorismo",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 15,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "CE-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M2",
+                "sala": "CE-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M3",
+                "sala": "CE-103",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rejane Cioli"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE72F",
+        "nome": "Contabilidade Empresarial",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M5",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M4",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CE-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Katia Regina Hopfer"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE72H",
+        "nome": "A Prática Da Extensão Universitária",
+        "creditos": 0,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 30,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "EaD",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Aurea Cristina Magalhaes Niada"
+            ],
+            "optativa_matrizes": [
+              "Matriz:973"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GEE73A",
+        "nome": "Macroeconomia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "CE-303",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CE-303",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CE-303",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Andrea De Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE73B",
+        "nome": "Governança E Gestão Pública",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M2",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M3",
+                "sala": "CE-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Maria Lucia Figueiredo Gomes De Meza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE73C",
+        "nome": "Matemática Financeira",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 15,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "CE-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M2",
+                "sala": "CE-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M3",
+                "sala": "CE-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Gabrielle Ribeiro Rodrigues Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:973"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GEE73D",
+        "nome": "Estrutura E Análise De Demonstrações",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "CE-201",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M2",
+                "sala": "CE-201",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M3",
+                "sala": "CE-201",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rayane Camila Da Silva Sousa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE73E",
+        "nome": "Gestão De Marketing",
+        "creditos": 2,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N4",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N5",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Aurea Cristina Magalhaes Niada"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE73F",
+        "nome": "Teorias Organizacionais",
+        "creditos": 2,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ],
+              [
+                "Sist De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "CE-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M5",
+                "sala": "CE-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N4",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N5",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Francis Kanashiro Meneghetti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE73G",
+        "nome": "Economia E Políticas Públicas",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 30,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M2",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M3",
+                "sala": "CA-103",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Christian Luiz Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE73H",
+        "nome": "Introdução Ao Mundo Do Trabalho I",
+        "creditos": 0,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "EaD",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Gean Carlos Tomazzoni"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE74A",
+        "nome": "Economia Brasileira",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "CE-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CE-103",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Andrea De Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE74B",
+        "nome": "Pesquisa Operacional",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "CA-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M3",
+                "sala": "CA-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CA-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CA-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Francisco Rodrigues Lima Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE74C",
+        "nome": "Custos E Formação De Preços",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "CE-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M2",
+                "sala": "CE-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M3",
+                "sala": "CE-103",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Antonio Goncalves De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE74D",
+        "nome": "Tecnologias De Gestão E Sustentabilidade",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "CE-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M2",
+                "sala": "CE-104",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M3",
+                "sala": "CE-104",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rene Eugenio Seifert Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE74E",
+        "nome": "Pesquisa Mercadológica E Inteligência De Mercado",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 30,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M3",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M4",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M5",
+                "sala": "CE-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Aurea Cristina Magalhaes Niada"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE74F",
+        "nome": "Comportamento Organizacional",
+        "creditos": 2,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "CE-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M5",
+                "sala": "CE-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N4",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N5",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Gean Carlos Tomazzoni"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE74G",
+        "nome": "Gestão De Tecnologias De Informação",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M4",
+                "sala": "CA-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M5",
+                "sala": "CA-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Alamo Alexandre Da Silva Batista"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE74H",
+        "nome": "Introdução Ao Mundo Do Trabalho Ii",
+        "creditos": 0,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "EaD",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Andrea De Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE75A",
+        "nome": "Processos E Gestão Da Qualidade",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 15,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "CE-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M3",
+                "sala": "CE-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M2",
+                "sala": "CE-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M3",
+                "sala": "CE-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Alamo Alexandre Da Silva Batista"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE75B",
+        "nome": "Gestão De Produção E Operações",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "CE-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CE-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Ricardo Manica"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE75C",
+        "nome": "Finanças Corporativas I",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M5",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M2",
+                "sala": "CE-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M3",
+                "sala": "CE-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rayane Camila Da Silva Sousa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE75D",
+        "nome": "Gestão Estratégica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M5",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M4",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CC-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Gabrielle Ribeiro Rodrigues Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:973"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GEE75E",
+        "nome": "Gestão De Pessoas E Desenvolvimento Interpessoal",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M2",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M3",
+                "sala": "CE-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Ney Nakazato Miyahira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE75F",
+        "nome": "Finanças E Orçamento Público",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M2",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M3",
+                "sala": "CE-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Christian Luiz Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE76A",
+        "nome": "Elaboração E Gestão De Projetos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 30,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M2",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M3",
+                "sala": "CE-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Alamo Alexandre Da Silva Batista"
+            ],
+            "optativa_matrizes": [
+              "Matriz:973"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GEE76B",
+        "nome": "Metodologia Da Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "CQ-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M5",
+                "sala": "CQ-304",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rene Eugenio Seifert Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE76C",
+        "nome": "Finanças Corporativas Ii",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "CQ-306",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M3",
+                "sala": "CQ-306",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CQ-305",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CQ-305",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Paula Pontes De Campos Rasera"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE76D",
+        "nome": "Gestão Estratégica De Marketing",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 30,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M2",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M3",
+                "sala": "CE-302",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Georgiana Luna Batinga"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE76E",
+        "nome": "Gestão Estratégica De Pessoas",
+        "creditos": 2,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 15,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "EaD",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "CE-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CE-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N4",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N5",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Leonardo Tonon"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE76F",
+        "nome": "Logística E Cadeia De Suprimentos",
+        "creditos": 2,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 30,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 66,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M3",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N4",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N5",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Jurandir Peinado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE76G",
+        "nome": "Direitos Especiais Aplicados",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "CA-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M2",
+                "sala": "CA-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M3",
+                "sala": "CA-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Ana Paula Myszczuk"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE77A",
+        "nome": "Tcc1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "CQ-306",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M5",
+                "sala": "CQ-306",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N4",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N5",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Francisco Rodrigues Lima Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE77B",
+        "nome": "Laboratório De Gestão",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 30,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "CE-303",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M3",
+                "sala": "CE-303",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Katia Regina Hopfer"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE77C",
+        "nome": "Controladoria E Gestão De Resultados",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "CE-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M3",
+                "sala": "CE-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M4",
+                "sala": "CE-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CE-206",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Paula Pontes De Campos Rasera"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE77D",
+        "nome": "Gestão De Serviços",
+        "creditos": 0,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "EaD",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Higor Vinicius Dos Reis Leite"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE78A",
+        "nome": "Tcc2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "7M3",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "7M4",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "7M5",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "7M6",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Rayane Camila Da Silva Sousa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEE7AJ",
+        "nome": "Planejamento Tributário",
+        "creditos": 0,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "EaD",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Katia Regina Hopfer"
+            ],
+            "optativa_matrizes": [
+              "Matriz:967"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GEE7AN",
+        "nome": "Subjetividade E Saúde Mental No Trabalho",
+        "creditos": 0,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "EaD",
+            "vagas_total": 46,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Leonardo Tonon"
+            ],
+            "optativa_matrizes": [
+              "Matriz:967"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GEE7BA",
+        "nome": "Gestão Da Tecnologia E Inovação",
+        "creditos": 0,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "EaD",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Isaura Alberton De Lima"
+            ],
+            "optativa_matrizes": [
+              "Matriz:967"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GEE7BH",
+        "nome": "Abordagens Da Internacionalização",
+        "creditos": 0,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "EaD",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Gabrielle Ribeiro Rodrigues Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:967"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GEE7CE",
+        "nome": "Simulação Empresarial",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "CA-004",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M2",
+                "sala": "CA-004",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M3",
+                "sala": "CA-004",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Alamo Alexandre Da Silva Batista"
+            ],
+            "optativa_matrizes": [
+              "Matriz:967"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GEE7CF",
+        "nome": "Contextos Em Administração",
+        "creditos": 0,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "EaD",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Paula Caldas Brognoli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:967"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GEE7G3",
+        "nome": "Fundamentos De Gestão Da Produção",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Tecn Automação Ind"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "CQ-008",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N2",
+                "sala": "CQ-008",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N3",
+                "sala": "CQ-008",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Paula Caldas Brognoli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:957",
+              "Matriz:976",
+              "Matriz:968",
+              "Matriz:906",
+              "Matriz:948",
+              "Matriz:962",
+              "Matriz:972",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GEE7M1",
+        "nome": "Fundamentos De Marketing",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Química Ambiental"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "EB-303",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3N2",
+                "sala": "EB-303",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3N3",
+                "sala": "EB-303",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Paula Caldas Brognoli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:960",
+              "Matriz:973",
+              "Matriz:957",
+              "Matriz:976",
+              "Matriz:920",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:906",
+              "Matriz:948",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:972",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S95",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Comunic Organizacional"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N2",
+                "sala": "CE-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N3",
+                "sala": "CE-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Ney Nakazato Miyahira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:960",
+              "Matriz:973",
+              "Matriz:957",
+              "Matriz:976",
+              "Matriz:920",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:906",
+              "Matriz:948",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:972",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MAT7T1",
+        "nome": "Tópicos Matemáticos 1",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M4",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M5",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M3",
+                "sala": "CE-307",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CE-307",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CE-307",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Gustavo Henrique Labegalini Boska"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

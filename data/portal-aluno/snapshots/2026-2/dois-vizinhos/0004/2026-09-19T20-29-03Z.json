@@ -1,0 +1,6562 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:30:53   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "dois-vizinhos",
+    "name": "Dois Vizinhos",
+    "code": "07"
+  },
+  "course": {
+    "id": "0004",
+    "name": "Zootecnia",
+    "sourceName": "ZOOTECNIA"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=4"
+  },
+  "fingerprint": "210b7da0a0fa1a62d210653c3780fe0112c982b6733e3dbb60a4766997d9e339",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "ZOOTECNIA",
+    "ultima_atualizacao": "19/09/2026 17:30:53   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "AA11ZO",
+        "nome": "Anatomia Animal",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 54,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "B8-S5",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "B8-S5",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "B8-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mirella Danna"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AA13ZO",
+        "nome": "Análise De Alimentos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "B6-S3",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "B6-S3",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "B6-S3",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "B6-S3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Magali Floriano Da Silveira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:53"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "AG14FL",
+        "nome": "Agrometeorologia E Climatologia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4EF1",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Florestal"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "B5-S4",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "B5-S4",
+                "sede": null
+              },
+              {
+                "horario": "6M1",
+                "sala": "B5-S4",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "B5-S4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Frederico Marcio Correa Vieira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AG14ZO",
+        "nome": "Agroecologia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T2",
+                "sala": "B6-S2",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "B6-S2",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B6-S2",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B6-S2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Celso Eduardo Pereira Ramos",
+              "Serinei Cesar Grigolo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AG17AG",
+        "nome": "Agroecologia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "B7-S5",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "B7-S5",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "B7-S5",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "B7-S5",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "B7-S5",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "B7-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Celso Eduardo Pereira Ramos",
+              "Everton Marcos Batistela"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AM14AG",
+        "nome": "Agrometeorologia E Climatologia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "B5-S4",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "B5-S4",
+                "sede": null
+              },
+              {
+                "horario": "6M1",
+                "sala": "B5-S4",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "B5-S4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Frederico Marcio Correa Vieira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AP14ZO",
+        "nome": "Apicultura",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "B5-S3",
+                "sede": null
+              },
+              {
+                "horario": "2T1",
+                "sala": "B5-S3",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "B5-S3",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "B5-S3",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "B5-S3",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "B5-S3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernando Reimann Skonieski",
+              "Fabiana Martins Costa"
+            ],
+            "optativa_matrizes": [
+              "Matriz:52"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "AR15ZO",
+        "nome": "Alimentação De Não Ruminantes",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "B6-S1",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "B6-S1",
+                "sede": null
+              },
+              {
+                "horario": "3M1",
+                "sala": "B6-S5",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "B6-S5",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "B6-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Segatto Cella"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AR16ZO",
+        "nome": "Alimentação De Ruminantes",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "B5-S6",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "B5-S6",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "B5-S6",
+                "sede": null
+              },
+              {
+                "horario": "4T1",
+                "sala": "B6-S6",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "B6-S6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernando Reimann Skonieski"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AR17AG",
+        "nome": "Administração Rural",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "B7-S7",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "B7-S7",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "B7-S7",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sergio Luiz Kuhn"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AR17ZO",
+        "nome": "Administração Rural",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 45,
+        "turmas": [
+          {
+            "codigo": "7ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "B8-S1",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "B8-S1",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "B8-S1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Laura Possani"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AV11FL",
+        "nome": "Anatomia Vegetal",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1EF1",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 25,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Florestal"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "B3-S2",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "B3-S2",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "LABMULT2",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "LABMULT2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daniela Macedo De Lima"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AV16ZO",
+        "nome": "Avicultura",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "B5-S6",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "B5-S6",
+                "sede": null
+              },
+              {
+                "horario": "4M1",
+                "sala": "B6-S1",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "B6-S1",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "B6-S1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sabrina Endo Takahashi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "BA17BB",
+        "nome": "Biotecnologia Animal",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7EB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Bioproc. E Biote"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "B8-S3",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "B8-S3",
+                "sede": null
+              },
+              {
+                "horario": "5M6",
+                "sala": "B8-S3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Flavia Regina Oliveira De Barros"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "BB17BB",
+        "nome": "Biomassa E Bioenergia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7EB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Bioproc. E Biote"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "2PROGR",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "2PROGR",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "2PROGR",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andreia Anschau"
+            ],
+            "optativa_matrizes": [
+              "Matriz:6",
+              "Matriz:52"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "BB49B",
+        "nome": "Bubalinocultura",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ZTOPT",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "B5-S5",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "B5-S5",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "B5-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Emilyn Midori Maeda"
+            ],
+            "optativa_matrizes": [
+              "Matriz:14"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "BC17ZO",
+        "nome": "Bovinocultura De Corte",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "B6-S6",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "B6-S6",
+                "sede": null
+              },
+              {
+                "horario": "5M1",
+                "sala": "B6-S2",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "B6-S2",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "B6-S2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Fernando Glasenapp De Menezes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "BE16CB",
+        "nome": "Bioestatística",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6LCB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "B5-S6",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "B5-S6",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "B5-S6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lilian De Souza Vismara"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "BI12ZO",
+        "nome": "Bioquímica",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 14,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "B8-S1",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "B8-S1",
+                "sede": null
+              },
+              {
+                "horario": "2T1",
+                "sala": "LABMULT1",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "LABMULT1",
+                "sede": null
+              },
+              {
+                "horario": "3T1",
+                "sala": "B7-S7",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "B7-S7",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabio Jose Maia"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "2ZT2",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "B8-S1",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "B8-S1",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "LABMULT1",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "LABMULT1",
+                "sede": null
+              },
+              {
+                "horario": "3T1",
+                "sala": "B7-S7",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "B7-S7",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabio Jose Maia"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "BI14ZO",
+        "nome": "Bioclimatologia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "B6-S5",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "B6-S5",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "B6-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sabrina Endo Takahashi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "BL17ZO",
+        "nome": "Bovinocultura De Leite",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 75,
+        "turmas": [
+          {
+            "codigo": "7ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "B8-S4",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "B8-S4",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "B8-S4",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "B6-S2",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "B6-S2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernando Kuss"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "BM14BB",
+        "nome": "Biologia Molecular",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4EB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Bioproc. E Biote"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "B6-S4",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "B6-S4",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "B6-S4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Betty Cristiane Kuhn"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "BM15BB",
+        "nome": "Biotecnologia Microbiana",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5EB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Bioproc. E Biote"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "2PROGR",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "2PROGR",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "2PROGR",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andreia Anschau"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "BMO15CB",
+        "nome": "Biologia Molecular",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5BCB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Biologia Bacharelado"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "B5-S5",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "B5-S5",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "B5-S5",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "B5-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Juliana Morini Kupper Cardoso"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "BT12ZO",
+        "nome": "Botânica Aplicada À Produção Animal",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 17,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T1",
+                "sala": "B6-S3",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "B6-S3",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "LABMULT2",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "LABMULT2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lilian Regina Rothe Mayer"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "2ZT2",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T1",
+                "sala": "B6-S3",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "B6-S3",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "LABMULT2",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "LABMULT2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lilian Regina Rothe Mayer"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "BT16AG",
+        "nome": "Biotecnologia Agrícola",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "B5-S5",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "B5-S5",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "B5-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alessandro Jaquiel Waclawovsky"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "BV16BB",
+        "nome": "Biotecnologia Vegetal",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6EB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Bioproc. E Biote"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "B3-S4",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "B3-S4",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "B3-S4",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "B3-S4",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "B3-S4",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "B3-S4",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "B3-S4",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "B3-S4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Simone Neumann Wendt",
+              "Betty Cristiane Kuhn"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB13ZO",
+        "nome": "Comportamento E Bem-Estar Animal",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 45,
+        "turmas": [
+          {
+            "codigo": "3ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "B6-S3",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "B6-S3",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "B6-S3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Emilyn Midori Maeda"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC15AG",
+        "nome": "Cooperativismo E Comercialização Agropecuária",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T2",
+                "sala": "B5-S5",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B5-S5",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "B5-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sidemar Presotto Nunes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC17ZO",
+        "nome": "Ciência Da Carne E Tipificação De Carcaças",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "B6-S2",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "B6-S2",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "B6-S2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Fernando Glasenapp De Menezes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CG16BB",
+        "nome": "Métodos Cromatográficos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6EB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Bioproc. E Biote"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "B8-S3",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "B8-S3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paula Fernandes Montanher"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CH11ZO",
+        "nome": "Citologia E Histologia Animal",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 27,
+            "vagas_calouros": 12,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "LABMULT2",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "LABMULT2",
+                "sede": null
+              },
+              {
+                "horario": "5T1",
+                "sala": "B6-S3",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "B6-S3",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "B6-S3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Patricia Rossi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CL13ZO",
+        "nome": "Climatologia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M3",
+                "sala": "B8-S3",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "B8-S3",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "B8-S3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Frederico Marcio Correa Vieira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CL43B",
+        "nome": "Climatologia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ZOOSPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 2,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Frederico Marcio Correa Vieira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CM18ZO",
+        "nome": "Cooperativismo, Mercados E Comercialização Agropecuária",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T2",
+                "sala": "B5-S5",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B5-S5",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "B5-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sidemar Presotto Nunes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CR10ZO",
+        "nome": "Criações Alternativas",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ZTOPT",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "B3-S6",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "B3-S6",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "B3-S6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sabrina Endo Takahashi"
+            ],
+            "optativa_matrizes": [
+              "Matriz:54"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CR14AG",
+        "nome": "Construções Rurais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M3",
+                "sala": "B5-S4",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "B5-S4",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "B5-S4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Angelica Signor Mendes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CZ15ZO",
+        "nome": "Culturas De Interesse Zootécnico",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "B5-S2",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "B5-S2",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "B5-S2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Fernando Adami"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "DE18ZO",
+        "nome": "Deontologia E Ética Profissional",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "B5-S1",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "B5-S1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Segatto Cella"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "DR15ZO",
+        "nome": "Desenho E Instalações Rurais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "B6-S1",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "B6-S1",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "B6-S1",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "B6-S1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Angelica Signor Mendes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EA13AG",
+        "nome": "Experimentação Agrícola",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M2",
+                "sala": "B5-S3",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "B5-S3",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "4COMP",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "4COMP",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucas Da Silva Domingues"
+            ],
+            "optativa_matrizes": [
+              "Matriz:53"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EA13ZO",
+        "nome": "Experimentação Animal",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "3PRODSOFT",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "3PRODSOFT",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "3PRODSOFT",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "3PRODSOFT",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rusbel Raul Aspilcueta Borquis"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC17ZO",
+        "nome": "Extensão E Comunicação Rural",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 45,
+        "turmas": [
+          {
+            "codigo": "7ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M3",
+                "sala": "B8-S2",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "B8-S2",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "B8-S2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Serinei Cesar Grigolo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ECE12CB",
+        "nome": "Ecologia De Ecossistemas",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2BCB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Biologia Bacharelado"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N3",
+                "sala": "B5-S2",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "B5-S2",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "B5-S2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Viviane Da Rosa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EF12FL",
+        "nome": "Ecologia Florestal",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2EF1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Florestal"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M4",
+                "sala": "B3-S3",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "B3-S3",
+                "sede": null
+              },
+              {
+                "horario": "6M6",
+                "sala": "B3-S3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Dineia Tessaro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EG15ZO",
+        "nome": "Ecologia E Gestão Ambiental",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "B7-S8",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "B7-S8",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "B7-S8",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Dineia Tessaro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EQ18ZO",
+        "nome": "Equinocultura",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M3",
+                "sala": "B6-S1",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "B6-S1",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "B6-S1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mirella Danna"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ER18AG",
+        "nome": "Extensão E Comunicação Rural",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "B5-S2",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "B5-S2",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "B5-S2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Serinei Cesar Grigolo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ES12FL",
+        "nome": "Estatística",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2EF1",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Florestal"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "3PRODSOFT",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "3PRODSOFT",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "3PRODSOFT",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Edgar De Souza Vismara"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ES12ZO",
+        "nome": "Estatística",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "3PRODSOFT",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "3PRODSOFT",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "3PRODSOFT",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rusbel Raul Aspilcueta Borquis"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ET18R",
+        "nome": "Ética, Legislação Agrária E Ambiental",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AGE",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "B7-S5",
+                "sede": null
+              },
+              {
+                "horario": "5M1",
+                "sala": "B7-S5",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "B7-S5",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "B7-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sidemar Presotto Nunes",
+              "Taciara Zborowski Horst"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EZ13ZO",
+        "nome": "Ezoognósia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T1",
+                "sala": "B6-S1",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "B6-S1",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B6-S1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Marcos Montagner"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FG12ZO",
+        "nome": "Física Geral",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 29,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "B8-S4",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "B8-S4",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "B8-S4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raquel De Almeida Rocha"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "ZOOSPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 3,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Raquel De Almeida Rocha"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FH14ZO",
+        "nome": "Farmacologia, Higiene E Profilaxia",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "B6-S6",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "B6-S6",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "B6-S6",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "B6-S2",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "B6-S2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Valter Oshiro Vilela"
+            ],
+            "optativa_matrizes": [
+              "Matriz:53",
+              "Matriz:21"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FH15ZO",
+        "nome": "Formação Humana Para O Mundo Do Trabalho",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M2",
+                "sala": "B6-S5",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "B6-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Marcos Montagner"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FI11ZO",
+        "nome": "Fisiologia Animal I",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 32,
+            "vagas_calouros": 12,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "B6-S1",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "B6-S1",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "LABANATOMI",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo Yuji Sado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FI12ZO",
+        "nome": "Fisiologia Animal Ii",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "B6-S2",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "B6-S2",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "B6-S2",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "B6-S2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo Yuji Sado"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "ZOOSPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 2,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Ricardo Yuji Sado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS13CB",
+        "nome": "Física Aplicada Às Ciências Biológicas",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3BCB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Biologia Bacharelado"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "B5-S3",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "B5-S3",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "B5-S3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raquel De Almeida Rocha"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FR15ZO",
+        "nome": "Forragicultura",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "B6-S1",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "B6-S1",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "B6-S1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Magali Floriano Da Silveira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:52",
+              "Matriz:6"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FS14ZO",
+        "nome": "Fertilidade E Adubação Do Solo",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "B6-S5",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "B6-S5",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "B6-S4",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "B6-S4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Laercio Ricardo Sartor"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FT15AG",
+        "nome": "Fertilidade Do Solo",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "B5-S5",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "B5-S5",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "B5-S5",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "B5-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Laercio Ricardo Sartor"
+            ],
+            "optativa_matrizes": [
+              "Matriz:53",
+              "Matriz:21"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FT15FL",
+        "nome": "Fertilidade Do Solo",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5EF1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Florestal"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M3",
+                "sala": "B7-S5",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "B7-S5",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "B7-S5",
+                "sede": null
+              },
+              {
+                "horario": "6M6",
+                "sala": "B7-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Alberto Casali"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FV13AG",
+        "nome": "Fisiologia Vegetal",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "B5-S3",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "B5-S3",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "B5-S3",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "B5-S3",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "B5-S3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Americo Wagner Junior"
+            ],
+            "optativa_matrizes": [
+              "Matriz:53"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GA14ZO",
+        "nome": "Genética Animal",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "B6-S6",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "B6-S6",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "B6-S2",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "B6-S2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mirella Danna"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GE16ZO",
+        "nome": "Gestão Econômica Aplicada À Zootecnia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "B8-S3",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "B8-S3",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "B8-S3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Laura Possani"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GG12BB",
+        "nome": "Genética Geral",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2EB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Bioproc. E Biote"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "B3-S4",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "B3-S4",
+                "sede": null
+              },
+              {
+                "horario": "4T1",
+                "sala": "B3-S3",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "B3-S3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Francisco Menino Destefanis Vitola"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GGH13CB",
+        "nome": "Genética Geral E Humana",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "3BCB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 11,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Biologia Bacharelado"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "B5-S3",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "B5-S3",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "B5-S3",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "LABMULT2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sandrieli Goncalves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GM17AG",
+        "nome": "Gestão E Manejo Ambiental",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 48,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "B7-S7",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "B7-S7",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "B7-S7",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Leite Cunha"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GP13SW",
+        "nome": "Gestão De Pessoas",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3ES1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Bach Eng De Software"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "B6-S3",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "B6-S3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sergio Luiz Kuhn"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GP16BB",
+        "nome": "Gestão De Projetos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6EB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Bioproc. E Biote"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "B3-S4",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "B3-S4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tatiane Peratz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:54",
+              "Matriz:14",
+              "Matriz:6",
+              "Matriz:52"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GR16BB",
+        "nome": "Gerenciamento De Resíduos Sólidos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6EB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Bioproc. E Biote"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T1",
+                "sala": "B5-S3",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "B5-S3",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B5-S3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elizangela Cavazzini Cesca"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HC15SW",
+        "nome": "Interação Humano-Computador",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5ES1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Bach Eng De Software"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "6REDES",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "6REDES",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "6REDES",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marisangela Pacheco Brittes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HI15AG",
+        "nome": "Hidráulica E Irrigação",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M2",
+                "sala": "B5-S5",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "B5-S5",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "B5-S5",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "B5-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adalberto Luiz De Paula"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HI15FL",
+        "nome": "Hidráulica E Irrigação",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5EF1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Florestal"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "B7-S5",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "B7-S5",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "B7-S5",
+                "sede": null
+              },
+              {
+                "horario": "3M6",
+                "sala": "B7-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adalberto Luiz De Paula"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "IA19FL",
+        "nome": "Estudos De Impacto Ambiental",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "9EF1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Florestal"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "B3-S3",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "B3-S3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alvaro Boson De Castro Faria"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "IM12ZO",
+        "nome": "Imunologia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "B6-S1",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "B6-S1",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "B6-S1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Valter Oshiro Vilela"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "IP13BB",
+        "nome": "Introdução À Programação",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3EB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Bioproc. E Biote"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "3PRODSOFT",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "3PRODSOFT",
+                "sede": null
+              },
+              {
+                "horario": "5M6",
+                "sala": "3PRODSOFT",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago Dias"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "IT18ZO",
+        "nome": "Inovação Tecnológica Aplicada A Produção Animal",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 45,
+        "turmas": [
+          {
+            "codigo": "8ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "B6-S5",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "B6-S5",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "B6-S5",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "B6-S5",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "B6-S5",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "B6-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marco Antonio Possenti",
+              "Frederico Marcio Correa Vieira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "IZ11ZO",
+        "nome": "Introdução À Zootecnia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "B7-S8",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "B7-S8",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "B7-S8",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernando Kuss"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LA11BB",
+        "nome": "Letramento Acadêmico",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1EB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 32,
+            "vagas_calouros": 27,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Bioproc. E Biote"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "B7-S5",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "B7-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Francieli Motter Ludovico"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LB10AG",
+        "nome": "Libras Ii",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AGOPT",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "B8-S5",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "B8-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Renan De Bastos Andrade"
+            ],
+            "optativa_matrizes": [
+              "Matriz:66",
+              "Matriz:55"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LB38C",
+        "nome": "Libras 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3BCB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Biologia Bacharelado"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N4",
+                "sala": "B5-S3",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "B5-S3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Renan De Bastos Andrade"
+            ],
+            "optativa_matrizes": [
+              "Matriz:6",
+              "Matriz:52"
+            ]
+          },
+          {
+            "codigo": "3LCB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N4",
+                "sala": "B5-S3",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "B5-S3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Renan De Bastos Andrade"
+            ],
+            "optativa_matrizes": [
+              "Matriz:6",
+              "Matriz:52"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LI10AG",
+        "nome": "Libras I",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AGOPT",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "B3-S3",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "B3-S3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Renan De Bastos Andrade"
+            ],
+            "optativa_matrizes": [
+              "Matriz:66",
+              "Matriz:55"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LI19SW",
+        "nome": "Libras 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ESOPT",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "B6-S6",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "B6-S6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Renan De Bastos Andrade"
+            ],
+            "optativa_matrizes": [
+              "Matriz:56"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MA11BB",
+        "nome": "Meio Ambiente E Sociedade",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1EB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 37,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Bioproc. E Biote"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "B6-S4",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "B6-S4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Everton Marcos Batistela"
+            ],
+            "optativa_matrizes": [
+              "Matriz:6",
+              "Matriz:52"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MA11ZO",
+        "nome": "Matemática",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 59,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "B6-S5",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "B6-S5",
+                "sede": null
+              },
+              {
+                "horario": "5M1",
+                "sala": "B6-S5",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "B6-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriana Sbardelotto Di Domenico"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MA15ZO",
+        "nome": "Melhoramento Animal 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "B6-S5",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "B6-S5",
+                "sede": null
+              },
+              {
+                "horario": "4T1",
+                "sala": "B6-S2",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "B6-S2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabiana Martins Costa"
+            ],
+            "optativa_matrizes": [
+              "Matriz:53",
+              "Matriz:21"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MA16ZO",
+        "nome": "Melhoramento Animal 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "B7-S8",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "B7-S8",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "B6-S1",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "B6-S1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabiana Martins Costa"
+            ],
+            "optativa_matrizes": [
+              "Matriz:53"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MC16AG",
+        "nome": "Manejo E Conservação De Solos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "6AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "B5-S6",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "B5-S6",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "B5-S6",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "B5-S6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Cesar Conceicao"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MC17FL",
+        "nome": "Manejo E Conservação Do Solo",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7EF1",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Florestal"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M4",
+                "sala": "B6-S5",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "B6-S5",
+                "sede": null
+              },
+              {
+                "horario": "6M6",
+                "sala": "B6-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Cesar Conceicao"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ME13BB",
+        "nome": "Métodos Espectrofotométricos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3EB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Bioproc. E Biote"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "B6-S4",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "B6-S4",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "B6-S4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Guilherme Garcia Bessegato"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ME16AG",
+        "nome": "Mercados Agropecuários",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "B5-S6",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "B5-S6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Beatriz Leite Gustmann De Castro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MF16ZO",
+        "nome": "Manejo E Conservação De Forragem",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "B7-S8",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "B7-S8",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "B7-S8",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lilian Regina Rothe Mayer"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MF18FL",
+        "nome": "Mecanização Florestal",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8EF1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Florestal"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "B3-S3",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "B3-S3",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "B3-S3",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "B3-S3",
+                "sede": null
+              },
+              {
+                "horario": "5M1",
+                "sala": "B3-S3",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "B3-S3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Claudio Thomas"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MG13BB",
+        "nome": "Microbiologia Geral",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3EB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Bioproc. E Biote"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "B8-S3",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "B8-S3",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "B6-S5",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "B6-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Naiana Cristine Gabiatti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MI26AG",
+        "nome": "Manejo Integrado De Pragas",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M3",
+                "sala": "B5-S6",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "B5-S6",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "B5-S6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alfredo De Gouvea"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MI46B",
+        "nome": "Melhoramento Animal 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ZOOSPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 1,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Fabiana Martins Costa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MN14ZO",
+        "nome": "Mecanização Aplicada À Zootecnia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "B6-S1",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "B6-S1",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "B6-S1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Claudio Thomas"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MP12BB",
+        "nome": "Metodologia Da Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2EB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Bioproc. E Biote"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "B8-S4",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "B8-S4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Samara Ernandes Adamczuk"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MP13FL",
+        "nome": "Metodologia De Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3EF1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Florestal"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "B8-S1",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "B8-S1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Patricia Fernandes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MP15ZO",
+        "nome": "Metodologia Da Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "B6-S2",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "B6-S2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Fernando Diel"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MP16SW",
+        "nome": "Metodologia De Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6ES1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Bach Eng De Software"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "B6-S6",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "B6-S6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Maria Adelina Silva Brito"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MS15ZO",
+        "nome": "Manejo E Conservação Do Solo",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M4",
+                "sala": "B6-S5",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "B6-S5",
+                "sede": null
+              },
+              {
+                "horario": "6M6",
+                "sala": "B6-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Cesar Conceicao"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MV15AG",
+        "nome": "Melhoramento Vegetal",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "B5-S5",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "B5-S5",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "B5-S5",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "B5-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucas Da Silva Domingues"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MZ12ZO",
+        "nome": "Microbiologia Zootécnica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 11,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "LABMICROBI",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "B6-S6",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "B6-S6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcela Tostes Frata"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "2ZT2",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "LABMICROBI",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "B6-S6",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "B6-S6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcela Tostes Frata"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "NA14ZO",
+        "nome": "Nutrição Animal",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "B6-S2",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "B6-S2",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "B6-S4",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "B6-S4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wagner Paris"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "NG16ZO",
+        "nome": "Nutrição De Cães E Gatos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "B6-S3",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "B6-S3",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "B6-S3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Patricia Rossi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "OV17ZO",
+        "nome": "Ovinocultura",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "B6-S2",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "B6-S2",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "B6-S2",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "B6-S2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vicente De Paulo Macedo"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "ZOOSPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 1,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Vicente De Paulo Macedo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PA49B",
+        "nome": "Processamento Artesanal De Carnes",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ZTOPT",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T1",
+                "sala": "B5-S6",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "B5-S6",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B5-S6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Valter Oshiro Vilela"
+            ],
+            "optativa_matrizes": [
+              "Matriz:14"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "PD11FL",
+        "nome": "Pedologia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1EF1",
+            "enquadramento": "Presencial",
+            "vagas_total": 31,
+            "vagas_calouros": 25,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Florestal"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "B7-S5",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "B7-S5",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "LAB GPP",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "LAB GPP",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elisandra Pocojeski"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PD13ZO",
+        "nome": "Pedologia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "B7-S7",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "B7-S7",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "B7-S7",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elisandra Pocojeski"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PD26AG",
+        "nome": "Plantas Daninhas",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "B5-S6",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "B5-S6",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "B5-S6",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "B5-S6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Pedro Valerio Dutra De Moraes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PE12AG",
+        "nome": "Probabilidade E Estatística",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "3PRODSOFT",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "3PRODSOFT",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "3PRODSOFT",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "3PRODSOFT",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lilian De Souza Vismara"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "2AG2",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "3PRODSOFT",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "3PRODSOFT",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "3PRODSOFT",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "3PRODSOFT",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lilian De Souza Vismara"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PE14BB",
+        "nome": "Probabilidade E Estatística",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4EB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 11,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Bioproc. E Biote"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "3PRODSOFT",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "3PRODSOFT",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "3PRODSOFT",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "3PRODSOFT",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lilian De Souza Vismara"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PE16SW",
+        "nome": "Probabilidade E Estatística",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6ES1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Bach Eng De Software"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "2PROGR",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "2PROGR",
+                "sede": null
+              },
+              {
+                "horario": "3N1",
+                "sala": "4COMP",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "4COMP",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Edgar De Souza Vismara"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PF17BB",
+        "nome": "Processos Fermentativos Industriais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7EB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Bioproc. E Biote"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "B8-S5",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "B8-S5",
+                "sede": null
+              },
+              {
+                "horario": "3M6",
+                "sala": "B8-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andreia Anschau"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PM18AG",
+        "nome": "Plantas Medicinais, Condimentares E Aromáticas",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "B8-S5",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "B8-S5",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "B8-S5",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "B8-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Celso Eduardo Pereira Ramos",
+              "Dalva Paulus"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PO12AG",
+        "nome": "Pedologia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "B5-S2",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "B5-S2",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "B5-S2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Taciara Zborowski Horst"
+            ],
+            "optativa_matrizes": [
+              "Matriz:53",
+              "Matriz:21"
+            ]
+          },
+          {
+            "codigo": "2AG2",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "B5-S2",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "B5-S2",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "B5-S2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Taciara Zborowski Horst"
+            ],
+            "optativa_matrizes": [
+              "Matriz:53",
+              "Matriz:21"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "PP19R",
+        "nome": "Planejamento De Propriedades Rurais",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 21,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "B7-S8",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "B7-S8",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Serinei Cesar Grigolo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:6"
+            ]
+          },
+          {
+            "codigo": "9AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 36,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "B7-S8",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "B7-S8",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Serinei Cesar Grigolo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:6"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "PS18ZO",
+        "nome": "Piscicultura",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "B5-S1",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "B5-S1",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "B5-S1",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "B5-S1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo Yuji Sado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QA12BB",
+        "nome": "Química Analítica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2EB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Bioproc. E Biote"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "B7-S6",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "B7-S6",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "B7-S6",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "LAPOL",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Renata Padilha De Souza Nuernberg"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QG11FL",
+        "nome": "Química Geral E Orgânica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1EF1",
+            "enquadramento": "Presencial",
+            "vagas_total": 17,
+            "vagas_calouros": 11,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Florestal"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "LABMULT1",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "LABMULT1",
+                "sede": null
+              },
+              {
+                "horario": "6M1",
+                "sala": "B6-S1",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "B6-S1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cristiane Dias Thiesen"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QG11ZO",
+        "nome": "Química Geral",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 19,
+            "vagas_calouros": 11,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "LABMULT1",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "LABMULT1",
+                "sede": null
+              },
+              {
+                "horario": "6M1",
+                "sala": "B6-S1",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "B6-S1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cristiane Dias Thiesen"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QGO11CB",
+        "nome": "Química Geral E Orgânica",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CBSPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 2,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Paula Fernandes Montanher"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "RA16ZO",
+        "nome": "Reprodução Animal",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "B6-S3",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "B6-S3",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "B6-S3",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "B6-S3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Marcos Montagner"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "SR16ZO",
+        "nome": "Sociologia Rural E Agronegócio",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "B6-S3",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "B6-S3",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "B6-S3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sidemar Presotto Nunes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "SS12BB",
+        "nome": "Saúde E Segurança No Trabalho",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2EB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Bioproc. E Biote"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "B8-S2",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "B8-S2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Samara Silva De Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "SU18ZO",
+        "nome": "Suinocultura",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "B5-S1",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "B5-S1",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "B6-S4",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "B6-S4",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "B6-S4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Segatto Cella"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TA19R",
+        "nome": "Tecnologia De Produtos De Origem Animal",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "9AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 32,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "B8-S2",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "B8-S2",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "B8-S2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Claudia De Andrade Moura"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TC17ZO",
+        "nome": "Trabalho De Conclusão De Curso 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "B7-S5",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "B7-S5",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "B7-S5",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "B7-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Emilyn Midori Maeda"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TC36C",
+        "nome": "Trabalho De Conclusão De Curso 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CBE",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "B6-S2",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "B6-S2",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "B6-S2",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "B6-S2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gustavo Sene Silva",
+              "Viviane Da Rosa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TC48B",
+        "nome": "Trabalho De Conclusão De Curso 2",
+        "creditos": 0,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 100,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Emilyn Midori Maeda"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TO18ZO",
+        "nome": "Tecnologia De Produtos De Origem Animal",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 19,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "B8-S4",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "B8-S4",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "B6-S3",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "B6-S3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcela Tostes Frata"
+            ],
+            "optativa_matrizes": [
+              "Matriz:53"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "TO49B",
+        "nome": "Tópicos Especiais Em Qualidade De Ovos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ZTOPT",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "B6-S6",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "B6-S6",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "B6-S6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Patricia Rossi"
+            ],
+            "optativa_matrizes": [
+              "Matriz:14"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "TP12FL",
+        "nome": "Topografia I",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2EF1",
+            "enquadramento": "Presencial",
+            "vagas_total": 18,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Florestal"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "B8-S2",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "B8-S2",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "B8-S2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Maria Madalena Santos Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TP13AG",
+        "nome": "Topografia I",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "B5-S3",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "B5-S3",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "B5-S3",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "B5-S3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alyne Raminelli Siguel Gemin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TP14ZO",
+        "nome": "Topografia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "B8-S2",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "B8-S2",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "B6-S1",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "B6-S1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Maria Madalena Santos Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TP17ZO",
+        "nome": "Tecnologia Da Produção E Formulação De Rações",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "B6-S6",
+                "sede": null
+              },
+              {
+                "horario": "4M1",
+                "sala": "B6-S6",
+                "sede": null
+              },
+              {
+                "horario": "4M1",
+                "sala": "B6-S6",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "B6-S6",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "B6-S6",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "B6-S6",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "B6-S6",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "B6-S6",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "B6-S6",
+                "sede": null
+              },
+              {
+                "horario": "6M1",
+                "sala": "B8-S2",
+                "sede": null
+              },
+              {
+                "horario": "6M1",
+                "sala": "B8-S2",
+                "sede": null
+              },
+              {
+                "horario": "6M1",
+                "sala": "B8-S2",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "B8-S2",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "B8-S2",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "B8-S2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Segatto Cella",
+              "Fernando Reimann Skonieski",
+              "Fabio Jose Maia"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TR17FL",
+        "nome": "Trabalho De Conclusão De Curso 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7EF1",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Florestal"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "LAMAF",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "LAMAF",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Veridiana Padoin Weber"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ZO11ZO",
+        "nome": "Zoologia E Parasitologia Animal",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1ZT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 18,
+            "vagas_calouros": 12,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Zootecnia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "B7-S8",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "B7-S8",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "B6-S1",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "B6-S1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Valter Oshiro Vilela"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

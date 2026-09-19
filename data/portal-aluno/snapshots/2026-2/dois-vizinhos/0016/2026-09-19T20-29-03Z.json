@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:30:58   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "dois-vizinhos",
+    "name": "Dois Vizinhos",
+    "code": "07"
+  },
+  "course": {
+    "id": "0016",
+    "name": "Inglês - 1",
+    "sourceName": "INGLÊS - 1"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=16"
+  },
+  "fingerprint": "2b73b6c2203f1e4735397ebd5e2e36cf3055eca4da89dd39506caf434d1fc3c1",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "INGLÊS - 1",
+    "ultima_atualizacao": "19/09/2026 17:30:58   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "IN111",
+        "nome": "Ingles 1 - Modalidade 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "INGLES1",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 25,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "B3-S5",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "B3-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Francieli Motter Ludovico"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "IN131",
+        "nome": "Inglês 3 - Modalidade 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "INGLES3",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "B3-S5",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "B3-S5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Siderlene Muniz Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

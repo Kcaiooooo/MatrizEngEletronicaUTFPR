@@ -8,6 +8,8 @@
   },
   "scripts": {
     "dev": "node scripts/serve.mjs",
+    "sync:portal-aluno": "node scripts/sync-portal-aluno.mjs",
+    "sync:portal-aluno:all": "node scripts/sync-portal-aluno.mjs --all",
     "build": "tailwindcss -i assets/css/tailwind.input.css -o assets/css/utilities.css --minify",
     "test": "node --test tests/unit/*.test.mjs",
     "test:e2e": "playwright test",

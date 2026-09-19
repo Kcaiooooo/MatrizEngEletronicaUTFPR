@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:30:56   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "dois-vizinhos",
+    "name": "Dois Vizinhos",
+    "code": "07"
+  },
+  "course": {
+    "id": "0009",
+    "name": "Educação Do Campo",
+    "sourceName": "EDUCAÇÃO DO CAMPO"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=9"
+  },
+  "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "EDUCAÇÃO DO CAMPO",
+    "ultima_atualizacao": "19/09/2026 17:30:56   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": []
+  }
+}

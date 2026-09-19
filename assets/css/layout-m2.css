@@ -363,6 +363,11 @@ body {
             color: #d1d5db;
         }
 
+        .tab-link {
+            display: inline-block;
+            text-decoration: none;
+        }
+
         .tab-btn.active {
             color: #60a5fa;
             border-bottom-color: #60a5fa;

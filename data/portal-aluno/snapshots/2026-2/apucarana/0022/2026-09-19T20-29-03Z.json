@@ -1,0 +1,7360 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:29:19   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "apucarana",
+    "name": "Apucarana",
+    "code": "10"
+  },
+  "course": {
+    "id": "0022",
+    "name": "Engenharia Computação",
+    "sourceName": "ENGENHARIA COMPUTAÇÃO"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=22"
+  },
+  "fingerprint": "8686ed9824e5142c29fa1ad57c78067b60476085db0229a3f7ee2097ab60b930",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "ENGENHARIA COMPUTAÇÃO",
+    "ultima_atualizacao": "19/09/2026 17:29:19   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "AEEC3A",
+        "nome": "Análise Estatística De Dados",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EC3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T5",
+                "sala": "M002B",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "M002B",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "M002A",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "M002A",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Danielle Goncalves De Oliveira Prado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AFCO5O",
+        "nome": "Aptidão Física",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPEG5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "QUADRA",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "QUADRA",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cynthia Correa Lopes Barbosa"
+            ],
+            "optativa_matrizes": [
+              "Matriz:32"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ALCO2A",
+        "nome": "Álgebra Linear",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "M002B",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "M002B",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "M002B",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rodrigo Manoel Dias Andrade"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALEC2A",
+        "nome": "Álgebra Linear",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EC2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "K001",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "K001",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "K001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Simone Alves Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EC2C",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ],
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Simone Alves Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALEL2A",
+        "nome": "Álgebra Linear",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Civil"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "N108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Isabella Akemi Okumoto Borges"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALEQ2A",
+        "nome": "Álgebra Linear",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "N108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alisson De Carvalho Reinol"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ARCO3A",
+        "nome": "Arquitetura E Organização De Computadores",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M5",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "6M6",
+                "sala": "N103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo De Oliveira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "COM3B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "6M6",
+                "sala": "N103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo De Oliveira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "COM3S",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Marcelo De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "BDCO4A",
+        "nome": "Banco De Dados",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 37,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "N103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wendel Goes Pedrozo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CAEC2B",
+        "nome": "Cálculo Para Funções De Várias Variáveis",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EC2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "M002A",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "M002A",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "M002A",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "M002A",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriana Camila Braga"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EC2C",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "M002A",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "M002A",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Isabella Akemi Okumoto Borges"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CAEC3C",
+        "nome": "Cálculo Multivariado E Vetorial",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EC3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T5",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "M002B",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "M002B",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rodrigo Dos Santos Veloso Martins"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CAEQ1A",
+        "nome": "Cálculo 1",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DPEQ1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 19,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "5M1",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "M004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leandro Da Silva Pereira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EQ1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 25,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "5M1",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "M004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leandro Da Silva Pereira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CAEQ2B",
+        "nome": "Cálculo 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T5",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "M006",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "M006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Bruno Luiz Santana Vicentin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CAEQ3C",
+        "nome": "Cálculo 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M5",
+                "sala": "L003B",
+                "sede": null
+              },
+              {
+                "horario": "2M6",
+                "sala": "L003B",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "M004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Angelo Aliano Filho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CAET3O",
+        "nome": "Carreira 360º",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPET3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Têxtil"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T4",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "L001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Isabel Cristina Moretti",
+              "Fabricio Maesta Bezerra"
+            ],
+            "optativa_matrizes": [
+              "Matriz:7",
+              "Matriz:34"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CDCO5A",
+        "nome": "Comunicação De Dados",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "N105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CDCO7A",
+        "nome": "Controle Digital",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM7A",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M5",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "5M6",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "6M1",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "M012",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adalberto Zanatta Neder Lazarini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CDEL1A",
+        "nome": "Cálculo Diferencial E Integral 1",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "N108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo De Almeida Simon"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CDEL2B",
+        "nome": "Cálculo Diferencial E Integral 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "6T1",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "N108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rodrigo Dos Santos Veloso Martins"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CDEL3C",
+        "nome": "Cálculo Diferencial E Integral 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "N010",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo De Almeida Simon"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CFET1A",
+        "nome": "Cálculo Para Funções De Uma Variável",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DPET1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 34,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Têxtil"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "L002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Juliana Castanon Xavier Merli"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "ET1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 10,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Têxtil"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "L002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Juliana Castanon Xavier Merli"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CGCO1A",
+        "nome": "Cálculo Diferencial E Integral 1",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M5",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "5M6",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "N108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leandro Da Silva Pereira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "DPEG1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "N110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Simone Alves Da Silva",
+              "Ricardo De Almeida Simon"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CGCO2B",
+        "nome": "Cálculo Diferencial E Integral 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "N108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alisson De Carvalho Reinol"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CGCO3C",
+        "nome": "Cálculo Diferencial E Integral 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "5M6",
+                "sala": "N110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Viviane Cristhyne Bini Conte"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "DPEG3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "N010",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rodrigo Dos Santos Veloso Martins"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CICO2A",
+        "nome": "Circuitos Digitais",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "N206",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "N206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mauricio Khenaifes"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "COM2B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "4T1",
+                "sala": "N206",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "N206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mauricio Khenaifes"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "COM2S",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Adalberto Zanatta Neder Lazarini"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "DPCOM2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "N206",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "N206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adalberto Zanatta Neder Lazarini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CICO3A",
+        "nome": "Ciências Do Ambiente",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "M002B",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "M002B",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Halison Correia Golias"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CLCO5A",
+        "nome": "Cálculo Numérico",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "5M1",
+                "sala": "M006",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "M006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Viviane Cristhyne Bini Conte"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CLEQ1A",
+        "nome": "Comunicação Linguística",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 25,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Química",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "M004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Cristina Fernandes Pereira Wolff"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CLLQ1A",
+        "nome": "Comunicação Linguística",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "LQ1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 11,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "L003A",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "L003A",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Oscar Fussato Nakasato"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CMET3C",
+        "nome": "Cálculo Multivariado E Vetorial",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ET3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Têxtil"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "N009",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "N009",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "M001",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "M001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rodrigo Manoel Dias Andrade"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CNEC4A",
+        "nome": "Cálculo Numérico",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EC4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "M006",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "M006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Angelo Aliano Filho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CNEL4A",
+        "nome": "Cálculo Numérico",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "N008",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "N008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Isabella Akemi Okumoto Borges"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CNEQ4A",
+        "nome": "Cálculo Numérico",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "M009",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "M009",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "M009",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "M009",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Angelo Aliano Filho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CPCO6A",
+        "nome": "Compiladores",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM6A",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "6T1",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "N101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andre Luiz Tinassi D Amato"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "DECO1A",
+        "nome": "Desenho Técnico",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 22,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "N105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wendel Goes Pedrozo"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "COM1B",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 22,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "N105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wendel Goes Pedrozo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "DPR01MEIU",
+        "nome": "Design De Soluções Para Problemas Reais",
+        "creditos": 4,
+        "creditos_assincronos": 6,
+        "horas_extensionistas": 120,
+        "turmas": [
+          {
+            "codigo": "OPET3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "H001",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "H001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Juliana Castanon Xavier Merli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:34",
+              "Matriz:32",
+              "Matriz:18",
+              "Matriz:17",
+              "Matriz:36",
+              "Matriz:35",
+              "Matriz:39",
+              "Matriz:38",
+              "Matriz:19",
+              "Matriz:37",
+              "Matriz:7"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "DWCO8A",
+        "nome": "Desenvolvimento De Aplicações Web",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "COM8A",
+            "enquadramento": "Presencial",
+            "vagas_total": 27,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "M012",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Antonio Lima Rodrigues"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EBEL6O",
+        "nome": "Introdução À Engenharia Biomédica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPCOM7A",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T5",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "M012",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daniel Prado De Campos"
+            ],
+            "optativa_matrizes": [
+              "Matriz:32",
+              "Matriz:37",
+              "Matriz:19"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ECCO1A",
+        "nome": "Introdução À Engenharia De Computação",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "N108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernando Barreto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EDCO3A",
+        "nome": "Estrutura De Dados 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "6M1",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "N103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabio Irigon Pereira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "COM3B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M5",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "6M1",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "N103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabio Irigon Pereira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EDCO4B",
+        "nome": "Estrutura De Dados 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "N103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wendel Goes Pedrozo"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "COM4B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "N105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wendel Goes Pedrozo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EDEC4A",
+        "nome": "Equações Diferenciais Ordinárias",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EC4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M5",
+                "sala": "M002A",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "M002A",
+                "sede": null
+              },
+              {
+                "horario": "5M1",
+                "sala": "N008",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "N008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cosmo Damiao Santiago"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EDEL3A",
+        "nome": "Equações Diferenciais Ordinárias",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "N010",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Bruno Luiz Santana Vicentin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EDEQ4A",
+        "nome": "Equações Diferenciais Ordinárias",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "N107",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "N107",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "N107",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "N107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Bruno Luiz Santana Vicentin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EECO6A",
+        "nome": "Eletrônica A",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM6A",
+            "enquadramento": "Presencial",
+            "vagas_total": 29,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "N203",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "N203",
+                "sede": null
+              },
+              {
+                "horario": "4T1",
+                "sala": "N008",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "N008",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "N008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thales Eugenio Portes De Almeida"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EFCO3A",
+        "nome": "Equações Diferenciais Ordinárias",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "N110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cosmo Damiao Santiago"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELCO7A",
+        "nome": "Eletrônica B",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM7A",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "N203",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "N203",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "N010",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thales Eugenio Portes De Almeida"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMEL4A",
+        "nome": "Empreendedorismo",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "N008",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "N008",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "N008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tiago Ferreira Ribeiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENCO6A",
+        "nome": "Engenharia De Software",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM6A",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T5",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "N101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Antonio Lima Rodrigues"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENCO8A",
+        "nome": "Economia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM8A",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Design De Moda",
+                "Química",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "C003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ronie Galeano"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EOCO7A",
+        "nome": "Empreendedorismo",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM7A",
+            "enquadramento": "Presencial",
+            "vagas_total": 29,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "M006",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "M006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ronie Galeano"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FDCO1A",
+        "nome": "Fundamentos De Programação 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 22,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "5M1",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "N103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Muriel De Souza Godoi"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "COM1B",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 22,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "N103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Muriel De Souza Godoi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FDCO2B",
+        "nome": "Fundamentos De Programação 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 26,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T5",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "6T1",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "N105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Muriel De Souza Godoi"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "COM2B",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T5",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "N105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Muriel De Souza Godoi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FECO3A",
+        "nome": "Física Experimental 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M3",
+                "sala": "M101",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "M101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Michely Patricia Rosseto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FECO4B",
+        "nome": "Física Experimental 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "J004",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "J004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Soares Zola"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "COM4B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T5",
+                "sala": "J004",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "J004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Soares Zola"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FEEC3A",
+        "nome": "Física Experimental 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EC3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T3",
+                "sala": "M101",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "M101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Edenize Sodre Dos Santos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FEEC4B",
+        "nome": "Física Experimental 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EC4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M5",
+                "sala": "J004",
+                "sede": null
+              },
+              {
+                "horario": "2M6",
+                "sala": "J004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Michely Patricia Rosseto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FEEL3A",
+        "nome": "Física Experimental 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "M101",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "M101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Edenize Sodre Dos Santos"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EE3B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "M101",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "M101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Edenize Sodre Dos Santos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FEEL4B",
+        "nome": "Física Experimental 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "J004",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "J004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Michely Patricia Rosseto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FNCO6A",
+        "nome": "Fundamentos De Controle",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM6A",
+            "enquadramento": "Presencial",
+            "vagas_total": 33,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "5T1",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "N101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mauricio Eiji Nakai"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FSEQ4B",
+        "nome": "Física Experimental 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T5",
+                "sala": "J004",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "J004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rodolfo Teixeira De Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FTCO2A",
+        "nome": "Física Teórica 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "N108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Michely Patricia Rosseto"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "DPCOM2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "M001",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "M001",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "N110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jesus Maria Herazo Warnes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FTCO3B",
+        "nome": "Física Teórica 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "N008",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "N008",
+                "sede": null
+              },
+              {
+                "horario": "5M1",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "N110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Michely Patricia Rosseto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FTCO4C",
+        "nome": "Física Teórica 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T5",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "N010",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rogers Caparroz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FTEC2A",
+        "nome": "Física Teórica 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EC2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "M002A",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "M002A",
+                "sede": null
+              },
+              {
+                "horario": "6M1",
+                "sala": "M002A",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "M002A",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Jose Alba"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EC2C",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "M003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Ferreira Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FTEC3B",
+        "nome": "Física Teórica 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EC3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "M002B",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "M002B",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "M002B",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "M002B",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Ferreira Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FTEC4C",
+        "nome": "Física Teórica 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EC4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "N008",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "N008",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "6M6",
+                "sala": "M003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Ferreira Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FTEL2A",
+        "nome": "Física Teórica 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "N108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Rossato"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FTEL3B",
+        "nome": "Física Teórica 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "N010",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Manoel Messias Alvino De Jesus"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FTEL4C",
+        "nome": "Física Teórica 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "M001",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "M001",
+                "sede": null
+              },
+              {
+                "horario": "6T1",
+                "sala": "N008",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "N008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jesus Maria Herazo Warnes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FTEQ2A",
+        "nome": "Física Teórica 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T5",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "M004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Edenize Sodre Dos Santos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FTEQ4C",
+        "nome": "Física Teórica 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "N107",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "N107",
+                "sede": null
+              },
+              {
+                "horario": "5T1",
+                "sala": "N107",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "N107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rodolfo Teixeira De Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FUCO5A",
+        "nome": "Análise De Circuitos Elétricos 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "N206",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "N206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jessica Mariane Brito Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "COM5B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "N206",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "N206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jessica Mariane Brito Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GACO1A",
+        "nome": "Geometria Analítica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "2M6",
+                "sala": "N108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rodrigo Manoel Dias Andrade"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "DPEG1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "N108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rodrigo Manoel Dias Andrade"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GAEC1A",
+        "nome": "Geometria Analítica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DPEC1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "N110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Camila Souza Azevedo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GAEL1A",
+        "nome": "Geometria Analítica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "N108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alisson De Carvalho Reinol"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GAEQ1A",
+        "nome": "Geometria Analítica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DPEQ1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 19,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "3M6",
+                "sala": "L001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Simone Alves Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EQ1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 25,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "3M6",
+                "sala": "L001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Simone Alves Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GAET1A",
+        "nome": "Geometria Analítica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DPET1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 34,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Têxtil"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "M001",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "M001",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "M001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Simone Alves Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "ET1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 10,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Têxtil"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "M001",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "M001",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "M001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Simone Alves Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "IAEL2A",
+        "nome": "Inglês Para Fins Acadêmicos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "M009",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "M009",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tallyssa Izabella Machado Sirino"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EE2B",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T5",
+                "sala": "M009",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "M009",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tallyssa Izabella Machado Sirino"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "IECO8A",
+        "nome": "Instrumentação Eletrônica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM8A",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "N203",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "N203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daniel Prado De Campos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "INCO2A",
+        "nome": "Inglês Instrumental",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "N103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tallyssa Izabella Machado Sirino"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "COM2B",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "N103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tallyssa Izabella Machado Sirino"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LBLQ6A",
+        "nome": "Libras 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "LQ6A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N4",
+                "sala": "L004B",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "L004B",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daniele Miki Fujikawa Bozoli"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LBLQ7B",
+        "nome": "Libras 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "LQ7A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "L004B",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "L004B",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daniele Miki Fujikawa Bozoli"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LCCO1A",
+        "nome": "Introdução À Lógica Para Computação",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M4",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "6M6",
+                "sala": "N108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tamara Angelica Baldo"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "DPCOM1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M2",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "N110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucio Agostinho Rocha"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICO1A",
+        "nome": "Comunicação Linguística",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Química",
+                "Engenharia Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "N108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Cristina Fernandes Pereira Wolff"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LO62A",
+        "nome": "Libras 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPEG2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "N010",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daniele Miki Fujikawa Bozoli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:35",
+              "Matriz:37",
+              "Matriz:34",
+              "Matriz:36",
+              "Matriz:17",
+              "Matriz:18"
+            ]
+          },
+          {
+            "codigo": "OPEG2B",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4M5",
+                "sala": "N008",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "N008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daniele Miki Fujikawa Bozoli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:35",
+              "Matriz:37",
+              "Matriz:34",
+              "Matriz:36",
+              "Matriz:17",
+              "Matriz:18"
+            ]
+          },
+          {
+            "codigo": "OPEG2C",
+            "enquadramento": "Presencial",
+            "vagas_total": 26,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "6T1",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "M003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daniele Miki Fujikawa Bozoli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:35",
+              "Matriz:37",
+              "Matriz:34",
+              "Matriz:36",
+              "Matriz:17",
+              "Matriz:18"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LO62B",
+        "nome": "Libras 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPEG2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daniele Miki Fujikawa Bozoli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:35",
+              "Matriz:37",
+              "Matriz:34",
+              "Matriz:36",
+              "Matriz:17",
+              "Matriz:18"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LQET1A",
+        "nome": "Laboratório De Química Geral",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ET1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 10,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Têxtil"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M2",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "L105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Murilo Pereira Moises"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LRCO7A",
+        "nome": "Lógica Reconfigurável",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM7A",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "N101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MA62O",
+        "nome": "Meio Ambiente E Sociedade",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPEG2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "M001",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "M001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Graciana Freitas Palioto Pescim"
+            ],
+            "optativa_matrizes": [
+              "Matriz:39",
+              "Matriz:35",
+              "Matriz:37",
+              "Matriz:34",
+              "Matriz:36",
+              "Matriz:25",
+              "Matriz:18",
+              "Matriz:7",
+              "Matriz:17",
+              "Matriz:32",
+              "Matriz:19"
+            ]
+          },
+          {
+            "codigo": "OPEG2B",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "M003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Graciana Freitas Palioto Pescim"
+            ],
+            "optativa_matrizes": [
+              "Matriz:39",
+              "Matriz:35",
+              "Matriz:37",
+              "Matriz:34",
+              "Matriz:36",
+              "Matriz:25",
+              "Matriz:18",
+              "Matriz:7",
+              "Matriz:17",
+              "Matriz:32",
+              "Matriz:19"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MDCO3A",
+        "nome": "Matemática Discreta",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "M002B",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "M002B",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "M002B",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Isabella Akemi Okumoto Borges"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MECO1A",
+        "nome": "Materiais E Equipamentos Elétricos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 22,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "N205",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "N205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernando Barreto"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "COM1B",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 22,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "N205",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "N205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernando Barreto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MPDM3A",
+        "nome": "Metodologia De Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "M002B",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "M002B",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cynthia Correa Lopes Barbosa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MPEL4A",
+        "nome": "Metodologia Da Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Design De Moda",
+                "Engenharia Química",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "N010",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Graciana Freitas Palioto Pescim"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MPEQ3A",
+        "nome": "Metodologia Da Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Design De Moda",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M5",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "3M6",
+                "sala": "N110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cynthia Correa Lopes Barbosa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "OFCO5A",
+        "nome": "Oficina De Integração 1",
+        "creditos": 1,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 45,
+        "turmas": [
+          {
+            "codigo": "COM5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M6",
+                "sala": "N101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wagner Endo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "OFCO8B",
+        "nome": "Oficina De Integração 2",
+        "creditos": 1,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 45,
+        "turmas": [
+          {
+            "codigo": "COM8A",
+            "enquadramento": "Presencial",
+            "vagas_total": 29,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "M012",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wagner Endo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PBEQ2A",
+        "nome": "Probabilidade E Estatística",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "6T1",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "M004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Danielle Goncalves De Oliveira Prado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PDCO6A",
+        "nome": "Processamento Digital De Sinais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM6A",
+            "enquadramento": "Presencial",
+            "vagas_total": 32,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T5",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "N101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daniel Prado De Campos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PDCO7O",
+        "nome": "Processamento Digital De Imagens",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPCOM7A",
+            "enquadramento": "Presencial",
+            "vagas_total": 32,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T5",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "N105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabio Irigon Pereira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:32"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "PECO2A",
+        "nome": "Metodologia De Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Design De Moda",
+                "Engenharia Química",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "N108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Graciana Freitas Palioto Pescim"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PEEL3A",
+        "nome": "Probabilidade E Estatística",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "M003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Danielle Goncalves De Oliveira Prado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "POCO4A",
+        "nome": "Programação Orientada A Objetos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "6T1",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "N103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Antonio Lima Rodrigues"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "DPCOM4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "6T1",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "M012",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tamara Angelica Baldo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "POCO5A",
+        "nome": "Probabilidade E Estatística",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M5",
+                "sala": "N008",
+                "sede": null
+              },
+              {
+                "horario": "2M6",
+                "sala": "N008",
+                "sede": null
+              },
+              {
+                "horario": "4M1",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "N108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cosmo Damiao Santiago"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PRPG3O",
+        "nome": "Problemas Reais Em Gestão De Processos",
+        "creditos": 2,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPEG3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Têxtil",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "4M1",
+                "sala": "M006",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "M006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Cavicchioli Zola"
+            ],
+            "optativa_matrizes": [
+              "Matriz:39",
+              "Matriz:7",
+              "Matriz:34"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "QECO4A",
+        "nome": "Química Experimental",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T5",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "L105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Murilo Pereira Moises"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "COM4B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "L105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Murilo Pereira Moises"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QEEL1A",
+        "nome": "Química Geral Experimental",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 15,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "L105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elton Guntendorfer Bonafe"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EE1B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 15,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N4",
+                "sala": "L101",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "L101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lidia Brizola Santos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QEEQ1A",
+        "nome": "Química Geral Experimental",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 13,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "L101",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "L101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Johny Paulo Monteiro"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EQ1B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 13,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "L101",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "L101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lidia Brizola Santos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QGEL1A",
+        "nome": "Química Geral",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "N108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Claudia Pedrozo Da Silva Gasparetto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QGEQ1A",
+        "nome": "Química Geral",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 25,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M5",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "5M6",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "M004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Silvana Fernandes Montanher"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QGET1A",
+        "nome": "Química Geral",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ET1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 10,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Têxtil"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "4M1",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "L002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lidia Brizola Santos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUCO4A",
+        "nome": "Química Geral",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "N008",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "N008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Claudia Pedrozo Da Silva Gasparetto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QV62O",
+        "nome": "Qualidade De Vida",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPEG2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "I001",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "I001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cynthia Correa Lopes Barbosa"
+            ],
+            "optativa_matrizes": [
+              "Matriz:36",
+              "Matriz:39",
+              "Matriz:35",
+              "Matriz:37",
+              "Matriz:34",
+              "Matriz:18",
+              "Matriz:17",
+              "Matriz:7"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "RBCO7O",
+        "nome": "Robótica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPCOM7A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T5",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "M012",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mauricio Eiji Nakai"
+            ],
+            "optativa_matrizes": [
+              "Matriz:32"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "RECO6A",
+        "nome": "Redes De Computadores",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM6A",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "N101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernando Barreto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "SDCO8A",
+        "nome": "Sistemas Distribuidos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM8A",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "M012",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucio Agostinho Rocha"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "SECO8A",
+        "nome": "Sistemas Embarcados",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM8A",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "M012",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adalberto Zanatta Neder Lazarini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "SICO5A",
+        "nome": "Sistemas Digitais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 36,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "N205",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "N205",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "N010",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mauricio Khenaifes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "SICO7A",
+        "nome": "Sistemas Inteligentes 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM7A",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "M012",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wagner Endo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "SLCO4A",
+        "nome": "Análise De Sistemas Lineares",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "5T1",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "N103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Willian Ricardo Bispo Murbak Nunes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "SOCO5A",
+        "nome": "Sistemas Operacionais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "N101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andre Luiz Tinassi D Amato"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "COM5B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "N101",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "N101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andre Luiz Tinassi D Amato"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "SSCO9A",
+        "nome": "Segurança E Auditoria De Sistemas",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM9A",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "M012",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "M012",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Fernando Carvalho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "STCO7A",
+        "nome": "Sistemas Microcontrolados",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM7A",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M5",
+                "sala": "N206",
+                "sede": null
+              },
+              {
+                "horario": "2M6",
+                "sala": "N206",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "N206",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "N206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mauricio Eiji Nakai"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TCCO5A",
+        "nome": "Teoria Da Computação",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "M001",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "M001",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "M001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tamara Angelica Baldo"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "COM5S",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Tamara Angelica Baldo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TICO7O",
+        "nome": "Tópicos Avançados Em Inteligência Computacional",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "RDCOM7A",
+            "enquadramento": "Presencial",
+            "vagas_total": 12,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "N103",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "N103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo Luders"
+            ],
+            "optativa_matrizes": [
+              "Matriz:32"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "TRCO0B",
+        "nome": "Trabalho De Conclusão De Curso 2",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM10A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Daniel Prado De Campos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TRCO9A",
+        "nome": "Trabalho De Conclusão De Curso 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM9A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "N107",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "N107",
+                "sede": null
+              },
+              {
+                "horario": "3M1",
+                "sala": "M008",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "M008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daniel Prado De Campos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

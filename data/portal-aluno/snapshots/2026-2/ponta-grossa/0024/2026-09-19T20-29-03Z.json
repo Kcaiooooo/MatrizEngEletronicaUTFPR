@@ -1,0 +1,1837 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:32:18   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "ponta-grossa",
+    "name": "Ponta Grossa",
+    "code": "06"
+  },
+  "course": {
+    "id": "0024",
+    "name": "Tecnol. Análise D.Sist",
+    "sourceName": "TECNOL. ANÁLISE D.SIST"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=24"
+  },
+  "fingerprint": "94b87913a3f006b9b1ed803347a7df561b20a9d81478857cf31d66b2c52740b8",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "TECNOL. ANÁLISE D.SIST",
+    "ultima_atualizacao": "19/09/2026 17:32:18   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "AD00A",
+        "nome": "Topicos Em Programação",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPS1",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "C103",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "C103",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "C104",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "C104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Erikson Freitas De Morais"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "AD00S",
+        "nome": "Robótica 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPS1",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "LABRIOT",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "LABRIOT",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "LABRIOT",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "LABRIOT",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Itamar Iliuk"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:799",
+              "Matriz:826",
+              "Matriz:814"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "AD00T",
+        "nome": "Segurança E Auditoria De Sistemas",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPS1",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "C104",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "C104",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "C104",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "C104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rogerio Ranthum"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "AD00Y",
+        "nome": "Tópicos Especiais Em Computação",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPS1",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "C207",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "C207",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "C207",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "C207",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lourival Aparecido De Gois"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "AD31A",
+        "nome": "Algoritmos",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS11",
+            "enquadramento": "Presencial",
+            "vagas_total": 43,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "C102",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "C102",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "C102",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "C102",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "C102",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "C102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Helyane Bronoski Borges"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AD31B",
+        "nome": "Fundamentos De Sistemas Operacionais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS11",
+            "enquadramento": "Presencial",
+            "vagas_total": 31,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "C102",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "C102",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "C102",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "C102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rogerio Ranthum"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AD31C",
+        "nome": "Redes De Computadores",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "C102",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "C102",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "C102",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "C102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Augusto Foronda"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AD31D",
+        "nome": "Fundamentos De Computação",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "C102",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "C102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Geraldo Ranthum"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AD32A",
+        "nome": "Estrutura De Dados",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS21",
+            "enquadramento": "Presencial",
+            "vagas_total": 37,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "C103",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "C103",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "C103",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "C103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Dos Santos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AD32B",
+        "nome": "Banco De Dados 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS21",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "C103",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "C103",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "C103",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "C103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Simone De Almeida"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AD32C",
+        "nome": "Orientação A Objetos 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS21",
+            "enquadramento": "Presencial",
+            "vagas_total": 36,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "C103",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "C103",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "C103",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "C103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vinicius Camargo Andrade"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AD33A",
+        "nome": "Desenvolvimento Web-Cliente",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS31",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "C202",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "C202",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "C202",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "C202",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Rafael Schmitke"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AD33B",
+        "nome": "Banco De Dados 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS31",
+            "enquadramento": "Presencial",
+            "vagas_total": 21,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "C202",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "C202",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "C202",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "C202",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tarcizio Alexandre Bini"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "RE32",
+            "enquadramento": "Presencial",
+            "vagas_total": 38,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "K102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tarcizio Alexandre Bini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AD33C",
+        "nome": "Orientação A Objetos 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS31",
+            "enquadramento": "Presencial",
+            "vagas_total": 36,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "C202",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "C202",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "C202",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "C202",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vinicius Camargo Andrade"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AD33D",
+        "nome": "Interação Humano-Computador",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS31",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "C202",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "C202",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "C202",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "C202",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Geraldo Ranthum"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AD34A",
+        "nome": "Desenvolvimento Web Servidor",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS41",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "C203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diego Roberto Antunes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AD34B",
+        "nome": "Engenharia De Software",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS41",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "C203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eliana Claudia Mayumi Ishikawa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AD34C",
+        "nome": "Análise De Sistemas",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS41",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "C203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Simone Nasser Matos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AD35A",
+        "nome": "Sistemas Distribuídos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS51",
+            "enquadramento": "Presencial",
+            "vagas_total": 29,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "C104",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "C104",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "C104",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "C104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Richard Duarte Ribeiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AD35B",
+        "nome": "Desenvolvimento De Projeto 1",
+        "creditos": 10,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS51",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "C104",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "C104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Augusto Foronda"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AD35C",
+        "nome": "Programação De Dispositivos Móveis",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS51",
+            "enquadramento": "Presencial",
+            "vagas_total": 21,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "C203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diego Roberto Antunes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AD36A",
+        "nome": "Tecnologias Cliente-Servidor",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS61",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "C104",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "C104",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "C104",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "C104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Richard Duarte Ribeiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AD36B",
+        "nome": "Desenvolvimento De Projeto 2",
+        "creditos": 10,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS61",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "C207",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "C207",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Rafael Schmitke"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ASTRO00H",
+        "nome": "Introdução À Astronomia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "OPTH",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist",
+                "Engenharia Química",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "C212",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "C212",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "C212",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "C212",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago Gilberto Do Prado"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:827",
+              "Matriz:819",
+              "Matriz:821",
+              "Matriz:77",
+              "Matriz:814"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CC37W",
+        "nome": "Banco De Dados 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPTC",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "C203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tarcizio Alexandre Bini"
+            ],
+            "optativa_matrizes": [
+              "Matriz:799"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CL101",
+        "nome": "Comunicação Linguística",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS21",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N3",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "L001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diego Gomes Do Valle"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EDP",
+        "nome": "Engineering Design Process",
+        "creditos": 8,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 120,
+        "turmas": [
+          {
+            "codigo": "ENRQ",
+            "enquadramento": "Presencial",
+            "vagas_total": 100,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "SLVIRTUAL1",
+                "sede": null
+              },
+              {
+                "horario": "2N1",
+                "sala": "SLVIRTUAL1",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "SLVIRTUAL1",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "SLVIRTUAL1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Frieda Saicla Barros",
+              "Heliety Rodrigues Borges Barreto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:826",
+              "Matriz:822",
+              "Matriz:820",
+              "Matriz:827",
+              "Matriz:819",
+              "Matriz:824",
+              "Matriz:77",
+              "Matriz:821",
+              "Matriz:814"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EST101",
+        "nome": "Fundamentos De Estatística",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS11",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Automação Ind.",
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "L104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriane Consuelo Leal Auccaise"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ETICAPC00H",
+        "nome": "Ética, Profissão E Cidadania",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPTAI",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Automação Ind.",
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "L002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael De Araujo E Viana Leite"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:820",
+              "Matriz:824",
+              "Matriz:814"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCT00H",
+        "nome": "Filosofia Da Ciência E Da Tecnologia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPS1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Automação Ind.",
+                "Tecnol. Análise D.Sist",
+                "Tecnol. Fab. Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "L109",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "L109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael De Araujo E Viana Leite"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:826",
+              "Matriz:827",
+              "Matriz:821",
+              "Matriz:814",
+              "Matriz:820",
+              "Matriz:822"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GESAMO00H",
+        "nome": "Gestão Ambiental Organizacional",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "FM62",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Automação Ind.",
+                "Tecnol. Análise D.Sist",
+                "Tecnol. Fab. Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "L105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daniel Poletto Tesser"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:824",
+              "Matriz:814",
+              "Matriz:820"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "IND01A",
+        "nome": "Industry 4.0 E 5.0",
+        "creditos": 8,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 120,
+        "turmas": [
+          {
+            "codigo": "ENRQ",
+            "enquadramento": "Presencial",
+            "vagas_total": 100,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "SLVIRTUAL1",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "SLVIRTUAL1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Heliety Rodrigues Borges Barreto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:826",
+              "Matriz:844",
+              "Matriz:820",
+              "Matriz:827",
+              "Matriz:819",
+              "Matriz:822",
+              "Matriz:77",
+              "Matriz:821",
+              "Matriz:814"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "INTEECO00H",
+        "nome": "Introdução À Engenharia Econômica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AI61",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Automação Ind.",
+                "Tecnol. Fab. Mecânica"
+              ],
+              [
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "LABOSP2",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "LABOSP2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Tavares Treinta"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LIBRAS1",
+        "nome": "Libras1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPTAI",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Automação Ind.",
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "L109",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "L109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Andre Brito Coelho"
+            ],
+            "optativa_matrizes": [
+              "Matriz:843",
+              "Matriz:844",
+              "Matriz:819",
+              "Matriz:826",
+              "Matriz:827",
+              "Matriz:824",
+              "Matriz:814",
+              "Matriz:821",
+              "Matriz:820",
+              "Matriz:822"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "PROJETOS00H",
+        "nome": "Gestão De Projetos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AI51",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Automação Ind.",
+                "Tecnol. Análise D.Sist",
+                "Tecnol. Fab. Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "L010",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "L010",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Edilson Giffhorn"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:826",
+              "Matriz:814"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "QUALIG00H",
+        "nome": "Gestão Da Qualidade",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AI61",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Automação Ind.",
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "K102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Camila Lopes Ferreira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "SESAT00H",
+        "nome": "Segurança E Saúde Do Trabalho",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AI51",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Automação Ind.",
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "L008",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "L008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ariel Orlei Michaloski"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:799",
+              "Matriz:827",
+              "Matriz:826",
+              "Matriz:814",
+              "Matriz:821"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "TECD00H",
+        "nome": "Tecnologia E Desenvolvimento",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPS1",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Automação Ind.",
+                "Tecnol. Análise D.Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "L111",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "L111",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Katya Cristina De Lima Picanco"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:819",
+              "Matriz:826",
+              "Matriz:814",
+              "Matriz:821",
+              "Matriz:820",
+              "Matriz:822"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

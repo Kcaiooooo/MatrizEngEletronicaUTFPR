@@ -1,0 +1,4446 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:31:27   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "londrina",
+    "name": "Londrina",
+    "code": "08"
+  },
+  "course": {
+    "id": "0003",
+    "name": "Eng. Amb. E Sanit.",
+    "sourceName": "ENG. AMB. E SANIT."
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=3"
+  },
+  "fingerprint": "364bc3ebc3a564a626cc89398b3bde33cfb9bce777b90f64a6b47275cee988c8",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "ENG. AMB. E SANIT.",
+    "ultima_atualizacao": "19/09/2026 17:31:27   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "ALM022",
+        "nome": "Bioquímica Geral",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M5",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "A106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Claudio Takeo Ueno"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB001",
+        "nome": "Introdução À Engenharia Ambiental E Sanitária",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS11",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "K303",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "K303",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ligia Flavia Antunes Batista",
+              "Orlando De Carvalho Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB002",
+        "nome": "Desenho Técnico Assistido Por Computador",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS11",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 22,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "2M6",
+                "sala": "K113",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago Melanda Mendes"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "AS12",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 22,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "K113",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago Melanda Mendes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB004",
+        "nome": "Topografia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS21",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "S002",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "S002",
+                "sede": null
+              },
+              {
+                "horario": "6M1",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "K206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Hidemassa Anami"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "AS22",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "S002",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "S002",
+                "sede": null
+              },
+              {
+                "horario": "6M1",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "K206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Hidemassa Anami"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB005",
+        "nome": "Princípios De Ciência Dos Materiais",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "K206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago Melanda Mendes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB006",
+        "nome": "Climatologia A",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "A106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Eduardo Freres Stipp"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB007",
+        "nome": "Geologia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS31",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "5M1",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "A106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mauricio Moreira Dos Santos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB008",
+        "nome": "Biologia Dos Organismos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS41",
+            "enquadramento": "Presencial",
+            "vagas_total": 18,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M5",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "B302",
+                "sede": null
+              },
+              {
+                "horario": "5M6",
+                "sala": "B302",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Patricia Carneiro Lobo",
+              "Edson Fontes De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB009",
+        "nome": "Cartografia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS41",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "5M1",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "K113",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ligia Flavia Antunes Batista"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB010",
+        "nome": "Geotecnia Ambiental",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS41",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M4",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "6M6",
+                "sala": "K106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mauricio Moreira Dos Santos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB011",
+        "nome": "Mecânica Geral 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "K307",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "K307",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alexandre Sordi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB012",
+        "nome": "Ecologia",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M5",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "3M6",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "4M1",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "K305",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Patricia Carneiro Lobo",
+              "Edson Fontes De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB013",
+        "nome": "Fundamentos De Geomática",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS51",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "K113",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ligia Flavia Antunes Batista"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB014",
+        "nome": "Qualidade Da Água",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 75,
+        "turmas": [
+          {
+            "codigo": "AS51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "6M1",
+                "sala": "S004",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "S004",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "S004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Orlando De Carvalho Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB015",
+        "nome": "Mecânica Dos Fluidos 1",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "K305",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joseane Debora Peruco Theodoro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB016",
+        "nome": "Resistência Dos Materiais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M5",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "2M6",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "5M6",
+                "sala": "A105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sueli Tavares De Melo Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB017",
+        "nome": "Gestão Ambiental",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS61",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M4",
+                "sala": "K306",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "K306",
+                "sede": null
+              },
+              {
+                "horario": "6M6",
+                "sala": "K306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Montanhini Soares De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB018",
+        "nome": "Legislação Ambiental",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS61",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M5",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "2M6",
+                "sala": "A103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Eduardo Freres Stipp"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB019",
+        "nome": "Restauração Florestal",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS61",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "A103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Patricia Carneiro Lobo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB020",
+        "nome": "Fundamentos De Engenharia De Segurança Do Trabalho",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS61",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ],
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "A103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sueli Tavares De Melo Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB021",
+        "nome": "Microbiologia Aplicada",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS61",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "A306",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "A306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Katia Valeria Marques Cardoso Prates"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB022",
+        "nome": "Conversão, Conservação E Eficiência Energética",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS61",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M5",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "3M6",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "4M1",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "K102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alexandre Sordi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB023",
+        "nome": "Hidráulica Aplicada",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS61",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "A103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Orlando De Carvalho Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB024",
+        "nome": "Hidrologia Aplicada",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS61",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "A103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Edilaine Regina Pereira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB025",
+        "nome": "Transferência De Calor E De Massa",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS61",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "5M6",
+                "sala": "A103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joseane Debora Peruco Theodoro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB026",
+        "nome": "Auditoria Ambiental",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS71",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "5M6",
+                "sala": "A104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Montanhini Soares De Oliveira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SH71",
+            "enquadramento": "Presencial",
+            "vagas_total": 2,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Rafael Montanhini Soares De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB027",
+        "nome": "Recuperação De Ecossistemas Aquáticos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS71",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "A104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Edson Fontes De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB028",
+        "nome": "Poluição Dos Solos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS71",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "S002",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "S002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Hidemassa Anami"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "AS72",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "S002",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "S002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Hidemassa Anami"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB029",
+        "nome": "Gerenciamento De Resíduos Sólidos",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS71",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "A104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tatiane Cristina Dal Bosco"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB030",
+        "nome": "Modelagem Aplicada Ao Ambiente",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS71",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M5",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "2M6",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "3M1",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "K102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alexandre Sordi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB031",
+        "nome": "Sistemas Urbanos De Abastecimento De Água E Esgotamento Sanitário",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS71",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M4",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "6M6",
+                "sala": "A104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Bruno De Oliveira Freitas"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB032",
+        "nome": "Instalações Prediais Hidrossanitárias",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS71",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "A104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo Nagamine Costanzi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB033",
+        "nome": "Operações Unitárias A",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS71",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "A104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabio Augusto Garcia Coro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB034",
+        "nome": "Gerenciamento E Tratamento De Poluentes Atmosféricos",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 75,
+        "turmas": [
+          {
+            "codigo": "AS81",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M2",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "6M6",
+                "sala": "B203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joseane Debora Peruco Theodoro"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SH81",
+            "enquadramento": "Presencial",
+            "vagas_total": 2,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Joseane Debora Peruco Theodoro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB035",
+        "nome": "Gerenciamento E Tratamento De Esgoto Sanitário",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS81",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "B203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Bruno De Oliveira Freitas"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SH81",
+            "enquadramento": "Presencial",
+            "vagas_total": 2,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Bruno De Oliveira Freitas"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB036",
+        "nome": "Disposição Final De Resíduos Sólidos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS81",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "B203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tatiane Cristina Dal Bosco"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB037",
+        "nome": "Sistemas De Drenagem Urbana",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS81",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "B203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo Nagamine Costanzi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB038",
+        "nome": "Gerenciamento De Recursos Hídricos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 45,
+        "turmas": [
+          {
+            "codigo": "AS81",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "B203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo Nagamine Costanzi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB039",
+        "nome": "Trabalho De Conclusão 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS81",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "7M2",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "7M3",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "A104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago Melanda Mendes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB040",
+        "nome": "Avaliação Dos Impactos Ambientais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS81",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "B203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Eduardo Freres Stipp"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CHS002",
+        "nome": "Interpretação E Produção De Textos Científicos E Profissionais Na Engenharia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS11",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "K308",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "K308",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alessandra Dutra Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CHS007",
+        "nome": "Estudos Étnicos E Raciais",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "K206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Di Flora Garcia"
+            ],
+            "optativa_matrizes": [
+              "Matriz:60"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CHS03S",
+        "nome": "Metodologia De Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "A106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tatiane Cristina Dal Bosco"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CHS04S",
+        "nome": "Comunicação Oral E Estratégica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS21",
+            "enquadramento": "Presencial",
+            "vagas_total": 37,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M3",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "K206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alcioni Galdino Vieira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CHS05M",
+        "nome": "Libras 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ME41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T5",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "K305",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Antonio Alves"
+            ],
+            "optativa_matrizes": [
+              "Matriz:63"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CHS05T",
+        "nome": "Libras 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T5",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "B204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Antonio Alves"
+            ],
+            "optativa_matrizes": [
+              "Matriz:64"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CHS06P",
+        "nome": "Libras 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP23",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "K205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Antonio Alves"
+            ],
+            "optativa_matrizes": [
+              "Matriz:61"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CHS07T",
+        "nome": "Estudos Étnicos E Raciais",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM21",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T5",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "A106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Di Flora Garcia"
+            ],
+            "optativa_matrizes": [
+              "Matriz:64"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CHS09P",
+        "nome": "Estudos Sociais De Ciência E Tecnologia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP23",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "K205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alcioni Galdino Vieira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:61"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EA68A",
+        "nome": "Avaliação Dos Impactos Ambientais A",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DP81",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "B203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Eduardo Freres Stipp"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EA69B",
+        "nome": "Gerenciamento E Tratamento De Água",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "5M1",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "A105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Edilaine Regina Pereira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EA69C",
+        "nome": "Instalações Prediais Hidrossanitárias",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS91",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "A104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo Nagamine Costanzi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EA69D",
+        "nome": "Gerenciamento E Tratamento De Efluentes Industriais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "A105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Bruno De Oliveira Freitas"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEC001",
+        "nome": "Computação 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS11",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M5",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "3M6",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "K107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernando Henrique Campos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEC002",
+        "nome": "Eletrotécnica Básica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "A105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcos Massaki Imamura"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELE69B",
+        "nome": "Controle De Odores No Saneamento Ambiental",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "7M5",
+                "sala": "ZSV05",
+                "sede": null
+              },
+              {
+                "horario": "7M6",
+                "sala": "ZSV05",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joseane Debora Peruco Theodoro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELE69G",
+        "nome": "Poluição Das Águas Subterrâneas",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS51",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "A105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mauricio Moreira Dos Santos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENP05S",
+        "nome": "Desenvolvimento De Novos Negócios",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS81",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M5",
+                "sala": "K207",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "K207",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raul Hidetoci Mioshi Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EXTAS01",
+        "nome": "Topicos Em Arborização Urbana",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "AS51",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "6M6",
+                "sala": "A106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Patricia Carneiro Lobo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EXTAS02",
+        "nome": "Mapeamento Colaborativo",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "AS51",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M2",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "K113",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ligia Flavia Antunes Batista"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EXTAS03",
+        "nome": "Estratégias De Educação Ambiental",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 30,
+        "turmas": [
+          {
+            "codigo": "AS51",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "A105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tatiane Cristina Dal Bosco"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS010",
+        "nome": "Física 2",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP43",
+            "enquadramento": "Presencial",
+            "vagas_total": 48,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "K207",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "K207",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "K207",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Matheus Lucas Gumieri Pereira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS011",
+        "nome": "Física 3",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP53",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "K209",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Henrique Cardozo Amorin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS03S",
+        "nome": "Física 1: Fundamentos De Cinemática E Dinâmica Para Engenharia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "K206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joao Paulo Camargo De Lima"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS04P",
+        "nome": "Física Experimental 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP33",
+            "enquadramento": "Presencial",
+            "vagas_total": 26,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "K201",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "K201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Sergio De Camargo Filho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS04S",
+        "nome": "Física Experimental 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS21",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "K201",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "K201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alcides Goya"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "AS22",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "K201",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "K201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alcides Goya"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS05S",
+        "nome": "Física 2 Fundamentos De Ondas, Fluidos E Termodinâmica Para Engenharia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "A106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Admir Creso De Lima Targino"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS06P",
+        "nome": "Física Experimental 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP43",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "K204",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "K204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Matheus Lucas Gumieri Pereira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP44",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "K204",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "K204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Matheus Lucas Gumieri Pereira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS07S",
+        "nome": "Física 3 Fundamentos Do Eletromagnetismo",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS41",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "A102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jorge Alberto Martins"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS08P",
+        "nome": "Física Experimental 3",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP53",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "K301",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "K301",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Henrique Cardozo Amorin"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP54",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "K301",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "K301",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Henrique Cardozo Amorin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS08S",
+        "nome": "Física Experimental 3",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS41",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M5",
+                "sala": "K301",
+                "sede": null
+              },
+              {
+                "horario": "3M6",
+                "sala": "K301",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jorge Alberto Martins"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GE66B",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ93",
+            "enquadramento": "Presencial",
+            "vagas_total": 17,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ],
+              [
+                "Eng. Amb. E Sanit."
+              ],
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T5",
+                "sala": "K214",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "K214",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabiano Palhares Galao"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GE69B",
+        "nome": "Economia Do Meio Ambiente",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M4",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "A105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raul Hidetoci Mioshi Junior"
+            ],
+            "optativa_matrizes": [
+              "Matriz:30"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GE90A",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM01",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ],
+              [
+                "Eng. Amb. E Sanit."
+              ],
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "K205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Alberto Ribas"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HU67A",
+        "nome": "Ética, Profissão E Cidadania",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ME81",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "K214",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "K214",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Di Flora Garcia"
+            ],
+            "optativa_matrizes": [
+              "Matriz:48"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HU94N",
+        "nome": "Libras 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "A102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Antonio Alves"
+            ],
+            "optativa_matrizes": [
+              "Matriz:19"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HU99A",
+        "nome": "Ética Profissão E Cidadania",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T5",
+                "sala": "K207",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "K207",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Di Flora Garcia"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT002",
+        "nome": "Fundamentos De Cálculo Para Engenharia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS11",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "K308",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "K308",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "K308",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "K308",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Regina Sayuri Kainuma Yamada"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT003",
+        "nome": "Geometria Analítica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS11",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M3",
+                "sala": "K308",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "K308",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "K308",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Pricila Da Silva Barbosa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT012",
+        "nome": "Equações Diferenciais E Ordinárias",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP43",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "K207",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "K207",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "K206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Felipe Goncalves Carneiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT014",
+        "nome": "Cálculo Diferencial E Integral 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP33",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "K210",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "K210",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "K210",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "K210",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Felipe Goncalves Carneiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT03P",
+        "nome": "Geometria Analítica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP23",
+            "enquadramento": "Presencial",
+            "vagas_total": 49,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "K205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wellington Donizeti Previero"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT06P",
+        "nome": "Cálculo Diferencial E Integral 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP23",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T5",
+                "sala": "K208",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "K208",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "K208",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "K208",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Regina Sayuri Kainuma Yamada"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT06S",
+        "nome": "Cálculo Diferencial E Integral 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M5",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "5M6",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "6M6",
+                "sala": "K206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Karina Alessandra Pessoa Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT07P",
+        "nome": "Álgebra Linear",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP33",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "K210",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "K210",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "K210",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Pricila Da Silva Barbosa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT07S",
+        "nome": "Álgebra Linear",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS21",
+            "enquadramento": "Presencial",
+            "vagas_total": 27,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "K206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andre Luis Trevisan"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT08S",
+        "nome": "Cálculo Diferencial E Integral 2b",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M5",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "2M6",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "4M1",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "A106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cristiane Aparecida Pendeza Martinez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT09S",
+        "nome": "Equações Diferenciais Ordinárias",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M5",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "2M6",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "3M1",
+                "sala": "K203",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "K203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriana Helena Borssoi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT10S",
+        "nome": "Estatística Aplicada A Engenharia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS51",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "3M1",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "K305",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joelmir Andre Borssoi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "OP69B",
+        "nome": "Processo De Projeto Em Engenharia",
+        "creditos": 4,
+        "creditos_assincronos": 6,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ME51",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "6T2",
+                "sala": "B207",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "B207",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "B207",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B207",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B207",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B207",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Florian",
+              "Erico Daniel Ricardi Guerreiro",
+              "Haroldo Lhou Hasegawa"
+            ],
+            "optativa_matrizes": [
+              "Matriz:19",
+              "Matriz:30",
+              "Matriz:35",
+              "Matriz:48",
+              "Matriz:1"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "QUI004",
+        "nome": "Química Geral Inorgânica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS11",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "K303",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "K303",
+                "sede": null
+              },
+              {
+                "horario": "6M1",
+                "sala": "K303",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "K303",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alexei Lorenzetti Novaes Pinheiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI011",
+        "nome": "Laboratório De Química Geral",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS21",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "K009",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "K009",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Natalia Mariana Monezi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI012",
+        "nome": "Química Orgânica Ambiental",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "K206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Juliana Feijo De Souza Daniel"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI013",
+        "nome": "Química Analítica Ambiental",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "A106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alessandra Furtado Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI014",
+        "nome": "Química Analítica Ambiental Experimental",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS41",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "K010",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "K010",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alessandra Furtado Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI02S",
+        "nome": "Físico-Química Aplicada",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M4",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "6M6",
+                "sala": "K305",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alexei Lorenzetti Novaes Pinheiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TC60A",
+        "nome": "Trabalho De Conclusão De Curso 2",
+        "creditos": 0,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TCC",
+            "enquadramento": "Presencial",
+            "vagas_total": 100,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Thiago Melanda Mendes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TC69A",
+        "nome": "Trabalho De Conclusão De Curso 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "7M2",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "7M3",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "A104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago Melanda Mendes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

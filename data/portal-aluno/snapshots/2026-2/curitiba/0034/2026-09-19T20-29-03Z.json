@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:29:54   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "curitiba",
+    "name": "Curitiba",
+    "code": "01"
+  },
+  "course": {
+    "id": "0034",
+    "name": "Alemão",
+    "sourceName": "ALEMÃO"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=34"
+  },
+  "fingerprint": "488a3535e021f940fc811fc2806cca0d0c36b7993fb26ba5530da029e74240ee",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "ALEMÃO",
+    "ultima_atualizacao": "19/09/2026 17:29:54   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [
+        {
+          "marcador": "*",
+          "sede": "Ecoville"
+        },
+        {
+          "marcador": "**",
+          "sede": "Neoville"
+        }
+      ],
+      "sede_sem_marcador": "Centro"
+    },
+    "disciplinas": [
+      {
+        "codigo": "CL21G",
+        "nome": "Alemão 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "NG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 30,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T6",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N1",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T6",
+                "sala": "CC-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Edson Domingos Fagundes"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "NG2",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 30,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2N3",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N2",
+                "sala": "CC-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N3",
+                "sala": "CC-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Edson Domingos Fagundes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

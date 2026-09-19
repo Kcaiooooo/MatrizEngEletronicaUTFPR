@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-19T20-29-03Z",
+  "capturedAt": "2026-09-19T20:29:03.667Z",
+  "sourceLastUpdatedAt": "19/09/2026 17:32:09   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "pato-branco",
+    "name": "Pato Branco",
+    "code": "05"
+  },
+  "course": {
+    "id": "0232",
+    "name": "Inglês",
+    "sourceName": "INGLÊS"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=232"
+  },
+  "fingerprint": "648a95921724864162439db37b7ada7848cf56f7ab5660b2fbe3c425efce4e1f",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "INGLÊS",
+    "ultima_atualizacao": "19/09/2026 17:32:09   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "CL21I",
+        "nome": "Inglês 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ING1",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "L106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lourdes Terezinha Graebin Parise"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CL22I",
+        "nome": "Inglês 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ING2",
+            "enquadramento": "Presencial",
+            "vagas_total": 26,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "L106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lourdes Terezinha Graebin Parise"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CL23I",
+        "nome": "Inglês 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ING3",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "L104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mariese Ribas Stankiewicz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CL24I",
+        "nome": "Inglês 4",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ING4",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "M104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcele Garbin Dagios"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CL25I",
+        "nome": "Inglês 5",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ING5",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "L107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Camila Paula Camilotti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}
