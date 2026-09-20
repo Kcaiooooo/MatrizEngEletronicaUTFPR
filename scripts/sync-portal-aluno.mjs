@@ -11,6 +11,11 @@ import {
 } from '../assets/js/shared/grade-core.js';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+
+// The desktop session may not export its Wayland variables to scheduled runs.
+// Reuse the current user's graphical session without touching credentials.
+if (!process.env.XDG_RUNTIME_DIR) process.env.XDG_RUNTIME_DIR = `/run/user/${process.getuid()}`;
+if (!process.env.WAYLAND_DISPLAY && !process.env.DISPLAY) process.env.WAYLAND_DISPLAY = 'wayland-0';
 const catalogPath = path.join(root, 'data/portal-aluno/source-catalog.json');
 const manifestPath = path.join(root, 'data/portal-aluno/index.json');
 const profilePath = path.resolve(process.env.UTFPR_PORTAL_PROFILE || path.join(root, '.local/utfpr-portal-profile'));
