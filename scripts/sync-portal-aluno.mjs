@@ -226,7 +226,14 @@ async function ensureLoggedIn(page, campus, course) {
         console.log(`[portal-aluno] sessão autenticada (${page.url()})`);
         return;
     }
-    console.log('Faça login manualmente nesta janela. A senha não será lida nem armazenada pelo script.');
+    const passwordField = page.locator('input[type="password"]').first();
+    const loginButton = page.locator('button[type="submit"], input[type="submit"]').first();
+    if (await passwordField.count() && await loginButton.count()) {
+        console.log('Tela de login detectada; acionando o botão de login. A senha não será lida nem armazenada pelo script.');
+        await loginButton.click();
+    } else {
+        console.log('Tela de login detectada, mas o botão de envio não foi encontrado. A senha não será lida nem armazenada pelo script.');
+    }
     await page.waitForFunction(() => Boolean(document.querySelector('#p_unidcodnr'))
         || Boolean(document.querySelector('#logoutButton'))
         || /\/dpls\/sistema\/aluno\d+\/mpmenu\.inicio/.test(location.pathname), { timeout: 300000 });
