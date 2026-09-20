@@ -215,6 +215,25 @@ test('calcula as trilhas da matriz 978 sem somar alternativas de Formação Comp
     await expect(page.locator('#optional-progress-text')).toHaveText('405/405h (100.0%)');
 });
 
+test('posiciona todas as optativas da matriz 979 dentro das suas trilhas', async ({ page }) => {
+    const data = await import('../../assets/js/data/eletrica.js');
+
+    await page.goto('/pages/Skill tree Eletrica.html');
+    await page.locator('#tab-optional').click();
+
+    const layouts = await page.locator('#optional-container .node').evaluateAll(nodes => nodes.map(node => ({
+        id: node.dataset.id,
+        left: node.style.left,
+        top: node.style.top,
+    })));
+
+    expect(layouts).toHaveLength(data.allOptionalNodesData.length);
+    expect(layouts.every(node => /^\d+(?:\.\d+)?%$/.test(node.left) && /^\d+(?:\.\d+)?%$/.test(node.top))).toBe(true);
+
+    const machinesLevelTwo = layouts.find(node => node.id === 'ELT7FM');
+    expect(machinesLevelTwo).toEqual({ id: 'ELT7FM', left: '10%', top: '62%' });
+});
+
 for (const course of courses) addSingleDependencyColorTest(course);
 for (const course of courses) addArrowGeometryTest(course);
 

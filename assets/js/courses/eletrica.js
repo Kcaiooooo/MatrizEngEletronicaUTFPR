@@ -251,6 +251,7 @@ const storage = window.KMStorage.forCourse({"progressKey":"skillTreeProgress_Ele
             nodes = JSON.parse(JSON.stringify(allNodesData));
             humanitiesNodes = JSON.parse(JSON.stringify(allHumanitiesData));
             optionalNodes = JSON.parse(JSON.stringify(allOptionalNodesData));
+            assignOptionalNodePositions(optionalNodes);
             completedAcActivities = [];
             completedCceActivities = [];
 
@@ -309,6 +310,7 @@ const storage = window.KMStorage.forCourse({"progressKey":"skillTreeProgress_Ele
         }
 
         function renderOptionalTrackHeaders() {
+            optionalContainer.querySelectorAll('.track-header').forEach(header => header.remove());
             const trackPositions = {
                 'Trilha [1150]: Automação e Sistemas': 10,
                 'Trilha [1151]: Modelagem e Controle': 25,
@@ -323,6 +325,61 @@ const storage = window.KMStorage.forCourse({"progressKey":"skillTreeProgress_Ele
                 header.textContent = name;
                 header.style.top = `${yPos}%`;
                 optionalContainer.appendChild(header);
+            });
+        }
+
+        // As trilhas da matriz 979 possuem mais disciplinas do que cabem em uma
+        // única linha. Disciplinas antigas já têm coordenadas; as adicionadas a
+        // partir do catálogo oficial precisam ocupar os próximos espaços da sua
+        // trilha para não serem posicionadas no canto da árvore.
+        const OPTIONAL_TRACK_BASE_Y = {
+            '[1150]': 10,
+            '[1151]': 25,
+            '[1152]': 40,
+            '[1153]': 55,
+            '[1144]': 70,
+            '[1143]': 85,
+        };
+        const OPTIONAL_LAYOUT_COLUMNS = [10, 25, 40, 55, 70, 85];
+        const OPTIONAL_LAYOUT_ROW_STEP = 3.5;
+
+        function assignOptionalNodePositions(data) {
+            const nodesByGroup = new Map();
+            data.forEach(node => {
+                if (!node.groupId) return;
+                if (!nodesByGroup.has(node.groupId)) nodesByGroup.set(node.groupId, []);
+                nodesByGroup.get(node.groupId).push(node);
+            });
+
+            nodesByGroup.forEach((groupNodes, groupId) => {
+                const baseY = OPTIONAL_TRACK_BASE_Y[groupId];
+                if (baseY === undefined) return;
+
+                const occupied = new Set(
+                    groupNodes
+                        .filter(node => Number.isFinite(node.x) && Number.isFinite(node.y))
+                        .map(node => `${node.x}:${node.y}`)
+                );
+                let slot = 0;
+
+                groupNodes
+                    .filter(node => !Number.isFinite(node.x) || !Number.isFinite(node.y))
+                    .forEach(node => {
+                        let position;
+                        do {
+                            const column = slot % OPTIONAL_LAYOUT_COLUMNS.length;
+                            const row = Math.floor(slot / OPTIONAL_LAYOUT_COLUMNS.length);
+                            position = {
+                                x: OPTIONAL_LAYOUT_COLUMNS[column],
+                                y: baseY + row * OPTIONAL_LAYOUT_ROW_STEP,
+                            };
+                            slot += 1;
+                        } while (occupied.has(`${position.x}:${position.y}`));
+
+                        node.x = position.x;
+                        node.y = position.y;
+                        occupied.add(`${position.x}:${position.y}`);
+                    });
             });
         }
 
