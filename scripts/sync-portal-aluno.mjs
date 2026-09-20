@@ -313,7 +313,11 @@ const initialSelections = selectedCourses();
 if (!initialSelections.length) throw new Error('Use --campus=<id> --course=<id>, --all ou deixe sem argumentos para o piloto Curitiba/0250.');
 
 await mkdir(profilePath, { recursive: true });
-const context = await chromium.launchPersistentContext(profilePath, { headless, viewport: { width: 1440, height: 1000 } });
+const context = await chromium.launchPersistentContext(profilePath, {
+    headless,
+    viewport: { width: 1440, height: 1000 },
+    args: headless ? [] : ['--ozone-platform=wayland'],
+});
 const page = context.pages()[0] || await context.newPage();
 const results = [];
 try {
