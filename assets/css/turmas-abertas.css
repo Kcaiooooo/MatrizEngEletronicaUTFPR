@@ -191,6 +191,15 @@
 .gnh-modal-close:hover { color: var(--text-main); }
 .gnh-auto-grade-label { display: flex; flex-direction: column; gap: .4rem; margin-top: 1.15rem; color: var(--text-muted); font-size: .78rem; font-weight: 800; }
 .gnh-auto-grade-label select { min-height: 2.5rem; padding: .55rem .7rem; border: 1px solid var(--border-subtle); border-radius: .65rem; background: var(--bg-panel); color: var(--text-main); font: inherit; }
+.gnh-auto-grade-tracks { display: grid; gap: .55rem; margin-top: 1.15rem; padding: .8rem; border: 1px solid var(--border-main); border-radius: .7rem; background: var(--bg-panel); }
+.gnh-auto-grade-tracks h3 { margin: 0; color: var(--text-main); font-size: .86rem; }
+.gnh-auto-grade-track-help { margin: 0; color: var(--text-muted); font-size: .72rem; line-height: 1.4; }
+.gnh-auto-grade-track-options { display: grid; gap: .45rem; }
+.gnh-auto-grade-track-option { display: flex; align-items: flex-start; gap: .5rem; padding: .45rem .55rem; border: 1px solid var(--border-subtle); border-radius: .5rem; color: var(--text-sec); font-size: .78rem; cursor: pointer; }
+.gnh-auto-grade-track-option:hover { border-color: #60a5fa; color: var(--text-main); }
+.gnh-auto-grade-track-option input { margin-top: .15rem; accent-color: #2563eb; }
+.gnh-auto-grade-track-option strong { display: block; color: var(--text-main); }
+.gnh-auto-grade-track-option small { display: block; margin-top: .15rem; color: var(--text-muted); font-size: .68rem; }
 .gnh-auto-grade-filters { display: grid; gap: .75rem; margin-top: 1.15rem; }
 .gnh-auto-grade-filter-help { margin: .1rem 0 .15rem; color: var(--text-muted); font-size: .72rem; line-height: 1.4; }
 .gnh-auto-grade-availability-grids { display: grid; gap: .8rem; }

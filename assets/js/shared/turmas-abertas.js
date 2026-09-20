@@ -1,6 +1,6 @@
 import { countClasses } from './grade-core.js';
 import { parseProgress } from './progress.js';
-import { analyzePriority, availableHumanities } from './priority-core.js';
+import { analyzePriority, availableHumanities, humanitiesQuotaProgress } from './priority-core.js';
 
 const catalogUrl = '../data/portal-aluno/source-catalog.json';
 const manifestUrl = '../data/portal-aluno/index.json';
@@ -57,6 +57,7 @@ const state = {
     equivalenceGroups: null,
     displayedSelections: new Map(),
     crossCampusRequestId: 0,
+    autoGradeTrackRequestId: 0,
     versionId: null,
     selectedClasses: new Map(),
     maxLessons: 40,
@@ -389,6 +390,8 @@ function loadMatrixProfile(matrix, data) {
         allNodes,
         subjectStates,
         currentPeriod,
+        requiredHumanitiesHours: Number(data.TOTAL_HUMANITIES_HOURS) || 0,
+        groupsConfig: data.OPTIONAL_GROUPS_CONFIG || {},
         tracksConfig: data.SPECIALIZATION_TRACKS || data.SPECIALIZATION_TRACKS_M2 || {},
     };
 }
@@ -435,19 +438,27 @@ function chooseAutomaticClass(disciplina, filters) {
     return candidates.find(selection => classMatchesAutomaticFilters(selection, filters) && selectedLessons() + selection.creditos <= state.maxLessons && !findConflict(selection)) || null;
 }
 
-async function buildAutomaticGrade(matrix, filters) {
+async function buildAutomaticGrade(matrix, filters, selectedTracks = null) {
     if (!state.snapshot) throw new Error('Nenhuma captura de turmas está selecionada.');
     const profile = await getMatrixProfile(matrix);
-    const priorityItems = analyzePriority(profile);
-    const humanitiesItems = availableHumanities(profile);
+    const priorityItems = analyzePriority({ ...profile, selectedTracks });
+    const availableHumanitiesItems = availableHumanities(profile);
+    const humanitiesProgress = humanitiesQuotaProgress({
+        humanitiesNodes: profile.humanitiesNodes,
+        subjectStates: profile.subjectStates,
+        requiredHours: profile.requiredHumanitiesHours,
+        groupsConfig: profile.groupsConfig,
+    });
+    const humanitiesItems = availableHumanitiesItems.filter(node => humanitiesProgress.quotaNodeIds.has(String(node.id)));
     const matchingPriority = priorityItems.filter(item => disciplineForNode(item.node));
-    const matchingHumanities = humanitiesItems.filter(node => disciplineForNode(node));
+    const matchingHumanities = availableHumanitiesItems.filter(node => disciplineForNode(node));
     if (!matchingPriority.length && !matchingHumanities.length) {
         throw new Error(`A matriz ${matrix.label} não corresponde às disciplinas da captura atual. Selecione o curso correspondente no campo “Curso” e tente novamente.`);
     }
     const addedCodes = new Set();
     let priorityAdded = 0;
     let humanitiesAdded = 0;
+    let humanitiesAddedHours = 0;
 
     state.selectedClasses.clear();
     for (const item of priorityItems) {
@@ -461,6 +472,7 @@ async function buildAutomaticGrade(matrix, filters) {
     }
 
     for (const node of humanitiesItems) {
+        if (humanitiesProgress.completedHours + humanitiesAddedHours >= humanitiesProgress.requiredHours) break;
         const disciplina = disciplineForNode(node);
         if (!disciplina || addedCodes.has(disciplina.codigo)) continue;
         const selection = chooseAutomaticClass(disciplina, filters);
@@ -468,6 +480,7 @@ async function buildAutomaticGrade(matrix, filters) {
         state.selectedClasses.set(selection.key, selection);
         addedCodes.add(disciplina.codigo);
         humanitiesAdded++;
+        humanitiesAddedHours += Number(node.cht) || 0;
     }
 
     persistCalendar();
@@ -926,11 +939,59 @@ function renderAutomaticGradeGrids() {
     $('#auto-grade-availability-grids').innerHTML = automaticGradeGridIds().map(automaticGradeGridMarkup).join('');
 }
 
+function trackWasStarted(profile, nodeIds) {
+    return nodeIds.some(nodeId => {
+        const stateValue = profile.subjectStates[String(nodeId)];
+        return isCompletedMatrixState(stateValue) || String(stateValue || '').endsWith('-inprogress') || stateValue === 'inprogress';
+    });
+}
+
+async function renderAutomaticGradeTracks() {
+    const section = $('#auto-grade-tracks');
+    const options = $('#auto-grade-track-options');
+    const requestId = ++state.autoGradeTrackRequestId;
+    const matrix = matrixOptions.find(item => item.id === $('#auto-grade-matrix').value);
+    section.hidden = true;
+    options.innerHTML = '';
+    if (!matrix) return;
+
+    try {
+        const profile = await getMatrixProfile(matrix);
+        if (requestId !== state.autoGradeTrackRequestId) return;
+        const nodesById = new Map(profile.allNodes.map(node => [String(node.id), node]));
+        const tracks = Object.entries(profile.tracksConfig || {}).map(([name, nodeIds]) => {
+            const ids = Array.isArray(nodeIds) ? nodeIds.map(String) : [];
+            const availableNodes = ids
+                .map(nodeId => nodesById.get(nodeId))
+                .filter(node => node && isAvailableMatrixState(profile.subjectStates[node.id]))
+                .filter(node => {
+                    const disciplina = disciplineForNode(node);
+                    return disciplina && Array.isArray(disciplina.turmas) && disciplina.turmas.length > 0;
+                });
+            return { name, ids, availableNodes, started: trackWasStarted(profile, ids) };
+        }).filter(track => track.availableNodes.length);
+
+        if (!tracks.length) return;
+        section.hidden = false;
+        options.innerHTML = tracks.map(track => `<label class="gnh-auto-grade-track-option">
+            <input type="checkbox" data-auto-grade-track="${escapeHtml(track.name)}" value="${escapeHtml(track.name)}" ${track.started ? 'checked' : ''}>
+            <span><strong>${escapeHtml(track.name)}</strong><small>${track.availableNodes.length} matéria(s) disponível(eis) nesta captura</small></span>
+        </label>`).join('');
+    } catch {
+        if (requestId === state.autoGradeTrackRequestId) options.innerHTML = '';
+    }
+}
+
 function readAutomaticGradeFilters() {
     const campusId = currentCampus()?.id || '';
     const grids = automaticGradeGridIds();
     const avoidedSlots = new Set([...document.querySelectorAll('[data-auto-grade-slot][aria-pressed="true"]')].map(button => button.dataset.autoGradeSlot));
     return { campusId, singleGridId: grids[0]?.id || '__campus__', avoidedSlots };
+}
+
+function readAutomaticGradeTracks() {
+    if ($('#auto-grade-tracks').hidden) return null;
+    return [...document.querySelectorAll('[data-auto-grade-track]:checked')].map(input => input.value);
 }
 
 function closeAutomaticGradeModal() {
@@ -944,8 +1005,10 @@ $('#auto-grade').addEventListener('click', () => {
     populateMatrixOptions();
     renderAutomaticGradeGrids();
     $('#auto-grade-modal').hidden = false;
+    renderAutomaticGradeTracks();
     $('#auto-grade-matrix').focus();
 });
+$('#auto-grade-matrix').addEventListener('change', renderAutomaticGradeTracks);
 $('#auto-grade-availability-grids').addEventListener('click', event => {
     const slot = event.target.closest('[data-auto-grade-slot]');
     if (!slot) return;
@@ -965,7 +1028,7 @@ $('#auto-grade-form').addEventListener('submit', async event => {
     status.textContent = 'Calculando prioridades e encaixando turmas…';
     try {
         const filters = readAutomaticGradeFilters();
-        await buildAutomaticGrade(matrix, filters);
+        await buildAutomaticGrade(matrix, filters, readAutomaticGradeTracks());
         closeAutomaticGradeModal();
     } catch (error) {
         status.className = 'gnh-calendar-validation error';

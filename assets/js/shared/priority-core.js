@@ -28,9 +28,12 @@ function stateOf(node, subjectStates) {
  * Keeping it independent from the DOM lets the automatic grade use the same
  * ranking without opening a matrix page in another tab.
  */
-export function analyzePriority({ mainNodes = [], optionalNodes = [], subjectStates = {}, tracksConfig = {} } = {}) {
+export function analyzePriority({ mainNodes = [], optionalNodes = [], subjectStates = {}, tracksConfig = {}, selectedTracks = null } = {}) {
     const allNodes = [...mainNodes, ...optionalNodes].filter(node => node && node.id && !isHumanitiesOrGeneral(node));
     if (!allNodes.length) return [];
+    const optionalNodeIds = new Set(optionalNodes.map(node => String(node?.id || '').trim()).filter(Boolean));
+    const hasSelectedTracks = selectedTracks !== null && selectedTracks !== undefined;
+    const selectedTrackNames = new Set(Array.from(selectedTracks || [], String));
 
     const subjectToTracksMap = {};
     for (const [trackName, subjectIds] of Object.entries(tracksConfig || {})) {
@@ -64,6 +67,12 @@ export function analyzePriority({ mainNodes = [], optionalNodes = [], subjectSta
         const state = stateOf(node, subjectStates);
         if (!isAvailable(state)) return false;
         if (!isOptionalOrTrackNode(node)) return true;
+        if (hasSelectedTracks) {
+            const tracks = subjectToTracksMap[String(node.id).trim()];
+            const isOptionalCandidate = optionalNodeIds.has(String(node.id).trim()) || node.type === 'optional' || node.tabId === 'optional' || Boolean(tracks?.size);
+            if (!isOptionalCandidate) return true;
+            return Boolean(tracks?.size) && [...tracks].some(track => selectedTrackNames.has(track));
+        }
         if (!hasStartedAnyOptional) return false;
         const tracks = subjectToTracksMap[String(node.id).trim()];
         return !tracks?.size || [...tracks].some(track => activeTracks.has(track));
@@ -129,4 +138,25 @@ export function availableHumanities({ humanitiesNodes = [], allNodes = [], subje
             return parent && isCompleted(stateOf(parent, subjectStates));
         });
     }).sort((a, b) => (a.period || 0) - (b.period || 0) || String(a.id).localeCompare(String(b.id)));
+}
+
+function belongsToHumanitiesQuota(node, groupsConfig = {}) {
+    const groupId = String(node?.groupId || '').trim();
+    if (!groupId) return true;
+    const groupName = String(groupsConfig[groupId]?.name || '').toLocaleLowerCase('pt-BR');
+    return !/(empregabilidade|empreendedorismo|gest[aã]o)/i.test(groupName);
+}
+
+export function humanitiesQuotaProgress({ humanitiesNodes = [], subjectStates = {}, requiredHours = 0, groupsConfig = {} } = {}) {
+    const quotaNodes = humanitiesNodes.filter(node => belongsToHumanitiesQuota(node, groupsConfig));
+    const completedHours = quotaNodes
+        .filter(node => isCompleted(stateOf(node, subjectStates)))
+        .reduce((sum, node) => sum + (Number(node.cht) || 0), 0);
+    const required = Math.max(0, Number(requiredHours) || 0);
+    return {
+        completedHours,
+        requiredHours: required,
+        remainingHours: Math.max(0, required - completedHours),
+        quotaNodeIds: new Set(quotaNodes.map(node => String(node.id))),
+    };
 }

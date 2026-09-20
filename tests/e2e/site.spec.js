@@ -441,6 +441,53 @@ test('grade automática usa a matriz selecionada e encaixa turmas sem conflito',
     await expect(page.locator('.gnh-calendar-cell-conflict')).toHaveCount(0);
 });
 
+test('grade automática pergunta quais trilhas disponíveis o aluno quer seguir', async ({ page }) => {
+    const matrix = await import('../../assets/js/data/m2.js');
+    await page.goto('/');
+    await page.evaluate(({ nodesState }) => {
+        localStorage.setItem('skillTreeProgress_M2', JSON.stringify({
+            currentPeriod: 10,
+            nodesState,
+        }));
+    }, { nodesState: matrix.allNodesData.map(node => ({ id: node.id, state: 'subject-completed' })) });
+    await page.goto('/pages/Turmas Abertas.html');
+    await page.locator('#course-select').selectOption('0250');
+    await page.getByRole('button', { name: 'Grade automática' }).click();
+
+    await expect(page.locator('#auto-grade-tracks')).toBeVisible();
+    await expect(page.locator('[data-auto-grade-track]')).toHaveCount(3);
+    await page.locator('[data-auto-grade-track="Telecomunicações"]').check();
+    await expect(page.locator('[data-auto-grade-track="Telecomunicações"]')).toBeChecked();
+    await expect(page.locator('[data-auto-grade-track="Engenharia Biomédica"]')).not.toBeChecked();
+});
+
+test('grade automática não adiciona humanidades quando a cota da matriz já foi concluída', async ({ page }) => {
+    const matrix = await import('../../assets/js/data/m2.js');
+    const completedHumanities = [];
+    let completedHours = 0;
+    for (const node of matrix.allHumanitiesData) {
+        if (completedHours >= matrix.TOTAL_HUMANITIES_HOURS) break;
+        completedHumanities.push({ id: node.id, state: 'humanities-completed' });
+        completedHours += node.cht;
+    }
+
+    await page.goto('/');
+    await page.evaluate(({ nodes }) => {
+        localStorage.setItem('skillTreeProgress_M2', JSON.stringify({ currentPeriod: 10, humanitiesNodesState: nodes }));
+    }, { nodes: completedHumanities });
+    await page.goto('/pages/Turmas Abertas.html');
+    await page.locator('#course-select').selectOption('0250');
+    await page.getByRole('button', { name: 'Grade automática' }).click();
+    await page.locator('#auto-grade-matrix').selectOption('m2');
+    await page.getByRole('button', { name: 'Montar grade' }).click();
+
+    const selectedCodes = await page.locator('.gnh-class-selected').evaluateAll(elements => elements
+        .map(element => element.closest('.gnh-discipline')?.querySelector('.gnh-discipline-code')?.textContent)
+        .filter(Boolean));
+    const humanitiesCodes = new Set(matrix.allHumanitiesData.map(node => node.id));
+    expect(selectedCodes.some(code => humanitiesCodes.has(code))).toBe(false);
+});
+
 test('grade automática respeita dias, turnos e sede disponíveis em Curitiba', async ({ page }) => {
     await page.goto('/pages/Turmas Abertas.html');
     await page.locator('#course-select').selectOption('0250');
