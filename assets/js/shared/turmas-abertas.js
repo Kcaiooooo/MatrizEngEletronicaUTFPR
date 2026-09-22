@@ -288,8 +288,10 @@ function scheduleFilterText(horario) {
 }
 
 function turmaMatchesScheduleFilter(turma, filter) {
-    if (!filter) return true;
-    return (turma.horarios || []).some(horario => normalizeFilter(scheduleFilterText(horario)).includes(filter));
+    if (filter) {
+        return (turma.horarios || []).some(horario => normalizeFilter(scheduleFilterText(horario)).includes(filter));
+    }
+    return true;
 }
 
 function disciplineMatchesFilters(disciplina, context = {}) {
