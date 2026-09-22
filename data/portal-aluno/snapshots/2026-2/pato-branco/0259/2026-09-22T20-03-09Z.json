@@ -1,0 +1,1753 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-22T20-03-09Z",
+  "capturedAt": "2026-09-22T20:03:09.880Z",
+  "sourceLastUpdatedAt": "22/09/2026 17:05:50   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "pato-branco",
+    "name": "Pato Branco",
+    "code": "05"
+  },
+  "course": {
+    "id": "0259",
+    "name": "Administração",
+    "sourceName": "ADMINISTRAÇÃO"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=259"
+  },
+  "fingerprint": "f5bf6ad1b37503d35ef8929d6a493b7068f30cfdedfe504e334ae7fbec14c6c5",
+  "previousVersionId": "2026-09-19T20-29-03Z",
+  "changes": [
+    {
+      "type": "changed",
+      "codigo": "AS42NB",
+      "nome": "Alongamento, Relaxamento E Saúde",
+      "fields": [
+        "turmas[0].horarios[1].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "LI42NB",
+      "nome": "Libras 1",
+      "fields": [
+        "turmas[0].horarios[0].sala",
+        "turmas[0].horarios[1].sala",
+        "turmas[0].horarios[2].sala",
+        "turmas[0].horarios[3].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "VL42NB",
+      "nome": "Voleibol",
+      "fields": [
+        "turmas[0].horarios[0].sala",
+        "turmas[0].horarios[1].sala"
+      ]
+    }
+  ],
+  "payload": {
+    "curso": "ADMINISTRAÇÃO",
+    "ultima_atualizacao": "22/09/2026 17:05:50   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "AD24A",
+        "nome": "Análise De Demonstrações",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 49,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "O005",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "O005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Priscila Rubbo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AR26A",
+        "nome": "Administração De Recursos Humanos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "O003",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "O003",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "O003",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "O003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Shalimar Gallon Canfield"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS42NB",
+        "nome": "Alongamento, Relaxamento E Saúde",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA9",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "M102",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "M105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Samoara Viacelli Da Luz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:636"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CC24B",
+        "nome": "Contabilidade De Custos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 41,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "Q004",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "Q004",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "Q004",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "Q004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Fernande Casagrande"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CG22A",
+        "nome": "Contabilidade Geral",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 52,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "O001",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "O001",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "O001",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "O001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Fernande Casagrande"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "DE24A",
+        "nome": "Direito Empresarial",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "O002",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "O002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Bianca Strucker"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "DT24B",
+        "nome": "Direito Do Trabalho",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "Q004",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "Q004",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "Q004",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "Q004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Bianca Strucker"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EA22B",
+        "nome": "Estatística Básica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 43,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "O201",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "O201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Carlos Scheitt"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EB22A",
+        "nome": "Estatística Básica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "O001",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "O001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Carlos Scheitt"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE24A",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N4",
+                "sala": "O002",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "O002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elizandra Machado Follmann"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EN23A",
+        "nome": "Economia Criativa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "O004",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "O004",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "O004",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "O004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elizangela Mara Carvalheiro",
+              "Luciano Minghini"
+            ],
+            "optativa_matrizes": [
+              "Matriz:628"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EP22B",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N2",
+                "sala": "O201",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "O201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elizandra Machado Follmann"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FI22B",
+        "nome": "Filosofia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 42,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "O201",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "O201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Nilson De Farias"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FL26A",
+        "nome": "Finanças De Longo Prazo",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "O003",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "O003",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "O003",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "O003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Abdinardo Moreira Barreto De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GP24A",
+        "nome": "Gestão De Pessoas",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "O002",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "O002",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "O002",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "O002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Kuramoto Gonzalez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GP25A",
+        "nome": "Gestão De Produção",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "O002",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "O002",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "O002",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "O002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wanda Luquine Elias"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GP28A",
+        "nome": "Gestão Na Prática",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 30,
+        "turmas": [
+          {
+            "codigo": "8AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "O004",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "O004",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "O004",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "O004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Liliane Canopf Vera",
+              "Norma Brambilla"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HU24B",
+        "nome": "Ofícina De Projeto Integrador",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 30,
+        "turmas": [
+          {
+            "codigo": "4BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "P203",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "P203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Maria De Lourdes Bernartt"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LE22B",
+        "nome": "Leitura E Produção De Textos Empresariais",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 43,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "O201",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "O201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Maria Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LI42NB",
+        "nome": "Libras 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA13",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "M104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mirelia Flausino Vogel",
+              "Aline Brancalione"
+            ],
+            "optativa_matrizes": [
+              "Matriz:657",
+              "Matriz:489",
+              "Matriz:639",
+              "Matriz:636",
+              "Matriz:641",
+              "Matriz:640",
+              "Matriz:637",
+              "Matriz:642",
+              "Matriz:638",
+              "Matriz:635"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LT22A",
+        "nome": "Leitura E Produção De Textos Empresariais",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "O001",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "O001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Maria Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MC24B",
+        "nome": "Mercado De Capitais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "O203",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "O203",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "O003",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "O003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eliandro Schvirck"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ME22A",
+        "nome": "Estudo Dirigido Ii",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N4",
+                "sala": "O001",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "O001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luciano Minghini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ME22B",
+        "nome": "Microeconomia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "O201",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "O201",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "O201",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "O201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elizangela Mara Carvalheiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ME27A",
+        "nome": "Macroeconomia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "O003",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "O003",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "O003",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "O003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Denise Rauber"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MF22A",
+        "nome": "Matemática Financeira",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 49,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "O001",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "O001",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "O001",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "O001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Carlos Scheitt"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MP24A",
+        "nome": "Metodologia De Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "O002",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "O002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Maria De Lourdes Bernartt"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "OE24A",
+        "nome": "Orçamento Empresarial",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "O005",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "O005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Abdinardo Moreira Barreto De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PI24A",
+        "nome": "Projeto Integrador",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "O002",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "O002",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "O002",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "O002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gilson Ditzel Santos",
+              "Maria De Lourdes Bernartt"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PL26A",
+        "nome": "Plano De Negócios",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N2",
+                "sala": "V007",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "V007",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "V007",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "V007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Abdinardo Moreira Barreto De Oliveira",
+              "Luciano Minghini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PP26A",
+        "nome": "Projetos De Pesquisa Em Administração",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "O003",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "O003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Liliane Canopf Vera"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QV23A",
+        "nome": "Qualidade De Vida",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA8",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "M104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Samoara Viacelli Da Luz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:628"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "SC26A",
+        "nome": "Sistemas De Controle Da Produção",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "O003",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "O003",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "O003",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "O003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcia Danieli Szeremeta Spak"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "6ASP",
+            "enquadramento": "Presencial",
+            "vagas_total": 1,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Marcia Danieli Szeremeta Spak"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "SO22A",
+        "nome": "Sociologia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "O001",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "O001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Glademir Alves Trindade"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TA22A",
+        "nome": "Teorias Da Administração",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "O001",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "O001",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "O001",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "O001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Liliane Canopf Vera"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TA23A",
+        "nome": "Temas Avançados Na Trilha De Tecnologia 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "O004",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "O004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gilson Ditzel Santos"
+            ],
+            "optativa_matrizes": [
+              "Matriz:628"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "TC27A",
+        "nome": "Trabalho De Conclusão De Curso",
+        "creditos": 0,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 0,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Elizangela Mara Carvalheiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TP24A",
+        "nome": "Temas Avançados Na Trilha De Pessoas 3",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3AS",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "O004",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "O004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Shalimar Gallon Canfield"
+            ],
+            "optativa_matrizes": [
+              "Matriz:628"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "VL42NB",
+        "nome": "Voleibol",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA10",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "O204",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "O204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Samoara Viacelli Da Luz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:657",
+              "Matriz:489",
+              "Matriz:636",
+              "Matriz:641",
+              "Matriz:628",
+              "Matriz:643",
+              "Matriz:635"
+            ]
+          },
+          {
+            "codigo": "HUMA11",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "N108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Samoara Viacelli Da Luz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:657",
+              "Matriz:489",
+              "Matriz:636",
+              "Matriz:641",
+              "Matriz:628",
+              "Matriz:643",
+              "Matriz:635"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,2412 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-22T20-03-09Z",
+  "capturedAt": "2026-09-22T20:03:09.880Z",
+  "sourceLastUpdatedAt": "22/09/2026 17:05:36   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "pato-branco",
+    "name": "Pato Branco",
+    "code": "05"
+  },
+  "course": {
+    "id": "0186",
+    "name": "Tec Analise Des Sist",
+    "sourceName": "TEC ANALISE DES SIST"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=186"
+  },
+  "fingerprint": "f0482a80443ee8c5b84cb919206cdf22d0425714b077c03901b572dc5bab083f",
+  "previousVersionId": "2026-09-19T20-29-03Z",
+  "changes": [
+    {
+      "type": "changed",
+      "codigo": "LI42NB",
+      "nome": "Libras 1",
+      "fields": [
+        "turmas[0].horarios[0].sala",
+        "turmas[0].horarios[1].sala",
+        "turmas[0].horarios[2].sala",
+        "turmas[0].horarios[3].sala"
+      ]
+    }
+  ],
+  "payload": {
+    "curso": "TEC ANALISE DES SIST",
+    "ultima_atualizacao": "22/09/2026 17:05:36   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "AD44S",
+        "nome": "Aplicações Distribuidas E Concorrentes",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "V104",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "V104",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "V104",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Cassiano Goularte Rista"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AM46S",
+        "nome": "Aprendizado De Máquina E Reconhecimento De Padrões",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "V109",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "V109",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "V109",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "V109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Fernando Puttow Southier"
+            ],
+            "optativa_matrizes": [
+              "Matriz:638"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "AP43S",
+        "nome": "Análise E Projeto De Sistemas",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "V108",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "V108",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "V108",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucilia Yoshie Araki"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS44S",
+        "nome": "Automação De Software E Infraestrutura",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 26,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "V006",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "V006",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "V006",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "V006",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "V006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eden Ricardo Dosciatti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "BD42S",
+        "nome": "Fundamentos De Banco De Dados",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 26,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "V107",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "V107",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "V107",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "V107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Carlos Ferreira Bueno"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "BD43S",
+        "nome": "Banco De Dados",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 26,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "V108",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "V108",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "V108",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "V108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ives Rene Venturini Pola"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CG46S",
+        "nome": "Computação Gráfica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "V105",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "V105",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Dalcimar Casanova"
+            ],
+            "optativa_matrizes": [
+              "Matriz:638"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ED42S",
+        "nome": "Estruturas De Dados 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "V107",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "V107",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "V107",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rubia Eliza De Oliveira Schultz Ascari"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ED43S",
+        "nome": "Estruturas De Dados 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "V108",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "V108",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "V108",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rubia Eliza De Oliveira Schultz Ascari"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE45MC",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5MC",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "Q005",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "Q005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Norma Brambilla"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE45S",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção",
+                "Tec Analise Des Sist",
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "P203",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "P203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Norma Brambilla"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE46M",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 11,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "Q007",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "Q007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Norma Brambilla"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE47EL",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7EL",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elizandra Machado Follmann"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE48CP",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8CP",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elizandra Machado Follmann"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE48NB",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8CV",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "M105",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "M105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Norma Brambilla"
+            ],
+            "optativa_matrizes": [
+              "Matriz:657",
+              "Matriz:489",
+              "Matriz:635"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EM29MC",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "9MC",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "Q005",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "Q005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Norma Brambilla"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EP22B",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N2",
+                "sala": "O201",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "O201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elizandra Machado Follmann"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ES42S",
+        "nome": "Engenharia De Software",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 26,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "V107",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "V107",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "V107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucilia Yoshie Araki"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FC42NB",
+        "nome": "Filosofia Da Técnica E Da Tecnologia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA6",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "M103",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "M103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Nilson De Farias"
+            ],
+            "optativa_matrizes": [
+              "Matriz:641",
+              "Matriz:640",
+              "Matriz:643",
+              "Matriz:638"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FE42S",
+        "nome": "Fundamentos De Estatística 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 26,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "P203",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "P203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carla Baroni"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FE43S",
+        "nome": "Fundamentos De Estatística 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N3",
+                "sala": "P203",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "P203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carla Baroni"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FP41S",
+        "nome": "Fundamentos De Programação",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 38,
+            "vagas_calouros": 38,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "V109",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "V109",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "V109",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "V109",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "V109",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "V109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mariza Miola Dosciatti"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "1SIE",
+            "enquadramento": "Presencial",
+            "vagas_total": 13,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "V103",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "V103",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "V103",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "V103",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "V103",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "V103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Carlos Ferreira Bueno"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GE45G",
+        "nome": "Gestão Empresarial",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5G",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "V007",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "V007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Kuramoto Gonzalez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GE46S",
+        "nome": "Gestão Empresarial",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "V007",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "V007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Kuramoto Gonzalez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GO48CA",
+        "nome": "Gestão Empresarial",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "V007",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "V007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Kuramoto Gonzalez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GP45S",
+        "nome": "Gestão De Projetos De Software",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "V106",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "V106",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "V106",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rubia Eliza De Oliveira Schultz Ascari"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HC42NB",
+        "nome": "História E Cultura Afro-Brasileira",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA2",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "N106",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "N106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Aruana Antonio Dos Passos"
+            ],
+            "optativa_matrizes": [
+              "Matriz:657",
+              "Matriz:489",
+              "Matriz:641",
+              "Matriz:640",
+              "Matriz:642",
+              "Matriz:637",
+              "Matriz:636",
+              "Matriz:643",
+              "Matriz:638",
+              "Matriz:635"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HT42NB",
+        "nome": "História Da Técnica E Da Tecnologia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "N110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Aruana Antonio Dos Passos"
+            ],
+            "optativa_matrizes": [
+              "Matriz:641",
+              "Matriz:640",
+              "Matriz:642",
+              "Matriz:637",
+              "Matriz:636",
+              "Matriz:643",
+              "Matriz:638"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "II41S",
+        "nome": "Introdução À Informática",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 38,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "V109",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "V109",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "V109",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "V109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Soelaine Rodrigues Ascari"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "IS41S",
+        "nome": "Informática E Sociedade",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 38,
+            "vagas_calouros": 38,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "P203",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "P203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Edilson Pontarolo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "IS44S",
+        "nome": "Interação Ser Humano Computador",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist",
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "V009",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "V009",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "V009",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Soelaine Rodrigues Ascari"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LA43S",
+        "nome": "Linguagens De Apresentação E Estruturação De Conteúdo",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "V108",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "V108",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "V108",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "V108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andreia Scariot Beulke"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LB26M",
+        "nome": "Libras 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6ZZ",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic. Matemática (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "N104",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "N104",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "N104",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "N104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mirelia Flausino Vogel",
+              "Aline Brancalione"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LI42NB",
+        "nome": "Libras 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA13",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "M104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mirelia Flausino Vogel",
+              "Aline Brancalione"
+            ],
+            "optativa_matrizes": [
+              "Matriz:657",
+              "Matriz:489",
+              "Matriz:639",
+              "Matriz:636",
+              "Matriz:641",
+              "Matriz:640",
+              "Matriz:637",
+              "Matriz:642",
+              "Matriz:638",
+              "Matriz:635"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LP41S",
+        "nome": "Leitura E Produção De Gêneros Acadêmicos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 42,
+            "vagas_calouros": 38,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "P203",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "P203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rosangela Oro Brocardo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MD41S",
+        "nome": "Introdução À Matemática Discreta",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 42,
+            "vagas_calouros": 38,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "P203",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "P203",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "P203",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "P203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ivan Italo Gonzales Gargate"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MP44S",
+        "nome": "Metodologia Da Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 26,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "P202",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "P202",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Aruana Antonio Dos Passos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "OD46S",
+        "nome": "Oficina De Projeto E Desenvolvimento",
+        "creditos": 8,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 120,
+        "turmas": [
+          {
+            "codigo": "6SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "V105",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "V105",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "V105",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "V105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franciele Beal"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "OI43S",
+        "nome": "Oficina De Projetos Em Informática E Pensamento Computacional",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 75,
+        "turmas": [
+          {
+            "codigo": "3SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "V108",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "V108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rubia Eliza De Oliveira Schultz Ascari"
+            ],
+            "optativa_matrizes": [
+              "Matriz:638"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OO42S",
+        "nome": "Fundamentos De Orientação A Objetos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 26,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "V107",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "V107",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "V107",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "V107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andreia Scariot Beulke"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "OO43S",
+        "nome": "Programação Orientada A Objetos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "V108",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "V108",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "V108",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franciele Beal"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PA42NB",
+        "nome": "Psicologia Aplicada Ao Trabalho",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5CV",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "M104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sergio Paes De Barros"
+            ],
+            "optativa_matrizes": [
+              "Matriz:560",
+              "Matriz:657",
+              "Matriz:489",
+              "Matriz:639",
+              "Matriz:641",
+              "Matriz:640",
+              "Matriz:642",
+              "Matriz:643",
+              "Matriz:638",
+              "Matriz:635"
+            ]
+          },
+          {
+            "codigo": "HUMA12",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "M103",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "M103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sergio Paes De Barros"
+            ],
+            "optativa_matrizes": [
+              "Matriz:560",
+              "Matriz:657",
+              "Matriz:489",
+              "Matriz:639",
+              "Matriz:641",
+              "Matriz:640",
+              "Matriz:642",
+              "Matriz:643",
+              "Matriz:638",
+              "Matriz:635"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "PM45S",
+        "nome": "Programação Para Dispositivos Móveis",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "V106",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "V106",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "V106",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "V106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Robison Cris Brito"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PM46S",
+        "nome": "Tópicos Avançados Em Programação Para Dispositivos Móveis",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "V105",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "V105",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "V105",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Robison Cris Brito"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PW44S",
+        "nome": "Programação Para Web",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "V104",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "V104",
+                "sede": null
+              },
+              {
+                "horario": "3N1",
+                "sala": "V104",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "V104",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "V104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vinicius Pegorini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PW45S",
+        "nome": "Tópicos Avançados Em Programação Para Web",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "V106",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "V106",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "V106",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "V106",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "V106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vinicius Pegorini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QV23A",
+        "nome": "Qualidade De Vida",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA8",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "M104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Samoara Viacelli Da Luz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:628"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "RC42S",
+        "nome": "Redes De Computadores",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 26,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "V006",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "V006",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "V006",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "V006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eden Ricardo Dosciatti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "SA45S",
+        "nome": "Segurança Em Aplicações",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "V106",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "V106",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "V106",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriano Serckumecka"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TC26S",
+        "nome": "Trabalho De Conclusão De Curso 2",
+        "creditos": 0,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Mariza Miola Dosciatti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TC45S",
+        "nome": "Proposta De Trabalho De Conclusão De Curso",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "V106",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "V106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mariza Miola Dosciatti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TC46S",
+        "nome": "Trabalho De Conclusão De Curso",
+        "creditos": 0,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Mariza Miola Dosciatti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TS44S",
+        "nome": "Teste De Software",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "V104",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "V104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Carlos Ferreira Bueno"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

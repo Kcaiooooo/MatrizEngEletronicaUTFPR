@@ -1,0 +1,3459 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-22T20-03-09Z",
+  "capturedAt": "2026-09-22T20:03:09.880Z",
+  "sourceLastUpdatedAt": "22/09/2026 17:05:34   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "pato-branco",
+    "name": "Pato Branco",
+    "code": "05"
+  },
+  "course": {
+    "id": "0172",
+    "name": "Tec Manutenção",
+    "sourceName": "TEC MANUTENÇÃO"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=172"
+  },
+  "fingerprint": "828e0fcaee59b8dcf49ab5689e6c5272d89542a8737c51c4ce3d0fd6fb331905",
+  "previousVersionId": "2026-09-19T20-29-03Z",
+  "changes": [
+    {
+      "type": "changed",
+      "codigo": "AI44M",
+      "nome": "Automação Industrial 1",
+      "fields": [
+        "turmas[0].professores[0]",
+        "turmas[0].professores[1]"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "AI45M",
+      "nome": "Automação Industrial 2",
+      "fields": [
+        "turmas[0].professores[0]",
+        "turmas[0].professores[1]"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "AS42NB",
+      "nome": "Alongamento, Relaxamento E Saúde",
+      "fields": [
+        "turmas[0].horarios[1].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "GE46NB",
+      "nome": "Gestão De Pessoas",
+      "fields": [
+        "turmas[0].professores[0]"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "GS28EL",
+      "nome": "Gestão De Pessoas",
+      "fields": [
+        "turmas[0].professores[0]"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "IM43M",
+      "nome": "Instrumentos E Medidas Elétricas",
+      "fields": [
+        "turmas[0].horarios[0].sala",
+        "turmas[0].horarios[1].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "LP41NB",
+      "nome": "Leitura E Produção De Gêneros Acadêmicos",
+      "fields": [
+        "turmas[4].horarios[0].sala",
+        "turmas[4].horarios[1].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "ME41M",
+      "nome": "Matemática Elementar",
+      "fields": [
+        "turmas[1].horarios[0].sala",
+        "turmas[1].horarios[1].sala",
+        "turmas[1].horarios[2].sala",
+        "turmas[1].horarios[3].sala",
+        "turmas[1].horarios[4].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "ME45M",
+      "nome": "Manutenção Elétrica 2",
+      "fields": [
+        "turmas[0].horarios[0].sala",
+        "turmas[0].horarios[1].sala",
+        "turmas[0].horarios[2].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "SO44M",
+      "nome": "Soldagem",
+      "fields": [
+        "turmas[0].horarios[0].sala",
+        "turmas[0].horarios[1].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "VL42NB",
+      "nome": "Voleibol",
+      "fields": [
+        "turmas[0].horarios[0].sala",
+        "turmas[0].horarios[1].sala"
+      ]
+    }
+  ],
+  "payload": {
+    "curso": "TEC MANUTENÇÃO",
+    "ultima_atualizacao": "22/09/2026 17:05:34   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "AE28EL",
+        "nome": "Acionamentos Elétricos Industriais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8ELE",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "I001",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "I001",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "I001",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "I001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Edwin Choque Pillco"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AI43M",
+        "nome": "Acionamentos Industriais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 11,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "I001",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "I001",
+                "sede": null
+              },
+              {
+                "horario": "7M2",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Edwin Choque Pillco"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AI44M",
+        "nome": "Automação Industrial 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "I005",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "I005",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "I005",
+                "sede": null
+              },
+              {
+                "horario": "7M3",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo Bernardi",
+              "Artur Tsuguiyoshi Hara"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AI45M",
+        "nome": "Automação Industrial 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "I005",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "I005",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "I005",
+                "sede": null
+              },
+              {
+                "horario": "7M2",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo Bernardi",
+              "Artur Tsuguiyoshi Hara"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS42NB",
+        "nome": "Alongamento, Relaxamento E Saúde",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA9",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "M102",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "M105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Samoara Viacelli Da Luz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:636"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CT43MC",
+        "nome": "Custos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3MC",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química",
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "Q002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wanda Luquine Elias"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CT46M",
+        "nome": "Custos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 8,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "Q007",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "Q007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Abdinardo Moreira Barreto De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CT47NB",
+        "nome": "Custos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7CV",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química",
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "M107",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "M107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wanda Luquine Elias"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CT47QB",
+        "nome": "Custos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7QB",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "N106",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "N106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wanda Luquine Elias"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "DC46M",
+        "nome": "Manutenção 4.0 – Desafios Colaborativos",
+        "creditos": 8,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 120,
+        "turmas": [
+          {
+            "codigo": "6MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção",
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabio De Freitas Lima",
+              "Liliane Canopf Vera",
+              "Norma Brambilla"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "DT41NB",
+        "nome": "Desenho Técnico",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 26,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "M109",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "M109",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "M109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cicero Gallina De Aguiar"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "DT42M",
+        "nome": "Desenho Técnico Assistido Por Computador",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "V008",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "V008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Nunes Da Costa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "DV45M",
+        "nome": "Distribuição De Vapor E Ar Comprimido",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "Q006",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "Q006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Antonio Brum Do Nascimento"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EB41M",
+        "nome": "Estatística Básica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 32,
+            "vagas_calouros": 26,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "Q001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alcione Cappelin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE45MC",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5MC",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "Q005",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "Q005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Norma Brambilla"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE45S",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção",
+                "Tec Analise Des Sist",
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "P203",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "P203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Norma Brambilla"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE46M",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 11,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "Q007",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "Q007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Norma Brambilla"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE47EL",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7EL",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elizandra Machado Follmann"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE48CP",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8CP",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elizandra Machado Follmann"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE48NB",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8CV",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "M105",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "M105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Norma Brambilla"
+            ],
+            "optativa_matrizes": [
+              "Matriz:657",
+              "Matriz:489",
+              "Matriz:635"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EI41M",
+        "nome": "Eletricidade 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 26,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "Q001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jonatas Policarpo Americo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EI42M",
+        "nome": "Eletricidade 2",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jonatas Policarpo Americo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EI44M",
+        "nome": "Eletrônica Industrial 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "I010",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "I010",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "I010",
+                "sede": null
+              },
+              {
+                "horario": "7M1",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Marcelo De Oliveira Stein"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EI45M",
+        "nome": "Eletrônica Industrial 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "I010",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "I010",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "I010",
+                "sede": null
+              },
+              {
+                "horario": "7M1",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Johnny Werner"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EI46M",
+        "nome": "Eletrônica Industrial 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "I008",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "I008",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "I008",
+                "sede": null
+              },
+              {
+                "horario": "7M1",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Juliano De Pelegrini Lopes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EM29MC",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "9MC",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "Q005",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "Q005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Norma Brambilla"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EM43M",
+        "nome": "Elementos De Máquinas",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "H003",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "H003",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "H003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adelino Carlos Maccarini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EM44M",
+        "nome": "Ensaio E Manutenção De Transformadores",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "I001",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "I001",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "I001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Fabio Kolzer"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EM45M",
+        "nome": "Ensaio E Manutenção De Máquinas Elétricas",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "I001",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "I001",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "I001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Artur Tsuguiyoshi Hara"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EM46CA",
+        "nome": "Estática E Mecânica Dos Materais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "7M3",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joamilton Stahlschmidt"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EP22B",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N2",
+                "sala": "O201",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "O201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elizandra Machado Follmann"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ER42M",
+        "nome": "Estática E Resistência Dos Materiais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "7M3",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joamilton Stahlschmidt"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FC42NB",
+        "nome": "Filosofia Da Técnica E Da Tecnologia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA6",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "M103",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "M103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Nilson De Farias"
+            ],
+            "optativa_matrizes": [
+              "Matriz:641",
+              "Matriz:640",
+              "Matriz:643",
+              "Matriz:638"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GE45G",
+        "nome": "Gestão Empresarial",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5G",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "V007",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "V007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Kuramoto Gonzalez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GE46M",
+        "nome": "Gestão De Energia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "Q007",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "Q007",
+                "sede": null
+              },
+              {
+                "horario": "7M2",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Goncalves Trentin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GE46NB",
+        "nome": "Gestão De Pessoas",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6CV",
+            "enquadramento": "Presencial",
+            "vagas_total": 19,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "M106",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "M106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Kuramoto Gonzalez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GE46S",
+        "nome": "Gestão Empresarial",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "V007",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "V007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Kuramoto Gonzalez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GM45M",
+        "nome": "Gestão Da Manutenção",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "Q006",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "Q006",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "Q006",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "Q006",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joamilton Stahlschmidt"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GO48CA",
+        "nome": "Gestão Empresarial",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "V007",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "V007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Kuramoto Gonzalez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GP29NB",
+        "nome": "Gestão De Pessoas",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "9CV",
+            "enquadramento": "Presencial",
+            "vagas_total": 6,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "M103",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "M103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Shalimar Gallon Canfield"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GP43M",
+        "nome": "Gestão De Produção",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "Q004",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "Q004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcia Danieli Szeremeta Spak"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GP44MC",
+        "nome": "Gestão Da Produção",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4MC",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "Q004",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "Q004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wanda Luquine Elias"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GP45M",
+        "nome": "Gestão De Pessoas",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 9,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "Q006",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "Q006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Shalimar Gallon Canfield"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GP46QB",
+        "nome": "Gestão De Pessoas",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8QB",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "N107",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "N107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Audrey Hausschildt Merlin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GS28EL",
+        "nome": "Gestão De Pessoas",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8ELE",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "L107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Norma Brambilla"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HC42NB",
+        "nome": "História E Cultura Afro-Brasileira",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA2",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "N106",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "N106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Aruana Antonio Dos Passos"
+            ],
+            "optativa_matrizes": [
+              "Matriz:657",
+              "Matriz:489",
+              "Matriz:641",
+              "Matriz:640",
+              "Matriz:642",
+              "Matriz:637",
+              "Matriz:636",
+              "Matriz:643",
+              "Matriz:638",
+              "Matriz:635"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HP42M",
+        "nome": "Hidráulica E Pneumática",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "Q002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Antonio Brum Do Nascimento"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HT42NB",
+        "nome": "História Da Técnica E Da Tecnologia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "N110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Aruana Antonio Dos Passos"
+            ],
+            "optativa_matrizes": [
+              "Matriz:641",
+              "Matriz:640",
+              "Matriz:642",
+              "Matriz:637",
+              "Matriz:636",
+              "Matriz:643",
+              "Matriz:638"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "IE42M",
+        "nome": "Instalações Elétricas Prediais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "Q002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Artur Tsuguiyoshi Hara"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "IE43M",
+        "nome": "Instalações Elétricas Industriais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "Q004",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "Q004",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "Q004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Herve Stangler Irion"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "IF41M",
+        "nome": "Introdução Aos Fenômenos De Transporte",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 31,
+            "vagas_calouros": 26,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabiano Ostapiv"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "II41NB",
+        "nome": "Inglês Instrumental",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 26,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "Q001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Taisa Pinetti Passoni"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "IL42L",
+        "nome": "Introdução À Libras",
+        "creditos": 0,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2LN",
+            "enquadramento": "EaD",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Mirelia Flausino Vogel",
+              "Aline Brancalione"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "IL42NB",
+        "nome": "Introdução À Libras",
+        "creditos": 0,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2MN",
+            "enquadramento": "EaD",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Mirelia Flausino Vogel",
+              "Aline Brancalione"
+            ],
+            "optativa_matrizes": [
+              "Matriz:643"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "IM43M",
+        "nome": "Instrumentos E Medidas Elétricas",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "O204",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "O204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jonatas Policarpo Americo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LI42M",
+        "nome": "Lubrificação Industrial",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "7M1",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "7M2",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sergio Luiz Ribas Pessa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LP41NB",
+        "nome": "Leitura E Produção De Gêneros Acadêmicos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1CV",
+            "enquadramento": "Presencial",
+            "vagas_total": 32,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "M107",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "M107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rosangela Oro Brocardo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:560",
+              "Matriz:639"
+            ]
+          },
+          {
+            "codigo": "1EL",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 16,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "N105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leticia Lemos Gritti"
+            ],
+            "optativa_matrizes": [
+              "Matriz:560",
+              "Matriz:639"
+            ]
+          },
+          {
+            "codigo": "1MC",
+            "enquadramento": "Presencial",
+            "vagas_total": 47,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "Q001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Priscila Azevedo Da Fonseca Lanferdini"
+            ],
+            "optativa_matrizes": [
+              "Matriz:560",
+              "Matriz:639"
+            ]
+          },
+          {
+            "codigo": "1MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 26,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "Q001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leticia Lemos Gritti"
+            ],
+            "optativa_matrizes": [
+              "Matriz:560",
+              "Matriz:639"
+            ]
+          },
+          {
+            "codigo": "1QB",
+            "enquadramento": "Presencial",
+            "vagas_total": 16,
+            "vagas_calouros": 6,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "N111",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "N111",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lovania Roehrig Teixeira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:560",
+              "Matriz:639"
+            ]
+          },
+          {
+            "codigo": "3CP",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "M007",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "M007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rosangela Oro Brocardo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:560",
+              "Matriz:639"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ME41M",
+        "nome": "Matemática Elementar",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 26,
+            "vagas_calouros": 26,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "Q001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carla Baroni"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "1MNE",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "O005",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "O005",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "O005",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "O005",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "O005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mateus Eduardo Salomao"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ME43M",
+        "nome": "Máquinas Elétricas",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "I001",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "I001",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "I001",
+                "sede": null
+              },
+              {
+                "horario": "7M1",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Filomena Barbosa Rodrigues Mendes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ME44M",
+        "nome": "Manutenção Elétrica 1",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "Q005",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "Q005",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "Q005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Herve Stangler Irion"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ME45M",
+        "nome": "Manutenção Elétrica 2",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "O204",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "O204",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "O204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Paulo De Barros Neto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MQ43M",
+        "nome": "Máquinas E Equipamentos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "Q004",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "Q004",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "Q004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabiano Ostapiv"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MT43M",
+        "nome": "Metrologia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "H003",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "H003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Cezar Adamczuk"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PA42NB",
+        "nome": "Psicologia Aplicada Ao Trabalho",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5CV",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "M104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sergio Paes De Barros"
+            ],
+            "optativa_matrizes": [
+              "Matriz:560",
+              "Matriz:657",
+              "Matriz:489",
+              "Matriz:639",
+              "Matriz:641",
+              "Matriz:640",
+              "Matriz:642",
+              "Matriz:643",
+              "Matriz:638",
+              "Matriz:635"
+            ]
+          },
+          {
+            "codigo": "HUMA12",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "M103",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "M103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sergio Paes De Barros"
+            ],
+            "optativa_matrizes": [
+              "Matriz:560",
+              "Matriz:657",
+              "Matriz:489",
+              "Matriz:639",
+              "Matriz:641",
+              "Matriz:640",
+              "Matriz:642",
+              "Matriz:643",
+              "Matriz:638",
+              "Matriz:635"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "PF44M",
+        "nome": "Processo De Fabricação",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "Q005",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "Q005",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Silvana Patricia Verona Alves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PU44M",
+        "nome": "Processos De Usinagem",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "Q005",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "Q005",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "Q005",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "Q005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cicero Gallina De Aguiar"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QV23A",
+        "nome": "Qualidade De Vida",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA8",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "M104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Samoara Viacelli Da Luz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:628"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "RC46M",
+        "nome": "Refrigeração E Ar Condicionado",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "Q007",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "Q007",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "Q007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Antonio Brum Do Nascimento"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "SO44M",
+        "nome": "Soldagem",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 11,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Cezar Adamczuk"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ST41NB",
+        "nome": "Segurança Do Trabalho",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 26,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "Q001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Herve Stangler Irion"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TL42M",
+        "nome": "Tecnologia Dos Materiais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Maria Nalu Verona Gomes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TM43M",
+        "nome": "Técnicas Metalúrgicas",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "H003",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "H003",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Cezar Adamczuk"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TP46M",
+        "nome": "Técnicas Preditivas Por Análise De Vibrações",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 18,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "H009-A",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "H009-A",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "H009-A",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Giovanni Bratti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "VL42NB",
+        "nome": "Voleibol",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA10",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "O204",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "O204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Samoara Viacelli Da Luz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:657",
+              "Matriz:489",
+              "Matriz:636",
+              "Matriz:641",
+              "Matriz:628",
+              "Matriz:643",
+              "Matriz:635"
+            ]
+          },
+          {
+            "codigo": "HUMA11",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "N108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Samoara Viacelli Da Luz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:657",
+              "Matriz:489",
+              "Matriz:636",
+              "Matriz:641",
+              "Matriz:628",
+              "Matriz:643",
+              "Matriz:635"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

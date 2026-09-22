@@ -1,0 +1,3786 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-22T20-03-09Z",
+  "capturedAt": "2026-09-22T20:03:09.880Z",
+  "sourceLastUpdatedAt": "22/09/2026 17:06:14   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "santa-helena",
+    "name": "Santa Helena",
+    "code": "13"
+  },
+  "course": {
+    "id": "0005",
+    "name": "Agronomia",
+    "sourceName": "AGRONOMIA"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=5"
+  },
+  "fingerprint": "73f688651ec1952912e0f0a709e29238207b8d30715826854ebd0b25e65fc105",
+  "previousVersionId": "2026-09-19T20-29-03Z",
+  "changes": [
+    {
+      "type": "changed",
+      "codigo": "FT1081",
+      "nome": "Culturas Da Soja, Milho E Feijão",
+      "fields": [
+        "turmas[0].horarios[0].sala",
+        "turmas[0].horarios[1].sala",
+        "turmas[0].horarios[2].sala",
+        "turmas[0].horarios[3].sala",
+        "turmas[1].horarios[0].sala",
+        "turmas[1].horarios[1].sala",
+        "turmas[1].horarios[2].sala",
+        "turmas[1].horarios[3].sala"
+      ]
+    }
+  ],
+  "payload": {
+    "curso": "AGRONOMIA",
+    "ultima_atualizacao": "22/09/2026 17:06:14   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "CB1013",
+        "nome": "Fundamentos De Zoologia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 16,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "K2",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "K3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Dejane Santos Alves"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "AG1B",
+            "enquadramento": "Presencial",
+            "vagas_total": 34,
+            "vagas_calouros": 28,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "K2",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "K3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Dejane Santos Alves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB1015",
+        "nome": "Morfologia E Anatomia Vegetal",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 16,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "K1",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "K1",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "K2",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "K2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rejane Barbosa De Oliveira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "AG1B",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 28,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T3",
+                "sala": "K2",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "K2",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "K1",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "K1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rejane Barbosa De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB1027",
+        "nome": "Sistemática Vegetal",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "L10",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "L10",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "K1",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "K1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gustavo Henrique Jeronimo Alves"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "AG2B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "L10",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "L10",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "K1",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "K1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gustavo Henrique Jeronimo Alves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB1036",
+        "nome": "Genética Agropecuária",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG3",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "N14",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "N14",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "J1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vanessa Bueno Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB1042",
+        "nome": "Ecologia Agrícola",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG4",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "N13",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "N13",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "N13",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Maura Gabriela Da Silva Brochado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB1044",
+        "nome": "Fisiologia Vegetal I",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG4",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "K10",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "K10",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "J5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucas Vinicius Dallacorte"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CB1054",
+        "nome": "Fisiologia Vegetal Ii",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "N16",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "N16",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "J5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucas Emilio Perin Kampfert"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Edicleia Aparecida Bonini E Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC1017",
+        "nome": "Recursos Computacionais E Conteúdo Digital Na Agricultura",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 31,
+            "vagas_calouros": 25,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "E10",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "E10",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "E10",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alessandro Samuel Rosa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CS1022",
+        "nome": "Gênese E Morfologia Do Solo",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG2",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "N15",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "N15",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "N15",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Anderson Sandro Da Rocha"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CS1033",
+        "nome": "Composição E Propriedades Do Solo",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG3",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "N14",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "N14",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "N14",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lincon Oliveira Stefanello Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CS1046",
+        "nome": "Produção De Informação De Recursos Do Solo",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG4",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "E11",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "E11",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "E11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alessandro Samuel Rosa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CS1053",
+        "nome": "Fertilidade Do Solo E Adubação",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG5",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "N16",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "N16",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "N16",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "N16",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lincon Oliveira Stefanello Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CS1065",
+        "nome": "Manejo E Conservação Do Solo E Da Água",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "AG6A",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "N17",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "N17",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "N17",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "N17",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lincon Oliveira Stefanello Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "AG6B",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "N17",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "N17",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "N17",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "N17",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lincon Oliveira Stefanello Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ED117D",
+        "nome": "Libras 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB8",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "L9",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "L9",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Debora Michela Prediger"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ED148A",
+        "nome": "Educação Ambiental",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "CB8",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ],
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "K9",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "K9",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "K9",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "K9",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "K9",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "K9",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "K9",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "K9",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eduarda Maria Schneider",
+              "Lucas Emilio Perin Kampfert"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE1014",
+        "nome": "Introdução À Agronomia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 48,
+            "vagas_calouros": 44,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "K2",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "K2",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "K2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Nadia Graciele Krohn"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE1025",
+        "nome": "Metodologia Da Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG2",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "N15",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "N15",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lilian Yukari Yamamoto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE1084",
+        "nome": "Legislação Agrária E Ambiental",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG8",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "K8",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "K8",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Magnos Fernando Ziech"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EG1012",
+        "nome": "Desenho Técnico",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 21,
+            "vagas_calouros": 16,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "N17",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "N17",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "N17",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vinicius Amadeu Stuani Pereira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "AG1B",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 26,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "N17",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "N17",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "N17",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vinicius Amadeu Stuani Pereira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Vinicius Amadeu Stuani Pereira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EP1023",
+        "nome": "Introdução À Ciência De Dados Na Agricultura",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG2",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "E11",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "E11",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "E11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alessandro Samuel Rosa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EP1034",
+        "nome": "Experimentação Na Agricultura",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG3",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "N14",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "N14",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "N14",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "N14",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Nadia Graciele Krohn"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Nadia Graciele Krohn"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ER1045",
+        "nome": "Máquinas E Equipamentos Agrícolas",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG4",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "N13",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "N13",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "N13",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franciele Morlin Carneiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ER1055",
+        "nome": "Mecanização Agrícola",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 45,
+        "turmas": [
+          {
+            "codigo": "AG5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "N16",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "N16",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "N16",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franciele Morlin Carneiro"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "AG5B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "N16",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "N16",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "N16",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franciele Morlin Carneiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ER1057",
+        "nome": "Projetos Hidráulicos Na Agricultura",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG5",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "N16",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "N16",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "N16",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "N16",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabricio Correia De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ER1064",
+        "nome": "Manejo Da Água Em Sistemas Agrícolas",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG6",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "N17",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "N17",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "N17",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "N17",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabricio Correia De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ER1071",
+        "nome": "Agricultura De Precisão",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG7",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "E11",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "E11",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "E11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franciele Morlin Carneiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ER1072",
+        "nome": "Construções Rurais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG7",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "N15",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "N15",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "N15",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franciele Morlin Carneiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ES1047",
+        "nome": "Sociologia Rural",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG4",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "N13",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "N13",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "N13",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alessandra Matte"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ES1056",
+        "nome": "Princípios E Métodos De Extensão E Comunicação Rural",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG5",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "N16",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "N16",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "N16",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alessandra Matte"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FI1011",
+        "nome": "Análise Do Movimento Dos Corpos Rígidos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 26,
+            "vagas_calouros": 22,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "K10",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "J5",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Frederico Charret Brandt"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FI1035",
+        "nome": "Fluidos E Termodinâmica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG3",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "K10",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "K10",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Frederico Charret Brandt"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FS1043",
+        "nome": "Entomologia Geral",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG4",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "N17",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "N17",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "K3",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "K3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Dejane Santos Alves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FS1052",
+        "nome": "Entomologia Agrícola",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG5",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "N16",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "N16",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "N16",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "N16",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Dejane Santos Alves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FS1063",
+        "nome": "Agentes Causais De Doenças De Plantas",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG6",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "N12",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "N12",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "N12",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Willie Anderson Dos Santos Vieira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FS1073",
+        "nome": "Manejo Integrado De Doenças De Plantas",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG7",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "N13",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "N13",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "N13",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "N13",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Willie Anderson Dos Santos Vieira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FS1078",
+        "nome": "Plantas Daninhas",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG7",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "N12",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "N12",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "N12",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "N12",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Maura Gabriela Da Silva Brochado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FS1082",
+        "nome": "Defesa Fitossanitária E Receituario Agronômico",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG8",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "K8",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "K8",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "K8",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "K8",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Maura Gabriela Da Silva Brochado",
+              "Willie Anderson Dos Santos Vieira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FT1031",
+        "nome": "Agrometeorologia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG3",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "L4",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "L4",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "L4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabricio Correia De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FT1058",
+        "nome": "Biotecnologia Agrícola",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG5",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "N16",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "N16",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucas Vinicius Dallacorte"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FT1062",
+        "nome": "Agroecologia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "AG6A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "N17",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "N17",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "N17",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "N17",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Regina Dahlem Ziech"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FT1066",
+        "nome": "Produção E Tecnologia De Sementes",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG6",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "N12",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "N12",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "N12",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "N12",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Nadia Graciele Krohn"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FT1076",
+        "nome": "Propagação De Plantas",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG7",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "N15",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "N15",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lilian Yukari Yamamoto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FT1077",
+        "nome": "Desenvolvimento E Posicionamento De Cultivares",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG7",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "N16",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "N16",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "N16",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucas Vinicius Dallacorte"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FT1081",
+        "nome": "Culturas Da Soja, Milho E Feijão",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "AG8A",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "N15",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "N15",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "N15",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "N15",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucas Vinicius Dallacorte"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "AG8B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "N15",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "N15",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "N15",
+                "sede": null
+              },
+              {
+                "horario": "5M6",
+                "sala": "N15",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucas Vinicius Dallacorte"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FT1083",
+        "nome": "Fruticultura",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG8",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "N15",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "N15",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "N15",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lilian Yukari Yamamoto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FT1085",
+        "nome": "Olericultura",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG8",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "N12",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "N12",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "N12",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "N12",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Regina Dahlem Ziech"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FT1086",
+        "nome": "Silvicultura",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG8",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "K8",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "K8",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "K8",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "K8",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Maura Gabriela Da Silva Brochado",
+              "Willie Anderson Dos Santos Vieira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FT1091",
+        "nome": "Floricultura E Paisagismo",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG9",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "K8",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "K8",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "K8",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lilian Yukari Yamamoto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GE1024",
+        "nome": "Levantamentos Topográficos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "N15",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "N15",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "N15",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "N15",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vinicius Amadeu Stuani Pereira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "AG2B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "N15",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "N15",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "N15",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "N15",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vinicius Amadeu Stuani Pereira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Vinicius Amadeu Stuani Pereira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GE1037",
+        "nome": "Levantamentos Geodésicos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG3",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "L4",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "L4",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "L4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vinicius Amadeu Stuani Pereira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "AG3B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "N14",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "N14",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "N14",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vinicius Amadeu Stuani Pereira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Vinicius Amadeu Stuani Pereira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GP1051",
+        "nome": "Economia Rural E Mercados Agropecuários",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG5",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "N16",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "N16",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "N16",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Tobias Marks Machado"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Jose Tobias Marks Machado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GP1061",
+        "nome": "Administração De Empresas Rurais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG6",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "N17",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "N17",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "N17",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "N17",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Tobias Marks Machado"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Jose Tobias Marks Machado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HU1LA",
+        "nome": "Linguagem Acadêmica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC1",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 29,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ],
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T1",
+                "sala": "L8",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "L8",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "L8",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vera Lucia Vasilevski Dos Santos Araujo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MA1018",
+        "nome": "Matemática Para A Agronomia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 54,
+            "vagas_calouros": 44,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "N12",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "N12",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "N12",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "N12",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vanderlea De Lima Inaba"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MA1021",
+        "nome": "Elementos De Cálculo Diferencial E Integral",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG2",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "L10",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "L10",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "L10",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "L10",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Evandro Alves Nakajima"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "OP1012",
+        "nome": "Linguagem Acadêmica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG2",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "K2",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "K2",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "K2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alexandre Meira De Vasconcelos"
+            ],
+            "optativa_matrizes": [
+              "Matriz:12"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OP1029",
+        "nome": "Geoprocessamento E Sensoriamento Remoto",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG9",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "E11",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "E11",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "E11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Anderson Sandro Da Rocha"
+            ],
+            "optativa_matrizes": [
+              "Matriz:12"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OP1038",
+        "nome": "Projetos De Desenvolvimento Sustentável",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG9",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "K2",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "K2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alexandre Meira De Vasconcelos"
+            ],
+            "optativa_matrizes": [
+              "Matriz:12"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OP1039",
+        "nome": "Projetos, Avaliações E Perícias",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG9",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "N15",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "N15",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Tobias Marks Machado"
+            ],
+            "optativa_matrizes": [
+              "Matriz:12"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OP1043",
+        "nome": "Suinocultura",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG9",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "L10",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "L10",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "L10",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Alexandre Oelke"
+            ],
+            "optativa_matrizes": [
+              "Matriz:12"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OP1047",
+        "nome": "Astronomia Básica Para O Ensino De Ciências",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG6",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "L10",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "L10",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "L10",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Frederico Charret Brandt"
+            ],
+            "optativa_matrizes": [
+              "Matriz:12",
+              "Matriz:6"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OP6BN",
+        "nome": "Propagação Vegetal",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG7",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "N15",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "N15",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lilian Yukari Yamamoto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:6"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPHE",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC2",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ],
+              [
+                "Agronomia"
+              ],
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T2",
+                "sala": "L7",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "L7",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paula Regina Zarelli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:11"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPHIT2",
+        "nome": "Inglês Técnico Ii",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC4",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ],
+              [
+                "Agronomia"
+              ],
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "L10",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "L10",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vera Lucia Vasilevski Dos Santos Araujo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:11"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPHMP",
+        "nome": "Metodologia Da Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CB7",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Biológicas"
+              ],
+              [
+                "Ciência Da Computação"
+              ],
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "L4",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "L4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alexandre Meira De Vasconcelos"
+            ],
+            "optativa_matrizes": [
+              "Matriz:11"
+            ]
+          },
+          {
+            "codigo": "CC2",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ],
+              [
+                "Ciências Biológicas"
+              ],
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M4",
+                "sala": "L6",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "L6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alexandre Meira De Vasconcelos"
+            ],
+            "optativa_matrizes": [
+              "Matriz:11"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPHRHL",
+        "nome": "Relações Humanas E Liderança",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC2",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ],
+              [
+                "Agronomia"
+              ],
+              [
+                "Ciências Biológicas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T5",
+                "sala": "L7",
+                "sede": null
+              },
+              {
+                "horario": "6T1",
+                "sala": "L7",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paula Regina Zarelli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:11"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "QU1016",
+        "nome": "Química Geral E Orgânica Para A Agronomia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG1",
+            "enquadramento": "Presencial",
+            "vagas_total": 48,
+            "vagas_calouros": 44,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "N12",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "N12",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "N12",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ticiane Vieira De Paula Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QU1026",
+        "nome": "Química Analítica Para A Agronomia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "L10",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "L10",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "J9",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paula Cassiana Frohlich"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "AG2B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "L10",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "L10",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "J9",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paula Cassiana Frohlich"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QU1032",
+        "nome": "Bioquímica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "N14",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "N14",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "J9",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "J9",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ticiane Vieira De Paula Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TA1092",
+        "nome": "Tecnologia De Produtos Agropecuários",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG9",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "K2",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "K2",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "K2",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "K2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Alexandre Oelke"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TC1075",
+        "nome": "Planejamento Do Trabalho De Conclusão De Curso",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG7",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "K2",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "K2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alessandra Matte"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TC1093",
+        "nome": "Trabalho De Conclusão De Curso",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TCC2",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Alessandra Matte"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TCC62",
+        "nome": "Trabalho De Conclusão De Curso 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TCC2",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Alessandra Matte"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ZO1041",
+        "nome": "Alimentos E Alimentação Animal",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG4",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "N13",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "N13",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "N13",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Magnos Fernando Ziech"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Magnos Fernando Ziech"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ZO1074",
+        "nome": "Forragicultura",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 45,
+        "turmas": [
+          {
+            "codigo": "AG9A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "N17",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "N17",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "N17",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Magnos Fernando Ziech"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "AG9B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "N17",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "N17",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "N17",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Magnos Fernando Ziech"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ZO1087",
+        "nome": "Produção De Monogástricos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG8",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "K8",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "K8",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "K8",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Alexandre Oelke"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ZO1094",
+        "nome": "Bovinocultura De Corte E Leite",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AG9",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "K8",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "K8",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "K8",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Magnos Fernando Ziech"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

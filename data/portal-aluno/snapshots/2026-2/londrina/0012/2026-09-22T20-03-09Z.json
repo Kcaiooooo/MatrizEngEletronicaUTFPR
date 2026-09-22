@@ -1,0 +1,4432 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-22T20-03-09Z",
+  "capturedAt": "2026-09-22T20:03:09.880Z",
+  "sourceLastUpdatedAt": "22/09/2026 17:05:14   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "londrina",
+    "name": "Londrina",
+    "code": "08"
+  },
+  "course": {
+    "id": "0012",
+    "name": "Eng De Materiais",
+    "sourceName": "ENG DE MATERIAIS"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=12"
+  },
+  "fingerprint": "9879f93eeb2278c782496e70344a71fe6e9733cf1b83b858bad21c5d6a5fc4e9",
+  "previousVersionId": "2026-09-19T20-29-03Z",
+  "changes": [
+    {
+      "type": "removed",
+      "codigo": "MAT006",
+      "nome": "Cálculo Diferencial E Integral 1"
+    },
+    {
+      "type": "removed",
+      "codigo": "MAT007",
+      "nome": "Álgebra Linear"
+    },
+    {
+      "type": "removed",
+      "codigo": "MAT07P",
+      "nome": "Álgebra Linear"
+    },
+    {
+      "type": "removed",
+      "codigo": "MAT07S",
+      "nome": "Álgebra Linear"
+    }
+  ],
+  "payload": {
+    "curso": "ENG DE MATERIAIS",
+    "ultima_atualizacao": "22/09/2026 17:05:14   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "AMB020",
+        "nome": "Fundamentos De Engenharia De Segurança Do Trabalho",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS61",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ],
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "A103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sueli Tavares De Melo Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB17T",
+        "nome": "Gestão Ambiental",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM61",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "K207",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "K207",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "K207",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Montanhini Soares De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB20T",
+        "nome": "Fundamentos De Engenharia De Segurança No Trabalho",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM81",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "A103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sueli Tavares De Melo Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CHS002",
+        "nome": "Interpretação E Produção De Textos Científicos E Profissionais Na Engenharia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM11",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "K308",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "K308",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alessandra Dutra Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CHS004",
+        "nome": "Comunicação Oral E Estratégica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM21",
+            "enquadramento": "Presencial",
+            "vagas_total": 33,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "K312",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "K312",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alcioni Galdino Vieira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EM21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "K208",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "K208",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "K208",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "K208",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Regina Sayuri Kainuma Yamada"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CHS004",
+        "nome": "Comunicação Oral E Estratégica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM21",
+            "enquadramento": "Presencial",
+            "vagas_total": 33,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "K312",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "K312",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alcioni Galdino Vieira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CHS007",
+        "nome": "Estudos Étnicos E Raciais",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "K206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Di Flora Garcia"
+            ],
+            "optativa_matrizes": [
+              "Matriz:60"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CHS03T",
+        "nome": "Metodologia De Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M2",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "B206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Delia Do Carmo Vieira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CHS05M",
+        "nome": "Libras 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ME41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T5",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "K305",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Antonio Alves"
+            ],
+            "optativa_matrizes": [
+              "Matriz:63"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CHS05T",
+        "nome": "Libras 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T5",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "B204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Antonio Alves"
+            ],
+            "optativa_matrizes": [
+              "Matriz:64"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CHS07T",
+        "nome": "Estudos Étnicos E Raciais",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM21",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T5",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "A106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Di Flora Garcia"
+            ],
+            "optativa_matrizes": [
+              "Matriz:64"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EEC001",
+        "nome": "Computação 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM11",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M5",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "3M6",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "K109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eidy Leandro Tanaka Guandeline"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEC001",
+        "nome": "Computação 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM11",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M5",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "3M6",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "K109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eidy Leandro Tanaka Guandeline"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEC002",
+        "nome": "Eletrotécnica Básica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "B205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcos Massaki Imamura"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EM10A",
+        "nome": "Empreendedorismo E Plano De Negócios",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP03",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ],
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "K205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Alberto Ribas"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EM98B",
+        "nome": "Seleção De Materiais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM81",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "A103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Odney Carlos Brondino"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA001",
+        "nome": "Introdução À Química Experimental",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM11",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 20,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "K009",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "K009",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elisangela Corradini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA002",
+        "nome": "Introdução Aos Materiais",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 75,
+        "turmas": [
+          {
+            "codigo": "EM11",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 34,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "K307",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "K307",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "K307",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "K307",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "K307",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "K307",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "K307",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "K307",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "K307",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "K307",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raphael Euclides Prestes Salem",
+              "Paola Vieira Alves Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA003",
+        "nome": "Introdução À Engenharia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM11",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 34,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "K208",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "K208",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Eduardo De Carvalho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA005",
+        "nome": "Princípios De Ciência Dos Materiais 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "K208",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "K208",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Andreato Batista Mendes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA006",
+        "nome": "Projeto De Elementos E Peças",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM31",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "K113",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago Melanda Mendes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA007",
+        "nome": "Princípios De Ciência Dos Materiais 2",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "K209",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Pollyane Marcia De Souto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA008",
+        "nome": "Princípios De Estática Para Engenharia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "B206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Arandi Ginane Bezerra Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA009",
+        "nome": "Termodinâmica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "B206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Eduardo Cava"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA010",
+        "nome": "Estrutura E Propriedades De Metais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "B204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paola Vieira Alves Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA011",
+        "nome": "Estrutura E Propriedades De Cerâmicas",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "B204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Delia Do Carmo Vieira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA012",
+        "nome": "Síntese De Polímeros",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "B204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabio Cezar Ferreira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA013",
+        "nome": "Fundamentos De Fenômenos De Transporte",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "B205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paola Vieira Alves Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA014",
+        "nome": "Resistência Dos Materiais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "4M1",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "B205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Arandi Ginane Bezerra Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA015",
+        "nome": "Fundamentos De Eletroquímica: Reações E Energia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "B205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cleberson Cipriano De Paula"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA016",
+        "nome": "Introdução Aos Materiais Compósitos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "B205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Eduardo De Carvalho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA017",
+        "nome": "Estrutura E Propriedades De Polímeros",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M5",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "2M6",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "3M6",
+                "sala": "B205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elisangela Corradini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA018",
+        "nome": "Tratamentos Térmicos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "B205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Odney Carlos Brondino"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA019",
+        "nome": "Reologia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM61",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T1",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Delia Do Carmo Vieira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SH61",
+            "enquadramento": "Presencial",
+            "vagas_total": 2,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Delia Do Carmo Vieira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA020",
+        "nome": "Comportamento Mecânico Dos Materiais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM61",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "5T1",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "B205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raphael Euclides Prestes Salem"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA020",
+        "nome": "Comportamento Mecânico Dos Materiais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM61",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "5T1",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "B205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raphael Euclides Prestes Salem"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA021",
+        "nome": "Processamento E Manufatura De Metais 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM61",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "B205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Silvia Midori Higa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA022",
+        "nome": "Processamento De Termorrígidos E Borrachas",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM61",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "B205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Francisco Rosario"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA023",
+        "nome": "Processamento De Materiais Cerâmicos",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM61",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "B205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Pollyane Marcia De Souto",
+              "Marcio Florian"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA024",
+        "nome": "Síntese De Cerâmicas",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM61",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T4",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "B205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Florian"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA025",
+        "nome": "Engenharia De Materiais Na Comunidade",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 75,
+        "turmas": [
+          {
+            "codigo": "EM61",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "2T1",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "4T1",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "4T1",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "B205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Pollyane Marcia De Souto",
+              "Cleberson Cipriano De Paula"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA026",
+        "nome": "Ensaios Mecânicos De Materiais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM71",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T1",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "B203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Eduardo De Carvalho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA027",
+        "nome": "Técnicas De Análise De Materiais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM71",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "4T1",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "B203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Arandi Ginane Bezerra Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA028",
+        "nome": "Corrosão E Degradação De Materiais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM71",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "B203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cleberson Cipriano De Paula"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA029",
+        "nome": "Processamento E Manufatura De Metais 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM71",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "B203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Andreato Batista Mendes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA030",
+        "nome": "Processamento De Termoplásticos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM71",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "B203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Francisco Rosario"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA032",
+        "nome": "Introdução Aos Materiais Avançados",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM81",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T4",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "B206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Eduardo Cava"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA033",
+        "nome": "Análise De Falhas",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM81",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "B206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Andreato Batista Mendes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMA034",
+        "nome": "Metodologia Aplicada Ao Tcc",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM81",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T5",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "B206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raphael Euclides Prestes Salem"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENP006",
+        "nome": "Gestão Empresarial",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A63",
+            "enquadramento": "Presencial",
+            "vagas_total": 42,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "A102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Regina Lucia Sanches"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENP03T",
+        "nome": "Economia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "K312",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "K312",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raul Hidetoci Mioshi Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENP05M",
+        "nome": "Desenvolvimento De Novos Negócios",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ME61",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ],
+              [
+                "Eng De Materiais"
+              ],
+              [
+                "Eng Química"
+              ],
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M5",
+                "sala": "K207",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "K207",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raul Hidetoci Mioshi Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENP06T",
+        "nome": "Gestão Empresarial",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM51",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M5",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "K205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Regina Lucia Sanches"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS003",
+        "nome": "Física 1: Fundamentos De Cinemática E Dinâmica Para Engenharia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "K208",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "K208",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "K208",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jorge Alberto Martins"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS004",
+        "nome": "Física Experimental 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM21",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "K201",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "K201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joao Paulo Camargo De Lima"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EM22",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "K201",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "K201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joao Paulo Camargo De Lima"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS005",
+        "nome": "Física 2: Fundamentos De Ondas, Fluidos E Termodinâmica Para Engenharia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM31",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "B206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernando Da Silva Alves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS006",
+        "nome": "Física Experimental 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DP31",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "K204",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "K204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marco Aurelio Toledo Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EM31",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "K204",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "K204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marco Aurelio Toledo Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS007",
+        "nome": "Física 3: Fundamentos Do Eletromagnetismo",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM41",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "B206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Kleber Eiti Yamaguti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS008",
+        "nome": "Física Experimental 3",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM41",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "K301",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "K301",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Matheus Lucas Gumieri Pereira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS010",
+        "nome": "Física 2",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP43",
+            "enquadramento": "Presencial",
+            "vagas_total": 48,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "K207",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "K207",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "K207",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Matheus Lucas Gumieri Pereira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS011",
+        "nome": "Física 3",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP53",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "K209",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Henrique Cardozo Amorin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS04P",
+        "nome": "Física Experimental 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP33",
+            "enquadramento": "Presencial",
+            "vagas_total": 26,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "K201",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "K201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Sergio De Camargo Filho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS06P",
+        "nome": "Física Experimental 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP43",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "K204",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "K204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Matheus Lucas Gumieri Pereira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP44",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "K204",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "K204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Matheus Lucas Gumieri Pereira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS07S",
+        "nome": "Física 3 Fundamentos Do Eletromagnetismo",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS41",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "A102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jorge Alberto Martins"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS08P",
+        "nome": "Física Experimental 3",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP53",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "K301",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "K301",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Henrique Cardozo Amorin"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP54",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "K301",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "K301",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Henrique Cardozo Amorin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS08S",
+        "nome": "Física Experimental 3",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS41",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M5",
+                "sala": "K301",
+                "sede": null
+              },
+              {
+                "horario": "3M6",
+                "sala": "K301",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jorge Alberto Martins"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GE90A",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM01",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ],
+              [
+                "Eng. Amb. E Sanit."
+              ],
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "K205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Alberto Ribas"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GE90B",
+        "nome": "Gestão Da Produção",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM01",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N3",
+                "sala": "K312",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "K312",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Luis Dalto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GE99A",
+        "nome": "Gestão Ambiental Industrial",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM91",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T5",
+                "sala": "K207",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "K207",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Montanhini Soares De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GE99B",
+        "nome": "Gestão De Sistemas De Qualidade",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM91",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "K312",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "K312",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Luis Dalto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HU67A",
+        "nome": "Ética, Profissão E Cidadania",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ME81",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "K214",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "K214",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Di Flora Garcia"
+            ],
+            "optativa_matrizes": [
+              "Matriz:48"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HU94N",
+        "nome": "Libras 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "A102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Antonio Alves"
+            ],
+            "optativa_matrizes": [
+              "Matriz:19"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HU99A",
+        "nome": "Ética Profissão E Cidadania",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T5",
+                "sala": "K207",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "K207",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Di Flora Garcia"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT002",
+        "nome": "Fundamentos De Cálculo Para Engenharia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM11",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "K308",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "K308",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "K308",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "K308",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Regina Sayuri Kainuma Yamada"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT008",
+        "nome": "Cálculo Diferencial E Integral 2b",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "B206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcele Tavares Mendes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT009",
+        "nome": "Equações Diferenciais Ordinárias",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "B204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Walmir Eno Pottker"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT010",
+        "nome": "Estatística Aplicada À Engenharia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM31",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "3M1",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "K305",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joelmir Andre Borssoi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT011",
+        "nome": "Cálculo Numérico",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM41",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "K107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Edson Luiz Valmorbida"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT012",
+        "nome": "Equações Diferenciais E Ordinárias",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP43",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "K207",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "K207",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "K206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Felipe Goncalves Carneiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT014",
+        "nome": "Cálculo Diferencial E Integral 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP33",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "K210",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "K210",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "K210",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "K210",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Felipe Goncalves Carneiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT03P",
+        "nome": "Geometria Analítica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP23",
+            "enquadramento": "Presencial",
+            "vagas_total": 49,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "K205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wellington Donizeti Previero"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT03T",
+        "nome": "Geometria Analítica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM21",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M3",
+                "sala": "K308",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "K308",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "K308",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Pricila Da Silva Barbosa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT06P",
+        "nome": "Cálculo Diferencial E Integral 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP23",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T5",
+                "sala": "K208",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "K208",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "K208",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "K208",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Regina Sayuri Kainuma Yamada"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT06S",
+        "nome": "Cálculo Diferencial E Integral 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M5",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "5M6",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "6M6",
+                "sala": "K206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Karina Alessandra Pessoa Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT08S",
+        "nome": "Cálculo Diferencial E Integral 2b",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M5",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "2M6",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "4M1",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "A106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cristiane Aparecida Pendeza Martinez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT09S",
+        "nome": "Equações Diferenciais Ordinárias",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M5",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "2M6",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "3M1",
+                "sala": "K203",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "K203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriana Helena Borssoi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "OP69B",
+        "nome": "Processo De Projeto Em Engenharia",
+        "creditos": 4,
+        "creditos_assincronos": 6,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ME51",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "6T2",
+                "sala": "B207",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "B207",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "B207",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B207",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B207",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B207",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Florian",
+              "Erico Daniel Ricardi Guerreiro",
+              "Haroldo Lhou Hasegawa"
+            ],
+            "optativa_matrizes": [
+              "Matriz:19",
+              "Matriz:30",
+              "Matriz:35",
+              "Matriz:48",
+              "Matriz:1"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OP98V",
+        "nome": "Polímeros Biodegradáveis",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM81",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "B204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elisangela Corradini"
+            ],
+            "optativa_matrizes": [
+              "Matriz:19"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPMA10",
+        "nome": "Introdução A Nanotecnologia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM81",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "B204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Arandi Ginane Bezerra Junior"
+            ],
+            "optativa_matrizes": [
+              "Matriz:64"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPMA19",
+        "nome": "Soldagem",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM81",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "B206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Andreato Batista Mendes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:64"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "QUI003",
+        "nome": "Fundamentos De Química",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM11",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "5M6",
+                "sala": "K205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elisangela Corradini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI015",
+        "nome": "Química Analítica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "K208",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "K208",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cleberson Cipriano De Paula"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI016",
+        "nome": "Química Analítica Experimental",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM31",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "B306",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "B306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cleberson Cipriano De Paula"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI017",
+        "nome": "Química Orgânica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "B206",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "A102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Fernando Cabeca"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI018",
+        "nome": "Química De Coordenação",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "K303",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "K303",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "K208",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "K208",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alessandra Stevanato"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EM22",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "K303",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "K303",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "K208",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "K208",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alessandra Stevanato"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TC90A",
+        "nome": "Trabalho De Conclusão De Curso 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TCC",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Raphael Euclides Prestes Salem"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TC99A",
+        "nome": "Tcc1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "7M4",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "B204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raphael Euclides Prestes Salem"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}
