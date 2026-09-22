@@ -4,6 +4,34 @@ Matrizes curriculares interativas: disciplinas obrigatórias, humanidades, optat
 pré-requisitos, período atual, atividades, importação de histórico em PDF e cartão
 de progresso. O site continua estático, sem backend ou framework obrigatório.
 
+## Licença
+
+O código original deste projeto, na medida em que seus direitos pertencem aos
+contribuidores, é licenciado sob [CC BY-SA 4.0](LICENSE). É permitido copiar,
+modificar e redistribuir o material, inclusive para fins comerciais, desde que
+se dê crédito aos contribuidores, sejam indicadas as alterações, esta licença
+seja incluída e adaptações compartilhadas sejam distribuídas sob a mesma licença.
+Consulte [CONTRIBUTORS.md](CONTRIBUTORS.md) e o histórico Git para os créditos.
+
+O projeto pode receber doações e financiamento voluntários, e a versão oficial
+manterá todas as funcionalidades acessíveis sem paywall, assinatura ou doação
+obrigatória. Essa é uma política do projeto oficial: a CC BY-SA 4.0 permite uso
+comercial e não impede, por si só, que terceiros cobrem pelo acesso a uma cópia
+hospedada. Ela exige que os direitos sobre o material licenciado e suas
+adaptações sejam mantidos nos termos da licença.
+
+A Creative Commons recomenda não usar suas licenças para software, pois elas não
+tratam especificamente da distribuição de código-fonte e de patentes. Esta
+licença foi escolhida para refletir os requisitos de atribuição e
+compartilhamento pela mesma licença deste projeto.
+
+A licença cobre somente o código original cujos direitos pertencem aos
+contribuidores. Ela não cobre materiais de terceiros ou conteúdo oficial da
+UTFPR, nem transfere direitos sobre marcas, patentes, imagem ou privacidade. Em
+particular, ficam fora do escopo `docs/`, `assets/matrizes/`, `assets/js/data/`,
+`data/portal-aluno/`, `assets/audio/` e `assets/imagens/`, além de qualquer
+conteúdo de terceiros incorporado em outros arquivos.
+
 ## Estrutura
 
 - `index.html` e `pages/`: conteúdo e estrutura das páginas; URLs existentes preservadas.
