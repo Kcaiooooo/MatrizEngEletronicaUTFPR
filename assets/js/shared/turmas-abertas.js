@@ -251,15 +251,18 @@ function selectionData(disciplina, turma, context = {}) {
 }
 
 function classMarkup(turma, disciplina, context = {}) {
-    const selection = selectionData(disciplina, turma, context);
+    const selection = context.selection || selectionData(disciplina, turma, context);
     state.displayedSelections.set(selection.key, selection);
     const schedule = (turma.horarios || []).map(horario => `${escapeHtml(horario.horario)}${horario.sala ? ` · ${escapeHtml(horario.sala)}` : ''}${horario.sede ? ` · ${escapeHtml(horario.sede)}` : ''}`).join(' · ') || 'Horário a definir';
     const teachers = (turma.professores || []).join(', ') || 'Professor a definir';
     const priorities = (turma.prioridade_cursos || []).flat().join(', ');
+    const offeredCourses = context.offerCourses?.length
+        ? `<br><strong>Encontrada nos cursos:</strong> ${context.offerCourses.map(escapeHtml).join(', ')}`
+        : '';
     const selected = state.selectedClasses.has(selection.key);
     return `<article class="gnh-class${selected ? ' gnh-class-selected' : ''}" data-class-key="${escapeHtml(selection.key)}" role="button" tabindex="0" aria-pressed="${selected}">
         <div class="gnh-class-line"><span class="gnh-class-code">Turma ${escapeHtml(turma.codigo)}</span><span class="gnh-tag">${escapeHtml(turma.enquadramento || 'Modalidade não informada')}</span><span class="gnh-tag">${escapeHtml(turma.vagas_total ?? '—')} vagas</span><span class="gnh-tag">Reserva: ${escapeHtml(turma.reserva || '—')}</span><span class="gnh-class-action">${selected ? 'No calendário' : 'Adicionar ao calendário'}</span></div>
-        <p class="gnh-class-detail"><strong>Horários:</strong> ${schedule}<br><strong>Professor(es):</strong> ${escapeHtml(teachers)}${priorities ? `<br><strong>Prioridade:</strong> ${escapeHtml(priorities)}` : ''}</p>
+        <p class="gnh-class-detail"><strong>Horários:</strong> ${schedule}<br><strong>Professor(es):</strong> ${escapeHtml(teachers)}${priorities ? `<br><strong>Prioridade:</strong> ${escapeHtml(priorities)}` : ''}${offeredCourses}</p>
     </article>`;
 }
 
@@ -289,25 +292,49 @@ function turmaMatchesScheduleFilter(turma, filter) {
     return (turma.horarios || []).some(horario => normalizeFilter(scheduleFilterText(horario)).includes(filter));
 }
 
-function disciplineMarkup(disciplina, context = {}) {
+function disciplineMatchesFilters(disciplina, context = {}) {
     const filters = context.filters || state.filters;
     const codeFilter = normalizeFilter(filters.code);
     const nameFilter = normalizeFilter(filters.name);
-    const scheduleFilter = normalizeFilter(filters.schedule);
     const equivalenceCodes = context.equivalenceCodes || new Set();
     const equivalenceNames = context.equivalenceNames || new Set();
     const disciplineCode = normalizeFilter(disciplina.codigo);
     const disciplineName = normalizeFilter(disciplina.nome);
-    if (codeFilter && !disciplineCode.includes(codeFilter) && !equivalenceCodes.has(disciplineCode)) return '';
-    if (nameFilter && !disciplineName.includes(nameFilter) && !equivalenceNames.has(disciplineName) && !equivalenceCodes.has(disciplineCode)) return '';
-    const turmas = (disciplina.turmas || []).filter(turma => turmaMatchesScheduleFilter(turma, scheduleFilter));
-    if (!turmas.length) return '';
+    if (codeFilter && !disciplineCode.includes(codeFilter) && !equivalenceCodes.has(disciplineCode)) return false;
+    if (nameFilter && !disciplineName.includes(nameFilter) && !equivalenceNames.has(disciplineName) && !equivalenceCodes.has(disciplineCode)) return false;
+    return true;
+}
+
+function disciplineMarkup(disciplina, context = {}) {
+    if (!disciplineMatchesFilters(disciplina, context)) return '';
+    const scheduleFilter = normalizeFilter((context.filters || state.filters).schedule);
+    const offers = context.offers || (disciplina.turmas || [])
+        .filter(turma => turmaMatchesScheduleFilter(turma, scheduleFilter))
+        .map(turma => ({ turma, entry: context.entry, courseNames: [] }));
+    if (!offers.length) return '';
     const credits = disciplina.creditos === null || disciplina.creditos === undefined ? '—' : `${disciplina.creditos} cr.`;
-    const courseLabel = context.crossCampus ? `<span class="gnh-discipline-course">${escapeHtml(context.entry.courseName || context.entry.sourceName || context.entry.courseId)}</span>` : '';
+    const courseCount = new Set(offers.flatMap(offer => offer.courseNames || [])).size;
+    const courseLabel = context.crossCampus ? `<span class="gnh-discipline-course">${courseCount} curso(s)</span>` : '';
     return `<details class="gnh-discipline">
-        <summary><span class="gnh-discipline-code">${escapeHtml(disciplina.codigo)}</span><span class="gnh-discipline-name">${escapeHtml(disciplina.nome)}</span>${courseLabel}<span class="gnh-discipline-meta">${escapeHtml(credits)} · ${turmas.length} turma(s)</span></summary>
-        <div class="gnh-class-list">${turmas.map(turma => classMarkup(turma, disciplina, context)).join('')}</div>
+        <summary><span class="gnh-discipline-code">${escapeHtml(disciplina.codigo)}</span><span class="gnh-discipline-name">${escapeHtml(disciplina.nome)}</span>${courseLabel}<span class="gnh-discipline-meta">${escapeHtml(credits)} · ${offers.length} turma(s)</span></summary>
+        <div class="gnh-class-list">${offers.map(offer => classMarkup(offer.turma, disciplina, {
+            ...context,
+            entry: offer.entry || context.entry,
+            selection: offer.selection,
+            offerCourses: offer.courseNames,
+        })).join('')}</div>
     </details>`;
+}
+
+function crossCampusOfferKey(disciplina, turma) {
+    const schedules = (turma.horarios || [])
+        .map(item => normalizeFilter(item.horario))
+        .sort((a, b) => a.localeCompare(b));
+    return JSON.stringify([
+        normalizeFilter(disciplina.codigo || disciplina.disciplineCode),
+        normalizeFilter(turma.codigo || turma.turmaCode),
+        schedules,
+    ]);
 }
 
 function parseHorario(value) {
@@ -735,13 +762,51 @@ async function renderCrossCampusResults() {
             campusName: currentCampus()?.name || '',
         };
         state.displayedSelections.clear();
-        const markup = courseSnapshots
+        const scheduleFilter = normalizeFilter(state.filters.schedule);
+        const groupedDisciplines = new Map();
+        courseSnapshots
             .sort((a, b) => String(a.entry.courseName || a.entry.sourceName || '').localeCompare(String(b.entry.courseName || b.entry.sourceName || ''), 'pt-BR'))
-            .flatMap(({ entry, snapshot }) => (snapshot.payload.disciplinas || []).map(disciplina => disciplineMarkup(disciplina, { ...contextBase, entry })))
-            .filter(Boolean)
-            .join('');
+            .forEach(({ entry, snapshot }) => {
+                const courseName = entry.courseName || entry.sourceName || entry.courseId;
+                for (const disciplina of snapshot.payload.disciplinas || []) {
+                    if (!disciplineMatchesFilters(disciplina, contextBase)) continue;
+                    const turmas = (disciplina.turmas || []).filter(turma => turmaMatchesScheduleFilter(turma, scheduleFilter));
+                    if (!turmas.length) continue;
+                    const disciplineKey = `${normalizeFilter(disciplina.codigo)}|${normalizeFilter(disciplina.nome)}`;
+                    let group = groupedDisciplines.get(disciplineKey);
+                    if (!group) {
+                        group = { disciplina, entry, offers: new Map() };
+                        groupedDisciplines.set(disciplineKey, group);
+                    }
+                    for (const turma of turmas) {
+                        const offerKey = crossCampusOfferKey(disciplina, turma);
+                        let offer = group.offers.get(offerKey);
+                        if (!offer) {
+                            offer = { turma, entry, courseNames: new Set() };
+                            group.offers.set(offerKey, offer);
+                        }
+                        offer.courseNames.add(courseName);
+                    }
+                }
+            });
+        const disciplineGroups = [...groupedDisciplines.values()];
+        const markup = disciplineGroups.map(group => {
+            const offers = [...group.offers.values()].map(offer => ({
+                ...offer,
+                courseNames: [...offer.courseNames].sort((a, b) => a.localeCompare(b, 'pt-BR')),
+                selection: [...state.selectedClasses.values()].find(selection => selection.semester === state.catalog.semester
+                    && selection.campusId === group.entry.campusId
+                    && crossCampusOfferKey(selection, selection) === crossCampusOfferKey(group.disciplina, offer.turma)),
+            }));
+            return disciplineMarkup(group.disciplina, {
+                ...contextBase,
+                entry: group.entry,
+                offers,
+            });
+        }).join('');
         $('#disciplines-list').innerHTML = markup || '<p class="gnh-muted">Nenhuma matéria ou equivalente foi encontrada nos cursos deste câmpus.</p>';
-        $('#discipline-count').textContent = `${document.querySelectorAll('#disciplines-list .gnh-discipline').length} resultado(s) em todos os cursos do câmpus`;
+        const uniqueClasses = disciplineGroups.reduce((total, group) => total + group.offers.size, 0);
+        $('#discipline-count').textContent = `${disciplineGroups.length} matéria(s) · ${uniqueClasses} turma(s) únicas em todos os cursos do câmpus`;
     } catch (error) {
         if (requestId !== state.crossCampusRequestId) return;
         $('#disciplines-list').innerHTML = `<p class="gnh-muted">Não foi possível pesquisar os outros cursos: ${escapeHtml(error.message)}</p>`;
