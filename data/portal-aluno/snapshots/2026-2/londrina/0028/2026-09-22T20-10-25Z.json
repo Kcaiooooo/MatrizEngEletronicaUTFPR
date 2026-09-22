@@ -1,0 +1,4815 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-22T20-10-25Z",
+  "capturedAt": "2026-09-22T20:10:25.307Z",
+  "sourceLastUpdatedAt": "22/09/2026 17:12:18   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "londrina",
+    "name": "Londrina",
+    "code": "08"
+  },
+  "course": {
+    "id": "0028",
+    "name": "Eng Química",
+    "sourceName": "ENG QUÍMICA"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=28"
+  },
+  "fingerprint": "ab4d2dab3f058b4eb4881fc4d519145f28cd27c6fd8be33c8d1d365e90cd7736",
+  "previousVersionId": "2026-09-19T20-29-03Z",
+  "changes": [
+    {
+      "type": "removed",
+      "codigo": "HU67A",
+      "nome": "Ética, Profissão E Cidadania"
+    },
+    {
+      "type": "removed",
+      "codigo": "HU99A",
+      "nome": "Ética Profissão E Cidadania"
+    },
+    {
+      "type": "removed",
+      "codigo": "MAT07P",
+      "nome": "Álgebra Linear"
+    },
+    {
+      "type": "removed",
+      "codigo": "MAT07S",
+      "nome": "Álgebra Linear"
+    },
+    {
+      "type": "removed",
+      "codigo": "MAT71Q",
+      "nome": "Álgebra Linear"
+    }
+  ],
+  "payload": {
+    "curso": "ENG QUÍMICA",
+    "ultima_atualizacao": "22/09/2026 17:12:18   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "CHS007",
+        "nome": "Estudos Étnicos E Raciais",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "K206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Di Flora Garcia"
+            ],
+            "optativa_matrizes": [
+              "Matriz:60"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CHS041Q",
+        "nome": "Comunicação Oral E Estratégica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "K312",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "K312",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alcioni Galdino Vieira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CHS05M",
+        "nome": "Libras 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ME41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T5",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "K305",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Antonio Alves"
+            ],
+            "optativa_matrizes": [
+              "Matriz:63"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CHS05T",
+        "nome": "Libras 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T5",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "B204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Antonio Alves"
+            ],
+            "optativa_matrizes": [
+              "Matriz:64"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CHS06P",
+        "nome": "Libras 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP23",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "K205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Antonio Alves"
+            ],
+            "optativa_matrizes": [
+              "Matriz:61"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CHS07T",
+        "nome": "Estudos Étnicos E Raciais",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM21",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T5",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "A106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Di Flora Garcia"
+            ],
+            "optativa_matrizes": [
+              "Matriz:64"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CHS09P",
+        "nome": "Estudos Sociais De Ciência E Tecnologia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP23",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "K205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alcioni Galdino Vieira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:61"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CHS110",
+        "nome": "Interpretação E Produção De Textos Científicos E Profissionais Na Engenharia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ11",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "K212",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alessandra Dutra Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEC071",
+        "nome": "Introdução A Lógica De Programação",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ21",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "K109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Silvio Ricardo Rodrigues Sanches"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EQ22",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "K109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Silvio Ricardo Rodrigues Sanches"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENP033",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ81",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T5",
+                "sala": "K214",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "K214",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabiano Palhares Galao"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ005",
+        "nome": "Propriedades Físico-Químicas E Biológicas Da Matéria",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 75,
+        "turmas": [
+          {
+            "codigo": "EQ31",
+            "enquadramento": "Presencial",
+            "vagas_total": 31,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "K214",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "K214",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "K214",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucimara Lopes Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EQ32",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "K211",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "K211",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "K211",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucimara Lopes Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ006",
+        "nome": "Balanços Materiais Aplicados À Indústria",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "K205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jaime Eduardo Navarrete Rodriguez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ007",
+        "nome": "Termodinâmica De Substâncias Puras",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ41",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "K211",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "K211",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "K211",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "K211",
+                "sede": null
+              },
+              {
+                "horario": "6M1",
+                "sala": "K211",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "K211",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago Leandro De Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ008",
+        "nome": "Termodinâmica De Misturas",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "K210",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "K210",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "K214",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "K214",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago Leandro De Souza"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SH51",
+            "enquadramento": "Presencial",
+            "vagas_total": 2,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Thiago Leandro De Souza"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SPO51",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Thiago Leandro De Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ009",
+        "nome": "Cálculo Numérico Computacional",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ51",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "4T1",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "K107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Guilherme Duenhas Machado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ010",
+        "nome": "Fenômeno De Transferência De Momento",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "K203",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "K203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sidmara Bedin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ011",
+        "nome": "Comportamento Mecânico Dos Sólidos",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ51",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "K203",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "K203",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "K203",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "K203",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "K203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joel Fernando Nicoleti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ012",
+        "nome": "Bioengenharia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ51",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "K214",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "K214",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucimara Lopes Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ013",
+        "nome": "Certificadora 1: Estudos De Caso De Engenharia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "K309",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "K309",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "K309",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago Leandro De Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ014",
+        "nome": "Equilíbrio De Fases Em Sistemas Multicomponentes",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ61",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "K107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Guilherme Duenhas Machado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ015",
+        "nome": "Fenômeno De Transferência De Calor",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ61",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "K306",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "K306",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "K306",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "K306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Maria Da Cruz Ferrari"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SH61",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Ana Maria Da Cruz Ferrari"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ016",
+        "nome": "Laboratório Integrado De Fenômenos E Operações Unitárias",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ61",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "T008",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "T008",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "T008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Silvia Priscila Dias Monte Blanco"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ017",
+        "nome": "Operações Unitárias Para Separação Mecânica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ61",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "K113",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "K107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Silvia Priscila Dias Monte Blanco"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ018",
+        "nome": "Catálise E Cinética De Processos Industriais",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ61",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "K306",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "K306",
+                "sede": null
+              },
+              {
+                "horario": "2M6",
+                "sala": "K306",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "K306",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "K306",
+                "sede": null
+              },
+              {
+                "horario": "5M6",
+                "sala": "K306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Maria Da Cruz Ferrari"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SH61",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Ana Maria Da Cruz Ferrari"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SPO61",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Ana Maria Da Cruz Ferrari"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ019",
+        "nome": "Eletrotécnica Aplicada À Engenharia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ61",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "T106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jaime Eduardo Navarrete Rodriguez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ020",
+        "nome": "Fenômeno De Transferência De Massa",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ71",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "6T1",
+                "sala": "K214",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "K214",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Pricila Marin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ021",
+        "nome": "Operações Unitárias Para Transferência De Calor",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ71",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "K207",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "K207",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "K207",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joel Fernando Nicoleti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ022",
+        "nome": "Reatores Químicos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ71",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "K109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Patricia Hissae Yassue Cordeiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ023",
+        "nome": "Reatores Bioquímicos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ71",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "K214",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "K214",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "K214",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucimara Lopes Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ024",
+        "nome": "Laboratório Integrado De Reatores Químicos E Bioquímicos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ71",
+            "enquadramento": "Presencial",
+            "vagas_total": 12,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "T001",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "T001",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "T001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Patricia Hissae Yassue Cordeiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ025",
+        "nome": "Gerenciamento De Resíduos Industriais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "EQ71",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "S004",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "S004",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "S004",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "K214",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Silvia Priscila Dias Monte Blanco"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ026",
+        "nome": "Certificadora 3: Projetos De Equipamentos Na Indústria",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ71",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "K109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sidmara Bedin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ027",
+        "nome": "Operações Unitárias Para Transferência De Massa",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ81",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "T106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Pricila Marin",
+              "Silvia Priscila Dias Monte Blanco"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ028",
+        "nome": "Operações Unitárias Para Transferência De Calor E Massa",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ81",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "K107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Guilherme Duenhas Machado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ029",
+        "nome": "Laboratório Integrado De Operações Unitárias E Simulação",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ82",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "T005",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "T005",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "T005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Pricila Marin",
+              "Felipi Luiz De Assuncao Bezerra",
+              "Sidmara Bedin"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EQ83",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "T005",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "T005",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "T005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Pricila Marin",
+              "Felipi Luiz De Assuncao Bezerra",
+              "Sidmara Bedin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ030",
+        "nome": "Modelagem, Simulação E Otimização De Processos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ81",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "T106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Admilson Lopes Vieira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ031",
+        "nome": "Projetos De Instalações Industriais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ81",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "K209",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Larissa Maria Fernandes Gatti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ032",
+        "nome": "Certificadora 4: Desafios Da Engenharia",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 90,
+        "turmas": [
+          {
+            "codigo": "EQ81",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M4",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "7M2",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "7M2",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "7M3",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "7M3",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "K209",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lisandra Ferreira De Lima",
+              "Daniel Guerrini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ100",
+        "nome": "Princípios De Engenharia Química",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ11",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "T106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lisandra Ferreira De Lima"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ201",
+        "nome": "Introdução Ao Laboratório De Química",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ11",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 22,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "K009",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "K009",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alesandro Bail"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EQ12",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 22,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "K009",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "K009",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alesandro Bail"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ301",
+        "nome": "Desenho Técnico Para Engenharia Química",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ11",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M2",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "T106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Felipi Luiz De Assuncao Bezerra"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENQ401",
+        "nome": "Processos Industriais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 45,
+        "turmas": [
+          {
+            "codigo": "EQ23",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "K102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Larissa Maria Fernandes Gatti"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EQ24",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "T106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Larissa Maria Fernandes Gatti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EQ64A",
+        "nome": "Termodinâmica Clássica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IN51",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Thiago Leandro De Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EQ67C",
+        "nome": "Laboratório Tecnológico De Engenharia Química 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DP71",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M2",
+                "sala": "T008",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "T008",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "T008",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "T008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sidmara Bedin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EQ68A",
+        "nome": "Laboratório Tecnológico De Engenharia Química 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DP81",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "T001",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "T001",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "T001",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "T001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Patricia Hissae Yassue Cordeiro",
+              "Felipi Luiz De Assuncao Bezerra"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EQ68C",
+        "nome": "Controle De Processos E Instrumentação",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DP81",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "T106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jaime Eduardo Navarrete Rodriguez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EQ68E",
+        "nome": "Reatores Químicos E Bioquímicos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DP81",
+            "enquadramento": "Presencial",
+            "vagas_total": 18,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "K109",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "K109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Patricia Hissae Yassue Cordeiro"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SH81",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Patricia Hissae Yassue Cordeiro"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SPO81",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Patricia Hissae Yassue Cordeiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EQ69A",
+        "nome": "Engenharia De Processos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ91",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T5",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "T106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Admilson Lopes Vieira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EQ69C",
+        "nome": "Projetos Industriais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ91",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "3N1",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "T106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lisandra Ferreira De Lima",
+              "Admilson Lopes Vieira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS002",
+        "nome": "Fenômenos Físicos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DP11",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "K304",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "K304",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcos Roberto Rossini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS010",
+        "nome": "Física 2",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP43",
+            "enquadramento": "Presencial",
+            "vagas_total": 48,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "K207",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "K207",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "K207",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Matheus Lucas Gumieri Pereira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS011",
+        "nome": "Física 3",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP53",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "K209",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "K209",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Henrique Cardozo Amorin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS014",
+        "nome": "Fundamentos De Ondas, Fluidos E Termodinâmica Para Engenharia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "K206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernando Da Silva Alves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS014",
+        "nome": "Fundamentos De Ondas, Fluidos E Termodinâmica Para Engenharia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "K206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernando Da Silva Alves"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS015",
+        "nome": "Experimentos De Ondas, Fluidos E Termologia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ31",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "K204",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "K204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Admir Creso De Lima Targino"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EQ32",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "K204",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "K204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Admir Creso De Lima Targino"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS016",
+        "nome": "Fundamentos De Eletromagnetismo Para Engenharia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "K211",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "K211",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "K211",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jorge Alberto Martins"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS016",
+        "nome": "Fundamentos De Eletromagnetismo Para Engenharia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "K211",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "K211",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "K211",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jorge Alberto Martins"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS017",
+        "nome": "Experimentos De Fenômenos Eletromagnéticos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ41",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "K301",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "K301",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Kleber Eiti Yamaguti"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EQ42",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "K301",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "K301",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Kleber Eiti Yamaguti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS04P",
+        "nome": "Física Experimental 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP33",
+            "enquadramento": "Presencial",
+            "vagas_total": 26,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "K201",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "K201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Sergio De Camargo Filho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS06P",
+        "nome": "Física Experimental 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP43",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "K204",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "K204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Matheus Lucas Gumieri Pereira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP44",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "K204",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "K204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Matheus Lucas Gumieri Pereira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS07S",
+        "nome": "Física 3 Fundamentos Do Eletromagnetismo",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS41",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "A102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jorge Alberto Martins"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS08P",
+        "nome": "Física Experimental 3",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP53",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "K301",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "K301",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Henrique Cardozo Amorin"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP54",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "K301",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "K301",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Henrique Cardozo Amorin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS08S",
+        "nome": "Física Experimental 3",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS41",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M5",
+                "sala": "K301",
+                "sede": null
+              },
+              {
+                "horario": "3M6",
+                "sala": "K301",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jorge Alberto Martins"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS121",
+        "nome": "Fundamentos De Cinemática E Dinâmica Para Engenharia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ12",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 22,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "K304",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "K304",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcos Roberto Rossini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS121",
+        "nome": "Fundamentos De Cinemática E Dinâmica Para Engenharia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ21",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "3M6",
+                "sala": "K212",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alcides Goya"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS131",
+        "nome": "Experimentos E Aplicações De Cinemática E Dinâmica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ21",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "K201",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "K201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alcides Goya"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EQ22",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "K201",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "K201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alcides Goya"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS201",
+        "nome": "Fenômenos Físicos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ11",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 22,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "K304",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "K304",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcos Roberto Rossini"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EQ12",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 22,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "K304",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "K304",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcos Roberto Rossini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GE66B",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ93",
+            "enquadramento": "Presencial",
+            "vagas_total": 17,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ],
+              [
+                "Eng. Amb. E Sanit."
+              ],
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T5",
+                "sala": "K214",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "K214",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabiano Palhares Galao"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GE69A",
+        "nome": "Engenharia Econômica E Finanças",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ91",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "T106",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "K306",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "K306",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Angelo Ferreira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GE90A",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM01",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ],
+              [
+                "Eng. Amb. E Sanit."
+              ],
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "K205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Alberto Ribas"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HU94N",
+        "nome": "Libras 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "A102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Antonio Alves"
+            ],
+            "optativa_matrizes": [
+              "Matriz:19"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MAT014",
+        "nome": "Cálculo Diferencial E Integral 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP33",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "K210",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "K210",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "K210",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "K210",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Felipe Goncalves Carneiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT016",
+        "nome": "Matemática Multivariada",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "K205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Manuel Francisco Zuloeta Jimenez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT017",
+        "nome": "Cálculo Multivariado E Vetorial De Funções",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M5",
+                "sala": "K211",
+                "sede": null
+              },
+              {
+                "horario": "3M6",
+                "sala": "K211",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "K211",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "K211",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cristiane Aparecida Pendeza Martinez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT018",
+        "nome": "Equações Diferenciais Para Engenharia",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "K211",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "K211",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "K211",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "K211",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "K211",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Walmir Eno Pottker"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT03P",
+        "nome": "Geometria Analítica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP23",
+            "enquadramento": "Presencial",
+            "vagas_total": 49,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "K205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wellington Donizeti Previero"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT06P",
+        "nome": "Cálculo Diferencial E Integral 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP23",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T5",
+                "sala": "K208",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "K208",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "K208",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "K208",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Regina Sayuri Kainuma Yamada"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT06S",
+        "nome": "Cálculo Diferencial E Integral 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M5",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "5M6",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "6M6",
+                "sala": "K206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Karina Alessandra Pessoa Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT08S",
+        "nome": "Cálculo Diferencial E Integral 2b",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M5",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "2M6",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "4M1",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "A106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cristiane Aparecida Pendeza Martinez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT10Q",
+        "nome": "Estatística Aplicada À Engenharia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "K211",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "K211",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "K211",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "K211",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Patricia Stulp Waldhauer"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT151",
+        "nome": "Matemática Da Variação",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "K212",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andre Luis Trevisan"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT201",
+        "nome": "Fundamentos De Cálculo Para Engenharia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ11",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "K212",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Felipe Goncalves Carneiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT301",
+        "nome": "Geometria Analítica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ11",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T3",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "K212",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Pricila Da Silva Barbosa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "OP69B",
+        "nome": "Processo De Projeto Em Engenharia",
+        "creditos": 4,
+        "creditos_assincronos": 6,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ME51",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "6T2",
+                "sala": "B207",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "B207",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "B207",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B207",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B207",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B207",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Florian",
+              "Erico Daniel Ricardi Guerreiro",
+              "Haroldo Lhou Hasegawa"
+            ],
+            "optativa_matrizes": [
+              "Matriz:19",
+              "Matriz:30",
+              "Matriz:35",
+              "Matriz:48",
+              "Matriz:1"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "QM66A",
+        "nome": "Físico Química 4",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DP61",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "K307",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "K307",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcos Roberto Rossini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI020",
+        "nome": "Química Orgânica Dos Compostos Carbonilados E Nitrogenados",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "K203",
+                "sede": null
+              },
+              {
+                "horario": "6M6",
+                "sala": "K203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabio Vandresen"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI021",
+        "nome": "Preparação De Produtos Orgânicos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ31",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "K008",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "K008",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "K008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabio Vandresen"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI022",
+        "nome": "Fundamentos De Físico-Química",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ31",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "K205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alexei Lorenzetti Novaes Pinheiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI022",
+        "nome": "Fundamentos De Físico-Química",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ31",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "K205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alexei Lorenzetti Novaes Pinheiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI023",
+        "nome": "Métodos Clássicos De Análise Química",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ41",
+            "enquadramento": "Presencial",
+            "vagas_total": 26,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T2",
+                "sala": "K010",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "K010",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "K010",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Julliana Izabelle Simionato Stipp"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EQ42",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T2",
+                "sala": "K009",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "K009",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "K009",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Natalia Mariana Monezi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI024",
+        "nome": "Fundamentos De Química Analítica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "K211",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "K211",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "K211",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Julliana Izabelle Simionato Stipp"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI024",
+        "nome": "Fundamentos De Química Analítica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "K211",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "K211",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "K211",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Julliana Izabelle Simionato Stipp"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI025",
+        "nome": "Certificadora 2: Métodos Instrumentais De Análise Química",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ61",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "K010",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "K010",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "K010",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "K305",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Julliana Izabelle Simionato Stipp"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI191",
+        "nome": "Química Dos Compostos Orgânicos",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ21",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "6M6",
+                "sala": "K212",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Isabel Craveiro Moreira Andrei"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI701",
+        "nome": "Química Da Matéria",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ11",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 44,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "K212",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabio Cezar Ferreira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TC60C",
+        "nome": "Trabalho De Conclusão De Curso 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TCC",
+            "enquadramento": "Presencial",
+            "vagas_total": 100,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Larissa Maria Fernandes Gatti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TC69C",
+        "nome": "Trabalho De Conclusão De Curso 1",
+        "creditos": 8.666666666666668e+37,
+        "creditos_assincronos": 1.3333333333333333e+39,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ91",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "K309",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "K309",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Larissa Maria Fernandes Gatti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

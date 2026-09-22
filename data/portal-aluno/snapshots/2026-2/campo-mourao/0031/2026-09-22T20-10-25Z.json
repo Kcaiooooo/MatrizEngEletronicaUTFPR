@@ -1,0 +1,5800 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-22T20-10-25Z",
+  "capturedAt": "2026-09-22T20:10:25.307Z",
+  "sourceLastUpdatedAt": "22/09/2026 17:10:42   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "campo-mourao",
+    "name": "Campo Mourão",
+    "code": "03"
+  },
+  "course": {
+    "id": "0031",
+    "name": "Eng Eletrônica",
+    "sourceName": "ENG ELETRÔNICA"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=31"
+  },
+  "fingerprint": "7b99531ce0fbad3e55a3210f29f80923544e92ad08d781f70da32e15cd0d7f30",
+  "previousVersionId": "2026-09-22T20-03-09Z",
+  "changes": [
+    {
+      "type": "removed",
+      "codigo": "EC32O",
+      "nome": "Ética E Sustentabilidade"
+    },
+    {
+      "type": "changed",
+      "codigo": "NCM004",
+      "nome": "Cálculo Diferencial E Integral 1",
+      "fields": [
+        "turmas[4].codigo",
+        "turmas[4].horarios[0].horario",
+        "turmas[4].horarios[0].sala",
+        "turmas[4].horarios[1].horario",
+        "turmas[4].horarios[1].sala",
+        "turmas[4].horarios[2].horario",
+        "turmas[4].horarios[2].sala",
+        "turmas[4].horarios[3].horario",
+        "turmas[4].horarios[3].sala",
+        "turmas[4].prioridade_cursos[0][0]",
+        "turmas[4].professores[0]",
+        "turmas[5].codigo",
+        "turmas[5].horarios[0].horario",
+        "turmas[5].horarios[0].sala",
+        "turmas[5].horarios[1].horario",
+        "turmas[5].horarios[1].sala",
+        "turmas[5].horarios[2].horario",
+        "turmas[5].horarios[2].sala",
+        "turmas[5].horarios[3].horario",
+        "turmas[5].horarios[3].sala",
+        "turmas[5].prioridade_cursos[0][0]",
+        "turmas[5].professores[0]",
+        "turmas[5].vagas_total",
+        "turmas[6].codigo",
+        "turmas[6].horarios[0].sala",
+        "turmas[6].horarios[1].sala",
+        "turmas[6].horarios[2].horario",
+        "turmas[6].horarios[2].sala",
+        "turmas[6].horarios[3].horario",
+        "turmas[6].horarios[3].sala",
+        "turmas[6].prioridade_cursos[0][0]",
+        "turmas[6].professores[0]",
+        "turmas[6].vagas_total",
+        "turmas[7]",
+        "turmas[8]",
+        "turmas[9]",
+        "turmas[10]"
+      ]
+    },
+    {
+      "type": "added",
+      "codigo": "NCM005",
+      "nome": "Cálculo Diferencial E Integral 2"
+    },
+    {
+      "type": "changed",
+      "codigo": "NCM012",
+      "nome": "Física 1",
+      "fields": [
+        "turmas[0].horarios[0].horario",
+        "turmas[0].horarios[0].sala",
+        "turmas[0].horarios[1]",
+        "turmas[0].horarios[2]",
+        "turmas[0].horarios[3]",
+        "turmas[0].horarios[4]",
+        "turmas[0].optativa_matrizes[0]",
+        "turmas[0].prioridade_cursos[0]",
+        "turmas[0].professores[0]",
+        "turmas[1]",
+        "turmas[2]",
+        "turmas[3]",
+        "turmas[4]",
+        "turmas[5]"
+      ]
+    }
+  ],
+  "payload": {
+    "curso": "ENG ELETRÔNICA",
+    "ultima_atualizacao": "22/09/2026 17:10:42   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "ALM35A",
+        "nome": "Gestão Da Produção",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "NA5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "D108",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "D108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Guelbert"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ECV8007",
+        "nome": "Trabalho De Conclusão De Curso 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ID8A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T4",
+                "sala": "F101",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "F101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vera Lucia Barradas Moreira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL1001",
+        "nome": "Fundamentos Da Engenharia Eletrônica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 27,
+            "vagas_calouros": 11,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "B102",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "B004",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "B004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Wilhelm Krauss Martinez"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IL1B",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 3,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "B102",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "B004",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "B004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Wilhelm Krauss Martinez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL1001",
+        "nome": "Fundamentos Da Engenharia Eletrônica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 27,
+            "vagas_calouros": 11,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "B102",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "B004",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "B004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Wilhelm Krauss Martinez"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IL1B",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 3,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "B102",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "B004",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "B004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Wilhelm Krauss Martinez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL1002",
+        "nome": "Introdução A Algoritmos E Programação",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 36,
+            "vagas_calouros": 11,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "B102",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "B001",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "B001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucas Ricken Garcia"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL1003",
+        "nome": "Introdução A Projetos",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 11,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "B102",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "B102",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "B001",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "B001",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "B102",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "B102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sandra Elis Aleixo",
+              "Henrique Cunha Carvalho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL1004",
+        "nome": "Desafio Interdisciplinar",
+        "creditos": 0,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 74,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Lucas Ricken Garcia"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL2001",
+        "nome": "Tópicos Em Química",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "D105",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "D105",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "B107",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "B107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Nelson Consolin Filho"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IL2B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "D105",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "D105",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "B107",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "B107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Nelson Consolin Filho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL2002",
+        "nome": "Programação Estruturada",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "E100",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "E100",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "E007",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "E007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vinicius Bosa Petris"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IL2B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "E100",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "E100",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "B107",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "B107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vinicius Bosa Petris"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL2003",
+        "nome": "Circuitos Digitais Combinacionais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "B001",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "B001",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "B001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucas Ricken Garcia"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IL2B",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "B001",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "B001",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "B001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucas Ricken Garcia"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL3001",
+        "nome": "Estrutura De Dados",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "E102",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "E102",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "E001",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "E001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vinicius Bosa Petris"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL3002",
+        "nome": "Circuitos Digitais Sequenciais",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "B005",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "B005",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "B005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Rodrigues Da Cunha"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL3003",
+        "nome": "Análise De Circuitos Elétricos 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 27,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "B106",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "B106",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "B004",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "B004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Pamela De Souza Schiaber"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL3004",
+        "nome": "Dispositivos Eletrônicos",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "B009",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "B009",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "B009",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mateus Henrique Roskosz Moran"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL4001",
+        "nome": "Fundamentos De Mecânica Dos Corpos Rígidos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "B105",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "B105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Angelo Giovanni Bonfim Corelhano"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL4001",
+        "nome": "Fundamentos De Mecânica Dos Corpos Rígidos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "B105",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "B105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Angelo Giovanni Bonfim Corelhano"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL4002",
+        "nome": "Fundamentos De Fenômenos De Transporte",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "B105",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "B105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leonardo Da Silva Tomadon"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL4002",
+        "nome": "Fundamentos De Fenômenos De Transporte",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "B105",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "B105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leonardo Da Silva Tomadon"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL4003",
+        "nome": "Microcontroladores 1",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "B006",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "B006",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "B006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eduardo Giometti Bertogna"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL4004",
+        "nome": "Introdução A Redes De Computadores",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "F102",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "F102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Willian Marques Freire"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL4005",
+        "nome": "Análise De Circuitos Elétricos 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "B005",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "B005",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "B009",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "B009",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Pamela De Souza Schiaber"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL4006",
+        "nome": "Circuitos Eletrônicos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "B004",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "B004",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "B004",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "B004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mateus Henrique Roskosz Moran"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL4007",
+        "nome": "Dispositivos Eletrônicos De Potência",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "B009",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "B009",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago Simoes Dias"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL5001",
+        "nome": "Microcontroladores 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "B005",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "B005",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "B005",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "B005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eduardo Giometti Bertogna"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL5002",
+        "nome": "Eletromagnetismo",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "B107",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "B107",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "B107",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "B107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Nanni"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL5003",
+        "nome": "Amplificadores",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "B004",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "B004",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "B004",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "B004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andre Luiz Regis Monteiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL5004",
+        "nome": "Filtragem Analógica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "B004",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "B004",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "B004",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "B004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andre Luiz Regis Monteiro",
+              "Osmar Tormena Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL5005",
+        "nome": "Sensores E Atuadores",
+        "creditos": 9.333333333333333e+37,
+        "creditos_assincronos": 6.6666666666666665e+38,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "B005",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "B005",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "B005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Osmar Tormena Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL5006",
+        "nome": "Modelagem De Sistemas Físicos",
+        "creditos": 9.333333333333333e+37,
+        "creditos_assincronos": 6.6666666666666665e+38,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "B001",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "B001",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "B001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Flavio Luiz Rossini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL6001",
+        "nome": "Programação Orientada A Objetos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL6A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "E100",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "E100",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "E102",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "E102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Michel Gomes De Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL6002",
+        "nome": "Processamento Digital De Sinais 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL6A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "B005",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "B005",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "B005",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "B005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Osmar Tormena Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL6003",
+        "nome": "Eletrônica De Potência",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL6A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "B005",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "B005",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "B009",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "B009",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago Simoes Dias"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL6004",
+        "nome": "Máquinas Elétricas",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL6A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "B009",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "B009",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "B009",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Nanni"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL6005",
+        "nome": "Fundamentos De Controle Clássico",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL6A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "B005",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "B005",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "B005",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "B005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leandro Castilho Brolin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL6005",
+        "nome": "Fundamentos De Controle Clássico",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL6A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "B005",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "B005",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "B005",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "B005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leandro Castilho Brolin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL6006",
+        "nome": "Projetos Eletrônicos 1",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL6A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "B104",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "B104",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "B104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Flavio Luiz Rossini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL7001",
+        "nome": "Técnicas De Controle Digital",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL7A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "B006",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "B006",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "B006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Flavio Luiz Rossini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL7002",
+        "nome": "Sistemas Supervisórios",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL7A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "B009",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "B009",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "B009",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leandro Castilho Brolin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL8001",
+        "nome": "Telecomunicações",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL8A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "B002",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "B002",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "B002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Wilhelm Krauss Martinez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EEL8002",
+        "nome": "Projeto De Circuitos Integrados",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL8A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "B002",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "B002",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "B002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leonardo Faria Costa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HUM001",
+        "nome": "Filosofia Da Ciência E Da Tecnologia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "D108",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "D108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Frederico Lopes De Oliveira Diehl"
+            ],
+            "optativa_matrizes": [
+              "Matriz:93",
+              "Matriz:84",
+              "Matriz:91",
+              "Matriz:89",
+              "Matriz:85",
+              "Matriz:87",
+              "Matriz:86",
+              "Matriz:88"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HUM002",
+        "nome": "Fundamentos Da Ética",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "F109",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "F109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Frederico Lopes De Oliveira Diehl"
+            ],
+            "optativa_matrizes": [
+              "Matriz:93",
+              "Matriz:84",
+              "Matriz:91",
+              "Matriz:85",
+              "Matriz:86",
+              "Matriz:88"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HUM002",
+        "nome": "Fundamentos Da Ética",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "F109",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "F109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Frederico Lopes De Oliveira Diehl"
+            ],
+            "optativa_matrizes": [
+              "Matriz:93",
+              "Matriz:84",
+              "Matriz:91",
+              "Matriz:85",
+              "Matriz:86",
+              "Matriz:88"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HUM003",
+        "nome": "História E Cultura Afro-Brasileira",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "D105",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "D105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alex Sandro De Medeiros"
+            ],
+            "optativa_matrizes": [
+              "Matriz:93",
+              "Matriz:84",
+              "Matriz:91",
+              "Matriz:89",
+              "Matriz:85",
+              "Matriz:87",
+              "Matriz:86",
+              "Matriz:88"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HUM004",
+        "nome": "Inglês Como Leitura E Interação",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "D103",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "D103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marli Aparecida Pedro"
+            ],
+            "optativa_matrizes": [
+              "Matriz:93",
+              "Matriz:84",
+              "Matriz:91",
+              "Matriz:89",
+              "Matriz:85",
+              "Matriz:87",
+              "Matriz:86",
+              "Matriz:88"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HUM005",
+        "nome": "Libras 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA2",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "F109",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "F109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Alberto Franco"
+            ],
+            "optativa_matrizes": [
+              "Matriz:93",
+              "Matriz:84",
+              "Matriz:89",
+              "Matriz:85",
+              "Matriz:87",
+              "Matriz:86",
+              "Matriz:88"
+            ]
+          },
+          {
+            "codigo": "HUMA3",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "D107",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "D107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Alberto Franco"
+            ],
+            "optativa_matrizes": [
+              "Matriz:93",
+              "Matriz:84",
+              "Matriz:89",
+              "Matriz:85",
+              "Matriz:87",
+              "Matriz:86",
+              "Matriz:88"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HUM007",
+        "nome": "Liderança E Relações Interpessoais",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "D108",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "D108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Edson Hirata"
+            ],
+            "optativa_matrizes": [
+              "Matriz:93",
+              "Matriz:84",
+              "Matriz:91",
+              "Matriz:89",
+              "Matriz:85",
+              "Matriz:87",
+              "Matriz:86",
+              "Matriz:88"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HUM008",
+        "nome": "Linguagem, Cultura E Sociedade",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "D102",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "D102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mauricio Cesar Menon"
+            ],
+            "optativa_matrizes": [
+              "Matriz:63",
+              "Matriz:87",
+              "Matriz:89",
+              "Matriz:93",
+              "Matriz:84",
+              "Matriz:91",
+              "Matriz:85",
+              "Matriz:86",
+              "Matriz:88"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HUM009",
+        "nome": "Mercosul, Fronteira E Desenvolvimento Regional",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "D107",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "D107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Emilio Gonzalez"
+            ],
+            "optativa_matrizes": [
+              "Matriz:93",
+              "Matriz:84",
+              "Matriz:89",
+              "Matriz:85",
+              "Matriz:87",
+              "Matriz:86",
+              "Matriz:88"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HUM012",
+        "nome": "Tecnologia E Sociedade",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "H104",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "H104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Frederico Lopes De Oliveira Diehl"
+            ],
+            "optativa_matrizes": [
+              "Matriz:93",
+              "Matriz:84",
+              "Matriz:91",
+              "Matriz:89",
+              "Matriz:85",
+              "Matriz:86",
+              "Matriz:88",
+              "Matriz:87"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HUM017",
+        "nome": "Educação Em Direitos Humanos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA",
+            "enquadramento": "Presencial",
+            "vagas_total": 34,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "D108",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "D108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Frederico Lopes De Oliveira Diehl"
+            ],
+            "optativa_matrizes": [
+              "Matriz:81",
+              "Matriz:63",
+              "Matriz:87",
+              "Matriz:89",
+              "Matriz:75",
+              "Matriz:88",
+              "Matriz:86"
+            ]
+          },
+          {
+            "codigo": "OPTV",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "D108",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "D108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Frederico Lopes De Oliveira Diehl"
+            ],
+            "optativa_matrizes": [
+              "Matriz:81",
+              "Matriz:63",
+              "Matriz:87",
+              "Matriz:89",
+              "Matriz:75",
+              "Matriz:88",
+              "Matriz:86"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LBRS31Q",
+        "nome": "Libras 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPTV",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "D107",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "D107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Alberto Franco"
+            ],
+            "optativa_matrizes": [
+              "Matriz:75",
+              "Matriz:81",
+              "Matriz:43",
+              "Matriz:34",
+              "Matriz:30",
+              "Matriz:44",
+              "Matriz:63",
+              "Matriz:50"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LBRS32Q",
+        "nome": "Libras 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPTV",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "D108",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "D108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Alberto Franco"
+            ],
+            "optativa_matrizes": [
+              "Matriz:75",
+              "Matriz:81",
+              "Matriz:43",
+              "Matriz:44",
+              "Matriz:30",
+              "Matriz:34",
+              "Matriz:63",
+              "Matriz:50"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LT30A",
+        "nome": "Viabilidade Econômica E Financeira De Projetos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL10A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "D108",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "D108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Genilson Valotto Patuzzo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LT38A",
+        "nome": "Projeto De Circuitos Integrados Semidedicados",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ILE",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "B006",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "B006",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "B006",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago Simoes Dias"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LT39A",
+        "nome": "Projeto De Sistemas Integrados",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL9A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "B005",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "B005",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "B005",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leonardo Faria Costa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LT39B",
+        "nome": "Engenharia Do Produto",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IL9A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "B009",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "B009",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "B009",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "B009",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leonardo Faria Costa"
+            ],
+            "optativa_matrizes": [
+              "Matriz:43"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MG3XD",
+        "nome": "Mecanica Geral 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IDE",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "F109",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "F109",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "F109",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "F109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ronaldo Rigobello"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "NCM003",
+        "nome": "Cálculo Numérico",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ID4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T5",
+                "sala": "D104",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "D104",
+                "sede": null
+              },
+              {
+                "horario": "5T1",
+                "sala": "F105",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "F105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wellington Jose Correa"
+            ],
+            "optativa_matrizes": [
+              "Matriz:84"
+            ]
+          },
+          {
+            "codigo": "IF4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "D107",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "D107",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "D107",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "D107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adilandri Mercio Lobeiro"
+            ],
+            "optativa_matrizes": [
+              "Matriz:84"
+            ]
+          },
+          {
+            "codigo": "IG4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "D102",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "D102",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "F105",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "F105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wellington Jose Correa"
+            ],
+            "optativa_matrizes": [
+              "Matriz:84"
+            ]
+          },
+          {
+            "codigo": "IQ4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "D102",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "D102",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "F105",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "F105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wellington Jose Correa"
+            ],
+            "optativa_matrizes": [
+              "Matriz:84"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "NCM004",
+        "nome": "Cálculo Diferencial E Integral 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IC2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciênc Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "B102",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "B102",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "B102",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raquel Polizeli"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "ID2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "G101",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "G101",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "B103",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "B103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Helio Vinicius Moreno Tozatti"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "ID2B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "D107",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "D107",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "D107",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "D107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Viviane Colucci Boromelo"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IF2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "D107",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "D107",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "D107",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "D107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Viviane Colucci Boromelo"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IG2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "B107",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "B107",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "B105",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "B105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Angela Mognon"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IL2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "B106",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "B106",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "B106",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "B106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Viviane Colucci Boromelo"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IQ2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 26,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "B107",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "B107",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "B105",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "B105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Angela Mognon"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "NCM005",
+        "nome": "Cálculo Diferencial E Integral 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ID3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "F101",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "F101",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "D103",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "D103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Viviane Colucci Boromelo"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IF3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "F101",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "F101",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "D103",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "D103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Viviane Colucci Boromelo"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IG3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "D101",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "D101",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "D104",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "D104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Priscila Amara Patricio De Melo"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IL3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "B106",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "B106",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "B102",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "B102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Priscila Amara Patricio De Melo"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IQ3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 1,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "D101",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "D101",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "D104",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "D104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Priscila Amara Patricio De Melo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "NCM006",
+        "nome": "Cálculo Diferencial E Integral 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ID4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "D104",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "D104",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "G101",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "G101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Michele Carvalho De Barros"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IL4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "B105",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "B105",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "B105",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "B105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Priscila Amara Patricio De Melo"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IQ4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "B102",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "B102",
+                "sede": null
+              },
+              {
+                "horario": "5T1",
+                "sala": "B107",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "B107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Michele Carvalho De Barros"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "NCM008",
+        "nome": "Geometria Analítica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ID1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 32,
+            "vagas_calouros": 20,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "F101",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "F101",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "F101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Erika Patricia Dantas De Oliveira Guazzi"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IF1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 15,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "D108",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "D108",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "D108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Erika Patricia Dantas De Oliveira Guazzi"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IG1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 10,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "G104",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "G104",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "G104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raquel Polizeli"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IL1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 11,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "B102",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "B102",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "B102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Erika Patricia Dantas De Oliveira Guazzi"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IQ1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 12,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "G104",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "G104",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "G104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raquel Polizeli"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "NCM010",
+        "nome": "Pré-Cálculo",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IC1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciênc Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "G103",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "G103",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "G103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thelma Pretel Brandao Vecchi"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "ID1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 20,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "F101",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "F101",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "F101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Helio Vinicius Moreno Tozatti"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IF1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 20,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "D106",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "D106",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "D106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thelma Pretel Brandao Vecchi"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IG1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 10,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "G104",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "G104",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "G104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raquel Polizeli"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IL1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 11,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "B102",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "B102",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "B102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Helio Vinicius Moreno Tozatti"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IQ1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 12,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "G104",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "G104",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "G104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raquel Polizeli"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "NCM011",
+        "nome": "Probabilidade E Estatística",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IC3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciênc Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "F110",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "F110",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "D106",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "D106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Magda Cardoso"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "ID3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "F101",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "F101",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "B101",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "B101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Magda Cardoso"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IF4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "F102",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "F102",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "F101",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "F101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diogo Heron Macowski"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IG4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "F102",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "F102",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "B001",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "B001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diogo Heron Macowski"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IQ4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "F102",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "F102",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "B001",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "B001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diogo Heron Macowski"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "NCM012",
+        "nome": "Física 1",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ID2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "17",
+                "sala": "",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "0"
+            ],
+            "optativa_matrizes": [
+              "Aberta"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "NCM013",
+        "nome": "Física 2",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ID3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "H005",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "H005",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "D108",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "D108",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "D108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Artur Jose Dos Santos Pires"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IF3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "H005",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "H005",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "G102",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "G102",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "G102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ivan Marcelo Laczkowski"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IG3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 11,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "D107",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "D107",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "D107",
+                "sede": null
+              },
+              {
+                "horario": "3T1",
+                "sala": "H005",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "H005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Artur Jose Dos Santos Pires"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IL2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "H005",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "H005",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "B107",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "B107",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "B107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wladimir Sergio Braga"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IL2B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "H005",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "H005",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "B107",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "B107",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "B107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wladimir Sergio Braga"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IQ3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 11,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "D107",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "D107",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "D107",
+                "sede": null
+              },
+              {
+                "horario": "3T1",
+                "sala": "H005",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "H005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Artur Jose Dos Santos Pires"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "NCM014",
+        "nome": "Física 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ID4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "H003",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "H003",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "F101",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "F101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Oscar Rodrigues Dos Santos"
+            ],
+            "optativa_matrizes": [
+              "Matriz:84"
+            ]
+          },
+          {
+            "codigo": "IF4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "F105",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "F105",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "H003",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "H003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roseli Constantino Schwerz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:84"
+            ]
+          },
+          {
+            "codigo": "IG4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 7,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T5",
+                "sala": "G101",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "G101",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "H003",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "H003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sergio Henrique Fernandes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:84"
+            ]
+          },
+          {
+            "codigo": "IL3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "H003",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "H003",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "H003",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "H003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Michel Corci Batista"
+            ],
+            "optativa_matrizes": [
+              "Matriz:84"
+            ]
+          },
+          {
+            "codigo": "IQ4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T5",
+                "sala": "G101",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "G101",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "H003",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "H003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sergio Henrique Fernandes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:84"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "NCM018",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IC4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciênc Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "G103",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "G103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tanatiana Ferreira Guelbert"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IC4B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciênc Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "G103",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "G103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tanatiana Ferreira Guelbert"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "ID5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "G103",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "G103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Genilson Valotto Patuzzo"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IF6A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "G103",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "G103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Genilson Valotto Patuzzo"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IL7A",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "B103",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "B103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tanatiana Ferreira Guelbert"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "NCM019",
+        "nome": "Gestão De Pessoas",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ID4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "F101",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "F101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tanatiana Ferreira Guelbert"
+            ],
+            "optativa_matrizes": [
+              "Matriz:88",
+              "Matriz:84"
+            ]
+          },
+          {
+            "codigo": "IF4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 17,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "F101",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "F101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tanatiana Ferreira Guelbert"
+            ],
+            "optativa_matrizes": [
+              "Matriz:88",
+              "Matriz:84"
+            ]
+          },
+          {
+            "codigo": "IG4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "G105",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "G105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tanatiana Ferreira Guelbert"
+            ],
+            "optativa_matrizes": [
+              "Matriz:88",
+              "Matriz:84"
+            ]
+          },
+          {
+            "codigo": "IQ4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 32,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "G105",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "G105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tanatiana Ferreira Guelbert"
+            ],
+            "optativa_matrizes": [
+              "Matriz:88",
+              "Matriz:84"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "NCM021",
+        "nome": "Gestão Da Produção",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "IG5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "D108",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "D108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Guelbert"
+            ],
+            "optativa_matrizes": [
+              "Matriz:85",
+              "Matriz:93",
+              "Matriz:88"
+            ]
+          },
+          {
+            "codigo": "IQ5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "D108",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "D108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Guelbert"
+            ],
+            "optativa_matrizes": [
+              "Matriz:85",
+              "Matriz:93",
+              "Matriz:88"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "NCM022",
+        "nome": "Mecânica Geral",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ID3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T5",
+                "sala": "F101",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "F101",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "F109",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "F109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wesley Szpak"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IF4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T5",
+                "sala": "G102",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "G102",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "B107",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "B107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jorge Luis Nunes De Goes"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IG3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "G105",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "G105",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "G104",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "G104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wesley Szpak"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IQ3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "G105",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "G105",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "G104",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "G104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wesley Szpak"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "OPT028",
+        "nome": "Sistemas Reconfiguráveis",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ILO",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "B006",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "B006",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "B006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Rodrigues Da Cunha"
+            ],
+            "optativa_matrizes": [
+              "Matriz:88"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPT029",
+        "nome": "Instrumentação Industrial",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ILO",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "B009",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "B009",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "B009",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leandro Castilho Brolin"
+            ],
+            "optativa_matrizes": [
+              "Matriz:88"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPT030",
+        "nome": "Fontes Chaveadas E Inversores",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ILO",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "B104",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "B104",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "B104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago Simoes Dias"
+            ],
+            "optativa_matrizes": [
+              "Matriz:88"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPT030",
+        "nome": "Fontes Chaveadas E Inversores",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ILO",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "B104",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "B104",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "B104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago Simoes Dias"
+            ],
+            "optativa_matrizes": [
+              "Matriz:88"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPT033",
+        "nome": "Processamento Digital De Sinais 2",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ILO",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "B001",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "B001",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "B001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Osmar Tormena Junior"
+            ],
+            "optativa_matrizes": [
+              "Matriz:88"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPT034",
+        "nome": "Sistemas Embarcados 2",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ILO",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "B006",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "B006",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "B006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Rodrigues Da Cunha"
+            ],
+            "optativa_matrizes": [
+              "Matriz:88"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPT035",
+        "nome": "Smart Grids",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ILO",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "B005",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "B005",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "B005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Nanni"
+            ],
+            "optativa_matrizes": [
+              "Matriz:88"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPT036",
+        "nome": "Controle Inteligente",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ILO",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "B002",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "B002",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "B002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mateus Henrique Roskosz Moran"
+            ],
+            "optativa_matrizes": [
+              "Matriz:88"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPT037",
+        "nome": "Imagens Médicas",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ILO",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "B104",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "B104",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "B104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eduardo Giometti Bertogna"
+            ],
+            "optativa_matrizes": [
+              "Matriz:88"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPT038",
+        "nome": "Tecnologias Assistivas",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ILO",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "B002",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "B002",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "B002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andre Luiz Regis Monteiro"
+            ],
+            "optativa_matrizes": [
+              "Matriz:88"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPT039",
+        "nome": "Divulgação Científica E Tecnológica",
+        "creditos": 2,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 90,
+        "turmas": [
+          {
+            "codigo": "ILO",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "B002",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "B002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Pamela De Souza Schiaber"
+            ],
+            "optativa_matrizes": [
+              "Matriz:88"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPT093",
+        "nome": "Sistemas Embarcados 1",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ILO",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "B103",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "B103",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "B006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Wilhelm Krauss Martinez"
+            ],
+            "optativa_matrizes": [
+              "Matriz:88"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "TCC1",
+        "nome": "Trabalho De Conclusão De Curso",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ID9A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "F110",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "F110",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "D104",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "D104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vera Lucia Barradas Moreira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "IL10A",
+            "enquadramento": "Presencial",
+            "vagas_total": 55,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Eletrônica"
+              ]
+            ],
+            "horarios": [],
+            "professores": [],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

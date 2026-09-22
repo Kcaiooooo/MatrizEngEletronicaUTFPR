@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-22T20-10-25Z",
+  "capturedAt": "2026-09-22T20:10:25.307Z",
+  "sourceLastUpdatedAt": "22/09/2026 17:12:18   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "londrina",
+    "name": "Londrina",
+    "code": "08"
+  },
+  "course": {
+    "id": "0043",
+    "name": "Eng. Ambiental",
+    "sourceName": "ENG. AMBIENTAL"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=43"
+  },
+  "fingerprint": "35ed52857886acfe1ad899d90d7f2708f12604d62789e3a1280a7b8388155343",
+  "previousVersionId": "2026-09-19T20-29-03Z",
+  "changes": [
+    {
+      "type": "changed",
+      "codigo": "HU94N",
+      "nome": "Libras 2",
+      "fields": [
+        "turmas[0].codigo",
+        "turmas[0].horarios[0].horario",
+        "turmas[0].horarios[0].sala",
+        "turmas[0].horarios[1].horario",
+        "turmas[0].horarios[1].sala",
+        "turmas[0].optativa_matrizes[0]",
+        "turmas[0].prioridade_cursos[0][0]",
+        "turmas[0].professores[0]",
+        "turmas[0].vagas_total"
+      ]
+    }
+  ],
+  "payload": {
+    "curso": "ENG. AMBIENTAL",
+    "ultima_atualizacao": "22/09/2026 17:12:18   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "EA68A",
+        "nome": "Avaliação Dos Impactos Ambientais A",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DP81",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "B203",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "B203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Eduardo Freres Stipp"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GE69B",
+        "nome": "Economia Do Meio Ambiente",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M4",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "A105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raul Hidetoci Mioshi Junior"
+            ],
+            "optativa_matrizes": [
+              "Matriz:30"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HU67A",
+        "nome": "Ética, Profissão E Cidadania",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ME81",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "K214",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "K214",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Di Flora Garcia"
+            ],
+            "optativa_matrizes": [
+              "Matriz:48"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HU94N",
+        "nome": "Libras 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ME81",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "K214",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "K214",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Di Flora Garcia"
+            ],
+            "optativa_matrizes": [
+              "Matriz:48"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HU99A",
+        "nome": "Ética Profissão E Cidadania",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T5",
+                "sala": "K207",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "K207",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Di Flora Garcia"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT06S",
+        "nome": "Cálculo Diferencial E Integral 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AS21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. E Sanit."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M5",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "5M6",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "6M6",
+                "sala": "K206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Karina Alessandra Pessoa Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,6740 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-22T20-10-25Z",
+  "capturedAt": "2026-09-22T20:10:25.307Z",
+  "sourceLastUpdatedAt": "22/09/2026 17:12:56   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "ponta-grossa",
+    "name": "Ponta Grossa",
+    "code": "06"
+  },
+  "course": {
+    "id": "0085",
+    "name": "Engenharia Elétrica",
+    "sourceName": "ENGENHARIA ELÉTRICA"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=85"
+  },
+  "fingerprint": "803a0e6b9e654c479746a894573876e4053e8005dd3af4ad7cb63eb76fb43f53",
+  "previousVersionId": "2026-09-22T20-03-09Z",
+  "changes": [
+    {
+      "type": "removed",
+      "codigo": "EE68B",
+      "nome": "Máquinas Elétricas"
+    }
+  ],
+  "payload": {
+    "curso": "ENGENHARIA ELÉTRICA",
+    "ultima_atualizacao": "22/09/2026 17:12:56   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "ATIV01H",
+        "nome": "Atividade Física E Qualidade De Vida",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE11A",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 19,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "GINÁSIO",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "GINÁSIO",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Alves De Faria Filho"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:826",
+              "Matriz:819",
+              "Matriz:827",
+              "Matriz:821",
+              "Matriz:814",
+              "Matriz:822"
+            ]
+          },
+          {
+            "codigo": "EE11B",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 19,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "GINÁSIO",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "GINÁSIO",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Alves De Faria Filho"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:826",
+              "Matriz:819",
+              "Matriz:827",
+              "Matriz:821",
+              "Matriz:814",
+              "Matriz:822"
+            ]
+          },
+          {
+            "codigo": "OPTH",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "GINÁSIO",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "GINÁSIO",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Alves De Faria Filho"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:826",
+              "Matriz:819",
+              "Matriz:827",
+              "Matriz:821",
+              "Matriz:814",
+              "Matriz:822"
+            ]
+          },
+          {
+            "codigo": "OPTHB",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "GINÁSIO",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "GINÁSIO",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Alves De Faria Filho"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:826",
+              "Matriz:819",
+              "Matriz:827",
+              "Matriz:821",
+              "Matriz:814",
+              "Matriz:822"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ATIV02H",
+        "nome": "Qualidade De Vida",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPTA",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "GINÁSIO",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "GINÁSIO",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriana Aparecida Guimaraes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:826",
+              "Matriz:819",
+              "Matriz:827",
+              "Matriz:821",
+              "Matriz:814",
+              "Matriz:820",
+              "Matriz:822"
+            ]
+          },
+          {
+            "codigo": "OPTB",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "GINÁSIO",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "GINÁSIO",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriana Aparecida Guimaraes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:826",
+              "Matriz:819",
+              "Matriz:827",
+              "Matriz:821",
+              "Matriz:814",
+              "Matriz:820",
+              "Matriz:822"
+            ]
+          },
+          {
+            "codigo": "OPTC",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "GINÁSIO",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "GINÁSIO",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriana Aparecida Guimaraes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:826",
+              "Matriz:819",
+              "Matriz:827",
+              "Matriz:821",
+              "Matriz:814",
+              "Matriz:820",
+              "Matriz:822"
+            ]
+          },
+          {
+            "codigo": "OPTD",
+            "enquadramento": "Presencial",
+            "vagas_total": 21,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "GINÁSIO",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "GINÁSIO",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriana Aparecida Guimaraes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:826",
+              "Matriz:819",
+              "Matriz:827",
+              "Matriz:821",
+              "Matriz:814",
+              "Matriz:820",
+              "Matriz:822"
+            ]
+          },
+          {
+            "codigo": "OPTH",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "CAMPO",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "CAMPO",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriana Aparecida Guimaraes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:826",
+              "Matriz:819",
+              "Matriz:827",
+              "Matriz:821",
+              "Matriz:814",
+              "Matriz:820",
+              "Matriz:822"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CL101",
+        "nome": "Comunicação Linguística",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE11",
+            "enquadramento": "Presencial",
+            "vagas_total": 47,
+            "vagas_calouros": 46,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "L011",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L011",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eloiza Aparecida Silva Avila De Matos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ECON00H",
+        "nome": "Economia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE81",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecânica",
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Ciência Da Computação",
+                "Eng Bioproc E Biotec"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "L104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Regina Negri Pagani"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:826",
+              "Matriz:827",
+              "Matriz:821",
+              "Matriz:814"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EDP",
+        "nome": "Engineering Design Process",
+        "creditos": 8,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 120,
+        "turmas": [
+          {
+            "codigo": "ENRQ",
+            "enquadramento": "Presencial",
+            "vagas_total": 100,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "SLVIRTUAL1",
+                "sede": null
+              },
+              {
+                "horario": "2N1",
+                "sala": "SLVIRTUAL1",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "SLVIRTUAL1",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "SLVIRTUAL1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Frieda Saicla Barros",
+              "Heliety Rodrigues Borges Barreto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:826",
+              "Matriz:822",
+              "Matriz:820",
+              "Matriz:827",
+              "Matriz:819",
+              "Matriz:824",
+              "Matriz:77",
+              "Matriz:821",
+              "Matriz:814"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EE10A",
+        "nome": "Trabalho De Conclusão De Curso",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TCC",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "V1-005",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "V1-005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Antonio Vanderley Herrero Sola"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE60AI",
+        "nome": "Reconfigurable Logic Devices",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPEE",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "V1-105",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "V1-105",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "V1-105",
+                "sede": null
+              },
+              {
+                "horario": "6T6",
+                "sala": "V1-105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mauricio Dos Santos Kaster"
+            ],
+            "optativa_matrizes": [
+              "Matriz:820"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EE60AO",
+        "nome": "Sistemas De Controle Fuzzy",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPEE",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "V1-102",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "V1-102",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "V1-102",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "V1-102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Cristina Correa"
+            ],
+            "optativa_matrizes": [
+              "Matriz:820"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EE60AP",
+        "nome": "Sistemas De Supervisão E Controle",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPEE",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T2",
+                "sala": "V1-007",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "V1-007",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "V1-007",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "V1-007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Julio Cesar Guimaraes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:820"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EE61A",
+        "nome": "Introdução À Engenharia Elétrica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE11",
+            "enquadramento": "Presencial",
+            "vagas_total": 47,
+            "vagas_calouros": 46,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "L008",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "L008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Murilo Oliveira Leme"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE62A",
+        "nome": "Materiais Elétricos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE21",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "L109",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "V1-008",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "V1-008",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "L109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Edison Luiz Salgado Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE63A",
+        "nome": "Eletrônica Digital 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE31",
+            "enquadramento": "Presencial",
+            "vagas_total": 18,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "V1-106",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "V1-106",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "L101",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "L101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Virginia Helena Varotto Baroncini"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EE31B",
+            "enquadramento": "Presencial",
+            "vagas_total": 18,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "V1-106",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "V1-106",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "L101",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "L101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Virginia Helena Varotto Baroncini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE64A",
+        "nome": "Análise De Circuitos 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE41",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "L113",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "L113",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "L113",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "L113",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jeferson Jose Gomes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE64B",
+        "nome": "Princípios De Medidas Elétricas",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE41B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "V1-008",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "V1-008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Helio Voltolini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE64C",
+        "nome": "Eletrônica Digital 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE41A",
+            "enquadramento": "Presencial",
+            "vagas_total": 18,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "V1-106",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "L101",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "V1-106",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "L101",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "V1-106",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "V1-106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sergio Luiz Stevan Junior"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EE41B",
+            "enquadramento": "Presencial",
+            "vagas_total": 18,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "V1-106",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "L101",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "L101",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "V1-106",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "V1-106",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "V1-106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sergio Luiz Stevan Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE65A",
+        "nome": "Análise De Circuitos 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE51",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "L111",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "L111",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "L101",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "L101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Virginia Helena Varotto Baroncini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE65B",
+        "nome": "Microcontroladores",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE51",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "V1-105",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "V1-105",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "V1-105",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "V1-105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mauricio Dos Santos Kaster"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "RE42B",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "L107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Henrique De Lima"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          },
+          {
+            "codigo": "RE42C",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "L-013",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "L-013",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "L-013",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriane Consuelo Leal Auccaise"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EE65B",
+        "nome": "Microcontroladores",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE51",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "V1-105",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "V1-105",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "V1-105",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "V1-105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mauricio Dos Santos Kaster"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE66A",
+        "nome": "Eletromagnetismo",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE61",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "L103",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "L103",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "L010",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "L010",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ezequiel Costa Siqueira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE66B",
+        "nome": "Eletrônica 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE61C",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "L101",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "L101",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "V1-103",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "V1-103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eloi Agostini Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE66C",
+        "nome": "Fundamentos De Processamento Digital De Sinais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE61",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "V1-105",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "V1-105",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "V1-105",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "V1-105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sergio Okida"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE66D",
+        "nome": "Teoria De Controle 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE61",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "V1-102",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "V1-102",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "V1-102",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "V1-102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Cristina Correa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE67A",
+        "nome": "Conversão De Energia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE71A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "L008",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "L008",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "V1-008",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "V1-008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Helio Voltolini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE67B",
+        "nome": "Desenho Técnico",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE71",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "V1-105",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "V1-105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Sergio Parangaba Ignacio"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE67C",
+        "nome": "Eletrônica 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE71A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "V1-103",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "V1-103",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "V1-103",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "V1-103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eric Bernard Dilger"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE67D",
+        "nome": "Equipamentos Elétricos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE71",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "L101",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "L101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sergio Luiz Stevan Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE67E",
+        "nome": "Instrumentação",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE71",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "V1-006",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "K002",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "V1-007",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "V1-007",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "V1-006",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "K002",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "V1-006",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "V1-007",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "K002",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "V1-006",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "V1-007",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "K002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Julio Cesar Guimaraes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE67F",
+        "nome": "Teoria De Controle 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE71",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "V1-105",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "V1-105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Cristina Correa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE68A",
+        "nome": "Eletrônica De Potência",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE81",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "V1-008",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "V1-008",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "V1-008",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "V1-008",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "V1-008",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "V1-008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Henrique Illa Font"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE68C",
+        "nome": "Projetos De Instalações Elétricas",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE81",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "V1-102",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "V1-102",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "V1-102",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "V1-102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Antonio Vanderley Herrero Sola"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE68D",
+        "nome": "Sistemas Elétricos De Potência",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE81",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "V1-009",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "V1-009",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "V1-009",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "V1-009",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Percio Luiz Karam De Miranda"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE69A",
+        "nome": "Acionamentos Eletroeletrônicos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE91",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "V1-009",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "V1-009",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "V1-009",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "V1-009",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Percio Luiz Karam De Miranda"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE69B",
+        "nome": "Energia E Eficiência Energética",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE91",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "V1-102",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "V1-102",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "V1-102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Murilo Oliveira Leme"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE69C",
+        "nome": "Geração, Transmissão E Distribuição De Energia Elétrica 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE91",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "V1-104",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "V1-104",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "V1-104",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "V1-104",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "K106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sergio Okida"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE69D",
+        "nome": "Projetos De Instalações Elétricas Industriais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE91",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "V1-009",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "V1-009",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "V1-009",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "V1-009",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Percio Luiz Karam De Miranda"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EN02M",
+        "nome": "Tópicos Especiais Em Processamento De Energia I",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPEE",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "V1-008",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "V1-008",
+                "sede": null
+              },
+              {
+                "horario": "3N1",
+                "sala": "V1-008",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "V1-008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eloi Agostini Junior"
+            ],
+            "optativa_matrizes": [
+              "Matriz:806"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EN38A",
+        "nome": "Trabalho De Conclusão De Curso 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE81",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "V1-005",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "V1-005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Antonio Vanderley Herrero Sola"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EN39A",
+        "nome": "Trabalho De Conclusão De Curso 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "YYY",
+            "enquadramento": "Presencial",
+            "vagas_total": 99,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Josmar Ivanqui"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EST121",
+        "nome": "Probabilidade E Estatística",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecânica",
+                "Ciência Da Computação"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "L010",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "L010",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "K106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Guatacara Dos Santos Junior"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EE51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia De Produção",
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Eng Bioproc E Biotec"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "L114",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "L114",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "L114",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "L114",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcos Tadeu Andrade Cordeiro"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EQ51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Eng Bioproc E Biotec"
+              ],
+              [
+                "Engenharia Mecânica",
+                "Engenharia De Produção",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "L004",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "L004",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "L004",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "L004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcos Tadeu Andrade Cordeiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FEP00H",
+        "nome": "Fundamentos Da Ética Profissional",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC21",
+            "enquadramento": "Presencial",
+            "vagas_total": 52,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "L110",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "L110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Katya Cristina De Lima Picanco"
+            ],
+            "optativa_matrizes": [
+              "Matriz:827",
+              "Matriz:821",
+              "Matriz:820"
+            ]
+          },
+          {
+            "codigo": "EM21",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecânica"
+              ],
+              [
+                "Engenharia Química",
+                "Ciência Da Computação",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "L111",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "L111",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Katya Cristina De Lima Picanco"
+            ],
+            "optativa_matrizes": [
+              "Matriz:827",
+              "Matriz:821",
+              "Matriz:820"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FIS101",
+        "nome": "Fundamentos De Física",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE11",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 46,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "L008",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "L008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gilvan Chaves Filho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS121",
+        "nome": "Física 1",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "BP21",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Bioproc E Biotec"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Engenharia De Produção",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "L113",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "L113",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "L113",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mario Jose Van Thienen Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EE21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "L002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Gustavo Vieira Goncalves"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EM21",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecânica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "L006",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "L006",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "L006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Celso Goncalves De Quadros"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP21",
+            "enquadramento": "Presencial",
+            "vagas_total": 48,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia De Produção"
+              ],
+              [
+                "Engenharia Mecânica",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "L012",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "L012",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "L012",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Romeu Miqueias Szmoski"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS122",
+        "nome": "Física 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "BP31",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Bioproc E Biotec"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Engenharia De Produção",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "L012",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "L012",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mario Jose Van Thienen Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EE31",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecânica",
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "K107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gilvan Chaves Filho"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EQ31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica"
+              ],
+              [
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "K107",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "K107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gilvan Chaves Filho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS123",
+        "nome": "Física 3",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "BP41",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Eng Bioproc E Biotec"
+              ],
+              [
+                "Engenharia Mecânica",
+                "Engenharia De Produção",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "L114",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "L114",
+                "sede": null
+              },
+              {
+                "horario": "3M6",
+                "sala": "L114",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mario Jose Van Thienen Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EE31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Mecânica",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "L114",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "L114",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "L114",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ezequiel Costa Siqueira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EM41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecânica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "L001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ezequiel Costa Siqueira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS131",
+        "nome": "Física Experimental 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "BP21A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Bioproc E Biotec"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Engenharia De Produção",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "K110",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "K110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Maria Selia Blonski"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "BP21B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Engenharia De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "K110",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "K110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Maria Selia Blonski"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EE21A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "K110",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "K110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Maria Selia Blonski"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EE21B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "K110",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "K110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Maria Selia Blonski"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EM21A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecânica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T3",
+                "sala": "K110",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "K110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gilvan Chaves Filho"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EM21B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecânica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T1",
+                "sala": "K110",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "K110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gilvan Chaves Filho"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP21A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia De Produção"
+              ],
+              [
+                "Engenharia Mecânica",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "K110",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "K110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Maria Selia Blonski"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP21B",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia De Produção"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "K110",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "K110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Maria Selia Blonski"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EQ21A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Mecânica",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "K110",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "K110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gilvan Chaves Filho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS132",
+        "nome": "Física Experimental 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "BP31A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Bioproc E Biotec"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Engenharia De Produção",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "K101",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "K101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Ricardo Galvao"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "BP31B",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Bioproc E Biotec"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Engenharia De Produção",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "K101",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "K101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Ricardo Galvao"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EE31A",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "K101",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "K101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriano Doff Sotta Gomes"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EE31B",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "K101",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "K101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriano Doff Sotta Gomes"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP31A",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia De Produção"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "K101",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "K101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Ricardo Galvao"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP31B",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia De Produção"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "K101",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "K101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Ricardo Galvao"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EQ31A",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Mecânica",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "K101",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "K101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriano Doff Sotta Gomes"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EQ31B",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Mecânica",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "K101",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "K101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriano Doff Sotta Gomes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS133",
+        "nome": "Física Experimental 3",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "BP41B",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Bioproc E Biotec"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Engenharia De Produção",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "K108",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "K108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daniele Toniolo Dias Ferreira Rosa"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EE31B",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "K108",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "K108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Ricardo Galvao"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EM41A",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecânica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "K108",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "K108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daniele Toniolo Dias Ferreira Rosa"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EM41B",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecânica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "K108",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "K108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daniele Toniolo Dias Ferreira Rosa"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP41A",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia De Produção"
+              ],
+              [
+                "Engenharia Mecânica",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "K108",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "K108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daniele Toniolo Dias Ferreira Rosa"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP41B",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia De Produção"
+              ],
+              [
+                "Engenharia Mecânica",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "K108",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "K108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daniele Toniolo Dias Ferreira Rosa"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "RE42A",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "K108",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "K108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daniele Toniolo Dias Ferreira Rosa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS143",
+        "nome": "Mecânica Geral 1",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Engenharia De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "L002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Celso Goncalves De Quadros"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EM31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecânica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia De Produção",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "L108",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "L108",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "L108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rozane De Fatima Turchiello Gomez"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia De Produção"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "L001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rozane De Fatima Turchiello Gomez"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EQ31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Mecânica",
+                "Engenharia De Produção",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "L111",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "L111",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L111",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Celso Goncalves De Quadros"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS143",
+        "nome": "Mecânica Geral 1",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Engenharia De Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "L002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Celso Goncalves De Quadros"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EM31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecânica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia De Produção",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "L108",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "L108",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "L108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rozane De Fatima Turchiello Gomez"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia De Produção"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "L001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rozane De Fatima Turchiello Gomez"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EQ31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Mecânica",
+                "Engenharia De Produção",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "L111",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "L111",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L111",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Celso Goncalves De Quadros"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FT101",
+        "nome": "Fenômenos De Transporte",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M3",
+                "sala": "L010",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "L010",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "L010",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Eduardo Melo Lima"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP61",
+            "enquadramento": "Presencial",
+            "vagas_total": 43,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia De Produção"
+              ],
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "2M6",
+                "sala": "L002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gilberto Zammar"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GEPRD00H",
+        "nome": "Gestão Da Produção",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "BP61",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "L112",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "L112",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "L112",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Maria Bueno"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:826",
+              "Matriz:814"
+            ]
+          },
+          {
+            "codigo": "EE81",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "L001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Claudia Tania Picinin"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:826",
+              "Matriz:814"
+            ]
+          },
+          {
+            "codigo": "EM61",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "K102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Maria Bueno"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:826",
+              "Matriz:814"
+            ]
+          },
+          {
+            "codigo": "EQ61",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "L107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Juan Carlos Claros Garcia"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:826",
+              "Matriz:814"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GESAMO00H",
+        "nome": "Gestão Ambiental Organizacional",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "BP61",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Bioproc E Biotec"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M4",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "L104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daniel Poletto Tesser"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:824",
+              "Matriz:814",
+              "Matriz:820"
+            ]
+          },
+          {
+            "codigo": "EM81",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecânica"
+              ],
+              [
+                "Engenharia Química",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "L001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daniel Poletto Tesser"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:824",
+              "Matriz:814",
+              "Matriz:820"
+            ]
+          },
+          {
+            "codigo": "EQ71",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Mecânica",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "K102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabio Neves Puglieri"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:824",
+              "Matriz:814",
+              "Matriz:820"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "IND01A",
+        "nome": "Industry 4.0 E 5.0",
+        "creditos": 8,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 120,
+        "turmas": [
+          {
+            "codigo": "ENRQ",
+            "enquadramento": "Presencial",
+            "vagas_total": 100,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "SLVIRTUAL1",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "SLVIRTUAL1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Heliety Rodrigues Borges Barreto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:826",
+              "Matriz:844",
+              "Matriz:820",
+              "Matriz:827",
+              "Matriz:819",
+              "Matriz:822",
+              "Matriz:77",
+              "Matriz:821",
+              "Matriz:814"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "INF101",
+        "nome": "Computação 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE31",
+            "enquadramento": "Presencial",
+            "vagas_total": 26,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "C103",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "C103",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "C104",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "C104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Itamar Iliuk"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP21",
+            "enquadramento": "Presencial",
+            "vagas_total": 42,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia De Produção"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "C103",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "C103",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "C103",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "C103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Augusto Foronda"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EQ31",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Mecânica",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "C103",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "C103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mauren Louise Sguario Coelho De Andrade"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "INTEECO00H",
+        "nome": "Introdução À Engenharia Econômica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "BP41",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Bioproc E Biotec"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T5",
+                "sala": "LABOSP2",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "LABOSP2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Tavares Treinta"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          },
+          {
+            "codigo": "EE61",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Eng Bioproc E Biotec"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "LABOSP2",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "LABOSP2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabio Jose Ceron Branco"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          },
+          {
+            "codigo": "EM61",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecânica"
+              ],
+              [
+                "Engenharia Química",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "LABOSP2",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "LABOSP2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabio Jose Ceron Branco"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          },
+          {
+            "codigo": "EQ81",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Mecânica",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T3",
+                "sala": "LABOSP2",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "LABOSP2",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Tavares Treinta"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LIBRAS1",
+        "nome": "Libras1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPTA",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "L108",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "L108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Andre Brito Coelho"
+            ],
+            "optativa_matrizes": [
+              "Matriz:843",
+              "Matriz:844",
+              "Matriz:819",
+              "Matriz:826",
+              "Matriz:827",
+              "Matriz:824",
+              "Matriz:814",
+              "Matriz:821",
+              "Matriz:820",
+              "Matriz:822"
+            ]
+          },
+          {
+            "codigo": "OPTHB",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "L109",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "L109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Andre Brito Coelho"
+            ],
+            "optativa_matrizes": [
+              "Matriz:843",
+              "Matriz:844",
+              "Matriz:819",
+              "Matriz:826",
+              "Matriz:827",
+              "Matriz:824",
+              "Matriz:814",
+              "Matriz:821",
+              "Matriz:820",
+              "Matriz:822"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MAT101",
+        "nome": "Pré-Cálculo",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE11",
+            "enquadramento": "Presencial",
+            "vagas_total": 47,
+            "vagas_calouros": 46,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "L008",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "L008",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "L008",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "L008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago Gilberto Do Prado"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          },
+          {
+            "codigo": "RE42A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "L005",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "L005",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "L106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jocenei Antonio Teodoro De Oliveira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          },
+          {
+            "codigo": "RE42B",
+            "enquadramento": "Presencial",
+            "vagas_total": 51,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "L104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Eduardo Krassinski Soares"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          },
+          {
+            "codigo": "RE42C",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "L008",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "L008",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "L008",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "L008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Yara De Souza Tadano"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MAT121",
+        "nome": "Matrizes E Vetores",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE11",
+            "enquadramento": "Presencial",
+            "vagas_total": 52,
+            "vagas_calouros": 46,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "L003",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "L003",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "L003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sani De Carvalho Rutz Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          },
+          {
+            "codigo": "RE42B",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "L107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Henrique De Lima"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          },
+          {
+            "codigo": "RE42C",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "L-013",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "L-013",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "L-013",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriane Consuelo Leal Auccaise"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MAT131",
+        "nome": "Cálculo 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "BP21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Bioproc E Biotec"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "L113",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "L113",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "L113",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "L113",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcos Cesar Verges"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "CC21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "L112",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "L112",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "L005",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "L005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Thiago Gilberto Do Prado"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EE21",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "L108",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "L108",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "L108",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "L108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcos Tadeu Andrade Cordeiro"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EM21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecânica"
+              ],
+              [
+                "Engenharia Química",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "L102",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "L102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Ribaski Borges"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia De Produção"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "C210",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "C210",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "C210",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "C210",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jussara Rodrigues Ciappina"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EQ21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "L103",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "L103",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "L103",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "L103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alessandro Lima Konopacki"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "RE42",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "L011",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "L011",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "L109",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "L109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Eduardo Krassinski Soares"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "RE42A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "L111",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "L111",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "L111",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "L111",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jocenei Antonio Teodoro De Oliveira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "RE42B",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "L111",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "L111",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "L111",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "L111",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Eduardo Krassinski Soares"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT132",
+        "nome": "Cálculo 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "BP31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecânica",
+                "Eng Bioproc E Biotec"
+              ],
+              [
+                "Engenharia Química",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "L112",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "L112",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "L112",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "L112",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Iara Da Cunha Ribeiro Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "CC31",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "L109",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "L109",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "L109",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jussara Rodrigues Ciappina"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EE31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "L110",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "L110",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "L110",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Reginaldo De Oliveira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EM31",
+            "enquadramento": "Presencial",
+            "vagas_total": 43,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecânica"
+              ],
+              [
+                "Engenharia Química",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "L006",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "L006",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "L006",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "L006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jussara Rodrigues Ciappina"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia De Produção"
+              ],
+              [
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "L008",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "L008",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "L102",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "L102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "David Alexander Chipana Mollinedo"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EQ31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "L114",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "L114",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "L106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Ribaski Borges"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT133",
+        "nome": "Cálculo 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM41",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica"
+              ],
+              [
+                "Engenharia De Produção",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "L110",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "L110",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "L110",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "L110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Reginaldo De Oliveira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:843"
+            ]
+          },
+          {
+            "codigo": "EP41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia De Produção",
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "L008",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "L008",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "L107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "David Alexander Chipana Mollinedo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:843"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MAT134",
+        "nome": "Cálculo 4",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE51",
+            "enquadramento": "Presencial",
+            "vagas_total": 41,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Engenharia De Produção",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "L110",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "L110",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "L110",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "L110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Reginaldo De Oliveira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:843"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MAT141",
+        "nome": "Cálculo Numérico",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "BP51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Eng Bioproc E Biotec"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia De Produção",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "L011",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "L011",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "L011",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "L011",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Angelo Marcelo Tusset"
+            ],
+            "optativa_matrizes": [
+              "Matriz:843"
+            ]
+          },
+          {
+            "codigo": "EE41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia De Produção",
+                "Eng Bioproc E Biotec"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "L104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rodrigo Frehse Pereira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:843"
+            ]
+          },
+          {
+            "codigo": "EP61",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química",
+                "Engenharia De Produção"
+              ],
+              [
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "K106",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "L103",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "L103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Angelo Marcelo Tusset"
+            ],
+            "optativa_matrizes": [
+              "Matriz:843"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "QUALIG00H",
+        "nome": "Gestão Da Qualidade",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "BP71",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Bioproc E Biotec"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "P204",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "P204",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "P204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sergio Mazurek Tebcherani"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          },
+          {
+            "codigo": "EE61",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Eng Bioproc E Biotec"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "L103",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "L103",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "L103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Shih Yung Chin"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          },
+          {
+            "codigo": "EM71",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecânica"
+              ],
+              [
+                "Engenharia Química",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T1",
+                "sala": "L102",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "L102",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "L102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Edilson Giffhorn"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          },
+          {
+            "codigo": "EQ41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Mecânica",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "L103",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "L103",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "L103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joseane Pontes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:814"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "QUI101",
+        "nome": "Química Geral 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE11",
+            "enquadramento": "Presencial",
+            "vagas_total": 52,
+            "vagas_calouros": 46,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "L003",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "L003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Octavio De Araujo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI121",
+        "nome": "Química Experimental",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE11A",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 19,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "H001",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "H001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ciro Mauricio Zimmermann"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EE11B",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 19,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "H001",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "H001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ciro Mauricio Zimmermann"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "SESAT00H",
+        "nome": "Segurança E Saúde Do Trabalho",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE51",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Eng Bioproc E Biotec"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "L010",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "J2-A",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "L010",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "J2-A",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ariel Orlei Michaloski"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:799",
+              "Matriz:827",
+              "Matriz:826",
+              "Matriz:814",
+              "Matriz:821"
+            ]
+          },
+          {
+            "codigo": "EM81",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Mecânica"
+              ],
+              [
+                "Engenharia Química",
+                "Ciência Da Computação",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "L108",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "L108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Antonio Augusto De Paula Xavier"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:799",
+              "Matriz:827",
+              "Matriz:826",
+              "Matriz:814",
+              "Matriz:821"
+            ]
+          },
+          {
+            "codigo": "OPBT",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng Bioproc E Biotec"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "L011",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "L011",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ariel Orlei Michaloski"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:799",
+              "Matriz:827",
+              "Matriz:826",
+              "Matriz:814",
+              "Matriz:821"
+            ]
+          },
+          {
+            "codigo": "OPTC",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Da Computação"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Mecânica",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M4",
+                "sala": "K102",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "K102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Antonio Augusto De Paula Xavier"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:799",
+              "Matriz:827",
+              "Matriz:826",
+              "Matriz:814",
+              "Matriz:821"
+            ]
+          },
+          {
+            "codigo": "OPTQ",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Engenharia Mecânica",
+                "Ciência Da Computação",
+                "Eng Bioproc E Biotec",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "L004",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "L004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Antonio Augusto De Paula Xavier"
+            ],
+            "optativa_matrizes": [
+              "Matriz:844",
+              "Matriz:799",
+              "Matriz:827",
+              "Matriz:826",
+              "Matriz:814",
+              "Matriz:821"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
