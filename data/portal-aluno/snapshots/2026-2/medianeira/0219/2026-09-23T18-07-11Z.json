@@ -1,0 +1,4544 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-23T18-07-11Z",
+  "capturedAt": "2026-09-23T18:07:11.566Z",
+  "sourceLastUpdatedAt": "23/09/2026 15:10:11   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "medianeira",
+    "name": "Medianeira",
+    "code": "04"
+  },
+  "course": {
+    "id": "0219",
+    "name": "Ciência Computação",
+    "sourceName": "CIÊNCIA COMPUTAÇÃO"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=219"
+  },
+  "fingerprint": "441fe2088342a8b8b592f6c8c9abb9007281900f52831b0dc68577661c8efce0",
+  "previousVersionId": "2026-09-19T20-29-03Z",
+  "changes": [
+    {
+      "type": "changed",
+      "codigo": "COM1009",
+      "nome": "Fundamentos De Estruturas De Dados",
+      "fields": [
+        "turmas[1].horarios[0].sala",
+        "turmas[1].horarios[1].sala",
+        "turmas[1].horarios[2].sala",
+        "turmas[1].horarios[3].sala",
+        "turmas[1].professores[0]"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "COM1015",
+      "nome": "Orientação A Objetos",
+      "fields": [
+        "turmas[0].horarios[0].sala",
+        "turmas[0].horarios[1].sala",
+        "turmas[0].horarios[2].sala",
+        "turmas[0].horarios[3].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "COM1021",
+      "nome": "Desenvolvimento De Aplicativos Para Dispositivos Móveis",
+      "fields": [
+        "turmas[0].horarios[0].sala",
+        "turmas[0].horarios[1].sala",
+        "turmas[0].horarios[2].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "COM1025",
+      "nome": "Teoria Da Computação",
+      "fields": [
+        "turmas[0].horarios[0].sala",
+        "turmas[0].horarios[1].sala",
+        "turmas[0].horarios[2].sala"
+      ]
+    }
+  ],
+  "payload": {
+    "curso": "CIÊNCIA COMPUTAÇÃO",
+    "ultima_atualizacao": "23/09/2026 15:10:11   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "AMB1001",
+        "nome": "Sustentabilidade E Gestão",
+        "creditos": 3,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ELE5",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T3",
+                "sala": "H34",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "H34",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "H34",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Renato Santos Flauzino"
+            ],
+            "optativa_matrizes": [
+              "Matriz:654"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "AMB1010",
+        "nome": "Metodologia Da Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AMB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "I25",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "I25",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Arioli"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CC58C",
+        "nome": "Trabalho De Conclusão De Curso 2",
+        "creditos": 0,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC8",
+            "enquadramento": "Presencial",
+            "vagas_total": 51,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Jorge Aikes Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1005",
+        "nome": "Comunicação De Dados",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC1",
+            "enquadramento": "Presencial",
+            "vagas_total": 49,
+            "vagas_calouros": 41,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "L41",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "L41",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Hamilton Pereira Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1006",
+        "nome": "Fundamentos De Programação",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC1",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 41,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "I25",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "I25",
+                "sede": null
+              },
+              {
+                "horario": "4M1",
+                "sala": "I25",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "I25",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "I25",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "I25",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cesar Angonese"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1007",
+        "nome": "Introdução À Ciência Da Computação",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC1",
+            "enquadramento": "Presencial",
+            "vagas_total": 47,
+            "vagas_calouros": 41,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "L12A",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "L12A",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "L12A",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alessandra Bortoletto Garbelotti Hoffmann"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1008",
+        "nome": "Lógica Matemática",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 47,
+            "vagas_calouros": 41,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "L41",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "L41",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "L41",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "L41",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Nelson Miguel Betzek"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1009",
+        "nome": "Fundamentos De Estruturas De Dados",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC2",
+            "enquadramento": "Presencial",
+            "vagas_total": 42,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "L15",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "L15",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "L15",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "L15",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcos Ricardo Muller"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "CC2X",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "I45",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "I45",
+                "sede": null
+              },
+              {
+                "horario": "3T1",
+                "sala": "I45",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "I45",
+                "sede": null
+              }
+            ],
+            "professores": [],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1010",
+        "nome": "Fundamentos De Banco De Dados",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC2",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "L15",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "L15",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "L15",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Kelyn Schenatto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1011",
+        "nome": "Redes De Computadores",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC2",
+            "enquadramento": "Presencial",
+            "vagas_total": 42,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "L13",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "L13",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "L13",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "L13",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Neylor Michel"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1012",
+        "nome": "Fundamentos Da Engenharia De Software",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC2",
+            "enquadramento": "Presencial",
+            "vagas_total": 41,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T3",
+                "sala": "L15",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "L15",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "L15",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alan Gavioli"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1013",
+        "nome": "Oficina De Computação Para A Comunidade",
+        "creditos": 1,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 30,
+        "turmas": [
+          {
+            "codigo": "CC2",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "L43",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Nelson Miguel Betzek"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1014",
+        "nome": "Árvores E Grafos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC3",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "L17",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "L17",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "L17",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "L17",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Evando Carlos Pizzini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1015",
+        "nome": "Orientação A Objetos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC3",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "L17",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "L17",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "L17",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "L17",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Everton Coimbra De Araujo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1016",
+        "nome": "Laboratório De Redes De Computadores",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC3",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "L13",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "L13",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "L13",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "L13",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Neylor Michel"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1017",
+        "nome": "Modelagem De Software",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC3",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "L16",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "L16",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "L16",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alan Gavioli"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1018",
+        "nome": "Sistemas Gerenciadores De Banco De Dados",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC3",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "L16",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "L16",
+                "sede": null
+              },
+              {
+                "horario": "4M1",
+                "sala": "L16",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "L16",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Kelyn Schenatto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1019",
+        "nome": "Paradigmas De Linguagens De Programação",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC4",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "L16",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "L16",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "L16",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alessandra Bortoletto Garbelotti Hoffmann"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1020",
+        "nome": "Tópicos Em Algoritmos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC4",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "L16",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "L16",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "L16",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcos Ricardo Muller"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1021",
+        "nome": "Desenvolvimento De Aplicativos Para Dispositivos Móveis",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC4",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "L17",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "L17",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "L17",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Everton Coimbra De Araujo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1022",
+        "nome": "Sistemas Operacionais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC4",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "L16",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "L16",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "L16",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "L16",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Hamilton Pereira Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1023",
+        "nome": "Arquitetura E Organização De Computadores",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC4",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "L16",
+                "sede": null
+              },
+              {
+                "horario": "4T1",
+                "sala": "L16",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "L16",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Nelson Miguel Betzek"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1024",
+        "nome": "Gestão Da Qualidade De Software",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC4",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "L16",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "L16",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "L16",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Juliano Rodrigo Lamb"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1025",
+        "nome": "Teoria Da Computação",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC5",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "L16",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "L16",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "L16",
+                "sede": null
+              },
+              {
+                "horario": "5M1",
+                "sala": "L17",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "L17",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Evando Carlos Pizzini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1026",
+        "nome": "Laboratório De Sistemas Operacionais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC5",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "L13",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "L13",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "L13",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Juliano Rodrigo Lamb"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1027",
+        "nome": "Arquitetura Avançada De Hardware",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC5",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "L15",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "L15",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "L15",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Hamilton Pereira Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1028",
+        "nome": "Interação Humano-Computador",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC5",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "L15",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "L15",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "L15",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcos Ricardo Muller"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1029",
+        "nome": "Oficina De Desenvolvimento De Software",
+        "creditos": 2,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "CC5",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "L15",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "L15",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo Sobjak"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1030",
+        "nome": "Desenvolvimento De Sistemas Corporativos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC6",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "L18",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "L18",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "L18",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "L18",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Everton Coimbra De Araujo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1031",
+        "nome": "Metodologia Da Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC6",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "L18",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "L18",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Kelyn Schenatto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1032",
+        "nome": "Inteligência Artificial",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC6",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "L18",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "L18",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "L18",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "L18",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jandrei Sartori Spancerski"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1033",
+        "nome": "Construção De Compiladores",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC6",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "L18",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "L18",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "L18",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "L18",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jorge Aikes Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1034",
+        "nome": "Sistemas Distribuídos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC6",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T5",
+                "sala": "L18",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L18",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "L18",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "L18",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernando Schutz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1035",
+        "nome": "Redes Neurais Artificiais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC7",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "L18",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "L18",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "L18",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Hamilton Pereira Da Silva"
+            ],
+            "optativa_matrizes": [
+              "Matriz:656"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "COM1036",
+        "nome": "Oficina De Suporte Tecnológico",
+        "creditos": 2,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "CC7",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "L18",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "L18",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jorge Aikes Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1037",
+        "nome": "Trabalho De Conclusão De Curso 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC7",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "L18",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "L18",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "L18",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "L18",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alessandra Bortoletto Garbelotti Hoffmann"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1038",
+        "nome": "Computação Gráfica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC8",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "L17",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "L17",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "L17",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "L17",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Pedro Luiz De Paula Filho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1039",
+        "nome": "Oficina De Gestão E Desenvolvimento De Sistemas Computacionais",
+        "creditos": 2,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "CC8",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "L17",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "L17",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo Sobjak"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "COM1041",
+        "nome": "Linguagem Procedural Para Banco De Dados",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC8OP",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "L15",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "L15",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "L15",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cesar Angonese"
+            ],
+            "optativa_matrizes": [
+              "Matriz:654"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "COM1045",
+        "nome": "Frameworks Para Desenvolvimento Cross Platform",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC8OP",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "L17",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "L17",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "L17",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jandrei Sartori Spancerski"
+            ],
+            "optativa_matrizes": [
+              "Matriz:654"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "COM1048",
+        "nome": "Realidade Virtual",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC7OPT",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "L16",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "L16",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "L16",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jorge Aikes Junior"
+            ],
+            "optativa_matrizes": [
+              "Matriz:654"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "COM1050",
+        "nome": "Segurança Em Redes De Computadores",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC7OP",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "L13",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "L13",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "L13",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Neylor Michel"
+            ],
+            "optativa_matrizes": [
+              "Matriz:654"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "COM1052",
+        "nome": "Aprendizado De Máquina",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC7OP",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "L18",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "L18",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "L18",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jandrei Sartori Spancerski"
+            ],
+            "optativa_matrizes": [
+              "Matriz:654",
+              "Matriz:656"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "COM1053",
+        "nome": "Processamento De Imagens E Reconhecimento De Padrões",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC8OP",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "L17",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "L17",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "L17",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Pedro Luiz De Paula Filho"
+            ],
+            "optativa_matrizes": [
+              "Matriz:654",
+              "Matriz:656"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ELE1007",
+        "nome": "Eletrônica Digital",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ELE2",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "J49",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "J49",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "J41",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "J41",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alberto Noboru Miyadaira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ELE1061",
+        "nome": "Eletrônica Digital",
+        "creditos": 3,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC2",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "J49",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "J49",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "J49",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alexandre Victor Casella"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "CC2EXTR",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "J43",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "J43",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "J43",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Anderson De Camargo Bortoluzzi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS1001",
+        "nome": "Física Do Movimento",
+        "creditos": 3,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ALI3",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "H37",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "H37",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "H37",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leandro Herculano Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "AMB2",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "L43",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "L43",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "L43",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabricio Tronco Dalmolin"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "BQLQ2",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc.Química",
+                "Química Industrial"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N3",
+                "sala": "I15",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "I15",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "I15",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leandro Herculano Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "ELE3",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "L27",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "L27",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "L27",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo Augusto Mascarello Gotardo"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP3",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng.Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "L23",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "L23",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "L23",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leandro Herculano Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS1002",
+        "nome": "Fundamentos Da Termodinâmica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ALI3",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "H36",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "H36",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daiene De Mello Schaefer"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "AMB3QUI3",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc.Química",
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "H37",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "H37",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daiene De Mello Schaefer"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP4",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng.Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "H35",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "H35",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daiene De Mello Schaefer"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS1005",
+        "nome": "Oscilações E Ondas",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ELE3",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "L27",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "L27",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo Augusto Mascarello Gotardo"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP4",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng.Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "H37",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "H37",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ricardo Augusto Mascarello Gotardo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HLA1001",
+        "nome": "Leitura E Escrita Acadêmica",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AGR1",
+            "enquadramento": "Presencial",
+            "vagas_total": 34,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Gestão Do Agronegócio"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "I12",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "I12",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Silvana Mendonca Lopes Valentin"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "AMB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 34,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "I11",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "I11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jacqueline Lidiane De Souza"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "CC5",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "J47",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "J47",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Claudimara Cassoli Bortoloto"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "ELE1",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "I11",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "I11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Dayse Grassi Bernardon"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP1",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng.Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "I11",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "I11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Dayse Grassi Bernardon"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "TAL1",
+            "enquadramento": "Presencial",
+            "vagas_total": 36,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol Em Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "J47",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "J47",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Claudimara Cassoli Bortoloto"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "TMI1",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "I16",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "I16",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Silvana Mendonca Lopes Valentin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HLA1004",
+        "nome": "Libras 1",
+        "creditos": 1,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPTAHUMAN",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "I11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Dayse Grassi Bernardon"
+            ],
+            "optativa_matrizes": [
+              "Matriz:665",
+              "Matriz:655",
+              "Matriz:653",
+              "Matriz:656",
+              "Matriz:660",
+              "Matriz:654",
+              "Matriz:659",
+              "Matriz:658"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HLA1005",
+        "nome": "Sociologia",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP3",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Eng.Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "L23",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "L23",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Claudimara Cassoli Bortoloto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:665",
+              "Matriz:655",
+              "Matriz:656",
+              "Matriz:660",
+              "Matriz:657",
+              "Matriz:654",
+              "Matriz:659",
+              "Matriz:658",
+              "Matriz:662"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HLA1006",
+        "nome": "Filosofia",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AMB6",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "H35",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "H35",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lairton Moacir Winter"
+            ],
+            "optativa_matrizes": [
+              "Matriz:665",
+              "Matriz:655",
+              "Matriz:659",
+              "Matriz:658"
+            ]
+          },
+          {
+            "codigo": "CC1",
+            "enquadramento": "Presencial",
+            "vagas_total": 51,
+            "vagas_calouros": 41,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "L21",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "L21",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lairton Moacir Winter"
+            ],
+            "optativa_matrizes": [
+              "Matriz:665",
+              "Matriz:655",
+              "Matriz:659",
+              "Matriz:658"
+            ]
+          },
+          {
+            "codigo": "ELE2",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "L21",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "L21",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lairton Moacir Winter"
+            ],
+            "optativa_matrizes": [
+              "Matriz:665",
+              "Matriz:655",
+              "Matriz:659",
+              "Matriz:658"
+            ]
+          },
+          {
+            "codigo": "EP4",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng.Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "L21",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "L21",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lairton Moacir Winter"
+            ],
+            "optativa_matrizes": [
+              "Matriz:665",
+              "Matriz:655",
+              "Matriz:659",
+              "Matriz:658"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HLA1007",
+        "nome": "Psicologia E Desenvolvimento Humano",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPHUMCC",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "H37",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "H37",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Shiderlene Vieira De Almeida Araujo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:665",
+              "Matriz:655",
+              "Matriz:653",
+              "Matriz:656",
+              "Matriz:660",
+              "Matriz:657",
+              "Matriz:654",
+              "Matriz:659",
+              "Matriz:658",
+              "Matriz:662"
+            ]
+          },
+          {
+            "codigo": "TMI5OP",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "I16",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "I16",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Shiderlene Vieira De Almeida Araujo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:665",
+              "Matriz:655",
+              "Matriz:653",
+              "Matriz:656",
+              "Matriz:660",
+              "Matriz:657",
+              "Matriz:654",
+              "Matriz:659",
+              "Matriz:658",
+              "Matriz:662"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HLA1008",
+        "nome": "Inglês Básico 1",
+        "creditos": 3,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPTAH",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "H34",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "H34",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "H34",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joice Maria Maltauro Juliano"
+            ],
+            "optativa_matrizes": [
+              "Matriz:665",
+              "Matriz:655",
+              "Matriz:653",
+              "Matriz:656",
+              "Matriz:660",
+              "Matriz:657",
+              "Matriz:654",
+              "Matriz:659",
+              "Matriz:658",
+              "Matriz:662"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HLA1015",
+        "nome": "Introdução À Língua Brasileira De Sinais",
+        "creditos": 1,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "BQLQ4",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc.Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "H38",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Silvana Mendonca Lopes Valentin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HLA1017",
+        "nome": "Noções Linguísticas E Culturais Da Língua Brasileira De Sinais",
+        "creditos": 1,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "LQ5",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol Em Alimentos",
+                "Licenc.Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "I43",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Silvana Mendonca Lopes Valentin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT1001",
+        "nome": "Fundamentos De Matemática",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AMB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "L21",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "L21",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "L21",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "L21",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vanessa Hlenka"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "CC1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "I26",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "I26",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "I26",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "I26",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jairo Marlon Correa"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "ELE1",
+            "enquadramento": "Presencial",
+            "vagas_total": 64,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "L22",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "L22",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "L22",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "L22",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Priscila Pigatto Gasparin"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP1",
+            "enquadramento": "Presencial",
+            "vagas_total": 14,
+            "vagas_calouros": 14,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng.Produção",
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "L41",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "L41",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "L41",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "L41",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tatiane Tambarussi Thomaz"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "TMI1",
+            "enquadramento": "Presencial",
+            "vagas_total": 27,
+            "vagas_calouros": 27,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol.Manut.Indl.",
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "L42",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "L42",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "L42",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "L42",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cleverson Goncalves Dos Santos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT1002",
+        "nome": "Estruturas Geométricas E Vetores",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ALI2",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "I26",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "I26",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "I26",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jairo Marlon Correa"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "AMB1",
+            "enquadramento": "Presencial",
+            "vagas_total": 42,
+            "vagas_calouros": 26,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc.Química",
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "L22",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "L22",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "L22",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tasia Hickmann"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "BQLQ2",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc.Química",
+                "Química Industrial"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "L42",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "L42",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "L42",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franciele Buss Frescki Kestring"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "CC3",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "L21",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "L21",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "L21",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tatiane Cardoso Batista Flores"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "ELE2",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "H37",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "H37",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "H37",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tatiane Tambarussi Thomaz"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP2",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng.Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "L23",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "L23",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "L23",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tatiane Cardoso Batista Flores"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT1003",
+        "nome": "Matemática Univariável",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ALI2",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "H36",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "H36",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "H36",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "H36",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucas Da Silva Ribeiro"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "AMB2",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "L42",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "L42",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "L42",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "L42",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cleverson Goncalves Dos Santos"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "BQLQ2",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc.Química",
+                "Eng Amb/Sanitária",
+                "Química Industrial"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "L22",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "L22",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "L22",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "L22",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucas Da Silva Ribeiro"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "CC2",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "L41",
+                "sede": null
+              },
+              {
+                "horario": "4T1",
+                "sala": "L41",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "L41",
+                "sede": null
+              },
+              {
+                "horario": "6T1",
+                "sala": "L41",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "L41",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tatiane Tambarussi Thomaz"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "ELE2",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "H38",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "H38",
+                "sede": null
+              },
+              {
+                "horario": "6M1",
+                "sala": "H38",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "H38",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eliane Pereira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP2",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng.Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "I11",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "I11",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "I11",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "I11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Pedro Elton Weber"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT1004",
+        "nome": "Álgebra Linear",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "BQLQ3",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc.Química",
+                "Eng Amb/Sanitária",
+                "Química Industrial"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "L22",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "L22",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "L22",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fausto Pinheiro Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "CC4",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T3",
+                "sala": "L21",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "L21",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "L21",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tatiane Cardoso Batista Flores"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "ELE3",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T3",
+                "sala": "L27",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "L27",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "L27",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fausto Pinheiro Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP3",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng.Produção",
+                "Engenharia Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "L21",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "L21",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "L21",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franciele Buss Frescki Kestring"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT1005",
+        "nome": "Matemática Multivariável",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AMB3",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "L42",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "L42",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "L42",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "L42",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cleverson Goncalves Dos Santos"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "ELE3",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "L42",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L42",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "L42",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "L42",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andre Sandmann"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP3",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng.Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "I11",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "I11",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "I11",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "I11",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Pedro Elton Weber"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT1006",
+        "nome": "Métodos Aproximados Em Soluções Matemáticas",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AMB5",
+            "enquadramento": "Presencial",
+            "vagas_total": 36,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "L12A",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "L12A",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "L12A",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tasia Hickmann"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "CC5",
+            "enquadramento": "Presencial",
+            "vagas_total": 36,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "L18",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "L18",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "L18",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franciele Buss Frescki Kestring"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "ELE5",
+            "enquadramento": "Presencial",
+            "vagas_total": 36,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "I26",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "I26",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "I26",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Samuel Bellido Rodrigues"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP5",
+            "enquadramento": "Presencial",
+            "vagas_total": 36,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng.Produção",
+                "Engenharia Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "I26",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "I26",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "I26",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucas Da Silva Ribeiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT1008",
+        "nome": "Descrição E Inferência Estatística De Dados",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "AMB5",
+            "enquadramento": "Presencial",
+            "vagas_total": 36,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Amb/Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "I26",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "I26",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "I26",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tasia Hickmann"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "BQLQ3",
+            "enquadramento": "Presencial",
+            "vagas_total": 36,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Licenc.Química",
+                "Química Industrial"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N3",
+                "sala": "I25",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "I25",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "I25",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fausto Pinheiro Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "CC3",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "I26",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "I26",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "I26",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jairo Marlon Correa"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "ELE2",
+            "enquadramento": "Presencial",
+            "vagas_total": 36,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M3",
+                "sala": "L12A",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "L12A",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "L12A",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Priscila Pigatto Gasparin"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EP4",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng.Produção",
+                "Engenharia Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "L12A",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "L12A",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "L12A",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Samuel Bellido Rodrigues"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PRO1003",
+        "nome": "Projetos Inovadores Aplicados",
+        "creditos": 2,
+        "creditos_assincronos": 6,
+        "horas_extensionistas": 120,
+        "turmas": [
+          {
+            "codigo": "MEIU1",
+            "enquadramento": "Presencial",
+            "vagas_total": 0,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Eng.Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T3",
+                "sala": "A301",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "A301",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Reginaldo Borges",
+              "Elias Lira Dos Santos Junior"
+            ],
+            "optativa_matrizes": [
+              "Matriz:659",
+              "Matriz:665",
+              "Matriz:655",
+              "Matriz:653",
+              "Matriz:656",
+              "Matriz:660",
+              "Matriz:654",
+              "Matriz:658",
+              "Matriz:662"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "PRO1036",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 1,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC7",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "H614",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "H614",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Laercio Wrasse"
+            ],
+            "optativa_matrizes": [
+              "Matriz:660",
+              "Matriz:655"
+            ]
+          },
+          {
+            "codigo": "ELE7",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "H614",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "H614",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luciano Da Costa Barzotto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:660",
+              "Matriz:655"
+            ]
+          },
+          {
+            "codigo": "EP9",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng.Produção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "H610",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "H610",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luciano Da Costa Barzotto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:660",
+              "Matriz:655"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "PRO1055",
+        "nome": "Gestão De Projetos",
+        "creditos": 1,
+        "creditos_assincronos": 3,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC6",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciência Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T4",
+                "sala": "H611",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lidiana Zocche"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TCOM1",
+        "nome": "Trabalho De Conclusão De Curso 2",
+        "creditos": 0,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CC654",
+            "enquadramento": "Presencial",
+            "vagas_total": 61,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Jorge Aikes Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

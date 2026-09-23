@@ -1,0 +1,889 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-23T18-12-22Z",
+  "capturedAt": "2026-09-23T18:12:22.598Z",
+  "sourceLastUpdatedAt": "23/09/2026 15:15:25   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "curitiba",
+    "name": "Curitiba",
+    "code": "01"
+  },
+  "course": {
+    "id": "0343",
+    "name": "Lic Letras Português",
+    "sourceName": "LIC LETRAS PORTUGUÊS"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=343"
+  },
+  "fingerprint": "d9b1aef784088693620d4014058cb0e8bb46e3cb6388c2f1cf3311513ae80fbd",
+  "previousVersionId": "2026-09-19T20-29-03Z",
+  "changes": [
+    {
+      "type": "removed",
+      "codigo": "CE78G",
+      "nome": "Filosofia Da Linguagem"
+    },
+    {
+      "type": "removed",
+      "codigo": "ED70U",
+      "nome": "Libras B"
+    },
+    {
+      "type": "removed",
+      "codigo": "EDU70A",
+      "nome": "História Da Profissão Docente"
+    },
+    {
+      "type": "removed",
+      "codigo": "EDU70B",
+      "nome": "Pesquisa Em Educação"
+    },
+    {
+      "type": "removed",
+      "codigo": "EDU70D",
+      "nome": "Psicologia Da Educação"
+    },
+    {
+      "type": "removed",
+      "codigo": "EDU70H",
+      "nome": "Política Educacional"
+    },
+    {
+      "type": "removed",
+      "codigo": "EDU70J",
+      "nome": "Libras"
+    },
+    {
+      "type": "removed",
+      "codigo": "EDU70K",
+      "nome": "Tecnologias Digitais Na Educação"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP71A",
+      "nome": "Fundamentos E Crítica Da Literatura"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP71B",
+      "nome": "Teorias Da Poesia"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP71C",
+      "nome": "Linguística Geral"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP71D",
+      "nome": "Prática De Ensino Em Produção Textual"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP71E",
+      "nome": "Linguagem E Tecnologia"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP72A",
+      "nome": "Origens Das Literaturas Portuguesa E Brasileira"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP72B",
+      "nome": "Teorias Da Narrativa"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP72C",
+      "nome": "Fonética E Fonologia"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP72D",
+      "nome": "Prática De Linguística Aplicada Ao Ensino"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP73A",
+      "nome": "Literatura Brasileira: Século Xix"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP73B",
+      "nome": "Literatura Portuguesa Do Seculo Xix"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP73C",
+      "nome": "Morfologia"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP73D",
+      "nome": "Leitura Em Diferentes Mídias"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP74B",
+      "nome": "Sintaxe"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP74E",
+      "nome": "Projeto Integrador: Tecnologia E Trabalho Docente"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP74F",
+      "nome": "Metodologia De Ensino De Língua Portuguesa"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP75A",
+      "nome": "Modernismos Brasileiros"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP75B",
+      "nome": "Literatura Portuguesa Dos Séculos Xx E Xxi"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP75C",
+      "nome": "Letramentos"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP75F",
+      "nome": "Metodologia De Ensino Literatura"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP76A",
+      "nome": "Prática De Ensino Em Literatura Infantil E Juvenil"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP76B",
+      "nome": "Semântica E Pragmática"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP76C",
+      "nome": "Prática De Ensino E Variação Linguística"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP76E",
+      "nome": "Projeto Integrador: Literatura E Intermidialidade"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP76F",
+      "nome": "Projeto De Pesquisa Em Letras"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP77A",
+      "nome": "Literatura Comparada"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP77C",
+      "nome": "História Das Ideias E Cultura Brasileira"
+    },
+    {
+      "type": "changed",
+      "codigo": "LICP77D",
+      "nome": "Estágio Curricular Obrigatório 3",
+      "fields": [
+        "turmas[0]"
+      ]
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP77E",
+      "nome": "Projeto Integrador: Multimodalidade E Ensino Não-Presencial"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP78A",
+      "nome": "Prática De Ensino Em Revisão De Texto"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP78B",
+      "nome": "Literatura Brasileira Contemporânea"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP78C",
+      "nome": "Práticas De Pesquisa Em Letras"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP78D",
+      "nome": "Estágio Curricular Obrigatório 4"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP7AE",
+      "nome": "Linguística Histórica"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP7AF",
+      "nome": "Tópicos Em Teoria"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP7BC",
+      "nome": "Literatura E Outras Linguagens"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICP7BG",
+      "nome": "Prosa Latino-Americana"
+    }
+  ],
+  "payload": {
+    "curso": "LIC LETRAS PORTUGUÊS",
+    "ultima_atualizacao": "23/09/2026 15:15:25   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [
+        {
+          "marcador": "*",
+          "sede": "Ecoville"
+        },
+        {
+          "marcador": "**",
+          "sede": "Neoville"
+        }
+      ],
+      "sede_sem_marcador": "Centro"
+    },
+    "disciplinas": [
+      {
+        "codigo": "EDU70E",
+        "nome": "Didática",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S65",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "EB-210",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5T2",
+                "sala": "EB-210",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5T3",
+                "sala": "EB-210",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Lauro Rafael Cruz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S81",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Fisica 9"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "CE-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T2",
+                "sala": "CE-304",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T3",
+                "sala": "CE-304",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Joao Carlos Pereira De Moraes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S83",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática"
+              ],
+              [
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M2",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M3",
+                "sala": "CA-101",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Lauro Rafael Cruz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "CE-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N2",
+                "sala": "CE-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N3",
+                "sala": "CE-206",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Lauro Rafael Cruz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982",
+              "Matriz:985",
+              "Matriz:945",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EDU70I",
+        "nome": "Educação Especial E Processos Inclusivos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S81",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Fisica 9"
+              ],
+              [
+                "Lic Química",
+                "Téc.Em Multimeios Buti",
+                "Lic Letras Inglês",
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T2",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CA-103",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Solange Freundel Filvock"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:976",
+              "Matriz:920",
+              "Matriz:970",
+              "Matriz:973",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S83",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Matemática"
+              ],
+              [
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "CE-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CE-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M6",
+                "sala": "CE-206",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marta Rejane Proenca Filietaz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:976",
+              "Matriz:920",
+              "Matriz:970",
+              "Matriz:973",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S85",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Inglês"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Português",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T2",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CA-103",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Solange Freundel Filvock"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:976",
+              "Matriz:920",
+              "Matriz:970",
+              "Matriz:973",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ],
+              [
+                "Lic Matemática",
+                "Lic Química",
+                "Lic Letras Inglês",
+                "Lic Fisica 9"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "CE-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N4",
+                "sala": "CE-105",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N5",
+                "sala": "CE-105",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Solange Freundel Filvock"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:976",
+              "Matriz:920",
+              "Matriz:970",
+              "Matriz:973",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LICP74C",
+        "nome": "Estudos Do Texto",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N2",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N3",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N4",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N5",
+                "sala": "CC-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Evandro De Melo Catelan"
+            ],
+            "optativa_matrizes": [
+              "Matriz:982"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LICP75D",
+        "nome": "Estágio Curricular Obrigatório 1",
+        "creditos": 7,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M3",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M4",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M3",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M4",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T2",
+                "sala": "CC-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CC-206",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Nivea Rohling"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP76D",
+        "nome": "Estágio Curricular Obrigatório 2",
+        "creditos": 7,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 38,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M5",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3M6",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M3",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M4",
+                "sala": "D-PTO",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N3",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N4",
+                "sala": "CC-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Paulo Eduardo Benites De Moraes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP77B",
+        "nome": "Estudos De Discurso",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S91",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T3",
+                "sala": "CE-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T4",
+                "sala": "CE-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T4",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T5",
+                "sala": "CE-302",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6T6",
+                "sala": "CE-302",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Layana Christine De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICP77D",
+        "nome": "Estágio Curricular Obrigatório 3",
+        "creditos": 7,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": []
+      }
+    ]
+  }
+}

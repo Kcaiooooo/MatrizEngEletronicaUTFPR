@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-23T18-07-11Z",
+  "capturedAt": "2026-09-23T18:07:11.566Z",
+  "sourceLastUpdatedAt": "23/09/2026 15:07:19   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "apucarana",
+    "name": "Apucarana",
+    "code": "10"
+  },
+  "course": {
+    "id": "0005",
+    "name": "Processos Químicos",
+    "sourceName": "PROCESSOS QUÍMICOS"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=5"
+  },
+  "fingerprint": "d814406ca473d91dcdf49f7a665657a110e9746fd9fc4e13889ec6d5220dad22",
+  "previousVersionId": "2026-09-19T20-29-03Z",
+  "changes": [
+    {
+      "type": "changed",
+      "codigo": "LBLQ6A",
+      "nome": "Libras 1",
+      "fields": [
+        "turmas[0].professores[0]"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "LBLQ7B",
+      "nome": "Libras 2",
+      "fields": [
+        "turmas[0].professores[0]"
+      ]
+    }
+  ],
+  "payload": {
+    "curso": "PROCESSOS QUÍMICOS",
+    "ultima_atualizacao": "23/09/2026 15:07:19   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "LBLQ6A",
+        "nome": "Libras 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "LQ6A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N4",
+                "sala": "L004B",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "L004B",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franciele De Lima Berloffa Machado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LBLQ7B",
+        "nome": "Libras 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "LQ7A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "L004B",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "L004B",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franciele De Lima Berloffa Machado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

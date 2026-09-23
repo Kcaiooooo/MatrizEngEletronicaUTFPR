@@ -1,0 +1,680 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-23T18-12-22Z",
+  "capturedAt": "2026-09-23T18:12:22.598Z",
+  "sourceLastUpdatedAt": "23/09/2026 15:14:48   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "curitiba",
+    "name": "Curitiba",
+    "code": "01"
+  },
+  "course": {
+    "id": "0234",
+    "name": "Lic Letras",
+    "sourceName": "LIC LETRAS"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=234"
+  },
+  "fingerprint": "8b2f6b3c0babce02166faa7ea3d3d9e965c99eb2192b06177d42855f5ef37f0c",
+  "previousVersionId": "2026-09-19T20-29-03Z",
+  "changes": [
+    {
+      "type": "removed",
+      "codigo": "ED70U",
+      "nome": "Libras B"
+    },
+    {
+      "type": "removed",
+      "codigo": "EDU70J",
+      "nome": "Libras"
+    },
+    {
+      "type": "changed",
+      "codigo": "FCH7HA",
+      "nome": "História Da Técnica E Da Tecnologia",
+      "fields": [
+        "turmas[1].optativa_matrizes[11]",
+        "turmas[1].optativa_matrizes[12]",
+        "turmas[1].optativa_matrizes[13]",
+        "turmas[1].optativa_matrizes[14]",
+        "turmas[1].optativa_matrizes[15]",
+        "turmas[1].optativa_matrizes[16]",
+        "turmas[1].optativa_matrizes[17]",
+        "turmas[1].optativa_matrizes[18]",
+        "turmas[1].optativa_matrizes[19]",
+        "turmas[1].optativa_matrizes[20]",
+        "turmas[2]"
+      ]
+    },
+    {
+      "type": "removed",
+      "codigo": "FCH7PA",
+      "nome": "Psicologia Do Trabalho"
+    },
+    {
+      "type": "removed",
+      "codigo": "FCH7SB",
+      "nome": "Tecnologia E Sociedade"
+    },
+    {
+      "type": "removed",
+      "codigo": "FCH7SD",
+      "nome": "Sociedade E Política No Brasil"
+    },
+    {
+      "type": "removed",
+      "codigo": "FCH7XC",
+      "nome": "Presença Africana No Brasil"
+    },
+    {
+      "type": "removed",
+      "codigo": "FCH7XE",
+      "nome": "Políticas Públicas"
+    }
+  ],
+  "payload": {
+    "curso": "LIC LETRAS",
+    "ultima_atualizacao": "23/09/2026 15:14:48   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [
+        {
+          "marcador": "*",
+          "sede": "Ecoville"
+        },
+        {
+          "marcador": "**",
+          "sede": "Neoville"
+        }
+      ],
+      "sede_sem_marcador": "Centro"
+    },
+    "disciplinas": [
+      {
+        "codigo": "CL78H",
+        "nome": "Estágio Curricular Obrigatório 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "E01",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Andressa Brawerman Albini"
+            ],
+            "optativa_matrizes": [
+              "Matriz:822"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ED70B",
+        "nome": "Educação E Tecnologia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4M3",
+                "sala": "CQ-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4M4",
+                "sala": "CQ-301",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Roland Baschta Junior"
+            ],
+            "optativa_matrizes": [
+              "Matriz:845",
+              "Matriz:872",
+              "Matriz:919",
+              "Matriz:826"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "CQ-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4T2",
+                "sala": "CQ-301",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Roland Baschta Junior"
+            ],
+            "optativa_matrizes": [
+              "Matriz:845",
+              "Matriz:872",
+              "Matriz:919",
+              "Matriz:826"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7FA",
+        "nome": "Filosofia Da Ciência E Da Tecnologia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S63",
+            "enquadramento": "Presencial",
+            "vagas_total": 47,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "CE-307",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M2",
+                "sala": "CE-307",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M3",
+                "sala": "CE-307",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Alex Calazans"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:995",
+              "Matriz:973",
+              "Matriz:983",
+              "Matriz:957",
+              "Matriz:976",
+              "Matriz:972",
+              "Matriz:979",
+              "Matriz:978",
+              "Matriz:960",
+              "Matriz:920",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S71",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T3",
+                "sala": "CE-202",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T4",
+                "sala": "CE-202",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Veronica Ferreira Bahr Calazans"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:995",
+              "Matriz:973",
+              "Matriz:983",
+              "Matriz:957",
+              "Matriz:976",
+              "Matriz:972",
+              "Matriz:979",
+              "Matriz:978",
+              "Matriz:960",
+              "Matriz:920",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S73",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sist De Informação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T3",
+                "sala": "CC-205",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3T4",
+                "sala": "CC-205",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Alex Calazans"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:995",
+              "Matriz:973",
+              "Matriz:983",
+              "Matriz:957",
+              "Matriz:976",
+              "Matriz:972",
+              "Matriz:979",
+              "Matriz:978",
+              "Matriz:960",
+              "Matriz:920",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S93",
+            "enquadramento": "Presencial",
+            "vagas_total": 47,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Educação Física"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M4",
+                "sala": "CC-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5M5",
+                "sala": "CC-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marcio Luiz Miotto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:995",
+              "Matriz:973",
+              "Matriz:983",
+              "Matriz:957",
+              "Matriz:976",
+              "Matriz:972",
+              "Matriz:979",
+              "Matriz:978",
+              "Matriz:960",
+              "Matriz:920",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:982",
+              "Matriz:961",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7FB",
+        "nome": "Fundamentos Da Ética",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S31",
+            "enquadramento": "Presencial",
+            "vagas_total": 52,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Design",
+                "Química Ambiental"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M2",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6M3",
+                "sala": "CE-108",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Marcio Luiz Miotto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:972",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:985",
+              "Matriz:982",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          },
+          {
+            "codigo": "S32",
+            "enquadramento": "Presencial",
+            "vagas_total": 47,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Design"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "CC-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T3",
+                "sala": "CC-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5T4",
+                "sala": "CC-301",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Andrea Maila Voss"
+            ],
+            "optativa_matrizes": [
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:981",
+              "Matriz:972",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:985",
+              "Matriz:982",
+              "Matriz:945",
+              "Matriz:959",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:977"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7HA",
+        "nome": "História Da Técnica E Da Tecnologia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Química Ambiental"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3T5",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "3T6",
+                "sala": "EL-211",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Maria Jose Menezes Lourega Belli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:995",
+              "Matriz:983",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:967",
+              "Matriz:982",
+              "Matriz:981",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:961",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:972",
+              "Matriz:974",
+              "Matriz:980",
+              "Matriz:973"
+            ]
+          },
+          {
+            "codigo": "S03",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "CE-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T4",
+                "sala": "CE-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T5",
+                "sala": "CE-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T5",
+                "sala": "CE-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T6",
+                "sala": "CE-106",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2T6",
+                "sala": "CE-106",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Gilson Leandro Queluz",
+              "Elena Camargo Shizuno"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:995",
+              "Matriz:983",
+              "Matriz:957",
+              "Matriz:948",
+              "Matriz:976",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:967",
+              "Matriz:982"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GE70H",
+        "nome": "Gestão Financeira",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S71",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ],
+              [
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "CA-203",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M5",
+                "sala": "CA-203",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Armando Rasoto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:708",
+              "Matriz:709"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

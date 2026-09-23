@@ -1,0 +1,880 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-23T18-12-22Z",
+  "capturedAt": "2026-09-23T18:12:22.598Z",
+  "sourceLastUpdatedAt": "23/09/2026 15:15:15   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "curitiba",
+    "name": "Curitiba",
+    "code": "01"
+  },
+  "course": {
+    "id": "0298",
+    "name": "Comunic Organizacional",
+    "sourceName": "COMUNIC ORGANIZACIONAL"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=298"
+  },
+  "fingerprint": "d199aa1a150ae760af6477ed516ca4c30ba78f2a35623aeb8328ffc4d4e4c94a",
+  "previousVersionId": "2026-09-19T20-29-03Z",
+  "changes": [
+    {
+      "type": "removed",
+      "codigo": "CE78A",
+      "nome": "Trabalho De Conclusão De Curso 2"
+    },
+    {
+      "type": "changed",
+      "codigo": "COE70A",
+      "nome": "Comunicação Oral E Escrita",
+      "fields": [
+        "turmas[2].optativa_matrizes[1]",
+        "turmas[2].optativa_matrizes[2]",
+        "turmas[2].optativa_matrizes[3]",
+        "turmas[2].optativa_matrizes[4]",
+        "turmas[2].optativa_matrizes[5]",
+        "turmas[2].optativa_matrizes[6]",
+        "turmas[2].optativa_matrizes[7]",
+        "turmas[3]",
+        "turmas[4]"
+      ]
+    },
+    {
+      "type": "removed",
+      "codigo": "EDU70E",
+      "nome": "Didática"
+    },
+    {
+      "type": "removed",
+      "codigo": "EDU70H",
+      "nome": "Política Educacional"
+    },
+    {
+      "type": "removed",
+      "codigo": "EDU70J",
+      "nome": "Libras"
+    },
+    {
+      "type": "removed",
+      "codigo": "FCH7AA",
+      "nome": "Dança E Tecnologia"
+    },
+    {
+      "type": "removed",
+      "codigo": "FCH7AB",
+      "nome": "Questões Contemporâneas Do Corpo"
+    },
+    {
+      "type": "removed",
+      "codigo": "FCH7FA",
+      "nome": "Filosofia Da Ciência E Da Tecnologia"
+    },
+    {
+      "type": "removed",
+      "codigo": "FCH7FB",
+      "nome": "Fundamentos Da Ética"
+    },
+    {
+      "type": "removed",
+      "codigo": "FCH7GA",
+      "nome": "Metropolização Contemporânea: Tecnologia E Território"
+    },
+    {
+      "type": "removed",
+      "codigo": "FCH7HA",
+      "nome": "História Da Técnica E Da Tecnologia"
+    },
+    {
+      "type": "removed",
+      "codigo": "FCH7HB",
+      "nome": "História Geral Da Economia"
+    },
+    {
+      "type": "removed",
+      "codigo": "FCH7PA",
+      "nome": "Psicologia Do Trabalho"
+    },
+    {
+      "type": "removed",
+      "codigo": "FCH7PC",
+      "nome": "Planejamento De Carreira"
+    },
+    {
+      "type": "removed",
+      "codigo": "FCH7SA",
+      "nome": "Sociologia"
+    },
+    {
+      "type": "removed",
+      "codigo": "FCH7SB",
+      "nome": "Tecnologia E Sociedade"
+    },
+    {
+      "type": "removed",
+      "codigo": "FCH7SC",
+      "nome": "Tecnologia, Trabalho E Saúde"
+    },
+    {
+      "type": "removed",
+      "codigo": "FCH7SD",
+      "nome": "Sociedade E Política No Brasil"
+    },
+    {
+      "type": "removed",
+      "codigo": "FCH7SF",
+      "nome": "Política, Instituições E Cidadania No Paraná"
+    },
+    {
+      "type": "removed",
+      "codigo": "FCH7XA",
+      "nome": "Tecnologia Social E Economia Solidária"
+    },
+    {
+      "type": "removed",
+      "codigo": "FCH7XC",
+      "nome": "Presença Africana No Brasil"
+    },
+    {
+      "type": "removed",
+      "codigo": "FCH7XD",
+      "nome": "Direitos Humanos, Segurança E Diversidade"
+    },
+    {
+      "type": "removed",
+      "codigo": "FCH7XE",
+      "nome": "Políticas Públicas"
+    },
+    {
+      "type": "removed",
+      "codigo": "FCH7XF",
+      "nome": "Dimensão Ambiental Na Gestão Urbana"
+    },
+    {
+      "type": "removed",
+      "codigo": "GEE7E1",
+      "nome": "Fundamentos De Empreendedorismo"
+    },
+    {
+      "type": "removed",
+      "codigo": "GEE7E3",
+      "nome": "Fundamentos De Economia"
+    },
+    {
+      "type": "removed",
+      "codigo": "GEE7G1",
+      "nome": "Fundamentos De Gestão De Pessoas"
+    },
+    {
+      "type": "removed",
+      "codigo": "GEE7M1",
+      "nome": "Fundamentos De Marketing"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM71A",
+      "nome": "Organizações E Sociedade"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM71B",
+      "nome": "Fundamentos Da Comunicação Organizacional"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM71C",
+      "nome": "Linguagem Visual"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM71D",
+      "nome": "Produção Sonora"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM71E",
+      "nome": "Processos Criativos"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM71F",
+      "nome": "Introdução À Metodologia De Pesquisa"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM72A",
+      "nome": "História Da Comunicação"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM72B",
+      "nome": "Teorias Da Comunicação I"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM72C",
+      "nome": "Linguagem Audiovisual"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM72D",
+      "nome": "Produção Visual"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM73A",
+      "nome": "Processos Culturais Nas Organizações"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM73B",
+      "nome": "Teorias Da Comunicação Ii"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM73C",
+      "nome": "Linguagem Textual"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM73D",
+      "nome": "Produção Audiovisual"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM73E",
+      "nome": "Pesquisa E Diagnóstico Em Comunicação"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM74B",
+      "nome": "Planejamento De Comunicação Organizacional"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM74C",
+      "nome": "Linguagem Multimídia"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM74D",
+      "nome": "Produção Textual"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM75A",
+      "nome": "Estudos De Discursos"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM75C",
+      "nome": "História Das Ideias"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM75D",
+      "nome": "Produção Multimídia"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM76A",
+      "nome": "Ética E Comunicação"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM76C",
+      "nome": "Comunicação Pública"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM76D",
+      "nome": "Metodologia De Pesquisa Em Comunicação"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM77A",
+      "nome": "Trabalho De Conclusão De Curso I"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM77B",
+      "nome": "Tecnologia E Comunicação"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM77C",
+      "nome": "Psicologia Da Comunicação"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM78A",
+      "nome": "Trabalho De Conclusão De Curso Ii"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM78B",
+      "nome": "Tópicos Especiais Em Comunicação"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM7AC",
+      "nome": "Comunicação Organizacional Aplicada"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM7AD",
+      "nome": "Diversidade E Comunicação Nas Organizações"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM7AL",
+      "nome": "Prática De Texto Em Comunicação Organizacional"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM7AM",
+      "nome": "Projeto Audiovisual Documentário"
+    },
+    {
+      "type": "removed",
+      "codigo": "LICOM7AN",
+      "nome": "Tópicos Especiais Em Humanidades"
+    }
+  ],
+  "payload": {
+    "curso": "COMUNIC ORGANIZACIONAL",
+    "ultima_atualizacao": "23/09/2026 15:15:15   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [
+        {
+          "marcador": "*",
+          "sede": "Ecoville"
+        },
+        {
+          "marcador": "**",
+          "sede": "Neoville"
+        }
+      ],
+      "sede_sem_marcador": "Centro"
+    },
+    "disciplinas": [
+      {
+        "codigo": "COE70A",
+        "nome": "Comunicação Oral E Escrita",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "E11",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol. Sist. Telec."
+              ],
+              [
+                "Eng De Computação",
+                "Eng Mecatrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N2",
+                "sala": "CE-108",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Jamea Cristina Batista Silva Franklin"
+            ],
+            "optativa_matrizes": [
+              "Matriz:995",
+              "Matriz:983",
+              "Matriz:981",
+              "Matriz:985",
+              "Matriz:959",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974"
+            ]
+          },
+          {
+            "codigo": "S21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "CE-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N3",
+                "sala": "CE-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Lucas Roecker Lazarin"
+            ],
+            "optativa_matrizes": [
+              "Matriz:995",
+              "Matriz:983",
+              "Matriz:981",
+              "Matriz:985",
+              "Matriz:959",
+              "Matriz:962",
+              "Matriz:970",
+              "Matriz:974"
+            ]
+          },
+          {
+            "codigo": "S23",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M5",
+                "sala": "CE-204",
+                "sede": "Centro"
+              },
+              {
+                "horario": "2M6",
+                "sala": "CE-204",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Denise Regina Stacheski"
+            ],
+            "optativa_matrizes": [
+              "Matriz:995",
+              "Mat"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCH7HC",
+        "nome": "Capitalismo Contemporâneo E Economia Política",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S01",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "EL-208",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5T5",
+                "sala": "EL-208",
+                "sede": "Ecoville"
+              },
+              {
+                "horario": "5T6",
+                "sala": "EL-208",
+                "sede": "Ecoville"
+              }
+            ],
+            "professores": [
+              "Sandro Marlus Wambier"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:973",
+              "Matriz:957",
+              "Matriz:981",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:845",
+              "Matriz:784",
+              "Matriz:873",
+              "Matriz:888",
+              "Matriz:806",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:961",
+              "Matriz:867",
+              "Matriz:755",
+              "Matriz:870",
+              "Matriz:844",
+              "Matriz:708",
+              "Matriz:709",
+              "Matriz:906",
+              "Matriz:919",
+              "Matriz:823",
+              "Matriz:962",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          },
+          {
+            "codigo": "S02",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "CE-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N2",
+                "sala": "CE-301",
+                "sede": "Centro"
+              },
+              {
+                "horario": "3N3",
+                "sala": "CE-301",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Sandro Marlus Wambier"
+            ],
+            "optativa_matrizes": [
+              "Matriz:990",
+              "Matriz:973",
+              "Matriz:957",
+              "Matriz:981",
+              "Matriz:978",
+              "Matriz:979",
+              "Matriz:960",
+              "Matriz:845",
+              "Matriz:784",
+              "Matriz:873",
+              "Matriz:888",
+              "Matriz:806",
+              "Matriz:982",
+              "Matriz:968",
+              "Matriz:985",
+              "Matriz:961",
+              "Matriz:867",
+              "Matriz:755",
+              "Matriz:870",
+              "Matriz:844",
+              "Matriz:708",
+              "Matriz:709",
+              "Matriz:906",
+              "Matriz:919",
+              "Matriz:823",
+              "Matriz:962",
+              "Matriz:974",
+              "Matriz:980"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LICOM74A",
+        "nome": "Comunicação E Antropologia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S95",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Comunic Organizacional"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "CA-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N2",
+                "sala": "CA-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N3",
+                "sala": "CA-102",
+                "sede": "Centro"
+              },
+              {
+                "horario": "4N4",
+                "sala": "CA-102",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Valeria Oliveira Santos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICOM75B",
+        "nome": "Comunicação E Trabalho",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S95",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Comunic Organizacional"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N2",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N3",
+                "sala": "CE-108",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N4",
+                "sala": "CE-108",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Joao Augusto Moliani"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICOM75E",
+        "nome": "Campanhas De Comunicação",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S95",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Comunic Organizacional"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "CA-103",
+                "sede": "Centro"
+              },
+              {
+                "horario": "6N2",
+                "sala": "CA-103",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Cora Catalina Gaete Quinteros"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICOM76B",
+        "nome": "Comunicação E Gestão De Crise",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S95",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Comunic Organizacional"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N2",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N3",
+                "sala": "CA-101",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N4",
+                "sala": "CA-101",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Zama Caixeta Nascentes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICOM77D",
+        "nome": "Avaliação De Projeto Em Comunicação",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "S95",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Comunic Organizacional"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "CA-206",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N2",
+                "sala": "CA-206",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Cora Catalina Gaete Quinteros"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICOM7AA",
+        "nome": "Comunicação E Educação",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 90,
+        "turmas": [
+          {
+            "codigo": "S95",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Comunic Organizacional"
+              ],
+              [
+                "Lic Letras Português"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "CC-002",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N2",
+                "sala": "CC-002",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N3",
+                "sala": "CC-002",
+                "sede": "Centro"
+              },
+              {
+                "horario": "5N4",
+                "sala": "CC-002",
+                "sede": "Centro"
+              }
+            ],
+            "professores": [
+              "Gabriella Hauber Pimentel"
+            ],
+            "optativa_matrizes": [
+              "Matriz:973",
+              "Matriz:948",
+              "Matriz:982"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

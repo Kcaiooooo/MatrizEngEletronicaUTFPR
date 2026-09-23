@@ -1,0 +1,2861 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-23T18-07-11Z",
+  "capturedAt": "2026-09-23T18:07:11.566Z",
+  "sourceLastUpdatedAt": "23/09/2026 15:07:18   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "apucarana",
+    "name": "Apucarana",
+    "code": "10"
+  },
+  "course": {
+    "id": "0002",
+    "name": "Design De Moda",
+    "sourceName": "DESIGN DE MODA"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=2"
+  },
+  "fingerprint": "bf5dfeb3f892d75448a88d79a1a3f2e43f8054c44cb101a6a93b652cbb49275e",
+  "previousVersionId": "2026-09-19T20-29-03Z",
+  "changes": [
+    {
+      "type": "changed",
+      "codigo": "DGDM1A",
+      "nome": "Desenho Geométrico Aplicado À Moda",
+      "fields": [
+        "turmas[0].horarios[0].sala",
+        "turmas[0].horarios[1].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "GTDM4A",
+      "nome": "Gêneros Textuais Acadêmicos",
+      "fields": [
+        "turmas[0].horarios[0].sala",
+        "turmas[0].horarios[1].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "LBLQ6A",
+      "nome": "Libras 1",
+      "fields": [
+        "turmas[0].professores[0]"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "LBLQ7B",
+      "nome": "Libras 2",
+      "fields": [
+        "turmas[0].professores[0]"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "LO62A",
+      "nome": "Libras 1",
+      "fields": [
+        "turmas[0].professores[0]",
+        "turmas[1].professores[0]",
+        "turmas[2].professores[0]"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "LO62B",
+      "nome": "Libras 2",
+      "fields": [
+        "turmas[0].professores[0]"
+      ]
+    }
+  ],
+  "payload": {
+    "curso": "DESIGN DE MODA",
+    "ultima_atualizacao": "23/09/2026 15:07:18   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "AFCO5O",
+        "nome": "Aptidão Física",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPEG5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "QUADRA",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "QUADRA",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cynthia Correa Lopes Barbosa"
+            ],
+            "optativa_matrizes": [
+              "Matriz:32"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ARDM1A",
+        "nome": "Artesania",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 16,
+            "vagas_calouros": 15,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "C007",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "C007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raquel Rabelo Andrade"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "DM1B",
+            "enquadramento": "Presencial",
+            "vagas_total": 16,
+            "vagas_calouros": 15,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "C007",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "C007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raquel Rabelo Andrade"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ASDM3O",
+        "nome": "Ações Solidárias, Desenvolvimento Social E Cultural",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 45,
+        "turmas": [
+          {
+            "codigo": "OPDM3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "C004",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "C004",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "C004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Patricia Aparecida De Almeida"
+            ],
+            "optativa_matrizes": [
+              "Matriz:39"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "BODM4A",
+        "nome": "Bordado",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 9,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "5M6",
+                "sala": "C003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Celso Tetsuro Suono"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "DM4B",
+            "enquadramento": "Presencial",
+            "vagas_total": 9,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "C003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Celso Tetsuro Suono"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CEDM3A",
+        "nome": "Costura Experimental",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "C004",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "C004",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "C004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carla Hidalgo Capelassi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CSDM3A",
+        "nome": "Moda, Consumo E Sociedade",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "M002B",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "M002B",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Roberto Ghizzo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "DGDM1A",
+        "nome": "Desenho Geométrico Aplicado À Moda",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 31,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M3",
+                "sala": "M002B",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "M002B",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Isabella Akemi Okumoto Borges"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "DMDM2A",
+        "nome": "Desenho De Moda",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "I001",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "I001",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "I001",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "I001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Celso Tetsuro Suono"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "DPR01MEIU",
+        "nome": "Design De Soluções Para Problemas Reais",
+        "creditos": 4,
+        "creditos_assincronos": 6,
+        "horas_extensionistas": 120,
+        "turmas": [
+          {
+            "codigo": "OPET3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "H001",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "H001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Juliana Castanon Xavier Merli"
+            ],
+            "optativa_matrizes": [
+              "Matriz:34",
+              "Matriz:32",
+              "Matriz:18",
+              "Matriz:17",
+              "Matriz:36",
+              "Matriz:35",
+              "Matriz:39",
+              "Matriz:38",
+              "Matriz:19",
+              "Matriz:37",
+              "Matriz:7"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EEET5A",
+        "nome": "Estratégia Empresarial",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ET5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Têxtil"
+              ],
+              [
+                "Design De Moda",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "M011",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "M011",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tiago Ferreira Ribeiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EMDM5A",
+        "nome": "Empreendedorismo Na Moda",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "M011",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "M011",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "M011",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Capre Dias"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENCO8A",
+        "nome": "Economia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM8A",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Design De Moda",
+                "Química",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "C003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ronie Galeano"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ERDM1A",
+        "nome": "Ergodesign",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 31,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "M003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tamissa Juliana Barreto Berton"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ETDM3O",
+        "nome": "Estamparia Têxtil",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPDM3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M3",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "6M6",
+                "sala": "C003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Patricia Helena Campestrini Harger"
+            ],
+            "optativa_matrizes": [
+              "Matriz:39"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FCDM5A",
+        "nome": "Fundamentos Do Cad 2d No Vestuário",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "C003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gisely Andressa Pires"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FDDM4A",
+        "nome": "Fundamentos Do Desenvolvimento De Coleção",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "M008",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "M008",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "M008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Josiany Oenning Favoreto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FPDM3O",
+        "nome": "Fundamentos De Projeto Autoral",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPDM3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "H002",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "H002",
+                "sede": null
+              },
+              {
+                "horario": "3M6",
+                "sala": "H002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tamissa Juliana Barreto Berton"
+            ],
+            "optativa_matrizes": [
+              "Matriz:39"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FPDM5A",
+        "nome": "Fotografia E Produção De Moda",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 11,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "C002",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "C002",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "C002",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "C002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tamissa Juliana Barreto Berton"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GADM3O",
+        "nome": "Gestão Ambiental Em Moda",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPDM3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "L004A",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "L004A",
+                "sede": null
+              },
+              {
+                "horario": "2M6",
+                "sala": "L004A",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Patricia Krecl Abad"
+            ],
+            "optativa_matrizes": [
+              "Matriz:39"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "GTDM4A",
+        "nome": "Gêneros Textuais Acadêmicos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 32,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Civil",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "I001",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "I001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Cristina Fernandes Pereira Wolff"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GTEL1A",
+        "nome": "Gêneros Textuais Acadêmicos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Design De Moda",
+                "Engenharia Têxtil",
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "N108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Oscar Fussato Nakasato"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GTET1A",
+        "nome": "Gêneros Textuais Acadêmicos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ET1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 10,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Têxtil"
+              ],
+              [
+                "Design De Moda",
+                "Engenharia Civil",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M5",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "L002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Cristina Fernandes Pereira Wolff"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ICDM1A",
+        "nome": "Confecção Industrial",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 31,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "C007",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "C007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Patricia Helena Campestrini Harger"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "INDM1A",
+        "nome": "Introdução Ao Design De Moda",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 31,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M5",
+                "sala": "M002B",
+                "sede": null
+              },
+              {
+                "horario": "6M6",
+                "sala": "M002B",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Celso Tetsuro Suono"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LBLQ6A",
+        "nome": "Libras 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "LQ6A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N4",
+                "sala": "L004B",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "L004B",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franciele De Lima Berloffa Machado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LBLQ7B",
+        "nome": "Libras 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "LQ7A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química"
+              ],
+              [
+                "Engenharia Têxtil",
+                "Engenharia Química",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "L004B",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "L004B",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franciele De Lima Berloffa Machado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LFDM1A",
+        "nome": "Laboratório Da Forma",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 16,
+            "vagas_calouros": 15,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "C005",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "C005",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "C005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Nelio Pinheiro"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "DM1B",
+            "enquadramento": "Presencial",
+            "vagas_total": 16,
+            "vagas_calouros": 15,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "C005",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "C005",
+                "sede": null
+              },
+              {
+                "horario": "5M6",
+                "sala": "C005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Nelio Pinheiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LHDM3A",
+        "nome": "Laboratório De Modelagem Híbrida",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "C005",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "C005",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "C005",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "C005",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "C005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carla Hidalgo Capelassi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LICO1A",
+        "nome": "Comunicação Linguística",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Química",
+                "Engenharia Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "N108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Cristina Fernandes Pereira Wolff"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LIDM3O",
+        "nome": "Laboratório De Ilustração De Moda",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPDM3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M3",
+                "sala": "H002",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "H002",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "H002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raquel Rabelo Andrade"
+            ],
+            "optativa_matrizes": [
+              "Matriz:39"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LJDM4A",
+        "nome": "Lavanderia De Jeans",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 9,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M1",
+                "sala": "C009",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "C009",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "C009",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Valquiria Aparecida Dos Santos Ribeiro"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "DM4B",
+            "enquadramento": "Presencial",
+            "vagas_total": 9,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "C009",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "C009",
+                "sede": null
+              },
+              {
+                "horario": "5M6",
+                "sala": "C009",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Valquiria Aparecida Dos Santos Ribeiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LMDM2A",
+        "nome": "Laboratório De Modelagem",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 12,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "C005",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "C005",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "C005",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "C005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Josiany Oenning Favoreto",
+              "Patricia Aparecida De Almeida"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "DM2B",
+            "enquadramento": "Presencial",
+            "vagas_total": 12,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "C007",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "C007",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "C007",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "C007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Josiany Oenning Favoreto",
+              "Patricia Aparecida De Almeida"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LO62A",
+        "nome": "Libras 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPEG2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "N010",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franciele De Lima Berloffa Machado"
+            ],
+            "optativa_matrizes": [
+              "Matriz:35",
+              "Matriz:37",
+              "Matriz:34",
+              "Matriz:36",
+              "Matriz:17",
+              "Matriz:18"
+            ]
+          },
+          {
+            "codigo": "OPEG2B",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4M5",
+                "sala": "N008",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "N008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franciele De Lima Berloffa Machado"
+            ],
+            "optativa_matrizes": [
+              "Matriz:35",
+              "Matriz:37",
+              "Matriz:34",
+              "Matriz:36",
+              "Matriz:17",
+              "Matriz:18"
+            ]
+          },
+          {
+            "codigo": "OPEG2C",
+            "enquadramento": "Presencial",
+            "vagas_total": 26,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "6T1",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "M003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franciele De Lima Berloffa Machado"
+            ],
+            "optativa_matrizes": [
+              "Matriz:35",
+              "Matriz:37",
+              "Matriz:34",
+              "Matriz:36",
+              "Matriz:17",
+              "Matriz:18"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LO62B",
+        "nome": "Libras 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPEG2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franciele De Lima Berloffa Machado"
+            ],
+            "optativa_matrizes": [
+              "Matriz:35",
+              "Matriz:37",
+              "Matriz:34",
+              "Matriz:36",
+              "Matriz:17",
+              "Matriz:18"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LPDM4A",
+        "nome": "Laboratório De Prototipagem E Modelagem",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "C004",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "C004",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "C007",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "C007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Nelio Pinheiro",
+              "Patricia Aparecida De Almeida"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "DM4B",
+            "enquadramento": "Presencial",
+            "vagas_total": 10,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "C007",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "C007",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "C004",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "C004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Nelio Pinheiro",
+              "Patricia Aparecida De Almeida"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LPDM5A",
+        "nome": "Laboratório De Interpretação E Produção",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "C006",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "C006",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "C006",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "C006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gisely Andressa Pires"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MA62O",
+        "nome": "Meio Ambiente E Sociedade",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPEG2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "M001",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "M001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Graciana Freitas Palioto Pescim"
+            ],
+            "optativa_matrizes": [
+              "Matriz:39",
+              "Matriz:35",
+              "Matriz:37",
+              "Matriz:34",
+              "Matriz:36",
+              "Matriz:25",
+              "Matriz:18",
+              "Matriz:7",
+              "Matriz:17",
+              "Matriz:32",
+              "Matriz:19"
+            ]
+          },
+          {
+            "codigo": "OPEG2B",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "M003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Graciana Freitas Palioto Pescim"
+            ],
+            "optativa_matrizes": [
+              "Matriz:39",
+              "Matriz:35",
+              "Matriz:37",
+              "Matriz:34",
+              "Matriz:36",
+              "Matriz:25",
+              "Matriz:18",
+              "Matriz:7",
+              "Matriz:17",
+              "Matriz:32",
+              "Matriz:19"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MCDM3A",
+        "nome": "Moda E Comunicação",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "L004B",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "L004B",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "L004B",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Livia Laura Matte Soares"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MMDM4A",
+        "nome": "Marketing De Moda",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "M008",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "M008",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "M008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Capre Dias"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MPDM3A",
+        "nome": "Metodologia De Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ],
+              [
+                "Engenharia Química",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "M002B",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "M002B",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cynthia Correa Lopes Barbosa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MPEL4A",
+        "nome": "Metodologia Da Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EE4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ],
+              [
+                "Design De Moda",
+                "Engenharia Química",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "N010",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Graciana Freitas Palioto Pescim"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MPEQ3A",
+        "nome": "Metodologia Da Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EQ3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Química"
+              ],
+              [
+                "Design De Moda",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M5",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "3M6",
+                "sala": "N110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cynthia Correa Lopes Barbosa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MSDM3A",
+        "nome": "Moda E Sustentabilidade",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "H002",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "H002",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "H002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gabriela Martins De Camargo Gaion"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MTDM2A",
+        "nome": "Materiais Têxteis",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "L001",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "L001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Caroline Apoloni Cionek"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "NMDM3A",
+        "nome": "Narrativas Da Moda",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M5",
+                "sala": "H002",
+                "sede": null
+              },
+              {
+                "horario": "2M6",
+                "sala": "H002",
+                "sede": null
+              },
+              {
+                "horario": "5M1",
+                "sala": "H002",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "H002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gabriela Martins De Camargo Gaion"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "OPDM4A",
+        "nome": "Oficina De Projeto De Design",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM4A",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "H002",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "H002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raquel Rabelo Andrade"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "OPDM6A",
+        "nome": "Oficina De Projeto De Vestuário",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM6A",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "C006",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "C006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rosimeiri Naomi Nagamatsu"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PADM6A",
+        "nome": "Projeto Autoral",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM6A",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "H002",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "H002",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "H002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tamissa Juliana Barreto Berton"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PECO2A",
+        "nome": "Metodologia De Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "COM2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Computação"
+              ],
+              [
+                "Design De Moda",
+                "Engenharia Química",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "N108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Graciana Freitas Palioto Pescim"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PMDM1A",
+        "nome": "Pesquisa Em Moda",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM1A",
+            "enquadramento": "Presencial",
+            "vagas_total": 31,
+            "vagas_calouros": 30,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "H002",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "H002",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "H002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gabriela Martins De Camargo Gaion"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PPDM5A",
+        "nome": "Planejamento Da Produção Do Vestuário",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM5A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "M011",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "M011",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "M011",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabricio Kurman Merlin"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PRPG3O",
+        "nome": "Problemas Reais Em Gestão De Processos",
+        "creditos": 2,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPEG3A",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Têxtil",
+                "Engenharia Civil",
+                "Engenharia Elétrica",
+                "Engenharia Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "4M1",
+                "sala": "M006",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "M006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Cavicchioli Zola"
+            ],
+            "optativa_matrizes": [
+              "Matriz:39",
+              "Matriz:7",
+              "Matriz:34"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "QV62O",
+        "nome": "Qualidade De Vida",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPEG2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "I001",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "I001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cynthia Correa Lopes Barbosa"
+            ],
+            "optativa_matrizes": [
+              "Matriz:36",
+              "Matriz:39",
+              "Matriz:35",
+              "Matriz:37",
+              "Matriz:34",
+              "Matriz:18",
+              "Matriz:17",
+              "Matriz:7"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "RPDM2A",
+        "nome": "Reflexões E Práticas Em Design",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "L002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Livia Laura Matte Soares"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "SGDM2A",
+        "nome": "Softwares Gráficos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 12,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M6",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "C003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Livia Marsari Pereira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "DM2B",
+            "enquadramento": "Presencial",
+            "vagas_total": 12,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M6",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "4M1",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "C003",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "C003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Livia Marsari Pereira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TMDM2A",
+        "nome": "Técnicas De Montagem",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "DM2A",
+            "enquadramento": "Presencial",
+            "vagas_total": 12,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "C006",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "C006",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "C006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Patricia Helena Campestrini Harger"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "DM2B",
+            "enquadramento": "Presencial",
+            "vagas_total": 12,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Design De Moda"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "C006",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "C006",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "C006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Patricia Helena Campestrini Harger"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}
