@@ -54,10 +54,18 @@ const state = {
     filters: { code: '', name: '', schedule: '' },
     searchAllCampus: false,
     campusSnapshotCache: new Map(),
+    snapshotCache: new Map(),
+    changeLogRequestId: 0,
     equivalenceGroups: null,
     displayedSelections: new Map(),
     crossCampusRequestId: 0,
     autoGradeTrackRequestId: 0,
+    autoGradeSearchId: 0,
+    autoGradeProfile: null,
+    manualSubjectOrder: [],
+    manualSubjectCandidates: [],
+    automaticGradeResults: [],
+    automaticGradeResultsVisible: 0,
     versionId: null,
     selectedClasses: new Map(),
     maxLessons: 40,
@@ -193,6 +201,7 @@ async function loadSelectedSnapshot() {
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
             return response.json();
         });
+        state.snapshotCache.set(version.snapshotPath, state.snapshot);
         state.versionId = version.versionId;
         renderSnapshot();
     } catch (error) {
@@ -209,6 +218,7 @@ function showStatus(message, error = false) {
 }
 
 function renderEmpty() {
+    state.changeLogRequestId++;
     $('#grade-content').hidden = true;
     $('#empty-state').hidden = false;
     $('#auto-grade').disabled = true;
@@ -458,65 +468,195 @@ function classMatchesAutomaticFilters(selection, filters) {
     });
 }
 
-function chooseAutomaticClass(disciplina, filters) {
-    const turmas = Array.isArray(disciplina?.turmas) ? disciplina.turmas : [];
+function automaticClassChoices(candidate, filters) {
+    const turmas = Array.isArray(candidate.discipline?.turmas) ? candidate.discipline.turmas : [];
     const reserveRank = turma => turma.reserva === 'Aberta' ? 0 : turma.reserva === 'Sem Reserva' ? 1 : 2;
-    const candidates = turmas
-        .map(turma => selectionData(disciplina, turma))
-        .sort((a, b) => reserveRank(turmas.find(turma => turma.codigo === a.turmaCode)) - reserveRank(turmas.find(turma => turma.codigo === b.turmaCode)));
-    return candidates.find(selection => classMatchesAutomaticFilters(selection, filters) && selectedLessons() + selection.creditos <= state.maxLessons && !findConflict(selection)) || null;
+    return turmas.map(turma => {
+        const selection = selectionData(candidate.discipline, turma);
+        Object.defineProperty(selection, '_automaticReserveRank', { value: reserveRank(turma) });
+        return { selection, reserve: reserveRank(turma) };
+    })
+        .filter(item => classMatchesAutomaticFilters(item.selection, filters))
+        .sort((a, b) => a.reserve - b.reserve || a.selection.turmaCode.localeCompare(b.selection.turmaCode, 'pt-BR'))
+        .map(item => item.selection);
 }
 
-async function buildAutomaticGrade(matrix, filters, selectedTracks = null) {
+function classSlotKeys(selection) {
+    return (selection.horarios || []).map(horario => {
+        const parsed = parseHorario(horario.horario);
+        return parsed ? `${parsed.day}-${parsed.period}-${parsed.slot}` : null;
+    }).filter(Boolean);
+}
+
+function compareAutomaticGrades(a, b, candidates, mode) {
+    const priorityCount = grade => grade.items.filter(item => item.kind === 'priority').length;
+    if (mode === 'history') {
+        const countDifference = priorityCount(b) - priorityCount(a);
+        if (countDifference) return countDifference;
+        const priorityCandidates = candidates.filter(candidate => candidate.kind === 'priority');
+        for (const candidate of priorityCandidates) {
+            const aHas = a.nodeIds.has(candidate.id);
+            const bHas = b.nodeIds.has(candidate.id);
+            if (aHas !== bHas) return bHas ? 1 : -1;
+        }
+        const aHumanitiesHours = a.items.filter(item => item.kind === 'humanities').reduce((sum, item) => sum + item.hours, 0);
+        const bHumanitiesHours = b.items.filter(item => item.kind === 'humanities').reduce((sum, item) => sum + item.hours, 0);
+        if (aHumanitiesHours !== bHumanitiesHours) return bHumanitiesHours - aHumanitiesHours;
+    } else {
+        if (a.items.length !== b.items.length) return b.items.length - a.items.length;
+        for (const candidate of candidates) {
+            const aHas = a.nodeIds.has(candidate.id);
+            const bHas = b.nodeIds.has(candidate.id);
+            if (aHas !== bHas) return bHas ? 1 : -1;
+        }
+    }
+    if (a.items.length !== b.items.length) return b.items.length - a.items.length;
+    const aLessons = a.items.reduce((sum, item) => sum + item.selection.creditos, 0);
+    const bLessons = b.items.reduce((sum, item) => sum + item.selection.creditos, 0);
+    if (aLessons !== bLessons) return bLessons - aLessons;
+    const aReserve = a.items.reduce((sum, item) => sum + (item.selection._automaticReserveRank || 0), 0);
+    const bReserve = b.items.reduce((sum, item) => sum + (item.selection._automaticReserveRank || 0), 0);
+    if (aReserve !== bReserve) return aReserve - bReserve;
+    const aKeys = a.items.map(item => item.selection.key).sort().join('|');
+    const bKeys = b.items.map(item => item.selection.key).sort().join('|');
+    return aKeys.localeCompare(bKeys, 'pt-BR');
+}
+
+async function buildAutomaticGrade(matrix, filters, selectedTracks = null, mode = 'history', manualOrder = [], reportProgress = () => {}, isCancelled = () => false) {
     if (!state.snapshot) throw new Error('Nenhuma captura de turmas está selecionada.');
     const profile = await getMatrixProfile(matrix);
-    const priorityItems = analyzePriority({ ...profile, selectedTracks });
-    const availableHumanitiesItems = availableHumanities(profile);
+    const allCandidates = automaticGradeSubjectCandidates(profile, selectedTracks);
+    const candidates = mode === 'manual'
+        ? manualOrder.map(id => allCandidates.find(candidate => candidate.id === id)).filter(Boolean)
+        : [...allCandidates.filter(candidate => candidate.kind === 'priority'), ...allCandidates.filter(candidate => candidate.kind === 'humanities')];
+    if (!candidates.length) {
+        if (mode === 'manual') throw new Error('Marque ao menos uma matéria disponível e ajuste a ordem de prioridade.');
+        throw new Error(`A matriz ${matrix.label} não corresponde às disciplinas da captura atual. Selecione o curso correspondente no campo “Curso” e tente novamente.`);
+    }
+
+    const candidateChoices = candidates.map(candidate => automaticClassChoices(candidate, filters));
     const humanitiesProgress = humanitiesQuotaProgress({
         humanitiesNodes: profile.humanitiesNodes,
         subjectStates: profile.subjectStates,
         requiredHours: profile.requiredHumanitiesHours,
         groupsConfig: profile.groupsConfig,
     });
-    const humanitiesItems = availableHumanitiesItems.filter(node => humanitiesProgress.quotaNodeIds.has(String(node.id)));
-    const matchingPriority = priorityItems.filter(item => disciplineForNode(item.node));
-    const matchingHumanities = availableHumanitiesItems.filter(node => disciplineForNode(node));
-    if (!matchingPriority.length && !matchingHumanities.length) {
-        throw new Error(`A matriz ${matrix.label} não corresponde às disciplinas da captura atual. Selecione o curso correspondente no campo “Curso” e tente novamente.`);
-    }
-    const addedCodes = new Set();
-    let priorityAdded = 0;
-    let humanitiesAdded = 0;
-    let humanitiesAddedHours = 0;
+    const chosen = [];
+    const chosenIds = new Set();
+    const occupied = new Set();
+    let lessonCount = 0;
+    let humanitiesHours = 0;
+    let explored = 0;
+    let lastProgressAt = 0;
+    const results = [];
 
+    const canAdd = (index, selection) => {
+        const candidate = candidates[index];
+        if (chosenIds.has(candidate.id) || lessonCount + selection.creditos > state.maxLessons) return false;
+        if (candidate.kind === 'humanities' && humanitiesProgress.completedHours + humanitiesHours >= humanitiesProgress.requiredHours) return false;
+        const slots = classSlotKeys(selection);
+        return new Set(slots).size === slots.length && slots.every(slot => !occupied.has(slot));
+    };
+
+    const isMaximal = () => candidates.every((candidate, index) => {
+        if (chosenIds.has(candidate.id)) return true;
+        if (candidate.kind === 'humanities' && humanitiesProgress.completedHours + humanitiesHours >= humanitiesProgress.requiredHours) return true;
+        return !candidateChoices[index].some(selection => canAdd(index, selection));
+    });
+
+    const saveResult = () => {
+        const items = chosen.map(item => ({ ...item }));
+        results.push({ items, nodeIds: new Set(items.map(item => item.id)) });
+    };
+
+    const yieldProgress = async () => {
+        explored++;
+        if (explored - lastProgressAt < 1200) return;
+        lastProgressAt = explored;
+        reportProgress(`Buscando grades viáveis… ${explored.toLocaleString('pt-BR')} combinações parciais avaliadas, ${results.length.toLocaleString('pt-BR')} alternativas máximas encontradas.`);
+        await new Promise(resolve => setTimeout(resolve, 0));
+    };
+
+    const search = async index => {
+        if (isCancelled()) throw new Error('Busca cancelada.');
+        await yieldProgress();
+        if (isMaximal()) {
+            saveResult();
+            return;
+        }
+        if (index >= candidates.length) {
+            return;
+        }
+        const candidate = candidates[index];
+        const choices = candidateChoices[index];
+        for (const selection of choices) {
+            if (!canAdd(index, selection)) continue;
+            const slots = classSlotKeys(selection);
+            slots.forEach(slot => occupied.add(slot));
+            chosenIds.add(candidate.id);
+            lessonCount += selection.creditos;
+            const hours = candidate.kind === 'humanities' ? Number(candidate.node.cht) || 0 : 0;
+            humanitiesHours += hours;
+            chosen.push({ id: candidate.id, kind: candidate.kind, hours, selection });
+            await search(index + 1);
+            chosen.pop();
+            humanitiesHours -= hours;
+            lessonCount -= selection.creditos;
+            chosenIds.delete(candidate.id);
+            slots.forEach(slot => occupied.delete(slot));
+        }
+        // O ramo sem esta matéria permite gerar alternativas máximas em que ela
+        // fica de fora por bloquear disciplinas posteriores.
+        await search(index + 1);
+    };
+
+    reportProgress('Preparando as opções de turma…');
+    await search(0);
+    if (!results.length || results.every(result => !result.items.length)) throw new Error('Nenhuma matéria pôde ser encaixada com os horários e limites escolhidos.');
+    results.sort((a, b) => compareAutomaticGrades(a, b, candidates, mode));
+    reportProgress(`${results.length.toLocaleString('pt-BR')} grades máximas viáveis encontradas.`);
+    return { results, profile, mode, candidateCount: candidates.length };
+}
+
+function automaticGradeResultMarkup(result, index) {
+    const lessons = result.items.reduce((sum, item) => sum + item.selection.creditos, 0);
+    const priorityCount = result.items.filter(item => item.kind === 'priority').length;
+    const humanitiesCount = result.items.length - priorityCount;
+    const subjects = result.items.map(item => {
+        const selection = item.selection;
+        const schedule = selection.horarios.map(horario => [horario.horario, horario.sede, horario.sala].filter(Boolean).join(' · ')).join(', ') || 'Horário não informado';
+        return `<li><strong>${escapeHtml(selection.disciplineCode)} · Turma ${escapeHtml(selection.turmaCode)}</strong> — ${escapeHtml(selection.disciplineName)}<small>${escapeHtml(schedule)}</small></li>`;
+    }).join('');
+    return `<article class="gnh-auto-grade-result">
+        <div class="gnh-auto-grade-result-heading"><strong>Opção ${index + 1}</strong><span>${priorityCount} prioritária(s) · ${humanitiesCount} de humanidades · ${lessons}/${state.maxLessons} aulas</span></div>
+        <ul>${subjects || '<li>Nenhuma matéria encaixada</li>'}</ul>
+        <button class="gnh-primary-button" type="button" data-auto-grade-apply="${index}">Usar esta grade</button>
+    </article>`;
+}
+
+function renderAutomaticGradeResults() {
+    const section = $('#auto-grade-results');
+    const container = $('#auto-grade-result-options');
+    const total = state.automaticGradeResults.length;
+    const visible = Math.min(state.automaticGradeResultsVisible, total);
+    section.hidden = total === 0;
+    $('#auto-grade-results-summary').textContent = total
+        ? `${total.toLocaleString('pt-BR')} grade(s) máxima(s) viável(eis): nenhuma matéria elegível adicional cabe sem conflito ou violação de limite. Ordenadas por prioridade e preenchimento; exibindo ${visible.toLocaleString('pt-BR')}.`
+        : '';
+    container.innerHTML = state.automaticGradeResults.slice(0, visible).map(automaticGradeResultMarkup).join('');
+    $('#auto-grade-show-more').hidden = visible >= total;
+}
+
+function applyAutomaticGradeResult(index) {
+    const result = state.automaticGradeResults[index];
+    if (!result) return;
     state.selectedClasses.clear();
-    for (const item of priorityItems) {
-        const disciplina = disciplineForNode(item.node);
-        if (!disciplina || addedCodes.has(disciplina.codigo)) continue;
-        const selection = chooseAutomaticClass(disciplina, filters);
-        if (!selection) continue;
-        state.selectedClasses.set(selection.key, selection);
-        addedCodes.add(disciplina.codigo);
-        priorityAdded++;
-    }
-
-    for (const node of humanitiesItems) {
-        if (humanitiesProgress.completedHours + humanitiesAddedHours >= humanitiesProgress.requiredHours) break;
-        const disciplina = disciplineForNode(node);
-        if (!disciplina || addedCodes.has(disciplina.codigo)) continue;
-        const selection = chooseAutomaticClass(disciplina, filters);
-        if (!selection) continue;
-        state.selectedClasses.set(selection.key, selection);
-        addedCodes.add(disciplina.codigo);
-        humanitiesAdded++;
-        humanitiesAddedHours += Number(node.cht) || 0;
-    }
-
+    result.items.forEach(item => state.selectedClasses.set(item.selection.key, item.selection));
     persistCalendar();
-    setCalendarMessage(`Grade automática: ${priorityAdded} matéria(s) prioritária(s)${humanitiesAdded ? ` e ${humanitiesAdded} de humanidades` : ''} encaixadas.`, 'success');
+    setCalendarMessage(`Grade automática: opção ${index + 1} de ${state.automaticGradeResults.length} aplicada (${result.items.length} matéria(s)).`, 'success');
     renderCalendar();
     updateClassSelectionUI();
-    return { priorityAdded, humanitiesAdded, total: priorityAdded + humanitiesAdded, currentPeriod: profile.currentPeriod };
+    closeAutomaticGradeModal();
 }
 
 function calendarEventMarkup({ selection, horario }, mini = false) {
@@ -658,15 +798,98 @@ function historyMarkup() {
     </button>`).join('');
 }
 
-function changeLogMarkup(snapshot) {
-    const changes = snapshot.changes || [];
-    if (!changes.length) {
-        return snapshot.previousVersionId
-            ? '<p class="gnh-muted">Nenhuma alteração em relação à versão anterior.</p>'
-            : '<p class="gnh-muted">Esta é a primeira captura; ainda não há comparação anterior.</p>';
+function comparisonText(values) {
+    const list = [...new Set((values || []).map(value => String(value || '').trim()).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'pt-BR'));
+    return list.length ? list.join('; ') : 'Não informado';
+}
+
+function turmaComparisonValues(turma) {
+    const horarios = (turma?.horarios || []).map(item => [item.horario, item.sede].filter(Boolean).join(' · '));
+    const salas = (turma?.horarios || []).map(item => item.sala ? `${item.horario || 'Horário'}: ${item.sala}` : 'Sala não informada');
+    return {
+        'Horários': comparisonText(horarios),
+        'Salas': comparisonText(salas),
+        'Professores': comparisonText(turma?.professores),
+    };
+}
+
+function changeDetailMarkup(label, before, after) {
+    if (before === after) return '';
+    return `<li><strong>${escapeHtml(label)}:</strong> <span>De:</span> ${escapeHtml(before)} <span class="gnh-change-arrow">→</span> <span>Para:</span> ${escapeHtml(after)}</li>`;
+}
+
+function disciplineChangeMarkup(change, previousDiscipline, currentDiscipline) {
+    const changeType = !previousDiscipline ? 'added' : !currentDiscipline ? 'removed' : 'changed';
+    const turmasBefore = new Map((previousDiscipline?.turmas || []).map(turma => [String(turma.codigo), turma]));
+    const turmasAfter = new Map((currentDiscipline?.turmas || []).map(turma => [String(turma.codigo), turma]));
+    const turmaCodes = [...new Set([...turmasBefore.keys(), ...turmasAfter.keys()])].sort((a, b) => a.localeCompare(b, 'pt-BR'));
+    const turmaChanges = [];
+    for (const code of turmaCodes) {
+        const beforeTurma = turmasBefore.get(code);
+        const afterTurma = turmasAfter.get(code);
+        const beforeValues = turmaComparisonValues(beforeTurma);
+        const afterValues = turmaComparisonValues(afterTurma);
+        const details = Object.keys(beforeValues).map(key => changeDetailMarkup(key, beforeTurma ? beforeValues[key] : '—', afterTurma ? afterValues[key] : '—')).join('');
+        if (details) turmaChanges.push(`<li><strong>Turma ${escapeHtml(code)}:</strong><ul class="gnh-change-details">${details}</ul></li>`);
     }
-    const label = { added: 'adicionada', removed: 'removida', changed: 'alterada' };
-    return `<h3>Alterações nesta versão</h3><ul>${changes.map(change => `<li class="gnh-change-${escapeHtml(change.type)}"><strong>${escapeHtml(change.codigo)}</strong> — ${escapeHtml(change.nome)}: ${label[change.type] || 'atualizada'}${change.fields?.length ? ` (${escapeHtml(change.fields.join(', '))})` : ''}</li>`).join('')}</ul>`;
+    if (!turmaChanges.length && changeType === 'changed') return '';
+    const name = currentDiscipline?.nome || previousDiscipline?.nome || change.nome || '';
+    const transition = changeType === 'added' ? 'disciplina adicionada' : changeType === 'removed' ? 'disciplina removida' : 'turmas atualizadas';
+    const details = turmaChanges.length ? `<ul class="gnh-change-details gnh-change-turmas">${turmaChanges.join('')}</ul>` : '';
+    return `<li class="gnh-change-${changeType}"><strong>${escapeHtml(change.codigo)}</strong> — ${escapeHtml(name)}: ${transition}${details}</li>`;
+}
+
+function changeLogMarkup(snapshot, previousSnapshot) {
+    if (!snapshot.previousVersionId && !previousSnapshot) return '<p class="gnh-muted">Esta é a primeira captura; ainda não há comparação anterior.</p>';
+    if (!previousSnapshot) return '<p class="gnh-muted">Não foi possível carregar a versão anterior para comparar turmas e horários.</p>';
+    const previous = new Map((previousSnapshot.payload?.disciplinas || []).map(discipline => [String(discipline.codigo), discipline]));
+    const current = new Map((snapshot.payload?.disciplinas || []).map(discipline => [String(discipline.codigo), discipline]));
+    const codes = [...new Set([...previous.keys(), ...current.keys()])].sort((a, b) => a.localeCompare(b, 'pt-BR'));
+    const changes = codes.map(code => {
+        const before = previous.get(code);
+        const after = current.get(code);
+        if (before && after) {
+            const normalizeTurmas = list => list.map(turma => [turma.codigo, turmaComparisonValues(turma)])
+                .sort((a, b) => String(a[0]).localeCompare(String(b[0]), 'pt-BR'));
+            const oldTurmas = JSON.stringify(normalizeTurmas(before.turmas || []));
+            const newTurmas = JSON.stringify(normalizeTurmas(after.turmas || []));
+            if (oldTurmas === newTurmas) return '';
+        }
+        return disciplineChangeMarkup({ codigo: code, nome: after?.nome || before?.nome }, before, after);
+    }).filter(Boolean);
+    return changes.length
+        ? `<h3>Alterações nesta versão</h3><p class="gnh-muted">Comparação detalhada de turmas, horários, salas e professores em relação à captura anterior.</p><ul class="gnh-change-list">${changes.join('')}</ul>`
+        : '<p class="gnh-muted">Nenhuma alteração em turmas, horários, salas ou professores em relação à versão anterior.</p>';
+}
+
+async function renderChangeLog() {
+    const snapshot = state.snapshot;
+    const requestId = ++state.changeLogRequestId;
+    const currentVersion = state.entry?.versions?.find(version => version.versionId === state.versionId);
+    const previousVersionId = snapshot?.previousVersionId || currentVersion?.previousVersionId;
+    if (!snapshot || !previousVersionId) {
+        $('#change-log').innerHTML = snapshot ? changeLogMarkup(snapshot, null) : '';
+        return;
+    }
+    const previousVersion = state.entry?.versions?.find(version => version.versionId === previousVersionId);
+    if (!previousVersion?.snapshotPath) {
+        $('#change-log').innerHTML = '<p class="gnh-muted">Não foi possível localizar a captura anterior.</p>';
+        return;
+    }
+    try {
+        let previousSnapshot = state.snapshotCache.get(previousVersion.snapshotPath);
+        if (!previousSnapshot) {
+            previousSnapshot = await fetch(`../${previousVersion.snapshotPath}`).then(response => {
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                return response.json();
+            });
+            state.snapshotCache.set(previousVersion.snapshotPath, previousSnapshot);
+        }
+        if (requestId !== state.changeLogRequestId || snapshot !== state.snapshot) return;
+        $('#change-log').innerHTML = changeLogMarkup(snapshot, previousSnapshot);
+    } catch {
+        if (requestId === state.changeLogRequestId) $('#change-log').innerHTML = changeLogMarkup(snapshot, null);
+    }
 }
 
 function latestEntryVersion(entry) {
@@ -827,7 +1050,7 @@ function renderSnapshot() {
     if (state.searchAllCampus) renderCrossCampusResults();
     else renderCurrentDisciplineResults(disciplines);
     $('#history-list').innerHTML = historyMarkup();
-    $('#change-log').innerHTML = changeLogMarkup(state.snapshot);
+    renderChangeLog();
     renderCalendar();
     showStatus('Dados carregados');
 }
@@ -1025,6 +1248,7 @@ async function renderAutomaticGradeTracks() {
     try {
         const profile = await getMatrixProfile(matrix);
         if (requestId !== state.autoGradeTrackRequestId) return;
+        state.autoGradeProfile = profile;
         const nodesById = new Map(profile.allNodes.map(node => [String(node.id), node]));
         const tracks = Object.entries(profile.tracksConfig || {}).map(([name, nodeIds]) => {
             const ids = Array.isArray(nodeIds) ? nodeIds.map(String) : [];
@@ -1038,15 +1262,97 @@ async function renderAutomaticGradeTracks() {
             return { name, ids, availableNodes, started: trackWasStarted(profile, ids) };
         }).filter(track => track.availableNodes.length);
 
-        if (!tracks.length) return;
-        section.hidden = false;
-        options.innerHTML = tracks.map(track => `<label class="gnh-auto-grade-track-option">
-            <input type="checkbox" data-auto-grade-track="${escapeHtml(track.name)}" value="${escapeHtml(track.name)}" ${track.started ? 'checked' : ''}>
-            <span><strong>${escapeHtml(track.name)}</strong><small>${track.availableNodes.length} matéria(s) disponível(eis) nesta captura</small></span>
-        </label>`).join('');
+        if (tracks.length) {
+            section.hidden = false;
+            options.innerHTML = tracks.map(track => `<label class="gnh-auto-grade-track-option">
+                <input type="checkbox" data-auto-grade-track="${escapeHtml(track.name)}" value="${escapeHtml(track.name)}" ${track.started ? 'checked' : ''}>
+                <span><strong>${escapeHtml(track.name)}</strong><small>${track.availableNodes.length} matéria(s) disponível(eis) nesta captura</small></span>
+            </label>`).join('');
+        }
+        renderAutomaticGradeManualSubjects(matrix, profile);
     } catch {
         if (requestId === state.autoGradeTrackRequestId) options.innerHTML = '';
     }
+}
+
+function automaticGradeMode() {
+    return document.querySelector('[name="auto-grade-priority-mode"]:checked')?.value || 'history';
+}
+
+function automaticGradeSubjectCandidates(profile, selectedTracks) {
+    const priorityItems = analyzePriority({ ...profile, selectedTracks });
+    const humanitiesProgress = humanitiesQuotaProgress({
+        humanitiesNodes: profile.humanitiesNodes,
+        subjectStates: profile.subjectStates,
+        requiredHours: profile.requiredHumanitiesHours,
+        groupsConfig: profile.groupsConfig,
+    });
+    const candidates = [
+        ...priorityItems.map((item, index) => ({ node: item.node, kind: 'priority', score: item.score, baseOrder: index })),
+        ...availableHumanities(profile)
+            .filter(node => humanitiesProgress.quotaNodeIds.has(String(node.id)))
+            .map((node, index) => ({ node, kind: 'humanities', score: 0, baseOrder: index })),
+    ];
+    const byDiscipline = new Map();
+    for (const candidate of candidates) {
+        const discipline = disciplineForNode(candidate.node);
+        if (!discipline || !Array.isArray(discipline.turmas) || !discipline.turmas.length) continue;
+        const code = String(discipline.codigo);
+        if (!byDiscipline.has(code)) byDiscipline.set(code, { ...candidate, discipline, id: String(candidate.node.id) });
+    }
+    return [...byDiscipline.values()];
+}
+
+function renderAutomaticGradeManualSubjects(matrix, profile = null) {
+    const section = $('#auto-grade-manual-subjects');
+    const options = $('#auto-grade-manual-options');
+    if (automaticGradeMode() !== 'manual') {
+        section.hidden = true;
+        return;
+    }
+    section.hidden = false;
+    if (!profile) {
+        if (state.autoGradeProfile && state.autoGradeProfile.matrix?.id === matrix.id) {
+            renderAutomaticGradeManualSubjects(matrix, state.autoGradeProfile);
+            return;
+        }
+        getMatrixProfile(matrix).then(loaded => renderAutomaticGradeManualSubjects(matrix, loaded)).catch(() => {
+            options.innerHTML = '<p class="gnh-muted">Não foi possível carregar as matérias desta matriz.</p>';
+        });
+        return;
+    }
+
+    const candidates = automaticGradeSubjectCandidates(profile, readAutomaticGradeTracks());
+    const candidateIds = new Set(candidates.map(candidate => candidate.id));
+    state.manualSubjectCandidates = candidates;
+    state.manualSubjectOrder = state.manualSubjectOrder.filter(id => candidateIds.has(id));
+    const selectedPosition = new Map(state.manualSubjectOrder.map((id, index) => [id, index]));
+    const ordered = [...candidates].sort((a, b) => {
+        const aPosition = selectedPosition.get(a.id);
+        const bPosition = selectedPosition.get(b.id);
+        if (aPosition !== undefined || bPosition !== undefined) {
+            if (aPosition === undefined) return 1;
+            if (bPosition === undefined) return -1;
+            return aPosition - bPosition;
+        }
+        return a.kind === b.kind ? a.baseOrder - b.baseOrder : a.kind === 'priority' ? -1 : 1;
+    });
+    options.innerHTML = ordered.length ? ordered.map(candidate => {
+        const selectedIndex = selectedPosition.get(candidate.id);
+        const selected = selectedIndex !== undefined;
+        const label = candidate.node.name || candidate.node.nome || candidate.node.title || candidate.discipline.nome;
+        const category = candidate.kind === 'humanities' ? 'Humanidades' : `Prioritária${candidate.score ? ` · peso ${candidate.score}` : ''}`;
+        return `<div class="gnh-auto-grade-manual-option${selected ? ' is-selected' : ''}" data-manual-subject-row="${escapeHtml(candidate.id)}">
+            <label><input type="checkbox" data-manual-subject="${escapeHtml(candidate.id)}" ${selected ? 'checked' : ''}>
+                <span><strong>${escapeHtml(label)}</strong><small>${escapeHtml(candidate.discipline.codigo)} · ${escapeHtml(category)} · ${(candidate.discipline.turmas || []).length} turma(s)</small></span>
+            </label>
+            <span class="gnh-auto-grade-manual-order">${selected ? `#${selectedIndex + 1}` : ''}</span>
+            <span class="gnh-auto-grade-manual-move">
+                <button type="button" data-manual-subject-move="up" data-manual-subject-id="${escapeHtml(candidate.id)}" aria-label="Aumentar prioridade de ${escapeHtml(label)}" ${!selected || selectedIndex === 0 ? 'disabled' : ''}>↑</button>
+                <button type="button" data-manual-subject-move="down" data-manual-subject-id="${escapeHtml(candidate.id)}" aria-label="Reduzir prioridade de ${escapeHtml(label)}" ${!selected || selectedIndex === state.manualSubjectOrder.length - 1 ? 'disabled' : ''}>↓</button>
+            </span>
+        </div>`;
+    }).join('') : '<p class="gnh-muted">Não há matérias disponíveis desta matriz na captura atual. Confira o curso selecionado e as trilhas.</p>';
 }
 
 function readAutomaticGradeFilters() {
@@ -1061,26 +1367,78 @@ function readAutomaticGradeTracks() {
     return [...document.querySelectorAll('[data-auto-grade-track]:checked')].map(input => input.value);
 }
 
+function resetAutomaticGradeResults() {
+    state.autoGradeSearchId++;
+    $('#auto-grade-submit').disabled = false;
+    state.automaticGradeResults = [];
+    state.automaticGradeResultsVisible = 0;
+    $('#auto-grade-results').hidden = true;
+    $('#auto-grade-result-options').innerHTML = '';
+    if ($('#auto-grade-submit').disabled) {
+        $('#auto-grade-status').textContent = '';
+        $('#auto-grade-status').className = 'gnh-calendar-validation';
+    }
+}
+
 function closeAutomaticGradeModal() {
     $('#auto-grade-modal').hidden = true;
     $('#auto-grade-status').textContent = '';
     $('#auto-grade-status').className = 'gnh-calendar-validation';
+    resetAutomaticGradeResults();
 }
 
 $('#auto-grade').addEventListener('click', () => {
     if (!state.snapshot) return;
     populateMatrixOptions();
+    state.manualSubjectOrder = [];
+    state.autoGradeProfile = null;
+    resetAutomaticGradeResults();
     renderAutomaticGradeGrids();
     $('#auto-grade-modal').hidden = false;
     renderAutomaticGradeTracks();
     $('#auto-grade-matrix').focus();
 });
-$('#auto-grade-matrix').addEventListener('change', renderAutomaticGradeTracks);
+$('#auto-grade-matrix').addEventListener('change', () => {
+    state.manualSubjectOrder = [];
+    state.autoGradeProfile = null;
+    resetAutomaticGradeResults();
+    renderAutomaticGradeTracks();
+});
+document.querySelectorAll('[name="auto-grade-priority-mode"]').forEach(input => input.addEventListener('change', () => {
+    resetAutomaticGradeResults();
+    $('#auto-grade-status').textContent = '';
+    renderAutomaticGradeManualSubjects(matrixOptions.find(item => item.id === $('#auto-grade-matrix').value), state.autoGradeProfile);
+}));
+$('#auto-grade-track-options').addEventListener('change', () => {
+    resetAutomaticGradeResults();
+    renderAutomaticGradeManualSubjects(matrixOptions.find(item => item.id === $('#auto-grade-matrix').value), state.autoGradeProfile);
+});
+$('#auto-grade-manual-options').addEventListener('change', event => {
+    const checkbox = event.target.closest('[data-manual-subject]');
+    if (!checkbox) return;
+    const id = checkbox.dataset.manualSubject;
+    state.manualSubjectOrder = checkbox.checked
+        ? [...state.manualSubjectOrder, id]
+        : state.manualSubjectOrder.filter(item => item !== id);
+    resetAutomaticGradeResults();
+    renderAutomaticGradeManualSubjects(matrixOptions.find(item => item.id === $('#auto-grade-matrix').value), state.autoGradeProfile);
+});
+$('#auto-grade-manual-options').addEventListener('click', event => {
+    const button = event.target.closest('[data-manual-subject-move]');
+    if (!button) return;
+    const index = state.manualSubjectOrder.indexOf(button.dataset.manualSubjectId);
+    const next = index + (button.dataset.manualSubjectMove === 'up' ? -1 : 1);
+    if (index < 0 || next < 0 || next >= state.manualSubjectOrder.length) return;
+    [state.manualSubjectOrder[index], state.manualSubjectOrder[next]] = [state.manualSubjectOrder[next], state.manualSubjectOrder[index]];
+    resetAutomaticGradeResults();
+    renderAutomaticGradeManualSubjects(matrixOptions.find(item => item.id === $('#auto-grade-matrix').value), state.autoGradeProfile);
+});
 $('#auto-grade-availability-grids').addEventListener('click', event => {
     const slot = event.target.closest('[data-auto-grade-slot]');
     if (!slot) return;
     const selected = slot.getAttribute('aria-pressed') === 'true';
     slot.setAttribute('aria-pressed', String(!selected));
+    resetAutomaticGradeResults();
 });
 $('#auto-grade-close').addEventListener('click', closeAutomaticGradeModal);
 $('#auto-grade-cancel').addEventListener('click', closeAutomaticGradeModal);
@@ -1090,19 +1448,38 @@ $('#auto-grade-form').addEventListener('submit', async event => {
     const submit = $('#auto-grade-submit');
     const status = $('#auto-grade-status');
     if (!matrix) return;
+    resetAutomaticGradeResults();
+    const searchId = state.autoGradeSearchId;
     submit.disabled = true;
     status.className = 'gnh-calendar-validation';
-    status.textContent = 'Calculando prioridades e encaixando turmas…';
+    status.textContent = 'Preparando a busca por grades máximas viáveis…';
     try {
         const filters = readAutomaticGradeFilters();
-        await buildAutomaticGrade(matrix, filters, readAutomaticGradeTracks());
-        closeAutomaticGradeModal();
+        const mode = automaticGradeMode();
+        const generated = await buildAutomaticGrade(matrix, filters, readAutomaticGradeTracks(), mode, state.manualSubjectOrder, message => {
+            status.textContent = message;
+        }, () => searchId !== state.autoGradeSearchId);
+        if (searchId !== state.autoGradeSearchId) return;
+        state.automaticGradeResults = generated.results;
+        state.automaticGradeResultsVisible = Math.min(10, generated.results.length);
+        renderAutomaticGradeResults();
+        status.className = 'gnh-calendar-validation success';
+        status.textContent = `${generated.results.length.toLocaleString('pt-BR')} grade(s) máxima(s) viável(eis) encontradas. Escolha uma para aplicar.`;
     } catch (error) {
+        if ($('#auto-grade-modal').hidden || error.message === 'Busca cancelada.') return;
         status.className = 'gnh-calendar-validation error';
         status.textContent = `Não foi possível montar a grade: ${error.message}`;
     } finally {
-        submit.disabled = false;
+        if (searchId === state.autoGradeSearchId) submit.disabled = false;
     }
+});
+$('#auto-grade-show-more').addEventListener('click', () => {
+    state.automaticGradeResultsVisible = Math.min(state.automaticGradeResultsVisible + 10, state.automaticGradeResults.length);
+    renderAutomaticGradeResults();
+});
+$('#auto-grade-result-options').addEventListener('click', event => {
+    const button = event.target.closest('[data-auto-grade-apply]');
+    if (button) applyAutomaticGradeResult(Number(button.dataset.autoGradeApply));
 });
 $('#history-list').addEventListener('click', event => {
     const button = event.target.closest('[data-version-id]');

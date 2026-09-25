@@ -148,24 +148,40 @@
                 </div>
                 <button id="auto-grade-close" class="gnh-modal-close" type="button" aria-label="Fechar">×</button>
             </div>
-            <p class="gnh-muted">Escolha a matriz usada no K-Matrizes. O progresso salvo nessa matriz será usado para ordenar as matérias por prioridade e encaixar o maior número possível no limite atual.</p>
+            <p class="gnh-muted">Escolha a matriz e como definir as matérias. Você pode usar o progresso salvo no K-Matrizes para calcular prioridades ou montar sua própria lista ordenada.</p>
             <label class="gnh-auto-grade-label" for="auto-grade-matrix">Sua matriz
                 <select id="auto-grade-matrix"></select>
             </label>
+            <fieldset class="gnh-auto-grade-priority-mode">
+                <legend>Como escolher as matérias?</legend>
+                <label><input type="radio" name="auto-grade-priority-mode" value="history" checked><span><strong>Usar meu histórico</strong><small>Considera seu progresso e a prioridade automática já usada pelo K-Matrizes.</small></span></label>
+                <label><input type="radio" name="auto-grade-priority-mode" value="manual"><span><strong>Escolher matérias e prioridades</strong><small>Selecione as matérias disponíveis e ordene-as como preferir.</small></span></label>
+            </fieldset>
             <section id="auto-grade-tracks" class="gnh-auto-grade-tracks" hidden aria-labelledby="auto-grade-tracks-title">
                 <h3 id="auto-grade-tracks-title">Trilhas que você quer seguir</h3>
                 <p class="gnh-auto-grade-track-help">Selecione as trilhas de especialização que deseja considerar. Só aparecem trilhas com pelo menos uma matéria disponível para esta matriz e para o curso atual.</p>
                 <div id="auto-grade-track-options" class="gnh-auto-grade-track-options"></div>
             </section>
+            <section id="auto-grade-manual-subjects" class="gnh-auto-grade-manual-subjects" hidden aria-labelledby="auto-grade-manual-title">
+                <h3 id="auto-grade-manual-title">Matérias e ordem de prioridade</h3>
+                <p class="gnh-auto-grade-track-help">Marque as matérias que quer considerar. Use as setas para ajustar a prioridade; humanidades continuam sujeitas à cota da sua matriz.</p>
+                <div id="auto-grade-manual-options" class="gnh-auto-grade-manual-options"></div>
+            </section>
             <div class="gnh-auto-grade-filters">
                 <p class="gnh-auto-grade-filter-help">Clique nos horários que você precisa evitar. As células marcadas em vermelho serão consideradas indisponíveis; deixe todas livres se não houver restrições.</p>
                 <div id="auto-grade-availability-grids" class="gnh-auto-grade-availability-grids"></div>
             </div>
+            <section id="auto-grade-results" class="gnh-auto-grade-results" hidden aria-labelledby="auto-grade-results-title">
+                <h3 id="auto-grade-results-title">Grades possíveis</h3>
+                <p id="auto-grade-results-summary" class="gnh-auto-grade-track-help"></p>
+                <div id="auto-grade-result-options" class="gnh-auto-grade-result-options"></div>
+                <button id="auto-grade-show-more" class="gnh-secondary-button" type="button" hidden>Mostrar mais opções</button>
+            </section>
             <p class="gnh-auto-grade-warning">A grade atual será substituída pela sugestão. Depois você poderá ajustar as turmas manualmente.</p>
             <p id="auto-grade-status" class="gnh-calendar-validation" role="status" aria-live="polite"></p>
             <div class="gnh-modal-actions">
                 <button id="auto-grade-cancel" class="gnh-secondary-button" type="button">Cancelar</button>
-                <button id="auto-grade-submit" class="gnh-primary-button" type="submit">Montar grade</button>
+                <button id="auto-grade-submit" class="gnh-primary-button" type="submit">Gerar combinações</button>
             </div>
         </form>
     </div>
