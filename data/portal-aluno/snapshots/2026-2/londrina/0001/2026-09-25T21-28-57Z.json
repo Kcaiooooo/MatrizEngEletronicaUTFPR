@@ -1,0 +1,2344 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-25T21-28-57Z",
+  "capturedAt": "2026-09-25T21:28:57.748Z",
+  "sourceLastUpdatedAt": "25/09/2026 18:31:01   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "londrina",
+    "name": "Londrina",
+    "code": "08"
+  },
+  "course": {
+    "id": "0001",
+    "name": "Tecnol Alimentos",
+    "sourceName": "TECNOL ALIMENTOS"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=1"
+  },
+  "fingerprint": "f8aaa2b0e10049bb44d6c4a3b2a788f2bf6e7a8ed0c05f8156e3c40d19cde3b2",
+  "previousVersionId": "2026-09-19T20-29-03Z",
+  "changes": [
+    {
+      "type": "changed",
+      "codigo": "ENP05A",
+      "nome": "Desenvolvimento De Novos Negócios",
+      "fields": [
+        "turmas[0].vagas_total"
+      ]
+    }
+  ],
+  "payload": {
+    "curso": "TECNOL ALIMENTOS",
+    "ultima_atualizacao": "25/09/2026 18:31:01   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "ALM001",
+        "nome": "Introdução À Tecnologia De Alimentos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A13",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 38,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "A103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Neusa Fatima Seibel"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALM002",
+        "nome": "Análise De Alimentos 1",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A23",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "A308",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "A308",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "A308",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Caroline Maria Calliari"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALM003",
+        "nome": "Bioquímica",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A23",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "A305",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "A305",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Claudio Takeo Ueno"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALM004",
+        "nome": "Microbiologia Aplicada",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A23",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "A106",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "A305",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "A305",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luciana Furlaneto Maia"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALM005",
+        "nome": "Bioquímica De Alimentos",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A33",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "A308",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "A308",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Juliany Piazzon Gomes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALM006",
+        "nome": "Operações Na Indústria De Alimentos 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A33",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "A105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marianne Ayumi Shirai"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALM007",
+        "nome": "Nutrição",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A33",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N3",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "A105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Flavia De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALM008",
+        "nome": "Microbiologia De Alimentos",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A33",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "A305",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "A305",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alexandre Rodrigo Coelho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALM009",
+        "nome": "Análise De Alimentos 3",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A43",
+            "enquadramento": "Presencial",
+            "vagas_total": 18,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "A104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mayka Reghiany Pedrao"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALM010",
+        "nome": "Operações Na Indústria De Alimentos 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A43",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "A104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marianne Ayumi Shirai"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALM011",
+        "nome": "Segurança Dos Alimentos",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A43",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "A104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Juliany Piazzon Gomes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALM012",
+        "nome": "Tecnologia De Grãos, Amidos E Seus Derivados",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A43",
+            "enquadramento": "Presencial",
+            "vagas_total": 18,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "A104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo De Tarso Carvalho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALM013",
+        "nome": "Tecnologia De Produtos Cárneos",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A43",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "A004",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "A004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mayka Reghiany Pedrao"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALM014",
+        "nome": "Análise Sensorial",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A53",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "A103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Flavia De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALM015",
+        "nome": "Assuntos Regulatórios Em Alimentos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A53",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "A103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo De Tarso Carvalho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALM016",
+        "nome": "Tecnologia De Produtos Lácteos",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A53",
+            "enquadramento": "Presencial",
+            "vagas_total": 7,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "A003",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "A003",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "A003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Claudio Takeo Ueno",
+              "Lyssa Setsuko Sakanaka"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALM017",
+        "nome": "Tecnologia De Frutas E Hortaliças",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A53",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "A103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Neusa Fatima Seibel"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALM018",
+        "nome": "Embalagens",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A63",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "A102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Caroline Maria Calliari"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALM019",
+        "nome": "Desenvolvimento De Novos Produtos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A63",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "A102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabio Augusto Garcia Coro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALM020",
+        "nome": "Tecnologia De Bebidas",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A63",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "A002",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "A002",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "A102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lyssa Setsuko Sakanaka"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALM021",
+        "nome": "Tecnologia De Óleos E Gorduras Vegetais",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A63",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "A102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Neusa Fatima Seibel"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALM024",
+        "nome": "Projeto Integrador Extensionista 2",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 90,
+        "turmas": [
+          {
+            "codigo": "A43",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "ZSV03",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "ZSV03",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "ZSV03",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "ZSV03",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "A104",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "A104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alexandre Rodrigo Coelho",
+              "Lyssa Setsuko Sakanaka"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ALM025",
+        "nome": "Projeto Integrador Extensionista 3",
+        "creditos": 7,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 105,
+        "turmas": [
+          {
+            "codigo": "A53",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "ZSV01",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "ZSV01",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "ZSV01",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "ZSV01",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "A102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Neusa Fatima Seibel",
+              "Caroline Maria Calliari"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AMB003",
+        "nome": "Gestão Ambiental",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A63",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "A102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabio Augusto Garcia Coro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CHS001",
+        "nome": "Interpretação E Produção De Textos Científicos E Profissionais Na Tecnologia",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A13",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 38,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "K206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mirian Ruffini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CHS003",
+        "nome": "Metodologia De Pesquisa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A53",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "A102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Flavia De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EM10A",
+        "nome": "Empreendedorismo E Plano De Negócios",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP03",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ],
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "K205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Alberto Ribas"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENP004",
+        "nome": "Gestão Da Produção E Da Qualidade",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A63",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "K312",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "K312",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "K312",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "K312",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Luis Dalto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENP006",
+        "nome": "Gestão Empresarial",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A63",
+            "enquadramento": "Presencial",
+            "vagas_total": 42,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "A102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Regina Lucia Sanches"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENP011",
+        "nome": "Gestão Da Qualidade",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP43",
+            "enquadramento": "Presencial",
+            "vagas_total": 47,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ],
+              [
+                "Eng Mecânica"
+              ],
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T5",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "3T6",
+                "sala": "K212",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "K207",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "K207",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leticia Da Silva Inacio"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENP03A",
+        "nome": "Economia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A53",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "K312",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "K312",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Luis Dalto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ENP05A",
+        "nome": "Desenvolvimento De Novos Negócios",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A63",
+            "enquadramento": "Presencial",
+            "vagas_total": 11,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "K205",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "K205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Alberto Ribas"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EP10A",
+        "nome": "Gestão Da Inovação E Da Tecnologia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP03",
+            "enquadramento": "Presencial",
+            "vagas_total": 26,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ],
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "K305",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "K305",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carlos Alberto Ribas"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FIS001",
+        "nome": "Fenômenos Físicos Aplicados Na Tecnologia De Alimentos",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A13",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 36,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "K206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Carlos Pocas"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GP10A",
+        "nome": "Gestão De Operações E Serviços",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EP03",
+            "enquadramento": "Presencial",
+            "vagas_total": 34,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng De Produção"
+              ],
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "K308",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "K308",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "K308",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "K308",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raul Hidetoci Mioshi Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HU67A",
+        "nome": "Ética, Profissão E Cidadania",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ME81",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "K214",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "K214",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fernanda Di Flora Garcia"
+            ],
+            "optativa_matrizes": [
+              "Matriz:48"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HU94N",
+        "nome": "Libras 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EM21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "A102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Antonio Alves"
+            ],
+            "optativa_matrizes": [
+              "Matriz:19"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MAT001",
+        "nome": "Tópicos De Matemática",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A13",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 36,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "A103",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "K206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Reginaldo Fidelis"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT005",
+        "nome": "Estatística",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A23",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "B205",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "B205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joelmir Andre Borssoi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "OP69B",
+        "nome": "Processo De Projeto Em Engenharia",
+        "creditos": 4,
+        "creditos_assincronos": 6,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ME51",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "6T2",
+                "sala": "B207",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "B207",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "B207",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B207",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B207",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "B207",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Florian",
+              "Erico Daniel Ricardi Guerreiro",
+              "Haroldo Lhou Hasegawa"
+            ],
+            "optativa_matrizes": [
+              "Matriz:19",
+              "Matriz:30",
+              "Matriz:35",
+              "Matriz:48",
+              "Matriz:1"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "OPEXT001",
+        "nome": "Ciência E Tecnologia Para A Comunidade",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 90,
+        "turmas": [
+          {
+            "codigo": "A33",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "7M1",
+                "sala": "ZSV09",
+                "sede": null
+              },
+              {
+                "horario": "7M2",
+                "sala": "ZSV09",
+                "sede": null
+              },
+              {
+                "horario": "7M3",
+                "sala": "ZSV09",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "ZSV09",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Juliany Piazzon Gomes"
+            ],
+            "optativa_matrizes": [
+              "Matriz:63"
+            ]
+          },
+          {
+            "codigo": "ME41",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "K214",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "K214",
+                "sede": null
+              },
+              {
+                "horario": "7M2",
+                "sala": "ZSV12",
+                "sede": null
+              },
+              {
+                "horario": "7M3",
+                "sala": "ZSV12",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "ZSV12",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "ZSV12",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luciana Furlaneto Maia"
+            ],
+            "optativa_matrizes": [
+              "Matriz:63"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "QUI001",
+        "nome": "Química Geral Aplicada",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A13",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 36,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "B305",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "B305",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "K206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Isabel Craveiro Moreira Andrei"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI002",
+        "nome": "Físico-Química Aplicada",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A13",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 36,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "K206",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "K206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabio Cezar Ferreira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI009",
+        "nome": "Química Orgânica",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A23",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "K008",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "K008",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "K203",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "K203",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "K203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Juliana Feijo De Souza Daniel"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI010",
+        "nome": "Análise De Alimentos 2",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A33",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "A105",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "A308",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "A308",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "A308",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Amelia Elena Terrile"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QUI036",
+        "nome": "Química Analítica 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "Q33",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic Em Química"
+              ],
+              [
+                "Eng De Materiais"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "B204",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "B204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Janksyn Bertozzi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TC35A",
+        "nome": "Trabalho De Conclusão De Curso 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A53",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "A102",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "A102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mayka Reghiany Pedrao"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TC36A",
+        "nome": "Trabalho De Conclusão De Curso 2",
+        "creditos": 0,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TCC",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Alexandre Rodrigo Coelho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TCCAL1",
+        "nome": "Trabalho De Conclusão De Curso",
+        "creditos": 0,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "TCC",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tecnol Alimentos"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Alexandre Rodrigo Coelho"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}
