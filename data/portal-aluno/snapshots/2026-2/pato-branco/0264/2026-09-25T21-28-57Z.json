@@ -1,0 +1,5361 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-25T21-28-57Z",
+  "capturedAt": "2026-09-25T21:28:57.748Z",
+  "sourceLastUpdatedAt": "25/09/2026 18:31:37   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "pato-branco",
+    "name": "Pato Branco",
+    "code": "05"
+  },
+  "course": {
+    "id": "0264",
+    "name": "Eng Cart Agrimensura",
+    "sourceName": "ENG CART AGRIMENSURA"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=264"
+  },
+  "fingerprint": "8121cf495244bbe4cd21f20915a7b08e86c856023b0f078207de37630f8e8683",
+  "previousVersionId": "2026-09-19T20-29-03Z",
+  "changes": [
+    {
+      "type": "changed",
+      "codigo": "AL42NB",
+      "nome": "Algebra Linear",
+      "fields": [
+        "turmas[0].horarios[2].sala",
+        "turmas[0].horarios[3].sala",
+        "turmas[1].horarios[2].sala",
+        "turmas[1].horarios[3].sala",
+        "turmas[2].horarios[2].sala",
+        "turmas[2].horarios[3].sala",
+        "turmas[3].horarios[2].sala",
+        "turmas[3].horarios[3].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "CD42NB",
+      "nome": "Cálculo Diferencial E Integral",
+      "fields": [
+        "turmas[0].horarios[2].sala",
+        "turmas[0].horarios[3].sala",
+        "turmas[1].horarios[2].sala",
+        "turmas[1].horarios[3].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "CV41NB",
+      "nome": "Cálculo Em Uma Variável Real",
+      "fields": [
+        "turmas[0].horarios[2].sala",
+        "turmas[0].horarios[3].sala",
+        "turmas[0].horarios[4].sala",
+        "turmas[0].horarios[5].sala",
+        "turmas[2].horarios[2].sala",
+        "turmas[2].horarios[3].sala",
+        "turmas[2].horarios[4].sala",
+        "turmas[2].horarios[5].sala",
+        "turmas[3].horarios[4].sala",
+        "turmas[3].horarios[5].sala",
+        "turmas[4].horarios[2].sala",
+        "turmas[4].horarios[3].sala",
+        "turmas[4].horarios[4].sala",
+        "turmas[4].horarios[5].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "CV42NB",
+      "nome": "Cálculo Em Várias Variáveis Reais",
+      "fields": [
+        "turmas[0].horarios[2].sala",
+        "turmas[0].horarios[3].sala",
+        "turmas[2].horarios[2].sala",
+        "turmas[2].horarios[3].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "CV43NB",
+      "nome": "Cálculo Vetorial E Séries",
+      "fields": [
+        "turmas[0].horarios[0].sala",
+        "turmas[0].horarios[1].sala",
+        "turmas[0].horarios[2].sala",
+        "turmas[0].horarios[3].sala",
+        "turmas[3].horarios[2].sala",
+        "turmas[3].horarios[3].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "FT41NB",
+      "nome": "Física Teórica I",
+      "fields": [
+        "turmas[0].horarios[2].sala",
+        "turmas[0].horarios[3].sala",
+        "turmas[2].horarios[2].sala",
+        "turmas[2].horarios[3].sala",
+        "turmas[4].horarios[2].sala",
+        "turmas[4].horarios[3].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "FT42NB",
+      "nome": "Física Teórica Ii",
+      "fields": [
+        "turmas[0].horarios[2].sala",
+        "turmas[0].horarios[3].sala",
+        "turmas[3].horarios[2].sala",
+        "turmas[3].horarios[3].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "GA41NB",
+      "nome": "Geometria Analítica",
+      "fields": [
+        "turmas[0].horarios[2].sala",
+        "turmas[0].horarios[3].sala",
+        "turmas[5].horarios[2].sala",
+        "turmas[5].horarios[3].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "GE46CA",
+      "nome": "Geodésia 3",
+      "fields": [
+        "turmas[0].horarios[0].sala",
+        "turmas[0].horarios[1].sala",
+        "turmas[0].horarios[2].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "LC46CA",
+      "nome": "Legislação Cartográfica",
+      "fields": [
+        "turmas[0].horarios[0].sala",
+        "turmas[0].horarios[1].sala",
+        "turmas[0].horarios[2].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "LI42NB",
+      "nome": "Libras 1",
+      "fields": [
+        "turmas[0].horarios[0].sala",
+        "turmas[0].horarios[1].sala",
+        "turmas[0].horarios[2].sala",
+        "turmas[0].horarios[3].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "LP41NB",
+      "nome": "Leitura E Produção De Gêneros Acadêmicos",
+      "fields": [
+        "turmas[3].horarios[0].sala",
+        "turmas[3].horarios[1].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "NR46CA",
+      "nome": "Noções De Recuperação De Áreas Degradadas",
+      "fields": [
+        "turmas[0].horarios[0].sala",
+        "turmas[0].horarios[1].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "PC41NB",
+      "nome": "Pré-Cálculo",
+      "fields": [
+        "turmas[0].horarios[2].sala",
+        "turmas[0].horarios[3].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "PE43NB",
+      "nome": "Probabilidade E Estatística",
+      "fields": [
+        "turmas[2].horarios[2].sala",
+        "turmas[2].horarios[3].sala",
+        "turmas[4].horarios[2].sala",
+        "turmas[4].horarios[3].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "TO42CV",
+      "nome": "Topografia",
+      "fields": [
+        "turmas[1].horarios[0].sala",
+        "turmas[1].horarios[1].sala",
+        "turmas[1].horarios[2].sala",
+        "turmas[1].horarios[3].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "TP41CA",
+      "nome": "Topografia 1",
+      "fields": [
+        "turmas[0].horarios[0].sala",
+        "turmas[0].horarios[1].sala",
+        "turmas[0].horarios[2].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "TP42CA",
+      "nome": "Topografia 2",
+      "fields": [
+        "turmas[0].horarios[1].sala",
+        "turmas[0].horarios[2].sala",
+        "turmas[0].horarios[3].sala"
+      ]
+    }
+  ],
+  "payload": {
+    "curso": "ENG CART AGRIMENSURA",
+    "ultima_atualizacao": "25/09/2026 18:31:37   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "AL42NB",
+        "nome": "Algebra Linear",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "M104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Santos Richard Wieller Sanguino Bejarano"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "2CP",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "M005",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "M005",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "N110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jackson Luchesi"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "2CV",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "M105",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "M105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Alexandre De Oliveira Reis"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "2EL",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "L105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Alexandre De Oliveira Reis"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "2MC",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "Q006",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "Q006",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "Q006",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "Q006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jackson Luchesi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AM43QB",
+        "nome": "Aplicações De Mecânica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3QB",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "N107",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "N107",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "N107",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "N107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ivo De Lourenco Junior"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AO46CA",
+        "nome": "Ajustamento De Observações 2",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 16,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "V007",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "V007",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "V007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Kaue De Moraes Vestena"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AP42CA",
+        "nome": "Algoritmos E Programação",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 19,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "V007",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "V007",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "V007",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "V007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Everton Luiz Pagnoncelli"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CD42NB",
+        "nome": "Cálculo Diferencial E Integral",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "N106",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "N106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Teodora Pinheiro Figueroa"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "2CV",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "M103",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "M103",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "N110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marieli Musial Tumelero"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CN43NB",
+        "nome": "Cálculo Numérico",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4CP",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "N105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Aureo Quintas Garcia"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "4EL",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "L104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Teodora Pinheiro Figueroa"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "4MC",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "N107",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "N107",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "N107",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "N107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Teodora Pinheiro Figueroa"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CT42CA",
+        "nome": "Cartografia Temática 1",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "V007",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "V007",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "V007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Danielli Batistella"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CT46CA",
+        "nome": "Cartografia Temática 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 15,
+        "turmas": [
+          {
+            "codigo": "6CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "V007",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "V007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Juliane Monica Ruthes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CV41NB",
+        "nome": "Cálculo Em Uma Variável Real",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1CP",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "M106",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "M106",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "M106",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "M106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fredy Maglorio Sobrado Suarez"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "1EL",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 16,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "N105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Larissa Hagedorn Vieira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "1MC",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 32,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "M107",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "M107",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "M107",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "M107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fredy Maglorio Sobrado Suarez"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "1QB",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 6,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "L104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Larissa Hagedorn Vieira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EXT",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química",
+                "Eng De Computação",
+                "Engenharia Elétrica",
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "N110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Divanete Maria Bitdinger De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CV42NB",
+        "nome": "Cálculo Em Várias Variáveis Reais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2CP",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "N105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Santos Richard Wieller Sanguino Bejarano"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "2EL",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "L105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Michael Santos Gonzales Gargate"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "2MC",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "N111",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "N111",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Santos Richard Wieller Sanguino Bejarano"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "3CV",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "M003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Michael Santos Gonzales Gargate"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CV43NB",
+        "nome": "Cálculo Vetorial E Séries",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3CP",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "N106",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "N106",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "N106",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "N106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joao Biesdorf"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "3EL",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "L104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joao Biesdorf"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "3MC",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "O201",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "O201",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "O201",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "O201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Alexandre De Oliveira Reis"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "4CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "N111",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "N111",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vanderlei Martins"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "DP42CA",
+        "nome": "Desenho Topográfico",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "V003",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "V003",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "V003",
+                "sede": null
+              },
+              {
+                "horario": "7M2",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Juliane Monica Ruthes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC29NB",
+        "nome": "Economia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "9CP",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação",
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "Q001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Denise Rauber"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE45MC",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5MC",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "Q005",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "Q005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Norma Brambilla"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE45S",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção",
+                "Tec Analise Des Sist",
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "P203",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "P203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Norma Brambilla"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE46M",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 11,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "Q007",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "Q007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Norma Brambilla"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE47EL",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7EL",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elizandra Machado Follmann"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE48CP",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8CP",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "L107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elizandra Machado Follmann"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EE48NB",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8CV",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "M105",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "M105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Norma Brambilla"
+            ],
+            "optativa_matrizes": [
+              "Matriz:657",
+              "Matriz:489",
+              "Matriz:635"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EM29MC",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "9MC",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "Q005",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "Q005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Norma Brambilla"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EM42NB",
+        "nome": "Economia E Mercados",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2MC",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "Q001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Denise Rauber"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EM43G",
+        "nome": "Economia E Mercados",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3G",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "O003",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "O003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elizangela Mara Carvalheiro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EM44QB",
+        "nome": "Eletricidade E Magnetismo",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4QB",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "N108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Antonio Fiori"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EM46CA",
+        "nome": "Estática E Mecânica Dos Materais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "7M3",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joamilton Stahlschmidt"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EM48EL",
+        "nome": "Economia E Mercados",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8EL",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "Q001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Denise Rauber"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EP22B",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2BS",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Ciências Contábeis"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N2",
+                "sala": "O201",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "O201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elizandra Machado Follmann"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ER42M",
+        "nome": "Estática E Resistência Dos Materiais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2MN",
+            "enquadramento": "Presencial",
+            "vagas_total": 28,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "7M3",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joamilton Stahlschmidt"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FB44CA",
+        "nome": "Fundamentos De Banco De Dados",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N3",
+                "sala": "V105",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "V105",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "V105",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "V105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Teixeira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FE42NB",
+        "nome": "Fundamentos Da Ética",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA4",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "M104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Glademir Alves Trindade"
+            ],
+            "optativa_matrizes": [
+              "Matriz:657",
+              "Matriz:489",
+              "Matriz:641",
+              "Matriz:642",
+              "Matriz:637",
+              "Matriz:636",
+              "Matriz:635"
+            ]
+          },
+          {
+            "codigo": "HUMA5",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "N107",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "N107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Glademir Alves Trindade"
+            ],
+            "optativa_matrizes": [
+              "Matriz:657",
+              "Matriz:489",
+              "Matriz:641",
+              "Matriz:642",
+              "Matriz:637",
+              "Matriz:636",
+              "Matriz:635"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "FE43QB",
+        "nome": "Física Experimental - Introdução À Análise De Dados Experimentais",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3QB",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "L004",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "L004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Antonio Fiori"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FE44QB",
+        "nome": "Física Experimental - Análise De Dados Experimentais",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4QB",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "L004",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "L004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Antonio Fiori"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FO46CA",
+        "nome": "Fotogrametria 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "L002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Henrique Dos Santos Felipetto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FO48CA",
+        "nome": "Fotogrametria 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 16,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "V008",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "V008",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "V008",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "V008",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Kaue De Moraes Vestena"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FS42NB",
+        "nome": "Física Experimental A",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2CP",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "L004",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "L004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Neuri Antonio Lunelli"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "2EL",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "L004",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "L004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Neuri Antonio Lunelli"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "3MC",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "L004",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "L004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Clebson Abati Graeff"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "4CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "L006",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "L006",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Neuri Antonio Lunelli"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "4CV",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "L004",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "L004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Clebson Abati Graeff"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FS43NB",
+        "nome": "Física Experimental B",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3CP",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "L004",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "L004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Neuri Antonio Lunelli"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "3EL",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "L004",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "L004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Clementina Verginia Andreolla"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "4MC",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "L004",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "L004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raquel Dosciatti Bini"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "5CV",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "L004",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "L004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raquel Dosciatti Bini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FT41NB",
+        "nome": "Física Teórica I",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1CP",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "M007",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "M007",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "N110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcelo Sandrini"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "1EL",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 16,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "N105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cesar Augusto Refosco Yednak"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "2MC",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "N106",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "N106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Clebson Abati Graeff"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "3CV",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "M106",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "M106",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "M106",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "M106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cesar Augusto Refosco Yednak"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EXT",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação",
+                "Engenharia Elétrica",
+                "Engenharia Civil",
+                "Eng Mecânica",
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "M005",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "M005",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "O-202",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "O-202",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Crislaine Da Cruz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FT42NB",
+        "nome": "Física Teórica Ii",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2CP",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "M005",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "M005",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "N108",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "N108",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Angel Akio Tateishi"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "2EL",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "L104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ivo De Lourenco Junior"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "3MC",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "L104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tiago Kroetz"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "4CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "N110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Angel Akio Tateishi"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "4CV",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "L107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tiago Kroetz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FT43NB",
+        "nome": "Física Teórica Iii",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3CP",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "O003",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "O003",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "O003",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "O003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabiano Alan Serafim Ferrari"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "3EL",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "L105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabiano Alan Serafim Ferrari"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GA41NB",
+        "nome": "Geometria Analítica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1CP",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "M007",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "M007",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "L107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marieli Musial Tumelero"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "1CV",
+            "enquadramento": "Presencial",
+            "vagas_total": 49,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "M107",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "M107",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "M107",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "M107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cristina Spohr Fagundes"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "1EL",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 16,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "L106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cristina Spohr Fagundes"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "1MC",
+            "enquadramento": "Presencial",
+            "vagas_total": 49,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "Q001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marieli Musial Tumelero"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EXT",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação",
+                "Engenharia Elétrica",
+                "Engenharia Civil",
+                "Eng Mecânica",
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "N105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jessica Boschi"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EXT1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação",
+                "Engenharia Elétrica",
+                "Engenharia Civil",
+                "Eng Mecânica",
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "M007",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "M007",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "N107",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "N107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joao Biesdorf"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GA48CA",
+        "nome": "Geoestatística Aplicada",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "L002",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "L002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adao Robson Elias"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GE44CA",
+        "nome": "Geodésia 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "M009",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "M009",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "M009",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "M009",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Kaue De Moraes Vestena"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GE45G",
+        "nome": "Gestão Empresarial",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5G",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "V007",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "V007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Kuramoto Gonzalez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GE46CA",
+        "nome": "Geodésia 3",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N1",
+                "sala": "N111",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "N111",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "N111",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Silvio Henrique Dellesposte Andolfato"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GE46S",
+        "nome": "Gestão Empresarial",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "V007",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "V007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Kuramoto Gonzalez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GE48CA",
+        "nome": "Geoprocessamento",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 15,
+        "turmas": [
+          {
+            "codigo": "8CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "V008",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "V008",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "V008",
+                "sede": null
+              },
+              {
+                "horario": "7M2",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Danielli Batistella"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GO48CA",
+        "nome": "Gestão Empresarial",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "V007",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "V007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Kuramoto Gonzalez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HC42NB",
+        "nome": "História E Cultura Afro-Brasileira",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA2",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "N106",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "N106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Aruana Antonio Dos Passos"
+            ],
+            "optativa_matrizes": [
+              "Matriz:657",
+              "Matriz:489",
+              "Matriz:641",
+              "Matriz:640",
+              "Matriz:642",
+              "Matriz:637",
+              "Matriz:636",
+              "Matriz:643",
+              "Matriz:638",
+              "Matriz:635"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HH48CA",
+        "nome": "Hidrologia E Hidráulica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "7M1",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vaneza Andrea Lima De Freitas"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HT42NB",
+        "nome": "História Da Técnica E Da Tecnologia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA1",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "N110",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "N110",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Aruana Antonio Dos Passos"
+            ],
+            "optativa_matrizes": [
+              "Matriz:641",
+              "Matriz:640",
+              "Matriz:642",
+              "Matriz:637",
+              "Matriz:636",
+              "Matriz:643",
+              "Matriz:638"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LB48CA",
+        "nome": "Levantamento Batimétrico",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "V003",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "V003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adao Robson Elias"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LC46CA",
+        "nome": "Legislação Cartográfica",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "N111",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "N111",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "N111",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Danielli Batistella"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LI42NB",
+        "nome": "Libras 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA13",
+            "enquadramento": "Presencial",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "M104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mirelia Flausino Vogel",
+              "Aline Brancalione"
+            ],
+            "optativa_matrizes": [
+              "Matriz:657",
+              "Matriz:489",
+              "Matriz:639",
+              "Matriz:636",
+              "Matriz:641",
+              "Matriz:640",
+              "Matriz:637",
+              "Matriz:642",
+              "Matriz:638",
+              "Matriz:635"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LP41NB",
+        "nome": "Leitura E Produção De Gêneros Acadêmicos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1CV",
+            "enquadramento": "Presencial",
+            "vagas_total": 32,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "M107",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "M107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rosangela Oro Brocardo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:560",
+              "Matriz:639"
+            ]
+          },
+          {
+            "codigo": "1EL",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 16,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "N105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leticia Lemos Gritti"
+            ],
+            "optativa_matrizes": [
+              "Matriz:560",
+              "Matriz:639"
+            ]
+          },
+          {
+            "codigo": "1MC",
+            "enquadramento": "Presencial",
+            "vagas_total": 47,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "Q001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Priscila Azevedo Da Fonseca Lanferdini"
+            ],
+            "optativa_matrizes": [
+              "Matriz:560",
+              "Matriz:639"
+            ]
+          },
+          {
+            "codigo": "1QB",
+            "enquadramento": "Presencial",
+            "vagas_total": 16,
+            "vagas_calouros": 6,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "N111",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "N111",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lovania Roehrig Teixeira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:560",
+              "Matriz:639"
+            ]
+          },
+          {
+            "codigo": "3CP",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N3",
+                "sala": "M007",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "M007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rosangela Oro Brocardo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:560",
+              "Matriz:639"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MM42QB",
+        "nome": "Matéria Em Movimento",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2QB",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "N011",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "N011",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "N011",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "N011",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Raquel Dosciatti Bini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "NR46CA",
+        "nome": "Noções De Recuperação De Áreas Degradadas",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 30,
+        "turmas": [
+          {
+            "codigo": "6CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "M104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vaneza Andrea Lima De Freitas"
+            ],
+            "optativa_matrizes": [
+              "Matriz:637"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "PA42NB",
+        "nome": "Psicologia Aplicada Ao Trabalho",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5CV",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "M104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sergio Paes De Barros"
+            ],
+            "optativa_matrizes": [
+              "Matriz:560",
+              "Matriz:657",
+              "Matriz:489",
+              "Matriz:639",
+              "Matriz:641",
+              "Matriz:640",
+              "Matriz:642",
+              "Matriz:643",
+              "Matriz:638",
+              "Matriz:635"
+            ]
+          },
+          {
+            "codigo": "HUMA12",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "M103",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "M103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sergio Paes De Barros"
+            ],
+            "optativa_matrizes": [
+              "Matriz:560",
+              "Matriz:657",
+              "Matriz:489",
+              "Matriz:639",
+              "Matriz:641",
+              "Matriz:640",
+              "Matriz:642",
+              "Matriz:643",
+              "Matriz:638",
+              "Matriz:635"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "PC41NB",
+        "nome": "Pré-Cálculo",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1CV",
+            "enquadramento": "Presencial",
+            "vagas_total": 49,
+            "vagas_calouros": 30,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "N106",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "N106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cristina Spohr Fagundes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PC44CA",
+        "nome": "Projeções Cartográficas 2",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N4",
+                "sala": "V003",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "V003",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Priscila Da Silva Victorino Pontes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PE43NB",
+        "nome": "Probabilidade E Estatística",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2EL",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "N106",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "N106",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "N106",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "N106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Beatriz Regina Brum"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "2MC",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "Q002",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "Q002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafaela Greici Da Motta Camicia"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "2QB",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "N011",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "N011",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "N111",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "N111",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jose Donizetti De Lima"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "3CV",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "L106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafaela Greici Da Motta Camicia"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "4CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "N010",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "O-202",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "O-202",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Romel Da Rosa Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "5CP",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "O001",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "O001",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "O001",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "O001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Romel Da Rosa Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PI48CA",
+        "nome": "Projeto E Implantação De Sig",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 15,
+        "turmas": [
+          {
+            "codigo": "8CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "V008",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "V008",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "V008",
+                "sede": null
+              },
+              {
+                "horario": "7M3",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Juliane Monica Ruthes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QT41MC",
+        "nome": "Química Tecnológica",
+        "creditos": 5,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1MCA",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 22,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "N001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leandro Zatta"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "1MCB",
+            "enquadramento": "Presencial",
+            "vagas_total": 27,
+            "vagas_calouros": 22,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Mecânica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "Q001",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "N001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leandro Zatta"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QT42CP",
+        "nome": "Química Tecnológica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2CPA",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "M005",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "M005",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "M005",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "N004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vanderlei Aparecido De Lima",
+              "Leandro Zatta"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "2CPB",
+            "enquadramento": "Presencial",
+            "vagas_total": 24,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T1",
+                "sala": "M005",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "M005",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "M005",
+                "sede": null
+              },
+              {
+                "horario": "4T1",
+                "sala": "N004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vanderlei Aparecido De Lima",
+              "Leandro Zatta"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QT42EL",
+        "nome": "Química Tecnológica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2EL",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Elétrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "N106",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "N106",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "N106",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "N106",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "N106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Liliam Cristina Angelo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QU42NB",
+        "nome": "Química",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2CVA",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "N003",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "N003",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "L104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Edilson Da Silva Ferreira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "2CVB",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "N003",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "N003",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Edilson Da Silva Ferreira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "QV23A",
+        "nome": "Qualidade De Vida",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "HUMA8",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Administração"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "M104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Samoara Viacelli Da Luz"
+            ],
+            "optativa_matrizes": [
+              "Matriz:628"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "SR46CA",
+        "nome": "Sensoriamento Remoto 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 16,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "V008",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "V008",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "V008",
+                "sede": null
+              },
+              {
+                "horario": "7M1",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Heloisa Da Silva Victorino"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TG42G",
+        "nome": "Topografia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2GA",
+            "enquadramento": "Presencial",
+            "vagas_total": 17,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "O002",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "O002",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "O002",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "O002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Priscila Da Silva Victorino Pontes"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "2GB",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "O002",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "O002",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "O002",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "O002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Henrique Dos Santos Felipetto"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "2GC",
+            "enquadramento": "Presencial",
+            "vagas_total": 15,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "O002",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "O002",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "O002",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "O002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Henrique Dos Santos Felipetto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TO42CV",
+        "nome": "Topografia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2CVA",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "M007",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "M007",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "M007",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "M007",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Silvio Henrique Dellesposte Andolfato"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "2CVB",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Engenharia Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6T2",
+                "sala": "N107",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "N107",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "N107",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "N107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Heloisa Da Silva Victorino"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TP41CA",
+        "nome": "Topografia 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1CAE",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "V101A",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "V101A",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "V101A",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Kaue De Moraes Vestena"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TP42CA",
+        "nome": "Topografia 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2CA",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng Cart Agrimensura"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "M003",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "M104",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "M104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Silvio Henrique Dellesposte Andolfato"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}

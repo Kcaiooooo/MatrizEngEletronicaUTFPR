@@ -1,5 +1,6 @@
 import { createHash } from 'node:crypto';
-import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { constants as fsConstants } from 'node:fs';
+import { access, mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { chromium } from '@playwright/test';
@@ -36,6 +37,10 @@ const now = new Date();
 
 function reportUrl(campus, course) {
     return `${catalog.source.baseUrl}/dpls/sistema/aluno${sessionCampusCode}/mplistahorario.inicioAluno?p_curscodnr=${course.portalId || course.id}`;
+}
+
+function portalMenuUrl() {
+    return `${catalog.source.baseUrl}/dpls/sistema/aluno${sessionCampusCode}/mpmenu.inicio`;
 }
 
 function versionStamp(date) {
@@ -224,6 +229,7 @@ async function waitForReportFrame(page) {
 }
 
 async function ensureLoggedIn(page, campus, course) {
+    await openAuthenticatedPortalMenu(page);
     await page.goto(reportUrl(campus, course), { waitUntil: 'domcontentloaded' });
     if (await page.locator('#p_unidcodnr').count()
         || await page.locator('#logoutButton').count()
@@ -234,15 +240,120 @@ async function ensureLoggedIn(page, campus, course) {
     const passwordField = page.locator('input[type="password"]').first();
     const loginButton = page.locator('button[type="submit"], input[type="submit"]').first();
     if (await passwordField.count() && await loginButton.count()) {
-        console.log('Tela de login detectada; acionando o botão de login. A senha não será lida nem armazenada pelo script.');
-        await loginButton.click();
+        console.log('Tela de login detectada; acionando o envio para usar somente o preenchimento salvo pelo usuário. A senha não será lida nem armazenada pelo script.');
+        try {
+            await loginButton.click({ timeout: 5000 });
+        } catch {
+            throw new Error('O Portal exige ação manual para enviar o login; nenhum dado foi coletado.');
+        }
     } else {
-        console.log('Tela de login detectada, mas o botão de envio não foi encontrado. A senha não será lida nem armazenada pelo script.');
+        throw new Error('A sessão expirou e o Portal exige ação manual; nenhum dado foi coletado.');
     }
-    await page.waitForFunction(() => Boolean(document.querySelector('#p_unidcodnr'))
+    try {
+        await page.waitForFunction(() => Boolean(document.querySelector('#p_unidcodnr'))
         || Boolean(document.querySelector('#logoutButton'))
-        || /\/dpls\/sistema\/aluno\d+\/mpmenu\.inicio/.test(location.pathname), { timeout: 300000 });
+        || /\/dpls\/sistema\/aluno\d+\/mpmenu\.inicio/.test(location.pathname), { timeout: 30000 });
+    } catch {
+        throw new Error('O login não concluiu usando o preenchimento salvo; conclua a renovação manualmente na janela aberta.');
+    }
     console.log(`[portal-aluno] login detectado (${page.url()})`);
+}
+
+async function isAuthenticatedPortalMenu(page) {
+    return page.evaluate(() => /\/dpls\/sistema\/aluno\d+\/mpmenu\.inicio(?:$|[?#])/.test(location.pathname + location.search + location.hash)
+        && Boolean(document.body?.innerText?.trim())
+        && !document.querySelector('input[type="password"]'));
+}
+
+async function waitForPortalLoginState(page) {
+    await page.waitForFunction(() => {
+        const menuLoaded = /\/dpls\/sistema\/aluno\d+\/mpmenu\.inicio/.test(location.pathname)
+            && Boolean(document.body?.innerText?.trim())
+            && !document.querySelector('input[type="password"]');
+        return menuLoaded
+            || Boolean(document.querySelector('input[type="password"]'))
+            || Boolean(document.querySelector('#logoutButton'))
+            || /\/(?:home)?$/.test(location.pathname);
+    }, { timeout: 30000 });
+}
+
+async function submitSavedPortalLogin(page) {
+    const passwordField = page.locator('input[type="password"]').first();
+    const loginButton = page.locator('button[type="submit"], input[type="submit"]').first();
+    if (!(await passwordField.count()) || !(await loginButton.count())) {
+        throw new Error('O Portal exige ação manual para renovar o login; nenhum dado foi coletado.');
+    }
+    console.log('[portal-aluno] enviando o formulário pela interface para usar o preenchimento salvo; nenhuma credencial será lida ou armazenada.');
+    try {
+        await loginButton.click({ timeout: 5000 });
+    } catch {
+        throw new Error('O Portal exige ação manual para enviar o login; nenhum dado foi coletado.');
+    }
+    try {
+        await page.waitForFunction(() => /\/dpls\/sistema\/aluno\d+\/mpmenu\.inicio/.test(location.pathname)
+            && Boolean(document.body?.innerText?.trim())
+            && !document.querySelector('input[type="password"]'), { timeout: 30000 });
+    } catch {
+        throw new Error('O login exige ação manual ou não chegou ao menu autenticado; nenhum dado foi coletado.');
+    }
+}
+
+async function findVisiblePortalLogout(page) {
+    const candidates = [
+        page.locator('#logoutButton').first(),
+        page.getByRole('button', { name: /fazer logout|sair|logout/i }).first(),
+        page.getByRole('link', { name: /fazer logout|sair|logout/i }).first(),
+    ];
+    for (const candidate of candidates) {
+        if (await candidate.isVisible().catch(() => false)) return candidate;
+    }
+    return null;
+}
+
+async function openAuthenticatedPortalMenu(page) {
+    await page.goto(portalMenuUrl(), { waitUntil: 'domcontentloaded' });
+    try {
+        await waitForPortalLoginState(page);
+    } catch {
+        throw new Error('A rota de entrada do Portal não carregou um estado verificável; nenhum dado foi coletado.');
+    }
+    if (await isAuthenticatedPortalMenu(page)) {
+        console.log(`[portal-aluno] menu autenticado confirmado (${page.url()})`);
+        return;
+    }
+
+    const logoutControl = await findVisiblePortalLogout(page);
+    if (logoutControl) {
+        console.log('[portal-aluno] a rota redirecionou apesar de a sessão parecer ativa; fazendo logout pela interface.');
+        try {
+            await logoutControl.click({ timeout: 5000 });
+        } catch {
+            throw new Error('O Portal exige ação manual para concluir o logout; nenhum dado foi coletado.');
+        }
+        const logoutDialog = page.locator('[role="dialog"], p-confirmdialog, .p-confirm-dialog')
+            .filter({ hasText: /desconectado de todos os sistemas/i }).first();
+        if (await logoutDialog.isVisible().catch(() => false)) {
+            const confirmLogout = logoutDialog.getByRole('button', { name: /^sim$/i }).first();
+            if (!(await confirmLogout.isVisible().catch(() => false))) {
+                throw new Error('A confirmação do logout exige ação manual; nenhum dado foi coletado.');
+            }
+            await confirmLogout.click({ timeout: 5000 });
+        }
+        try {
+            await page.waitForFunction(() => Boolean(document.querySelector('input[type="password"]'))
+                || /login|entrar/i.test(location.pathname), { timeout: 30000 });
+        } catch {
+            throw new Error('O logout pela interface não chegou à tela de login; nenhum dado foi coletado.');
+        }
+    }
+
+    if (await page.locator('input[type="password"]').count()) {
+        await submitSavedPortalLogin(page);
+        console.log(`[portal-aluno] menu autenticado confirmado após renovar a sessão (${page.url()})`);
+        return;
+    }
+
+    throw new Error(`A rota do Portal não mostrou o menu autenticado (${page.url()}); nenhum dado foi coletado.`);
 }
 
 async function selectReport(page, campus, course) {
@@ -325,10 +436,14 @@ const initialSelections = selectedCourses();
 if (!initialSelections.length) throw new Error('Use --campus=<id> --course=<id>, --all ou deixe sem argumentos para o piloto Curitiba/0250.');
 
 await mkdir(profilePath, { recursive: true });
+const chromePath = process.env.UTFPR_CHROME_PATH || '/usr/bin/google-chrome';
+const executablePath = await access(chromePath, fsConstants.X_OK).then(() => chromePath).catch(() => undefined);
+console.log(`[portal-aluno] iniciando navegador ${headless ? 'headless' : 'headed'}${executablePath ? ` (${executablePath})` : ' (Chromium do Playwright)'} com o perfil local.`);
 const context = await chromium.launchPersistentContext(profilePath, {
     headless,
     viewport: { width: 1440, height: 1000 },
     args: headless ? [] : ['--ozone-platform=wayland'],
+    ...(executablePath ? { executablePath } : {}),
 });
 const page = context.pages()[0] || await context.newPage();
 const results = [];

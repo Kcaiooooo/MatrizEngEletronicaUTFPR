@@ -1,0 +1,3067 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-09-25T21-28-57Z",
+  "capturedAt": "2026-09-25T21:28:57.748Z",
+  "sourceLastUpdatedAt": "25/09/2026 18:31:24   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "pato-branco",
+    "name": "Pato Branco",
+    "code": "05"
+  },
+  "course": {
+    "id": "0192",
+    "name": "Letras (Sem)",
+    "sourceName": "LETRAS (SEM)"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=192"
+  },
+  "fingerprint": "1d88c61cf976c1d1478240bcdf0c15aee00b109649132d472e2a55ac00dc14ac",
+  "previousVersionId": "2026-09-19T20-29-03Z",
+  "changes": [
+    {
+      "type": "changed",
+      "codigo": "AD45L",
+      "nome": "Análise Do Discurso",
+      "fields": [
+        "turmas[0].horarios[2].sala",
+        "turmas[0].horarios[3].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "CR45L",
+      "nome": "Contos E Romances Em Língua Inglesa",
+      "fields": [
+        "turmas[0].horarios[0].sala",
+        "turmas[0].horarios[1].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "GN45L",
+      "nome": "Gêneros Narrativos Em Língua Inglesa",
+      "fields": [
+        "turmas[0].horarios[0].sala",
+        "turmas[0].horarios[1].sala",
+        "turmas[0].horarios[2].sala",
+        "turmas[0].horarios[3].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "PP45L",
+      "nome": "Prática Profissional: Literatura Infantojuvenil",
+      "fields": [
+        "turmas[0].horarios[2].sala",
+        "turmas[0].horarios[3].sala"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "SP45L",
+      "nome": "Semântica E Pragmática",
+      "fields": [
+        "turmas[0].horarios[2].sala",
+        "turmas[0].horarios[3].sala"
+      ]
+    }
+  ],
+  "payload": {
+    "curso": "LETRAS (SEM)",
+    "ultima_atualizacao": "25/09/2026 18:31:24   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "AD45L",
+        "nome": "Análise Do Discurso",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 15,
+        "turmas": [
+          {
+            "codigo": "5LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "M102",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "M102",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "O203",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "O203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcia Andrea Dos Santos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AF47L",
+        "nome": "Aspectos Fonético-Fonológicos Aplicados Ao Ensino-Aprendizagem De Língua Inglesa",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "M106",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "M106",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "M106",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "M106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Claudia Marchese"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AL44L",
+        "nome": "Análise Linguística Aplicada Ao Ensino",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "L107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Denize Terezinha Teis"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CH45L",
+        "nome": "Competências E Habilidades De Ensino E Aprendizagem De Língua Inglesa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "M102",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "M102",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Amanda Stanislawski Reche"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CL42L",
+        "nome": "Correntes Linguísticas",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "L105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Anselmo Pereira De Lima"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CL46L",
+        "nome": "Cinema E Literatura",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "M106",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "M106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wellington Ricardo Fioruci"
+            ],
+            "optativa_matrizes": [
+              "Matriz:644"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CR45L",
+        "nome": "Contos E Romances Em Língua Inglesa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N2",
+                "sala": "V101A",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "V101A",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mariese Ribas Stankiewicz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "DI44L",
+        "nome": "Didática",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "L107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franciele Clara Peloso"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "DL48L",
+        "nome": "Drama Em Língua Inglesa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N4",
+                "sala": "M107",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "M107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mariese Ribas Stankiewicz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EO55LT",
+        "nome": "Estágio Curricular De Língua Inglesa 1",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Amanda Lais Jacobsen De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EO56LT",
+        "nome": "Estágio Curricular De Língua Inglesa 2",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Amanda Lais Jacobsen De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EO57LT",
+        "nome": "Estágio Curricular De Língua Inglesa 3",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Amanda Lais Jacobsen De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EO58LT",
+        "nome": "Estágio Curricular De Língua Inglesa 4",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Amanda Lais Jacobsen De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ES45L",
+        "nome": "Estágio Supervisionado De Língua Portuguesa 1",
+        "creditos": 7,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "M102",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "M102",
+                "sede": null
+              },
+              {
+                "horario": "7M2",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "7M3",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "7M6",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rosangela Aparecida Marquezi",
+              "Denize Terezinha Teis",
+              "Egide Guareschi",
+              "Ana Maria Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ES46L",
+        "nome": "Estágio Supervisionado De Língua Inglesa 1",
+        "creditos": 7,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "3N1",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "M105",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "M105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Amanda Lais Jacobsen De Oliveira",
+              "Marcele Garbin Dagios",
+              "Taisa Pinetti Passoni",
+              "Camila Paula Camilotti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ES47L",
+        "nome": "Estágio Supervisionado De Língua Portuguesa 2",
+        "creditos": 7,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "M106",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "M106",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wellington Ricardo Fioruci",
+              "Marcos Hidemi De Lima",
+              "Leticia Lemos Gritti",
+              "Lovania Roehrig Teixeira",
+              "Susiele Machry Da Silva",
+              "Ana Maria Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ES48L",
+        "nome": "Estágio Supervisionado De Língua Inglesa 2",
+        "creditos": 7,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "M107",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "M107",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lourdes Terezinha Graebin Parise",
+              "Amanda Lais Jacobsen De Oliveira",
+              "Marcele Garbin Dagios",
+              "Mariese Ribas Stankiewicz",
+              "Priscila Azevedo Da Fonseca Lanferdini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ES55LT",
+        "nome": "Estágio Curricular De Língua Portuguesa 1",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Denize Terezinha Teis"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ES56LT",
+        "nome": "Estágio Curricular De Língua Portuguesa 2",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Denize Terezinha Teis"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ES58LT",
+        "nome": "Estágio Curricular De Língua Portuguesa 4",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Denize Terezinha Teis"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ES59LT",
+        "nome": "Estágio Curricular De Língua Portuguesa 3",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Denize Terezinha Teis"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FF42L",
+        "nome": "Fonética E Fonologia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "L105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Susiele Machry Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "FI41L",
+        "nome": "Filosofia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "L104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Glademir Alves Trindade"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GD44L",
+        "nome": "Gêneros Discursivos Nas Esferas Pessoal E Acadêmica Em Língua Inglesa",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "L107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mariese Ribas Stankiewicz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GN45L",
+        "nome": "Gêneros Narrativos Em Língua Inglesa",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "V101B",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "V101B",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "V101B",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "V101B",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Priscila Azevedo Da Fonseca Lanferdini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GO42L",
+        "nome": "Gêneros Orais E Escritos Do Cotidiano Em Língua Inglesa 2",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2LNA",
+            "enquadramento": "Presencial",
+            "vagas_total": 26,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "L105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Amanda Stanislawski Reche"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "2LNB",
+            "enquadramento": "Presencial",
+            "vagas_total": 18,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "N105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Taisa Pinetti Passoni"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GO43L",
+        "nome": "Gêneros Orais E Escritos Do Cotidiano Em Língua Inglesa 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "L106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Maria Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GP48L",
+        "nome": "Gestão E Políticas Educacionais",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "M107",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "M107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Franciele Clara Peloso"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "GT41L",
+        "nome": "Gêneros Orais E Escritos Do Cotidiano Em Língua Inglesa 1",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1LNA",
+            "enquadramento": "Presencial",
+            "vagas_total": 3,
+            "vagas_calouros": 3,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "L104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Amanda Stanislawski Reche"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "1LNB",
+            "enquadramento": "Presencial",
+            "vagas_total": 19,
+            "vagas_calouros": 19,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "N105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Amanda Lais Jacobsen De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HE41L",
+        "nome": "História Da Educação No Brasil",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "L104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Aruana Antonio Dos Passos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "IL42L",
+        "nome": "Introdução À Libras",
+        "creditos": 0,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2LN",
+            "enquadramento": "EaD",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Mirelia Flausino Vogel",
+              "Aline Brancalione"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "IL42NB",
+        "nome": "Introdução À Libras",
+        "creditos": 0,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2MN",
+            "enquadramento": "EaD",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec Manutenção"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Mirelia Flausino Vogel",
+              "Aline Brancalione"
+            ],
+            "optativa_matrizes": [
+              "Matriz:643"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "IP43L",
+        "nome": "Introdução À Pesquisa Em Linguagem E Ensino",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N4",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "L106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leticia Lemos Gritti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LA41L",
+        "nome": "Linguística Aplicada Ao Ensino De Línguas Adicionais",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 48,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "L104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcele Garbin Dagios"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LA44L",
+        "nome": "Literatura Afro-Brasileira E Indígena",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "L107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sidinei Eduardo Batista"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LA46L",
+        "nome": "Leitura: Abordagens Teóricas E Metodológicas",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "M105",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "M105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rosangela Oro Brocardo"
+            ],
+            "optativa_matrizes": [
+              "Matriz:644"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LA47L",
+        "nome": "Literaturas Africanas De Língua Portuguesa",
+        "creditos": 2,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 30,
+        "turmas": [
+          {
+            "codigo": "7LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "M106",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "M106",
+                "sede": null
+              },
+              {
+                "horario": "5N1",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rosangela Aparecida Marquezi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LB43L",
+        "nome": "Libras",
+        "creditos": 0,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3LN",
+            "enquadramento": "EaD",
+            "vagas_total": 35,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Mirelia Flausino Vogel",
+              "Aline Brancalione"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LE41L",
+        "nome": "Leitura E Escrita Acadêmica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1LNA",
+            "enquadramento": "Presencial",
+            "vagas_total": 2,
+            "vagas_calouros": 2,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N2",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "L104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rosangela Oro Brocardo"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "1LNB",
+            "enquadramento": "Presencial",
+            "vagas_total": 19,
+            "vagas_calouros": 19,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N2",
+                "sala": "N105",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "N105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Ana Maria Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LL44L",
+        "nome": "Literaturas De Língua Inglesa: Um Panorama",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "L107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Camila Paula Camilotti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LT41L",
+        "nome": "Linguística Textual E Ensino",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 45,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "L104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Denize Terezinha Teis"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ME43L",
+        "nome": "Metodologia Do Ensino Da Literatura Na Educação Básica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N2",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "L106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Egide Guareschi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ME44L",
+        "nome": "Metodologia De Ensino De Produção Oral, Leitura E Escrita",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "L107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Denize Terezinha Teis"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MF43L",
+        "nome": "Morfologia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "L106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcia Andrea Dos Santos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MI41L",
+        "nome": "Matemática Instrumental",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 47,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "L104",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "L104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carla Baroni"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "NB46L",
+        "nome": "Narrativa Brasileira: Do Período Colonial À Belle Époque",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "M105",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "M105",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "M105",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "M105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcos Hidemi De Lima"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "NB48L",
+        "nome": "Narrativa Brasileira: Das Vanguardas Modernistas Às Tendências Atuais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "M107",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "M107",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "M107",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "M107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wellington Ricardo Fioruci"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "OP47L",
+        "nome": "Oficina De Práticas Docentes",
+        "creditos": 2,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 30,
+        "turmas": [
+          {
+            "codigo": "7LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "M106",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "M106",
+                "sede": null
+              },
+              {
+                "horario": "3N1",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Priscila Azevedo Da Fonseca Lanferdini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "OP48L",
+        "nome": "Oficina De Práticas De Análises Literárias",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "M107",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "M107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rosangela Aparecida Marquezi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PB47L",
+        "nome": "Poesia Brasileira: Do Período Colonial À Belle Époque",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "M106",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "M106",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "M106",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "M106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcos Hidemi De Lima"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PB48L",
+        "nome": "Poesia Brasileira: Das Vanguardas Modernistas Às Tendências Atuais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "M107",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "M107",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "M107",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "M107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sidinei Eduardo Batista"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PC48L",
+        "nome": "Prática Profissional: Conversação/Debates Interculturais Em Língua Inglesa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "M107",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "M107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lovania Roehrig Teixeira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PE43L",
+        "nome": "Psicologia Da Educação",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "L106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sergio Paes De Barros"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PG48L",
+        "nome": "Prática Profissional: Gêneros Acadêmicos Em Língua Inglesa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "M107",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "M107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Claudia Marchese"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PL46L",
+        "nome": "Prática Profissional: Leitura, Escrita E Análise De Materiais Didáticos",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N4",
+                "sala": "M105",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "M105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rosangela Oro Brocardo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PL47L",
+        "nome": "Poesia Em Língua Inglesa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "M106",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "M106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Camila Paula Camilotti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PM43L",
+        "nome": "Políticas E Métodos Para O Ensino De Língua Inglesa",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "L106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lourdes Terezinha Graebin Parise"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PP43L",
+        "nome": "Prática Profissional: Gêneros Discursivos E Ensino",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "L106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rosangela Oro Brocardo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PP44L",
+        "nome": "Prática Profissional: Revisão De Textos Escolares",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N4",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "L107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Anselmo Pereira De Lima"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PP45L",
+        "nome": "Prática Profissional: Literatura Infantojuvenil",
+        "creditos": 2,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 30,
+        "turmas": [
+          {
+            "codigo": "5LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "4N1",
+                "sala": "S001",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "N106",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "N106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rosangela Aparecida Marquezi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "PP46L",
+        "nome": "Prática Profissional: Gêneros Orais E Escritos Da Educação Básica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 30,
+        "turmas": [
+          {
+            "codigo": "6LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "M105",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "M105",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "M105",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "M105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Priscila Azevedo Da Fonseca Lanferdini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "RE47L",
+        "nome": "Recursos Educacionais Digitais E Ensino De Linguagem",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N2",
+                "sala": "M106",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "M106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lovania Roehrig Teixeira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "SE42L",
+        "nome": "Sociologia Da Educação",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "L105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Josiane Carine Wedig"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "SL46L",
+        "nome": "Sociolinguística",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "M105",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "M105",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "M105",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "M105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Susiele Machry Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "SP45L",
+        "nome": "Semântica E Pragmática",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "M102",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "M102",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "N111",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "N111",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lovania Roehrig Teixeira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ST44L",
+        "nome": "Sintaxe",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "4LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N2",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "L107",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "L107",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Anselmo Pereira De Lima"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TC46L",
+        "nome": "Trabalho De Conclusão De Curso 1",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "M105",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "M105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Camila Paula Camilotti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TC48L",
+        "nome": "Trabalho De Conclusão De Curso 2",
+        "creditos": 0,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "8LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Camila Paula Camilotti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TC57LT",
+        "nome": "Trabalho De Conclusão De Curso 2",
+        "creditos": 0,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Camila Paula Camilotti"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TF43L",
+        "nome": "Textos Fundadores E Contemporâneos Da Literatura Portuguesa",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "L106",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "L106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Sidinei Eduardo Batista"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "TL42L",
+        "nome": "Teoria Da Literatura",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2LN",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Letras (Sem)"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "L105",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "L105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wellington Ricardo Fioruci"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}
