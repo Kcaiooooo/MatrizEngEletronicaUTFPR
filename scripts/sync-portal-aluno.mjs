@@ -298,6 +298,18 @@ async function submitSavedPortalLogin(page) {
     }
 }
 
+async function findVisiblePortalLogout(page) {
+    const candidates = [
+        page.locator('#logoutButton').first(),
+        page.getByRole('button', { name: /fazer logout|sair|logout/i }).first(),
+        page.getByRole('link', { name: /fazer logout|sair|logout/i }).first(),
+    ];
+    for (const candidate of candidates) {
+        if (await candidate.isVisible().catch(() => false)) return candidate;
+    }
+    return null;
+}
+
 async function openAuthenticatedPortalMenu(page) {
     await page.goto(portalMenuUrl(), { waitUntil: 'domcontentloaded' });
     try {
@@ -310,11 +322,11 @@ async function openAuthenticatedPortalMenu(page) {
         return;
     }
 
-    const redirectedWithSession = await page.locator('#logoutButton').first().isVisible().catch(() => false);
-    if (redirectedWithSession) {
+    const logoutControl = await findVisiblePortalLogout(page);
+    if (logoutControl) {
         console.log('[portal-aluno] a rota redirecionou apesar de a sessão parecer ativa; fazendo logout pela interface.');
         try {
-            await page.locator('#logoutButton').first().click({ timeout: 5000 });
+            await logoutControl.click({ timeout: 5000 });
         } catch {
             throw new Error('O Portal exige ação manual para concluir o logout; nenhum dado foi coletado.');
         }
