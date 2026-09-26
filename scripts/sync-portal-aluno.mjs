@@ -330,6 +330,15 @@ async function openAuthenticatedPortalMenu(page) {
         } catch {
             throw new Error('O Portal exige ação manual para concluir o logout; nenhum dado foi coletado.');
         }
+        const logoutDialog = page.locator('[role="dialog"], p-confirmdialog, .p-confirm-dialog')
+            .filter({ hasText: /desconectado de todos os sistemas/i }).first();
+        if (await logoutDialog.isVisible().catch(() => false)) {
+            const confirmLogout = logoutDialog.getByRole('button', { name: /^sim$/i }).first();
+            if (!(await confirmLogout.isVisible().catch(() => false))) {
+                throw new Error('A confirmação do logout exige ação manual; nenhum dado foi coletado.');
+            }
+            await confirmLogout.click({ timeout: 5000 });
+        }
         try {
             await page.waitForFunction(() => Boolean(document.querySelector('input[type="password"]'))
                 || /login|entrar/i.test(location.pathname), { timeout: 30000 });
