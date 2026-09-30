@@ -152,6 +152,8 @@
 .gnh-calendar-cell-free { background: #79fa3e; }
 .gnh-calendar-cell-conflict { background: #fd6d72; }
 .gnh-calendar-event { min-width: 0; overflow: hidden; padding: .05rem .12rem; border-left: 2px solid #60a5fa; border-radius: .15rem; background: color-mix(in srgb, var(--bg-card) 68%, #2563eb); color: var(--text-sec); font-size: .58rem; line-height: 1; white-space: nowrap; }
+.gnh-calendar-event-clickable { cursor: pointer; }
+.gnh-calendar-scroll .gnh-calendar-event-clickable:hover, .gnh-calendar-scroll .gnh-calendar-event-clickable:focus-visible { outline: none; box-shadow: inset 0 0 0 1px #bfdbfe; background: color-mix(in srgb, var(--bg-card) 52%, #2563eb); }
 .gnh-calendar-event + .gnh-calendar-event { margin-top: .08rem; }
 .gnh-calendar-event-code { display: block; overflow: hidden; color: #93c5fd; font: 700 .58rem/1 monospace; text-overflow: ellipsis; white-space: nowrap; }
 .gnh-calendar-event strong, .gnh-calendar-event small { display: none; }
@@ -242,11 +244,22 @@
 .gnh-auto-grade-availability { min-width: 0; padding: .7rem; border: 1px solid var(--border-main); border-radius: .7rem; background: var(--bg-panel); }
 .gnh-auto-grade-availability h3 { margin: 0 0 .55rem; color: var(--text-main); font-size: .82rem; }
 .gnh-auto-grade-availability-grid { display: grid; grid-template-columns: 5.1rem repeat(6, minmax(0, 1fr)); overflow: hidden; border: 1px solid var(--border-subtle); border-radius: .45rem; }
+.gnh-auto-grade-availability-grid.is-painting { cursor: crosshair; }
+.gnh-auto-grade-availability-grid.is-painting .gnh-auto-grade-slot { cursor: crosshair; }
 .gnh-auto-grade-grid-heading, .gnh-auto-grade-grid-time, .gnh-auto-grade-slot { min-width: 0; border-right: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); }
-.gnh-auto-grade-grid-heading { padding: .3rem .15rem; background: var(--bg-sec); color: var(--text-muted); font-size: .6rem; font-weight: 800; text-align: center; }
+.gnh-auto-grade-grid-heading { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .16rem; padding: .25rem .1rem; background: var(--bg-sec); color: var(--text-muted); font-size: .6rem; font-weight: 800; text-align: center; }
+.gnh-auto-grade-grid-bulk-periods { display: flex; justify-content: center; gap: .1rem; }
+.gnh-auto-grade-bulk { display: inline-flex; min-width: 1.05rem; min-height: 1.05rem; align-items: center; justify-content: center; padding: 0 .12rem; border: 1px solid var(--border-subtle); border-radius: .22rem; background: var(--bg-panel); color: var(--text-muted); font: 800 .48rem/1 sans-serif; cursor: pointer; }
+.gnh-auto-grade-bulk:hover { border-color: #60a5fa; color: var(--text-main); }
+.gnh-auto-grade-bulk[aria-pressed="true"] { border-color: #ef4444; background: #ef4444; color: #fff; }
+.gnh-auto-grade-bulk[aria-pressed="mixed"] { border-color: #f87171; background: linear-gradient(135deg, #ef4444 50%, var(--bg-panel) 50%); color: var(--text-main); }
+.gnh-auto-grade-day-bulk { padding: 0; border: 0; background: transparent; color: var(--text-muted); font: inherit; font-size: .6rem; font-weight: 800; cursor: pointer; }
+.gnh-auto-grade-day-bulk:hover { color: var(--text-main); }
+.gnh-auto-grade-day-bulk[aria-pressed="true"] { color: #f87171; }
+.gnh-auto-grade-day-bulk[aria-pressed="mixed"] { color: #fbbf24; }
 .gnh-auto-grade-grid-time { display: flex; flex-direction: column; justify-content: center; gap: .1rem; padding: .12rem .2rem; background: var(--bg-sec); color: var(--text-muted); font-size: .5rem; line-height: 1.05; }
 .gnh-auto-grade-grid-time strong { color: var(--text-sec); font-size: .58rem; }
-.gnh-auto-grade-slot { min-height: 1.45rem; padding: 0; background: var(--bg-panel); cursor: pointer; }
+.gnh-auto-grade-slot { min-height: 1.45rem; padding: 0; background: var(--bg-panel); cursor: pointer; user-select: none; }
 .gnh-auto-grade-slot:nth-child(7n) { border-right: 0; }
 .gnh-auto-grade-slot:nth-last-child(-n + 7), .gnh-auto-grade-grid-time:nth-last-child(-n + 7) { border-bottom: 0; }
 .gnh-auto-grade-slot:hover { background: rgba(96, 165, 250, .2); }
@@ -281,6 +294,9 @@
     .gnh-calendar-time strong { font-size: .58rem; }
     .gnh-calendar-time span, .gnh-calendar-clock { font-size: .52rem; }
     .gnh-calendar-event-code { font-size: .5rem; }
+    .gnh-auto-grade-availability-grid { grid-template-columns: 3.8rem repeat(6, minmax(2.6rem, 1fr)); overflow-x: auto; }
+    .gnh-auto-grade-grid-bulk-periods { gap: .04rem; }
+    .gnh-auto-grade-bulk { min-width: .78rem; min-height: .95rem; padding-inline: 0; font-size: .42rem; }
     .gnh-mini-calendar-grid { grid-template-columns: 25px repeat(6, minmax(0, 1fr)); }
     .gnh-mini-calendar-header { font-size: .52rem; }
     .gnh-mini-calendar-time { font-size: .48rem; }

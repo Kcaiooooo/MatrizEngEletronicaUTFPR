@@ -61,6 +61,9 @@ const state = {
     crossCampusRequestId: 0,
     autoGradeTrackRequestId: 0,
     autoGradeSearchId: 0,
+    autoGradePaint: null,
+    autoGradeIgnoreClick: false,
+    autoGradeClickTimer: null,
     autoGradeProfile: null,
     manualSubjectOrder: [],
     manualSubjectCandidates: [],
@@ -659,13 +662,14 @@ function applyAutomaticGradeResult(index) {
     closeAutomaticGradeModal();
 }
 
-function calendarEventMarkup({ selection, horario }, mini = false) {
+function calendarEventMarkup({ selection, horario }) {
     const locationText = horario.sede || '';
     const contextText = [selection.campusName, selection.courseName].filter(Boolean).join(' · ');
     const roomSuffix = horario.sala ? ` / ${horario.sala}` : '';
-    const eventLabel = `${selection.disciplineName} · ${[locationText, contextText].filter(Boolean).join(' · ')}`;
-    const interaction = mini ? ` data-class-key="${escapeHtml(selection.key)}" role="button" tabindex="0"` : '';
-    return `<article class="gnh-calendar-event${mini ? ' gnh-calendar-event-clickable' : ''}"${interaction} title="${escapeHtml(eventLabel)}" aria-label="${escapeHtml(eventLabel)}"><span class="gnh-calendar-event-code">${escapeHtml(selection.disciplineCode)}-${escapeHtml(selection.turmaCode)}${escapeHtml(roomSuffix)}</span><strong>${escapeHtml(selection.disciplineName)}</strong>${contextText || locationText ? `<small>${escapeHtml([locationText, contextText].filter(Boolean).join(' · '))}</small>` : ''}</article>`;
+    const eventLabel = `${selection.disciplineCode}, turma ${selection.turmaCode} — ${selection.disciplineName} · ${[locationText, contextText].filter(Boolean).join(' · ')}`;
+    const interaction = ` data-class-key="${escapeHtml(selection.key)}" role="button" tabindex="0"`;
+    const removalHint = 'Clique para remover do calendário';
+    return `<article class="gnh-calendar-event gnh-calendar-event-clickable"${interaction} title="${escapeHtml(`${eventLabel} · ${removalHint}`)}" aria-label="${escapeHtml(`${removalHint}: ${eventLabel}`)}"><span class="gnh-calendar-event-code">${escapeHtml(selection.disciplineCode)}-${escapeHtml(selection.turmaCode)}${escapeHtml(roomSuffix)}</span><strong>${escapeHtml(selection.disciplineName)}</strong>${contextText || locationText ? `<small>${escapeHtml([locationText, contextText].filter(Boolean).join(' · '))}</small>` : ''}</article>`;
 }
 
 function selectedLessons() {
@@ -700,7 +704,7 @@ function setCalendarMessage(text = '', type = '') {
 
 function cellMarkup(day, row, events, mini = false) {
     const className = mini ? 'gnh-mini-calendar-cell' : 'gnh-calendar-cell';
-    return `<div class="${className}" data-calendar-cell="${day.id}-${row.period}-${row.slot}">${events.map(event => calendarEventMarkup(event, mini)).join('')}</div>`;
+    return `<div class="${className}" data-calendar-cell="${day.id}-${row.period}-${row.slot}">${events.map(calendarEventMarkup).join('')}</div>`;
 }
 
 function calendarGridMarkup(cells, mini = false) {
@@ -779,7 +783,7 @@ function renderCalendar() {
     }
 
     note.textContent = state.selectedClasses.size
-        ? `${state.selectedClasses.size} turma(s) selecionada(s). Horários oficiais; seleção salva neste navegador.`
+        ? `${state.selectedClasses.size} turma(s) selecionada(s). Clique numa aula no calendário para removê-la. Horários oficiais; seleção salva neste navegador.`
         : 'Selecione uma ou mais turmas na lista de disciplinas para montar sua semana.';
     usage.textContent = `Aulas usadas: ${selectedLessons()} / ${state.maxLessons}`;
     usage.classList.toggle('over-limit', selectedLessons() > state.maxLessons);
@@ -1173,17 +1177,23 @@ function removeCalendarSelection(key) {
     renderSnapshot();
 }
 
-$('#mini-calendar-grid').addEventListener('click', event => {
+function handleCalendarEventClick(event) {
     const calendarEvent = event.target.closest('.gnh-calendar-event-clickable');
     if (calendarEvent) removeCalendarSelection(calendarEvent.dataset.classKey);
-});
-$('#mini-calendar-grid').addEventListener('keydown', event => {
+}
+
+function handleCalendarEventKeydown(event) {
     if (event.key !== 'Enter' && event.key !== ' ') return;
     const calendarEvent = event.target.closest('.gnh-calendar-event-clickable');
     if (!calendarEvent) return;
     event.preventDefault();
     removeCalendarSelection(calendarEvent.dataset.classKey);
-});
+}
+
+$('#calendar-grid').addEventListener('click', handleCalendarEventClick);
+$('#calendar-grid').addEventListener('keydown', handleCalendarEventKeydown);
+$('#mini-calendar-grid').addEventListener('click', handleCalendarEventClick);
+$('#mini-calendar-grid').addEventListener('keydown', handleCalendarEventKeydown);
 $('#clear-calendar').addEventListener('click', () => {
     state.selectedClasses.clear();
     setCalendarMessage();
@@ -1211,7 +1221,11 @@ function automaticGradeGridIds() {
 }
 
 function automaticGradeGridMarkup(grid) {
-    const header = `<div class="gnh-auto-grade-grid-heading">Horário</div>${weekdays.map(day => `<div class="gnh-auto-grade-grid-heading" title="${escapeHtml(day.name)}">${escapeHtml(day.short)}</div>`).join('')}`;
+    const allDaysPeriods = periods.map(period => `<button type="button" class="gnh-auto-grade-bulk" data-auto-grade-block="period" data-auto-grade-grid-id="${escapeHtml(grid.id)}" data-auto-grade-period="${period.id}" aria-pressed="false" aria-label="Marcar ${escapeHtml(period.name.toLocaleLowerCase('pt-BR'))} em todos os dias" title="${escapeHtml(period.name)} em todos os dias">${period.id}</button>`).join('');
+    const header = `<div class="gnh-auto-grade-grid-heading"><span>Horário</span><div class="gnh-auto-grade-grid-bulk-periods" aria-label="Bloquear um período em todos os dias">${allDaysPeriods}</div></div>${weekdays.map(day => {
+        const dayPeriods = periods.map(period => `<button type="button" class="gnh-auto-grade-bulk" data-auto-grade-block="day-period" data-auto-grade-grid-id="${escapeHtml(grid.id)}" data-auto-grade-day="${day.id}" data-auto-grade-period="${period.id}" aria-pressed="false" aria-label="Marcar ${escapeHtml(period.name.toLocaleLowerCase('pt-BR'))} de ${escapeHtml(day.name)}" title="${escapeHtml(period.name)} · ${escapeHtml(day.name)}">${period.id}</button>`).join('');
+        return `<div class="gnh-auto-grade-grid-heading gnh-auto-grade-day-heading"><button type="button" class="gnh-auto-grade-day-bulk" data-auto-grade-block="day" data-auto-grade-grid-id="${escapeHtml(grid.id)}" data-auto-grade-day="${day.id}" aria-pressed="false" aria-label="Marcar o dia inteiro: ${escapeHtml(day.name)}" title="Marcar o dia inteiro">${escapeHtml(day.short)}</button><div class="gnh-auto-grade-grid-bulk-periods">${dayPeriods}</div></div>`;
+    }).join('')}`;
     const rows = scheduleRows.map(row => {
         const [start, end] = scheduleTimes[row.code] || ['—', '—'];
         const timeCell = `<div class="gnh-auto-grade-grid-time"><strong>${row.code}</strong><span>${start}–${end}</span></div>`;
@@ -1227,6 +1241,49 @@ function automaticGradeGridMarkup(grid) {
 
 function renderAutomaticGradeGrids() {
     $('#auto-grade-availability-grids').innerHTML = automaticGradeGridIds().map(automaticGradeGridMarkup).join('');
+    syncAutomaticGradeBulkControls();
+}
+
+function automaticGradeBlockSlots(control) {
+    const gridId = control.dataset.autoGradeGridId;
+    const grid = [...document.querySelectorAll('[data-auto-grade-grid]')].find(element => element.dataset.autoGradeGrid === gridId);
+    if (!grid) return [];
+    return [...grid.querySelectorAll('[data-auto-grade-slot]')].filter(slot => {
+        const key = slot.dataset.autoGradeSlot;
+        const separator = key.lastIndexOf('|');
+        const [day, period] = key.slice(separator + 1).split('-');
+        if (control.dataset.autoGradeBlock === 'day') return day === control.dataset.autoGradeDay;
+        if (control.dataset.autoGradeBlock === 'period') return period === control.dataset.autoGradePeriod;
+        return day === control.dataset.autoGradeDay && period === control.dataset.autoGradePeriod;
+    });
+}
+
+function syncAutomaticGradeBulkControls() {
+    document.querySelectorAll('[data-auto-grade-block]').forEach(control => {
+        const slots = automaticGradeBlockSlots(control);
+        const selected = slots.filter(slot => slot.getAttribute('aria-pressed') === 'true').length;
+        control.setAttribute('aria-pressed', selected === 0 ? 'false' : selected === slots.length ? 'true' : 'mixed');
+    });
+}
+
+function setAutomaticGradeSlotPressed(slot, pressed) {
+    const value = String(pressed);
+    if (slot.getAttribute('aria-pressed') === value) return false;
+    slot.setAttribute('aria-pressed', value);
+    syncAutomaticGradeBulkControls();
+    return true;
+}
+
+function finishAutomaticGradePaint(pointerId = null) {
+    const paint = state.autoGradePaint;
+    if (!paint || (pointerId !== null && paint.pointerId !== pointerId)) return;
+    state.autoGradePaint = null;
+    $('#auto-grade-availability-grids').querySelectorAll('.is-painting').forEach(grid => grid.classList.remove('is-painting'));
+    if (paint.changed) resetAutomaticGradeResults();
+    state.autoGradeClickTimer = window.setTimeout(() => {
+        state.autoGradeIgnoreClick = false;
+        state.autoGradeClickTimer = null;
+    }, 0);
 }
 
 function trackWasStarted(profile, nodeIds) {
@@ -1433,12 +1490,53 @@ $('#auto-grade-manual-options').addEventListener('click', event => {
     resetAutomaticGradeResults();
     renderAutomaticGradeManualSubjects(matrixOptions.find(item => item.id === $('#auto-grade-matrix').value), state.autoGradeProfile);
 });
-$('#auto-grade-availability-grids').addEventListener('click', event => {
+const automaticGradeAvailability = $('#auto-grade-availability-grids');
+automaticGradeAvailability.addEventListener('pointerdown', event => {
+    if (event.pointerType !== 'mouse' || event.button !== 0) return;
+    const slot = event.target.closest('[data-auto-grade-slot]');
+    if (!slot) return;
+    if (state.autoGradePaint) finishAutomaticGradePaint();
+    if (state.autoGradeClickTimer !== null) window.clearTimeout(state.autoGradeClickTimer);
+    state.autoGradeIgnoreClick = true;
+    state.autoGradePaint = {
+        pointerId: event.pointerId,
+        pressed: slot.getAttribute('aria-pressed') !== 'true',
+        changed: false,
+    };
+    slot.closest('.gnh-auto-grade-availability-grid').classList.add('is-painting');
+    state.autoGradePaint.changed = setAutomaticGradeSlotPressed(slot, state.autoGradePaint.pressed);
+});
+automaticGradeAvailability.addEventListener('pointerover', event => {
+    const paint = state.autoGradePaint;
+    if (!paint || event.pointerId !== paint.pointerId || !(event.buttons & 1)) return;
+    const slot = event.target.closest('[data-auto-grade-slot]');
+    if (!slot || !setAutomaticGradeSlotPressed(slot, paint.pressed)) return;
+    paint.changed = true;
+});
+document.addEventListener('pointerup', event => finishAutomaticGradePaint(event.pointerId));
+document.addEventListener('pointercancel', event => finishAutomaticGradePaint(event.pointerId));
+window.addEventListener('blur', () => finishAutomaticGradePaint());
+
+automaticGradeAvailability.addEventListener('click', event => {
+    if (state.autoGradeIgnoreClick && event.detail > 0) {
+        state.autoGradeIgnoreClick = false;
+        if (state.autoGradeClickTimer !== null) window.clearTimeout(state.autoGradeClickTimer);
+        state.autoGradeClickTimer = null;
+        return;
+    }
+    const blockControl = event.target.closest('[data-auto-grade-block]');
+    if (blockControl) {
+        const slots = automaticGradeBlockSlots(blockControl);
+        const shouldBlock = slots.some(slot => slot.getAttribute('aria-pressed') !== 'true');
+        slots.forEach(slot => slot.setAttribute('aria-pressed', String(shouldBlock)));
+        syncAutomaticGradeBulkControls();
+        resetAutomaticGradeResults();
+        return;
+    }
     const slot = event.target.closest('[data-auto-grade-slot]');
     if (!slot) return;
     const selected = slot.getAttribute('aria-pressed') === 'true';
-    slot.setAttribute('aria-pressed', String(!selected));
-    resetAutomaticGradeResults();
+    if (setAutomaticGradeSlotPressed(slot, !selected)) resetAutomaticGradeResults();
 });
 $('#auto-grade-close').addEventListener('click', closeAutomaticGradeModal);
 $('#auto-grade-cancel').addEventListener('click', closeAutomaticGradeModal);
