@@ -434,7 +434,9 @@ test('grade automática usa a matriz selecionada e encaixa turmas sem conflito',
     await expect(page.locator('#auto-grade-modal')).toBeVisible();
     await expect(page.locator('#auto-grade-matrix option')).toHaveCount(13);
     await page.locator('#auto-grade-matrix').selectOption('m2');
-    await page.getByRole('button', { name: 'Montar grade' }).click();
+    await page.getByRole('button', { name: 'Gerar combinações' }).click();
+    await expect(page.locator('#auto-grade-results')).toBeVisible();
+    await page.locator('[data-auto-grade-apply="0"]').click();
     await expect(page.locator('#auto-grade-modal')).toBeHidden();
     await expect(page.locator('#calendar-validation')).toContainText('Grade automática');
     await expect(page.locator('.gnh-class-selected')).not.toHaveCount(0);
@@ -479,7 +481,10 @@ test('grade automática não adiciona humanidades quando a cota da matriz já fo
     await page.locator('#course-select').selectOption('0250');
     await page.getByRole('button', { name: 'Grade automática' }).click();
     await page.locator('#auto-grade-matrix').selectOption('m2');
-    await page.getByRole('button', { name: 'Montar grade' }).click();
+    await page.getByRole('button', { name: 'Gerar combinações' }).click();
+    await expect(page.locator('#auto-grade-results')).toBeVisible();
+    await page.locator('[data-auto-grade-apply="0"]').click();
+    await expect(page.locator('#auto-grade-modal')).toBeHidden();
 
     const selectedCodes = await page.locator('.gnh-class-selected').evaluateAll(elements => elements
         .map(element => element.closest('.gnh-discipline')?.querySelector('.gnh-discipline-code')?.textContent)
@@ -506,8 +511,10 @@ test('grade automática respeita dias, turnos e sede disponíveis em Curitiba', 
     await expect(centroSlot).toHaveAttribute('aria-pressed', 'true');
     await expect(ecovilleSlot).toHaveAttribute('aria-pressed', 'true');
     await expect(avoidedClassSlot).toHaveAttribute('aria-pressed', 'true');
-    await page.getByRole('button', { name: 'Montar grade' }).click();
+    await page.getByRole('button', { name: 'Gerar combinações' }).click();
 
+    await expect(page.locator('#auto-grade-results')).toBeVisible();
+    await page.locator('[data-auto-grade-apply="0"]').click();
     await expect(page.locator('#auto-grade-modal')).toBeHidden();
     await expect(page.locator('.gnh-class-selected')).not.toHaveCount(0);
     expect((await page.locator('.gnh-class-selected').allTextContents()).join('\n')).not.toContain('2T2');
@@ -527,7 +534,7 @@ test('grade automática avisa quando a matriz não corresponde ao curso selecion
     await page.goto('/pages/Turmas Abertas.html');
     await page.getByRole('button', { name: 'Grade automática' }).click();
     await page.locator('#auto-grade-matrix').selectOption('m2');
-    await page.getByRole('button', { name: 'Montar grade' }).click();
+    await page.getByRole('button', { name: 'Gerar combinações' }).click();
     await expect(page.locator('#auto-grade-modal')).toBeVisible();
     await expect(page.locator('#auto-grade-status')).toContainText('não corresponde');
     await expect(page.locator('#calendar-note')).toContainText('Selecione uma ou mais turmas');
