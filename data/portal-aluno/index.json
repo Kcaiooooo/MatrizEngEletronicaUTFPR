@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T16:52:22.917Z",
+  "generatedAt": "2026-09-30T07:18:58.518Z",
   "source": {
     "id": "utfpr-portal-aluno",
     "name": "Sistema Acadêmico UTFPR",
@@ -15,8 +15,8 @@
       "courseId": "0002",
       "courseName": "Design De Moda",
       "sourceName": "DESIGN DE MODA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:29   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:05   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-25T21-28-57Z",
       "disciplineCount": 56,
       "classCount": 67,
@@ -103,8 +103,8 @@
       "courseId": "0005",
       "courseName": "Processos Químicos",
       "sourceName": "PROCESSOS QUÍMICOS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:30   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:06   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-25T21-28-57Z",
       "disciplineCount": 2,
       "classCount": 2,
@@ -155,8 +155,8 @@
       "courseId": "0007",
       "courseName": "Engenharia Têxtil",
       "sourceName": "ENGENHARIA TÊXTIL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:31   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:06   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-28T16-44-53Z",
       "disciplineCount": 125,
       "classCount": 148,
@@ -314,8 +314,8 @@
       "courseId": "0009",
       "courseName": "Química",
       "sourceName": "QUÍMICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:32   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:08   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-28T16-44-53Z",
       "disciplineCount": 101,
       "classCount": 109,
@@ -427,9 +427,9 @@
       "courseId": "0016",
       "courseName": "Engenharia Química",
       "sourceName": "ENGENHARIA QUÍMICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:32   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-28T16-44-53Z",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:09   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
       "disciplineCount": 140,
       "classCount": 169,
       "versions": [
@@ -551,6 +551,42 @@
               ]
             }
           ]
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:14:47   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "26242a602df827fc67b1f488e64160b731c514f73d9dd08818d6d4bca24d9957",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/apucarana/0016/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-28T16-44-53Z",
+          "changeCount": 3,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "CPEQ8A",
+              "nome": "Controle De Processos",
+              "fields": [
+                "turmas[0].professores[0]",
+                "turmas[1].professores[0]"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "FSEQ5A",
+              "nome": "Fundamentos De Engenharia De Segurança No Trabalho",
+              "fields": [
+                "turmas[0].professores[0]"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "IP69B",
+              "nome": "Indústrias De Processos Químicos 2",
+              "fields": [
+                "turmas[0].professores[0]"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -561,8 +597,8 @@
       "courseId": "0018",
       "courseName": "Engenharia Civil",
       "sourceName": "ENGENHARIA CIVIL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:33   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:10   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-28T16-44-53Z",
       "disciplineCount": 137,
       "classCount": 164,
@@ -742,9 +778,9 @@
       "courseId": "0019",
       "courseName": "Engenharia Elétrica",
       "sourceName": "ENGENHARIA ELÉTRICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:34   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-28T16-44-53Z",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:11   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
       "disciplineCount": 135,
       "classCount": 164,
       "versions": [
@@ -865,6 +901,27 @@
               ]
             }
           ]
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:14:49   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "0f736785ce6cae3aea0e381d1766ff69d813dce4b643c2acd74b2a6e829bc968",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/apucarana/0019/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-28T16-44-53Z",
+          "changeCount": 1,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "MEEL7B",
+              "nome": "Máquinas Elétricas 2",
+              "fields": [
+                "turmas[0].horarios[0].sala",
+                "turmas[0].horarios[1].sala",
+                "turmas[0].horarios[2].sala"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -875,8 +932,8 @@
       "courseId": "0020",
       "courseName": "Língua Inglesa",
       "sourceName": "LÍNGUA INGLESA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:34   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:12   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 2,
       "classCount": 2,
@@ -900,8 +957,8 @@
       "courseId": "0022",
       "courseName": "Engenharia Computação",
       "sourceName": "ENGENHARIA COMPUTAÇÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:35   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:12   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-28T16-44-53Z",
       "disciplineCount": 126,
       "classCount": 163,
@@ -1024,8 +1081,8 @@
       "courseId": "0003",
       "courseName": "Tecnol Alimentos",
       "sourceName": "TECNOL ALIMENTOS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:36   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:13   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-25T21-28-57Z",
       "disciplineCount": 27,
       "classCount": 33,
@@ -1069,8 +1126,8 @@
       "courseId": "0014",
       "courseName": "Técnico Integ Info",
       "sourceName": "TÉCNICO INTEG INFO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:37   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:14   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -1094,8 +1151,8 @@
       "courseId": "0022",
       "courseName": "Eng Ambiental",
       "sourceName": "ENG AMBIENTAL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:37   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:14   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 74,
       "classCount": 147,
@@ -1119,8 +1176,8 @@
       "courseId": "0024",
       "courseName": "Ingles",
       "sourceName": "INGLES",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:38   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:14   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -1144,8 +1201,8 @@
       "courseId": "0025",
       "courseName": "Eng De Alimentos",
       "sourceName": "ENG DE ALIMENTOS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:38   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:15   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 123,
       "classCount": 213,
@@ -1169,8 +1226,8 @@
       "courseId": "0030",
       "courseName": "Eng Civil",
       "sourceName": "ENG CIVIL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:39   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:16   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 109,
       "classCount": 189,
@@ -1194,8 +1251,8 @@
       "courseId": "0031",
       "courseName": "Eng Eletrônica",
       "sourceName": "ENG ELETRÔNICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:40   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:17   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 81,
       "classCount": 147,
@@ -1219,8 +1276,8 @@
       "courseId": "0034",
       "courseName": "Lic Química",
       "sourceName": "LIC QUÍMICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:40   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:17   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 68,
       "classCount": 111,
@@ -1244,8 +1301,8 @@
       "courseId": "0035",
       "courseName": "Ciênc Computação",
       "sourceName": "CIÊNC COMPUTAÇÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:41   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:18   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 62,
       "classCount": 118,
@@ -1269,8 +1326,8 @@
       "courseId": "0036",
       "courseName": "Espanhol",
       "sourceName": "ESPANHOL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:42   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:18   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -1294,8 +1351,8 @@
       "courseId": "0044",
       "courseName": "Alemão",
       "sourceName": "ALEMÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:42   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:19   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -1319,8 +1376,8 @@
       "courseId": "0054",
       "courseName": "Engenharia Química",
       "sourceName": "ENGENHARIA QUÍMICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:42   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:20   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 126,
       "classCount": 217,
@@ -1344,8 +1401,8 @@
       "courseId": "0059",
       "courseName": "Tec Int Info Internet",
       "sourceName": "TEC INT INFO INTERNET",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:43   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:21   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -1369,8 +1426,8 @@
       "courseId": "0060",
       "courseName": "Eng Amb/Sanitária",
       "sourceName": "ENG AMB/SANITÁRIA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:43   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:21   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 117,
       "classCount": 201,
@@ -1394,8 +1451,8 @@
       "courseId": "0062",
       "courseName": "Tecnol Ia Aplicada",
       "sourceName": "TECNOL IA APLICADA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:44   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:22   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -1419,8 +1476,8 @@
       "courseId": "0063",
       "courseName": "Tecnol Ai Sis Autônomo",
       "sourceName": "TECNOL AI SIS AUTÔNOMO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:44   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:23   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -1444,8 +1501,8 @@
       "courseId": "0012",
       "courseName": "Inglês",
       "sourceName": "INGLÊS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:46   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:23   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 4,
       "classCount": 5,
@@ -1469,8 +1526,8 @@
       "courseId": "0013",
       "courseName": "Espanhol",
       "sourceName": "ESPANHOL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:46   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:24   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -1494,8 +1551,8 @@
       "courseId": "0026",
       "courseName": "Eng. Ind. Mecanica",
       "sourceName": "ENG. IND. MECANICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:46   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:24   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-25T21-34-21Z",
       "disciplineCount": 49,
       "classCount": 55,
@@ -1581,8 +1638,8 @@
       "courseId": "0027",
       "courseName": "Eng. Ind. Eletrica",
       "sourceName": "ENG. IND. ELETRICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:47   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:25   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-25T21-28-57Z",
       "disciplineCount": 75,
       "classCount": 92,
@@ -1633,8 +1690,8 @@
       "courseId": "0029",
       "courseName": "Analise De Sistemas",
       "sourceName": "ANALISE DE SISTEMAS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:48   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:25   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 58,
       "classCount": 59,
@@ -1658,8 +1715,8 @@
       "courseId": "0041",
       "courseName": "Eng. Computação",
       "sourceName": "ENG. COMPUTAÇÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:48   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:26   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-25T21-34-21Z",
       "disciplineCount": 182,
       "classCount": 223,
@@ -1754,8 +1811,8 @@
       "courseId": "0042",
       "courseName": "Eng. Eletrica",
       "sourceName": "ENG. ELETRICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:49   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:27   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-25T21-28-57Z",
       "disciplineCount": 172,
       "classCount": 214,
@@ -1825,8 +1882,8 @@
       "courseId": "0043",
       "courseName": "Eng. Mecanica",
       "sourceName": "ENG. MECANICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:50   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:27   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-25T21-28-57Z",
       "disciplineCount": 173,
       "classCount": 231,
@@ -1902,8 +1959,8 @@
       "courseId": "0046",
       "courseName": "Licenc. Matemática",
       "sourceName": "LICENC. MATEMÁTICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:51   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:28   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 46,
       "classCount": 51,
@@ -1927,8 +1984,8 @@
       "courseId": "0049",
       "courseName": "Eng. Controle/Automa",
       "sourceName": "ENG. CONTROLE/AUTOMA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:52   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:29   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-25T21-28-57Z",
       "disciplineCount": 183,
       "classCount": 222,
@@ -1998,8 +2055,8 @@
       "courseId": "0052",
       "courseName": "Inglês Fundamental",
       "sourceName": "INGLÊS FUNDAMENTAL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:53   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:30   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -2023,8 +2080,8 @@
       "courseId": "0062",
       "courseName": "Eng. Eletrônica",
       "sourceName": "ENG. ELETRÔNICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:53   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:30   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-25T21-28-57Z",
       "disciplineCount": 165,
       "classCount": 204,
@@ -2103,8 +2160,8 @@
       "courseId": "0063",
       "courseName": "Inglês Avançado",
       "sourceName": "INGLÊS AVANÇADO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:54   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:31   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -2128,8 +2185,8 @@
       "courseId": "0065",
       "courseName": "Bach Eng De Software",
       "sourceName": "BACH ENG DE SOFTWARE",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:54   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:31   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 108,
       "classCount": 111,
@@ -2153,8 +2210,8 @@
       "courseId": "0075",
       "courseName": "Espanhol Intermediario",
       "sourceName": "ESPANHOL INTERMEDIARIO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:55   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:32   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -2178,8 +2235,8 @@
       "courseId": "0078",
       "courseName": "Espanhol Avançado",
       "sourceName": "ESPANHOL AVANÇADO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:55   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:32   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -2203,8 +2260,8 @@
       "courseId": "0080",
       "courseName": "Espanhol Avançado 2",
       "sourceName": "ESPANHOL AVANÇADO 2",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:55   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:32   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -2228,8 +2285,8 @@
       "courseId": "0082",
       "courseName": "Espanhol Avançado 3",
       "sourceName": "ESPANHOL AVANÇADO 3",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:56   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:32   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -2253,8 +2310,8 @@
       "courseId": "0096",
       "courseName": "Eng. Computação",
       "sourceName": "ENG. COMPUTAÇÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:56   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:33   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-25T21-28-57Z",
       "disciplineCount": 129,
       "classCount": 163,
@@ -2322,8 +2379,8 @@
       "courseId": "0002",
       "courseName": "Eng.Ind.Eletrônica",
       "sourceName": "ENG.IND.ELETRÔNICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:58   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:34   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 26,
       "classCount": 114,
@@ -2347,8 +2404,8 @@
       "courseId": "0003",
       "courseName": "Eng.Ind.Eletrotécn.",
       "sourceName": "ENG.IND.ELETROTÉCN.",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:52:59   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:36   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 23,
       "classCount": 113,
@@ -2372,8 +2429,8 @@
       "courseId": "0005",
       "courseName": "Eng.Ind.Mecânica",
       "sourceName": "ENG.IND.MECÂNICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:01   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:38   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 18,
       "classCount": 103,
@@ -2397,8 +2454,8 @@
       "courseId": "0006",
       "courseName": "Eng. Prod. Civil",
       "sourceName": "ENG. PROD. CIVIL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:03   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:39   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 13,
       "classCount": 94,
@@ -2422,8 +2479,8 @@
       "courseId": "0034",
       "courseName": "Alemão",
       "sourceName": "ALEMÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:04   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:40   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 1,
       "classCount": 2,
@@ -2447,8 +2504,8 @@
       "courseId": "0035",
       "courseName": "Espanhol",
       "sourceName": "ESPANHOL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:05   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:40   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -2472,8 +2529,8 @@
       "courseId": "0036",
       "courseName": "Francês",
       "sourceName": "FRANCÊS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:06   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:40   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 2,
       "classCount": 3,
@@ -2497,8 +2554,8 @@
       "courseId": "0037",
       "courseName": "Inglês",
       "sourceName": "INGLÊS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:06   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:41   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 2,
       "classCount": 2,
@@ -2522,8 +2579,8 @@
       "courseId": "0039",
       "courseName": "Tecnol.Em Radiologia",
       "sourceName": "TECNOL.EM RADIOLOGIA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:08   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:42   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-25T21-28-57Z",
       "disciplineCount": 64,
       "classCount": 158,
@@ -2567,8 +2624,8 @@
       "courseId": "0185",
       "courseName": "Tecn Automação Ind",
       "sourceName": "TECN AUTOMAÇÃO IND",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:09   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:43   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 49,
       "classCount": 88,
@@ -2592,8 +2649,8 @@
       "courseId": "0191",
       "courseName": "Tecn Mecatrônica Ind",
       "sourceName": "TECN MECATRÔNICA IND",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:10   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:43   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -2617,8 +2674,8 @@
       "courseId": "0208",
       "courseName": "Tec Int Mecânica",
       "sourceName": "TEC INT MECÂNICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:11   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:44   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -2642,8 +2699,8 @@
       "courseId": "0209",
       "courseName": "Téc Int Seg Trabalho",
       "sourceName": "TÉC INT SEG TRABALHO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:11   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:45   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -2667,8 +2724,8 @@
       "courseId": "0210",
       "courseName": "Téc Int Eletrônica",
       "sourceName": "TÉC INT ELETRÔNICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:12   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:45   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -2692,8 +2749,8 @@
       "courseId": "0211",
       "courseName": "Eng Ind Automação",
       "sourceName": "ENG IND AUTOMAÇÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:13   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:46   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 24,
       "classCount": 114,
@@ -2717,8 +2774,8 @@
       "courseId": "0212",
       "courseName": "Eng De Computação",
       "sourceName": "ENG DE COMPUTAÇÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:14   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:48   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 154,
       "classCount": 350,
@@ -2742,8 +2799,8 @@
       "courseId": "0213",
       "courseName": "Design",
       "sourceName": "DESIGN",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:17   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:50   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 69,
       "classCount": 130,
@@ -2767,8 +2824,8 @@
       "courseId": "0214",
       "courseName": "Educação Física",
       "sourceName": "EDUCAÇÃO FÍSICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:18   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:51   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 71,
       "classCount": 106,
@@ -2792,8 +2849,8 @@
       "courseId": "0215",
       "courseName": "Tecnol. Sist. Telec.",
       "sourceName": "TECNOL. SIST. TELEC.",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:19   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:52   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 74,
       "classCount": 132,
@@ -2817,8 +2874,8 @@
       "courseId": "0216",
       "courseName": "Tecnol Processos Amb",
       "sourceName": "TECNOL PROCESSOS AMB",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:20   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:53   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -2842,8 +2899,8 @@
       "courseId": "0217",
       "courseName": "Tecn Design Gráfico",
       "sourceName": "TECN DESIGN GRÁFICO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:20   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:54   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 42,
       "classCount": 99,
@@ -2867,8 +2924,8 @@
       "courseId": "0218",
       "courseName": "Tecn. Comun. Inst.",
       "sourceName": "TECN. COMUN. INST.",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:21   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:55   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -2892,8 +2949,8 @@
       "courseId": "0227",
       "courseName": "Química",
       "sourceName": "QUÍMICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:22   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:57   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 100,
       "classCount": 229,
@@ -2917,8 +2974,8 @@
       "courseId": "0234",
       "courseName": "Lic Letras",
       "sourceName": "LIC LETRAS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:24   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:19:59   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 13,
       "classCount": 38,
@@ -2942,8 +2999,8 @@
       "courseId": "0235",
       "courseName": "Lic Física",
       "sourceName": "LIC FÍSICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:26   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:00   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 70,
       "classCount": 138,
@@ -2967,8 +3024,8 @@
       "courseId": "0236",
       "courseName": "Sist De Informação",
       "sourceName": "SIST DE INFORMAÇÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:27   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:01   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 82,
       "classCount": 170,
@@ -2992,9 +3049,9 @@
       "courseId": "0239",
       "courseName": "Arquitet E Urbanismo",
       "sourceName": "ARQUITET E URBANISMO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:29   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-19T20-29-03Z",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:03   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
       "disciplineCount": 96,
       "classCount": 161,
       "versions": [
@@ -3007,6 +3064,49 @@
           "previousVersionId": null,
           "changeCount": 0,
           "changes": []
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:15:45   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "d790cfbc143d7db491bc4ae057bb512a138e1c6860af81ca5eebccc663cd19c9",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/curitiba/0239/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-19T20-29-03Z",
+          "changeCount": 3,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "ARQ73E",
+              "nome": "Fundamentos Do Urbanismo",
+              "fields": [
+                "turmas[0].horarios[0].sala",
+                "turmas[0].horarios[1].sala",
+                "turmas[0].horarios[2].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "ARQ74E",
+              "nome": "Teorias Do Planejamento Na Cidade Contemporânea",
+              "fields": [
+                "turmas[0].horarios[0].sala",
+                "turmas[0].horarios[1].sala",
+                "turmas[0].horarios[2].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "ARQ75D",
+              "nome": "Geoprocessamento No Planejamento Territorial",
+              "fields": [
+                "turmas[0].horarios[0].sala",
+                "turmas[0].horarios[1].sala",
+                "turmas[0].horarios[2].sala",
+                "turmas[0].horarios[3].sala",
+                "turmas[0].horarios[4].sala"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3017,8 +3117,8 @@
       "courseId": "0250",
       "courseName": "Eng Eletrônica",
       "sourceName": "ENG ELETRÔNICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:31   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:05   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 150,
       "classCount": 324,
@@ -3042,8 +3142,8 @@
       "courseId": "0251",
       "courseName": "Eng Elétrica",
       "sourceName": "ENG ELÉTRICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:33   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:07   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-25T21-28-57Z",
       "disciplineCount": 144,
       "classCount": 400,
@@ -3097,8 +3197,8 @@
       "courseId": "0252",
       "courseName": "Eng Contr/Automação",
       "sourceName": "ENG CONTR/AUTOMAÇÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:35   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:10   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-25T21-28-57Z",
       "disciplineCount": 147,
       "classCount": 399,
@@ -3141,8 +3241,8 @@
       "courseId": "0253",
       "courseName": "Eng Mecânica",
       "sourceName": "ENG MECÂNICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:38   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:12   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-25T21-28-57Z",
       "disciplineCount": 121,
       "classCount": 368,
@@ -3186,8 +3286,8 @@
       "courseId": "0254",
       "courseName": "Eng Civil",
       "sourceName": "ENG CIVIL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:40   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:14   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 103,
       "classCount": 251,
@@ -3211,8 +3311,8 @@
       "courseId": "0265",
       "courseName": "Lic Matemática",
       "sourceName": "LIC MATEMÁTICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:41   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:16   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 70,
       "classCount": 189,
@@ -3236,9 +3336,9 @@
       "courseId": "0274",
       "courseName": "Administração",
       "sourceName": "ADMINISTRAÇÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:43   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-19T20-29-03Z",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:17   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
       "disciplineCount": 65,
       "classCount": 103,
       "versions": [
@@ -3251,6 +3351,49 @@
           "previousVersionId": null,
           "changeCount": 0,
           "changes": []
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:15:58   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "7b481582192c01b939b1c195f1033a56cb2218682591dd5138096e6b6921b1e4",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/curitiba/0274/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-19T20-29-03Z",
+          "changeCount": 4,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "GEE71G",
+              "nome": "Iniciação Ao Ensino, Pesquisa E Extensão",
+              "fields": [
+                "turmas[0].professores[0]"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "GEE72H",
+              "nome": "A Prática Da Extensão Universitária",
+              "fields": [
+                "turmas[0].professores[0]"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "GEE73E",
+              "nome": "Gestão De Marketing",
+              "fields": [
+                "turmas[0].professores[0]"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "GEE74E",
+              "nome": "Pesquisa Mercadológica E Inteligência De Mercado",
+              "fields": [
+                "turmas[0].professores[0]"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3261,8 +3404,8 @@
       "courseId": "0278",
       "courseName": "Lic Química",
       "sourceName": "LIC QUÍMICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:44   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:18   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 85,
       "classCount": 229,
@@ -3286,8 +3429,8 @@
       "courseId": "0298",
       "courseName": "Comunic Organizacional",
       "sourceName": "COMUNIC ORGANIZACIONAL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:45   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:20   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 69,
       "classCount": 115,
@@ -3311,8 +3454,8 @@
       "courseId": "0317",
       "courseName": "Pfol",
       "sourceName": "PFOL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:46   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:21   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -3336,8 +3479,8 @@
       "courseId": "0340",
       "courseName": "Lic Letras Inglês",
       "sourceName": "LIC LETRAS INGLÊS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:47   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:22   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 65,
       "classCount": 99,
@@ -3361,8 +3504,8 @@
       "courseId": "0341",
       "courseName": "Eng Mecatrônica",
       "sourceName": "ENG MECATRÔNICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:48   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:23   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-25T21-28-57Z",
       "disciplineCount": 175,
       "classCount": 433,
@@ -3406,8 +3549,8 @@
       "courseId": "0343",
       "courseName": "Lic Letras Português",
       "sourceName": "LIC LETRAS PORTUGUÊS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:49   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:25   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 51,
       "classCount": 79,
@@ -3431,8 +3574,8 @@
       "courseId": "0362",
       "courseName": "Eng Amb/Sanitária",
       "sourceName": "ENG AMB/SANITÁRIA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:50   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:26   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 102,
       "classCount": 251,
@@ -3456,8 +3599,8 @@
       "courseId": "0398",
       "courseName": "Química Ambiental",
       "sourceName": "QUÍMICA AMBIENTAL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:51   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:27   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 79,
       "classCount": 157,
@@ -3481,8 +3624,8 @@
       "courseId": "0406",
       "courseName": "Eng. Da Produção",
       "sourceName": "ENG. DA PRODUÇÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:52   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:28   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 50,
       "classCount": 200,
@@ -3506,8 +3649,8 @@
       "courseId": "0409",
       "courseName": "Lic Fisica 9",
       "sourceName": "LIC FISICA 9",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:53   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:29   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 68,
       "classCount": 132,
@@ -3531,8 +3674,8 @@
       "courseId": "0004",
       "courseName": "Zootecnia",
       "sourceName": "ZOOTECNIA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:54   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:29   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 140,
       "classCount": 150,
@@ -3556,8 +3699,8 @@
       "courseId": "0006",
       "courseName": "Eng. Florestal",
       "sourceName": "ENG. FLORESTAL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:55   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:30   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 133,
       "classCount": 139,
@@ -3581,8 +3724,8 @@
       "courseId": "0009",
       "courseName": "Educação Do Campo",
       "sourceName": "EDUCAÇÃO DO CAMPO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:56   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:31   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -3606,8 +3749,8 @@
       "courseId": "0010",
       "courseName": "Ciências Biológicas",
       "sourceName": "CIÊNCIAS BIOLÓGICAS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:56   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:32   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 88,
       "classCount": 92,
@@ -3631,8 +3774,8 @@
       "courseId": "0011",
       "courseName": "Agronomia",
       "sourceName": "AGRONOMIA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:57   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:32   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 199,
       "classCount": 218,
@@ -3656,8 +3799,8 @@
       "courseId": "0016",
       "courseName": "Inglês - 1",
       "sourceName": "INGLÊS - 1",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:58   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:33   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 2,
       "classCount": 2,
@@ -3681,8 +3824,8 @@
       "courseId": "0017",
       "courseName": "Inglês - 2",
       "sourceName": "INGLÊS - 2",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:58   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:33   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -3706,8 +3849,8 @@
       "courseId": "0018",
       "courseName": "Bach Eng De Software",
       "sourceName": "BACH ENG DE SOFTWARE",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:59   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:34   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 54,
       "classCount": 67,
@@ -3731,8 +3874,8 @@
       "courseId": "0019",
       "courseName": "Eng. Bioproc. E Biote",
       "sourceName": "ENG. BIOPROC. E BIOTE",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:53:59   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:34   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 101,
       "classCount": 104,
@@ -3756,8 +3899,8 @@
       "courseId": "0022",
       "courseName": "Alemão",
       "sourceName": "ALEMÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:00   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:35   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -3781,8 +3924,8 @@
       "courseId": "0023",
       "courseName": "Ingles 2",
       "sourceName": "INGLES 2",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:00   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:35   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -3806,8 +3949,8 @@
       "courseId": "0024",
       "courseName": "Inglês - 3",
       "sourceName": "INGLÊS - 3",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:01   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:35   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -3831,8 +3974,8 @@
       "courseId": "0028",
       "courseName": "Francês",
       "sourceName": "FRANCÊS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:01   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:36   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -3856,8 +3999,8 @@
       "courseId": "0040",
       "courseName": "Biologia Bacharelado",
       "sourceName": "BIOLOGIA BACHARELADO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:02   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:36   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-25T21-53-09Z",
       "disciplineCount": 81,
       "classCount": 85,
@@ -3929,8 +4072,8 @@
       "courseId": "0042",
       "courseName": "Português Para Estrang",
       "sourceName": "PORTUGUÊS PARA ESTRANG",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:02   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:36   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -3954,8 +4097,8 @@
       "courseId": "0001",
       "courseName": "Tecnol Em Alimentos",
       "sourceName": "TECNOL EM ALIMENTOS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:02   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:37   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 17,
       "classCount": 28,
@@ -3979,9 +4122,9 @@
       "courseId": "0002",
       "courseName": "Eng. Ambiental",
       "sourceName": "ENG. AMBIENTAL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:04   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-25T21-28-57Z",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:38   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
       "disciplineCount": 88,
       "classCount": 122,
       "versions": [
@@ -4035,6 +4178,49 @@
               ]
             }
           ]
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:16:18   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "660312057cc68f88647db8e1ab9b59bf9b80495804f80d6e9e8f4481a59062bf",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/francisco-beltrao/0002/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-25T21-28-57Z",
+          "changeCount": 4,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "FIS008",
+              "nome": "Física Experimental",
+              "fields": [
+                "turmas[0].professores[0]"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "FIS010",
+              "nome": "Introdução À Física",
+              "fields": [
+                "turmas[3].professores[0]"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "FIS013",
+              "nome": "Fundamentos De Física 3",
+              "fields": [
+                "turmas[1].professores[0]"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "FIS018",
+              "nome": "Eletrotécnica E Instrumentação",
+              "fields": [
+                "turmas[0].professores[0]"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4045,8 +4231,8 @@
       "courseId": "0007",
       "courseName": "Lic. Informática",
       "sourceName": "LIC. INFORMÁTICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:05   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:39   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-25T21-28-57Z",
       "disciplineCount": 39,
       "classCount": 48,
@@ -4089,9 +4275,9 @@
       "courseId": "0011",
       "courseName": "Eng. Química",
       "sourceName": "ENG. QUÍMICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:05   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-25T21-28-57Z",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:39   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
       "disciplineCount": 105,
       "classCount": 139,
       "versions": [
@@ -4145,6 +4331,49 @@
               ]
             }
           ]
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:16:19   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "e1a223a9c34d469a939840fde113fffaac70f799c8e09d43e10b775bf167ad51",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/francisco-beltrao/0011/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-25T21-28-57Z",
+          "changeCount": 4,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "FIS008",
+              "nome": "Física Experimental",
+              "fields": [
+                "turmas[0].professores[0]"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "FIS010",
+              "nome": "Introdução À Física",
+              "fields": [
+                "turmas[3].professores[0]"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "FIS013",
+              "nome": "Fundamentos De Física 3",
+              "fields": [
+                "turmas[1].professores[0]"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "FIS018",
+              "nome": "Eletrotécnica E Instrumentação",
+              "fields": [
+                "turmas[0].professores[0]"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4155,8 +4384,8 @@
       "courseId": "0012",
       "courseName": "Inglês",
       "sourceName": "INGLÊS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:06   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:40   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 3,
       "classCount": 3,
@@ -4180,9 +4409,9 @@
       "courseId": "0015",
       "courseName": "Eng. De Alimentos",
       "sourceName": "ENG. DE ALIMENTOS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:06   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-25T21-28-57Z",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:40   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
       "disciplineCount": 94,
       "classCount": 128,
       "versions": [
@@ -4236,6 +4465,49 @@
               ]
             }
           ]
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:16:20   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "d5bda77f363b66cf763761b664cb4864c61f0b25336f5d7c6f5bcfce6d08e37a",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/francisco-beltrao/0015/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-25T21-28-57Z",
+          "changeCount": 4,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "FIS008",
+              "nome": "Física Experimental",
+              "fields": [
+                "turmas[0].professores[0]"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "FIS010",
+              "nome": "Introdução À Física",
+              "fields": [
+                "turmas[3].professores[0]"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "FIS013",
+              "nome": "Fundamentos De Física 3",
+              "fields": [
+                "turmas[1].professores[0]"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "FIS018",
+              "nome": "Eletrotécnica E Instrumentação",
+              "fields": [
+                "turmas[0].professores[0]"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4246,8 +4518,8 @@
       "courseId": "0016",
       "courseName": "Francês",
       "sourceName": "FRANCÊS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:07   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:41   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 3,
       "classCount": 3,
@@ -4271,9 +4543,9 @@
       "courseId": "0021",
       "courseName": "Agronomia",
       "sourceName": "AGRONOMIA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:08   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-25T21-28-57Z",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:41   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
       "disciplineCount": 102,
       "classCount": 132,
       "versions": [
@@ -4310,6 +4582,25 @@
               ]
             }
           ]
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:16:21   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "728696fb077d408a5204127253be09ef2fbbb9c8db668595fa3df2f290346320",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/francisco-beltrao/0021/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-25T21-28-57Z",
+          "changeCount": 1,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "FIS010",
+              "nome": "Introdução À Física",
+              "fields": [
+                "turmas[3].professores[0]"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4320,9 +4611,9 @@
       "courseId": "0025",
       "courseName": "Sist. Informação",
       "sourceName": "SIST. INFORMAÇÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:08   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-25T21-28-57Z",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:42   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
       "disciplineCount": 67,
       "classCount": 80,
       "versions": [
@@ -4363,6 +4654,25 @@
               ]
             }
           ]
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:16:29   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "12f127b91ebdfea13caf3be6c38f2cb4bc3480caa10aa8a94dc4e0600d04c2f3",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/francisco-beltrao/0025/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-25T21-28-57Z",
+          "changeCount": 1,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "FIS018",
+              "nome": "Eletrotécnica E Instrumentação",
+              "fields": [
+                "turmas[0].professores[0]"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4373,9 +4683,9 @@
       "courseId": "0028",
       "courseName": "Eng. Amb. Sanitária",
       "sourceName": "ENG. AMB. SANITÁRIA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:09   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-25T21-28-57Z",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:42   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
       "disciplineCount": 88,
       "classCount": 122,
       "versions": [
@@ -4429,6 +4739,49 @@
               ]
             }
           ]
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:16:29   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "270e570822ec15636ec53540b9a8ff8ecce3e8d549d55e2825da09b99071b3ba",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/francisco-beltrao/0028/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-25T21-28-57Z",
+          "changeCount": 4,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "FIS008",
+              "nome": "Física Experimental",
+              "fields": [
+                "turmas[0].professores[0]"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "FIS010",
+              "nome": "Introdução À Física",
+              "fields": [
+                "turmas[3].professores[0]"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "FIS013",
+              "nome": "Fundamentos De Física 3",
+              "fields": [
+                "turmas[1].professores[0]"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "FIS018",
+              "nome": "Eletrotécnica E Instrumentação",
+              "fields": [
+                "turmas[0].professores[0]"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4439,9 +4792,9 @@
       "courseId": "0001",
       "courseName": "Eng. Mecânica",
       "sourceName": "ENG. MECÂNICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:09   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-19T20-29-03Z",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:43   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
       "disciplineCount": 73,
       "classCount": 83,
       "versions": [
@@ -4454,6 +4807,126 @@
           "previousVersionId": null,
           "changeCount": 0,
           "changes": []
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:16:30   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "605d85454aa0d1ea91347cace50cefc285d738ee126de0f725aee613a1de4aa0",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/guarapuava/0001/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-19T20-29-03Z",
+          "changeCount": 11,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "FME52F",
+              "nome": "Física: Mecânica",
+              "fields": [
+                "turmas[0].horarios[0].sala",
+                "turmas[0].horarios[1].sala",
+                "turmas[0].horarios[2].sala",
+                "turmas[0].horarios[3].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "MEC51A",
+              "nome": "Engenharia Mecânica No Mundo Moderno",
+              "fields": [
+                "turmas[0].horarios[0].sala",
+                "turmas[0].horarios[1].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "MEC51F",
+              "nome": "Fundamentos De Engenharia E Segurança Do Trabalho",
+              "fields": [
+                "turmas[0].horarios[0].sala",
+                "turmas[0].horarios[1].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "MEC51G",
+              "nome": "Comunicação Em Engenharia",
+              "fields": [
+                "turmas[0].horarios[0].sala",
+                "turmas[0].horarios[1].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "MEC57C",
+              "nome": "Fundição E Soldagem",
+              "fields": [
+                "turmas[0].horarios[0].sala",
+                "turmas[0].horarios[1].sala",
+                "turmas[0].horarios[2].sala",
+                "turmas[0].horarios[3].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "MME51D",
+              "nome": "Cálculo Diferencial 1",
+              "fields": [
+                "turmas[1].horarios[0].sala",
+                "turmas[1].horarios[1].sala",
+                "turmas[1].horarios[2].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "MME51E",
+              "nome": "Geometria Analítica",
+              "fields": [
+                "turmas[1].horarios[0].sala",
+                "turmas[1].horarios[1].sala",
+                "turmas[1].horarios[2].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "MME52D",
+              "nome": "Cálculo Integral 1",
+              "fields": [
+                "turmas[1].horarios[0].sala",
+                "turmas[1].horarios[1].sala",
+                "turmas[1].horarios[2].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "MME52E",
+              "nome": "Álgebra Linear",
+              "fields": [
+                "turmas[0].horarios[0].sala",
+                "turmas[0].horarios[1].sala",
+                "turmas[0].horarios[2].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "MME54D",
+              "nome": "Probabilidade E Estatística",
+              "fields": [
+                "turmas[0].horarios[0].sala",
+                "turmas[0].horarios[1].sala",
+                "turmas[0].horarios[2].sala",
+                "turmas[0].horarios[3].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "QME51B",
+              "nome": "Química Dos Materiais",
+              "fields": [
+                "turmas[0].horarios[0].sala",
+                "turmas[0].horarios[1].sala"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4464,8 +4937,8 @@
       "courseId": "0002",
       "courseName": "Sistemas Internet",
       "sourceName": "SISTEMAS INTERNET",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:11   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:44   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 36,
       "classCount": 38,
@@ -4489,8 +4962,8 @@
       "courseId": "0003",
       "courseName": "Inglês",
       "sourceName": "INGLÊS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:12   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:45   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -4514,8 +4987,8 @@
       "courseId": "0005",
       "courseName": "Eng. Civil",
       "sourceName": "ENG. CIVIL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:13   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:46   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 64,
       "classCount": 67,
@@ -4539,8 +5012,8 @@
       "courseId": "0006",
       "courseName": "Manutenção Industrial",
       "sourceName": "MANUTENÇÃO INDUSTRIAL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:14   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:47   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -4564,8 +5037,8 @@
       "courseId": "0008",
       "courseName": "Inglês P/ Engenharias",
       "sourceName": "INGLÊS P/ ENGENHARIAS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:14   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:47   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -4589,8 +5062,8 @@
       "courseId": "0013",
       "courseName": "Eng. Mecatrônica",
       "sourceName": "ENG. MECATRÔNICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:14   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:48   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-25T21-28-57Z",
       "disciplineCount": 60,
       "classCount": 64,
@@ -4633,8 +5106,8 @@
       "courseId": "0016",
       "courseName": "Arquitet E Urbanismo",
       "sourceName": "ARQUITET E URBANISMO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:15   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:48   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 7,
       "classCount": 7,
@@ -4658,8 +5131,8 @@
       "courseId": "0001",
       "courseName": "Tecnol Alimentos",
       "sourceName": "TECNOL ALIMENTOS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:15   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:49   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-25T21-28-57Z",
       "disciplineCount": 49,
       "classCount": 50,
@@ -4702,8 +5175,8 @@
       "courseId": "0003",
       "courseName": "Eng. Amb. E Sanit.",
       "sourceName": "ENG. AMB. E SANIT.",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:16   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:50   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 98,
       "classCount": 107,
@@ -4727,9 +5200,9 @@
       "courseId": "0012",
       "courseName": "Eng De Materiais",
       "sourceName": "ENG DE MATERIAIS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:17   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-28T16-48-40Z",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:50   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
       "disciplineCount": 98,
       "classCount": 104,
       "versions": [
@@ -4761,6 +5234,25 @@
               ]
             }
           ]
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:16:38   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "0e58e3a8919adbc41ccb94f2dde46971b8564f472d035c8815bc8de7a3424bed",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/londrina/0012/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-28T16-48-40Z",
+          "changeCount": 1,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "EMA010",
+              "nome": "Estrutura E Propriedades De Metais",
+              "fields": [
+                "turmas[0].professores[0]"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4771,8 +5263,8 @@
       "courseId": "0017",
       "courseName": "Lic Em Química",
       "sourceName": "LIC EM QUÍMICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:18   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:51   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 60,
       "classCount": 61,
@@ -4796,8 +5288,8 @@
       "courseId": "0023",
       "courseName": "Eng Mecânica",
       "sourceName": "ENG MECÂNICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:18   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:51   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 92,
       "classCount": 107,
@@ -4821,8 +5313,8 @@
       "courseId": "0025",
       "courseName": "Eng De Produção",
       "sourceName": "ENG DE PRODUÇÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:19   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:52   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 99,
       "classCount": 113,
@@ -4846,8 +5338,8 @@
       "courseId": "0028",
       "courseName": "Eng Química",
       "sourceName": "ENG QUÍMICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:20   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:53   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 97,
       "classCount": 116,
@@ -4871,8 +5363,8 @@
       "courseId": "0043",
       "courseName": "Eng. Ambiental",
       "sourceName": "ENG. AMBIENTAL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:21   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:54   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 6,
       "classCount": 6,
@@ -4896,8 +5388,8 @@
       "courseId": "0044",
       "courseName": "Sistemas De Informação",
       "sourceName": "SISTEMAS DE INFORMAÇÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:21   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:54   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 30,
       "classCount": 30,
@@ -4921,8 +5413,8 @@
       "courseId": "0045",
       "courseName": "Ciência De Dados I A",
       "sourceName": "CIÊNCIA DE DADOS I A",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:22   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:54   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 7,
       "classCount": 7,
@@ -4946,8 +5438,8 @@
       "courseId": "0107",
       "courseName": "Alemão",
       "sourceName": "ALEMÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:22   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:55   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -4971,8 +5463,8 @@
       "courseId": "0108",
       "courseName": "Espanhol",
       "sourceName": "ESPANHOL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:22   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:55   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -4996,8 +5488,8 @@
       "courseId": "0109",
       "courseName": "Inglês",
       "sourceName": "INGLÊS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:23   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:56   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 3,
       "classCount": 3,
@@ -5021,8 +5513,8 @@
       "courseId": "0165",
       "courseName": "Língua Alemã",
       "sourceName": "LÍNGUA ALEMÃ",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:23   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:56   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -5046,8 +5538,8 @@
       "courseId": "0166",
       "courseName": "Língua Francesa",
       "sourceName": "LÍNGUA FRANCESA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:24   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:56   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -5071,8 +5563,8 @@
       "courseId": "0168",
       "courseName": "Tecnol Em Gestão Amb",
       "sourceName": "TECNOL EM GESTÃO AMB",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:24   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:57   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 29,
       "classCount": 47,
@@ -5096,8 +5588,8 @@
       "courseId": "0169",
       "courseName": "Tecnol Em Alimentos",
       "sourceName": "TECNOL EM ALIMENTOS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:24   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:57   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 55,
       "classCount": 84,
@@ -5121,8 +5613,8 @@
       "courseId": "0171",
       "courseName": "Língua Italiana",
       "sourceName": "LÍNGUA ITALIANA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:25   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:58   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -5146,8 +5638,8 @@
       "courseId": "0175",
       "courseName": "Tecnol.Manut.Indl.",
       "sourceName": "TECNOL.MANUT.INDL.",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:25   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:58   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 53,
       "classCount": 73,
@@ -5171,8 +5663,8 @@
       "courseId": "0176",
       "courseName": "Tecnol.Anál.Des.Sis.",
       "sourceName": "TECNOL.ANÁL.DES.SIS.",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:26   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:59   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -5196,8 +5688,8 @@
       "courseId": "0200",
       "courseName": "Eng.Produção",
       "sourceName": "ENG.PRODUÇÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:26   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:20:59   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 81,
       "classCount": 154,
@@ -5221,8 +5713,8 @@
       "courseId": "0201",
       "courseName": "Engenharia Alimentos",
       "sourceName": "ENGENHARIA ALIMENTOS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:27   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:00   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 72,
       "classCount": 149,
@@ -5246,8 +5738,8 @@
       "courseId": "0202",
       "courseName": "Engenharia Ambiental",
       "sourceName": "ENGENHARIA AMBIENTAL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:28   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:00   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 57,
       "classCount": 119,
@@ -5271,8 +5763,8 @@
       "courseId": "0219",
       "courseName": "Ciência Computação",
       "sourceName": "CIÊNCIA COMPUTAÇÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:28   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:01   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-25T21-28-57Z",
       "disciplineCount": 68,
       "classCount": 115,
@@ -5350,9 +5842,9 @@
       "courseId": "0220",
       "courseName": "Engenharia Elétrica",
       "sourceName": "ENGENHARIA ELÉTRICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:29   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-19T20-29-03Z",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:01   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
       "disciplineCount": 81,
       "classCount": 153,
       "versions": [
@@ -5365,6 +5857,27 @@
           "previousVersionId": null,
           "changeCount": 0,
           "changes": []
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:16:48   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "b51f908377a9eb58be5c755c41593976204b8ae54d4ad9c5162fb57f803a34fe",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/medianeira/0220/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-19T20-29-03Z",
+          "changeCount": 1,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "ELE1034",
+              "nome": "Gestão Energética",
+              "fields": [
+                "turmas[0].horarios[0].sala",
+                "turmas[0].horarios[1].sala",
+                "turmas[0].horarios[2].sala"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -5375,8 +5888,8 @@
       "courseId": "0262",
       "courseName": "Licenc.Química",
       "sourceName": "LICENC.QUÍMICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:30   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:02   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-28T16-44-53Z",
       "disciplineCount": 70,
       "classCount": 122,
@@ -5441,8 +5954,8 @@
       "courseId": "0280",
       "courseName": "Eng Amb/Sanitária",
       "sourceName": "ENG AMB/SANITÁRIA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:30   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:03   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 84,
       "classCount": 156,
@@ -5466,8 +5979,8 @@
       "courseId": "0282",
       "courseName": "Química Industrial",
       "sourceName": "QUÍMICA INDUSTRIAL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:31   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:03   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-28T16-44-53Z",
       "disciplineCount": 63,
       "classCount": 114,
@@ -5512,8 +6025,8 @@
       "courseId": "0286",
       "courseName": "Gestão Do Agronegócio",
       "sourceName": "GESTÃO DO AGRONEGÓCIO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:32   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:04   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 60,
       "classCount": 84,
@@ -5537,8 +6050,8 @@
       "courseId": "0288",
       "courseName": "Tecnol Segurança Ciber",
       "sourceName": "TECNOL SEGURANÇA CIBER",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:32   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:04   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -5562,8 +6075,8 @@
       "courseId": "0139",
       "courseName": "Lic Matematica (Anual)",
       "sourceName": "LIC MATEMATICA (ANUAL)",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:33   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:05   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-25T21-28-57Z",
       "disciplineCount": 9,
       "classCount": 9,
@@ -5607,8 +6120,8 @@
       "courseId": "0166",
       "courseName": "Ciências Contábeis",
       "sourceName": "CIÊNCIAS CONTÁBEIS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:33   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:05   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 26,
       "classCount": 28,
@@ -5632,8 +6145,8 @@
       "courseId": "0167",
       "courseName": "Administração",
       "sourceName": "ADMINISTRAÇÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:34   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:06   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 19,
       "classCount": 20,
@@ -5657,11 +6170,11 @@
       "courseId": "0172",
       "courseName": "Tec Manutenção",
       "sourceName": "TEC MANUTENÇÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:34   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-28T16-44-53Z",
-      "disciplineCount": 74,
-      "classCount": 82,
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:06   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
+      "disciplineCount": 73,
+      "classCount": 81,
       "versions": [
         {
           "versionId": "2026-09-19T20-29-03Z",
@@ -5851,6 +6364,39 @@
               ]
             }
           ]
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:16:52   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "4a9399d2f958f9aaef45f8b1884b6c56640ebba1e7491ae419ab8976283f71c7",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/pato-branco/0172/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-28T16-44-53Z",
+          "changeCount": 3,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "GE46NB",
+              "nome": "Gestão De Pessoas",
+              "fields": [
+                "turmas[0].vagas_total"
+              ]
+            },
+            {
+              "type": "removed",
+              "codigo": "GP46QB",
+              "nome": "Gestão De Pessoas"
+            },
+            {
+              "type": "changed",
+              "codigo": "VL42NB",
+              "nome": "Voleibol",
+              "fields": [
+                "turmas[0].horarios[0].sala",
+                "turmas[0].horarios[1].sala"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -5861,11 +6407,11 @@
       "courseId": "0185",
       "courseName": "Química",
       "sourceName": "QUÍMICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:35   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-28T16-44-53Z",
-      "disciplineCount": 63,
-      "classCount": 102,
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:07   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
+      "disciplineCount": 62,
+      "classCount": 101,
       "versions": [
         {
           "versionId": "2026-09-19T20-29-03Z",
@@ -6137,6 +6683,68 @@
               ]
             }
           ]
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:16:53   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "3a79fea4b19a359e95c2037e7a55b1bd5c53e425eb572bb5f72dbf39a765237b",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/pato-branco/0185/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-28T16-44-53Z",
+          "changeCount": 6,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "CD42NB",
+              "nome": "Cálculo Diferencial E Integral",
+              "fields": [
+                "turmas[1].horarios[2].sala",
+                "turmas[1].horarios[3].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "CH47QB",
+              "nome": "Catálise Heterogênea",
+              "fields": [
+                "turmas[0].horarios[0].sala",
+                "turmas[0].horarios[1].sala",
+                "turmas[0].horarios[2].sala",
+                "turmas[0].horarios[3].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "GE46NB",
+              "nome": "Gestão De Pessoas",
+              "fields": [
+                "turmas[0].vagas_total"
+              ]
+            },
+            {
+              "type": "removed",
+              "codigo": "GP46QB",
+              "nome": "Gestão De Pessoas"
+            },
+            {
+              "type": "changed",
+              "codigo": "TA47G",
+              "nome": "Tecnologia De Alimentos De Origem Vegetal",
+              "fields": [
+                "turmas[0].horarios[2].sala",
+                "turmas[0].horarios[3].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "VL42NB",
+              "nome": "Voleibol",
+              "fields": [
+                "turmas[0].horarios[0].sala",
+                "turmas[0].horarios[1].sala"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6147,8 +6755,8 @@
       "courseId": "0186",
       "courseName": "Tec Analise Des Sist",
       "sourceName": "TEC ANALISE DES SIST",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:36   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:08   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-28T16-44-53Z",
       "disciplineCount": 53,
       "classCount": 55,
@@ -6216,9 +6824,9 @@
       "courseId": "0192",
       "courseName": "Letras (Sem)",
       "sourceName": "LETRAS (SEM)",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:36   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-28T16-44-53Z",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:08   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
       "disciplineCount": 71,
       "classCount": 74,
       "versions": [
@@ -6347,6 +6955,28 @@
               ]
             }
           ]
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:16:54   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "55014c478664b7d87bf20dc1abdaedf525ccf22a9d4794851f9faa5d6550ba3f",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/pato-branco/0192/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-28T16-44-53Z",
+          "changeCount": 1,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "LT41L",
+              "nome": "Linguística Textual E Ensino",
+              "fields": [
+                "turmas[0].horarios[0].sala",
+                "turmas[0].horarios[1].sala",
+                "turmas[0].horarios[2].sala",
+                "turmas[0].horarios[3].sala"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6357,9 +6987,9 @@
       "courseId": "0195",
       "courseName": "Eng De Computação",
       "sourceName": "ENG DE COMPUTAÇÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:37   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-28T16-44-53Z",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:09   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
       "disciplineCount": 118,
       "classCount": 189,
       "versions": [
@@ -6778,6 +7408,35 @@
               ]
             }
           ]
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:16:55   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "0f64ab2f0d5dba403532f2a7970648a3ccb1fca5dd8f052791d5519d4b2fc1b4",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/pato-branco/0195/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-28T16-44-53Z",
+          "changeCount": 2,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "CD42NB",
+              "nome": "Cálculo Diferencial E Integral",
+              "fields": [
+                "turmas[1].horarios[2].sala",
+                "turmas[1].horarios[3].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "EQ43NB",
+              "nome": "Equações Diferenciais Ordinárias",
+              "fields": [
+                "turmas[0].horarios[2].sala",
+                "turmas[0].horarios[3].sala"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6788,11 +7447,11 @@
       "courseId": "0202",
       "courseName": "Engenharia Elétrica",
       "sourceName": "ENGENHARIA ELÉTRICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:38   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-28T16-44-53Z",
-      "disciplineCount": 115,
-      "classCount": 176,
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:10   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
+      "disciplineCount": 114,
+      "classCount": 175,
       "versions": [
         {
           "versionId": "2026-09-19T20-29-03Z",
@@ -7216,6 +7875,57 @@
               ]
             }
           ]
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:16:55   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "ff08601605bce16af9982b270738a2a761a87ec699ea0bb66906d358176fd030",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/pato-branco/0202/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-28T16-44-53Z",
+          "changeCount": 5,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "CD42NB",
+              "nome": "Cálculo Diferencial E Integral",
+              "fields": [
+                "turmas[1].horarios[2].sala",
+                "turmas[1].horarios[3].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "EQ43NB",
+              "nome": "Equações Diferenciais Ordinárias",
+              "fields": [
+                "turmas[0].horarios[2].sala",
+                "turmas[0].horarios[3].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "GE46NB",
+              "nome": "Gestão De Pessoas",
+              "fields": [
+                "turmas[0].vagas_total"
+              ]
+            },
+            {
+              "type": "removed",
+              "codigo": "GP46QB",
+              "nome": "Gestão De Pessoas"
+            },
+            {
+              "type": "changed",
+              "codigo": "VL42NB",
+              "nome": "Voleibol",
+              "fields": [
+                "turmas[0].horarios[0].sala",
+                "turmas[0].horarios[1].sala"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -7226,11 +7936,11 @@
       "courseId": "0203",
       "courseName": "Engenharia Civil",
       "sourceName": "ENGENHARIA CIVIL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:38   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-28T16-44-53Z",
-      "disciplineCount": 112,
-      "classCount": 184,
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:10   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
+      "disciplineCount": 111,
+      "classCount": 183,
       "versions": [
         {
           "versionId": "2026-09-19T20-29-03Z",
@@ -7754,6 +8464,86 @@
               ]
             }
           ]
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:16:56   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "9ebdcae6ea7c4c7386aedf7c2edd59a1ee69a866bcda65528f20ff0aa3080da3",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/pato-branco/0203/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-28T16-44-53Z",
+          "changeCount": 8,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "CD42NB",
+              "nome": "Cálculo Diferencial E Integral",
+              "fields": [
+                "turmas[1].horarios[2].sala",
+                "turmas[1].horarios[3].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "EF29CV",
+              "nome": "Estruturas De Fundações",
+              "fields": [
+                "turmas[0].horarios[2].sala",
+                "turmas[0].horarios[3].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "EQ43NB",
+              "nome": "Equações Diferenciais Ordinárias",
+              "fields": [
+                "turmas[0].horarios[2].sala",
+                "turmas[0].horarios[3].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "GE46NB",
+              "nome": "Gestão De Pessoas",
+              "fields": [
+                "turmas[0].vagas_total"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "GO29CV",
+              "nome": "Gerenciamento De Obras",
+              "fields": [
+                "turmas[0].horarios[2].sala",
+                "turmas[0].horarios[3].sala"
+              ]
+            },
+            {
+              "type": "removed",
+              "codigo": "GP46QB",
+              "nome": "Gestão De Pessoas"
+            },
+            {
+              "type": "changed",
+              "codigo": "TC29CV",
+              "nome": "Trabalho De Conclusão De Curso 1",
+              "fields": [
+                "turmas[0].horarios[0].sala",
+                "turmas[0].horarios[1].sala",
+                "turmas[0].horarios[2].sala",
+                "turmas[0].horarios[3].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "VL42NB",
+              "nome": "Voleibol",
+              "fields": [
+                "turmas[0].horarios[0].sala",
+                "turmas[0].horarios[1].sala"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -7764,11 +8554,11 @@
       "courseId": "0204",
       "courseName": "Eng Mecânica",
       "sourceName": "ENG MECÂNICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:39   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-28T16-44-53Z",
-      "disciplineCount": 116,
-      "classCount": 175,
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:11   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
+      "disciplineCount": 115,
+      "classCount": 174,
       "versions": [
         {
           "versionId": "2026-09-19T20-29-03Z",
@@ -8172,6 +8962,48 @@
               ]
             }
           ]
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:16:57   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "8fb59ebc9f19de2e72016c78a8d987c12fc71027d86ffb5d8e4356b3fd8e2ba8",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/pato-branco/0204/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-28T16-44-53Z",
+          "changeCount": 4,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "CD42NB",
+              "nome": "Cálculo Diferencial E Integral",
+              "fields": [
+                "turmas[1].horarios[2].sala",
+                "turmas[1].horarios[3].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "EQ43NB",
+              "nome": "Equações Diferenciais Ordinárias",
+              "fields": [
+                "turmas[0].horarios[2].sala",
+                "turmas[0].horarios[3].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "GE46NB",
+              "nome": "Gestão De Pessoas",
+              "fields": [
+                "turmas[0].vagas_total"
+              ]
+            },
+            {
+              "type": "removed",
+              "codigo": "GP46QB",
+              "nome": "Gestão De Pessoas"
+            }
+          ]
         }
       ]
     },
@@ -8182,8 +9014,8 @@
       "courseId": "0221",
       "courseName": "Agrimensura",
       "sourceName": "AGRIMENSURA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:40   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:12   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -8207,11 +9039,11 @@
       "courseId": "0228",
       "courseName": "Agronomia",
       "sourceName": "AGRONOMIA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:40   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-28T16-44-53Z",
-      "disciplineCount": 122,
-      "classCount": 153,
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:12   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
+      "disciplineCount": 121,
+      "classCount": 152,
       "versions": [
         {
           "versionId": "2026-09-19T20-29-03Z",
@@ -8447,6 +9279,39 @@
               ]
             }
           ]
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:16:58   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "45ca04edd00f1fd248a31d567fab99841624c8ad46a7d4c04f0c3bb1c4bb3471",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/pato-branco/0228/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-28T16-44-53Z",
+          "changeCount": 3,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "GE46NB",
+              "nome": "Gestão De Pessoas",
+              "fields": [
+                "turmas[0].vagas_total"
+              ]
+            },
+            {
+              "type": "removed",
+              "codigo": "GP46QB",
+              "nome": "Gestão De Pessoas"
+            },
+            {
+              "type": "changed",
+              "codigo": "TA47G",
+              "nome": "Tecnologia De Alimentos De Origem Vegetal",
+              "fields": [
+                "turmas[0].horarios[2].sala",
+                "turmas[0].horarios[3].sala"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -8457,8 +9322,8 @@
       "courseId": "0231",
       "courseName": "Espanhol",
       "sourceName": "ESPANHOL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:41   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:13   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -8482,8 +9347,8 @@
       "courseId": "0232",
       "courseName": "Inglês",
       "sourceName": "INGLÊS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:42   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:13   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 5,
       "classCount": 5,
@@ -8507,8 +9372,8 @@
       "courseId": "0233",
       "courseName": "Extra-Curricular",
       "sourceName": "EXTRA-CURRICULAR",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:42   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:14   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -8532,8 +9397,8 @@
       "courseId": "0234",
       "courseName": "Frances",
       "sourceName": "FRANCES",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:43   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:14   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -8557,8 +9422,8 @@
       "courseId": "0235",
       "courseName": "Alemão",
       "sourceName": "ALEMÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:44   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:15   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -8582,8 +9447,8 @@
       "courseId": "0239",
       "courseName": "Italiano",
       "sourceName": "ITALIANO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:45   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:16   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -8607,8 +9472,8 @@
       "courseId": "0253",
       "courseName": "Lic. Matemática (Sem)",
       "sourceName": "LIC. MATEMÁTICA (SEM)",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:46   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:17   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-28T16-44-53Z",
       "disciplineCount": 27,
       "classCount": 27,
@@ -8747,8 +9612,8 @@
       "courseId": "0258",
       "courseName": "Ciências Contábeis",
       "sourceName": "CIÊNCIAS CONTÁBEIS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:46   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:18   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-28T16-44-53Z",
       "disciplineCount": 49,
       "classCount": 52,
@@ -8816,9 +9681,9 @@
       "courseId": "0259",
       "courseName": "Administração",
       "sourceName": "ADMINISTRAÇÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:47   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-28T16-44-53Z",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:18   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
       "disciplineCount": 39,
       "classCount": 41,
       "versions": [
@@ -8900,6 +9765,26 @@
               ]
             }
           ]
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:17:04   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "a4a0437b0637a00b8df5c82850f659c0e9cc2c2eb2c5386f08b07ce5a0cc7680",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/pato-branco/0259/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-28T16-44-53Z",
+          "changeCount": 1,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "VL42NB",
+              "nome": "Voleibol",
+              "fields": [
+                "turmas[0].horarios[0].sala",
+                "turmas[0].horarios[1].sala"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -8910,9 +9795,9 @@
       "courseId": "0264",
       "courseName": "Eng Cart Agrimensura",
       "sourceName": "ENG CART AGRIMENSURA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:47   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-28T16-44-53Z",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:19   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
       "disciplineCount": 70,
       "classCount": 125,
       "versions": [
@@ -9357,6 +10242,26 @@
               ]
             }
           ]
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:17:05   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "4516d92fdb41103957d1e75411d49e064835c189c40b912f7300018d20b1c925",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/pato-branco/0264/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-28T16-44-53Z",
+          "changeCount": 1,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "CD42NB",
+              "nome": "Cálculo Diferencial E Integral",
+              "fields": [
+                "turmas[1].horarios[2].sala",
+                "turmas[1].horarios[3].sala"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -9367,11 +10272,11 @@
       "courseId": "0272",
       "courseName": "Química",
       "sourceName": "QUÍMICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:48   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-28T16-44-53Z",
-      "disciplineCount": 94,
-      "classCount": 133,
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:19   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
+      "disciplineCount": 93,
+      "classCount": 132,
       "versions": [
         {
           "versionId": "2026-09-19T20-29-03Z",
@@ -9761,6 +10666,68 @@
               ]
             }
           ]
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:17:05   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "f995d1a27c1aec239e7e9e3f57d95445d62886e1e90d0b35fdc780729e246119",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/pato-branco/0272/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-28T16-44-53Z",
+          "changeCount": 6,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "CD42NB",
+              "nome": "Cálculo Diferencial E Integral",
+              "fields": [
+                "turmas[1].horarios[2].sala",
+                "turmas[1].horarios[3].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "CH47QB",
+              "nome": "Catálise Heterogênea",
+              "fields": [
+                "turmas[0].horarios[0].sala",
+                "turmas[0].horarios[1].sala",
+                "turmas[0].horarios[2].sala",
+                "turmas[0].horarios[3].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "GE46NB",
+              "nome": "Gestão De Pessoas",
+              "fields": [
+                "turmas[0].vagas_total"
+              ]
+            },
+            {
+              "type": "removed",
+              "codigo": "GP46QB",
+              "nome": "Gestão De Pessoas"
+            },
+            {
+              "type": "changed",
+              "codigo": "TA47G",
+              "nome": "Tecnologia De Alimentos De Origem Vegetal",
+              "fields": [
+                "turmas[0].horarios[2].sala",
+                "turmas[0].horarios[3].sala"
+              ]
+            },
+            {
+              "type": "changed",
+              "codigo": "VL42NB",
+              "nome": "Voleibol",
+              "fields": [
+                "turmas[0].horarios[0].sala",
+                "turmas[0].horarios[1].sala"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -9771,8 +10738,8 @@
       "courseId": "0001",
       "courseName": "Tecnol. Alimentos",
       "sourceName": "TECNOL. ALIMENTOS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:49   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:20   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -9796,8 +10763,8 @@
       "courseId": "0005",
       "courseName": "Tecnol. Automação Ind.",
       "sourceName": "TECNOL. AUTOMAÇÃO IND.",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:50   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:21   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-25T21-28-57Z",
       "disciplineCount": 51,
       "classCount": 52,
@@ -9841,8 +10808,8 @@
       "courseId": "0012",
       "courseName": "Línguas Estr. Mod.",
       "sourceName": "LÍNGUAS ESTR. MOD.",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:50   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:21   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -9866,8 +10833,8 @@
       "courseId": "0024",
       "courseName": "Tecnol. Análise D.Sist",
       "sourceName": "TECNOL. ANÁLISE D.SIST",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:51   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:22   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 38,
       "classCount": 39,
@@ -9891,8 +10858,8 @@
       "courseId": "0025",
       "courseName": "Tecnol. Fab. Mecânica",
       "sourceName": "TECNOL. FAB. MECÂNICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:51   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:22   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 6,
       "classCount": 6,
@@ -9916,8 +10883,8 @@
       "courseId": "0037",
       "courseName": "Engenharia Química",
       "sourceName": "ENGENHARIA QUÍMICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:52   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:23   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 79,
       "classCount": 178,
@@ -9941,8 +10908,8 @@
       "courseId": "0038",
       "courseName": "Engenharia Mecânica",
       "sourceName": "ENGENHARIA MECÂNICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:53   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:23   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-25T21-28-57Z",
       "disciplineCount": 81,
       "classCount": 190,
@@ -9985,8 +10952,8 @@
       "courseId": "0039",
       "courseName": "Ciência Da Computação",
       "sourceName": "CIÊNCIA DA COMPUTAÇÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:54   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:25   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 54,
       "classCount": 96,
@@ -10010,8 +10977,8 @@
       "courseId": "0040",
       "courseName": "Engenharia Eletrônica",
       "sourceName": "ENGENHARIA ELETRÔNICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:55   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:26   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 2,
       "classCount": 2,
@@ -10035,9 +11002,9 @@
       "courseId": "0041",
       "courseName": "Engenharia De Produção",
       "sourceName": "ENGENHARIA DE PRODUÇÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:56   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-28T16-44-53Z",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:27   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
       "disciplineCount": 82,
       "classCount": 163,
       "versions": [
@@ -10096,6 +11063,25 @@
               ]
             }
           ]
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:17:12   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "a2199e661a736af0ae6ba627afff381a005fc488fc340c8581e59358f7ea8b42",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/ponta-grossa/0041/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-28T16-44-53Z",
+          "changeCount": 1,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "EP55GE",
+              "nome": "Projeto Interdisciplinar E1",
+              "fields": [
+                "horas_extensionistas"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -10106,8 +11092,8 @@
       "courseId": "0043",
       "courseName": "Inglês",
       "sourceName": "INGLÊS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:56   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:28   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -10131,8 +11117,8 @@
       "courseId": "0044",
       "courseName": "Alemão",
       "sourceName": "ALEMÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:57   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:28   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -10156,8 +11142,8 @@
       "courseId": "0045",
       "courseName": "Francês",
       "sourceName": "FRANCÊS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:57   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:29   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -10181,8 +11167,8 @@
       "courseId": "0052",
       "courseName": "Espanhol",
       "sourceName": "ESPANHOL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:58   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:29   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -10206,8 +11192,8 @@
       "courseId": "0053",
       "courseName": "Inglês Instrumental",
       "sourceName": "INGLÊS INSTRUMENTAL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:58   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:30   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -10231,8 +11217,8 @@
       "courseId": "0066",
       "courseName": "Ciências Naturais",
       "sourceName": "CIÊNCIAS NATURAIS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:59   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:30   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -10256,8 +11242,8 @@
       "courseId": "0071",
       "courseName": "Inglês Intensivo",
       "sourceName": "INGLÊS INTENSIVO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:54:59   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:30   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -10281,8 +11267,8 @@
       "courseId": "0072",
       "courseName": "Francês Intensivo",
       "sourceName": "FRANCÊS INTENSIVO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:00   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:31   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -10306,8 +11292,8 @@
       "courseId": "0073",
       "courseName": "Alemão Intensivo",
       "sourceName": "ALEMÃO INTENSIVO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:00   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:31   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -10331,8 +11317,8 @@
       "courseId": "0082",
       "courseName": "Eng Bioproc E Biotec",
       "sourceName": "ENG BIOPROC E BIOTEC",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:00   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:31   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 80,
       "classCount": 168,
@@ -10356,8 +11342,8 @@
       "courseId": "0084",
       "courseName": "Ciências Biológicas",
       "sourceName": "CIÊNCIAS BIOLÓGICAS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:01   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:32   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 54,
       "classCount": 58,
@@ -10381,8 +11367,8 @@
       "courseId": "0085",
       "courseName": "Engenharia Elétrica",
       "sourceName": "ENGENHARIA ELÉTRICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:02   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:33   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 67,
       "classCount": 156,
@@ -10406,8 +11392,8 @@
       "courseId": "0091",
       "courseName": "Lic Computação - Umu",
       "sourceName": "LIC COMPUTAÇÃO - UMU",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:02   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:33   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 10,
       "classCount": 10,
@@ -10431,8 +11417,8 @@
       "courseId": "0094",
       "courseName": "Lic Computação - Sca",
       "sourceName": "LIC COMPUTAÇÃO - SCA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:03   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:34   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 8,
       "classCount": 8,
@@ -10456,8 +11442,8 @@
       "courseId": "0095",
       "courseName": "Lic Computação - Tbo",
       "sourceName": "LIC COMPUTAÇÃO - TBO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:03   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:34   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 9,
       "classCount": 9,
@@ -10481,8 +11467,8 @@
       "courseId": "0096",
       "courseName": "Lic Computação - Rio",
       "sourceName": "LIC COMPUTAÇÃO - RIO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:04   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:34   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 9,
       "classCount": 10,
@@ -10506,8 +11492,8 @@
       "courseId": "0097",
       "courseName": "Lic Computação - Res",
       "sourceName": "LIC COMPUTAÇÃO - RES",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:04   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:35   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 0,
       "classCount": 0,
@@ -10531,8 +11517,8 @@
       "courseId": "0098",
       "courseName": "Lic Computação - Ppa",
       "sourceName": "LIC COMPUTAÇÃO - PPA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:04   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:35   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 8,
       "classCount": 8,
@@ -10556,8 +11542,8 @@
       "courseId": "0099",
       "courseName": "Lic Computação - Par",
       "sourceName": "LIC COMPUTAÇÃO - PAR",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:05   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:35   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 9,
       "classCount": 9,
@@ -10581,8 +11567,8 @@
       "courseId": "0100",
       "courseName": "Lic Computação - Pal",
       "sourceName": "LIC COMPUTAÇÃO - PAL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:05   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:36   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 9,
       "classCount": 9,
@@ -10606,8 +11592,8 @@
       "courseId": "0101",
       "courseName": "Lic Computação - Jac",
       "sourceName": "LIC COMPUTAÇÃO - JAC",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:06   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:36   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 8,
       "classCount": 8,
@@ -10631,8 +11617,8 @@
       "courseId": "0102",
       "courseName": "Lic Computação - Foz",
       "sourceName": "LIC COMPUTAÇÃO - FOZ",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:06   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:37   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 9,
       "classCount": 9,
@@ -10656,8 +11642,8 @@
       "courseId": "0103",
       "courseName": "Lic Computação - Iba",
       "sourceName": "LIC COMPUTAÇÃO - IBA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:07   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:37   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 9,
       "classCount": 9,
@@ -10681,8 +11667,8 @@
       "courseId": "0104",
       "courseName": "Lic Computação - Con",
       "sourceName": "LIC COMPUTAÇÃO - CON",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:07   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:37   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 8,
       "classCount": 8,
@@ -10706,8 +11692,8 @@
       "courseId": "0105",
       "courseName": "Lic Computação - Cla",
       "sourceName": "LIC COMPUTAÇÃO - CLA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:07   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:38   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 9,
       "classCount": 9,
@@ -10731,8 +11717,8 @@
       "courseId": "0106",
       "courseName": "Engenharia Mecatrônica",
       "sourceName": "ENGENHARIA MECATRÔNICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:08   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:38   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 24,
       "classCount": 25,
@@ -10756,8 +11742,8 @@
       "courseId": "0001",
       "courseName": "Ciências Biológicas",
       "sourceName": "CIÊNCIAS BIOLÓGICAS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:08   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:39   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 53,
       "classCount": 59,
@@ -10781,8 +11767,8 @@
       "courseId": "0002",
       "courseName": "Ciência Da Computação",
       "sourceName": "CIÊNCIA DA COMPUTAÇÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:10   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:40   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 55,
       "classCount": 56,
@@ -10806,8 +11792,8 @@
       "courseId": "0005",
       "courseName": "Agronomia",
       "sourceName": "AGRONOMIA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:11   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:41   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-25T21-28-57Z",
       "disciplineCount": 77,
       "classCount": 97,
@@ -10857,8 +11843,8 @@
       "courseId": "0002",
       "courseName": "Tec. Proc. Quím.",
       "sourceName": "TEC. PROC. QUÍM.",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:12   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:43   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 49,
       "classCount": 55,
@@ -10882,8 +11868,8 @@
       "courseId": "0007",
       "courseName": "Eng. Eletrônica",
       "sourceName": "ENG. ELETRÔNICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:13   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:43   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 107,
       "classCount": 144,
@@ -10907,8 +11893,8 @@
       "courseId": "0008",
       "courseName": "Língua Inglesa - Calem",
       "sourceName": "LÍNGUA INGLESA - CALEM",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:13   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:44   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 3,
       "classCount": 3,
@@ -10932,8 +11918,8 @@
       "courseId": "0009",
       "courseName": "Eng. Civil",
       "sourceName": "ENG. CIVIL",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:14   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:45   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 97,
       "classCount": 132,
@@ -10957,8 +11943,8 @@
       "courseId": "0011",
       "courseName": "Lic. Em Matemática",
       "sourceName": "LIC. EM MATEMÁTICA",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:15   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:45   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 56,
       "classCount": 86,
@@ -10982,8 +11968,8 @@
       "courseId": "0017",
       "courseName": "Sist. Para Internet",
       "sourceName": "SIST. PARA INTERNET",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:15   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:46   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 60,
       "classCount": 65,
@@ -11007,8 +11993,8 @@
       "courseId": "0019",
       "courseName": "Eng. De Bioprocessos",
       "sourceName": "ENG. DE BIOPROCESSOS",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:16   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:46   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 88,
       "classCount": 121,
@@ -11032,9 +12018,9 @@
       "courseId": "0020",
       "courseName": "Eng. De Computação",
       "sourceName": "ENG. DE COMPUTAÇÃO",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:17   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
-      "latestVersionId": "2026-09-19T20-29-03Z",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:47   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "latestVersionId": "2026-09-30T07-14-38Z",
       "disciplineCount": 113,
       "classCount": 144,
       "versions": [
@@ -11047,6 +12033,25 @@
           "previousVersionId": null,
           "changeCount": 0,
           "changes": []
+        },
+        {
+          "versionId": "2026-09-30T07-14-38Z",
+          "capturedAt": "2026-09-30T07:14:38.319Z",
+          "sourceLastUpdatedAt": "30/09/2026 04:17:31   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+          "fingerprint": "44998d146683ca1c067c46cb629648be01e051730a671d4954bea2e37a75efd7",
+          "snapshotPath": "data/portal-aluno/snapshots/2026-2/toledo/0020/2026-09-30T07-14-38Z.json",
+          "previousVersionId": "2026-09-19T20-29-03Z",
+          "changeCount": 1,
+          "changes": [
+            {
+              "type": "changed",
+              "codigo": "ECP410A",
+              "nome": "Trabalho De Conclusão De Curso 2",
+              "fields": [
+                "turmas[0].vagas_total"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -11057,8 +12062,8 @@
       "courseId": "0041",
       "courseName": "Língua Alemã - Calem",
       "sourceName": "LÍNGUA ALEMÃ - CALEM",
-      "lastCheckedAt": "2026-09-28T16:52:22.917Z",
-      "latestSourceUpdatedAt": "28/09/2026 13:55:18   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+      "lastCheckedAt": "2026-09-30T07:18:58.518Z",
+      "latestSourceUpdatedAt": "30/09/2026 04:21:47   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
       "latestVersionId": "2026-09-19T20-29-03Z",
       "disciplineCount": 2,
       "classCount": 2,
