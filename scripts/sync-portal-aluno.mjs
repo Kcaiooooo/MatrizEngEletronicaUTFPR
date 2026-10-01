@@ -231,6 +231,11 @@ async function waitForReportFrame(page) {
 async function ensureLoggedIn(page, campus, course) {
     await openAuthenticatedPortalMenu(page);
     await page.goto(reportUrl(campus, course), { waitUntil: 'domcontentloaded' });
+    const expiredDialog = await findVisibleExpiredSessionDialog(page);
+    if (expiredDialog) {
+        await recoverExpiredPortalSession(page, expiredDialog);
+        await page.goto(reportUrl(campus, course), { waitUntil: 'domcontentloaded' });
+    }
     if (await page.locator('#p_unidcodnr').count()
         || await page.locator('#logoutButton').count()
         || /\/dpls\/sistema\/aluno\d+\/mpmenu\.inicio/.test(page.url())) {
@@ -238,8 +243,8 @@ async function ensureLoggedIn(page, campus, course) {
         return;
     }
     const passwordField = page.locator('input[type="password"]').first();
-    const loginButton = page.locator('button[type="submit"], input[type="submit"]').first();
-    if (await passwordField.count() && await loginButton.count()) {
+    const loginButton = await findPortalLoginButton(page);
+    if (await passwordField.isVisible().catch(() => false) && loginButton) {
         console.log('Tela de login detectada; acionando o envio para usar somente o preenchimento salvo pelo usuário. A senha não será lida nem armazenada pelo script.');
         try {
             await loginButton.click({ timeout: 5000 });
@@ -279,11 +284,11 @@ async function waitForPortalLoginState(page) {
 
 async function submitSavedPortalLogin(page) {
     const passwordField = page.locator('input[type="password"]').first();
-    const loginButton = page.locator('button[type="submit"], input[type="submit"]').first();
-    if (!(await passwordField.count()) || !(await loginButton.count())) {
+    const loginButton = await findPortalLoginButton(page);
+    if (!(await passwordField.isVisible().catch(() => false)) || !loginButton) {
         throw new Error('O Portal exige ação manual para renovar o login; nenhum dado foi coletado.');
     }
-    console.log('[portal-aluno] enviando o formulário pela interface para usar o preenchimento salvo; nenhuma credencial será lida ou armazenada.');
+    console.log('[portal-aluno] clicando em Entrar pela interface para usar o preenchimento salvo; nenhuma credencial será lida ou armazenada.');
     try {
         await loginButton.click({ timeout: 5000 });
     } catch {
@@ -295,6 +300,64 @@ async function submitSavedPortalLogin(page) {
             && !document.querySelector('input[type="password"]'), { timeout: 30000 });
     } catch {
         throw new Error('O login exige ação manual ou não chegou ao menu autenticado; nenhum dado foi coletado.');
+    }
+    if (!(await isAuthenticatedPortalMenu(page))) {
+        throw new Error('O login não confirmou o menu autenticado; nenhum dado foi coletado.');
+    }
+}
+
+async function findPortalLoginButton(page) {
+    const candidates = [
+        page.getByRole('button', { name: /^\s*Entrar\s*$/i }).first(),
+        page.locator('input[type="submit"][value="Entrar"]').first(),
+        page.locator('button[type="submit"]').filter({ hasText: /^\s*Entrar\s*$/i }).first(),
+    ];
+    for (const candidate of candidates) {
+        if (await candidate.isVisible().catch(() => false)) return candidate;
+    }
+    return null;
+}
+
+async function findVisibleExpiredSessionDialog(page) {
+    const dialogs = page.locator('[role="dialog"], .modal, .modal-dialog, p-dialog, p-confirmdialog, .p-confirm-dialog');
+    for (let index = 0, count = await dialogs.count(); index < count; index += 1) {
+        const dialog = dialogs.nth(index);
+        if (!(await dialog.isVisible().catch(() => false))) continue;
+        const text = await dialog.innerText().catch(() => '');
+        if (/sess[aã]o expirada/i.test(text)
+            && /voc[eê] foi desconectado|deseja efetuar login novamente/i.test(text)) return dialog;
+    }
+    return null;
+}
+
+async function recoverExpiredPortalSession(page, dialog) {
+    const confirmLogin = dialog.getByRole('button', { name: /^\s*Sim\s*$/i }).first();
+    if (!(await confirmLogin.isVisible().catch(() => false))) {
+        throw new Error('A confirmação de sessão expirada exige ação manual; nenhum dado foi coletado.');
+    }
+
+    console.log('[portal-aluno] sessão expirada detectada; confirmando Sim pela interface e recarregando a página.');
+    try {
+        await confirmLogin.click({ timeout: 5000 });
+    } catch {
+        throw new Error('O Portal exige ação manual para confirmar a sessão expirada; nenhum dado foi coletado.');
+    }
+
+    try {
+        await page.reload({ waitUntil: 'domcontentloaded', timeout: 30000 });
+        await waitForPortalLoginState(page);
+    } catch {
+        throw new Error('A página não recarregou para renovar a sessão; nenhum dado foi coletado.');
+    }
+
+    if (await findVisibleExpiredSessionDialog(page)) {
+        throw new Error('A confirmação de sessão expirada reapareceu após recarregar; nenhum dado foi coletado.');
+    }
+    if (await isAuthenticatedPortalMenu(page)) return;
+
+    await submitSavedPortalLogin(page);
+    if (!(await isAuthenticatedPortalMenu(page))) {
+        throw new Error('O login não chegou ao menu autenticado; nenhum dado foi coletado.');
     }
 }
 
@@ -319,6 +382,13 @@ async function openAuthenticatedPortalMenu(page) {
     }
     if (await isAuthenticatedPortalMenu(page)) {
         console.log(`[portal-aluno] menu autenticado confirmado (${page.url()})`);
+        return;
+    }
+
+    const expiredDialog = await findVisibleExpiredSessionDialog(page);
+    if (expiredDialog) {
+        await recoverExpiredPortalSession(page, expiredDialog);
+        console.log(`[portal-aluno] menu autenticado confirmado após renovar a sessão expirada (${page.url()})`);
         return;
     }
 
