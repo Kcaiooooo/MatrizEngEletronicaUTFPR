@@ -17,12 +17,17 @@ test('catálogo oficial mantém todos os câmpus em ordem alfabética', () => {
 test('snapshots oficiais têm payload normalizado e versões registradas', () => {
     const entry = manifest.entries['2026-2/curitiba/0250'];
     assert.ok(entry);
-    assert.equal(entry.versions.length, 1);
-    const snapshot = JSON.parse(readFileSync(entry.versions[0].snapshotPath, 'utf8'));
-    assert.equal(snapshot.source.id, 'utfpr-portal-aluno');
-    assert.equal(snapshot.payload.disciplinas.length, entry.disciplineCount);
-    assert.equal(countClasses(snapshot.payload), entry.classCount);
-    assert.deepEqual({ curso: snapshot.payload.curso, disciplinas: snapshot.payload.disciplinas }, normalizePayload(snapshot.payload));
+    assert.ok(entry.versions.length >= 1);
+    const snapshots = entry.versions.map(version => JSON.parse(readFileSync(version.snapshotPath, 'utf8')));
+    const latestIndex = entry.versions.findIndex(version => version.versionId === entry.latestVersionId);
+    assert.notEqual(latestIndex, -1, 'a versão mais recente deve estar registrada no histórico');
+    for (const snapshot of snapshots) {
+        assert.equal(snapshot.source.id, 'utfpr-portal-aluno');
+        assert.deepEqual({ curso: snapshot.payload.curso, disciplinas: snapshot.payload.disciplinas }, normalizePayload(snapshot.payload));
+    }
+    const latestSnapshot = snapshots[latestIndex];
+    assert.equal(latestSnapshot.payload.disciplinas.length, entry.disciplineCount);
+    assert.equal(countClasses(latestSnapshot.payload), entry.classCount);
 });
 
 test('separa horários e professores e identifica as sedes de Curitiba', () => {

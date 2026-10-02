@@ -272,7 +272,7 @@ test('turmas abertas exibem a captura oficial, filtram disciplinas e listam o hi
     await expect(page.locator('#campus-select')).toHaveValue('curitiba');
     await page.locator('#course-select').selectOption('0250');
     await expect(page.locator('#stat-disciplines')).toHaveText('150');
-    await expect(page.locator('#history-list .gnh-history-item')).toHaveCount(1);
+    await expect(page.locator('#history-list .gnh-history-item').first()).toBeVisible();
     await page.locator('#discipline-code').fill('MAT7AL');
     await expect(page.locator('#disciplines-list .gnh-discipline')).toHaveCount(1);
     await expect(page.locator('#disciplines-list')).toContainText('Álgebra Linear');
