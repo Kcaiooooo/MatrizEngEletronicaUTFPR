@@ -434,8 +434,14 @@ test('grade automática usa a matriz selecionada e encaixa turmas sem conflito',
     await expect(page.locator('#auto-grade-modal')).toBeVisible();
     await expect(page.locator('#auto-grade-matrix option')).toHaveCount(13);
     await page.locator('#auto-grade-matrix').selectOption('m2');
+    await page.locator('#auto-grade-result-limit').fill('2');
+    await expect(page.locator('#auto-grade-result-limit')).toHaveAttribute('max', '20');
     await page.getByRole('button', { name: 'Gerar combinações' }).click();
     await expect(page.locator('#auto-grade-results')).toBeVisible();
+    await expect(page.locator('#auto-grade-result-options [data-auto-grade-apply]')).toHaveCount(2);
+    await expect(page.locator('.gnh-auto-grade-preview-calendar .gnh-calendar-grid')).toHaveCount(2);
+    await expect(page.locator('.gnh-auto-grade-result-gaps')).toHaveCount(2);
+    await expect(page.locator('.gnh-auto-grade-result-gaps').first()).toContainText('Intervalos vagos:');
     await page.locator('[data-auto-grade-apply="0"]').click();
     await expect(page.locator('#auto-grade-modal')).toBeHidden();
     await expect(page.locator('#calendar-validation')).toContainText('Grade automática');

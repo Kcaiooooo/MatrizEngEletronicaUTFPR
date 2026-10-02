@@ -1,6 +1,7 @@
 import { countClasses } from './grade-core.js';
 import { parseProgress } from './progress.js';
 import { analyzePriority, availableHumanities, humanitiesQuotaProgress } from './priority-core.js';
+import { compareWeeklyIdleMetrics, weeklyIdleMetrics } from './schedule-ranking.js';
 
 const catalogUrl = '../data/portal-aluno/source-catalog.json';
 const manifestUrl = '../data/portal-aluno/index.json';
@@ -68,7 +69,6 @@ const state = {
     manualSubjectOrder: [],
     manualSubjectCandidates: [],
     automaticGradeResults: [],
-    automaticGradeResultsVisible: 0,
     versionId: null,
     selectedClasses: new Map(),
     maxLessons: 40,
@@ -491,6 +491,32 @@ function classSlotKeys(selection) {
     }).filter(Boolean);
 }
 
+function scheduleClockMinutes(value) {
+    const match = String(value || '').match(/^(\d{1,2})h(\d{2})$/i);
+    return match ? Number(match[1]) * 60 + Number(match[2]) : null;
+}
+
+function automaticGradeIdleMetrics(grade) {
+    const sessions = [];
+    for (const item of grade.items) {
+        for (const horario of item.selection.horarios || []) {
+            const parsed = parseHorario(horario.horario);
+            const times = parsed && scheduleTimes[`${parsed.period}${parsed.slot}`];
+            if (!times) continue;
+            const start = scheduleClockMinutes(times[0]);
+            const end = scheduleClockMinutes(times[1]);
+            if (start !== null && end !== null) sessions.push({ day: parsed.day, start, end });
+        }
+    }
+    return weeklyIdleMetrics(sessions);
+}
+
+function formatIdleDuration(minutes) {
+    const hours = Math.floor(minutes / 60);
+    const remainder = minutes % 60;
+    return [hours ? `${hours}h` : '', remainder ? `${remainder}min` : ''].filter(Boolean).join(' ') || '0min';
+}
+
 function compareAutomaticGrades(a, b, candidates, mode) {
     const priorityCount = grade => grade.items.filter(item => item.kind === 'priority').length;
     if (mode === 'history') {
@@ -517,6 +543,8 @@ function compareAutomaticGrades(a, b, candidates, mode) {
     const aLessons = a.items.reduce((sum, item) => sum + item.selection.creditos, 0);
     const bLessons = b.items.reduce((sum, item) => sum + item.selection.creditos, 0);
     if (aLessons !== bLessons) return bLessons - aLessons;
+    const compactness = compareWeeklyIdleMetrics(a.idleMetrics, b.idleMetrics);
+    if (compactness) return compactness;
     const aReserve = a.items.reduce((sum, item) => sum + (item.selection._automaticReserveRank || 0), 0);
     const bReserve = b.items.reduce((sum, item) => sum + (item.selection._automaticReserveRank || 0), 0);
     if (aReserve !== bReserve) return aReserve - bReserve;
@@ -525,7 +553,7 @@ function compareAutomaticGrades(a, b, candidates, mode) {
     return aKeys.localeCompare(bKeys, 'pt-BR');
 }
 
-async function buildAutomaticGrade(matrix, filters, selectedTracks = null, mode = 'history', manualOrder = [], reportProgress = () => {}, isCancelled = () => false) {
+async function buildAutomaticGrade(matrix, filters, selectedTracks = null, mode = 'history', manualOrder = [], reportProgress = () => {}, isCancelled = () => false, requestedResultLimit = 5) {
     if (!state.snapshot) throw new Error('Nenhuma captura de turmas está selecionada.');
     const profile = await getMatrixProfile(matrix);
     const allCandidates = automaticGradeSubjectCandidates(profile, selectedTracks);
@@ -551,6 +579,7 @@ async function buildAutomaticGrade(matrix, filters, selectedTracks = null, mode 
     let humanitiesHours = 0;
     let explored = 0;
     let lastProgressAt = 0;
+    const resultLimit = Math.min(20, Math.max(1, Math.trunc(Number(requestedResultLimit) || 1)));
     const results = [];
 
     const canAdd = (index, selection) => {
@@ -569,14 +598,20 @@ async function buildAutomaticGrade(matrix, filters, selectedTracks = null, mode 
 
     const saveResult = () => {
         const items = chosen.map(item => ({ ...item }));
-        results.push({ items, nodeIds: new Set(items.map(item => item.id)) });
+        const result = { items, nodeIds: new Set(items.map(item => item.id)) };
+        result.idleMetrics = automaticGradeIdleMetrics(result);
+        const insertionIndex = results.findIndex(existing => compareAutomaticGrades(existing, result, candidates, mode) > 0);
+        const index = insertionIndex === -1 ? results.length : insertionIndex;
+        if (index >= resultLimit) return;
+        results.splice(index, 0, result);
+        if (results.length > resultLimit) results.pop();
     };
 
     const yieldProgress = async () => {
         explored++;
         if (explored - lastProgressAt < 1200) return;
         lastProgressAt = explored;
-        reportProgress(`Buscando grades viáveis… ${explored.toLocaleString('pt-BR')} combinações parciais avaliadas, ${results.length.toLocaleString('pt-BR')} alternativas máximas encontradas.`);
+        reportProgress(`Buscando as melhores grades… ${explored.toLocaleString('pt-BR')} combinações parciais avaliadas; até ${resultLimit} opções serão mantidas.`);
         await new Promise(resolve => setTimeout(resolve, 0));
     };
 
@@ -616,23 +651,45 @@ async function buildAutomaticGrade(matrix, filters, selectedTracks = null, mode 
     reportProgress('Preparando as opções de turma…');
     await search(0);
     if (!results.length || results.every(result => !result.items.length)) throw new Error('Nenhuma matéria pôde ser encaixada com os horários e limites escolhidos.');
-    results.sort((a, b) => compareAutomaticGrades(a, b, candidates, mode));
-    reportProgress(`${results.length.toLocaleString('pt-BR')} grades máximas viáveis encontradas.`);
+    reportProgress(`${results.length.toLocaleString('pt-BR')} melhor(es) grade(s) máxima(s) viável(eis) pronta(s), limitadas à quantidade solicitada.`);
     return { results, profile, mode, candidateCount: candidates.length };
+}
+
+function automaticGradeResultCalendar(result) {
+    const cells = new Map();
+    const withoutSchedule = [];
+    for (const item of result.items) {
+        let placed = false;
+        const selectionCells = new Set();
+        for (const horario of item.selection.horarios || []) {
+            const parsed = parseHorario(horario.horario);
+            if (!parsed) continue;
+            placed = true;
+            const cellKey = `${parsed.day}-${parsed.period}-${parsed.slot}`;
+            if (selectionCells.has(cellKey)) continue;
+            selectionCells.add(cellKey);
+            if (!cells.has(cellKey)) cells.set(cellKey, []);
+            cells.get(cellKey).push({ selection: item.selection, horario });
+        }
+        if (!placed) withoutSchedule.push(item.selection);
+    }
+    return { cells, withoutSchedule };
 }
 
 function automaticGradeResultMarkup(result, index) {
     const lessons = result.items.reduce((sum, item) => sum + item.selection.creditos, 0);
     const priorityCount = result.items.filter(item => item.kind === 'priority').length;
     const humanitiesCount = result.items.length - priorityCount;
-    const subjects = result.items.map(item => {
-        const selection = item.selection;
-        const schedule = selection.horarios.map(horario => [horario.horario, horario.sede, horario.sala].filter(Boolean).join(' · ')).join(', ') || 'Horário não informado';
-        return `<li><strong>${escapeHtml(selection.disciplineCode)} · Turma ${escapeHtml(selection.turmaCode)}</strong> — ${escapeHtml(selection.disciplineName)}<small>${escapeHtml(schedule)}</small></li>`;
-    }).join('');
+    const { cells, withoutSchedule } = automaticGradeResultCalendar(result);
+    const unplaced = withoutSchedule.length
+        ? `<p class="gnh-calendar-unplaced"><strong>Sem horário publicado:</strong> ${withoutSchedule.map(selection => `${escapeHtml(selection.disciplineCode)} · T${escapeHtml(selection.turmaCode)}`).join(', ')}</p>`
+        : '';
+    const idleSummary = `Intervalos vagos: ${formatIdleDuration(result.idleMetrics.totalMinutes)} no total · maior intervalo: ${formatIdleDuration(result.idleMetrics.longestMinutes)}.`;
     return `<article class="gnh-auto-grade-result">
         <div class="gnh-auto-grade-result-heading"><strong>Opção ${index + 1}</strong><span>${priorityCount} prioritária(s) · ${humanitiesCount} de humanidades · ${lessons}/${state.maxLessons} aulas</span></div>
-        <ul>${subjects || '<li>Nenhuma matéria encaixada</li>'}</ul>
+        <p class="gnh-auto-grade-result-gaps">${idleSummary}</p>
+        <div class="gnh-calendar-scroll gnh-auto-grade-preview-calendar">${calendarGridMarkup(cells, false, false)}</div>
+        ${unplaced}
         <button class="gnh-primary-button" type="button" data-auto-grade-apply="${index}">Usar esta grade</button>
     </article>`;
 }
@@ -641,13 +698,12 @@ function renderAutomaticGradeResults() {
     const section = $('#auto-grade-results');
     const container = $('#auto-grade-result-options');
     const total = state.automaticGradeResults.length;
-    const visible = Math.min(state.automaticGradeResultsVisible, total);
     section.hidden = total === 0;
+    $('#auto-grade-form').classList.toggle('has-auto-grade-results', total > 0);
     $('#auto-grade-results-summary').textContent = total
-        ? `${total.toLocaleString('pt-BR')} grade(s) máxima(s) viável(eis): nenhuma matéria elegível adicional cabe sem conflito ou violação de limite. Ordenadas por prioridade e preenchimento; exibindo ${visible.toLocaleString('pt-BR')}.`
+        ? `As ${total.toLocaleString('pt-BR')} melhor(es) grade(s) máxima(s) viável(eis), priorizadas pelas matérias e pela compactação dos horários. Escolha uma para aplicar.`
         : '';
-    container.innerHTML = state.automaticGradeResults.slice(0, visible).map(automaticGradeResultMarkup).join('');
-    $('#auto-grade-show-more').hidden = visible >= total;
+    container.innerHTML = state.automaticGradeResults.map(automaticGradeResultMarkup).join('');
 }
 
 function applyAutomaticGradeResult(index) {
@@ -662,14 +718,17 @@ function applyAutomaticGradeResult(index) {
     closeAutomaticGradeModal();
 }
 
-function calendarEventMarkup({ selection, horario }) {
+function calendarEventMarkup({ selection, horario }, interactive = true) {
     const locationText = horario.sede || '';
     const contextText = [selection.campusName, selection.courseName].filter(Boolean).join(' · ');
     const roomSuffix = horario.sala ? ` / ${horario.sala}` : '';
     const eventLabel = `${selection.disciplineCode}, turma ${selection.turmaCode} — ${selection.disciplineName} · ${[locationText, contextText].filter(Boolean).join(' · ')}`;
-    const interaction = ` data-class-key="${escapeHtml(selection.key)}" role="button" tabindex="0"`;
+    const interaction = interactive ? ` data-class-key="${escapeHtml(selection.key)}" role="button" tabindex="0"` : '';
     const removalHint = 'Clique para remover do calendário';
-    return `<article class="gnh-calendar-event gnh-calendar-event-clickable"${interaction} title="${escapeHtml(`${eventLabel} · ${removalHint}`)}" aria-label="${escapeHtml(`${removalHint}: ${eventLabel}`)}"><span class="gnh-calendar-event-code">${escapeHtml(selection.disciplineCode)}-${escapeHtml(selection.turmaCode)}${escapeHtml(roomSuffix)}</span><strong>${escapeHtml(selection.disciplineName)}</strong>${contextText || locationText ? `<small>${escapeHtml([locationText, contextText].filter(Boolean).join(' · '))}</small>` : ''}</article>`;
+    const className = interactive ? 'gnh-calendar-event gnh-calendar-event-clickable' : 'gnh-calendar-event';
+    const title = interactive ? `${eventLabel} · ${removalHint}` : eventLabel;
+    const ariaLabel = interactive ? `${removalHint}: ${eventLabel}` : eventLabel;
+    return `<article class="${className}"${interaction} title="${escapeHtml(title)}" aria-label="${escapeHtml(ariaLabel)}"><span class="gnh-calendar-event-code">${escapeHtml(selection.disciplineCode)}-${escapeHtml(selection.turmaCode)}${escapeHtml(roomSuffix)}</span><strong>${escapeHtml(selection.disciplineName)}</strong>${contextText || locationText ? `<small>${escapeHtml([locationText, contextText].filter(Boolean).join(' · '))}</small>` : ''}</article>`;
 }
 
 function selectedLessons() {
@@ -702,18 +761,18 @@ function setCalendarMessage(text = '', type = '') {
     state.calendarMessage = { text, type };
 }
 
-function cellMarkup(day, row, events, mini = false) {
+function cellMarkup(day, row, events, mini = false, interactiveEvents = true) {
     const className = mini ? 'gnh-mini-calendar-cell' : 'gnh-calendar-cell';
-    return `<div class="${className}" data-calendar-cell="${day.id}-${row.period}-${row.slot}">${events.map(calendarEventMarkup).join('')}</div>`;
+    return `<div class="${className}" data-calendar-cell="${day.id}-${row.period}-${row.slot}">${events.map(event => calendarEventMarkup(event, interactiveEvents)).join('')}</div>`;
 }
 
-function calendarGridMarkup(cells, mini = false) {
+function calendarGridMarkup(cells, mini = false, interactiveEvents = true) {
     if (mini) {
         const header = '<div class="gnh-mini-calendar-header"> </div>'
             + weekdays.map(day => `<div class="gnh-mini-calendar-header" title="${day.name}">${day.short[0]}</div>`).join('');
         const rows = scheduleRows.map(row => {
             const timeCell = `<div class="gnh-mini-calendar-time">${row.code}</div>`;
-            const dayCells = weekdays.map(day => cellMarkup(day, row, cells.get(`${day.id}-${row.period}-${row.slot}`) || [], true)).join('');
+            const dayCells = weekdays.map(day => cellMarkup(day, row, cells.get(`${day.id}-${row.period}-${row.slot}`) || [], true, interactiveEvents)).join('');
             return timeCell + dayCells;
         }).join('');
         return `<div class="gnh-mini-calendar-grid">${header}${rows}</div>`;
@@ -725,7 +784,7 @@ function calendarGridMarkup(cells, mini = false) {
         const label = periods.find(period => period.id === row.period)?.name || row.period;
         const [start, end] = scheduleTimes[row.code] || ['—', '—'];
         const timeCell = `<div class="gnh-calendar-time"><strong>${row.code}</strong><span>${label}</span></div><div class="gnh-calendar-clock">${start}</div><div class="gnh-calendar-clock">${end}</div>`;
-        const dayCells = weekdays.map(day => cellMarkup(day, row, cells.get(`${day.id}-${row.period}-${row.slot}`) || [])).join('');
+        const dayCells = weekdays.map(day => cellMarkup(day, row, cells.get(`${day.id}-${row.period}-${row.slot}`) || [], false, interactiveEvents)).join('');
         return timeCell + dayCells;
     }).join('');
     return `<div class="gnh-calendar-grid">${header}${rows}</div>`;
@@ -1428,7 +1487,7 @@ function resetAutomaticGradeResults() {
     state.autoGradeSearchId++;
     $('#auto-grade-submit').disabled = false;
     state.automaticGradeResults = [];
-    state.automaticGradeResultsVisible = 0;
+    $('#auto-grade-form').classList.remove('has-auto-grade-results');
     $('#auto-grade-results').hidden = true;
     $('#auto-grade-result-options').innerHTML = '';
     if ($('#auto-grade-submit').disabled) {
@@ -1546,6 +1605,12 @@ $('#auto-grade-form').addEventListener('submit', async event => {
     const submit = $('#auto-grade-submit');
     const status = $('#auto-grade-status');
     if (!matrix) return;
+    const resultLimit = Number($('#auto-grade-result-limit').value);
+    if (!Number.isInteger(resultLimit) || resultLimit < 1 || resultLimit > 20) {
+        status.className = 'gnh-calendar-validation error';
+        status.textContent = 'Escolha entre 1 e 20 combinações para visualizar.';
+        return;
+    }
     resetAutomaticGradeResults();
     const searchId = state.autoGradeSearchId;
     submit.disabled = true;
@@ -1556,13 +1621,12 @@ $('#auto-grade-form').addEventListener('submit', async event => {
         const mode = automaticGradeMode();
         const generated = await buildAutomaticGrade(matrix, filters, readAutomaticGradeTracks(), mode, state.manualSubjectOrder, message => {
             status.textContent = message;
-        }, () => searchId !== state.autoGradeSearchId);
+        }, () => searchId !== state.autoGradeSearchId, resultLimit);
         if (searchId !== state.autoGradeSearchId) return;
         state.automaticGradeResults = generated.results;
-        state.automaticGradeResultsVisible = Math.min(10, generated.results.length);
         renderAutomaticGradeResults();
         status.className = 'gnh-calendar-validation success';
-        status.textContent = `${generated.results.length.toLocaleString('pt-BR')} grade(s) máxima(s) viável(eis) encontradas. Escolha uma para aplicar.`;
+        status.textContent = `${generated.results.length.toLocaleString('pt-BR')} melhor(es) grade(s) máxima(s) viável(eis) exibida(s), dentro do limite solicitado de ${resultLimit}. Escolha uma para aplicar.`;
     } catch (error) {
         if ($('#auto-grade-modal').hidden || error.message === 'Busca cancelada.') return;
         status.className = 'gnh-calendar-validation error';
@@ -1570,10 +1634,6 @@ $('#auto-grade-form').addEventListener('submit', async event => {
     } finally {
         if (searchId === state.autoGradeSearchId) submit.disabled = false;
     }
-});
-$('#auto-grade-show-more').addEventListener('click', () => {
-    state.automaticGradeResultsVisible = Math.min(state.automaticGradeResultsVisible + 10, state.automaticGradeResults.length);
-    renderAutomaticGradeResults();
 });
 $('#auto-grade-result-options').addEventListener('click', event => {
     const button = event.target.closest('[data-auto-grade-apply]');

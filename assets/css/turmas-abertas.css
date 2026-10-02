@@ -195,10 +195,13 @@
 .gnh-auto-grade-modal { position: fixed; inset: 0; z-index: 30; display: grid; place-items: center; padding: 1rem; background: rgba(3, 7, 18, .72); }
 .gnh-auto-grade-modal[hidden] { display: none; }
 .gnh-auto-grade-card { width: min(100%, 560px); max-height: calc(100vh - 2rem); overflow-y: auto; padding: 1.35rem; border: 1px solid var(--border-main); border-radius: 1rem; background: var(--bg-card); box-shadow: 0 24px 70px rgba(0, 0, 0, .35); }
+.gnh-auto-grade-card.has-auto-grade-results { width: min(100%, 1180px); }
 .gnh-modal-close { border: 0; background: transparent; color: var(--text-muted); font-size: 1.7rem; line-height: 1; cursor: pointer; }
 .gnh-modal-close:hover { color: var(--text-main); }
 .gnh-auto-grade-label { display: flex; flex-direction: column; gap: .4rem; margin-top: 1.15rem; color: var(--text-muted); font-size: .78rem; font-weight: 800; }
 .gnh-auto-grade-label select { min-height: 2.5rem; padding: .55rem .7rem; border: 1px solid var(--border-subtle); border-radius: .65rem; background: var(--bg-panel); color: var(--text-main); font: inherit; }
+.gnh-auto-grade-result-limit { display: flex; align-items: center; justify-content: space-between; gap: .8rem; margin-top: 1rem; color: var(--text-sec); font-size: .78rem; font-weight: 700; }
+.gnh-auto-grade-result-limit input { width: 5rem; min-height: 2.4rem; padding: .45rem .6rem; border: 1px solid var(--border-subtle); border-radius: .55rem; background: var(--bg-panel); color: var(--text-main); font: inherit; }
 .gnh-auto-grade-priority-mode, .gnh-auto-grade-manual-subjects, .gnh-auto-grade-results { display: grid; gap: .55rem; margin: 1.15rem 0 0; padding: .8rem; border: 1px solid var(--border-main); border-radius: .7rem; background: var(--bg-panel); }
 .gnh-auto-grade-priority-mode { border: 0; padding: 0; background: transparent; }
 .gnh-auto-grade-priority-mode legend, .gnh-auto-grade-manual-subjects h3, .gnh-auto-grade-results h3 { margin: 0; color: var(--text-main); font-size: .86rem; font-weight: 800; }
@@ -220,15 +223,14 @@
 .gnh-auto-grade-manual-move { display: flex; gap: .2rem; }
 .gnh-auto-grade-manual-move button { width: 1.55rem; height: 1.55rem; border: 1px solid var(--border-subtle); border-radius: .35rem; background: var(--bg-sec); color: var(--text-main); cursor: pointer; }
 .gnh-auto-grade-manual-move button:disabled { opacity: .35; cursor: default; }
-.gnh-auto-grade-results { max-height: 28rem; overflow-y: auto; }
+.gnh-auto-grade-results { max-height: none; overflow: visible; }
 .gnh-auto-grade-result-options { display: grid; gap: .65rem; }
 .gnh-auto-grade-result { display: grid; gap: .45rem; padding: .7rem; border: 1px solid var(--border-subtle); border-radius: .6rem; background: var(--bg-card); }
 .gnh-auto-grade-result-heading { display: flex; justify-content: space-between; gap: .5rem; color: var(--text-main); font-size: .74rem; }
 .gnh-auto-grade-result-heading span { color: var(--text-muted); text-align: right; }
-.gnh-auto-grade-result ul { display: grid; gap: .35rem; margin: 0; padding-left: 1.1rem; color: var(--text-sec); font-size: .68rem; }
-.gnh-auto-grade-result li small { display: block; margin-top: .1rem; color: var(--text-muted); font-size: .62rem; }
+.gnh-auto-grade-result-gaps { margin: -.2rem 0 0; color: var(--text-muted); font-size: .68rem; }
+.gnh-auto-grade-preview-calendar { margin-top: .15rem; }
 .gnh-auto-grade-result .gnh-primary-button { justify-self: start; padding: .4rem .7rem; font-size: .7rem; }
-.gnh-auto-grade-results > .gnh-secondary-button { justify-self: center; }
 .gnh-auto-grade-tracks { display: grid; gap: .55rem; margin-top: 1.15rem; padding: .8rem; border: 1px solid var(--border-main); border-radius: .7rem; background: var(--bg-panel); }
 .gnh-auto-grade-tracks h3 { margin: 0; color: var(--text-main); font-size: .86rem; }
 .gnh-auto-grade-track-help { margin: 0; color: var(--text-muted); font-size: .72rem; line-height: 1.4; }

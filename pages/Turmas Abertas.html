@@ -157,6 +157,10 @@
                 <label><input type="radio" name="auto-grade-priority-mode" value="history" checked><span><strong>Usar meu histórico</strong><small>Considera seu progresso e a prioridade automática já usada pelo K-Matrizes.</small></span></label>
                 <label><input type="radio" name="auto-grade-priority-mode" value="manual"><span><strong>Escolher matérias e prioridades</strong><small>Selecione as matérias disponíveis e ordene-as como preferir.</small></span></label>
             </fieldset>
+            <label class="gnh-auto-grade-result-limit" for="auto-grade-result-limit">Quantas das melhores combinações quer visualizar?
+                <input id="auto-grade-result-limit" type="number" min="1" max="20" step="1" value="5" required inputmode="numeric" aria-describedby="auto-grade-result-limit-help">
+            </label>
+            <p id="auto-grade-result-limit-help" class="gnh-auto-grade-track-help">Você pode escolher de 1 a 20. Serão mantidas e exibidas apenas as melhores opções nessa quantidade.</p>
             <section id="auto-grade-tracks" class="gnh-auto-grade-tracks" hidden aria-labelledby="auto-grade-tracks-title">
                 <h3 id="auto-grade-tracks-title">Trilhas que você quer seguir</h3>
                 <p class="gnh-auto-grade-track-help">Selecione as trilhas de especialização que deseja considerar. Só aparecem trilhas com pelo menos uma matéria disponível para esta matriz e para o curso atual.</p>
@@ -172,10 +176,9 @@
                 <div id="auto-grade-availability-grids" class="gnh-auto-grade-availability-grids"></div>
             </div>
             <section id="auto-grade-results" class="gnh-auto-grade-results" hidden aria-labelledby="auto-grade-results-title">
-                <h3 id="auto-grade-results-title">Grades possíveis</h3>
+                <h3 id="auto-grade-results-title">Escolha sua grade</h3>
                 <p id="auto-grade-results-summary" class="gnh-auto-grade-track-help"></p>
                 <div id="auto-grade-result-options" class="gnh-auto-grade-result-options"></div>
-                <button id="auto-grade-show-more" class="gnh-secondary-button" type="button" hidden>Mostrar mais opções</button>
             </section>
             <p class="gnh-auto-grade-warning">A grade atual será substituída pela sugestão. Depois você poderá ajustar as turmas manualmente.</p>
             <p id="auto-grade-status" class="gnh-calendar-validation" role="status" aria-live="polite"></p>
