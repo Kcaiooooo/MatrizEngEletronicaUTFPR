@@ -1,0 +1,1694 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-10-02T23-14-04Z",
+  "capturedAt": "2026-10-02T23:14:04.968Z",
+  "sourceLastUpdatedAt": "02/10/2026 20:18:20   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "toledo",
+    "name": "Toledo",
+    "code": "09"
+  },
+  "course": {
+    "id": "0011",
+    "name": "Lic. Em Matemática",
+    "sourceName": "LIC. EM MATEMÁTICA"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=11"
+  },
+  "fingerprint": "605775ee56b18bb791b54f58d193d631820d4d1dd4c5ae2f0f254096e2a3e5a2",
+  "previousVersionId": "2026-09-19T20-29-03Z",
+  "changes": [
+    {
+      "type": "removed",
+      "codigo": "ECP41C",
+      "nome": "Fundamentos De Programação"
+    },
+    {
+      "type": "removed",
+      "codigo": "ECP42B",
+      "nome": "Lógica Para Computação"
+    },
+    {
+      "type": "removed",
+      "codigo": "ECP43A",
+      "nome": "Probabilidade E Estatística"
+    },
+    {
+      "type": "removed",
+      "codigo": "ECV42A",
+      "nome": "Fundamentos De Programação"
+    },
+    {
+      "type": "removed",
+      "codigo": "ECV43C",
+      "nome": "Probabilidade E Estatística"
+    },
+    {
+      "type": "removed",
+      "codigo": "EET42A",
+      "nome": "Probabilidade E Estatística"
+    },
+    {
+      "type": "removed",
+      "codigo": "FIS001",
+      "nome": "Física 1"
+    },
+    {
+      "type": "removed",
+      "codigo": "FIS002",
+      "nome": "Física 2"
+    },
+    {
+      "type": "removed",
+      "codigo": "FIS003",
+      "nome": "Física 3"
+    },
+    {
+      "type": "removed",
+      "codigo": "HUM001",
+      "nome": "Leitura E Escrita Acadêmica"
+    },
+    {
+      "type": "changed",
+      "codigo": "HUM004",
+      "nome": "Engenharia E Gestão Financeira 1",
+      "fields": [
+        "turmas[0]"
+      ]
+    },
+    {
+      "type": "removed",
+      "codigo": "HUM006",
+      "nome": "Estudos Culturais E Relações Étnico-Raciais"
+    },
+    {
+      "type": "removed",
+      "codigo": "HUM014",
+      "nome": "Libras"
+    },
+    {
+      "type": "removed",
+      "codigo": "HUM041",
+      "nome": "Soft Skills"
+    },
+    {
+      "type": "removed",
+      "codigo": "LMA2A",
+      "nome": "Políticas Educacionais E Gestão Escolar"
+    },
+    {
+      "type": "removed",
+      "codigo": "LMA2B",
+      "nome": "Teorias Da Aprendizagem Em Educação Matemática"
+    },
+    {
+      "type": "removed",
+      "codigo": "LMA2E",
+      "nome": "Geometria Analítica E Álgebra De Vetores"
+    },
+    {
+      "type": "removed",
+      "codigo": "LMA2G",
+      "nome": "Unidade Curricular De Extensão 1"
+    },
+    {
+      "type": "removed",
+      "codigo": "LMA3B",
+      "nome": "Laboratório De Matemática"
+    },
+    {
+      "type": "removed",
+      "codigo": "LMA4A",
+      "nome": "Metodologia E Prática De Ensino De Matemática Na Educação Básica"
+    },
+    {
+      "type": "removed",
+      "codigo": "LMA4B",
+      "nome": "Tendências Em Educação Matemática"
+    },
+    {
+      "type": "removed",
+      "codigo": "LMA4F",
+      "nome": "Geometria 2"
+    },
+    {
+      "type": "removed",
+      "codigo": "LMA5H",
+      "nome": "Unidade Curricular De Extensão 3"
+    },
+    {
+      "type": "removed",
+      "codigo": "LMA6B",
+      "nome": "Modelagem Matemática A"
+    },
+    {
+      "type": "removed",
+      "codigo": "LMA6C",
+      "nome": "Modelagem Matemática B"
+    },
+    {
+      "type": "removed",
+      "codigo": "LMA6F",
+      "nome": "Probabilidade E Estatística"
+    },
+    {
+      "type": "removed",
+      "codigo": "LMA6G",
+      "nome": "Estágio Supervisionado Na Educação Básica 2"
+    },
+    {
+      "type": "removed",
+      "codigo": "LMA8C",
+      "nome": "Estágio Supervisionado Na Educação Básica 4"
+    },
+    {
+      "type": "removed",
+      "codigo": "MAT002",
+      "nome": "Geometria Analítica E Álgebra Linear"
+    },
+    {
+      "type": "removed",
+      "codigo": "MAT005",
+      "nome": "Equações Diferenciais Ordinárias"
+    },
+    {
+      "type": "removed",
+      "codigo": "MAT58D",
+      "nome": "Trabalho De Conclusão De Curso 2"
+    },
+    {
+      "type": "removed",
+      "codigo": "OPMA015",
+      "nome": "Tópicos Da Educação Algébrica"
+    },
+    {
+      "type": "removed",
+      "codigo": "OPMA027",
+      "nome": "Resolução De Problemas"
+    },
+    {
+      "type": "removed",
+      "codigo": "TSIN33G",
+      "nome": "História Da Tecnologia"
+    },
+    {
+      "type": "removed",
+      "codigo": "TSIN34G",
+      "nome": "Leitura E Escrita Acadêmica"
+    }
+  ],
+  "payload": {
+    "curso": "LIC. EM MATEMÁTICA",
+    "ultima_atualizacao": "02/10/2026 20:18:20   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "EBP41B",
+        "nome": "Computação",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "BP14",
+            "enquadramento": "Presencial",
+            "vagas_total": 49,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. De Bioprocessos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T1",
+                "sala": "C201 LINF3",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "C201 LINF3",
+                "sede": null
+              },
+              {
+                "horario": "6T1",
+                "sala": "C201 LINF3",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "C201 LINF3",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jones Erni Schmitz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ECP42A",
+        "nome": "Álgebra Linear",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CP24",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "E204",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "E204",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "E204",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "E204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Suellen Ribeiro Pardo Garcia"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ECP44A",
+        "nome": "Cálculo 4",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CP44",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T3",
+                "sala": "E205",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "E205",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "E205",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "E205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Karen Carrilho Da Silva Lira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EET41B",
+        "nome": "Computação 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "EL14",
+            "enquadramento": "Presencial",
+            "vagas_total": 31,
+            "vagas_calouros": 20,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "C201 LINF3",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "C201 LINF3",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "E306 LINF6",
+                "sede": null
+              },
+              {
+                "horario": "5T6",
+                "sala": "E306 LINF6",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jefferson Gustavo Martins"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EET44A",
+        "nome": "Cálculo 4b",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ET44",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M5",
+                "sala": "C307",
+                "sede": null
+              },
+              {
+                "horario": "3M6",
+                "sala": "C307",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "C307",
+                "sede": null
+              },
+              {
+                "horario": "4M6",
+                "sala": "C307",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Karen Carrilho Da Silva Lira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HUM002",
+        "nome": "Economia Contemporânea",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "OPCP",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "03VIDEOCON",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "03VIDEOCON",
+                "sede": null
+              },
+              {
+                "horario": "7M5",
+                "sala": "AVA",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diane Aparecida Ostroski Weber"
+            ],
+            "optativa_matrizes": [
+              "Matriz:21",
+              "Matriz:60",
+              "Matriz:61",
+              "Matriz:57",
+              "Matriz:52",
+              "Matriz:55",
+              "Matriz:56",
+              "Matriz:33",
+              "Matriz:41",
+              "Matriz:54",
+              "Matriz:53",
+              "Matriz:58"
+            ]
+          },
+          {
+            "codigo": "OPPQ",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Tec. Proc. Quím."
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "03VIDEOCON",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "03VIDEOCON",
+                "sede": null
+              },
+              {
+                "horario": "7M1",
+                "sala": "AVA",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diane Aparecida Ostroski Weber"
+            ],
+            "optativa_matrizes": [
+              "Matriz:21",
+              "Matriz:60",
+              "Matriz:61",
+              "Matriz:57",
+              "Matriz:52",
+              "Matriz:55",
+              "Matriz:56",
+              "Matriz:33",
+              "Matriz:41",
+              "Matriz:54",
+              "Matriz:53",
+              "Matriz:58"
+            ]
+          },
+          {
+            "codigo": "OPTI",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Sist. Para Internet"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "03VIDEOCON",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "03VIDEOCON",
+                "sede": null
+              },
+              {
+                "horario": "7M4",
+                "sala": "AVA",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Diane Aparecida Ostroski Weber"
+            ],
+            "optativa_matrizes": [
+              "Matriz:21",
+              "Matriz:60",
+              "Matriz:61",
+              "Matriz:57",
+              "Matriz:52",
+              "Matriz:55",
+              "Matriz:56",
+              "Matriz:33",
+              "Matriz:41",
+              "Matriz:54",
+              "Matriz:53",
+              "Matriz:58"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "HUM004",
+        "nome": "Engenharia E Gestão Financeira 1",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": []
+      },
+      {
+        "codigo": "LMA2D",
+        "nome": "Cálculo Diferencial",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MT23",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic. Em Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N4",
+                "sala": "C204",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "C204",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "C204",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "C204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcia Regina Piovesan"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LMA2F",
+        "nome": "Construções Geométricas",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MT23",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic. Em Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "C204",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "C204",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "C204",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "C204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Loreci Zanardini"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LMA4D",
+        "nome": "Cálculo De Funções De Várias Variáveis",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MT43",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic. Em Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "C205",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "C205",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "C205",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "C205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wilian Francisco De Araujo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LMA4E",
+        "nome": "Álgebra Linear 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MT43",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic. Em Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N1",
+                "sala": "C205",
+                "sede": null
+              },
+              {
+                "horario": "2N2",
+                "sala": "C205",
+                "sede": null
+              },
+              {
+                "horario": "3N1",
+                "sala": "C205",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "C205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Suellen Ribeiro Pardo Garcia"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LMA4G",
+        "nome": "Elementos De Matemática 3",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SH33",
+            "enquadramento": "Presencial",
+            "vagas_total": 1,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic. Em Matemática"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Regiane Slongo Fagundes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LMA5C",
+        "nome": "Currículo E Avaliação Em Matemática",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MT83",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic. Em Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "C203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Barbara Winiarski Diesel Novaes"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SH83",
+            "enquadramento": "Presencial",
+            "vagas_total": 1,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic. Em Matemática"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Barbara Winiarski Diesel Novaes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LMA6A",
+        "nome": "Educação Matemática Inclusiva 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MT63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic. Em Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "C206",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "C206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Aline Keryn Pin"
+            ],
+            "optativa_matrizes": [
+              "Matriz:33",
+              "Matriz:41"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "LMA6D",
+        "nome": "Cálculo Numérico",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MT63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic. Em Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "C206",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "C206",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "C206",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "C206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vanderlei Galina"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LMA6E",
+        "nome": "Álgebra",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MT63",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic. Em Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "C206",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "C206",
+                "sede": null
+              },
+              {
+                "horario": "6N1",
+                "sala": "C206",
+                "sede": null
+              },
+              {
+                "horario": "6N2",
+                "sala": "C206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wilian Francisco De Araujo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LMA7D",
+        "nome": "Análise Real 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "SH73",
+            "enquadramento": "Presencial",
+            "vagas_total": 1,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Lic. Em Matemática"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Leandro Antunes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "LMA8B",
+        "nome": "Análise Real 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "MT83",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Lic. Em Matemática"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N3",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "2N4",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "C203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Leandro Antunes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT001",
+        "nome": "Cálculo Diferencial E Integral 1",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "BP24",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. De Bioprocessos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "E104",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "E104",
+                "sede": null
+              },
+              {
+                "horario": "5T1",
+                "sala": "E104",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "E104",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "E104",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "E104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Araceli Ciotti De Marins"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "CP14",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "E203",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "E203",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "E203",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "E203",
+                "sede": null
+              },
+              {
+                "horario": "5T1",
+                "sala": "E203",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "E203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcia Regina Piovesan"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "CV14",
+            "enquadramento": "Presencial",
+            "vagas_total": 46,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "2M6",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "C203",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "C203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Regiane Slongo Fagundes"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EL14",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "E106",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "E106",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "E106",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "E106",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "E106",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "E106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Araceli Ciotti De Marins"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT003",
+        "nome": "Cálculo Diferencial E Integral 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "BP34",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. De Bioprocessos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "E105",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "E105",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "E104",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "E104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vanderlei Galina"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "CP24",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T5",
+                "sala": "E204",
+                "sede": null
+              },
+              {
+                "horario": "4T6",
+                "sala": "E204",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "E204",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "E204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vanderlei Galina"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "CV24",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "C204",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "C204",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "C204",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "C204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriano Gomes De Santana"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EL24",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "E106",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "E106",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "E106",
+                "sede": null
+              },
+              {
+                "horario": "6M6",
+                "sala": "E106",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriano Gomes De Santana"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT004",
+        "nome": "Cálculo Diferencial E Integral 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CP34",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. De Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T5",
+                "sala": "E205",
+                "sede": null
+              },
+              {
+                "horario": "2T6",
+                "sala": "E205",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "AUDITORIO1",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "AUDITORIO1",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Dione Ines Christ Milani"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "CV34",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "E204",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "E204",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "E204",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "E204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Dione Ines Christ Milani"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EL34",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T3",
+                "sala": "C206",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "C206",
+                "sede": null
+              },
+              {
+                "horario": "3T1",
+                "sala": "C205",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "C205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Dione Ines Christ Milani"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT006",
+        "nome": "Cálculo Numérico",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "BP54",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. De Bioprocessos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T1",
+                "sala": "E104",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "E104",
+                "sede": null
+              },
+              {
+                "horario": "5T1",
+                "sala": "E205",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "E205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gustavo Henrique Dalposso"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "CV44",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Civil"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M1",
+                "sala": "C205",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "C205",
+                "sede": null
+              },
+              {
+                "horario": "4M1",
+                "sala": "C205",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "C205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gustavo Henrique Dalposso"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "EL34",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T3",
+                "sala": "C204",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "C204",
+                "sede": null
+              },
+              {
+                "horario": "4T1",
+                "sala": "C202 LINF4",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "C202 LINF4",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gustavo Henrique Dalposso"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}
