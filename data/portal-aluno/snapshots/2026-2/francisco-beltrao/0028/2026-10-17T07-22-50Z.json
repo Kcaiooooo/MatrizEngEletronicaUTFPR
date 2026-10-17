@@ -1,0 +1,983 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-10-17T07-22-50Z",
+  "capturedAt": "2026-10-17T07:22:50.556Z",
+  "sourceLastUpdatedAt": "17/10/2026 04:25:14   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "francisco-beltrao",
+    "name": "Francisco Beltrão",
+    "code": "11"
+  },
+  "course": {
+    "id": "0028",
+    "name": "Eng. Amb. Sanitária",
+    "sourceName": "ENG. AMB. SANITÁRIA"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=28"
+  },
+  "fingerprint": "3c56d3b9c9adebd36ed3123157cee7a4ada0531c3553fc6032b874fe0f09b39e",
+  "previousVersionId": "2026-10-12T09-56-15Z",
+  "changes": [
+    {
+      "type": "removed",
+      "codigo": "ALI066",
+      "nome": "Higiene Industrial"
+    },
+    {
+      "type": "removed",
+      "codigo": "AMB019",
+      "nome": "Energia E Desenvolvimento Sustentável"
+    },
+    {
+      "type": "removed",
+      "codigo": "AMB025",
+      "nome": "Gerenciamento E Tratamento De Emissões Atmosféricas"
+    },
+    {
+      "type": "removed",
+      "codigo": "AMB034",
+      "nome": "Tcc 1"
+    },
+    {
+      "type": "removed",
+      "codigo": "AMB035",
+      "nome": "Tcc 2"
+    },
+    {
+      "type": "removed",
+      "codigo": "AMB036",
+      "nome": "Introdução À Engenharia Ambiental E Sanitária"
+    },
+    {
+      "type": "removed",
+      "codigo": "AMB041",
+      "nome": "Engenharia De Segurança Do Trabalho"
+    },
+    {
+      "type": "removed",
+      "codigo": "AMB042",
+      "nome": "Hidráulica"
+    },
+    {
+      "type": "removed",
+      "codigo": "AMB043",
+      "nome": "Hidrologia"
+    },
+    {
+      "type": "removed",
+      "codigo": "AMB044",
+      "nome": "Gerenciamento E Tratamento De Água"
+    },
+    {
+      "type": "removed",
+      "codigo": "AMB045",
+      "nome": "Gerenciamento E Tratamento De Efluentes Industriais"
+    },
+    {
+      "type": "removed",
+      "codigo": "AMB046",
+      "nome": "Gerenciamento E Tratamento De Esgoto Sanitário"
+    },
+    {
+      "type": "removed",
+      "codigo": "AMB047",
+      "nome": "Processos Bioquímicos Para Águas Residuárias"
+    },
+    {
+      "type": "removed",
+      "codigo": "AMB048",
+      "nome": "Geotecnia Ambiental"
+    },
+    {
+      "type": "removed",
+      "codigo": "AMB049",
+      "nome": "Gerenciamento E Tratamento De Resíduos Sólidos"
+    },
+    {
+      "type": "removed",
+      "codigo": "AMB050",
+      "nome": "Instalações Prediais Hidrossanitária"
+    },
+    {
+      "type": "removed",
+      "codigo": "AMB051",
+      "nome": "Sistema De Coleta E Transporte De Esgoto"
+    },
+    {
+      "type": "removed",
+      "codigo": "AMB052",
+      "nome": "Sistemas De Drenagem Urbana"
+    },
+    {
+      "type": "removed",
+      "codigo": "AMB053",
+      "nome": "Legislação Ambiental"
+    },
+    {
+      "type": "removed",
+      "codigo": "AMB054",
+      "nome": "Qualidade Da Água"
+    },
+    {
+      "type": "removed",
+      "codigo": "AMB055",
+      "nome": "Saúde Ambiental"
+    },
+    {
+      "type": "removed",
+      "codigo": "AMB058",
+      "nome": "Recuperação De Áreas Degradadas"
+    },
+    {
+      "type": "removed",
+      "codigo": "AMB059",
+      "nome": "Sistema De Gestão Ambiental"
+    },
+    {
+      "type": "removed",
+      "codigo": "ART004",
+      "nome": "Prática De Orquestra"
+    },
+    {
+      "type": "changed",
+      "codigo": "ART007",
+      "nome": "Canto Coral",
+      "fields": [
+        "turmas[0].optativa_matrizes[4]",
+        "turmas[0].optativa_matrizes[5]",
+        "turmas[0].optativa_matrizes[6]",
+        "turmas[0].optativa_matrizes[7]"
+      ]
+    },
+    {
+      "type": "removed",
+      "codigo": "BIO011",
+      "nome": "Ecologia Geral"
+    },
+    {
+      "type": "removed",
+      "codigo": "BIO016",
+      "nome": "Microbiologia Geral"
+    },
+    {
+      "type": "removed",
+      "codigo": "DES004",
+      "nome": "Desenho Técnico"
+    },
+    {
+      "type": "removed",
+      "codigo": "DES005",
+      "nome": "Desenho Técnico"
+    },
+    {
+      "type": "removed",
+      "codigo": "EDU016",
+      "nome": "História Do Paraná E Do Sudoeste Paranaense"
+    },
+    {
+      "type": "removed",
+      "codigo": "EDU017",
+      "nome": "História E Cultura Afro-Brasileira E Indígena"
+    },
+    {
+      "type": "removed",
+      "codigo": "EST003",
+      "nome": "Probabilidade E Estatística"
+    },
+    {
+      "type": "removed",
+      "codigo": "EST006",
+      "nome": "Estatística Aplicada A Experimentos"
+    },
+    {
+      "type": "removed",
+      "codigo": "FIS008",
+      "nome": "Física Experimental"
+    },
+    {
+      "type": "removed",
+      "codigo": "FIS010",
+      "nome": "Introdução À Física"
+    },
+    {
+      "type": "removed",
+      "codigo": "FIS011",
+      "nome": "Fundamentos De Física 1"
+    },
+    {
+      "type": "removed",
+      "codigo": "FIS013",
+      "nome": "Fundamentos De Física 3"
+    },
+    {
+      "type": "removed",
+      "codigo": "FIS017",
+      "nome": "Fundamentos De Física 2"
+    },
+    {
+      "type": "removed",
+      "codigo": "FIS018",
+      "nome": "Eletrotécnica E Instrumentação"
+    },
+    {
+      "type": "removed",
+      "codigo": "GEO002",
+      "nome": "Topografia Geral"
+    },
+    {
+      "type": "removed",
+      "codigo": "GEO005",
+      "nome": "Poluição Dos Solos"
+    },
+    {
+      "type": "removed",
+      "codigo": "GEO006",
+      "nome": "Climatologia"
+    },
+    {
+      "type": "removed",
+      "codigo": "GEO007",
+      "nome": "Cartografia Básica"
+    },
+    {
+      "type": "removed",
+      "codigo": "GEO009",
+      "nome": "Geologia E Pedologia"
+    },
+    {
+      "type": "removed",
+      "codigo": "GEO010",
+      "nome": "Geoprocessamento"
+    },
+    {
+      "type": "removed",
+      "codigo": "HCH007",
+      "nome": "Introdução À Comunidade Política"
+    },
+    {
+      "type": "removed",
+      "codigo": "HCH014",
+      "nome": "Filosofia Da Ciência"
+    },
+    {
+      "type": "removed",
+      "codigo": "HCH017",
+      "nome": "Tópicos Especiais Em Ciências Humanas"
+    },
+    {
+      "type": "removed",
+      "codigo": "HCH021",
+      "nome": "Trabalho, Tecnologia E Sociedade"
+    },
+    {
+      "type": "removed",
+      "codigo": "HCH022",
+      "nome": "Filosofia E Tecnologia"
+    },
+    {
+      "type": "removed",
+      "codigo": "HCH023",
+      "nome": "Diversidade E Cidadania Na Sociedade Da Informação"
+    },
+    {
+      "type": "removed",
+      "codigo": "HLA001",
+      "nome": "Linguagem, Tecnologia E Sujeito"
+    },
+    {
+      "type": "removed",
+      "codigo": "HLA005",
+      "nome": "Língua Inglesa Ii"
+    },
+    {
+      "type": "removed",
+      "codigo": "HLA007",
+      "nome": "Língua Inglesa Iv"
+    },
+    {
+      "type": "removed",
+      "codigo": "HLA013",
+      "nome": "Instrumento Musical - Violino 1"
+    },
+    {
+      "type": "removed",
+      "codigo": "HLA014",
+      "nome": "Instrumento Musical - Violino 2"
+    },
+    {
+      "type": "removed",
+      "codigo": "HLA016",
+      "nome": "Comunicação Linguística"
+    },
+    {
+      "type": "removed",
+      "codigo": "HLA019",
+      "nome": "Comunicação Oral E Escrita"
+    },
+    {
+      "type": "removed",
+      "codigo": "HSA001",
+      "nome": "Gestão Empresarial"
+    },
+    {
+      "type": "removed",
+      "codigo": "HSA003",
+      "nome": "Gestão Econômica E Financeira"
+    },
+    {
+      "type": "removed",
+      "codigo": "HSA004",
+      "nome": "Gestão De Pessoas"
+    },
+    {
+      "type": "removed",
+      "codigo": "HSA005",
+      "nome": "Empreendedorismo"
+    },
+    {
+      "type": "removed",
+      "codigo": "HSA010",
+      "nome": "Gestão E Estratégias De Inovação E Tecnologia"
+    },
+    {
+      "type": "removed",
+      "codigo": "LET006",
+      "nome": "Libras 1"
+    },
+    {
+      "type": "removed",
+      "codigo": "LET007",
+      "nome": "Libras 2"
+    },
+    {
+      "type": "removed",
+      "codigo": "LET008",
+      "nome": "Leitura E Produção Textual"
+    },
+    {
+      "type": "removed",
+      "codigo": "LET017",
+      "nome": "Inglês Para Fins Acadêmicos"
+    },
+    {
+      "type": "removed",
+      "codigo": "MAT012",
+      "nome": "Pré-Cálculo"
+    },
+    {
+      "type": "removed",
+      "codigo": "MAT020",
+      "nome": "Fundamentos De Geometria Analítica E Álgebra Linear Para Engenharias"
+    },
+    {
+      "type": "removed",
+      "codigo": "MAT023",
+      "nome": "Equações Diferenciais Ordinárias"
+    },
+    {
+      "type": "removed",
+      "codigo": "MEC001",
+      "nome": "Mecânica Geral"
+    },
+    {
+      "type": "removed",
+      "codigo": "MEC004",
+      "nome": "Mecânica Dos Sólidos"
+    },
+    {
+      "type": "removed",
+      "codigo": "QUI017",
+      "nome": "Química Geral Experimental"
+    },
+    {
+      "type": "removed",
+      "codigo": "QUI022",
+      "nome": "Química Analítica Teórica"
+    },
+    {
+      "type": "removed",
+      "codigo": "QUI027",
+      "nome": "Química Analítica Experimental"
+    },
+    {
+      "type": "removed",
+      "codigo": "QUI028",
+      "nome": "Operações Unitárias 1"
+    },
+    {
+      "type": "removed",
+      "codigo": "QUI088",
+      "nome": "Fenômenos De Transferência 2"
+    },
+    {
+      "type": "removed",
+      "codigo": "QUI093",
+      "nome": "Fenômenos De Transferência 1"
+    },
+    {
+      "type": "removed",
+      "codigo": "QUI107",
+      "nome": "Química Orgânica"
+    },
+    {
+      "type": "removed",
+      "codigo": "QUI108",
+      "nome": "Química Geral Teórica"
+    }
+  ],
+  "payload": {
+    "curso": "ENG. AMB. SANITÁRIA",
+    "ultima_atualizacao": "17/10/2026 04:25:14   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "AMB056",
+        "nome": "Avaliação De Impactos Ambientais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "7EAS",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Amb. Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M3",
+                "sala": "G204",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "G204",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "G204",
+                "sede": null
+              },
+              {
+                "horario": "5M6",
+                "sala": "G204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gabriel Cassemiro Mariano"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ART007",
+        "nome": "Canto Coral",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 45,
+        "turmas": [
+          {
+            "codigo": "3EAS",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "5N1",
+                "sala": "BLOCO B",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "BLOCO B",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "BLOCO B",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Mauro Cesar Cislaghi"
+            ],
+            "optativa_matrizes": [
+              "Matriz:44",
+              "Matriz:45",
+              "Matriz:41",
+              "Matriz:37"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "BIO017",
+        "nome": "Bioindicadores Ambientais",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "5EAS",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Ambiental",
+                "Eng. Amb. Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6M1",
+                "sala": "G205",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "G205",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "G205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rodrigo Lingnau"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "BIO019",
+        "nome": "Bioquímica Geral",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3AGR",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "G203",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "G203",
+                "sede": null
+              },
+              {
+                "horario": "6T1",
+                "sala": "G203",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "G203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eder Da Costa Dos Santos"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "6EQ",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Química"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M1",
+                "sala": "G204",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "G204",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "G201",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "G201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Maria Helene Giovanetti Canteri"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 5,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Química",
+                "Eng. De Alimentos",
+                "Eng. Amb. Sanitária"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Maria Helene Giovanetti Canteri"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "BIO020",
+        "nome": "Biologia Celular",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "1AGR",
+            "enquadramento": "Presencial",
+            "vagas_total": 54,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N1",
+                "sala": "G201",
+                "sede": null
+              },
+              {
+                "horario": "4N2",
+                "sala": "G201",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "G201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elisangela Dusman"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "1EQ",
+            "enquadramento": "Presencial",
+            "vagas_total": 50,
+            "vagas_calouros": 44,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Química",
+                "Eng. Amb. Sanitária"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "G201",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "G201",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "G201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elisangela Dusman"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "HCH020",
+        "nome": "Associativismo E Cooperativismo",
+        "creditos": 3,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "6AGR",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N1",
+                "sala": "G206",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "G206",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "G206",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rodrigo Kummer"
+            ],
+            "optativa_matrizes": [
+              "Matriz:24",
+              "Matriz:37",
+              "Matriz:25",
+              "Matriz:41",
+              "Matriz:31",
+              "Matriz:21"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "INF009",
+        "nome": "Algoritmos E Programação",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3EA",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. De Alimentos"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M3",
+                "sala": "Q201",
+                "sede": null
+              },
+              {
+                "horario": "2M4",
+                "sala": "Q201",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "Q201",
+                "sede": null
+              },
+              {
+                "horario": "2M6",
+                "sala": "Q201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Francisco Antonio Fernandes Reinaldo"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "4AGR",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [
+              [
+                "Agronomia"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "6N2",
+                "sala": "G101",
+                "sede": null
+              },
+              {
+                "horario": "6N3",
+                "sala": "G101",
+                "sede": null
+              },
+              {
+                "horario": "6N4",
+                "sala": "G101",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "G101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vilmar Steffen"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "MAT015",
+        "nome": "Cálculo 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "2EQ",
+            "enquadramento": "Presencial",
+            "vagas_total": 69,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "Q105",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "Q105",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "Q105",
+                "sede": null
+              },
+              {
+                "horario": "3M6",
+                "sala": "Q105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Liliane Hellmann"
+            ],
+            "optativa_matrizes": [
+              "Matriz:45",
+              "Matriz:38"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MAT016",
+        "nome": "Cálculo 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3EA",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2M1",
+                "sala": "G204",
+                "sede": null
+              },
+              {
+                "horario": "2M2",
+                "sala": "G204",
+                "sede": null
+              },
+              {
+                "horario": "3M1",
+                "sala": "G204",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "G204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Tereza Rachel Mafioleti"
+            ],
+            "optativa_matrizes": [
+              "Matriz:45",
+              "Matriz:38"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
