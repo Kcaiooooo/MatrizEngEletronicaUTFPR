@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-10-30T07-02-44Z",
+  "capturedAt": "2026-10-30T07:02:44.360Z",
+  "sourceLastUpdatedAt": "30/10/2026 04:02:56   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "apucarana",
+    "name": "Apucarana",
+    "code": "10"
+  },
+  "course": {
+    "id": "0036",
+    "name": "Engenharia Têxtil",
+    "sourceName": "ENGENHARIA TÊXTIL"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=36"
+  },
+  "fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "previousVersionId": null,
+  "changes": [],
+  "payload": {
+    "curso": "ENGENHARIA TÊXTIL",
+    "ultima_atualizacao": "30/10/2026 04:02:56   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": []
+  }
+}
