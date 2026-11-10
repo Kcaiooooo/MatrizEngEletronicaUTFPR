@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-11-10T20-15-58Z",
+  "capturedAt": "2026-11-10T20:15:58.320Z",
+  "sourceLastUpdatedAt": "10/11/2026 17:18:09   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "pato-branco",
+    "name": "Pato Branco",
+    "code": "05"
+  },
+  "course": {
+    "id": "0186",
+    "name": "Tec Analise Des Sist",
+    "sourceName": "TEC ANALISE DES SIST"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=186"
+  },
+  "fingerprint": "5f45b5715cb895ed1073d987d39f90ad2216ba5b7d589db6c1d9202ed6780692",
+  "previousVersionId": "2026-10-13T07-06-16Z",
+  "changes": [
+    {
+      "type": "changed",
+      "codigo": "AD44S",
+      "nome": "Aplicações Distribuidas E Concorrentes",
+      "fields": [
+        "turmas[0]"
+      ]
+    },
+    {
+      "type": "removed",
+      "codigo": "AM46S",
+      "nome": "Aprendizado De Máquina E Reconhecimento De Padrões"
+    },
+    {
+      "type": "removed",
+      "codigo": "AS44S",
+      "nome": "Automação De Software E Infraestrutura"
+    },
+    {
+      "type": "removed",
+      "codigo": "BD42S",
+      "nome": "Fundamentos De Banco De Dados"
+    },
+    {
+      "type": "removed",
+      "codigo": "BD43S",
+      "nome": "Banco De Dados"
+    },
+    {
+      "type": "removed",
+      "codigo": "CG46S",
+      "nome": "Computação Gráfica"
+    },
+    {
+      "type": "removed",
+      "codigo": "ED42S",
+      "nome": "Estruturas De Dados 1"
+    },
+    {
+      "type": "removed",
+      "codigo": "ED43S",
+      "nome": "Estruturas De Dados 2"
+    },
+    {
+      "type": "removed",
+      "codigo": "EE45MC",
+      "nome": "Empreendedorismo"
+    },
+    {
+      "type": "removed",
+      "codigo": "EE45S",
+      "nome": "Empreendedorismo"
+    },
+    {
+      "type": "removed",
+      "codigo": "EE46M",
+      "nome": "Empreendedorismo"
+    },
+    {
+      "type": "removed",
+      "codigo": "EE47EL",
+      "nome": "Empreendedorismo"
+    },
+    {
+      "type": "removed",
+      "codigo": "EE48CP",
+      "nome": "Empreendedorismo"
+    },
+    {
+      "type": "removed",
+      "codigo": "EE48NB",
+      "nome": "Empreendedorismo"
+    },
+    {
+      "type": "removed",
+      "codigo": "EM29MC",
+      "nome": "Empreendedorismo"
+    },
+    {
+      "type": "removed",
+      "codigo": "EP22B",
+      "nome": "Empreendedorismo"
+    },
+    {
+      "type": "removed",
+      "codigo": "ES42S",
+      "nome": "Engenharia De Software"
+    },
+    {
+      "type": "removed",
+      "codigo": "FC42NB",
+      "nome": "Filosofia Da Técnica E Da Tecnologia"
+    },
+    {
+      "type": "removed",
+      "codigo": "FE42S",
+      "nome": "Fundamentos De Estatística 1"
+    },
+    {
+      "type": "removed",
+      "codigo": "FE43S",
+      "nome": "Fundamentos De Estatística 2"
+    },
+    {
+      "type": "removed",
+      "codigo": "FP41S",
+      "nome": "Fundamentos De Programação"
+    },
+    {
+      "type": "removed",
+      "codigo": "GE45G",
+      "nome": "Gestão Empresarial"
+    },
+    {
+      "type": "removed",
+      "codigo": "GE46S",
+      "nome": "Gestão Empresarial"
+    },
+    {
+      "type": "removed",
+      "codigo": "GO48CA",
+      "nome": "Gestão Empresarial"
+    },
+    {
+      "type": "removed",
+      "codigo": "GP45S",
+      "nome": "Gestão De Projetos De Software"
+    },
+    {
+      "type": "removed",
+      "codigo": "HC42NB",
+      "nome": "História E Cultura Afro-Brasileira"
+    },
+    {
+      "type": "removed",
+      "codigo": "HT42NB",
+      "nome": "História Da Técnica E Da Tecnologia"
+    },
+    {
+      "type": "removed",
+      "codigo": "II41S",
+      "nome": "Introdução À Informática"
+    },
+    {
+      "type": "removed",
+      "codigo": "IS41S",
+      "nome": "Informática E Sociedade"
+    },
+    {
+      "type": "removed",
+      "codigo": "IS44S",
+      "nome": "Interação Ser Humano Computador"
+    },
+    {
+      "type": "removed",
+      "codigo": "LA43S",
+      "nome": "Linguagens De Apresentação E Estruturação De Conteúdo"
+    },
+    {
+      "type": "removed",
+      "codigo": "LB26M",
+      "nome": "Libras 2"
+    },
+    {
+      "type": "removed",
+      "codigo": "LI42NB",
+      "nome": "Libras 1"
+    },
+    {
+      "type": "removed",
+      "codigo": "LP41S",
+      "nome": "Leitura E Produção De Gêneros Acadêmicos"
+    },
+    {
+      "type": "removed",
+      "codigo": "MD41S",
+      "nome": "Introdução À Matemática Discreta"
+    },
+    {
+      "type": "removed",
+      "codigo": "MP44S",
+      "nome": "Metodologia Da Pesquisa"
+    },
+    {
+      "type": "removed",
+      "codigo": "OD46S",
+      "nome": "Oficina De Projeto E Desenvolvimento"
+    },
+    {
+      "type": "removed",
+      "codigo": "OI43S",
+      "nome": "Oficina De Projetos Em Informática E Pensamento Computacional"
+    },
+    {
+      "type": "removed",
+      "codigo": "OO42S",
+      "nome": "Fundamentos De Orientação A Objetos"
+    },
+    {
+      "type": "removed",
+      "codigo": "OO43S",
+      "nome": "Programação Orientada A Objetos"
+    },
+    {
+      "type": "removed",
+      "codigo": "PA42NB",
+      "nome": "Psicologia Aplicada Ao Trabalho"
+    },
+    {
+      "type": "removed",
+      "codigo": "PM45S",
+      "nome": "Programação Para Dispositivos Móveis"
+    },
+    {
+      "type": "removed",
+      "codigo": "PM46S",
+      "nome": "Tópicos Avançados Em Programação Para Dispositivos Móveis"
+    },
+    {
+      "type": "removed",
+      "codigo": "PW44S",
+      "nome": "Programação Para Web"
+    },
+    {
+      "type": "removed",
+      "codigo": "PW45S",
+      "nome": "Tópicos Avançados Em Programação Para Web"
+    },
+    {
+      "type": "removed",
+      "codigo": "QV23A",
+      "nome": "Qualidade De Vida"
+    },
+    {
+      "type": "removed",
+      "codigo": "RC42S",
+      "nome": "Redes De Computadores"
+    },
+    {
+      "type": "removed",
+      "codigo": "SA45S",
+      "nome": "Segurança Em Aplicações"
+    },
+    {
+      "type": "removed",
+      "codigo": "TC26S",
+      "nome": "Trabalho De Conclusão De Curso 2"
+    },
+    {
+      "type": "removed",
+      "codigo": "TC45S",
+      "nome": "Proposta De Trabalho De Conclusão De Curso"
+    },
+    {
+      "type": "removed",
+      "codigo": "TC46S",
+      "nome": "Trabalho De Conclusão De Curso"
+    },
+    {
+      "type": "removed",
+      "codigo": "TS44S",
+      "nome": "Teste De Software"
+    }
+  ],
+  "payload": {
+    "curso": "TEC ANALISE DES SIST",
+    "ultima_atualizacao": "10/11/2026 17:18:09   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "AD44S",
+        "nome": "Aplicações Distribuidas E Concorrentes",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": []
+      },
+      {
+        "codigo": "AP43S",
+        "nome": "Análise E Projeto De Sistemas",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "3SI",
+            "enquadramento": "Presencial",
+            "vagas_total": 25,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Tec Analise Des Sist"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N3",
+                "sala": "V108",
+                "sede": null
+              },
+              {
+                "horario": "4N4",
+                "sala": "V108",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "V108",
+                "sede": null
+              },
+              {
+                "horario": "6N5",
+                "sala": "S001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Lucilia Yoshie Araki"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}
