@@ -1,0 +1,4993 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-11-12T07-04-04Z",
+  "capturedAt": "2026-11-12T07:04:04.214Z",
+  "sourceLastUpdatedAt": "12/11/2026 04:04:29   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "cornelio-procopio",
+    "name": "Cornélio Procópio",
+    "code": "02"
+  },
+  "course": {
+    "id": "0041",
+    "name": "Eng. Computação",
+    "sourceName": "ENG. COMPUTAÇÃO"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=41"
+  },
+  "fingerprint": "23ec2f3117c4ddb3dc58d67cf435454255694e7fcb146eefd11c2037d2c437ce",
+  "previousVersionId": "2026-11-07T07-03-23Z",
+  "changes": [
+    {
+      "type": "removed",
+      "codigo": "A2LCD",
+      "nome": "Laboratório De Cinemática E Dinâmica"
+    },
+    {
+      "type": "removed",
+      "codigo": "A2OPH17",
+      "nome": "Relações Humanas"
+    },
+    {
+      "type": "removed",
+      "codigo": "A2OPH4",
+      "nome": "Inglês Instrumental"
+    },
+    {
+      "type": "removed",
+      "codigo": "A2OPH7",
+      "nome": "Qualidade De Vida 1"
+    },
+    {
+      "type": "removed",
+      "codigo": "A2OPH8",
+      "nome": "Qualidade De Vida 2"
+    },
+    {
+      "type": "removed",
+      "codigo": "A2TCD",
+      "nome": "Teoria De Cinemática E Dinâmica"
+    },
+    {
+      "type": "removed",
+      "codigo": "A3TEM",
+      "nome": "Teoria De Eletricidade E Magnetismo"
+    },
+    {
+      "type": "removed",
+      "codigo": "A4SNS",
+      "nome": "Sinais E Sistemas"
+    },
+    {
+      "type": "removed",
+      "codigo": "A4TTF",
+      "nome": "Teoria De Termodinâmica, Fluidos E Ondas"
+    },
+    {
+      "type": "removed",
+      "codigo": "A5PDS",
+      "nome": "Processamento Digital De Sinais"
+    },
+    {
+      "type": "removed",
+      "codigo": "A7RID",
+      "nome": "Redes Industriais"
+    },
+    {
+      "type": "removed",
+      "codigo": "A7SMC",
+      "nome": "Sistemas Microcontrolados"
+    },
+    {
+      "type": "removed",
+      "codigo": "A8OPS2",
+      "nome": "Lógica Reconfigurável"
+    },
+    {
+      "type": "removed",
+      "codigo": "AS62A",
+      "nome": "Programação Orientada A Objetos"
+    },
+    {
+      "type": "removed",
+      "codigo": "AS62D",
+      "nome": "Inglês Instrumental"
+    },
+    {
+      "type": "removed",
+      "codigo": "AS62E",
+      "nome": "Interação Homem Computador"
+    },
+    {
+      "type": "removed",
+      "codigo": "AS62F",
+      "nome": "Programação Web Front-End"
+    },
+    {
+      "type": "removed",
+      "codigo": "AS63A",
+      "nome": "Programação Web Back-End"
+    },
+    {
+      "type": "removed",
+      "codigo": "AS63D",
+      "nome": "Redes De Computadores"
+    },
+    {
+      "type": "removed",
+      "codigo": "AS64A",
+      "nome": "Programação Web Fullstack"
+    },
+    {
+      "type": "removed",
+      "codigo": "AS65D",
+      "nome": "Programação Para Dispositivos Móveis"
+    },
+    {
+      "type": "removed",
+      "codigo": "AS65F",
+      "nome": "Processamento De Imagens"
+    },
+    {
+      "type": "removed",
+      "codigo": "AS65G",
+      "nome": "Mineração De Dados"
+    },
+    {
+      "type": "removed",
+      "codigo": "AS65M",
+      "nome": "Internet Das Coisas"
+    },
+    {
+      "type": "removed",
+      "codigo": "CSA19",
+      "nome": "Liderança E Gerenciamento"
+    },
+    {
+      "type": "changed",
+      "codigo": "E1GAL",
+      "nome": "Geometria Analítica E Álgebra Linear",
+      "fields": [
+        "turmas[0]"
+      ]
+    },
+    {
+      "type": "removed",
+      "codigo": "E2LCD",
+      "nome": "Laboratório De Cinemática E Dinâmica"
+    },
+    {
+      "type": "removed",
+      "codigo": "E2OPH16",
+      "nome": "História Da Técnica E Da Tecnologia"
+    },
+    {
+      "type": "removed",
+      "codigo": "E2OPH5",
+      "nome": "Libras 1"
+    },
+    {
+      "type": "removed",
+      "codigo": "E2OPH7",
+      "nome": "Qualidade De Vida 1"
+    },
+    {
+      "type": "removed",
+      "codigo": "E2TCD",
+      "nome": "Teoria De Cinemática E Dinâmica"
+    },
+    {
+      "type": "removed",
+      "codigo": "E3PBE",
+      "nome": "Probabilidade E Estatística"
+    },
+    {
+      "type": "removed",
+      "codigo": "E3TEM",
+      "nome": "Teoria De Eletricidade E Magnetismo"
+    },
+    {
+      "type": "removed",
+      "codigo": "E4LTF",
+      "nome": "Laboratório De Termodinâmica, Fluidos E Ondas"
+    },
+    {
+      "type": "removed",
+      "codigo": "E4TTF",
+      "nome": "Teoria De Termodinâmica, Fluidos E Ondas"
+    },
+    {
+      "type": "removed",
+      "codigo": "E5SNS",
+      "nome": "Sinais E Sistemas"
+    },
+    {
+      "type": "removed",
+      "codigo": "E6MCC",
+      "nome": "Microcontroladores"
+    },
+    {
+      "type": "removed",
+      "codigo": "E7TMD",
+      "nome": "Transmissão De Dados"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC38F",
+      "nome": "Trabalho De Conclusão De Curso 1"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC39A",
+      "nome": "Trabalho De Conclusão De Curso 2"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC41D",
+      "nome": "Introdução A Engenharia De Computação"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC41F",
+      "nome": "Geometria Analítica E Álgebra Linear"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC42B",
+      "nome": "Organização De Computadores"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC42EB",
+      "nome": "Qualidade De Vida 1"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC42HB",
+      "nome": "Libras 1"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC42IB",
+      "nome": "Libras2"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC42L",
+      "nome": "História Da Técnica E Da Tecnologia"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC42LB",
+      "nome": "História Da Técnica E Da Tecnologia"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC43BB",
+      "nome": "Leitura Instrumental Em Língua Inglesa"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC43D",
+      "nome": "Teoria De Cinemática E Mecânica"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC43E",
+      "nome": "Laboratório De Cinemática E Mecânica"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC43G",
+      "nome": "Probabilidade E Estatística"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC44D",
+      "nome": "Teoria De Oscilações E Ondas"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC44E",
+      "nome": "Laboratório De Oscilações E Ondas"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC45A",
+      "nome": "Programação Orientada A Objetos 1"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC45C",
+      "nome": "Sistemas Microcontrolados"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC45D",
+      "nome": "Teoria De Eletricidade E Magnetismo"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC45E",
+      "nome": "Laboratório De Eletricidade E Magnetismo"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC45F",
+      "nome": "Sinais E Sistemas"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC46A",
+      "nome": "Programação Orientada A Objetos 2"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC46B",
+      "nome": "Sistemas Operacionais"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC46E",
+      "nome": "Sistemas De Controle"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC46F",
+      "nome": "Transmissão De Dados"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC46G",
+      "nome": "Metodologia De Pesquisa"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC47A",
+      "nome": "Inteligência Artificial"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC47B",
+      "nome": "Redes De Computadores"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC47C",
+      "nome": "Programação Web Front-End"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC47D",
+      "nome": "Gerenciamento De Projeto De Software"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC47F",
+      "nome": "Trabalho De Conclusão De Curso 1"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC48A",
+      "nome": "Sistemas Distribuídos"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC48B",
+      "nome": "Programação Web Back-End"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC48C",
+      "nome": "Programação Para Dispositivos Móveis"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC48C2",
+      "nome": "Segurança Da Informação"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC48D",
+      "nome": "Sistemas Embarcados"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC48F",
+      "nome": "Trabalho De Conclusão De Curso 2"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC48K",
+      "nome": "Processamento De Imagens"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC48L",
+      "nome": "Mineração De Dados"
+    },
+    {
+      "type": "removed",
+      "codigo": "EC48P",
+      "nome": "Internet Das Coisas"
+    },
+    {
+      "type": "removed",
+      "codigo": "EL21F",
+      "nome": "Química"
+    },
+    {
+      "type": "removed",
+      "codigo": "EL71C",
+      "nome": "Transmissão De Dados"
+    },
+    {
+      "type": "removed",
+      "codigo": "EM42E",
+      "nome": "Teoria De Cinemática E Dinâmica"
+    },
+    {
+      "type": "removed",
+      "codigo": "EM42F",
+      "nome": "Laboratório De Cinemática E Dinâmica"
+    },
+    {
+      "type": "removed",
+      "codigo": "EM42G",
+      "nome": "Probabilidade E Estatística"
+    },
+    {
+      "type": "removed",
+      "codigo": "EM43E",
+      "nome": "Teoria De Termodinâmica, Fluidos E Ondas"
+    },
+    {
+      "type": "removed",
+      "codigo": "EM43F",
+      "nome": "Laboratório De Termodinâmica, Fluidos E Ondas"
+    },
+    {
+      "type": "removed",
+      "codigo": "EM44D",
+      "nome": "Teoria De Eletricidade E Magnetismo"
+    },
+    {
+      "type": "removed",
+      "codigo": "EM44E",
+      "nome": "Laboratório De Eletricidade E Magnetismo"
+    },
+    {
+      "type": "removed",
+      "codigo": "ES42D",
+      "nome": "Sistemas Operacionais"
+    },
+    {
+      "type": "removed",
+      "codigo": "ES47A",
+      "nome": "Programação Para Dispositivos Móveis"
+    },
+    {
+      "type": "removed",
+      "codigo": "ES47B",
+      "nome": "Programação Web Fullstack"
+    },
+    {
+      "type": "removed",
+      "codigo": "ES48D",
+      "nome": "Processamento De Imagens"
+    },
+    {
+      "type": "removed",
+      "codigo": "ES48E",
+      "nome": "Mineração De Dados"
+    },
+    {
+      "type": "removed",
+      "codigo": "ES48H",
+      "nome": "Programação De Banco De Dados"
+    },
+    {
+      "type": "removed",
+      "codigo": "ES48L",
+      "nome": "Realidade Estendida"
+    },
+    {
+      "type": "removed",
+      "codigo": "ES48P",
+      "nome": "Internet Of Things"
+    },
+    {
+      "type": "removed",
+      "codigo": "ES48S",
+      "nome": "Programação Desktop"
+    },
+    {
+      "type": "removed",
+      "codigo": "ES48U",
+      "nome": "Métricas E Estimativas De Software"
+    },
+    {
+      "type": "removed",
+      "codigo": "IF68E",
+      "nome": "Sistemas Embarcados"
+    },
+    {
+      "type": "removed",
+      "codigo": "LCD",
+      "nome": "Laboratório De Cinemática E Dinâmica"
+    },
+    {
+      "type": "removed",
+      "codigo": "MCC",
+      "nome": "Microcontroladores"
+    },
+    {
+      "type": "removed",
+      "codigo": "MO44M",
+      "nome": "Qualidade De Vida 1"
+    },
+    {
+      "type": "removed",
+      "codigo": "MO44N",
+      "nome": "Qualidade De Vida 2"
+    },
+    {
+      "type": "removed",
+      "codigo": "MO47Q",
+      "nome": "Gerenciamento De Projetos Para Competição"
+    },
+    {
+      "type": "removed",
+      "codigo": "OPH18",
+      "nome": "Tecnologia E Sociedade"
+    },
+    {
+      "type": "removed",
+      "codigo": "OPH80",
+      "nome": "Qualidade De Vida Ii"
+    },
+    {
+      "type": "removed",
+      "codigo": "PBE",
+      "nome": "Probabilidade E Estatística"
+    },
+    {
+      "type": "removed",
+      "codigo": "TCD",
+      "nome": "Teoria De Cinemática E Dinâmica"
+    },
+    {
+      "type": "removed",
+      "codigo": "TEM",
+      "nome": "Teoria De Eletricidade E Magnetismo"
+    },
+    {
+      "type": "removed",
+      "codigo": "TMD",
+      "nome": "Transmissão De Dados"
+    },
+    {
+      "type": "removed",
+      "codigo": "TTF",
+      "nome": "Teoria De Termodinâmica, Fluidos E Ondas"
+    }
+  ],
+  "payload": {
+    "curso": "ENG. COMPUTAÇÃO",
+    "ultima_atualizacao": "12/11/2026 04:04:29   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "A2ACC",
+        "nome": "Análise De Circuitos Em Corrente Contínua",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A21",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Controle/Automa"
+              ],
+              [
+                "Eng. Eletrica",
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "A035",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "A035",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "S103",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "S103",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "A035",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "A035",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gabriela Helena Bauab Shiguemoto"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "A22",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Controle/Automa"
+              ],
+              [
+                "Eng. Eletrica",
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "A035",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "A035",
+                "sede": null
+              },
+              {
+                "horario": "2T4",
+                "sala": "S103",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "S103",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "A035",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "A035",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Gabriela Helena Bauab Shiguemoto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "A2CDI2",
+        "nome": "Cálculo Diferencial E Integral 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Controle/Automa"
+              ],
+              [
+                "Eng. Eletrica",
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "P201",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "P201",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "P104",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "P104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Henrique Tapparello Moresco"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "A4EPD",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Controle/Automa"
+              ],
+              [
+                "Eng. Eletrica",
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "P004",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "P004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Cleverson Flor Da Rosa"
+            ],
+            "optativa_matrizes": [
+              "Matriz:179"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "A5CTC",
+        "nome": "Controle Contínuo",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A51",
+            "enquadramento": "Presencial",
+            "vagas_total": 19,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Controle/Automa"
+              ],
+              [
+                "Eng. Eletrica",
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "SUB004",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "SUB004",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "S201",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "S201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Emerson Ravazzi Pires Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "A52",
+            "enquadramento": "Presencial",
+            "vagas_total": 20,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Controle/Automa"
+              ],
+              [
+                "Eng. Eletrica",
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "SUB004",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "SUB004",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "S201",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "S201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Emerson Ravazzi Pires Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 3,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Emerson Ravazzi Pires Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "A5ELTB",
+        "nome": "Eletrônica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A51",
+            "enquadramento": "Presencial",
+            "vagas_total": 14,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Controle/Automa"
+              ],
+              [
+                "Eng. Eletrica",
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "S101",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "S101",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "I101",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "I101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jancer Frank Zanini Destro"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "A52",
+            "enquadramento": "Presencial",
+            "vagas_total": 12,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Controle/Automa"
+              ],
+              [
+                "Eng. Eletrica",
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "S101",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "S101",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "I101",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "I101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jancer Frank Zanini Destro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "A6ECO",
+        "nome": "Economia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A61",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Controle/Automa"
+              ],
+              [
+                "Eng. Eletrica",
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "A036",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "A036",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Cesar De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "A6ELD",
+        "nome": "Eletrônica Digital",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "A61",
+            "enquadramento": "Presencial",
+            "vagas_total": 12,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Controle/Automa"
+              ],
+              [
+                "Eng. Eletrica",
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "S203",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "S203",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "P201",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "P201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wesley Angelino De Souza"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "A62",
+            "enquadramento": "Presencial",
+            "vagas_total": 12,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Controle/Automa"
+              ],
+              [
+                "Eng. Eletrica",
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "S203",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "S203",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "P201",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "P201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Wesley Angelino De Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ACC",
+        "nome": "Análise De Circuitos Em Corrente Contínua",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ET21",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrônica"
+              ],
+              [
+                "Eng. Eletrica",
+                "Eng. Controle/Automa"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "A145",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "A145",
+                "sede": null
+              },
+              {
+                "horario": "3M2",
+                "sala": "S103",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "S103",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "A145",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "A145",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Francisco De Assis Scannavino Junior",
+              "Rafael Rorato Londero"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "ET22",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrônica"
+              ],
+              [
+                "Eng. Eletrica",
+                "Eng. Controle/Automa"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "A145",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "A145",
+                "sede": null
+              },
+              {
+                "horario": "3M4",
+                "sala": "S103",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "S103",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "A145",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "A145",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Francisco De Assis Scannavino Junior",
+              "Rafael Rorato Londero"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS62B",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N12",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N4",
+                "sala": "P105",
+                "sede": null
+              },
+              {
+                "horario": "4N5",
+                "sala": "P105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jair De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS62C",
+        "nome": "Banco De Dados",
+        "creditos": 4,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N12",
+            "enquadramento": "Presencial",
+            "vagas_total": 40,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N4",
+                "sala": "P004",
+                "sede": null
+              },
+              {
+                "horario": "2N5",
+                "sala": "P004",
+                "sede": null
+              },
+              {
+                "horario": "3N2",
+                "sala": "P004",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "P004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Claiton De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS63B",
+        "nome": "Estrutura De Dados",
+        "creditos": 4,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N13",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2N2",
+                "sala": "I202",
+                "sede": null
+              },
+              {
+                "horario": "2N3",
+                "sala": "I202",
+                "sede": null
+              },
+              {
+                "horario": "3N4",
+                "sala": "I202",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "I202",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Clayton Kossoski"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS63C",
+        "nome": "Desenvolvimento Ágil",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N13",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "P002",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "P002",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "P002",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "P002",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Erica Ferreira De Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS63E",
+        "nome": "Economia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N13",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "P103",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "P103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Cesar De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS64B",
+        "nome": "Arquitetura De Software",
+        "creditos": 4,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N14",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3N4",
+                "sala": "REM",
+                "sede": null
+              },
+              {
+                "horario": "3N5",
+                "sala": "REM",
+                "sede": null
+              },
+              {
+                "horario": "5N4",
+                "sala": "REM",
+                "sede": null
+              },
+              {
+                "horario": "5N5",
+                "sala": "REM",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriano Rivolli Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "AS65N",
+        "nome": "Desenvolvimento De Jogos",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N15",
+            "enquadramento": "EaD",
+            "vagas_total": 13,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Paulo Augusto Nardi"
+            ],
+            "optativa_matrizes": [
+              "Matriz:171"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "AS65S",
+        "nome": "Aprendizagem Profunda",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "N15",
+            "enquadramento": "EaD",
+            "vagas_total": 13,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Silvio Ricardo Rodrigues Sanches"
+            ],
+            "optativa_matrizes": [
+              "Matriz:171"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "CAM",
+        "nome": "Ciências Do Ambiente",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ET61",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrônica"
+              ],
+              [
+                "Eng. Eletrica",
+                "Eng. Controle/Automa"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "A038",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "A038",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Cezar Tulio",
+              "Juliana Cortez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CCD",
+        "nome": "Circuitos Digitais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ET51",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrônica"
+              ],
+              [
+                "Eng. Eletrica",
+                "Eng. Controle/Automa"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "S202",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "S202",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "S109",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "S109",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luis Fernando Caparroz Duarte"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CDI1",
+        "nome": "Cálculo Diferencial E Integral 1",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ET21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrônica"
+              ],
+              [
+                "Eng. Eletrica",
+                "Eng. Controle/Automa"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "A134",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "A134",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "A140",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "A140",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "A134",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "A134",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rosileide De Oliveira Lopes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CDI2",
+        "nome": "Cálculo Diferencial E Integral 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ET31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrônica"
+              ],
+              [
+                "Eng. Eletrica",
+                "Eng. Controle/Automa"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "P104",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "P104",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "P201",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "P201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Renata Mascari De Souza",
+              "Josimar Da Silva Rocha"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CDI3",
+        "nome": "Cálculo Diferencial E Integral 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ET41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrônica"
+              ],
+              [
+                "Eng. Eletrica",
+                "Eng. Controle/Automa"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "A141",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "A141",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "P204",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "P204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rafael Prado Da Silva"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 2,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Rafael Prado Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "CTC",
+        "nome": "Controle Contínuo",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ET61",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrônica"
+              ],
+              [
+                "Eng. Eletrica",
+                "Eng. Controle/Automa"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "P202",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "P202",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "S201",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "S201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Kleber Romero Felizardo"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "ET62",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrônica"
+              ],
+              [
+                "Eng. Eletrica",
+                "Eng. Controle/Automa"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "P202",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "P202",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "S201",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "S201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Kleber Romero Felizardo"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "E1ELB",
+        "nome": "Eletricidade Básica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "E12",
+            "enquadramento": "Presencial",
+            "vagas_total": 23,
+            "vagas_calouros": 1,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrica"
+              ],
+              [
+                "Eng. Controle/Automa",
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "SUB004",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "SUB004",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "S103",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "S103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Vander Teixeira Prado"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "E1FME",
+        "nome": "Fundamentos De Matemática Para Engenharia",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "E11",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 12,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrica"
+              ],
+              [
+                "Eng. Controle/Automa",
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "P104",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "P104",
+                "sede": null
+              },
+              {
+                "horario": "6T2",
+                "sala": "P103",
+                "sede": null
+              },
+              {
+                "horario": "6T3",
+                "sala": "P103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Claudia Brunosi Medeiros"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "E1GAL",
+        "nome": "Geometria Analítica E Álgebra Linear",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": []
+      },
+      {
+        "codigo": "E2ACC",
+        "nome": "Análise De Circuitos Em Corrente Contínua",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "E21",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrica"
+              ],
+              [
+                "Eng. Controle/Automa",
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "S202",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "S202",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "SUB005",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "SUB005",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "S103",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "S103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carolina Ribeiro Rodrigues",
+              "Guilherme Masquetti Pelz"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "E22",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrica"
+              ],
+              [
+                "Eng. Controle/Automa",
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "S202",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "S202",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "SUB005",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "SUB005",
+                "sede": null
+              },
+              {
+                "horario": "6M2",
+                "sala": "S103",
+                "sede": null
+              },
+              {
+                "horario": "6M3",
+                "sala": "S103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carolina Ribeiro Rodrigues",
+              "Guilherme Masquetti Pelz"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "E23",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "S202",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "S202",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "S103",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "S103",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "SUB005",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "SUB005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Carolina Ribeiro Rodrigues",
+              "Guilherme Masquetti Pelz"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 1,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "E2CDI1",
+        "nome": "Cálculo Diferencial E Integral 1",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "E21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrica"
+              ],
+              [
+                "Eng. Controle/Automa",
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "P201",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "P201",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "A144",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "A144",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "A146",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "A146",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rosileide De Oliveira Lopes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "E2OPH1",
+        "nome": "A Presença Africana No Brasil",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "E21",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4N2",
+                "sala": "P103",
+                "sede": null
+              },
+              {
+                "horario": "4N3",
+                "sala": "P103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Guadalupe Estrelita Dos Santos Menta"
+            ],
+            "optativa_matrizes": [
+              "Matriz:178"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "E3CDI2",
+        "nome": "Cálculo Diferencial E Integral 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "E31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrica"
+              ],
+              [
+                "Eng. Controle/Automa",
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "S202",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "S202",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "P104",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "P104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Renata Mascari De Souza",
+              "Daniele Costa Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "E3ETB",
+        "nome": "Eletrônica Básica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "E31",
+            "enquadramento": "Presencial",
+            "vagas_total": 12,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrica"
+              ],
+              [
+                "Eng. Controle/Automa",
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "I101",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "I101",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "S101",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "S101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jancer Frank Zanini Destro"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "E4CDI3",
+        "nome": "Cálculo Diferencial E Integral 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "E41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrica"
+              ],
+              [
+                "Eng. Controle/Automa",
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "P103",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "P103",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "P104",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "P104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alexandra Cristina Menis Gonzalez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "E4EQD",
+        "nome": "Equações Diferenciais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "E41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrica"
+              ],
+              [
+                "Eng. Controle/Automa",
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "A142",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "A142",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "A143",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "A143",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Douglas Azevedo Sant Anna"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "E5CCD",
+        "nome": "Circuitos Digitais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "E51",
+            "enquadramento": "Presencial",
+            "vagas_total": 16,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrica"
+              ],
+              [
+                "Eng. Controle/Automa",
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "S203",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "S203",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "P203",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "P203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Angelo Feracin Neto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "E6CTC",
+        "nome": "Controle Contínuo",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "E61",
+            "enquadramento": "Presencial",
+            "vagas_total": 12,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrica"
+              ],
+              [
+                "Eng. Controle/Automa",
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "SUB005",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "SUB005",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "S201",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "S201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Francisco Sanches Buzzacchero"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "E62",
+            "enquadramento": "Presencial",
+            "vagas_total": 12,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrica"
+              ],
+              [
+                "Eng. Controle/Automa",
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "SUB005",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "SUB005",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "S201",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "S201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Francisco Sanches Buzzacchero"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "E6ECO",
+        "nome": "Economia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "E61",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrica"
+              ],
+              [
+                "Eng. Controle/Automa",
+                "Eng. Eletrônica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "P202",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "P202",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Cesar De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC41A",
+        "nome": "Algoritmos 1",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C11",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 20,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "A040",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "A040",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "A040",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "A040",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "A040",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "A040",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "A040",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "A040",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "A040",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "A040",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "A040",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "A040",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Francisco Pereira Junior"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "C12",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 20,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "P001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Adriane Carla Anastacio Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC41B",
+        "nome": "Comunicação Acadêmica",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C11",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 20,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "CALEM II",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "CALEM II",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "CALEM II",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "CALEM II",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Livia Maria Turra Bassetto"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "C12",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 20,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "P201",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "P201",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "P201",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "P201",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Denise Da Silva De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC41C",
+        "nome": "Eletricidade Básica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C11",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 20,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M2",
+                "sala": "S103",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "S103",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "S103",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "S103",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "P204",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "P204",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "P204",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "P204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eduardo Pegoraro Heinemann"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "C12",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 20,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4M4",
+                "sala": "S103",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "S103",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "S103",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "S103",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "P204",
+                "sede": null
+              },
+              {
+                "horario": "4T4",
+                "sala": "P204",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "P204",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "P204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Eduardo Pegoraro Heinemann"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC41E",
+        "nome": "Fundamentos De Matemática",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C11",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 40,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "P204",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "P204",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "P204",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "P204",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "P204",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "P204",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "P204",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "P204",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Douglas Azevedo Sant Anna"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SP1",
+            "enquadramento": "Presencial",
+            "vagas_total": 60,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3N2",
+                "sala": "REM",
+                "sede": null
+              },
+              {
+                "horario": "3N3",
+                "sala": "REM",
+                "sede": null
+              },
+              {
+                "horario": "5N2",
+                "sala": "REM",
+                "sede": null
+              },
+              {
+                "horario": "5N3",
+                "sala": "REM",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Henrique Tapparello Moresco"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC42A",
+        "nome": "Algoritmos 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 60,
+        "turmas": [
+          {
+            "codigo": "C21",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "P205",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "P205",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "P205",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "P205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Paulo Augusto Nardi"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC42C",
+        "nome": "Circuitos Digitais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C21",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "S203",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "S203",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "P203",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "P203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Angelo Feracin Neto"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "C22",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "S203",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "S203",
+                "sede": null
+              },
+              {
+                "horario": "4T2",
+                "sala": "P203",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "P203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Angelo Feracin Neto"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC42DB",
+        "nome": "Fundamentos De Ética",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M4",
+                "sala": "P203",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "P203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Bondarik"
+            ],
+            "optativa_matrizes": [
+              "Matriz:173",
+              "Matriz:191"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EC42F",
+        "nome": "Cálculo Diferencial E Integral 1",
+        "creditos": 2,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "P104",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "P104",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "P104",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "P104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andre Luis Machado Martinez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC42OB",
+        "nome": "Economia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "P203",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "P203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Cesar De Oliveira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:173",
+              "Matriz:191"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EC43A",
+        "nome": "Estrutura De Dados 1",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C31",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "P205",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "P205",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "P205",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "P205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Fabricio Martins Lopes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC43C",
+        "nome": "Análise De Circuitos Em Corrente Contínua",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C31",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "S101",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "S101",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "P201",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "P201",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "A146",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "A146",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joao Cesar De Paula Salve"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "C32",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "S101",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "S101",
+                "sede": null
+              },
+              {
+                "horario": "2T2",
+                "sala": "P201",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "P201",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "A146",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "A146",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joao Cesar De Paula Salve"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC43F",
+        "nome": "Cálculo Diferencial E Integral 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "P201",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "P201",
+                "sede": null
+              },
+              {
+                "horario": "4M2",
+                "sala": "P202",
+                "sede": null
+              },
+              {
+                "horario": "4M3",
+                "sala": "P202",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elenice Weber Stiegelmeier"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC44A",
+        "nome": "Estrutura De Dados 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C41",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T4",
+                "sala": "P105",
+                "sede": null
+              },
+              {
+                "horario": "2T5",
+                "sala": "P105",
+                "sede": null
+              },
+              {
+                "horario": "3T4",
+                "sala": "P105",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "P105",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Rosangela De Fatima Pereira Marquesone"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC44B",
+        "nome": "Bancos De Dados",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C41",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2T2",
+                "sala": "P205",
+                "sede": null
+              },
+              {
+                "horario": "2T3",
+                "sala": "P205",
+                "sede": null
+              },
+              {
+                "horario": "3T2",
+                "sala": "P205",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "P205",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Giovani Volnei Meinerz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC44C",
+        "nome": "Eletrônica Básica",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C41",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M2",
+                "sala": "S103",
+                "sede": null
+              },
+              {
+                "horario": "2M3",
+                "sala": "S103",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "R307",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "R307",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Mendonca"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "C42",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "S103",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "S103",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "R307",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "R307",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Marcio Mendonca"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC44F",
+        "nome": "Cálculo Diferencial E Integral 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M2",
+                "sala": "P104",
+                "sede": null
+              },
+              {
+                "horario": "3M3",
+                "sala": "P104",
+                "sede": null
+              },
+              {
+                "horario": "5M4",
+                "sala": "P104",
+                "sede": null
+              },
+              {
+                "horario": "5M5",
+                "sala": "P104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Claudia Brunosi Medeiros"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 1,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Claudia Brunosi Medeiros"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC44G",
+        "nome": "Equações Diferenciais Ordinárias",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "P104",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "P104",
+                "sede": null
+              },
+              {
+                "horario": "5M2",
+                "sala": "P104",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "P104",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alexandra Cristina Menis Gonzalez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC45B",
+        "nome": "Arquitetura De Computadores",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C51",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T4",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "6T4",
+                "sala": "P001",
+                "sede": null
+              },
+              {
+                "horario": "6T5",
+                "sala": "P001",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Andre Luiz Przybysz"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC45G",
+        "nome": "Certificadora Da Competência 1",
+        "creditos": 0,
+        "creditos_assincronos": 6,
+        "horas_extensionistas": 90,
+        "turmas": [
+          {
+            "codigo": "C51",
+            "enquadramento": "EaD",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Gisele Alves Santana"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC46C",
+        "nome": "Desenvolvimento Ágil",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C61",
+            "enquadramento": "Presencial",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T2",
+                "sala": "P005",
+                "sede": null
+              },
+              {
+                "horario": "4T3",
+                "sala": "P005",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "P005",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "P005",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Erica Ferreira De Souza"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC46DB",
+        "nome": "Comunicação Organizacional",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C61",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5M2",
+                "sala": "CALEM II",
+                "sede": null
+              },
+              {
+                "horario": "5M3",
+                "sala": "CALEM II",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Livia Maria Turra Bassetto"
+            ],
+            "optativa_matrizes": [
+              "Matriz:173",
+              "Matriz:191"
+            ]
+          },
+          {
+            "codigo": "C62",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "CALEM I",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "CALEM I",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Denise Da Silva De Oliveira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:173",
+              "Matriz:191"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EC46H",
+        "nome": "Certificadora Da Competência 2",
+        "creditos": 0,
+        "creditos_assincronos": 6,
+        "horas_extensionistas": 90,
+        "turmas": [
+          {
+            "codigo": "C61",
+            "enquadramento": "EaD",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Fabio Fernandes Da Rocha Vicente"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC47E",
+        "nome": "Empreendedorismo",
+        "creditos": 0,
+        "creditos_assincronos": 2,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C71",
+            "enquadramento": "EaD",
+            "vagas_total": 41,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Josieli Soares Dos Santos"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC47G",
+        "nome": "Certificadora Da Competência 3",
+        "creditos": 0,
+        "creditos_assincronos": 8,
+        "horas_extensionistas": 120,
+        "turmas": [
+          {
+            "codigo": "C71",
+            "enquadramento": "EaD",
+            "vagas_total": 39,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Alessandro Silveira Duarte"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EC48B2",
+        "nome": "Aprendizagem Profunda",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C81",
+            "enquadramento": "EaD",
+            "vagas_total": 13,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Silvio Ricardo Rodrigues Sanches"
+            ],
+            "optativa_matrizes": [
+              "Matriz:191",
+              "Matriz:173",
+              "Matriz:143"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EC48N",
+        "nome": "Desenvolvimento De Jogos",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "C81",
+            "enquadramento": "EaD",
+            "vagas_total": 13,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Eng. Computação"
+              ],
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Paulo Augusto Nardi"
+            ],
+            "optativa_matrizes": [
+              "Matriz:191",
+              "Matriz:173"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ECO",
+        "nome": "Economia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ET71",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrônica"
+              ],
+              [
+                "Eng. Eletrica",
+                "Eng. Controle/Automa"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T2",
+                "sala": "P202",
+                "sede": null
+              },
+              {
+                "horario": "5T3",
+                "sala": "P202",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Luiz Cesar De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EM36A",
+        "nome": "Economia",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "M61",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecanica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "P103",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "P103",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Joao Luiz Dallamuta Lopes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EM42A",
+        "nome": "Cálculo Diferencial E Integral 1",
+        "creditos": 6,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "M21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecanica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "A144",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "A144",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "A135",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "A135",
+                "sede": null
+              },
+              {
+                "horario": "6M4",
+                "sala": "A144",
+                "sede": null
+              },
+              {
+                "horario": "6M5",
+                "sala": "A144",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Daniele Costa Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EM43A",
+        "nome": "Cálculo Diferencial E Integral 2",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "M31",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecanica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "4T4",
+                "sala": "P202",
+                "sede": null
+              },
+              {
+                "horario": "4T5",
+                "sala": "P202",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "P203",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "P203",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Renata Mascari De Souza",
+              "Rosileide De Oliveira Lopes"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EM43C",
+        "nome": "Comunicação Organizacional",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "M21",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecanica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "A143",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "A143",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Denise Da Silva De Oliveira"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "M22",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "A038",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "A038",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Juliana De Andrade Tonhato"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EM44A",
+        "nome": "Cálculo Diferencial E Integral 3",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "M41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecanica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "A146",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "A146",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "A146",
+                "sede": null
+              },
+              {
+                "horario": "5T5",
+                "sala": "A146",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Alexandra Cristina Menis Gonzalez"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EM47D",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "M71",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecanica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T4",
+                "sala": "P101",
+                "sede": null
+              },
+              {
+                "horario": "3T5",
+                "sala": "P101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jair De Oliveira"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "EPD",
+        "nome": "Empreendedorismo",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ET71",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrônica"
+              ],
+              [
+                "Eng. Eletrica",
+                "Eng. Controle/Automa"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3T2",
+                "sala": "P101",
+                "sede": null
+              },
+              {
+                "horario": "3T3",
+                "sala": "P101",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Jair De Oliveira"
+            ],
+            "optativa_matrizes": [
+              "Matriz:176"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "EQD",
+        "nome": "Equações Diferenciais",
+        "creditos": 4,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ET41",
+            "enquadramento": "Presencial",
+            "vagas_total": 44,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Eletrônica"
+              ],
+              [
+                "Eng. Eletrica",
+                "Eng. Controle/Automa"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "3M4",
+                "sala": "A143",
+                "sede": null
+              },
+              {
+                "horario": "3M5",
+                "sala": "A143",
+                "sede": null
+              },
+              {
+                "horario": "4M4",
+                "sala": "A036",
+                "sede": null
+              },
+              {
+                "horario": "4M5",
+                "sala": "A036",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elenice Weber Stiegelmeier"
+            ],
+            "optativa_matrizes": []
+          },
+          {
+            "codigo": "SPO",
+            "enquadramento": "Presencial",
+            "vagas_total": 2,
+            "vagas_calouros": 0,
+            "reserva": "Sem Reserva",
+            "prioridade_cursos": [],
+            "horarios": [],
+            "professores": [
+              "Elenice Weber Stiegelmeier"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "ES48J",
+        "nome": "Desenvolvimento De Jogos",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ES81",
+            "enquadramento": "EaD",
+            "vagas_total": 17,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Paulo Augusto Nardi"
+            ],
+            "optativa_matrizes": [
+              "Matriz:175"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "ES48M",
+        "nome": "Aprendizagem Profunda",
+        "creditos": 0,
+        "creditos_assincronos": 4,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "ES81",
+            "enquadramento": "EaD",
+            "vagas_total": 13,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Bach Eng De Software"
+              ],
+              [
+                "Analise De Sistemas"
+              ],
+              [
+                "Eng. Computação"
+              ]
+            ],
+            "horarios": [],
+            "professores": [
+              "Silvio Ricardo Rodrigues Sanches"
+            ],
+            "optativa_matrizes": [
+              "Matriz:175"
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "MO44E",
+        "nome": "Fundamentos Da Ética",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "M21",
+            "enquadramento": "Presencial",
+            "vagas_total": 30,
+            "vagas_calouros": 0,
+            "reserva": "Aberta",
+            "prioridade_cursos": [
+              [
+                "Eng. Mecanica"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "2M4",
+                "sala": "A135",
+                "sede": null
+              },
+              {
+                "horario": "2M5",
+                "sala": "A135",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Roberto Bondarik"
+            ],
+            "optativa_matrizes": [
+              "Matriz:188",
+              "Matriz:180"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
