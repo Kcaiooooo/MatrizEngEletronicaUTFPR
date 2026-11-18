@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "versionId": "2026-11-18T06-59-09Z",
+  "capturedAt": "2026-11-18T06:59:09.135Z",
+  "sourceLastUpdatedAt": "18/11/2026 03:59:21   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+  "semester": "2026-2",
+  "campus": {
+    "id": "apucarana",
+    "name": "Apucarana",
+    "code": "10"
+  },
+  "course": {
+    "id": "0020",
+    "name": "Língua Inglesa",
+    "sourceName": "LÍNGUA INGLESA"
+  },
+  "source": {
+    "id": "utfpr-portal-aluno",
+    "name": "Sistema Acadêmico UTFPR",
+    "baseUrl": "https://sistemas2.utfpr.edu.br",
+    "sessionCampusCode": "01",
+    "url": "https://sistemas2.utfpr.edu.br/dpls/sistema/aluno01/mplistahorario.inicioAluno?p_curscodnr=20"
+  },
+  "fingerprint": "c3903053b5b22366d8df99f495f539ae622b2048cd8716944b558ae90a33a9a5",
+  "previousVersionId": "2026-09-19T20-29-03Z",
+  "changes": [
+    {
+      "type": "changed",
+      "codigo": "IN12B",
+      "nome": "Inglês 2",
+      "fields": [
+        "turmas[0].professores[0]"
+      ]
+    },
+    {
+      "type": "changed",
+      "codigo": "IN14D",
+      "nome": "Inglês 4",
+      "fields": [
+        "turmas[0].professores[0]"
+      ]
+    }
+  ],
+  "payload": {
+    "curso": "LÍNGUA INGLESA",
+    "ultima_atualizacao": "18/11/2026 03:59:21   OBS: este arquivo será atualizado em no máximo 2 (duas) horas.",
+    "regras_horarios": {
+      "marcadores": [],
+      "sede_sem_marcador": null
+    },
+    "disciplinas": [
+      {
+        "codigo": "IN12B",
+        "nome": "Inglês 2",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CALEM2",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Língua Inglesa"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T1",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "5T2",
+                "sala": "M004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elvira Barbosa Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      },
+      {
+        "codigo": "IN14D",
+        "nome": "Inglês 4",
+        "creditos": 2,
+        "creditos_assincronos": 0,
+        "horas_extensionistas": 0,
+        "turmas": [
+          {
+            "codigo": "CALEM4",
+            "enquadramento": "Presencial",
+            "vagas_total": 22,
+            "vagas_calouros": 0,
+            "reserva": "Fechada",
+            "prioridade_cursos": [
+              [
+                "Língua Inglesa"
+              ]
+            ],
+            "horarios": [
+              {
+                "horario": "5T3",
+                "sala": "M004",
+                "sede": null
+              },
+              {
+                "horario": "5T4",
+                "sala": "M004",
+                "sede": null
+              }
+            ],
+            "professores": [
+              "Elvira Barbosa Da Silva"
+            ],
+            "optativa_matrizes": []
+          }
+        ]
+      }
+    ]
+  }
+}
