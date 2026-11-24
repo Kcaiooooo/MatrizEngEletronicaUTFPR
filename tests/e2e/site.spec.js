@@ -271,7 +271,7 @@ test('turmas abertas exibem a captura oficial, filtram disciplinas e listam o hi
     await expect(page.locator('#source-note')).toContainText('Sistema Acadêmico UTFPR');
     await expect(page.locator('#campus-select')).toHaveValue('curitiba');
     await page.locator('#course-select').selectOption('0250');
-    await expect(page.locator('#stat-disciplines')).toHaveText('150');
+    await expect(page.locator('#stat-disciplines')).toHaveText('151');
     await expect(page.locator('#history-list .gnh-history-item').first()).toBeVisible();
     await page.locator('#discipline-code').fill('MAT7AL');
     await expect(page.locator('#disciplines-list .gnh-discipline')).toHaveCount(1);
@@ -429,10 +429,10 @@ test('minicalendário acompanha a rolagem e remove uma turma ao clicar nela', as
 test('grade automática usa a matriz selecionada e encaixa turmas sem conflito', async ({ page }) => {
     await page.goto('/pages/Turmas Abertas.html');
     await page.locator('#course-select').selectOption('0250');
-    await expect(page.locator('#stat-disciplines')).toHaveText('150');
+    await expect(page.locator('#stat-disciplines')).toHaveText('151');
     await page.getByRole('button', { name: 'Grade automática' }).click();
     await expect(page.locator('#auto-grade-modal')).toBeVisible();
-    await expect(page.locator('#auto-grade-matrix option')).toHaveCount(13);
+    await expect(page.locator('#auto-grade-matrix option')).toHaveCount(14);
     await page.locator('#auto-grade-matrix').selectOption('m2');
     await page.locator('#auto-grade-result-limit').fill('2');
     await expect(page.locator('#auto-grade-result-limit')).toHaveAttribute('max', '20');
