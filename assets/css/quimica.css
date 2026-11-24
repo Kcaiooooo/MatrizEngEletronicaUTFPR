@@ -1,0 +1,25 @@
+#humanities-container .node[data-id="CAART02"],
+#humanities-container .node[data-id="CAART03"] {
+    width: 170px;
+    height: 110px;
+}
+
+#humanities-container .node[data-id="CAART02"] > span:first-child,
+#humanities-container .node[data-id="CAART03"] > span:first-child {
+    font-size: 9px;
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 768px) {
+    #humanities-container .node[data-id="CAART02"],
+    #humanities-container .node[data-id="CAART03"] {
+        width: 150px;
+        height: 100px;
+    }
+
+    #humanities-container .node[data-id="CAART02"] > span:first-child,
+    #humanities-container .node[data-id="CAART03"] > span:first-child {
+        font-size: 8px;
+    }
+}

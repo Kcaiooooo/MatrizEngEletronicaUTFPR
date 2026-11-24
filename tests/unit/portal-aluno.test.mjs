@@ -10,7 +10,7 @@ test('catálogo oficial mantém todos os câmpus em ordem alfabética', () => {
     const names = catalog.campuses.map(campus => campus.name);
     assert.deepEqual(names, [...names].sort((a, b) => a.localeCompare(b, 'pt-BR')));
     assert.equal(catalog.campuses.length, 13);
-    assert.equal(catalog.campuses.reduce((total, campus) => total + campus.courses.length, 0), 223);
+    assert.equal(catalog.campuses.reduce((total, campus) => total + campus.courses.length, 0), 225);
     assert.equal(catalog.source.id, 'utfpr-portal-aluno');
 });
 
