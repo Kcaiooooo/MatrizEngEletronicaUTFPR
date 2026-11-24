@@ -16,6 +16,7 @@ const matrixOptions = [
     { id: 'mecanica', label: 'Engenharia Mecânica · Matriz 985', dataUrl: '../data/mecanica.js', progressKey: 'skillTreeProgress_Mecatronica_mecanica', legacyProgressKey: 'skillTreeProgress_Mecatronica' },
     { id: 'engenharia-civil', label: 'Engenharia Civil · Matriz 960', dataUrl: '../data/engenharia-civil.js', progressKey: 'skillTreeProgress_Automacao_engenharia-civil', legacyProgressKey: 'skillTreeProgress_Automacao' },
     { id: 'engenharia-ambiental', label: 'Engenharia Ambiental e Sanitária · Matriz 980', dataUrl: '../data/engenharia-ambiental.js', progressKey: 'skillTreeProgress_Ambiental' },
+    { id: 'quimica', label: 'Bacharelado em Química · Matriz 972', dataUrl: '../data/quimica.js', progressKey: 'skillTreeProgress_Quimica' },
     { id: 'engenharia-de-producao', label: 'Engenharia de Produção · Matriz 990', dataUrl: '../data/engenharia-de-producao.js', progressKey: 'skillTreeProgress_Producao' },
     { id: 'administracao', label: 'Administração · Matriz 967', dataUrl: '../data/administracao.js', progressKey: 'skillTreeProgress_Mecatronica_administracao', legacyProgressKey: 'skillTreeProgress_Mecatronica' },
     { id: 'radiologia', label: 'Tecnologia em Radiologia · Matriz 920', dataUrl: '../data/radiologia.js', progressKey: 'skillTreeProgress_Radiologia' },
